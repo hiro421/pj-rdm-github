@@ -1,0 +1,115 @@
+<div id="gnaviSp" class="sb-slidebar sb-left sb-style-overlay" style="display:none;">
+	<div class="gnaviInner">
+		<div class="wrap">
+			<div class="head">
+				<div class="account"> <a href="/member/pjmypage/">MY PAGE</a> <span class="login_block" style="display: none;">/ <a class="login_link" href="javascript:if(confirm('ログアウトしますか？')) location.href='/member/logout/';">LOG IN</a></span> <span class="logout_block" style="display: inline;">/ <a class="logout_link" href="javascript:if(confirm('ログアウトしますか？')) location.href='/member/logout/';">LOG OUT</a></span> </div>
+				<div class="closeBtn sb-close">close</div>
+			</div>
+			<div class="commonNavWrap01">
+				<div class="block">
+					<h3 class="trigger active-submenu">SEARCH</h3>
+					<ul class="acoCont" style="display:block;">
+						<div class="keywords">
+							<form name="headerform" id="headerform" method="GET" class="search-form advanced-search search-panel" action="/pjitem/list/">
+								<input type="hidden" name="outlet" value="include">
+								<input type="text" id="keyword" name="_kw" maxlength="100" placeholder="キーワード・商品番号で探す" class=" BAInteractiveTextField" title="">
+								<input type="submit" class="submit" value="検索">
+							</form>
+						</div>
+						<li> <b><a href="/member/pjmypage/">MY PAGE</a></b> </li>
+						<li> <b><a href="/member/login/">LOG IN/新規会員登録</a></b> </li>
+                  		<li class="categories bold"> <b class="trigger active-submenu"><a href="javascript:void(0);">CATEGORY</a></b>
+							<ul class="acoCont" style="display: block;">
+								<li class="bold"><a href="/pj/bra/">ブラ・パンティ</a></li>
+								<li class="bold"><a href="/pj/inner/"> インナー</a></li>
+								<li class="bold"><a href="/pj/room/"> ルームウエア</a></li>
+								<li class="bold"><a href="/pj/fashion/">ファッション</a></li>
+								<li class="bold"><a href="/pj/beauty/">ビューティ</a></li>
+							</ul>
+						</li>
+						<li> <b><a href="/pjitem/list/?_al=pricedown&count=150&_dm=2&outlet=include&sort=6">今週のプライスダウン</a></b> </li>
+						<li> <b><a href="/pjitem/list/?_al=up_new&outlet=include&count=150&sort=6">新着アイテム</a></b> </li>
+						<li> <b><a href="/pj/special/contents/">おすすめ特集</a></b> </li>
+						<li> <b><a href="/pj/special/ranking/">人気ランキング</a></b> </li>
+						<li class="categories bold"> <b class="trigger none-submenu"><a href="javascript:void(0);">ブランド</a></b>
+							<ul class="acoCont" style="display: none;">
+								<li><a href="/pj/salon/">SALON by PEACH JOHN</a></li>
+								<li><a href="/pj/yummymart/">YUMMY MART</a></li>
+							</ul>
+                        <li> <b><a href="/pj/sale/">セール</a></b> </li>
+						</li>
+						
+						<li> <b><a href="/pj/search/">こだわりで探す</a></b> </li>
+						
+						<li><b><a href="/shopping/itemcodeorder/">カタログから注文</a></b> </li>
+						<li><b><a href="/member/wishlist/">ほしいものリスト</a></b> </li>
+						<div class="BrowsingHistory" id="rt_userhistory6"><b><a href="/pj/history/">閲覧履歴</a></b>
+							<div>
+								<ul>
+									<li id="rt_userhistory6_1"></li>
+									<li id="rt_userhistory6_2"></li>
+									<li id="rt_userhistory6_3"></li>
+									<li id="rt_userhistory6_4"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="wishList"> <b><a href="/pj/cliplist/">お気に入り</a></b>
+							<div>
+								<ul>
+								</ul>
+							</div>
+						</div>
+					</ul>
+					<div class="block">
+						<h3 class="trigger store active-submenu">STORE</h3>
+						<ul class="acoCont" style="display:block;">
+							<li> <b><a href="/pj/store/store.html">店舗一覧</a></b> </li>
+							<li> <b><a href="/pj/store/">ストアインフォメーション</a></b> </li>
+							<li> <b><a href="/pj/store/fit_gift/">フィッティングサービス</a></b> </li>
+						</ul>
+					</div>
+					<div class="block">
+						<h3 class="trigger service active-submenu">SERVICE</h3>
+						<ul class="acoCont" style="display:block;">
+                        	<li> <b><a href="/pj/info/friend/">お友達紹介特典クーポンプレゼント</a></b> </li>
+							<li> <b><a href="/al/info/backorder/">WEBで選んでストアでお試し</a></b> </li>
+							<li> <b><a href="/al/info/s_return/">ストアで返品交換受付</a></b> </li>
+							<li> <b><a href="/al/info/return/">ブラ返品＆交換返送料￥0</a></b> </li>
+							<li> <b><a href="/al/info/gift/">ギフトサービス</a></b> </li>
+							<li> <b><a href="https://egift.peachjohn.co.jp/">eGift</a></b> </li>
+						</ul>
+					</div>
+					<div class="block">
+						<h3 class="trigger helpGuide">HELP &amp; <br class="pc">
+							GUIDE</h3>
+						<ul class="acoCont">
+							<li class="pc"> <b><a href="/member/rules/">新規会員登録</a></b> </li>
+							<li class="pc"> <b><a href="/al/rule/beginners.html">初めての方へ</a></b> </li>
+							<li class="sp"> <b><a href="/member/regist/">新規会員登録</a></b> </li>
+							<li class="sp"> <b><a href="/al/rule/beginners.html">初めての方へ</a></b> </li>
+							<li> <b><a href="https://faq.peachjohn.co.jp" target="_blank">よくあるご質問</a></b> </li>
+						</ul>
+					</div>
+					<div class="block">
+						<h3 class="trigger app">APP &amp; CATALOGUE</h3>
+						<ul class="acoCont">
+							<!--<li class="sp"> <b><a href="/al/appli/operation/">アプリダウンロード</a></b> </li>-->
+							<li> <b><a href="/al/catalog/">アプリダウンロード・カタログ請求</a></b> </li>
+							<li class="pc"> <b><a href="/al/digicata/">デジタルカタログを見る</a></b> </li>
+						</ul>
+					</div>
+					<div class="block"> <a href="/al/info/recruit/">
+						<h3>RECRUIT</h3>
+						</a> </div>
+					<div class="block"> <a href="https://faq.peachjohn.co.jp" target="_blank">
+						<h3>CONTACT</h3>
+						</a> </div>
+					<div class="block bannerArea"> <a href="https://www.peachjohn.co.jp/?sid=ec_footer" target="_blank" class="pjbrand">PEACH JOHN</a> 
+					<div class="bannerWrap">
+						<a href="/pj/salon/?sid=ec_footer" target="_blank" class="salon">SALON</a> <a href="/pj/yummymart/?sid=ec_footer" target="_blank" class="yummy">YUMMY MART</a></div><a href="http://momolife.peachjohn.com/" target="_blank" class="momolife">momolife</a> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="sb-overlay sb-close"></div>

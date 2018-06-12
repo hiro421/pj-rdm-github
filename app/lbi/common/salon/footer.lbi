@@ -1,0 +1,49 @@
+<div id="snsArea">
+    <h3><img src="/pj/salon/img/common/title_sns.png" alt="SALON OFFICIAL SNS"/></h3>
+    <ul>
+        <li><a href="https://www.facebook.com/SALON-by-PEACH-JOHN-744125885617916/" target="_blank"><img src="/pj/salon/img/common/ico_fb.png" alt=""/></a></li>
+        <li><a href="https://twitter.com/salonbypj" target="_blank"><img src="/pj/salon/img/common/ico_tw.png" alt=""/></a></li>
+        <li><a href="https://instagram.com/salonbypj/" target="_blank"><img src="/pj/salon/img/common/ico_insta.png" alt=""/></a></li>
+    </ul>
+</div>
+<div id="bannerArea">
+    <ul>
+        <li><a href="http://www.peachjohn.co.jp/"><img src="/pj/salon/img/common/foot_banner01.png" alt="PEACH JOHN"/></a></li>
+        <li><a href="http://www.peachjohn.co.jp/pj/beauty/"><img src="/pj/salon/img/common/foot_banner02.png" alt="PEACH JOHN Beauty"/></a></li>
+        <li><a href="http://www.peachjohn.co.jp/pj/yummymart/"><img src="/pj/salon/img/common/foot_banner03.png" alt="YUMMY MART"/></a></li>
+    </ul>
+</div>
+<div id="shareArea">
+    <h3><img src="/pj/salon/img/common/title_share.png" alt="SHARE"/></h3>
+    <ul>
+        <li><a href="http://www.facebook.com/sharer.php?u=http://www.peachjohn.co.jp/pj/salon/" target="_blank"><img src="/pj/salon/img/common/btn_share_fb.png" alt="Facebook"/></a></li>
+        <li><a href="http://twitter.com/share?url=http://salonbypj.jp" target="_blank"><img src="/pj/salon/img/common/btn_share_tw.png" alt="Twitter"/></a></li>
+        <li><a href="http://line.me/R/msg/text/?http://salonbypj.jp" target="_blank"><img src="/pj/salon/img/common/btn_share_line.png" alt="LINE"/></a></li>
+    </ul>
+</div>
+<footer id="footer">
+    <nav id="fnavi">
+        <ul>
+            <li><a href="http://www.peachjohn.co.jp/al/faq/">お問い合わせ</a></li>
+            <li><a href="http://www.peachjohn.co.jp/al/info/about/">会社概要</a></li>
+            <li><a href="http://www.peachjohn.co.jp/al/rule/privacy_policy.html">プライバシーポリシー</a></li>
+            <li><a href="http://www.peachjohn.co.jp/al/info/browser/">推奨環境</a></li>
+            <li><a href="http://www.peachjohn.co.jp/al/rule/">ご利用ガイド</a></li>
+        </ul>
+    </nav>
+    <div id="copyright">
+        <p>COPYRIGHT&copy;PEACH JOHN CO.,LTD</p>
+    </div>
+</footer>
+
+<script type="text/javascript">
+//worldshopping
+var worldshoppingPopup = "https://banner.worldshopping.jp/peachjohn/popup";
+var worldshoppingFooter = "https://banner.worldshopping.jp/peachjohn/footer";
+if (CommonUtils.isMobile()) {
+    worldshoppingPopup = "https://banner.worldshopping.jp/peachjohn/sp/popup";
+    worldshoppingFooter = "https://banner.worldshopping.jp/peachjohn/sp/footer";
+}
+jQuery("head").append(jQuery("<script><\/script>").attr("src", worldshoppingPopup));
+jQuery("head").append(jQuery("<script><\/script>").attr("src", worldshoppingFooter));
+</script>

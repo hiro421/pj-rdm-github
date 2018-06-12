@@ -1,0 +1,677 @@
+{
+    "BRA・PANTY" : {
+        "type" : "_fl",
+        "url"  : "/pj/bra/",
+        "PCategories" : {
+            "ブラジャー" : {
+                "type" : "_pcg",
+                "url"  : "/pjitem/list/?_pcg=101&outlet=include",
+                "Categories" : {
+                	 "新作ブラ　New in" : {
+                        "type" : "_al=",
+                        "url"  : "/pjitem/list/?_al=pj_new&count=150&_iid=1&outlet=include"
+                    },
+                    "洗濯機で洗えるブラ" : {
+                        "type" : "_al=",
+                        "url"  : "/pjitem/list/?_al=miracle&outlet=include&count=60&sort=6&_dm=2"
+                    },
+                    "ブラ＆パンティ（ショーツ）セット" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10106&outlet=include"
+                    },
+                    "ストラップレス・Tシャツブラ・\rニップレス" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10112&outlet=include"
+                    },
+                    "ノンワイヤーブラ・ブラトップ・\rブラレット" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10110&outlet=include"
+                    },
+                    "デイリーユースブラ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10101&outlet=include"
+                    },
+                    "セクシーランジェリー" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10107&outlet=include"
+                    },
+                    "谷間ブラ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10102&outlet=include"
+                    },
+                    "ボリュームアップブラ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10103&outlet=include"
+                    },
+                    "着やせブラ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10104&outlet=include"
+                    },
+                    "抜け感ブラ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10117&outlet=include"
+                    },
+                    "夏におすすめのブラ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10114&outlet=include"
+                    },
+                    "ナイトブラ・インナー" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10113&outlet=include"
+                    },
+                    "グラマーサイズ（Eカップ以上）" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10105&outlet=include"
+                    },
+                    "マタニティ下着" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=20803&outlet=include"
+                    },
+                    "ブラ関連グッズ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10111&outlet=include"
+                    },
+                    "ブラ人気ランキング" : {
+                        "type" : "_rk",
+                        "url"  : "/pj/special/ranking/bra.html"
+                    }
+                }
+            },
+            "パンティ（ショーツ・サニタリー）" : {
+                "type" : "_pcg",
+                "url"  : "/pjitem/list/?_pcg=102&outlet=include",
+                "Categories" : {
+                    "パンティ（ショーツ）" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10201&outlet=include"
+                    },
+                    "ソング・Tバック・ガーター" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10202&outlet=include"
+                    },
+                    "チーキー" : {
+                        "type" : "_al",
+                        "url"  : "/pjitem/list/?_al=160802cheeky&outlet=include&_dm=2&count=150&sort=6"
+                    },
+                    "ボーイレッグ・ガールズブリーフ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10203&outlet=include"
+                    },
+                    "サニタリー" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10204&outlet=include"
+                    },
+                    "パンティ人気ランキング" : {
+                        "type" : "_rk",
+                        "url"  : "/pj/special/ranking/panty.html"
+                    }
+                }
+            }
+        },
+        "SeriesList" : {
+            "シリーズ／ブランド" : {
+                "type" : "Series",
+                "Series" : {
+                    "ミラクルブラ" : {
+                        "type" : "_al",
+                        "url"  : "/pjitem/list/?_al=miracle&outlet=include&sort=6"
+                    },
+                    "ワークブラ" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=334&outlet=include"
+                    },
+                    "ドリームブラ" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=414&outlet=include&sort=2"
+                    },
+                    "PJ DAYS" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=445&outlet=include&sort=2"
+                    },
+                    "フェロモンブラ" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=425&outlet=include&sort=2"
+                    },
+                    "ヌーディ(R)ブラ" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=436&outlet=include&sort=2"
+                    },
+                    "胸きゅんブラ" : {
+                        "type" : "ITM",
+                        "url"  : "/pjitem/detail/?ITM=1014680&outlet=include"
+                    },
+                    "マキシマムメイカー" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=192&outlet=include&sort=2"
+                    },
+                    "ボムバスト" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=189&outlet=include&sort=2"
+                    },
+                    "スリムルック" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=430&outlet=include&sort=2"
+                    },
+                    "はみ肉グイ寄せ" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=391&outlet=include&sort=2"
+                    },
+                    "デコルタン" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=47&outlet=include"
+                    },
+                    "PJ model's" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=429&outlet=include"
+                    },
+                    "PJ COLORS" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=434&outlet=include"
+                    },
+                    "グランディーナ" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=27&outlet=include"
+                    },
+                    "Sweet(R) by PJ" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=466&outlet=include&sort=2"
+                    },
+                    "シアーメイク" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=465&outlet=include&sort=2"
+                    },
+                    "SALON by PEACH JOHN" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=377&outlet=include"
+                    },
+                    "YUMMY MART" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=419&outlet=include"
+                    }
+                }
+            }
+        }
+    },
+    "INNER" : {
+        "type" : "_fl",
+        "url"  : "/pj/inner/",
+        "PCategories" : {
+            "インナー" : {
+                "type" : "_pcg",
+                "url"  : "/pjitem/list/?_pcg=105&outlet=include",
+                "Categories" : {
+                    "パッド付きインナー" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10504&outlet=include"
+                    },
+                    "デオドラント" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10502&outlet=include"
+                    },
+                    "キャミソール・タンク" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10501-10302&outlet=include"
+                    },
+                    "あったかインナー" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10503&outlet=include"
+                    },
+                    "透け防止アイテム" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10505&outlet=include"
+                    },
+                    "補整インナー" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10601&outlet=include"
+                    },
+                    "スリップ・ベビードール" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10301&outlet=include"
+                    },
+                    "ランジェリー系ボトム" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10303&outlet=include"
+                    },
+                    "セクシーランジェリー・コスプレ・ラブグッズ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10306&outlet=include"
+                    },
+                    "インナー人気ランキング" : {
+                        "type" : "_rk",
+                        "url"  : "/pj/special/ranking/inner.html"
+                    }
+                }
+            }
+        },
+        "SeriesList" : {
+            "シリーズ" : {
+                "type" : "Series",
+                "Series" : {
+                    "PJ UNDER" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=449&outlet=include"
+                    },
+                    "UP DATE" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=435&outlet=include"
+                    },
+                    "My Little Joy" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=84&outlet=include"
+                    },
+                    "CAMI LABEL" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=468&outlet=include"
+                    }
+                }
+            }
+        }
+    },
+    "ROOM WEAR" : {
+        "type" : "_fl",
+        "url"  : "/pj/room/",
+        "PCategories" : {
+            "ルームウエア" : {
+                "type" : "_pcg",
+                "url"  : "/pjitem/list/?_pcg=104&outlet=include",
+                "Categories" : {
+                    "パジャマ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10401&outlet=include"
+                    },
+                    "ワンピース・オールインワン・ネグリジェ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10403&outlet=include"
+                    },
+                    "ローブ・バスローブ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10404&outlet=include"
+                    },
+                    "ルームシューズ・スリッパ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10402&outlet=include"
+                    },
+                    "メンズ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10901&outlet=include"
+                    },
+                    "ワンマイルウエア" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10405&outlet=include"
+                    },
+                    "Gift" : {
+                        "type" : "_al",
+                        "url"  : "/pjitem/list/?_al=170502gift&outlet=include&sort=6&_dm=1&count=150"
+                    },
+                    "ルームウエア人気ランキング" : {
+                        "type" : "_rk",
+                        "url"  : "/pj/special/ranking/room.html"
+                    }
+                }
+            },
+            "インテリア" : {
+                "type" : "_pcg",
+                "url"  : "/pjitem/list/?_pcg=401&outlet=include",
+                "Categories" : {
+                    "寝具・ファブリック" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=40101&outlet=include"
+                    },
+                    "インテリアグッズ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=40201&outlet=include"
+                    },
+                    "収納グッズ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=40301&outlet=include"
+                    },
+                    "キッチングッズ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=40401&outlet=include"
+                    },
+                    "バス用品・トイレタリー用品" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=40501&outlet=include"
+                    },
+                    "掃除グッズ・洗濯用品" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=40601&outlet=include"
+                    },
+                    "芳香剤・消臭剤" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=40701&outlet=include"
+                    },
+                    "ステーショナリー・生活雑貨" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=40801&outlet=include"
+                    },
+                    "インテリア人気ランキング" : {
+                        "type" : "_rk",
+                        "url"  : "/pj/special/ranking/interior.html"
+                    }
+                }
+            }
+        }
+    },
+    "FASHION" : {
+        "type" : "_fl",
+        "url"  : "/pj/fashion/",
+        "PCategories" : {
+            "ファッション" : {
+                "type" : "_pcg",
+                "url"  : "/pjitem/list/?_pcg=201&outlet=include",
+                "Categories" : {
+                    "キャミソール・タンクトップ・\rチューブトップ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=20104&outlet=include"
+                    },
+                    "Tシャツ・カットソー" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=20101&outlet=include"
+                    },
+                    "シャツ・ブラウス" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=20102&outlet=include"
+                    },
+                    "ニット・セーター" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=20103&outlet=include"
+                    },
+                    "カーディガン・ボレロ・ベスト" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=20105&outlet=include"
+                    },
+                    "パーカー・スウェット" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=20106&outlet=include"
+                    },
+                    "ジャケット・コート・ブルゾン" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=20401&outlet=include"
+                    },
+                    "ワンピース・チュニック・ドレス・\rオールインワン" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=20501&outlet=include"
+                    },
+                    "パンツ・ガウチョパンツ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=20601&outlet=include"
+                    },
+                    "ショートパンツ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=20602&outlet=include"
+                    },
+                    "スカート" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=20603&outlet=include"
+                    },
+                    "ストッキング・タイツ・靴下" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=20605&outlet=include"
+                    },
+                    "ＵＶウエア" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=60103&outlet=include"
+                    },
+                    "ファッション人気ランキング" : {
+                        "type" : "_rk",
+                        "url"  : "/pj/special/ranking/fashion.html"
+                    }
+                }
+            },
+            "水着・スポーツウエア・その他" : {
+                "type" : "_pcg",
+                "url"  : "/pjitem/list/?_pcg=207&outlet=include",
+                "Categories" : {
+                    "ビキニ・スイムウエア" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=20701&outlet=include"
+                    },
+                    "スポーツウエア" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=20702&outlet=include"
+                    },
+                    "その他" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=20802&outlet=include"
+                    }
+                }
+            },
+            "靴（シューズ）" : {
+                "type" : "_pcg",
+                "url"  : "/pjitem/list/?_pcg=301&outlet=include",
+                "Categories" : {
+                    "パンプス・バレエシューズ・フラットシューズ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=30101&outlet=include"
+                    },
+                    "サンダル" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=30102&outlet=include"
+                    },
+                    "スニーカー・その他" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=30104&outlet=include"
+                    },
+                    "ブーツ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=30103&outlet=include"
+                    },
+                    "ルームシューズ・スリッパ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=30201&outlet=include"
+                    }
+                }
+            },
+            "ファッション雑貨" : {
+                "type" : "_pcg",
+                "url"  : "/pjitem/list/?_pcg=304&outlet=include",
+                "Categories" : {
+                    "バッグ（鞄）" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=30401&outlet=include"
+                    },
+                    "ポーチ・ケース" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=30402&outlet=include"
+                    },
+                    "帽子・ストール・手袋" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=30501&outlet=include"
+                    },
+                    "アクセサリー（小物・雑貨）" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=30601&outlet=include"
+                    },
+                    "ＵＶグッズ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=60102&outlet=include"
+                    }
+                }
+            }
+        },
+        "SeriesList" : {
+            "シリーズ／ブランド" : {
+                "type" : "Series",
+                "Series" : {
+                    "PJ BODY STUDIO" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=357&outlet=include"
+                    },
+                    "JARINKO" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=398&outlet=include"
+                    },
+                    "SALON by PEACH JOHN" : {
+                        "type" : "_al",
+                        "url"  : "/pjitem/list/?_al=sa_fas&_iid=0&outlet=include&count=30&sort=6"
+                    }
+                }
+            }
+        }
+    },
+    "BEAUTY" : {
+        "type" : "_fl",
+        "url"  : "/pj/beauty/",
+        "PCategories" : {
+            "ビューティケアアイテム" : {
+                "type" : "_pcg",
+                "url"  : null,
+                "Categories" : {
+                    "バストケア" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50112&_iid=1&outlet=include"
+                    },
+                    "ヒップケア" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50113&_iid=1&outlet=include"
+                    },
+                    "デリケートゾーンケア" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50114&_iid=1&outlet=include"
+                    },
+                    "リップケア" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50104&_iid=1&outlet=include"
+                    },
+                    "ボディケア" : {
+                        "type" : "_pcg",
+                        "url"  : "/pjitem/list/?_pcg=503&_iid=1&outlet=include"
+                    },
+                    "メイクアップ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50201&_iid=1&outlet=include"
+                    },
+                    "ヘアケア" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50401&_iid=1&outlet=include"
+                    },
+                    "ハンドケア" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50303&_iid=1&outlet=include"
+                    },
+                    "スキンケア" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50101&_iid=1&outlet=include"
+                    },
+                    "オーラルケア" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50501&_iid=1&outlet=include"
+                    },
+                    "フレグランス（香水）" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50601&_iid=1&outlet=include"
+                    },
+                    "コフレ・トライアルセット" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50701&_iid=1&outlet=include"
+                    },
+                    "美容グッズ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50801&_iid=1&outlet=include"
+                    },
+                    "ビューティー人気ランキング" : {
+                        "type" : "_rk",
+                        "url"  : "/pj/special/ranking/beauty.html"
+                    }
+                }
+            },
+            "お悩み別" : {
+                "type" : "_pcg",
+                "url"  : null,
+                "Categories" : {
+                    "バストの悩み" : {
+                        "type" : "_al",
+                        "url"  : "/pjitem/list/?_al=bust_item&count=150&outlet=include&sort=6"
+                    },
+                    "ヒップの悩み" : {
+                        "type" : "_al",
+                        "url"  : "/pjitem/list/?_al=hip_item&count=150&outlet=include&sort=6"
+                    },
+                    "デリケートゾーンの悩み" : {
+                        "type" : "_al",
+                        "url"  : "/pjitem/list/?_al=delicate_item&count=150&outlet=include&sort=6"
+                    },
+                    "脱毛の悩み" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50115&_iid=1&outlet=include"
+                    },
+                    "保湿対策化粧品" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50107&_iid=1&outlet=include"
+                    },
+                    "エイジングケア・しわ対策" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50108&_iid=1&outlet=include"
+                    },
+                    "美白・UV対策" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=60101&_iid=1&outlet=include"
+                    },
+                    "ニキビケア" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50110&_iid=1&outlet=include"
+                    },
+                    "毛穴・くすみ対策" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50106&_iid=1&outlet=include"
+                    },
+                    "ダイエットアイテム" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=60001&_iid=1&outlet=include"
+                    },
+                    "デオドラント" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=50304&_iid=1&outlet=include"
+                    },
+                    "ラブアイテム" : {
+                        "type" : "_al",
+                        "url"  : "/pjitem/list/?_al=love_item&outlet=include&sort=6"
+                    }
+                }
+            },
+            "その他" : {
+                "type" : "LinkAggs",
+                "url"  : null,
+                "Categories" : {
+                    "SALE" : {
+                        "type" : "_fl",
+                        "url"  : "/pjitem/list/?_fl=PJ_FLR_1F&outlet=only"
+                    },
+                    "BOMB BT研究所" : {
+                        "type" : "Link",
+                        "url"  : "/pj/special/bombbt/"
+                    },
+                    "ボディケア定期便" : {
+                        "type" : "External",
+                        "url"  : "http://regular.peachjohn.co.jp/fm/bs/?wmpref=R_gn"
+                    }
+                }
+            }
+        }
+    },
+    "SALE" : {
+        "type" : "_fl",
+        "url"  : "/pj/sale/"
+    },
+    "BRAND" : {
+        "type" : "_fl",
+        "url"  : null,
+        "PCategories" : {
+            "ブランド" : {
+                "type" : "LinkAggs",
+                "url"  : "/pjitem/list/?_pcg=105&outlet=include",
+                "Categories" : {
+                    "SALON by PEACH JOHN" : {
+                        "type" : "Link",
+                        "url"  : "/pj/salon/"
+                    },
+                    "YUMMY MART" : {
+                        "type" : "Link",
+                        "url"  : "/pj/yummymart/"
+                    }
+                }
+            }
+        }
+    }
+}

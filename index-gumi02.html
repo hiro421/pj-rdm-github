@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<script id="flamingo-switcher" type="text/javascript" src="/app/js/flamingo/flamingo-switcher.js" charset="utf-8"></script>-->
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta name="description" content="">
+<meta name="keywords" content="通販,PJ,ピーチ・ジョン,Peach john,PEACH JOHN,">
+<meta name="google-site-verification" content="RhtqMT4qhbSW6samhAOzT9fca7vstB4LXriYGzld5NU" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>●●●｜≪公式≫下着通販　PEACH JOHN（ピーチ・ジョン）WEBストア</title>
+<!--common-->
+<link rel="shortcut icon" href="/common/front/img/al/favicon.ico" type="image/vnd.microsoft.icon" />
+<script type="text/javascript" src="//js.rtoaster.jp/Rtoaster.js"></script>
+<script type="text/javascript" src="/common/front/js/PrepRtoaster.js"></script>
+<script type="text/javascript">
+Rtoaster.init(PJRtoasterID);
+Rtoaster.track();
+</script>
+<script type="text/javascript" src="/app/js/lib/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/lib/lib.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/lib/modernizr.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/lib/jquery.panzoom.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/common/CommonParams.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/common/CommonUtils.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/common/common.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/common/cliplist.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="/app/css/common/custom.css">
+<link rel="stylesheet" type="text/css" href="/app/css/common/normalize.css">
+<link rel="stylesheet" type="text/css" href="/app/css/component/Purchase.css">
+<script type="text/javascript" src="/app/js/component/Purchase.js"></script>
+<link rel="stylesheet" type="text/css" href="/app/css/common/main.css">
+<link rel="stylesheet" type="text/css" href="/app/css/common/common.css">
+<link rel="stylesheet" type="text/css" href="/app/css/common/common2.css">
+<script type="text/javascript" src="/app/js/component/Purchase.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+    jQuery(".CallPurchaseItem").bind("click", function(){
+        var itemCode = jQuery(this).attr("itemCode");
+        var dispColorCode = jQuery(this).attr("dispColorCode");
+        var dispSkuCode = jQuery(this).attr("skuCode");
+        var btn = new Purchase({itemCode: itemCode, dispColorCode: dispColorCode, dispSkuCode: dispSkuCode});
+        btn.initializePurchasePanel();
+				jQuery(".mfp-wrap").css("display","none");
+    });
+		jQuery(document).on("click", "#ShadowOverlay", function(){
+				jQuery(".mfp-wrap").css("display","block");
+    });
+		jQuery(document).on("click", ".btn-close", function(){
+				jQuery(".mfp-wrap").css("display","block");
+    });
+});
+</script>
+<!--common-->
+
+<link rel="stylesheet" href="asset/css/style.css">
+<script src="asset/js/jquery.magnific-popup.min.js"></script>
+<script src="asset/js/slick.js"></script>
+<script src="asset/js/jquery.cookie.js"></script>
+<script src="asset/js/common.js"></script>
+<script>	
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var work;
+var fitness;
+var home;
+var date;
+var shopping;
+function onYouTubeIframeAPIReady() {
+    work = new YT.Player('workMovie', {
+        width: '625',
+        height: '353',
+        videoId: '6-fzT0QG2Ss',
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onWorkState
+        },
+        playerVars: {
+            autoplay: 0,
+						rel     : 0,
+            showinfo: 0
+        }
+    });
+    fitness = new YT.Player('fitnessMovie', {
+        width: '625',
+        height: '353',
+        videoId: 'IzDBxupQxVY',
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onFitnessState
+        },
+        playerVars: {
+            autoplay: 0,
+						rel     : 0,
+            showinfo: 0
+        }
+    });
+    home = new YT.Player('homeMovie', {
+        width: '625',
+        height: '353',
+        videoId: 'rkORg2iBAC4',
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onHomeState
+        },
+        playerVars: {
+            autoplay: 0,
+						rel     : 0,
+            showinfo: 0
+        }
+    });
+    date = new YT.Player('dateMovie', {
+        width: '625',
+        height: '353',
+        videoId: 'CkB1dcdrGM4',
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onDateState
+        },
+        playerVars: {
+            autoplay: 0,
+						rel     : 0,
+            showinfo: 0
+        }
+    });
+    shopping = new YT.Player('shoppingMovie', {
+        width: '625',
+        height: '353',
+        videoId: 'B1YtIDxKXzY',
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onShoppingState
+        },
+        playerVars: {
+            autoplay: 0,
+						rel     : 0,
+            showinfo: 0
+        }
+    });
+}
+
+var workStatus;
+function onWorkState(event) {
+    workStatus = event.data;
+}
+
+var fitnessStatus;
+function onFitnessState(event) {
+    fitnessStatus = event.data;
+}
+
+var homeStatus;
+function onHomeState(event) {
+    homeStatus = event.data;
+}
+
+var dateStatus;
+function onDateState(event) {
+    dateStatus = event.data;
+}
+
+var shoppingStatus;
+function onShoppingState(event) {
+    shoppingStatus = event.data;
+}
+
+var playerReady = false;
+function onPlayerReady(event) {
+    playerReady = true;
+}
+
+$(function() {
+    var slider = '.js-tab-slideArea';
+    var thm = '.tabBox_tabArea .tabBox_tab';
+    $(thm).each(function() {
+        var index = $(thm).index(this);
+        $(this).attr("data-index",index);
+    });
+    $(slider).on('init',function(slick){
+        var index = $(".slide-item.slick-slide.slick-current").attr("data-slick-index");
+        $(thm+'[data-index="'+index+'"]').addClass("thumbnail-current");
+    });
+    var slick = $(slider).slick({
+        autoplay: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: true,
+        initialSlide: 2,
+        fade: true
+    });
+    $(thm).on('click',function(){
+        var index = $(this).attr("data-index");
+        $(slider).slick("slickGoTo",index);
+    });
+    $(slider).on('beforeChange',function(event,slick, currentSlide,nextSlide){
+        $(thm).each(function(){
+            $(this).removeClass("thumbnail-current");
+        });
+        $(thm+'[data-index="'+nextSlide+'"]').addClass("thumbnail-current");
+    });
+
+    var ww = window.innerWidth;
+    if(ww < SP_MAX_WIDTH) {
+        $(thm).magnificPopup({
+            items: {src: '#tabBox_popup'},
+            type: 'inline',
+            preloader: true,
+            callbacks: {
+                open: function() {
+                    slick.slick('reinit');
+                }
+            }
+        });
+    }
+
+    var trigger = $('.tabBox_movieStart');
+    trigger.on('click',function() {
+        if(playerReady) {
+            if($(this).parent().hasClass('active')) {
+                $(this).parent().removeClass('active');
+                $(this).prev().fadeOut();
+                $(this).fadeIn();
+            }else {
+                $(this).parent().addClass('active');
+                $(this).prev().fadeIn();
+                $(this).fadeOut();
+                var data = $(this).attr('data-movie');
+                if(data == 'work') {
+                    work.playVideo();
+                }else if(data == 'fitness') {
+                    fitness.playVideo();
+                }else if(data == 'home') {
+                    home.playVideo();
+                }else if(data == 'date') {
+                    date.playVideo();
+                }else if(data == 'shopping') {
+                    shopping.playVideo();
+                }
+            }
+        }else {
+            return;
+        }
+    });
+
+    slick.on('afterChange', function(slick, currentSlide) {
+        if(workStatus == 1) {
+            work.stopVideo();
+        }else if(fitnessStatus == 1) {
+            fitness.stopVideo();
+        }else if(homeStatus == 1) {
+            home.stopVideo();
+        }else if(dateStatus == 1) {
+            date.stopVideo();
+        }else if(shoppingStatus == 1) {
+            shopping.stopVideo();
+        }else {
+        }
+        $('.tabBox_movie').removeClass('active');
+        $('.tabBox_movieArea').hide();
+        trigger.show();
+    });
+	
+
+});
+</script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="https://use.typekit.net/eww2fat.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+
+<body>
+<div id="wrapper"> 
+  
+  <!-- #header -->
+  <div id="CommonHeader"></div>
+  <!-- #header --> 
+  <script type="text/javascript">
+//Clear Header
+jQuery("#CommonHeader").empty();
+/** header.lbi */
+CommonUtils.loadContents("/app/lbi/common/header.lbi", function(contents){jQuery("#CommonHeader").append(contents);});
+/** sp-menu.lbi */
+CommonUtils.loadContents("/app/lbi/common/sp-menu.lbi", function(contents){jQuery("#CommonHeader").append(contents);});
+</script> 
+  
+  <!-- パンくず -->
+  <div id="breadcrumbs">
+    <ul class="clearfix" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+      <li class="home"><a href="/" itemprop="url"><span itemprop="title">&nbsp;</span></a></li>
+      <li><a href="/pj/special/●/" itemprop="url">●</a></li>
+    </ul>
+  </div>
+  <!-- /パンくず　ここまで --> 
+  
+  <!-- flamingo ヘッダーバナー -->
+  <div id="common_header_banner"></div>
+  <!-- /flamingo ヘッダーバナー --> 
+  
+  <div class="gumi_sample2 js-gumi">
+    <div class="bg bg01"></div>
+    <div class="bg bg02"></div>
+    <div class="bg bg03"></div>
+  </div>
+  <script>
+  setRandomClass();
+  setInterval(function () {
+      setRandomClass();
+  }, 2000);
+
+  function setRandomClass() {
+      var ul = $(".js-gumi");
+      var items = ul.find(".bg");
+      var number = items.length;
+      var random = Math.floor((Math.random() * number));
+      items.removeClass("on");
+      items.eq(random).addClass("on");
+  }
+    
+  </script>
+  
+  <!-- #content -->
+  <div id="contents" class="clearfix"> 
+    <!-- #コンテンツ　ここから-->
+    <!-- #コンテンツ　ここまで--> 
+    
+  </div>
+  <!-- #content --> 
+  
+  <!-- #footer -->
+  <div id="CommonFooter"></div>
+  <!-- #footer --> 
+  <script type="text/javascript">
+/** footer.lbi */
+CommonUtils.loadContents("/app/lbi/common/footer.lbi", function(contents){jQuery("#CommonFooter").html(contents);});
+</script> 
+</div>
+<a href="javascript:void(0);" id="back-top" style="display:none;"><span></span></a> 
+<script type="text/javascript">
+var pageData = {
+"navigation": {
+"customerID":"",
+"device":"pc",
+"page_type":"other"
+}};
+</script> 
+<script type="text/javascript">
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.yjtag.jp/tag.js#site=wafn7h2";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
+</script>
+<noscript>
+<iframe src="//b.yjtag.jp/iframe?c=wafn7h2" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
+
+<!-- SiteCatalyst code version: H.15.1.
+Copyright 1997-2008 Omniture, Inc. More info available at
+http://www.omniture.com --> 
+<script language="JavaScript" type="text/javascript"
+src="//www.peachjohn.co.jp/common/front/js/s_code.js"></script> 
+<script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script> 
+<!--/DO NOT REMOVE/--> 
+<!-- End SiteCatalyst code version: H.15.1. --><!-- #BeginLibraryItem "/common/front/library/rtoaster/RecommendNow.lbi" --><script type="text/javascript">
+
+</script> 
+<!-- #footer -->
+<div id="RtoasterSwitcher"></div>
+<!-- #footer --> 
+<script type="text/javascript">
+/** footer.lbi */
+CommonUtils.loadContents("/app/lbi/rtoaster/rtoaster-switcher.lbi", function(contents){jQuery("#RtoasterSwitcher").html(contents);});
+</script> <!-- #EndLibraryItem --> 
+<script type="text/javascript">
+jQuery(document).ready(function(){
+    jQuery(".CallPurchaseItem").bind("click", function(){
+        var itemCode = jQuery(this).attr("itemCode");
+        var dispColorCode = jQuery(this).attr("dispColorCode");
+        var dispSkuCode = jQuery(this).attr("skuCode");
+        var btn = new Purchase({itemCode: itemCode, dispColorCode: dispColorCode, dispSkuCode: dispSkuCode});
+        btn.initializePurchasePanel();
+    });
+});
+</script>
+</body>
+</html>

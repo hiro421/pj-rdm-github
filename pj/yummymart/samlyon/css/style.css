@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+body{
+  font-size: 14px;
+}
+.page-contents{
+  text-align: center;
+  width: 984px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.page-logo{
+  margin:50px auto 80px;
+}
+
+.about{
+  background: url(../img/bg.png) no-repeat center center;
+  background-size: cover;
+  padding: 30px 30px; 
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.about:before{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -40px;
+  background: url(../img/pic01.png) no-repeat left top;
+  width: 134px;
+  height: 134px;
+}
+
+.about h3{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.about p{
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.gif{
+  margin-bottom: 50px;
+}
+
+}
+
+@media screen and (max-width: 768px){
+
+.page-contents{
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.page-contents img{
+  width: 100%;
+  height: auto;
+}
+
+.page-logo{
+  margin:25px auto 40px;
+  padding: 0 20px;
+}
+
+.about{
+  background: url(../img/bg.png) no-repeat center center;
+  background-size: cover;
+  padding: 20px 4vw; 
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.about:before{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -20px;
+  background: url(../img/pic01.png) no-repeat left top;
+  background-size: cover;
+  width: 67px;
+  height: 67px;
+}
+
+.about h3{
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.about p{
+  font-size: 3vw;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.gif{
+  margin-bottom: 30px;
+  padding: 0 20px;
+}  
+
+}

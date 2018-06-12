@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/*
+.p-modal {
+    max-height: 600px;
+    height: auto;
+    overflow: auto;
+    scrollbar-track-color: #f0f0f0;
+    scrollbar-face-color: #000;
+    scrollbar-shadow-color: #000;
+    scrollbar-arrow-color: #f0f0f0;
+}
+
+.c-rule {
+    font-size: 14px;
+}
+*/
+
+.postModalWrap {
+    position: absolute;
+    z-index: 10000;
+    max-width: 800px;
+    width: auto;
+    background: #fff;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+}
+
+.postModalWrap * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.postModalWrap .title {
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 15px 0;
+}
+
+.postModalWrap .about {
+    padding: 30px 0;
+    text-align: left;
+    /* font-size: 12px; */
+    font-size: 14px;
+}
+
+.postModalWrap .c-btn {
+    font-style: normal;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    padding: 12px 30px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    width: auto;
+    height: auto;
+}
+.postModalWrap .c-btn.c-btn--black {
+    font-size: 14px;
+    border: 1px solid #000;
+    padding: 12px 30px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    width: auto;
+    height: auto;
+}
+
+.postModalWrap .ziplist {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.postModalWrap button.mfp-close{
+    top: -44px;
+}
+
+@media screen and (max-width: 768px) {
+    
+.postModalWrap{
+    padding: 15px;
+}
+
+.postModalWrap .title{
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.postModalWrap .about{
+    padding: 15px 0;
+    text-align: left;
+    font-size: 10px;
+}
+
+.postModalWrap .c-btn.c-btn--black {
+    font-size: 11px;
+    border: 1px solid #000;
+    padding: 10px 0px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    width: 100%;
+}
+
+}

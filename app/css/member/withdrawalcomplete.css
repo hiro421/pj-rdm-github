@@ -1,0 +1,130 @@
+/* ====================
+   Object
+   ==================== */
+/* Component
+   -------------------- */
+
+.c-flee-dial {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.c-flee-dial__icon {
+    margin-right: 15px;
+}
+
+.c-flee-dial__number{
+    font-size: 140%;
+}
+
+.c-flee-dial__info {
+    font-size: 94%;
+}
+
+@media screen and (max-width:768px) {
+    .c-flee-dial__info {
+        font-size: 70%;
+    }
+
+    .c-flee-dial__icon {
+        margin-right: 5px;
+        width: 15%;
+    }
+
+    .c-flee-dial__number{
+        font-size: 120%;
+    }
+}
+
+/* Project
+   -------------------- */
+.p-header-title.c-header-title {
+    font-size: inherit;
+    margin-bottom: 40px;
+}
+
+.p-l-main__box--width {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.p-l-main__box--width > .p-l-main__child--width {
+    margin: 0 auto;
+    margin-top:60px;
+    width: 46%;
+    text-align: center;
+}
+
+.p-box__text{
+    font-size: 100%;
+}
+
+.p-customer{
+    margin: 40px auto;
+    padding : 30px;
+    width : 80%;
+    background-color: #EEEEEE;
+}
+
+.p-customer .c-header-title {
+    margin-bottom: 15px;
+    font-size: 120%;
+    font-weight:bolder;
+}
+
+.p-customer .c-flee-dial {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .p-l-main__box--width  {
+        max-width: 90%;
+        width: 90%;
+        text-align:center;
+    }
+
+    .p-l-main__box--width > .p-l-main__child--width {
+        width: 100%;
+        text-align:center;
+    }
+
+    .p-header-title.c-header-title {
+        margin-bottom: 10px;
+        font-size: 100%;
+    }
+
+    .p-header-title--bolder.c-header-title {
+        margin-bottom: 20px;
+        font-size: 90%;
+        font-weight: bolder;
+    }
+
+    .p-customer{
+        padding : 15px 5px;
+        width : 100%;
+    }
+
+    .p-customer .c-header-title {
+        margin-bottom: 10px;
+        font-size: 90%;
+    }
+
+    .p-customer .c-flee-dial {
+        margin-bottom: 10px;
+    }
+	.p-box__text{
+		font-size: 70%;
+	}
+}

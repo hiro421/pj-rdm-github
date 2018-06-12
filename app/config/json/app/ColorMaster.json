@@ -1,0 +1,46 @@
+[
+  {
+    "colorGroupCode": "001",
+    "colorGroupName": "ホワイト"
+  },
+  {
+    "colorGroupCode": "002",
+    "colorGroupName": "ピンク"
+  },
+  {
+    "colorGroupCode": "003",
+    "colorGroupName": "ベージュ"
+  },
+  {
+    "colorGroupCode": "004",
+    "colorGroupName": "イエロー"
+  },
+  {
+    "colorGroupCode": "005",
+    "colorGroupName": "レッド"
+  },
+  {
+    "colorGroupCode": "006",
+    "colorGroupName": "パープル"
+  },
+  {
+    "colorGroupCode": "007",
+    "colorGroupName": "ブルー"
+  },
+  {
+    "colorGroupCode": "008",
+    "colorGroupName": "グリーン"
+  },
+  {
+    "colorGroupCode": "009",
+    "colorGroupName": "ブラウン"
+  },
+  {
+    "colorGroupCode": "010",
+    "colorGroupName": "グレー"
+  },
+  {
+    "colorGroupCode": "011",
+    "colorGroupName": "ブラック"
+  }
+]

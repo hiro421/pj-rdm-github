@@ -1,0 +1,325 @@
+/* ====================
+   Foundation
+   ==================== */
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}
+/* ====================
+   Layout
+   ==================== */
+
+#contents {
+    margin-top: 50px;
+}
+
+.l-main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack:center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.l-main__box {
+    max-width: 50%;
+    width: 50%;
+}
+
+.l-main__box--alone {
+    max-width: 46%;
+    width: 46%;
+}
+
+.l-main__box--border_r {
+    border-right: 1px solid #eee;
+}
+
+@media screen and (max-width:768px) {
+    #contents{
+        margin-top: 20px;
+    }
+
+    .l-main {
+        -webkit-box-align:center;
+        -webkit-box-orient: vertical;
+        -webkit-align-items: center;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .l-main__box {
+        margin-bottom: 24px;
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .l-main__box--border_r {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 24px;
+    }
+}
+
+/* ====================
+   Object
+   ==================== */
+
+/* Component
+   -------------------- */
+
+/**
+ * Button
+ */
+
+.c-btn {
+    border: 0;
+    display: block;
+    font-style: normal;
+    height: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.c-btn:hover {
+    opacity: 0.7;
+}
+
+.c-btn.c-btn--black {
+    background-color: #000;
+    color: #FFF;
+}
+
+.c-btn.c-btn--white {
+    border: 1px solid #000;
+    background-color: #FFF;
+}
+
+/**
+ * Form
+ */
+.c-form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.c-form__input {
+    display: block;
+    height: 40px;
+    margin-bottom:24px;
+    padding-left: 16px;
+    line-height: 1.7;
+    width: 100%;
+}
+
+.c-form__input--last {
+    margin-bottom: 36px;
+}
+
+.c-form__input:placeholder-shown {
+    color: #ccc;
+    padding-left: 16px;
+}
+
+.c-form__checkbox[type="checkbox"].checkBox01:checked + .c-form__checkbox-label {
+    background-size: 22px 44px;
+    background-position: left 130%;
+}
+
+.c-form__checkbox[type="checkbox"].checkBox01 + .c-form__checkbox-label {
+    padding-left: 40px;
+}
+
+.c-form__checkbox[type="checkbox"].checkBox01 + .c-form__checkbox-label:before {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+}
+
+.c-form__group {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.c-form__group--last {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.c-form__group__btn {
+    margin-bottom: 10px;
+}
+
+.c-form__group__btn:last-of-type {
+    margin-bottom: 0;
+}
+
+.c-form__group__err-msg {
+    color: #bd3260;
+    margin-top: 10px;
+    line-height: 1;
+}
+
+.c-form__group__text--small {
+    display: inline-block;
+    font-size: 13px;
+}
+.c-form__group__text--attention {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.c-form__group__input {
+    margin-bottom: 0;
+}
+
+/**
+ * Header
+ */
+
+.c-header-title {
+    border: 0;
+    margin: 0 auto 30px;
+    width: 100%;
+}
+
+.c-header-title__main {
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.c-header-title__sub {
+    font-size: 18px;
+}
+
+@media screen and (max-width:768px) {
+    /**
+     * Button
+     */
+
+    .c-btn {
+        display: block;
+        font-size: 80%;
+        height: 36px;
+    }
+
+    /**
+     * Form
+     */
+
+    .c-form__input {
+        font-size: 70%;
+        height: 30px;
+        margin-bottom:10px;
+        padding-left: 5px;
+    }
+
+    .c-form__input--last {
+        margin-bottom: 22px;
+    }
+
+    .c-form__input:placeholder-shown {
+        font-size:70%;
+        padding-left: 5px;
+    }
+
+    .c-form__checkbox[type="checkbox"].checkBox01:checked + .c-form__checkbox-label {
+        background-size: 15px 30px;
+        background-position: 1px -10px;
+    }
+
+    .c-form__checkbox[type="checkbox"].checkBox01 + .c-form__checkbox-label {
+        font-size: 13px;
+        padding-left: 30px;
+        line-height: 26px;
+    }
+
+    .c-form__checkbox[type="checkbox"].checkBox01 + .c-form__checkbox-label:before {
+        width: 16px;
+        height: 16px;
+    }
+
+    .c-form__group {
+        margin-bottom: 12px;
+    }
+
+    .c-form__group__text--small {
+        font-size: 12px;
+    }
+    .c-form__group__text--attention {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    /**
+     * Header
+     */
+
+    .c-header-title {
+        margin-bottom: 12px;
+    }
+
+    .c-header-title__main {
+        margin-bottom: 2px;
+    }
+
+    .c-header-title__sub {
+        font-size: 12px;
+    }
+}
+
+
+/* Utility
+   -------------------- */
+
+.u-bg-gray {
+    background-color: #ededed !important;
+}
+
+.u-m-top-16px {
+    margin-top: 16px !important;
+}
+
+.u-m-bottom-10px {
+    margin-bottom: 10px !important;
+}
+
+.u-m-bottom-15px {
+    margin-bottom: 15px !important;
+}
+
+.u-small {
+    font-size:80% !important;
+}
+
+.u-text-center {
+    text-align: center !important;
+}
+
+.u-text-underline {
+    text-decoration: underline !important;
+}
+
+@media screen and (max-width:768px) {
+    .u-small {
+        font-size:70% !important;
+    }
+}

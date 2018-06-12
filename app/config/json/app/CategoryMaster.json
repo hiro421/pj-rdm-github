@@ -1,0 +1,762 @@
+[
+  {
+    "floorName": "Bra・Panty",
+    "parentCategory": [
+      {
+        "name": "ブラジャー",
+        "type": "_pcg",
+        "category": [
+          {
+            "type": "_cg",
+            "name": "デイリーユースブラ",
+            "param": "10101"
+          },
+          {
+            "type": "_cg",
+            "name": "谷間ブラ",
+            "param": "10102"
+          },
+          {
+            "type": "_cg",
+            "name": "ボリュームアップブラ",
+            "param": "10103"
+          },
+          {
+            "type": "_cg",
+            "name": "着やせブラ",
+            "param": "10104"
+          },
+          {
+            "type": "_cg",
+            "name": "抜け感ブラ",
+            "param": "10117"
+          },
+          {
+            "type": "_cg",
+            "name": "サマーブラ",
+            "param": "10114"
+          },
+          {
+            "type": "_cg",
+            "name": "セクシーランジェリー",
+            "param": "10107"
+          },
+          {
+            "type": "_cg",
+            "name": "ブラ＆パンティ（ショーツ）セット",
+            "param": "10106"
+          },
+          {
+            "type": "_cg",
+            "name": "ストラップレス・Tシャツブラ・粘着ブラ",
+            "param": "10112"
+          },
+          {
+            "type": "_cg",
+            "name": "ブラトップ・ノンワイヤーブラ・ブラレット",
+            "param": "10110"
+          },
+          {
+            "type": "_cg",
+            "name": "ナイトブラ・インナー",
+            "param": "10113"
+          },
+          {
+            "type": "_cg",
+            "name": "グラマーサイズ（Eカップ以上）",
+            "param": "10105"
+          },
+          {
+            "type": "_cg",
+            "name": "マタニティ下着",
+            "param": "20803"
+          },
+          {
+            "type": "_cg",
+            "name": "ブラ関連グッズ",
+            "param": "10111"
+          }
+        ]
+      },
+      {
+        "name": "パンティ（ショーツ・サニタリー）",
+        "type": "_pcg",
+        "category": [
+          {
+            "type": "_cg",
+            "name": "パンティ（ショーツ）",
+            "param": "10201"
+          },
+          {
+            "type": "_cg",
+            "name": "ソング・Tバック・ガーター",
+            "param": "10202"
+          },
+          {
+            "type": "_al",
+            "name": "チーキー",
+            "param": "160802cheeky"
+          },
+          {
+            "type": "_cg",
+            "name": "ボーイレッグ・ガールズブリーフ",
+            "param": "10203"
+          },
+          {
+            "type": "_cg",
+            "name": "サニタリー",
+            "param": "10204"
+          }
+        ]
+      },
+      {
+        "name": "シリーズ／ブランド",
+        "type": "Series",
+        "category": [
+          {
+            "type": "_sr",
+            "name": "ワークブラ",
+            "param": "334"
+          },
+          {
+            "type": "_sr",
+            "name": "ドリームブラ",
+            "param": "414"
+          },
+          {
+            "type": "_sr",
+            "name": "PJ DAYS",
+            "param": "445"
+          },
+          {
+            "type": "_sr",
+            "name": "フェロモンブラ",
+            "param": "425"
+          },
+          {
+            "type": "_sr",
+            "name": "ヌーディ(R)ブラ",
+            "param": "436"
+          },
+          {
+            "type": "ITM",
+            "name": "胸きゅんブラ",
+            "param": "1014680"
+          },
+          {
+            "type": "_sr",
+            "name": "マキシマムメイカー",
+            "param": "192"
+          },
+          {
+            "type": "_sr",
+            "name": "ボムバスト",
+            "param": "189"
+          },
+          {
+            "type": "_sr",
+            "name": "スリムルック",
+            "param": "430"
+          },
+          {
+            "type": "_sr",
+            "name": "はみ肉グイ寄せ",
+            "param": "391"
+          },
+          {
+            "type": "_sr",
+            "name": "デコルタン",
+            "param": "47"
+          },
+          {
+            "type": "_sr",
+            "name": "PJ model's",
+            "param": "429"
+          },
+          {
+            "type": "_sr",
+            "name": "PJ COLORS",
+            "param": "434"
+          },
+          {
+            "type": "_sr",
+            "name": "グランディーナ",
+            "param": "27"
+          },
+          {
+            "type": "_sr",
+            "name": "Sweet(R) by PJ",
+            "param": "466"
+          },
+          {
+            "type": "_sr",
+            "name": "シアーメイク",
+            "param": "465"
+          },
+          {
+            "type": "_sr",
+            "name": "SALON by PEACH JOHN",
+            "param": "377"
+          },
+          {
+            "type": "_sr",
+            "name": "YUMMY MART",
+            "param": "419"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "floorName": "INNER",
+    "parentCategory": [
+      {
+        "name": "インナー",
+        "type": "_pcg",
+        "category": [
+          {
+            "type": "_cg",
+            "name": "パッド付きインナー",
+            "param": "10504"
+          },
+          {
+            "type": "_cg",
+            "name": "デオドラント",
+            "param": "10502"
+          },
+          {
+            "type": "_cg",
+            "name": "キャミソール・タンク",
+            "param": "10501-10302"
+          },
+          {
+            "type": "_cg",
+            "name": "あったかインナー",
+            "param": "10503"
+          },
+          {
+            "type": "_cg",
+            "name": "透け防止アイテム",
+            "param": "10505"
+          },
+          {
+            "type": "_cg",
+            "name": "補整インナー",
+            "param": "10601"
+          },
+          {
+            "type": "_cg",
+            "name": "スリップ・ベビードール",
+            "param": "10301"
+          },
+          {
+            "type": "_cg",
+            "name": "ランジェリー系ボトム",
+            "param": "10303"
+          },
+          {
+            "type": "_cg",
+            "name": "セクシーランジェリー・コスプレ・ラブグッズ",
+            "param": "10306"
+          }
+        ]
+      },
+      {
+        "name": "シリーズ",
+        "type": "Series",
+        "category": [
+          {
+            "type": "_sr",
+            "name": "PJ UNDER",
+            "param": "449"
+          },
+          {
+            "type": "_sr",
+            "name": "UP DATE",
+            "param": "435"
+          },
+          {
+            "type": "_sr",
+            "name": "My Little Joy",
+            "param": "84"
+          },
+          {
+            "type": "_sr",
+            "name": "CAMI LABEL",
+            "param": "468"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "floorName": "ROOM WEAR",
+    "parentCategory": [
+      {
+        "name": "ルームウエア",
+        "type": "_pcg",
+        "category": [
+          {
+            "type": "_cg",
+            "name": "パジャマ",
+            "param": "10401"
+          },
+          {
+            "type": "_cg",
+            "name": "ワンピース・オールインワン・ネグリジェ",
+            "param": "10403"
+          },
+          {
+            "type": "_cg",
+            "name": "ローブ・バスローブ",
+            "param": "10404"
+          },
+          {
+            "type": "_cg",
+            "name": "ルームシューズ・スリッパ",
+            "param": "10402"
+          },
+          {
+            "type": "_cg",
+            "name": "メンズ",
+            "param": "10901"
+          },
+          {
+            "type": "_cg",
+            "name": "ワンマイルウエア",
+            "param": "10405"
+          },
+          {
+            "type": "_al",
+            "name": "Gift",
+            "param": "170502gift"
+          }
+        ]
+      },
+      {
+        "name": "インテリア",
+        "type": "_pcg",
+        "category": [
+          {
+            "type": "_cg",
+            "name": "寝具・ファブリック",
+            "param": "40101"
+          },
+          {
+            "type": "_cg",
+            "name": "インテリアグッズ",
+            "param": "40201"
+          },
+          {
+            "type": "_cg",
+            "name": "収納グッズ",
+            "param": "40301"
+          },
+          {
+            "type": "_cg",
+            "name": "キッチングッズ",
+            "param": "40401"
+          },
+          {
+            "type": "_cg",
+            "name": "バス用品・トイレタリー用品",
+            "param": "40501"
+          },
+          {
+            "type": "_cg",
+            "name": "掃除グッズ・洗濯用品",
+            "param": "40601"
+          },
+          {
+            "type": "_cg",
+            "name": "芳香剤・消臭剤",
+            "param": "40701"
+          },
+          {
+            "type": "_cg",
+            "name": "ステーショナリー・生活雑貨",
+            "param": "40801"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "floorName": "FASHION",
+    "parentCategory": [
+      {
+        "name": "ファッション",
+        "type": "_pcg",
+        "category": [
+          {
+            "type": "_cg",
+            "name": "キャミソール・タンクトップ・チューブトップ",
+            "param": "20104"
+          },
+          {
+            "type": "_cg",
+            "name": "Tシャツ・カットソー",
+            "param": "20101"
+          },
+          {
+            "type": "_cg",
+            "name": "シャツ・ブラウス",
+            "param": "20102"
+          },
+          {
+            "type": "_cg",
+            "name": "ニット・セーター",
+            "param": "20103"
+          },
+          {
+            "type": "_cg",
+            "name": "カーディガン・ボレロ・ベスト",
+            "param": "20105"
+          },
+          {
+            "type": "_cg",
+            "name": "パーカー・スウェット",
+            "param": "20106"
+          },
+          {
+            "type": "_cg",
+            "name": "ジャケット・コート・ブルゾン",
+            "param": "20401"
+          },
+          {
+            "type": "_cg",
+            "name": "ワンピース・チュニック・ドレス・オールインワン",
+            "param": "20501"
+          },
+          {
+            "type": "_cg",
+            "name": "パンツ・ガウチョパンツ",
+            "param": "20601"
+          },
+          {
+            "type": "_cg",
+            "name": "ショートパンツ",
+            "param": "20602"
+          },
+          {
+            "type": "_cg",
+            "name": "スカート",
+            "param": "20603"
+          },
+          {
+            "type": "_cg",
+            "name": "ストッキング・タイツ・靴下",
+            "param": "20605"
+          },
+          {
+            "type": "_cg",
+            "name": "ＵＶウエア",
+            "param": "60103"
+          }
+        ]
+      },
+      {
+        "name": "水着・スポーツウエア・その他",
+        "type": "_pcg",
+        "category": [
+          {
+            "type": "_cg",
+            "name": "ビキニ・スイムウエア",
+            "param": "20701"
+          },
+          {
+            "type": "_cg",
+            "name": "スポーツウエア",
+            "param": "20702"
+          },
+          {
+            "type": "_cg",
+            "name": "その他",
+            "param": "20802"
+          }
+        ]
+      },
+      {
+        "name": "靴（シューズ）・ファッション雑貨",
+        "type": "_pcg",
+        "category": [
+          {
+            "type": "_cg",
+            "name": "バッグ（鞄）",
+            "param": "30401"
+          },
+          {
+            "type": "_cg",
+            "name": "ポーチ・ケース",
+            "param": "30402"
+          },
+          {
+            "type": "_cg",
+            "name": "帽子・ストール・手袋",
+            "param": "30501"
+          },
+          {
+            "type": "_cg",
+            "name": "アクセサリー（小物・雑貨）",
+            "param": "30601"
+          },
+          {
+            "type": "_cg",
+            "name": "ＵＶグッズ",
+            "param": "60102"
+          },
+          {
+            "type": "_cg",
+            "name": "パンプス・バレエシューズ・フラットシューズ",
+            "param": "30101"
+          },
+          {
+            "type": "_cg",
+            "name": "サンダル",
+            "param": "30102"
+          },
+          {
+            "type": "_cg",
+            "name": "スニーカー・その他",
+            "param": "30104"
+          },
+          {
+            "type": "_cg",
+            "name": "ブーツ",
+            "param": "30103"
+          },
+          {
+            "type": "_cg",
+            "name": "ルームシューズ・スリッパ",
+            "param": "30201"
+          }
+        ]
+      },
+      {
+        "name": "シリーズ／ブランド",
+        "type": "Series",
+        "category": [
+          {
+            "type": "_sr",
+            "name": "PJ BODY STUDIO",
+            "param": "357"
+          },
+          {
+            "type": "_sr",
+            "name": "JARINKO",
+            "param": "398"
+          },
+          {
+            "type": "_al",
+            "name": "SALON by PEACH JOHN",
+            "param": "sa_fas"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "floorName": "BEAUTY",
+    "parentCategory": [
+      {
+        "name": "ビューティケアアイテム",
+        "type": "_pcg",
+        "category": [
+          {
+            "type": "_cg",
+            "name": "バストケア",
+            "param": "50112"
+          },
+          {
+            "type": "_cg",
+            "name": "ヒップケア",
+            "param": "50113"
+          },
+          {
+            "type": "_cg",
+            "name": "デリケートゾーンケア",
+            "param": "50114"
+          },
+          {
+            "type": "_cg",
+            "name": "リップケア",
+            "param": "50104"
+          },
+          {
+            "type": "_cg",
+            "name": "ボディケア",
+            "param": "503"
+          },
+          {
+            "type": "_cg",
+            "name": "メイクアップ",
+            "param": "50201"
+          },
+          {
+            "type": "_cg",
+            "name": "ヘアケア",
+            "param": "50401"
+          },
+          {
+            "type": "_cg",
+            "name": "ハンドケア",
+            "param": "50303"
+          },
+          {
+            "type": "_cg",
+            "name": "スキンケア",
+            "param": "50101"
+          },
+          {
+            "type": "_cg",
+            "name": "オーラルケア",
+            "param": "50501"
+          },
+          {
+            "type": "_cg",
+            "name": "フレグランス（香水）",
+            "param": "50601"
+          },
+          {
+            "type": "_cg",
+            "name": "コフレ・トライアルセット",
+            "param": "50701"
+          },
+          {
+            "type": "_cg",
+            "name": "美容グッズ",
+            "param": "50801"
+          }
+        ]
+      },
+      {
+        "name": "お悩み別",
+        "type": "_pcg",
+        "category": [
+          {
+            "type": "_al",
+            "name": "バストの悩み",
+            "param": "bust_item"
+          },
+          {
+            "type": "_al",
+            "name": "ヒップの悩み",
+            "param": "hip_item"
+          },
+          {
+            "type": "_al",
+            "name": "デリケートゾーンの悩み",
+            "param": "delicate_item"
+          },
+          {
+            "type": "_cg",
+            "name": "脱毛の悩み",
+            "param": "50115"
+          },
+          {
+            "type": "_cg",
+            "name": "保湿対策化粧品",
+            "param": "50107"
+          },
+          {
+            "type": "_cg",
+            "name": "エイジングケア・しわ対策",
+            "param": "50108"
+          },
+          {
+            "type": "_cg",
+            "name": "美白・UV対策",
+            "param": "60101"
+          },
+          {
+            "type": "_cg",
+            "name": "ニキビケア",
+            "param": "50110"
+          },
+          {
+            "type": "_cg",
+            "name": "毛穴・くすみ対策",
+            "param": "50106"
+          },
+          {
+            "type": "_cg",
+            "name": "ダイエットアイテム",
+            "param": "60001"
+          },
+          {
+            "type": "_cg",
+            "name": "デオドラント",
+            "param": "50304"
+          },
+          {
+            "type": "_al",
+            "name": "ラブアイテム",
+            "param": "love_item"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "floorName": "BRAND",
+    "parentCategory": [
+      {
+        "name": "SALON by PEACH JOHN",
+        "type": "_sr",
+        "category": [
+          {
+            "type": "_al",
+            "name": "ALL ITEMS",
+            "param": "sa_all"
+          },
+          {
+            "type": "_al",
+            "name": "BRA&PANTY",
+            "param": "sa_bra"
+          },
+          {
+            "type": "_al",
+            "name": "LINGERIE",
+            "param": "sa_lin"
+          },
+          {
+            "type": "_al",
+            "name": "ROOM WEAR",
+            "param": "sa_room"
+          },
+          {
+            "type": "_al",
+            "name": "GOODS",
+            "param": "sa_oth"
+          }
+        ]
+      },
+      {
+        "name": "YUMMY MART",
+        "type": "_al",
+        "category": [
+          {
+            "type": "_al",
+            "name": "ALL ITEMS",
+            "param": "yummymart"
+          },
+          {
+            "type": "_al",
+            "name": "ブラセット",
+            "param": "yummy_bra"
+          },
+          {
+            "type": "_al",
+            "name": "コスプレ",
+            "param": "yummy_cos"
+          },
+          {
+            "type": "_al",
+            "name": "水着",
+            "param": "yummy_swim"
+          }
+        ]
+      }
+    ]
+  }
+]

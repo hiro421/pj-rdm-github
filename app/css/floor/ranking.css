@@ -1,0 +1,94 @@
+#contents #rt_ranking_top1 #rt_ranking_top1_1 a i,
+#contents #rt_ranking_top1 #rt_ranking_top1_2 a i,
+#contents #rt_ranking_top1 #rt_ranking_top1_3 a i,
+#contents #rt_ranking_top1 #rt_ranking_top1_4 a i,
+#contents #rt_ranking_top1 #rt_ranking_top1_5 a i,
+#contents #rt_ranking_top1 #rt_ranking_top1_6 a i {
+	left: 0px;
+	top: 0px;
+	display: block;
+	position: absolute;
+	z-index: 10;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#contents #rt_ranking_top1 #rt_ranking_top1_1 a i , 
+#contents #rt_ranking_top1 #rt_ranking_35_1 a i , 
+#contents #rt_ranking_top1 #rt_ranking_20_1 a i , 
+#contents #rt_ranking_top1 #rt_ranking_23_1 a i , 
+#contents #rt_ranking_top1 #rt_ranking_32_1 a i , {
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	background-image: url("http://www.peachjohn.co.jp/common/front/img/pj/icon_rank1_top.png");
+}
+
+#contents #rt_ranking_top1 #rt_ranking_top1_2 a i ,
+#contents #rt_ranking_top1 #rt_ranking_35_2 a i , 
+#contents #rt_ranking_top1 #rt_ranking_20_2 a i , 
+#contents #rt_ranking_top1 #rt_ranking_23_2 a i , 
+#contents #rt_ranking_top1 #rt_ranking_32_2 a i , {
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	background-image: url("http://www.peachjohn.co.jp/common/front/img/pj/icon_rank2_top.png");
+}
+
+#contents #rt_ranking_top1 #rt_ranking_top1_3 a i ,
+#contents #rt_ranking_top1 #rt_ranking_35_3 a i , 
+#contents #rt_ranking_top1 #rt_ranking_20_3 a i , 
+#contents #rt_ranking_top1 #rt_ranking_23_3 a i , 
+#contents #rt_ranking_top1 #rt_ranking_32_3 a i , {
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	background-image: url("http://www.peachjohn.co.jp/common/front/img/pj/icon_rank3_top.png");
+}
+
+#contents #rt_ranking_top1 #rt_ranking_top1_4 a i ,
+#contents #rt_ranking_top1 #rt_ranking_35_4 a i , 
+#contents #rt_ranking_top1 #rt_ranking_20_4 a i , 
+#contents #rt_ranking_top1 #rt_ranking_23_4 a i , 
+#contents #rt_ranking_top1 #rt_ranking_32_4 a i , {
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	background-image: url("http://www.peachjohn.co.jp/common/front/img/pj/icon_rank4_top.png");
+}
+
+#contents #rt_ranking_top1 #rt_ranking_top1_5 a i ,
+#contents #rt_ranking_top1 #rt_ranking_35_5 a i , 
+#contents #rt_ranking_top1 #rt_ranking_20_5 a i , 
+#contents #rt_ranking_top1 #rt_ranking_23_5 a i , 
+#contents #rt_ranking_top1 #rt_ranking_32_5 a i , {
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	background-image: url("http://www.peachjohn.co.jp/common/front/img/pj/icon_rank5_top.png");
+}
+
+#contents #rt_ranking_top1 #rt_ranking_top1_6 a i ,
+#contents #rt_ranking_top1 #rt_ranking_35_6 a i , 
+#contents #rt_ranking_top1 #rt_ranking_20_6 a i , 
+#contents #rt_ranking_top1 #rt_ranking_23_6 a i , 
+#contents #rt_ranking_top1 #rt_ranking_32_6 a i , {
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	background-image: url("http://www.peachjohn.co.jp/common/front/img/pj/icon_rank6_top.png");
+}
+
+@media screen and (max-width: 768px) {
+
+.rankingItems .owl-carousel .owl-prev {
+	top: 14vw;
+}
+
+.rankingItems .owl-carousel .owl-next {
+	top: 14vw;
+}
+
+}
+

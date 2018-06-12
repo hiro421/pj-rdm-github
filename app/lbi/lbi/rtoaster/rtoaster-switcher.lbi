@@ -1,0 +1,31 @@
+<script type="text/javascript">
+/** 
+ *    @fileoverview For front page coomon
+ *    @version 2016-12-21
+ *    @require jQuery Ver.1.11.2 and above
+ *    @require CommonParams.js
+ *    @require CommonUtils.js
+ */
+jQuery.getScript( "//js.rtoaster.jp/Rtoaster.Popup.js" )
+    .done(function( script, textStatus ) {
+        if (CommonUtils.isMobile()) {
+            Rtoaster.Popup.register("rt_sppopup_left_slidein");
+        } else {
+            Rtoaster.Popup.register("rt_popup_left_slidein");
+        }
+    });
+//RecommendNow
+var pageId = pagePolicy.getFormData(COMMON_CONSTS.HTTP_COMMON.REQUEST.PREVIOUS_ID);
+var recommendNowUrl = "/app/lbi/rtoaster/RecommendNow/normal.lbi";
+if (pageId == "WE011002" || pageId == "WE011011") {
+    //Item Detail Page
+    recommendNowUrl = "/app/lbi/rtoaster/RecommendNow/itemdetail.lbi";
+} else if (pageId == "WE011001" || pageId == "WE011013") {
+    //Item List Page
+    recommendNowUrl = "/app/lbi/rtoaster/RecommendNow/itemlist.lbi";
+}
+//Load RecommendNow
+jQuery(document).ready(function(){
+    jQuery.getScript(recommendNowUrl);
+});
+</script>

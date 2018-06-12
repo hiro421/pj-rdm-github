@@ -1,0 +1,363 @@
+/* salon用header */
+body.salon #contents,
+body.salon #content-wrapper {
+    margin-top: 160px;
+}
+
+  body.salon .lt-ie9 #header .headArea .inner h1 a {
+    background: url(/pj/salon/img/common/salon_logo_pc.png) no-repeat center center !important; }
+  body.salon #header {
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    height: auto;
+    z-index: 10000;
+    min-width: 984px; }
+    body.salon #header .headArea {
+      background-color: #000;
+      height: auto;
+      position: relative; }
+      body.salon #header .headArea .inner {
+        overflow: hidden;
+        height: 100px;
+        position: relative; }
+        body.salon #header .headArea .inner h1 a {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 172px;
+          height: 50px;
+          margin-left: -86px;
+          margin-top: -25px;
+          background: url(/pj/salon/img/common/salon_logo_pc.png) no-repeat center center;
+          background-size: 172px 50px;
+          border: 0;
+          text-indent: 100%;
+          white-space: nowrap;
+          overflow: hidden; }
+        body.salon #header .headArea .inner .menuBtn {
+          float: left;
+          width: 50px;
+          height: 50px;
+          background: url(/pj/salon/img/common/salon_btn_menu.png) no-repeat left top;
+          margin: 25px 0 0 25px;
+          border: 0;
+          cursor: pointer;
+          text-indent: 100%;
+          white-space: nowrap;
+          overflow: hidden; }
+          body.salon #header .headArea .inner .menuBtn:hover {
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+            opacity: 0.7; }
+        body.salon #header .headArea .inner .btn {
+          float: right;
+          overflow: hidden;
+          margin: 25px 25px 0 0; }
+          body.salon #header .headArea .inner .btn a {
+            display: block;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden; }
+            body.salon #header .headArea .inner .btn a:hover {
+              filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+              opacity: 0.7; }
+          body.salon #header .headArea .inner .btn .wishList {
+            float: left;
+            margin-right: 17px; }
+            body.salon #header .headArea .inner .btn .wishList a {
+              background: url(/pj/salon/img/common/salon_btn_wishlist.png) no-repeat left top;
+              width: 50px;
+              height: 50px; }
+          body.salon #header .headArea .inner .btn .cart {
+            float: left; }
+            body.salon #header .headArea .inner .btn .cart a {
+              background: url(/pj/salon/img/common/salon_btn_cart.png) no-repeat left top;
+              width: 50px;
+              height: 50px; }
+              
+body.salon #gnavi {
+    position: fixed;
+    left: 0;
+    top: 0px;
+    bottom: 0;
+    width: 100%;
+    z-index: 10001;
+    overflow: auto;
+    display: none;
+}
+
+body.salon #gnavi .gnaviInner {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#88000000, EndColorStr=#88000000);
+    /*IE8以下用*/
+}
+
+body.salon #gnavi .gnaviInner .wrap {
+    padding: 0;
+    width: 984px;
+    margin: 100px auto;
+    background-color: #fff;
+    text-align: center;
+}
+
+body.salon #gnavi .gnaviInner .head {
+    position: relative;
+    height: 80px;
+    border-bottom: 4px solid #000;
+    overflow: hidden;
+}
+
+body.salon #gnavi .gnaviInner .head .title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 110px;
+    margin-left: -55px;
+    margin-top: -14px;
+}
+
+body.salon #gnavi .gnaviInner .head .closeBtn {
+    position: absolute;
+    left: 226px;
+    top: 20px;
+}
+
+body.salon #gnavi .gnaviInner .box {
+    border-bottom: 1px solid #000;
+    padding: 30px 0 55px;
+    overflow: hidden;
+    position: relative;
+}
+
+body.salon #gnavi .gnaviInner .box ul {
+    width: 520px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+body.salon #gnavi .gnaviInner .box ul li {
+    border-bottom: 4px solid #dbe0eb;
+}
+
+body.salon #gnavi .gnaviInner .box ul li a {
+    padding: 18px 0 15px;
+    display: block;
+    font-size: 24px;
+    line-height: 1;
+    color: #000;
+    font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "MS Pゴシック", "MS P Gothic", sans-serif;
+}
+
+body.salon #gnavi .gnaviInner .box ul li:first-child {
+    margin-top: 0;
+}
+
+body.salon #gnavi .gnaviInner .box ul li.catTopLogin {
+    border-bottom: 4px solid #96a4c4;
+    margin-bottom: 20px;
+}
+
+body.salon #gnavi .gnaviInner .box ul li.catTop {
+    border-bottom: 4px solid #96a4c4;
+}
+
+body.salon #gnavi .gnaviInner .box ul.fnavi {
+    float: left;
+    position: relative;
+    left: 50%;
+    width: auto;
+    overflow: visible;
+}
+
+body.salon #gnavi .gnaviInner .box ul.fnavi li {
+    float: left;
+    position: relative;
+    left: -50%;
+    border-left: 1px solid #000;
+    line-height: 1;
+    margin-right: 4px;
+    padding-left: 5px;
+    margin-top: 0;
+    border-bottom: none;
+}
+
+body.salon #gnavi .gnaviInner .box ul.fnavi li:first-child {
+    border: none;
+    margin-top: 0;
+}
+
+body.salon #gnavi .gnaviInner .box ul.fnavi li a {
+    color: #333;
+    padding: 0;
+    display: block;
+    font-size: 13px;
+    line-height: 1;
+    color: #000;
+}
+
+body.salon #gnavi .gnaviInner .box p.stitle {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+body.salon #gnavi .gnaviInner .box.bannerArea {
+    border-top: 1px solid #000;
+    padding: 30px 0;
+}
+
+body.salon #gnavi .gnaviInner .box.bannerArea li {
+    float: left;
+    margin-left: 2px;
+    margin-top: 0;
+    line-height: 1;
+    border-bottom: none;
+}
+
+body.salon #gnavi .gnaviInner .box.bannerArea li:first-child {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+body.salon #gnavi .gnaviInner .box.bannerArea li a {
+    padding: 0;
+}
+
+body.salon #gnavi .gnaviInner .box .closeBtn.foot {
+    clear: both;
+    margin-top: 50px;
+}
+
+body.salon #gnavi .gnaviInner .closeBtn {
+    cursor: pointer;
+}
+        
+  body.salon #snsArea {
+    width: 984px;
+    margin: 140px auto 78px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; }
+    body.salon #snsArea h3 {
+      margin-bottom: 25px; }
+    body.salon #snsArea ul {
+      position: relative;
+      left: 50%;
+      float: left; }
+      body.salon #snsArea ul li {
+        position: relative;
+        left: -50%;
+        float: left;
+        margin: 0 15px; }
+        
+  body.salon #bannerArea {
+    width: 984px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden; }
+    body.salon #bannerArea h3 {
+      margin-bottom: 25px; }
+    body.salon #bannerArea ul {
+      overflow: hidden; }
+      body.salon #bannerArea ul li {
+        float: left;
+        margin-left: 15px; }
+        body.salon #bannerArea ul li:first-child {
+          margin-left: 0; }
+  body.salon #shareArea {
+    width: 984px;
+    margin: 78px auto 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; }
+    body.salon #shareArea h3 {
+      margin-bottom: 25px; }
+    body.salon #shareArea ul {
+      position: relative;
+      left: 50%;
+      float: left; }
+      body.salon #shareArea ul li {
+        position: relative;
+        left: -50%;
+        float: left;
+        margin: 0 15px; }
+  body.salon #sl_footer {
+    border-top: 4px solid #000;
+    font-size: 14px;}
+    body.salon #sl_footer #fnavi {
+      width: 600px;
+      position: relative;
+      margin: 0 auto;
+      padding: 14px 0; }
+      body.salon #sl_footer #fnavi ul {
+        display: table;
+        width: 100%; }
+        body.salon #sl_footer #fnavi ul li {
+          display: table-cell;
+          border-right: 1px solid #bcbdbd;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 1;
+          padding: 0 15px; }
+          body.salon #sl_footer #fnavi ul li:first-child {
+            border-left: 1px solid #bcbdbd; }
+          body.salon #sl_footer #fnavi ul li a {
+            display: block;
+            color: #333; }
+    body.salon #sl_footer #copyright {
+      background-color: #000;
+      text-align: center;
+      color: #fff;
+      line-height: 1;
+      padding: 18px 0; }
+body.salon #header .subArea {
+    position: relative;
+    height: 60px;
+    background-color: #fff;
+}
+
+body.salon #header .subArea:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    margin-top: -20px;
+    width: 1px;
+    background-color: #333;
+}
+
+body.salon #header .subArea ul {
+    width: 640px;
+    margin: 0 auto;
+}
+
+body.salon #header .subArea ul li {
+    float: left;
+    width: 320px;
+}
+
+body.salon #header .subArea ul li.ranking {
+    background: url(/pj/salon/img/common/hnavi01.png) no-repeat center center;
+}
+
+body.salon #header .subArea ul li.allitems {
+    background: url(/pj/salon/img/common/hnavi02.png) no-repeat center center;
+}
+
+body.salon #header .subArea ul li:hover {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+}
+
+body.salon #header .subArea ul li a {
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 60px;
+}

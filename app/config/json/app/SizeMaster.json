@@ -1,0 +1,69 @@
+[
+  {
+    "groupName": "カップサイズ",
+    "group": [
+      {
+        "sizeGroupCode": "0101",
+        "sizeGroupName": "A"
+      },
+      {
+        "sizeGroupCode": "0102",
+        "sizeGroupName": "B"
+      },
+      {
+        "sizeGroupCode": "0103",
+        "sizeGroupName": "C"
+      },
+      {
+        "sizeGroupCode": "0104",
+        "sizeGroupName": "D"
+      },
+      {
+        "sizeGroupCode": "0106",
+        "sizeGroupName": "E"
+      },
+      {
+        "sizeGroupCode": "0107",
+        "sizeGroupName": "F"
+      },
+      {
+        "sizeGroupCode": "0108",
+        "sizeGroupName": "G~"
+      }
+    ]
+  },
+  {
+    "groupName": "サイズ",
+    "group": [
+      {
+        "sizeGroupCode": "0202",
+        "sizeGroupName": "S"
+      },
+      {
+        "sizeGroupCode": "0203",
+        "sizeGroupName": "M"
+      },
+      {
+        "sizeGroupCode": "0204",
+        "sizeGroupName": "L"
+      }
+    ]
+  },
+  {
+    "groupName": "シューズサイズ",
+    "group": [
+      {
+        "sizeGroupCode": "0301",
+        "sizeGroupName": "~24.0"
+      },
+      {
+        "sizeGroupCode": "0302",
+        "sizeGroupName": "24.0"
+      },
+      {
+        "sizeGroupCode": "0303",
+        "sizeGroupName": "25.0~"
+      }
+    ]
+  }
+]

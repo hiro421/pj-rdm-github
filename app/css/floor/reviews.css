@@ -1,0 +1,212 @@
+#reviews > ul {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+#reviews > ul > li {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 32%;
+	min-height: 118px;
+	margin: 20px 12px 0 0;
+	letter-spacing: normal;
+	text-align: right;
+	vertical-align: top;
+}
+
+#reviews > ul > li:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: "";
+}
+
+#reviews > ul > li > a {
+	overflow: hidden;
+}
+
+#reviews > ul > li > a:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: "";
+}
+
+#reviews > ul > li img {
+	width: 120px;
+	height: auto;
+	float: left;
+	margin: 0 18px 0 0;
+	border: 1px solid #eee4d4;
+}
+
+#reviews > ul > li i,
+#reviews > ul > li p,
+#reviews > ul > li b {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	text-align: left;
+	width: 175px;
+}
+
+#reviews > ul > li p {
+	margin-top: 7px;
+	color: #333333;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+#reviews > ul > li b {
+	width: 175px;
+	margin-top: 14px;
+	padding-left: 0px;
+	/*background: url(/common/front/img/pj/icon_arrow.gif) 0 0.4em no-repeat;*/
+	color: #333333;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 1.5;
+}
+
+#reviews > ul > li:hover > a > img {
+	border-color: none;
+	opacity: 0.7;
+	*filter: alpha(opacity=70);
+	-ms-filter: "alpha(opacity=70)";
+}
+
+#reviews > ul > li:hover > a > p,
+#reviews > ul > li:hover > a > b {
+	color: #333;
+	text-decoration: underline;
+}
+
+.stars0,
+.stars1,
+.stars2,
+.stars3,
+.stars4,
+.stars5 {
+	width: 65px;
+	height: 14px;
+	background: url(/app/img/common/stars.gif) no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.stars0 {
+	background-position: 0 0;
+}
+
+.stars1 {
+	background-position: 0 -14px;
+}
+
+.stars2 {
+	background-position: 0 -28px;
+}
+
+.stars3 {
+	background-position: 0 -42px;
+}
+
+.stars4 {
+	background-position: 0 -56px;
+}
+
+.stars5 {
+	background-position: 0 -70px;
+}
+
+@media screen and (max-width: 768px) {
+
+#reviews > ul {
+	display: block;
+}
+
+#reviews > ul > li {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 100%;
+	min-height: 100%;
+	margin: 20px 0 0 0;
+	letter-spacing: normal;
+	text-align: right;
+	vertical-align: top;
+}
+
+#reviews > ul > li:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: "";
+}
+
+#reviews > ul > li > a {
+	overflow: hidden;
+}
+
+#reviews > ul > li > a:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: "";
+}
+
+#reviews > ul > li img {
+	width: 25%;
+	height: auto;
+	float: left;
+	margin: 0 0 0 0;
+	border: 1px solid #eee4d4;
+}
+
+#reviews > ul > li i,
+#reviews > ul > li p,
+#reviews > ul > li b {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	text-align: left;
+	width: 70%;
+}
+
+#reviews > ul > li p {
+	margin-top: 0;
+	color: #333333;
+	font-size: 3.125vw;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+#reviews > ul > li b {
+	width: 70%;
+	margin-top: 0;
+	padding-left: 0px;
+	color: #333333;
+	font-size: 3.125vw;
+	font-weight: normal;
+	line-height: 1.5;
+}
+
+#reviews > ul > li:hover > a > img {
+	border-color: none;
+	opacity: 0.7;
+	*filter: alpha(opacity=70);
+	-ms-filter: "alpha(opacity=70)";
+}
+
+#reviews > ul > li:hover > a > p,
+#reviews > ul > li:hover > a > b {
+	color: #333;
+	text-decoration: underline;
+}
+
+}
+

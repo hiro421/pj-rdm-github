@@ -1,0 +1,56 @@
+/* ====================
+   Object
+   ==================== */
+
+/* Component
+   -------------------- */
+
+/* Project
+   -------------------- */
+.p-l-main__box--width {
+    max-width: 100%;
+    width: 100%;
+}
+
+.p-l-main__box--width .p-l-main__child--width {
+    margin: 0 auto;
+    width: 46%;
+}
+.p-explain {
+    margin-bottom: 40px;
+    font-size: 120%;
+}
+
+@media screen and (max-width:768px) {
+    .p-l-main__box--width  {
+        max-width: 93%;
+        width: 93%;
+    }
+
+    .p-l-main__box--width .p-l-main__child--width {
+        width: 100%;
+    }
+
+    .p-explain {
+        margin-bottom: 20px;
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width:396px) {
+    .p-checkbox {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:352px) {
+    .p-checkbox {
+        width: 100%;
+    }
+}
+/* Utility
+   -------------------- */
+
+.u-margin-bottom-0 {
+    margin-bottom: 0 !important;
+}

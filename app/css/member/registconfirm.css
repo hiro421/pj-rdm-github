@@ -1,0 +1,136 @@
+/* ====================
+   Object
+   ==================== */
+
+@media screen and (max-width:768px) {
+}
+/* Project
+   -------------------- */
+.p-l-main__box--width {
+    max-width: 100%;
+    width: 100%;
+}
+
+.p-l-main__box--width .p-l-main__child--width {
+    margin: 0 auto;
+    width: 46%;
+}
+
+.p-list--padding > li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.p-regist-form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    margin-top:40px;
+    margin-bottom: 80px;
+}
+
+.p-regist-form .p-regist-form__header {
+    border-top: 2px solid #000;
+    margin-right:40px;
+    padding-top: 10px;
+    font-weight: bolder;
+    width:235px;
+}
+
+.p-regist-form__content.c-list--border {
+    width: 100%;
+}
+
+.p-regist-form__content .c-form__input {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.p-regist-form__content .c-form__input--inline {
+    margin-bottom: 0;
+    width:49%;
+}
+
+.p-regist-form__content .c-form__input_label {
+    -webkit-flex-basis: 42%;
+    -ms-flex-preferred-size: 42%;
+    flex-basis: 42%;
+}
+
+.p-regist-form__content .c-form__input_value {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    word-break: break-all;
+}
+
+.p-form__group {
+    margin: 0 auto;
+    width: 46%;
+}
+
+.p-form__group__btn {
+    margin-bottom: 10px;
+}
+
+.p-form__group__btn:last-of-type {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width:768px) {
+    .p-l-main__box--width  {
+        max-width: 93%;
+        width: 93%;
+    }
+
+    .p-l-main__box--width .p-l-main__child--width {
+        width: 100%;
+    }
+
+    .p-regist-form {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top:40px;
+        margin-bottom: 50px;
+    }
+
+    .p-regist-form .p-regist-form__header {
+        margin-right:0;
+        padding: 5px 0 5px 20px;
+        width:100%;
+    }
+
+    .p-regist-form__content .c-form__input_label {
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
+    .p-regist-form__content .c-form__input_value {
+        padding-left: 1em;
+        word-break: break-all;
+    }
+
+    .p-form__group {
+        width: 100%;
+    }
+}
+/* Utility
+   -------------------- */
+.u-border-top-none {
+    border-top: none !important;
+}
+
+.u-margin-bottom-0 {
+    margin-bottom: 0 !important;
+}
+
+.u-color-light_gray {
+    color: #ccc !important;
+}

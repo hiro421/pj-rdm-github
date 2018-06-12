@@ -1,0 +1,13 @@
+<div class="p-customer">
+   <h3 class="c-header-title">カスタマーサービス</h3>
+   <div class="c-flee-dial">
+      <div class="c-flee-dial__icon">
+         <img src="/app/img/member/withdrawalcomplete/freedial.png" alt ="フリーダイヤル">
+      </div>
+      <div class="c-flee-dial__number">0120-066-107</div>
+   </div>
+   <p class="c-flee-dial__info">
+                       （平日9:00～20:00 土日祝10:00～18:00 受付／年末年始を除き年中無休／通話料無料）<br>
+                       ※ご利用いただけない場合（IP電話など）は098-993-9007（有料）へ。
+   </p>
+</div>

@@ -1,0 +1,839 @@
+.floor-menu {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+.floor-menu {
+	display: block;
+	z-index: 10001;
+	overflow: auto;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.floor-menu * {
+	box-sizing: border-box;
+}
+
+.floor-menu a {
+	color: black;
+}
+
+.floor-menu b {
+	font-weight: normal;
+}
+
+.floor-menu .floorMenuInner .wrap {
+	padding: 0;
+	width: 100%;
+	background-color: #fff;
+}
+
+.floor-menu .floorMenuInner .subtitle-center {
+	text-align: center;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.2rem;
+}
+
+.floor-menu .floorMenuInner .head {
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+	background-color: #eee;
+	display: table;
+	width: 100%;
+}
+
+.floor-menu .floorMenuInner .head .account {
+	text-align: center;
+	float: left;
+	font-size: 1.2rem;
+	width: 100%;
+	padding-right: 40px;
+}
+
+.floor-menu .floorMenuInner .head .closeBtn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+	height: 40px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	border-left: 1px solid #d2d2d2;
+	-webkit-transform: translate3d(0, 0, 1px);
+	transform: translate3d(0, 0, 1px);
+	z-index: 10000;
+}
+
+.floor-menu .floorMenuInner .head .closeBtn:before {
+	content: "";
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	width: 10px;
+	height: 10px;
+	background: url(../img/common/ico_delete.svg) no-repeat center center;
+	background-size: 10px 10px;
+}
+
+.floor-menu .floorMenuInner .banner {
+	width: 100%;
+	padding: 20px 0 30px;
+}
+
+.floor-menu .floorMenuInner .banner ul {
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.floor-menu .floorMenuInner .banner ul li {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.floor-menu .floorMenuInner .banner ul li.pj {
+	margin: 0 23% 20px;
+}
+
+.floor-menu .floorMenuInner .banner ul li.pj a {
+	background: url(../renewal_common/img/common/foot_logo_pj.png) no-repeat left top;
+	background-size: contain;
+	width: 145px;
+	height: 17px;
+}
+
+.floor-menu .floorMenuInner .banner ul li.salon {
+	margin: 0 10px;
+}
+
+.floor-menu .floorMenuInner .banner ul li.salon a {
+	background: url(../renewal_common/img/common/foot_logo_salon.png) no-repeat left top;
+	background-size: contain;
+	width: 85px;
+	height: 26px;
+}
+
+.floor-menu .floorMenuInner .banner ul li.yummymart {
+	margin: 0 10px;
+}
+
+.floor-menu .floorMenuInner .banner ul li.yummymart a {
+	background: url(../renewal_common/img/common/foot_logo_yummy.png) no-repeat left top;
+	background-size: contain;
+	width: 130px;
+	height: 15px;
+}
+
+.floor-menu .floorMenuInner .banner ul li a {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+}
+
+.floor-menu .floorMenuInner .banner ul li a:hover {
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	opacity: 0.7;
+}
+
+.floor-menu .floorMenuInner .block {
+	margin-top: 0;
+}
+
+.floor-menu .floorMenuInner .block .BrowsingHistory {
+	border-bottom: 1px solid #eaeaea;
+}
+
+.floor-menu .floorMenuInner .block .BrowsingHistory b a {
+	display: block;
+	padding: 3% 0% 3% 2%;
+	text-decoration: none;
+	position: relative;
+	font-size: 1.1rem;
+}
+
+.floor-menu .floorMenuInner .block .BrowsingHistory b a:before {
+	content: "MORE";
+	position: absolute;
+	right: 1%;
+	top: 50%;
+	margin-top: -10px;
+	width: 50px;
+	height: 20px;
+	line-height: 20px;
+	background: url(../renewal_common/img/common/arrow_right.svg) no-repeat right center;
+	background-size: 6px 10px;
+}
+
+.floor-menu .floorMenuInner .block .BrowsingHistory div.none {
+	text-align: center;
+	color: #dcdcdc;
+	font-size: 1.5rem;
+	padding: 15px 0;
+}
+
+.floor-menu .floorMenuInner .block .wishList b a {
+	display: block;
+	padding: 3% 0% 3% 20px;
+	text-decoration: none;
+	position: relative;
+	font-size: 1.1rem;
+}
+
+.floor-menu .floorMenuInner .block .wishList b a:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -6px;
+	width: 15px;
+	height: 12px;
+	background: url(../renewal_common/img/common/ico_wish.svg) no-repeat right center;
+	background-size: 15px 12px;
+}
+
+.floor-menu .floorMenuInner .block .wishList b a:before {
+	content: "MORE";
+	position: absolute;
+	right: 1%;
+	top: 50%;
+	margin-top: -10px;
+	width: 50px;
+	height: 20px;
+	line-height: 20px;
+	background: url(../renewal_common/img/common/arrow_right.svg) no-repeat right center;
+	background-size: 6px 10px;
+}
+
+.floor-menu .floorMenuInner .block .wishList div ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: nowrap;
+	flex-flow: nowrap;
+	-webkit-flex-flow: nowrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+
+.floor-menu .floorMenuInner .block .special100 b a {
+	display: block;
+	padding: 3% 0% 3% 25px;
+	text-decoration: none;
+	position: relative;
+	font-size: 1.1rem;
+}
+
+.floor-menu .floorMenuInner .block .special100 b a:after {
+	content: "";
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	margin-top: -6px;
+	width: 15px;
+	height: 12px;
+	background: url(../renewal_common/img/common/ico_100.png) no-repeat right center;
+	background-size: 15px 12px;
+}
+
+.floor-menu .floorMenuInner .block .keywords {
+	border: 1px solid #dcdcdc;
+	width: 100%;
+	height: 25px;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-top: 4%;
+	position: relative;
+}
+
+.floor-menu .floorMenuInner .block .keywords #keyword {
+	display: block;
+	width: 100%;
+	height: 25px;
+	position: relative;
+	margin: 0;
+	padding: 5px 18px 5px 5px;
+	border: none;
+	background: #ffffff;
+	font-size: 1rem;
+	line-height: 25px;
+	outline: none;
+}
+
+.floor-menu .floorMenuInner .block .keywords .submit {
+	display: block;
+	width: 10%;
+	height: 25px;
+	position: absolute;
+	right: 1px;
+	top: 0;
+	border: none;
+	background: url(../renewal_common/img/common/ico_search.svg) center center no-repeat;
+	background-size: 10px 10px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+	outline: none;
+}
+
+.floor-menu .floorMenuInner .block > ul {
+	padding: 0 1.6875%;
+}
+
+.floor-menu .floorMenuInner .block > ul > li {
+	font-size: 1.4rem;
+}
+
+.floor-menu .floorMenuInner .block > ul > li > ul > li {
+	position: relative;
+	border-bottom: 1px solid #eaeaea;
+	margin-left: 5%;
+	font-size: 1rem;
+}
+
+.floor-menu .floorMenuInner .block > ul > li > ul > li > a {
+	display: block;
+	padding: 3% 0% 3% 2%;
+	text-decoration: none;
+	position: relative;
+}
+
+.floor-menu .floorMenuInner .block > ul > li > ul > li > a.trigger:before {
+	content: "";
+	position: absolute;
+	right: 6px;
+	top: 50%;
+	margin-top: -6px;
+	width: 12px;
+	height: 12px;
+	padding-right: 1%;
+	background: white url(../renewal_common/img/common/ico_plus.svg) no-repeat left top;
+	background-size: 12px 12px;
+}
+
+.floor-menu .floorMenuInner .block > ul > li > ul > li > a.access:before {
+	content: "";
+	position: absolute;
+	right: 6px;
+	top: 50%;
+	margin-top: -6px;
+	width: 12px;
+	height: 12px;
+	padding-right: 1%;
+	background: white url(../renewal_common/img/common/arrow_right.svg) no-repeat left top;
+	background-size: 12px 12px;
+}
+
+.floor-menu .floorMenuInner .block > ul > li > ul > li > a.trigger.none-submenu:before {
+	background: white url(../renewal_common/img/common/ico_plus.svg) no-repeat left top;
+	background-size: 12px 12px;
+}
+
+.floor-menu .floorMenuInner .block > ul > li > ul > li > a.trigger.active-submenu:before {
+	background: white url(../renewal_common/img/common/ico_minus.svg) no-repeat left top;
+	background-size: 12px 12px;
+}
+
+.floor-menu .floorMenuInner .block > ul > li > ul > li > div {
+	position: relative;
+}
+
+.floor-menu .floorMenuInner .block > ul > li > ul > li > div > div > ul {
+	border-top: 1px solid #eaeaea;
+}
+
+.floor-menu .floorMenuInner .block > ul > li > ul > li > div > div > ul > li {
+	position: relative;
+	border-bottom: 1px solid #eaeaea;
+	margin-left: 5%;
+}
+
+.floor-menu .floorMenuInner .block > ul > li > ul > li > div > div > ul > li:last-child {
+	border-bottom: none;
+}
+
+.floor-menu .floorMenuInner .block > ul > li > ul > li > div > div > ul > li > a {
+	display: block;
+	padding: 3% 0% 3% 2%;
+	text-decoration: none;
+	position: relative;
+}
+
+.floor-menu .floorMenuInner .block .sub-category-inmenu {
+	margin-left: 0% !important;
+}
+
+.floor-menu .floorMenuInner .block > ul > li.categories > b > a {
+	position: relative;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+.floor-menu .floorMenuInner .block > ul > li.categories > b > a:before {
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: 0px;
+	width: 13px;
+	height: 1px;
+	background: #333;
+}
+
+.floor-menu .floorMenuInner .block > ul > li.categories > b > a:after {
+	content: "";
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	margin-top: -6px;
+	width: 1px;
+	height: 13px;
+	background: #333;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.floor-menu .floorMenuInner .block > ul > li.categories > b > a.none-submenu:after {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.floor-menu .floorMenuInner .block > ul > li.categories > b > a.active-submenu:after {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.floor-menu .floorMenuInner .block > ul > li.categories > b.none-submenu > a:after {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.floor-menu .floorMenuInner .block > ul > li.categories > b.active-submenu > a:after {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.floor-menu .floorMenuInner .block a.active-submenu {
+	border-bottom: 1px solid #eaeaea;
+}
+
+.floor-menu .floorMenuInner .block > ul > li > b > a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	position: relative;
+	font-size: 1.4rem;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.floor-menu .floorMenuInner .block > ul > li:first-child > b > a {
+	border-top: 1px solid #eaeaea;
+}
+
+.floor-menu .floorMenuInner .block > ul > li > b > a:before {
+	content: "";
+	position: absolute;
+	right: 1%;
+	top: 50%;
+	margin-top: -6px;
+	width: 6px;
+	height: 10px;
+	background: url(../renewal_common/img/common/arrow_right.svg) no-repeat left top;
+	background-size: 6px 10px;
+}
+
+.floor-menu .floorMenuInner .block .acoCont {
+	display: none;
+}
+
+.floor-menu .floorMenuInner .block .inline-list {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.floor-menu .floorMenuInner .block .categories:last-child > .inline-list:last-child {
+	border: none;
+}
+
+.floor-menu .floorMenuInner .block .inline-list-border {
+	border-bottom: 1px solid #eaeaea;
+}
+
+.floor-menu .floorMenuInner .block .inline-list li {
+	border: none;
+	width: 44%;
+	display: inline-block;
+	font-size: 1.1rem;
+	vertical-align: middle;
+	padding: 5px 0px;
+}
+
+.floor-menu .floorMenuInner .block .inline-list-submenu {
+	margin-left: 20px;
+}
+
+.floor-menu .floorMenuInner .block .inline-list-submenu li {
+	padding-left: 3%;
+	width: 48%;
+}
+
+.floor-menu .floorMenuInner .block .subcategory {
+	font-size: 1.3rem !important;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.floor-menu .floorMenuInner .block .subcategory:before {
+	margin-right: -6px;
+}
+
+.floor-menu .floorMenuInner .block .subcategory p {
+	margin-left: 10px;
+}
+
+.floor-menu .floorMenuInner .block .inline-list .first {
+	font-weight: bold;
+}
+
+.floor-menu .floorMenuInner .block .inline-list .inlist-title {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #eaeaea;
+	width: 90%;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+.floor-menu .floorMenuInner .block .acoCont .submenu-button {
+	display: inline-block;
+	margin-top: 10px;
+	width: 49%;
+	position: relative;
+}
+
+.floor-menu .floorMenuInner .block .acoCont .btnBox {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	margin-left: 3px;
+}
+
+.floor-menu .floorMenuInner .block .acoCont .btnBox a {
+	font-size: 1.1rem !important;
+}
+
+.floor-menu .floorMenuInner .block > a {
+	display: block;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks {
+	width: 100%;
+	text-align: center;
+	margin-top: 25px;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks .inline-blocks-list li {
+	display: inline-block;
+	text-align: center;
+	vertical-align: center;
+	height: 36px;
+	width: 36px;
+	border: 2px solid #D2D2D2;
+	background-color: #FFFFFF;
+	position: relative;
+	margin: 0.4%;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks .inline-blocks-list p { /*
+            	top: 50%;
+            	left: 50%;
+            	margin: 0;
+            	position: absolute;
+            	left: 50%;
+            	transform: translate(-50%, -50%);
+            */
+	line-height: 32px;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks .inline-blocks-list a {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks .bra {
+	margin-bottom: 25px;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks .bra li {
+	display: inline-block;
+	margin: 1%;
+	margin-top: 7px;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks .bra .white {
+	background: url(/pj/bra/img/bra-01.png) top no-repeat;
+	background-size: 50px 35px;
+	width: 50px;
+	height: 35px;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks .bra .pink {
+	background: url(/pj/bra/img/bra-02.png) top no-repeat;
+	background-size: 50px 35px;
+	width: 50px;
+	height: 35px;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks .bra .beige {
+	background: url(/pj/bra/img/bra-03.png) top no-repeat;
+	background-size: 50px 35px;
+	width: 50px;
+	height: 35px;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks .bra .yellow {
+	background: url(/pj/bra/img/bra-04.png) top no-repeat;
+	background-size: 50px 35px;
+	width: 50px;
+	height: 35px;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks .bra .blue {
+	background: url(/pj/bra/img/bra-05.png) top no-repeat;
+	background-size: 50px 35px;
+	width: 50px;
+	height: 35px;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks .bra .red {
+	background: url(/pj/bra/img/bra-06.png) top no-repeat;
+	background-size: 50px 35px;
+	width: 50px;
+	height: 35px;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks .bra .purple {
+	background: url(/pj/bra/img/bra-07.png) top no-repeat;
+	background-size: 50px 35px;
+	width: 50px;
+	height: 35px;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks .bra .green {
+	background: url(/pj/bra/img/bra-08.png) top no-repeat;
+	background-size: 50px 35px;
+	width: 50px;
+	height: 35px;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks .bra .grey {
+	background: url(/pj/bra/img/bra-09.png) top no-repeat;
+	background-size: 50px 35px;
+	width: 50px;
+	height: 35px;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks .bra .black {
+	background: url(/pj/bra/img/bra-10.png) top no-repeat;
+	background-size: 50px 35px;
+	width: 50px;
+	height: 35px;
+}
+
+.floor-menu .floorMenuInner .block .cup-color-blocks .bra p {
+	padding-top: 40px;
+}
+
+.floor-menu .floorMenuInner .block .buttons-group {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	padding-right: 5px;
+	overflow: hidden;
+}
+
+.floor-menu .floorMenuInner .block .buttons-group .col {
+	padding-left: 8px;
+	width: 33%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	float: left;
+}
+
+.floor-menu .floorMenuInner .block .buttons-group .col .grey-button {
+	border: 1px solid #000000;
+}
+
+.floor-menu .floorMenuInner .block .buttons-group .col .grey-button span {
+	line-height: 1.2;
+	display: inline-block;
+}
+
+.floor-menu .floorMenuInner .block .buttons-group .col div {
+	margin: 0;
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	text-align: center;
+	position: relative;
+	height: 50px;
+}
+
+.floor-menu .floorMenuInner .block .buttons-group .col div a,
+.floor-menu .floorMenuInner .block .buttons-group .col div > span {
+	font-size: 13px;
+	color: #000;
+	padding: 13px 10px 13px 0px;
+	display: block;
+}
+
+.floor-menu .floorMenuInner .block .buttons-group .multi-line div a,
+.floor-menu .floorMenuInner .block .buttons-group .multi-line div > span {
+	padding: 8px 10px 16px 0px;
+	max-height: 50px;
+}
+
+.floor-menu .floorMenuInner .block .buttons-group .col div a {
+	position: relative;
+}
+
+.floor-menu .floorMenuInner .block .buttons-group .col div a:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	vertical-align: middle;
+	left: auto;
+	right: 8px;
+	width: 6px;
+	height: 6px;
+	border-top: 1px solid #333;
+	border-right: 1px solid #333;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.floor-menu .floorMenuInner .submenu-button > a:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	vertical-align: middle;
+	left: auto;
+	right: 8px;
+	width: 6px;
+	height: 6px;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.floor-menu .floorMenuInner h3 {
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1;
+	padding: 4.6875%;
+	border-bottom: 1px solid #000;
+	position: relative;
+}
+
+.floor-menu .floorMenuInner h3:before {
+	content: "";
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	margin-top: -5px;
+	width: 6px;
+	height: 10px;
+	background: url(../renewal_common/img/common/arrow_right.svg) no-repeat left top;
+	background-size: 6px 10px;
+}
+
+.floor-menu .floorMenuInner h3.trigger:before {
+	content: "";
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	margin-top: -3px;
+	width: 10px;
+	height: 6px;
+	background: url(../renewal_common/img/common/arrow_down_single.svg) no-repeat left top;
+	background-size: 10px 6px;
+}
+
+.floor-menu .floorMenuInner h3.trigger.none-submenu:before {
+	background: url(../renewal_common/img/common/arrow_down_single.svg) no-repeat left top;
+	background-size: 10px 6px;
+}
+
+.floor-menu .floorMenuInner h3.trigger.active-submenu:before {
+	background: url(../renewal_common/img/common/arrow_up.svg) no-repeat left top;
+	background-size: 10px 6px;
+}
+
+.floor-contents-title {
+	display: block;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 3px;
+	margin-bottom: 5px;
+	color: black;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.floor-contents-title-border-black {
+	border-bottom: 1px solid black;
+}
+
+.floor-contents-title-border-grey {
+	border-bottom: 2px solid #D2D2D2;
+	margin-bottom: 10px;
+}
+
+.floor-menu .floorMenuInner .concept-image {
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 25px;
+}
+
+.btnBox div a {
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+	font-size: 1rem;
+	padding: 6px 20px;
+	display: block;
+}
+
+}
+

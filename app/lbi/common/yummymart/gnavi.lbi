@@ -1,0 +1,33 @@
+<div class="sb-slidebar sb-left">
+	<div id="yummyGnavi">
+		<ul>
+			<li><a href="https://www.peachjohn.co.jp/member/login/" class="sb-close"><img src="/app/img/yummymart/gnavi03_off.png" alt="LOGIN　ログイン"></a></li>
+			<li><a class="toggle none-submenu"><img src="/app/img/yummymart/gnavi_cate_off.jpg" alt="カテゴリ" class="off"><img src="/app/img/yummymart/gnavi_cate_cur.jpg" alt="カテゴリ" class="current"></a>
+				<ul class="child" style="display: none;">
+					<li><a href="https://www.peachjohn.co.jp/pjitem/list/?_al=yummymart&amp;outlet=include&amp;sort=6&amp;_pcg=101&amp;_dm=2&amp;count=60&amp;sid=ym_menu_braset" class="sb-close"><img src="/app/img/yummymart/gnavi_braset_off.jpg" alt="BRASET"></a></li>
+					<li><a href="https://www.peachjohn.co.jp/pjitem/list/?_al=yummymart&amp;outlet=include&amp;sort=6&amp;_fl=PJ_FLR_6F&amp;_dm=2&amp;count=60&amp;sid=ym_menu_roomwear" class="sb-close"><img src="/app/img/yummymart/gnavi_room_off.jpg" alt="ROOM WEAR"></a></li>
+					<li><a href="https://www.peachjohn.co.jp/pjitem/list/?_al=yummymart&amp;outlet=include&amp;sort=6&amp;_cg=10306&amp;_dm=2&amp;count=60&amp;sid=ym_menu_cosplay" class="sb-close"><img src="/app/img/yummymart/gnavi_cos_off.jpg" alt="コスプレ"></a></li>
+					<li><a href="https://www.peachjohn.co.jp/pjitem/list/?_al=yummymart&amp;outlet=include&amp;sort=6&amp;_cg=20701&amp;_dm=2&amp;count=60&amp;sid=ym_menu_swimwear" class="sb-close"><img src="/app/img/yummymart/gnavi_swim_off.jpg" alt="水着"></a></li>
+					<li><a href="https://www.peachjohn.co.jp/pjitem/list/?_al=yummymart&amp;outlet=include&amp;sort=6&amp;_pcg=401&amp;_dm=2&amp;count=60&amp;sid=ym_menu_goods" class="sb-close"><img src="/app/img/yummymart/gnavi_goods_off.jpg" alt="雑貨"></a></li>
+				</ul>
+			</li>
+			<li><a href="https://www.peachjohn.co.jp/shopping/bag/" class="sb-close"><img src="/app/img/yummymart/gnavi04_off.png" alt="CART　カートを見る"></a></li>
+			<li><a href="https://www.peachjohn.co.jp/member/wishlist/" class="sb-close"><img src="/app/img/yummymart/gnavi05_off.png" alt="WISH LIST ほしいものリスト"></a></li>
+			<li><a href="https://www.peachjohn.co.jp/pj/cliplist/" class="sb-close"><img src="/app/img/yummymart/gnavi_likes_off.jpg" alt="LIKES お気に入り"></a></li>
+			<li><a href="https://www.peachjohn.co.jp/pj/yummymart/#yummyMovie" class="sb-close"><img src="/app/img/yummymart/gnavi_news_off.jpg" alt="ニュース"></a></li>
+			<li><a href="https://www.peachjohn.co.jp/pj/special/ranking/yummy.html?sid=ym_menu_ranking" class="sb-close"><img src="/app/img/yummymart/gnavi_rank_off.jpg" alt="ランキング"></a></li>
+			<li><a href="https://www.peachjohn.co.jp/pj/yummymart/harajuku.html?sid=ym_menu_store" class="sb-close"><img src="/app/img/yummymart/gnavi_shop_off.jpg" alt="店舗"></a></li>
+			
+			<!--<li><a href="https://www.peachjohn.co.jp/member/rules/" class="sb-close"><img src="img/gnavi02_off.png" alt="REGISTER 会員登録" class="rollover"/></a></li>
+			-->
+			
+		</ul>
+	</div>
+	<div id="yummyGnaviLogo">
+		<ul>
+			<li style="border-bottom: 0;"><a href="/pj/yummymart/?sid=ym_menu_ym"><img src="/app/img/yummymart/gnavi_logoym.jpg" alt=""></a> </li>
+			<li style="border-bottom: 0;"><a href="/pj/?sid=ym_menu_pj"><img src="/app/img/yummymart/gnavi_logopj.jpg" alt=""></a> </li>
+			<li style="border-bottom: 0;"><a href="/pj/salon/?sid=ym_menu_sl"><img src="/app/img/yummymart/gnavi_logosl.jpg" alt=""></a> </li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,40 @@
+/* ====================
+   Layout
+   ==================== */
+
+#contents {
+    width: 1080px;
+}
+
+@media screen and (max-width:768px) {
+    #contents{
+        width: auto;
+    }
+}
+
+/* ====================
+   Object
+   ==================== */
+
+/* Project
+   -------------------- */
+
+.p-form--small {
+    width:82%;
+}
+
+.p-free-area {
+    margin-top: 16px;
+    padding: 20px 86px;
+}
+
+@media screen and (max-width:768px) {
+    .p-form--small {
+        width:100%;
+    }
+
+    .p-free-area {
+        font-size: 12px;
+        padding: 16px 25px;
+    }
+}

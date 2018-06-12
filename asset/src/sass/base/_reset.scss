@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Noto Serif Japanese'; /* font-family名を指定 */
+  font-style: normal;
+  font-weight: 400; /* CSS記述時の対応ウェイトを指定 */
+  src: url("../fonts/NotoSerifJP-Regular.woff") format('woff'),
+       url("../fonts/NotoSerifJP-Regular.otf")  format('opentype');
+       /* フォントファイル読み込み */
+  font-display: swap;/* 読み込みが終わるまでデバイスフォントで表示（対応ブラウザはまだ少ない記述のようです） */
+}
+
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/NotoSerifJP-SemiBold.woff") format('woff'),
+       url("../fonts/NotoSerifJP-SemiBold.otf")  format('opentype');
+  font-display: swap;
+}
+
+body {
+  &.android{
+    #gumiwire{
+      font-family: 'Noto Serif Japanese', "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", "YuMincho", "MS P明朝", "MS PMincho", serif;
+    }
+  }
+}
+
+#gumiwire{
+  font-family: $default-font;
+}
+
+.serif {
+  font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "游明朝体", "Yu Mincho", "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, serif;
+}

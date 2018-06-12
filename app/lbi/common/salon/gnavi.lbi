@@ -1,0 +1,56 @@
+<div id="gnavi" style="display:none;">
+    <div class="gnaviInner">
+        <div class="wrap">
+            <div class="head">
+                <p class="title"><img src="/pj/salon/img/common/gnavi_title_menu.png" alt="MENU"/></p>
+                <div class="closeBtn"><img src="/pj/salon/img/common/gnavi_close_btn_head.png" alt="close"/></div>
+            </div>
+            <div class="box">
+                <ul>
+                    <li class="catTopLogin"><a href="https://www.peachjohn.co.jp/member/login/">ログイン／会員登録</a></li>
+                    <li><a href="https://www.peachjohn.co.jp/shopping/bag/">カート</a></li>
+                    <li><a href="https://www.peachjohn.co.jp/member/wishlist/">ほしいものリスト</a></li>
+                    <li><a href="https://www.peachjohn.co.jp/pj/cliplist/">お気に入り</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <p class="stitle"><img src="/pj/salon/img/common/gnavi_title_category.png" alt="CATEGORY"/></p>
+                <ul>
+                    <li class="catTop"><a href="/pjitem/list/?_al=sa_all&outlet=include&_iid=0&sort=6">全てのアイテム</a></li>
+                    <li><a href="/pjitem/list/?_al=sa_bra&outlet=include&_iid=0&sort=6">ブラジャー</a></li>
+                    <li><a href="/pjitem/list/?_al=sa_lin&outlet=include&_iid=0&sort=6">ランジェリー</a></li>
+                    <li><a href="/pjitem/list/?_al=sa_room&outlet=include&_iid=0&sort=6">ルームウェア</a></li>
+                    <li><a href="/pjitem/list/?_al=sa_oth&outlet=include&sort=6">グッズ</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <p class="stitle specialTitle"><img src="/pj/salon/img/common/gnavi_title_special.png" alt="SPECIAL"/></p>
+                <ul>
+                    <li><a href="/pj/salon/column/">コラム</a></li>
+                    <li><a href="/pj/salon/interview/">インタビュー</a></li>
+                    <li><a href="/pj/salon/ranking/">ランキング</a></li>
+                    <li><a href="/pj/salon/pickup/">口コミ人気アイテム</a></li>
+                    <li><a href="/pj/salon/store/">ストア</a></li>
+                    <li><a href="/pj/salon/about/">SALON by PEACH JOHNについて</a></li>
+                </ul>
+            </div>
+            <div class="box bannerArea">
+                <ul>
+                    <li><a href="https://www.peachjohn.co.jp/"><img src="/pj/salon/img/common/gnavi_foot_banner01.png" alt="PEACH JOHN"/></a></li>
+                    <li><a href="https://www.peachjohn.co.jp/pj/beauty/"><img src="/pj/salon/img/common/gnavi_foot_banner02.png" alt="PEACH JOHN Beauty"/></a></li>
+                    <li><a href="https://www.peachjohn.co.jp/pj/yummymart/"><img src="/pj/salon/img/common/gnavi_foot_banner03.png" alt="YUMMY MART"/></a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul class="fnavi clearfix">
+                    <li><a href="https://www.peachjohn.co.jp/al/faq/">お問い合わせ</a></li>
+                    <li><a href="https://www.peachjohn.co.jp/al/info/about/">会社概要</a></li>
+                    <li><a href="https://www.peachjohn.co.jp/al/rule/privacy_policy.html">プライバシーポリシー</a></li>
+                    <li><a href="https://www.peachjohn.co.jp/al/info/browser/">推奨環境</a></li>
+                    <li><a href="https://www.peachjohn.co.jp/al/rule/">ご利用ガイド</a></li>
+                </ul>
+                <div class="closeBtn foot"><a href="javascript:void(0)" onClick="setmenu(false);"><img src="/pj/salon/img/common/gnavi_close_btn_bottom.png" alt=""/></a></div>
+            </div>
+        </div>
+    </div>
+</div>

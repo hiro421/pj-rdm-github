@@ -1,0 +1,2847 @@
+#header{
+  @include max{
+    margin-top: -35px!important;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+}
+
+#wrapper{
+  @include max{
+  margin-top: 0px!important;
+  }
+}
+
+#contents{
+  width: auto;
+  @include max{
+  margin-top: 50px!important;
+  }
+}
+#breadcrumbs{
+  @include max{
+    display: none;
+  }
+}
+
+#wrapper {
+  position: relative;
+#contents{
+  position: relative;
+}
+#gumiwire{
+/*
+  opacity: 0;
+  transition: 1s;
+*/
+.bg_wrap{
+  position: relative;
+  .bg-right{
+    .bg{
+      @include max{
+        position: absolute;
+        left: -70%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      @include min{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: -70%;
+        z-index: -1;
+      }
+      &.bg01{
+        background: url(../img/gumi01.png) repeat right top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi01.png) repeat right top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg02{
+        background: url(../img/gumi02.png) repeat right top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi02.png) repeat right top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg03{
+        background: url(../img/gumi03.png) repeat right top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi03.png) repeat right top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg04{
+        background: url(../img/gumi04.png) repeat right top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi04.png) repeat right top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg05{
+        background: url(../img/gumi05.png) repeat right top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi05.png) repeat right top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg06{
+        background: url(../img/gumi06.png) repeat right top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi06.png) repeat right top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg07{
+        background: url(../img/gumi07.png) repeat right top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi07.png) repeat right top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg08{
+        background: url(../img/gumi08.png) repeat right top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi08.png) repeat right top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg09{
+        background: url(../img/gumi09.png) repeat right top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi09.png) repeat right top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg10{
+        background: url(../img/gumi10.png) repeat right top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi10.png) repeat right top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg11{
+        background: url(../img/gumi11.png) repeat right top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi11.png) repeat right top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg12{
+        background: url(../img/gumi12.png) repeat right top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi12.png) repeat right top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg13{
+        background: url(../img/gumi13.png) repeat right top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi13.png) repeat right top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg14{
+        background: url(../img/gumi14.png) repeat right top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi14.png) repeat right top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg15{
+        background: url(../img/gumi15.png) repeat right top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi15.png) repeat right top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg16{
+        background: url(../img/gumi16.png) repeat right top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi16.png) repeat right top;
+          background-size: 210vw auto;
+        }
+      }
+    }
+  }
+  .bg-left{
+    .bg{
+      @include max{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        right: -65%;
+        z-index: -1;
+      }
+      @include min{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        right: -70%;
+        z-index: -1;
+      }
+      &.bg01{
+        background: url(../img/gumi01.png) repeat left top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi01.png) repeat left top;
+          background-size: 200vw auto;
+        }
+      }
+      &.bg02{
+        background: url(../img/gumi02.png) repeat left top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi02.png) repeat left top;
+          background-size: 200vw auto;
+        }
+      }
+      &.bg03{
+        background: url(../img/gumi03.png) repeat left top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi03.png) repeat left top;
+          background-size: 200vw auto;
+        }
+      }
+      &.bg04{
+        background: url(../img/gumi04.png) repeat left top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi04.png) repeat left top;
+          background-size: 200vw auto;
+        }
+      }
+      &.bg05{
+        background: url(../img/gumi05.png) repeat left top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi05.png) repeat left top;
+          background-size: 200vw auto;
+        }
+      }
+      &.bg06{
+        background: url(../img/gumi06.png) repeat left top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi06.png) repeat left top;
+          background-size: 200vw auto;
+        }
+      }
+      &.bg07{
+        background: url(../img/gumi07.png) repeat left top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi07.png) repeat left top;
+          background-size: 200vw auto;
+        }
+      }
+      &.bg08{
+        background: url(../img/gumi08.png) repeat left top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi08.png) repeat left top;
+          background-size: 200vw auto;
+        }
+      }
+      &.bg09{
+        background: url(../img/gumi09.png) repeat left top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi09.png) repeat left top;
+          background-size: 200vw auto;
+        }
+      }
+      &.bg10{
+        background: url(../img/gumi10.png) repeat left top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi10.png) repeat left top;
+          background-size: 200vw auto;
+        }
+      }
+      &.bg11{
+        background: url(../img/gumi11.png) repeat left top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi11.png) repeat left top;
+          background-size: 200vw auto;
+        }
+      }
+      &.bg12{
+        background: url(../img/gumi12.png) repeat left top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi12.png) repeat left top;
+          background-size: 200vw auto;
+        }
+      }
+      &.bg13{
+        background: url(../img/gumi13.png) repeat left top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi13.png) repeat left top;
+          background-size: 200vw auto;
+        }
+      }
+      &.bg14{
+        background: url(../img/gumi14.png) repeat left top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi14.png) repeat left top;
+          background-size: 200vw auto;
+        }
+      }
+      &.bg15{
+        background: url(../img/gumi15.png) repeat left top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi15.png) repeat left top;
+          background-size: 200vw auto;
+        }
+      }
+      &.bg16{
+        background: url(../img/gumi16.png) repeat left top;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi16.png) repeat left top;
+          background-size: 200vw auto;
+        }
+      }
+    }
+  }
+}
+
+.keyMovie{
+  width: 100%;
+  position: relative;
+  @include min{
+    padding-bottom: 30px;
+    width: 984px;
+    margin: auto;
+    
+  }
+  video{
+      width: 100%;
+      height: auto;
+    }
+  &:before{
+        content: "";
+        background: url(../img/play.png) no-repeat center center;
+        background-size: cover;
+        width: PXtoVW(50);
+        height: PXtoVW(50);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        @include min{
+          width: 58px;
+          height: 58px;
+        }
+      }
+}
+
+.key_wrap{
+  position: relative;
+  padding-bottom: PXtoVW(40);
+  @include min{
+    padding-bottom: 80px;
+  }
+  &:before{
+    content: "";
+    background: url(../img/bg_gumi.png) no-repeat right -48vw;
+    background-size: 210vw auto;
+    position: absolute;
+    left: -70%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    @include min{
+      background: url(../img/bg_gumi.png) repeat right top;
+      background-size: 1500px auto;
+      left: -70%;
+      display: none;
+    }
+  }
+  &:after{
+    content: "";
+    background: url(../img/bg_gumi.png) no-repeat left -50vw;
+    background-size: 200vw auto;
+    position: absolute;
+    right: -65%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    @include min{
+      background: url(../img/bg_gumi.png) repeat left top;
+      background-size: 1500px auto;
+      right: -65%;
+      display: none;
+    }
+  }
+}
+
+.keyTitle{
+  text-align: center;
+  padding-top: PXtoVW(23);
+  @include min{
+    padding-top: 30px;
+  }
+  img{
+    width: PXtoVW(250);
+    @include min{
+      width: 438px;
+    }
+  }
+}
+
+.keyTitle_sub{
+  text-align: center;
+  margin-top: PXtoVW(-5);
+  margin-bottom: PXtoVW(10);
+  @include min{
+    margin-top: -5px;
+    margin-bottom: 15px;
+  }
+  img{
+    width: PXtoVW(231.5);
+    @include min{
+      width: 331px;
+    }
+  }
+}
+
+.laundry_top{
+  text-align: center;
+  margin-bottom: PXtoVW(12);
+  @include min{
+    margin-bottom: 15px;
+  }
+  img{
+    width: PXtoVW(26);
+    @include min{
+      width: 38px;
+    }
+  }
+}
+
+.keyTitle_lead{
+  text-align: center;
+  margin-top: PXtoVW(-5);
+  font-size: PXtoVW(11);
+  @include min{
+    margin-top: 0;
+    font-size:18px;
+  }
+}
+
+.main_slider{
+  .slides{
+    @include min{
+      width: 1024px;
+      margin: auto;
+    }
+  }
+  .slick-next{
+    background: url(../img/arrow_next.png) no-repeat center center;
+    background-size: PXtoVW(14) PXtoVW(20);
+    width: PXtoVW(34);
+    height: PXtoVW(40);
+    right: PXtoVW(0);
+    opacity: 1;
+    border: none;
+    @include min{
+      width: 48px;
+      height: 60px;
+      right: 10px;
+      cursor: pointer;
+      background: url(../img/arrow_next.png) no-repeat center center;
+      background-size: 28px 40px;
+    }
+    &:before{
+      display: none;
+    }
+  }
+  .slick-prev{
+    background: url(../img/arrow_prev.png) no-repeat center center;
+    background-size: PXtoVW(14) PXtoVW(20);
+    width: PXtoVW(34);
+    height: PXtoVW(40);
+    left: PXtoVW(0);
+    opacity: 1;
+    border: none;
+    @include min{
+      width: 48px;
+      height: 60px;
+      left: 10px;
+      cursor: pointer;
+      background: url(../img/arrow_prev.png) no-repeat center center;
+      background-size: 28px 40px;
+    }
+    &:before{
+      display: none;
+    }
+  }
+}
+
+.movieArea{
+  position: relative;
+  padding-bottom: PXtoVW(30);
+  @include min{
+    padding-bottom: 70px;
+  }
+  &:before{
+    content: "";
+    background: url(../img/bg_gumi.png) no-repeat right 4vw;
+    background-size: 210vw auto;
+    position: absolute;
+    left: -40%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: none;
+    @include min{
+      display: none;
+    }
+  }
+  &:after{
+    content: "";
+    background: url(../img/bg_gumi.png) no-repeat left -10vw;
+    background-size: 200vw auto;
+    position: absolute;
+    right: -63%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: none;
+    @include min{
+      display: none;
+    }
+  }
+}
+
+.movieTitle{
+  text-align: center;
+  padding: PXtoVW(25) 0;
+  @include min{
+    padding: 50px 0 25px;
+  }
+  img{
+    width: PXtoVW(201.5);
+    @include min{
+      width: 265px;
+    }
+  }
+}
+
+.movieList{
+  @include min{
+    display: flex;
+    justify-content: center;
+  }
+  li{
+    margin: 0 auto PXtoVW(20);
+    width:PXtoVW(290);
+    text-align: center;
+    @include min{
+      margin: 0 22px 0;
+      width:369px;
+    }
+    .thumb{
+      display: block;
+      position: relative;
+      &:before{
+        content: "";
+        background: url(../img/play.png) no-repeat center center;
+        background-size: cover;
+        width: PXtoVW(50);
+        height: PXtoVW(50);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        @include min{
+          width: 58px;
+          height: 58px;
+        }
+      }
+    }
+    video{
+      width: 100%;
+    }
+    p{
+      font-style: italic;
+      font-size:PXtoVW(12);
+      letter-spacing: 1px;
+      @include min{
+        font-size:14px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.labo_title{
+  text-align: center;
+  margin-bottom: PXtoVW(27);
+  @include min{
+    margin-bottom: 60px;
+  }
+    img{
+      width: PXtoVW(209);
+      @include min{
+        width: 375px;
+      }
+    }
+  }
+
+.labo01{
+  padding: PXtoVW(20) PXtoVW(15);
+  background: url(../img/labo01_bg.png) no-repeat right top;
+  background-size: PXtoVW(346.5) auto;
+  background-color: #f7f7f8;
+  @include min{
+    padding: 40px 0 0 0;
+    background-size: auto auto;
+  }
+  &_lead{
+    text-align: center;
+    img{
+      width: PXtoVW(209);
+      @include min{
+        width: 347px;
+        margin-bottom: 30px;
+        margin-right: -250px;
+      }
+    }
+  }
+  &_title{
+    text-align: center;
+    margin-bottom: PXtoVW(60);
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      right: PXtoVW(-10);
+      top: PXtoVW(-70);
+      width: PXtoVW(60);
+      height: PXtoVW(137);
+      background: url(../img/labo01_gumi.png) no-repeat left top;
+      background-size: contain;
+      @include min{
+        right: -30px;
+        top: -170px;
+        width: 199px;
+        height: 302px;
+        background: url(../img/labo01_gumi_pc.png) no-repeat left top;
+        background-size: contain;
+      }
+    }
+    @include min{
+      width: 984px;
+      margin: 0 auto;
+      text-align: right;
+      padding-right: 64px;
+    }
+    img{
+      display: inline;
+    }
+    span{
+      &:nth-child(1){
+        img{
+          width: PXtoVW(54);
+          @include min{
+            width: auto;
+            height: 63px;
+          }
+        }
+      }
+      &:nth-child(2){
+        img{
+          width: PXtoVW(43.5);
+          @include min{
+            width: auto;
+            height: 63px;
+          }
+        }
+      }
+      &:nth-child(3){
+        img{
+          width: PXtoVW(44);
+          @include min{
+            width: auto;
+            height: 63px;
+          }
+        }
+      }
+      &:nth-child(4){
+        img{
+          width: PXtoVW(47.5);
+          @include min{
+            width: auto;
+            height: 63px;
+          }
+        }
+      }
+      &:nth-child(5){
+        img{
+          width: PXtoVW(48.5);
+          @include min{
+            width: auto;
+            height: 63px;
+          }
+        }
+      }
+      &:nth-child(6){
+        img{
+          width: PXtoVW(52);
+          @include min{
+            width: auto;
+            height: 63px;
+          }
+        }
+      }
+    }
+  }
+  
+  &_list{
+    @include min{
+      position: relative;
+      width: 874px;
+      height: 1000px;
+      margin: auto;
+    }
+    .item01{
+      @include min{
+        width: 384px;
+        position:absolute;
+        left: 40px;
+        top:0;        
+      }
+      .labo01_list_title{
+        @include min{
+          margin-left: -30px;
+        }
+        &:before{
+          background: url(../img/labo01_num1.png) no-repeat left top;
+          background-size: cover;
+          @include min{
+            
+          }
+        }
+      }
+    }
+    .item02{
+      @include min{
+        width: 368px;
+        position:absolute;
+        right: 34px;
+        top:124px;        
+      }
+      .labo01_list_title{
+        @include min{
+          margin-left: -30px;
+          margin-bottom: 20px;
+        }
+        &:before{
+          background: url(../img/labo01_num2.png) no-repeat left top;
+          background-size: cover;
+        }
+      }
+    }
+    .item03{
+      @include min{
+        width: 366px;
+        position:absolute;
+        left: 40px;
+        top:431px;        
+      }
+      .labo01_list_title{
+        @include min{
+          margin-left: -30px;
+          margin-bottom: 20px;
+        }
+        &:before{
+          background: url(../img/labo01_num3.png) no-repeat left top;
+          background-size: cover;
+        }
+      }
+    }
+    .item04{
+      @include min{
+        width: 368px;
+        position:absolute;
+        right: 34px;
+        top:542px;        
+      }
+      .labo01_list_title{
+        @include min{
+          margin-left: -30px;
+          margin-bottom: 20px;
+        }
+        &:before{
+          background: url(../img/labo01_num4.png) no-repeat left top;
+          background-size: cover;
+        }
+      }
+    }
+    &_item{
+      margin-bottom: PXtoVW(50);
+      @include min{
+        margin-bottom: 20px;
+      }
+    }
+    &_title{
+      font-size: PXtoVW(14);
+      font-weight: 600;
+      position: relative;
+      padding-left: PXtoVW(50);
+      z-index: 1;
+      margin-bottom: PXtoVW(5);
+      @include min{
+        font-size: 16px;
+        padding-left: 70px;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        font-weight: normal;
+      }
+      &:before{
+        content: "";
+        background: url(../img/labo01_num1.png) no-repeat left top;
+        background-size: cover;
+        width: PXtoVW(60.5);
+        height: PXtoVW(63.5);
+        position: absolute;
+        left: 0;
+        top: -6vw;
+        z-index: -1;
+        @include min{
+          width: 79px;
+          height: 83px;
+          top: -30px;
+        }
+      }
+    }
+    &_pic{
+      margin-bottom: PXtoVW(3);
+      @include min{
+        margin-bottom: 5px;
+      }
+    }
+    &_caption{
+      font-size: PXtoVW(9);
+      @include min{
+        font-size: 10px;
+      }
+    }
+    &_text{
+      font-size: PXtoVW(12);
+      @include min{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.labo02{
+  padding: PXtoVW(30) PXtoVW(15) PXtoVW(5);
+  position: relative;
+  @include min{
+    padding: 40px 0 50px;
+  }
+  .contentIn{
+    position: relative;
+    z-index: 1;
+    @include min{
+      width: 874px;
+      margin: auto;
+    }
+  }
+  &:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background:url(../img/bg_gumi.png) center top repeat-y;
+    background-size: 200vw auto;
+    @include min{
+      background:url(../img/bg_gumi.png) center top repeat-y;
+      background-size: 1600px auto;
+    }
+  }
+  &:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background:url(../img/labo02_bg.png) center top no-repeat;
+    background-size: cover;
+    opacity: 0.91;
+    @include min{
+      background:url(../img/labo02_bg.png) center top no-repeat;
+      background-size: cover;
+    }
+  }
+  .labo_title{
+    @include min{
+    margin-bottom: 30px;
+    }
+  }
+  &_title{
+    text-align: center;
+    margin-bottom: PXtoVW(25);
+    @include min{
+      margin-bottom: 28px;
+    }
+    img{
+      width: PXtoVW(652/2);
+      @include min{
+        width: 376px;
+      }
+    }
+  }
+  &_lead{
+    font-size: PXtoVW(11);
+    margin-bottom: PXtoVW(20);
+    text-align: left;
+    @include min{
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+  }
+  &_movie{
+    margin-bottom: PXtoVW(20);
+    @include min{
+      margin-bottom: 40px;
+    }
+  }
+  &_list{
+    &_item{
+      margin-bottom: PXtoVW(20);
+      position: relative;
+      @include min{
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    &_pic{
+      img{
+        width: PXtoVW(287.5);
+        @include min{
+          width: 438px;
+        }
+      }
+    }
+    &_box{
+      border: 2px solid #2d7edf;
+      background-color: rgba(238,246,255,0.5);
+      padding: PXtoVW(60) PXtoVW(20) PXtoVW(20);
+      width: PXtoVW(306);
+      position: relative;
+      margin-left: auto;
+      margin-top: -3.3vw;
+      @include min{
+        padding: 80px 20px 5px;
+        width: 406px;
+        margin: 10px 0; 
+      }
+    }
+    &_title{
+      font-size: PXtoVW(12);
+      font-weight: 600;
+      position: relative;
+      padding-left: PXtoVW(40);
+      z-index: 1;
+      margin-bottom: PXtoVW(5);
+      background: url(../img/labo02_title_bg.png) no-repeat left top;
+      background-size: PXtoVW(301.5) PXtoVW(42);
+      line-height: PXtoVW(42);
+      position: absolute;
+      left: -10.6vw;
+      top: PXtoVW(10);
+      color: #fff;
+      font-size: PXtoVW(12);
+      width: PXtoVW(301.5);
+      @include min{
+        font-size: 15px;
+        font-weight: normal;
+        padding-left: 50px;
+        margin-bottom: 15px;
+        width: 379px;
+        height: 57px;
+        line-height: 57px;
+        top: 10px;
+        left: -35px;
+      }
+    }
+    &_text{
+      font-size: PXtoVW(11.5);
+      color: #1d446f;
+      @include min{
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+    &_item01{
+      .labo02_list_box{
+        @include min{
+        margin-right: 10px;
+        }
+      }
+      .labo02_list_title{
+        @include min{
+        background: url(../img/labo02_title_bg01.png) no-repeat left top;
+        background-size: 379px 57px;
+        }
+      }
+    }
+    &_item02{
+      @include min{
+      flex-direction: row-reverse;
+      }
+      .labo02_list_title{
+        @include min{
+        background: url(../img/labo02_title_bg02.png) no-repeat left top;
+        background-size: 379px 57px;
+        left: 75px;
+        padding-left: 20px;
+        }
+      }
+    }
+    &_item03{
+      .labo02_list_title{
+        @include min{
+        background: url(../img/labo02_title_bg03.png) no-repeat left top;
+        background-size: 379px 57px;
+        }
+      }
+    }
+  }
+}
+
+.labo03{
+  background-color: #faf9e4;
+  padding: PXtoVW(10) PXtoVW(10) PXtoVW(10);
+  @include min{
+    padding: 40px 0 50px;
+  }
+  .labo_title{
+    @include min{
+      margin-bottom: 40px;
+    }
+  }
+  .contentIn{
+    border: 1px solid #ef6d95;
+    padding: 4px;
+    @include min{
+      width: 874px;
+      margin: auto;
+      padding: 5px;
+    }
+  }
+  .border_wrap{
+    border: 1px solid #ef6d95;
+    padding: PXtoVW(20) PXtoVW(6);
+    @include min{
+      padding: 70px 33px 25px;
+      position: relative;
+      min-height: 470px;
+    }
+  }
+  &_title{
+    text-align: center;
+    margin-bottom: PXtoVW(25);
+    @include min{
+      margin-bottom: 35px;
+    }
+    img{
+      width: PXtoVW(275);
+      margin: auto;
+      @include min{
+        width: 473px;
+        
+      }
+    }
+  }
+  &_subtitle{
+    text-align: center;
+    margin-bottom: PXtoVW(15);
+    @include min{
+      margin-bottom: 0;
+      position: absolute;
+      left: 30px;
+      top: -18px;
+    }
+    img{
+      width: PXtoVW(263);
+      margin: auto;
+      @include min{
+        width: 262px;
+      }
+    }
+  }
+  &_pic{
+    text-align: center;
+    margin-bottom: PXtoVW(5);
+    @include min{
+      position: absolute;
+      left: 35px;
+      top: 130px;
+    }
+    img{
+      width: PXtoVW(173);
+      @include min{
+        width: 177px;
+      }
+    }
+  }
+  &_name{
+    text-align: center;
+    font-size: PXtoVW(15);
+    margin-bottom: PXtoVW(20);
+    @include min{
+      font-size: 16px;
+      position: absolute;
+      left: 35px;
+      top: 326px;
+      width: 177px;
+      margin-bottom: 0;
+    }
+  }
+  .slick-dotted.slick-slider{
+    @include min{
+      margin-bottom: 0;
+    }
+  }
+  &_slider_wrap{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: PXtoVW(20) PXtoVW(16);
+    position: relative;
+    margin-bottom: PXtoVW(15);
+    @include min{
+      padding: 30px 40px;
+      margin-bottom: 0;
+      width: 584px;
+      position: absolute;
+      right: 35px;
+      top: 130px;
+      cursor: -webkit-grab;
+    }
+    .slick-dots{
+      bottom: -6vw;
+      @include min{
+        display: none!important;
+      }
+      li{
+        width: PXtoVW(6);
+        height: PXtoVW(6);
+        &.slick-active{
+          button{
+            &:before{
+              background-color: #eea1b1;
+            }
+          }
+        }
+        button{
+          width: PXtoVW(6);
+          height: PXtoVW(6);
+          &:before{
+            width: PXtoVW(6);
+            height: PXtoVW(6);
+            font-size: 0;
+            background-color: #919191;
+            opacity: 1;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+    .slick-next{
+      background: url(../img/arrow_next.png) no-repeat right top;
+      background-size: cover;
+      width: PXtoVW(14);
+      height: PXtoVW(20);
+      right: PXtoVW(7);
+      opacity: 1;
+      border: none;
+      display: none!important;
+      @include min{
+        width: 16px;
+        height: 23px;
+        right: -27px;
+        display: block!important;
+        cursor: pointer;
+      }
+      &:before{
+        display: none;
+      }
+    }
+    .slick-prev{
+      background: url(../img/arrow_prev.png) no-repeat left top;
+      background-size: cover;
+      width: PXtoVW(14);
+      height: PXtoVW(20);
+      left: PXtoVW(7);
+      opacity: 1;
+      border: none;
+      display: none!important;
+      @include min{
+        width: 16px;
+        height: 23px;
+        left: -27px;
+        display: block!important;
+        cursor: pointer;
+      }
+      &:before{
+        display: none;
+      }
+    }
+    &:before{
+      content: "";
+      width: PXtoVW(27);
+      height: PXtoVW(23);
+      background: url(../img/labo03_fukidashi.png) no-repeat left top;
+      background-size: cover;
+      position: absolute;
+      left: 6vw;
+      top: PXtoVW(-23);
+      @include min{
+        background: url(../img/labo03_fukidashi_pc.png) no-repeat left top;
+        width: 24px;
+        height: 26px;
+        left: -24px;
+        top: 20px;
+      }
+    }
+    h4{
+      color: #ed889d;
+      font-size: PXtoVW(14);
+      position: relative;
+      margin-bottom: PXtoVW(15);
+      padding-left: PXtoVW(27);
+      @include min{
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 20px;
+        padding-left: 0;
+      }
+      &:before{
+        content: "Q";
+        position: absolute;
+        left: 0;
+        top: -2.8vw;
+        font-size: PXtoVW(24);
+        @include min{
+          content: "Q.";
+          position: relative;
+          display: inline-block;
+          left: 0;
+          top: 0;
+          font-size: 18px;
+          margin-right: 0.5em;
+        }
+      }
+    }
+    p{
+      font-size: PXtoVW(11.5);
+      @include min{
+        font-size: 14px;
+        line-height: 1.57;
+      }
+    }
+  }
+  &_profile{
+    font-size: PXtoVW(11);
+    padding: 0 PXtoVW(10);
+    @include min{
+      font-size: 12px;
+      padding: 15px 10px;
+      border: 1px solid #d0d0d0;
+      margin-top: 310px;
+    }
+  }
+}
+
+.tabArea{
+  padding: PXtoVW(58) 0 0;
+  position: relative;
+  overflow: hidden;
+  @include min{
+    padding: 0 0 0;
+    min-height: 910px;
+  }
+}
+
+.tabBox_slideArea.mfp-hide {
+	display: block !important;
+}
+.tabBox_tabArea {
+  position:absolute;
+  width: 100%;
+  left: 0;
+  top: PXtoVW(12);
+  display: flex;
+  z-index: 2;
+  display: none;
+}
+.tabBox_tab {
+  flex: 1;
+  position: relative;
+  background: #eee;
+  height: PXtoVW(41.5);
+  align-items: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  a {
+    display: block;
+    height: 100%;
+  }
+  &.thumbnail-current .tabBox_tab_txt {
+    height: 14.7vw;
+  }
+  &.thumbnail-current:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+  }
+}
+.thumbnail-current{
+  .tabBox_tab_txt{
+    //height: 110%;
+  }
+}
+.tabBox_tab_txt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s ease-in-out;
+  img{
+    width: auto;
+    height: PXtoVW(13.5);
+    margin: auto;
+  }
+}
+.tabBox_tab_lead {
+  font-family: "Yu Mincho", "YuMincho", "source-han-serif-japanese", serif;
+}
+.tabBox_tab {
+  &.nudy {
+    &:before {
+      background: #fff;
+    }
+    .tabBox_tab_txt {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &.coolish {
+    &:before {
+      background: #bbe9f4;
+    }
+    .tabBox_tab_txt {
+      background-color: #bbe9f4;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &.work {
+    &:before {
+      background: #fce0ea;
+    }
+    .tabBox_tab_txt {
+      background-color: #fce0ea;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.tabBox_slideArea {
+  position: relative;
+  z-index: 1;
+  margin-top: -15.8vw;
+  @include min{
+    margin-top: 0;
+    margin: auto;
+    min-height: 910px;
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    width: 22px;
+    height: 40px;
+    text-indent: -9999px;
+    margin-top: -20px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  .slick-prev {
+    left: 24px;
+    background-image: url(../img/ico_arrow01_left_wt.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .slick-next {
+    right: 24px;
+    background-image: url(../img/ico_arrow01_right_wt.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .slick-dots{
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: PXtoVW(12);
+    bottom: auto;
+    display: flex;
+    z-index: 2;
+    @include min{
+      top: 40px;
+      width: 984px;
+      left: 50%;
+      margin-left: -492px;
+    }
+    li{
+      flex: 1;
+      position: relative;
+      height: PXtoVW(147/2);
+      align-items: center;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      cursor: pointer;
+      margin: 0;
+      @include min{
+        width: 328px;
+        height: 87px;
+        cursor: pointer;
+      }
+      &:before{
+        content: "";
+        transition: all 0.3s;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+      }
+      &:after{
+        content: "";
+        width: PXtoVW(25/2);
+        height: PXtoVW(15/2);
+        position: absolute;
+        left: 50%;
+        bottom: PXtoVW(14/2);
+        margin-left: PXtoVW(-12.5/2);
+        @include min{
+          width: 25px;
+          height: 15px;
+          bottom: 7px;
+          margin-left: -12.5px;
+        }
+      }
+      button{
+        @include min{
+          width: auto;
+          height: auto;
+          padding: 0;
+          margin: 0;
+        }
+        &:before{
+          display: none;
+        }
+      }
+      a {
+        display: block;
+        height: 100%;
+      }
+      &.slick-active button {
+      }
+      &.slick-active:before {
+        content: "";
+        width: 100%;
+        height: PXtoVW(166/2);
+        background-position: center 4.5vw!important;
+        @include min{
+          background-position: center center!important;
+          height: 107px;
+        }
+      }
+      &:nth-child(1) {
+        &:before {
+          background-color: #fff;
+          background-image: url(../img/tab01.png);
+          background-position: center 3.5vw;
+          background-repeat: no-repeat;
+          background-size: PXtoVW(146/2) PXtoVW(79/2);
+          @include min{
+            background-image: url(../img/tab01_pc.png);
+            background-size: 193px auto;
+            background-position: center center;
+          }
+        }
+        &:after{
+           background: url(../img/tab_arrow1.png) no-repeat center center;
+           background-size: cover;
+        }
+        button {
+          background-color: #fff;
+        }
+      }
+      &:nth-child(2) {
+        &:before {
+          background-color: #bbe9f4;
+          background-image: url(../img/tab02.png);
+          background-position: center 3.5vw;
+          background-repeat: no-repeat;
+          background-size: PXtoVW(161/2) PXtoVW(80/2);
+          @include min{
+            background-image: url(../img/tab02_pc.png);
+            background-size: 219px auto;
+            background-position: center center;
+          }
+        }
+        &:after{
+           background: url(../img/tab_arrow2.png) no-repeat center center;
+           background-size: cover;
+        }
+        button {
+          background-color: #bbe9f4;
+        }
+      }
+      &:nth-child(3) {
+        &:before {
+          background-color: #fce0ea;
+          background-image: url(../img/tab03.png);
+          background-position: center 3.5vw;
+          background-repeat: no-repeat;
+          background-size: PXtoVW(145/2) PXtoVW(79/2);
+          @include min{
+            background-image: url(../img/tab03_pc.png);
+            background-size: 184px auto;
+            background-position: center center;
+          }
+        }
+        &:after{
+           background: url(../img/tab_arrow3.png) no-repeat center center;
+           background-size: cover;
+        }
+        button {
+          background-color: #fce0ea;
+        }
+      }
+    }
+  }
+}
+.tabBox_slide {
+  padding: 28.66667vw PXtoVW(28) PXtoVW(10);
+  @include min{
+    padding: 145px 0 73px;
+    min-height: 920px;
+  }
+}
+.tabBox_slide_ttl{
+  z-index: 2;
+  position: relative;
+  img{
+    width: auto;
+    height: PXtoVW(65);
+    margin: auto;
+    @include min{
+      height: 102px;
+    }
+  }
+}
+.tabBox_wrap{
+  @include min{
+    width: 874px;
+    margin: -25px auto 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.tabBox_about{
+  @include min{
+    width: 388px;
+    margin-bottom: 0;
+    position: relative;
+  }
+}
+.tabBox_about_block{
+  margin-bottom: PXtoVW(20);
+  @include min{
+    margin-bottom: 0;
+  }
+}
+.tabBox_slidePic{
+  margin-top: -11vw;
+  margin-bottom: 4vw;
+  @include min{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: 0 0 0 25px;
+    width: 415px;
+    position: relative;
+  }
+  .slick-next{
+      background: url(../img/arrow_next.png) no-repeat right top;
+      background-size: cover;
+      width: PXtoVW(26.5);
+      height: PXtoVW(37.5);
+      right: PXtoVW(-12);
+      opacity: 1;
+      border: none;
+      margin-top: -2.6vw;
+      @include min{
+        width: 28px;
+        height: 40px;
+        right:-20px;
+        margin-top: -20px;
+      }
+      &:before{
+        display: none;
+      }
+    }
+    .slick-prev{
+      background: url(../img/arrow_prev.png) no-repeat left top;
+      background-size: cover;
+      width: PXtoVW(26.5);
+      height: PXtoVW(37.5);
+      left: PXtoVW(-12);
+      opacity: 1;
+      border: none;
+      margin-top: -2.6vw;
+      @include min{
+        width: 28px;
+        height: 40px;
+        left:-20px;
+        margin-top: -20px;
+      }
+      &:before{
+        display: none;
+      }
+    }
+}
+.tabBox_slide_lead {
+  font-family: "Yu Mincho", "YuMincho", "source-han-serif-japanese", serif;
+  letter-spacing: 0.1em;
+}
+.tabBox_slide {
+  h4{
+    position: relative;
+    z-index: 2;
+  }
+  p{
+    font-size: PXtoVW(11.5);
+    @include min{
+      font-size: 14px;
+      line-height: 1.57;
+    }
+  }
+  .pic{
+    margin-bottom: PXtoVW(10);
+    @include min{
+      margin: 0;
+      img{
+        width: auto;
+      }
+    }
+  }
+  &.nudy {
+    background: #f6fafe;
+    .tabBox_slide_ttl span {
+      border-color: #fff;
+    }
+    .tabBox_about_block_title01{
+      padding-left: PXtoVW(10);
+      @include min{
+        padding: 0;
+        position: absolute;
+        left: 0;
+        top: 35px;
+      }
+      img{
+        width: PXtoVW(488/2);
+        @include min{
+          width: 305px;
+        }
+      }
+      &+.pic{
+        margin-top: PXtoVW(-30);
+        @include min{
+          margin-top: 0;
+        }
+      }
+    }
+    .tabBox_about_block_title02{
+      padding-left: PXtoVW(10);
+      @include min{
+        padding: 0;
+        position: absolute;
+        left: 216px;
+        top: 344px;
+      }
+      img{
+        width: PXtoVW(421/2);
+        @include min{
+          width: auto;
+        }
+      }
+      &+.pic{
+        margin-top: PXtoVW(-30);
+        @include min{
+          margin-top: 0;
+        }
+      }
+    }
+    .text01{
+      @include min{
+        position: absolute;
+        left: 0;
+        top: 110px;
+        width: 10em;
+      }
+    }
+    .text02{
+      @include min{
+        position: absolute;
+        left: 216px;
+        top: 423px;
+        width: 10em;
+      }
+    }
+    .pic01{
+      @include min{
+        position: absolute;
+        right: 0;
+        top: 40px;
+        margin-top: 0!important;
+      }
+    }
+    .pic02{
+      @include min{
+        position: absolute;
+        left: 0;
+        top: 330px;
+      }
+    }
+  }
+  &.coolish {
+    background: #d0edf5;
+    .tabBox_slide_ttl span {
+      border-color: #d0edf5;
+    }
+    .tabBox_about_block_title01{
+      padding-left: PXtoVW(10);
+      @include min{
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 23px;
+      }
+      img{
+        width: PXtoVW(388/2);
+        @include min{
+          width: 237px;
+        }
+      }
+      &+.pic{
+        margin-top: PXtoVW(-30);
+        @include min{
+          margin-top: 0;
+        }
+      }
+    }
+    .tabBox_about_block_title02{
+      padding-left: PXtoVW(27);
+      @include min{
+        padding: 0;
+        position: absolute;
+        left:   0;
+        top: 275px;
+      }
+      img{
+        width: PXtoVW(421/2);
+        @include min{
+          width: 255px;
+        }
+      }
+      &+.pic{
+        margin-top: PXtoVW(-30);
+        @include min{
+          margin-top: 0;
+        }
+      }
+    }
+    .tabBox_about_block_title03{
+      padding-left: PXtoVW(95);
+      @include min{
+        padding: 0;
+        position: absolute;
+        left: 113px;
+        top: 443px;
+      }
+      img{
+        width: PXtoVW(454/2);
+        @include min{
+          width: 277px;
+        }
+      }
+      &+.pic{
+        margin-top: PXtoVW(-30);
+        @include min{
+          margin-top: 0;
+        }
+      }
+    }
+    .text01{
+      @include min{
+        position: absolute;
+        right: 0;
+        top: 86px;
+        width: 10em;
+      }
+    }
+    .text02{
+      @include min{
+        position: absolute;
+        left: 0;
+        top: 342px;
+        width: 14em;
+      }
+    }
+    .text03{
+      @include min{
+        position: absolute;
+        right: 0;
+        top: 500px;
+        width: 14em;
+      }
+    }
+    .pic01{
+      @include min{
+        position: absolute;
+        left: 0;
+        top: 28px;
+      }
+    }
+    .pic02{
+      @include min{
+        position: absolute;
+        right: 0;
+        top: 294px;
+      }
+    }
+    .pic03{
+      @include min{
+        position: absolute;
+        left: 0;
+        top: 479px;
+      }
+    }
+  }
+  &.work {
+    background: #fdeef4;
+    .tabBox_slide_ttl span {
+      border-color: #fdeef4;
+    }
+    .tabBox_about_block_title01{
+      padding-left: PXtoVW(10);
+      @include min{
+        padding: 0;
+        position: absolute;
+        left: 0;
+        top: 23px;
+      }
+      img{
+        width: PXtoVW(521/2);
+        @include min{
+          width: 317px;
+        }
+      }
+      &+.pic{
+        margin-top: PXtoVW(-30);
+        @include min{
+          margin-top: 0;
+        }
+      }
+    }
+    .tabBox_about_block_title02{
+      padding-left: PXtoVW(10);
+      padding-top: 8vw;
+      @include min{
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 376px;
+      }
+      img{
+        position: absolute;
+        top: 46vw;
+        width: PXtoVW(363/2);
+        @include min{
+          width: 217px;
+          position: relative;
+          top: auto;
+        }
+      }
+      &+.pic{
+        margin-top: PXtoVW(-30);
+        @include min{
+          margin-top: 0;
+        }
+      }
+    }
+    .text01{
+      @include min{
+        position: absolute;
+        left: 0;
+        top: 103px;
+        width: 12em;
+      }
+    }
+    .text02{
+      @include min{
+        position: absolute;
+        left: 0;
+        top: 462px;
+        width: 13em;
+      }
+    }
+    .text03{
+      @include min{
+        position: absolute;
+        right: 0;
+        top: 500px;
+        width: 14em;
+      }
+    }
+    .pic01{
+      @include min{
+        position: absolute;
+        right: -40px;
+        top: 45px;
+      }
+    }
+    .pic02{
+      @include min{
+        position: absolute;
+        left: 8px;
+        top: 324px;
+      }
+    }
+    .pic03{
+      @include min{
+        position: absolute;
+        right: 25px;
+        top: 471px;
+      }
+    }
+  }
+}
+.slick-current .fadeUp {
+  -webkit-animation: 2s forwards fadeInTop;
+  animation: 2s forwards fadeInTop;
+}
+
+.itemArea {
+  position: relative;
+  font-family:"Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  margin-bottom: PXtoVW(50);
+  @include min{
+    padding: 0 0;
+    margin-bottom: 70px;
+  }
+  &#item_nudy{
+    padding-top: PXtoVW(50);
+    .coupon{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: PXtoVW(247/2);
+      display: block;
+      @include min{
+        width: 269px;
+        img{
+          width: auto;
+        }
+      }
+    }
+    @include min{
+      padding-top: 90px;
+    }
+    .itemTitle{
+      img{
+        width: auto;
+        height: PXtoVW(26);
+        margin: auto;
+        @include min{
+          height: 33px;
+        }
+      }
+    }
+    .itemList{
+      li{
+        position: relative;
+        img{
+          width: auto;
+          height: PXtoVW(125);
+          margin: auto;
+          &.song01{
+            position: absolute;
+            left: -10.66667vw;
+            bottom: 7.26667vw;
+            width: PXtoVW(80);
+            height: auto;
+          }
+          @include min{
+            height: 180px;
+          }
+        }
+      }
+    }
+  }
+  &#item_coolish{
+    .itemTitle{
+      img{
+        width: auto;
+        height: PXtoVW(26);
+        margin: auto;
+        @include min{
+          height: 33px;
+        }
+      }
+    }
+    .itemList{
+      li{
+        img{
+          width: auto;
+          height: PXtoVW(120);
+          margin: auto;
+          &.song02{
+            position: absolute;
+            left: -10.66667vw;
+            bottom: 7.26667vw;
+            width: PXtoVW(80);
+            height: auto;
+          }
+          @include min{
+            height: 170px;
+          }
+        }
+      }
+    }
+  }
+  &#item_work{
+    .itemTitle{
+      img{
+        width: auto;
+        height: PXtoVW(26);
+        margin: auto;
+        @include min{
+          height: 33px;
+        }
+      }
+    }
+    .itemList{
+      li{
+        img{
+          width: auto;
+          height: PXtoVW(120);
+          margin: auto;
+          @include min{
+            height: 180px;
+          }
+        }
+      }
+    }
+  }
+  .itemList{
+    @include min{
+      margin-bottom: 25px;
+    }
+  }
+  .itemTitle{
+    text-align: center;
+    margin-bottom: PXtoVW(25);
+    @include min{
+      margin-bottom: 40px;
+    }
+  }
+  .btnArea01{
+    text-align: center;
+    font-size: PXtoVW(12);
+    margin-bottom: PXtoVW(15);
+    margin-top: 3vw;
+    @include min{
+      font-size: 14px;
+      width: 680px;
+      margin: 0px auto 15px auto;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .btnArea_txt{
+      margin-bottom: PXtoVW(8);
+      @include min{
+        margin-bottom: 0;
+        margin-right: 30px;
+        text-align: right;
+      }
+    }
+    .btnArea_wrap{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 8.5vw;
+      @include min{
+        padding: 0;
+      }
+      .cart{
+        display: block;
+        width: PXtoVW(333/2);
+        @include min{
+          width: auto;
+          margin-right: 20px;
+        }
+      }
+      .detail{
+        display: block;
+        width: PXtoVW(256/2);
+        @include min{
+          width: auto;
+        }
+      }
+    }
+  }
+  .btnArea02{
+    text-align: center;
+    font-size: PXtoVW(12);
+    margin-bottom: PXtoVW(15);
+    margin-top: 3vw;
+    @include min{
+      font-size: 14px;
+      width: 680px;
+      margin: 20px auto 20px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .btnArea_txt{
+      margin-bottom: PXtoVW(8);
+      @include min{
+        margin-bottom: 0;
+        margin-right: 30px;
+        text-align: right;
+        white-space: nowrap;
+      }
+    }
+    .btnArea_wrap{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 8.5vw;
+      @include min{
+        padding: 0;
+      }
+      .cart{
+        display: block;
+        width: PXtoVW(333/2);
+        @include min{
+          width: auto;
+          margin-right: 20px;
+        }
+      }
+      .detail{
+        display: block;
+        width: PXtoVW(256/2);
+        @include min{
+          width: auto;
+        }
+      }
+    }
+    .btnArea_pic{
+      display: none;
+      @include min{
+        display: block;
+        img{
+          width: 96px;
+        }
+      }
+    }
+  }
+}
+.itemListArea {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  @include min{
+    display: flex;
+    justify-content: center;
+  }
+}
+.itemList {
+  display: flex;
+  justify-content: center;
+  padding: 0 3vw;
+  @include min{
+    padding: 0;
+  }
+  li {
+    margin: 0 PXtoVW(5) PXtoVW(10);
+    text-align: center;
+    @include min{
+      margin: 0 5px 0;
+    }
+  }
+  a:hover {
+    opacity: 1;
+    text-decoration: none;
+  }
+  img {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+.itemList_txt {
+  font-size: PXtoVW(8);
+  margin-top: 1.5vw;
+  @include min{
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  span{
+    color: #f35e89;
+    font-weight: bold;
+  }
+}
+
+.twitterArea{
+  background-color: #fff2f6;
+  padding: PXtoVW(20) PXtoVW(15) PXtoVW(40);
+  @include min{
+    padding: 50px 0;
+  }
+  .contentIn{
+    @include min{
+      width: 874px;
+      margin: auto;
+    }
+  }
+  &_wrap{
+    @include min{
+      position: relative;
+      padding-bottom: 50px;
+    }
+  }
+  &_title{
+    margin-bottom: PXtoVW(20);
+    @include min{
+      margin-bottom: 20px;
+    }
+    img{
+      width: PXtoVW(281);
+      @include min{
+        width: 373px;
+      }
+    }
+  }
+  &_lead{
+    text-align: center;
+    font-style: italic;
+    font-size: PXtoVW(14);
+    margin-bottom: PXtoVW(15);
+    letter-spacing: 1.5px;
+    @include min{
+      font-size: 21.5px;
+      margin-bottom: 22px;
+      text-align: left;
+      padding-left: 30px;
+    }
+    a{
+      color: #eb6192;
+    }
+  }
+  &_info{
+    font-size: PXtoVW(12);
+    font-family:"Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    margin-bottom: PXtoVW(20);
+    @include min{
+      font-size: 14px;
+      margin-bottom: 30px;
+      width: 385px;
+      padding-left: 30px;
+    }
+    span{
+      font-size: PXtoVW(10);
+      display: block;
+      margin-top: PXtoVW(5);
+      @include min{
+        font-size: 10px;
+        margin-top:5px;
+      }
+    }
+  }
+  &_pic{
+    text-align: center;
+    margin-bottom: PXtoVW(20);
+    @include min{
+      margin-bottom: 0;
+      position: absolute;
+      right: 30px;
+      top:10px;
+    }
+    img{
+      width: PXtoVW(302.5);
+      margin: auto;
+      @include min{
+        width: 400px;
+      }
+    }
+  }
+  &_caption{
+    font-family:"Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    @include min{
+      position: absolute;
+      right: 0px;
+      bottom: 30px;
+    }
+    p{
+      font-size: PXtoVW(10);
+      transform: scale(0.9);
+      white-space: nowrap;
+      margin-left: -4vw;
+      @include min{
+        font-size: 12px;
+        padding-left: 10px;
+        line-height: 2;
+        transform: scale(1);
+        margin-left: 0;
+      }
+    }
+  }
+  &_link{
+    font-family:"Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    @include min{
+      position: absolute;
+      right: -42px;
+      bottom: 30px;
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: PXtoVW(5);
+      @include min{
+        padding-bottom: 0;
+        width: 440px;
+      }
+      li{
+        width: 45.4vw;
+        transform: scale(0.9);
+        //margin-right: PXtoVW(10);
+        margin-bottom: PXtoVW(-5);
+        @include min{
+          width: 200px;
+          transform: scale(1);
+          margin-bottom: 2px;
+        }
+        a{
+          font-size: PXtoVW(10);
+          position: relative;
+          padding-left: 3vw;
+          @include min{
+            font-size: 11px;
+            padding-left: 10px;
+          }
+          &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            content: "";
+            vertical-align: middle;
+            left: 0;
+            width: 4px;
+            height: 4px;
+            border-top: 1px solid #000;
+            border-right: 1px solid #000;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+  &_btnBlock{
+    display: flex;
+    justify-content: center;
+    padding: PXtoVW(27) 0;
+    @include min{
+      position: absolute;
+      left: 40px;
+      bottom: 25px;
+      padding: 0;
+    }
+    a{
+      margin: 0 PXtoVW(10);
+      @include min{
+        margin: 0 15px;
+      }
+      &.tw{
+        width: PXtoVW(132.5);
+        @include min{
+          width: 154px;
+        }
+      }
+      &.cm{
+        width: PXtoVW(99);
+        @include min{
+          width: 110px;
+        }
+      }
+    }
+  }
+  &_about{
+    padding: PXtoVW(15) PXtoVW(15);
+    font-size: PXtoVW(10);
+    border: 1px solid #bbbbbb;
+    font-family:"Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    @include min{
+      padding: 25px;
+      font-size: 12px;
+    }
+    ul{
+      li{
+        position: relative;
+        padding-left: 1em;
+        &:before{
+          content: "\30FB";
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+.bannerListArea{
+  position: relative;
+  padding: PXtoVW(50) PXtoVW(28);
+  @include min{
+    padding: 80px 0;
+  }
+  .js-gumi{
+    .bg{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        z-index: -1;
+        @include max{
+          width: 200%;
+          left: -73%;
+        }
+      &.bg01{
+        background: url(../img/gumi01.png) repeat left -150px;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi02.png) repeat -10vw top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg02{
+        background: url(../img/gumi02.png) repeat left -150px;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi03.png) repeat left top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg04{
+        background: url(../img/gumi04.png) repeat left -150px;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi04.png) repeat left top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg05{
+        background: url(../img/gumi05.png) repeat left -150px;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi05.png) repeat left top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg06{
+        background: url(../img/gumi06.png) repeat left -150px;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi06.png) repeat left top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg07{
+        background: url(../img/gumi07.png) repeat left -150px;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi07.png) repeat left top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg08{
+        background: url(../img/gumi08.png) repeat left -150px;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi08.png) repeat left top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg09{
+        background: url(../img/gumi09.png) repeat left -150px;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi09.png) repeat left top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg10{
+        background: url(../img/gumi10.png) repeat left -150px;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi10.png) repeat left top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg11{
+        background: url(../img/gumi11.png) repeat left -150px;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi11.png) repeat left top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg12{
+        background: url(../img/gumi12.png) repeat left -150px;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi12.png) repeat left top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg13{
+        background: url(../img/gumi13.png) repeat left -150px;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi13.png) repeat left top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg14{
+        background: url(../img/gumi14.png) repeat left -150px;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi14.png) repeat left top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg15{
+        background: url(../img/gumi15.png) repeat left -150px;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi15.png) repeat left top;
+          background-size: 210vw auto;
+        }
+      }
+      &.bg16{
+        background: url(../img/gumi16.png) repeat left -150px;
+        background-size: 1500px auto;
+        @include max{
+          background: url(../img/gumi16.png) repeat left top;
+          background-size: 210vw auto;
+        }
+      }
+    }
+  }
+  &:before{
+    content: "";
+    background: url(../img/bg_gumi.png) repeat-y right -48vw;
+    background-size: 210vw auto;
+    position: absolute;
+    left: -70%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    @include min{
+      display: none;
+    }
+  }
+  &:after{
+    content: "";
+    background: url(../img/bg_gumi.png) repeat-y left -50vw;
+    background-size: 200vw auto;
+    position: absolute;
+    right: -65%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    @include min{
+      display: none;
+    }
+  }
+  .bannerList{
+    position: relative;
+    z-index: 2;
+    margin-bottom: PXtoVW(20);
+    @include min{
+      margin-bottom:0;
+      display: flex;
+      justify-content: center;
+    }
+    .miracle{
+      margin-bottom: PXtoVW(15);
+      @include min{
+        margin-bottom: 0;
+        margin-right: 50px;
+        width: 360px;
+      }
+      p{
+        text-align: center;
+        img{
+          width: PXtoVW(343/2);
+          margin: PXtoVW(17) auto;
+          @include min{
+            width: 238px;
+            margin: 25px auto;
+          }
+        }
+      }
+    }
+    .new{
+      @include min{
+        margin-bottom: 0;
+        margin-left: 50px;
+        width: 360px;
+      }
+      p{
+        text-align: center;
+        img{
+          width: PXtoVW(297/2);
+          margin: PXtoVW(17) auto;
+          @include min{
+            width: 209px;
+            margin: 25px auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.laundry_ico{
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    margin-bottom: PXtoVW(30);
+    margin-top: PXtoVW(-20);
+    @include min{
+      margin: 0;
+    }
+    img{
+      width: PXtoVW(81.5);
+      margin: auto;
+      @include min{
+        width: 105px;
+        margin-top: -30px;
+      }
+    }
+  }
+
+.shareArea{
+  @include min{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+  }
+  .ft_sns_title{
+    text-align: center;
+    font-size: PXtoVW(16);
+    margin-bottom: PXtoVW(18);
+    @include min{
+      font-size: 29px;
+      margin-bottom: 0;
+      letter-spacing: 2px;
+      margin-right: 50px;
+    }
+  }
+  .ft_sns_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+      margin: 0 PXtoVW(25);
+      @include min{
+        margin: 0 20px;
+      }
+      img{
+        vertical-align: middle;
+      }
+      &.tw{
+        margin-left: PXtoVW(40);
+        @include min{
+          margin-left: 0;
+        }
+        img{
+          width: PXtoVW(20.5);
+          @include min{
+            width: 36px;
+          }
+        }
+      }
+      &.fb{
+        img{
+          width: PXtoVW(10.5);
+          @include min{
+            width: 17px;
+          }
+        }
+      }
+      &.line{
+        @include min{
+          display: none;
+        }
+        img{
+          width: PXtoVW(39);
+        }
+      }
+    }
+  }
+}
+
+.slide{
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+.slick-initialized .slide{
+  display: block;
+}
+
+//////
+}
+}
+
+.fixed-cartBtn{
+  position: fixed;
+  right: PXtoVW(-50);
+  bottom: 100%;
+  width: PXtoVW(100);
+  height: PXtoVW(40);
+  background: url(../img/fixed_cart.png) no-repeat PXtoVW(20) center;
+  background-color: #717171;
+  background-size: PXtoVW(20) PXtoVW(20);
+  border-radius: PXtoVW(18);
+  transition: bottom 0.7s cubic-bezier(0.23, 1, 0.32, 1) , right 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  @include min{
+    right: -86px;
+    bottom: 100%;
+    width: 172px;
+    height: 65px;
+    background: url(../img/fixed_cart.png) no-repeat 30px center;
+    background-color: #717171;
+    border-radius: 30px;
+    background-size: 32px 32px;
+  }
+/*
+  &.show{
+    bottom: PXtoVW(100);
+    @include min{
+      bottom: 100px;
+    }
+  }
+  */
+  &.scrolled{
+    bottom: 100%!important;
+    @include min{
+      bottom: 100%!important;
+    }
+  }
+
+  &:hover{
+    @include min{
+      right: -70px;
+    }
+  }
+}
+
+
+.topBanner{
+  display: flex;
+  margin-bottom: 3vw;
+  a{
+    width: 50%;
+    img{
+      width: 100%;
+    }
+  }
+  @include min{
+    display: none;
+  }
+}
+
+.mfp-iframe-scaler iframe{
+  box-shadow: none!important;
+}

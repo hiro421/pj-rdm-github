@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+#yummyFooter {
+	width: 100%;
+	background-color: #000;
+}
+#yummyFooter .inner {
+	overflow: hidden;
+	width: 984px;
+	margin: auto;
+}
+
+#yummyFooter .wrap {
+	overflow: hidden;
+	border-top:2px solid #fff;
+	padding: 40px 0;
+}
+
+#yummyFooter .snsArea {
+	text-align: center;
+	padding: 35px 0;
+}
+
+#yummyFooter .snsArea ul {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+#yummyFooter .snsArea ul li {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 1.5em;
+}
+
+#yummyFooter .snsArea ul li img {
+	width: 55px;
+}
+
+#yummyFooter .navArea {
+	float:left;
+	width: 50%;
+	text-align: left;
+}
+#yummyFooter .navArea ul {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+#yummyFooter .navArea ul li {
+	display: inline-block;
+	margin-right: 2.5em;
+	margin-bottom: 1em;
+}
+#yummyFooter .navArea ul li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+#yummyFooter .navArea ul li a:hover {
+	text-decoration: underline;
+}
+#yummyFooter .logoArea {
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+#yummyFooter .logoArea ul {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+#yummyFooter .logoArea ul li {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 3em;
+	margin-bottom: 1em;
+}
+#yummyFooter .logoArea ul li a {
+	display: block;
+}
+#yummyFooter .logoArea ul li.pj img {
+	width: 226px;
+}
+
+#yummyFooter .logoArea ul li.salon img {
+	width: 133px;
+}
+#yummyFooter .copyRight {
+	width: 100%;
+	text-align: center;
+	color: #000;
+	background-color: #fff;
+	padding: 15px 0 30px;
+}

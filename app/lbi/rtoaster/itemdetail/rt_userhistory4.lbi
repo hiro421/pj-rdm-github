@@ -1,0 +1,19 @@
+<div class="checkedItems">
+    <h2>CHECKED ITEMS<span class="parts-subTitle">最近チェックしたアイテム</span></h2>
+    <div id="rt_userhistory4" style="display: none;">
+        <div class="wrap">
+            <ul class="clearfix">
+                <li id="rt_userhistory4_1"></li>
+                <li id="rt_userhistory4_2"></li>
+                <li id="rt_userhistory4_3"></li>
+                <li id="rt_userhistory4_4"></li>
+                <li id="rt_userhistory4_5"></li>
+                <li id="rt_userhistory4_6"></li>
+                <li id="rt_userhistory4_7"></li>
+                <li id="rt_userhistory4_8"></li>
+                <li id="rt_userhistory4_9"></li>
+                <li id="rt_userhistory4_10"></li>
+            </ul>
+        </div>
+    </div>
+</div>

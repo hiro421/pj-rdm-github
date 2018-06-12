@@ -1,0 +1,14 @@
+<!--yummymart_header_footer-->
+<link rel="stylesheet" type="text/css" href="/app/css/yummymart/yummymart_header_footer.css">
+<script type="text/javascript" src="/app/js/yummymart/yummymart.js" charset="utf-8"></script>
+<!--yummymart_header_footer-->
+
+<!--yummyHeader-->
+<div id="yummyHeader" class="sb-slide">
+	<div class="inner">
+		<h1><a href="/pj/yummymart/"><img src="/app/img/yummymart/logo.png" alt="YUMMY MART" border="0"/></a></h1>
+		<div id="menuBtn" class="sb-toggle-left"></div>
+		<div id="wishBtn"><a href="/pj/cliplist/"></a></div>
+		<div id="cartBtn"><a href="/shopping/bag/"></a></div>
+	</div>
+</div>

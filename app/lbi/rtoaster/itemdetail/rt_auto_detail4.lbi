@@ -1,0 +1,9 @@
+<div id="rt_auto_detail4" class="matching-items" style="display: none;">
+  <h3>RELATED ITEMS 関連商品</h3>
+  <div>
+    <div class="item" id="rt_auto_detail4_1"></div>
+    <div class="item" id="rt_auto_detail4_2"></div>
+    <div class="item" id="rt_auto_detail4_3"></div>
+    <div class="item" id="rt_auto_detail4_4"></div>
+  </div>
+</div>

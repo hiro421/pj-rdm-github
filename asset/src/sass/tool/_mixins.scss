@@ -1,0 +1,66 @@
+@mixin min($break-point:$bp_pc) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin max($break-point:$bp_sp) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin min-max($break-point-min:$bp_sp, $break-point-max:$bp_tab) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+@mixin max-min($break-point-max:$bp_tab,$break-point-min:$bp_sp) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+@function PXtoVW($value)
+{
+  @return ($value / 3.75) + vw;
+}
+
+@function spvw($value)
+{
+  @return ($value / 7.5) + vw;
+}
+@function pcvw($value)
+{
+  @return ($value / 12.8) + vw;
+}
+
+@mixin responsive($property,$pcsize,$spsize:null){
+  @include pc-width{
+    #{$property}: $pcsize + px;
+  }
+  @include tab-width{
+    #{$property}: pcvw($pcsize);
+  }
+  @if $spsize == null {
+
+  } @else {
+    @include max{
+      #{$property}: spvw($spsize);
+    }
+  }
+}
+
+@mixin pc-width{
+  @media screen and (min-width: $pc_width) {
+    @content;
+  }
+}
+//PCの最大幅以下SPサイズ以上
+//スケーリングに使用する
+@mixin tab-width{
+  @media screen and (min-width: $pc_min) and (max-width: $tab_max) {
+    @content;
+  }
+}

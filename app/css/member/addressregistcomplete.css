@@ -1,0 +1,51 @@
+/* ====================
+   Object
+   ==================== */
+
+/* Component
+   -------------------- */
+
+.c-header-title.p-header-title {
+    font-size: inherit;
+    margin-bottom: 88px;
+}
+
+.p-l-main__box--width {
+    max-width: 100%;
+    width: 100%;
+}
+
+.p-l-main__box--width > .p-l-main__child--width {
+    margin: 0 auto;
+    margin-bottom: 220px;
+    width: 46%;
+}
+
+.p-text-margin{
+    margin-top: 44px !important;
+    margin-bottom: 66px !important;
+}
+
+.p-text-font{
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:768px) {
+    .c-header-title.p-header-title {
+        font-size: 13px;
+        margin-bottom: 44px;
+        width: 96%;
+    }
+    
+    .p-l-main__box--width  {
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .p-l-main__box--width > .p-l-main__child--width {
+        margin-bottom: 22px;
+        width: 100%;
+    }
+    
+}

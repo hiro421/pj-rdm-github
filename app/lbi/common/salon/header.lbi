@@ -1,0 +1,40 @@
+<script type="text/javascript">
+jQuery("body").addClass("salon");
+</script>
+
+<link rel="stylesheet" type="text/css" href="/app/css/common/salon/salon.css">
+<header id="header">
+    <div class="headArea">
+        <div class="inner">
+            <h1><a href="/pj/salon/">SALON by PEACH JOHN</a></h1>
+            <div class="menuBtn" id="salonMenuBtn">menu</div>
+            <div class="btn clearfix">
+                <div class="wishList pc"><a href="http://www.peachjohn.co.jp/pj/cliplist/">チェックリスト</a></div>
+                <div class="wishList sp"><a href="http://www.peachjohn.co.jp/pj/cliplist/">チェックリスト</a></div>
+                <div class="cart"><a href="http://www.peachjohn.co.jp/shopping/bag/">カートを見る</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="subArea">
+        <ul>
+            <li class="ranking"><a href="/pj/salon/ranking/">RANKING</a></li>
+            <li class="allitems"><a href="/pjitem/list/?_al=sa_all&count=150&_iid=1&outlet=include&sort=6">ALL ITEMS</a></li>
+        </ul>
+    </div>
+</header>
+
+<script type="text/javascript">
+     //gnavi
+     jQuery(document).ready(function () {
+        jQuery('#salonMenuBtn').click(function() {
+            if (jQuery('#gnavi').css('display') == 'block') {
+                jQuery('#gnavi').fadeOut();
+            } else {
+                jQuery('#gnavi').fadeIn();
+            }
+         })
+         jQuery('.closeBtn,.gnaviInner').click(function() {
+            jQuery('#gnavi').fadeOut();
+        });
+    });
+</script>

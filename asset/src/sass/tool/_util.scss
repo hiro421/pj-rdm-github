@@ -1,0 +1,16 @@
+#wrapper #gumiwire img {
+  width: 100%;
+  height: auto;
+}
+
+.sp{
+  @include min{
+    display: none !important;
+  }
+}
+
+.pc{
+  @include max{
+    display: none !important;
+  }
+}

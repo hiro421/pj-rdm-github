@@ -1,0 +1,1686 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+/* ==========================================================================
+    
+   Base
+   
+   ========================================================================== */
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html {
+  font-size: 62.5%;
+}
+
+.clearfix:before {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.u-pull-right {
+  float: right;
+}
+
+.u-pull-left {
+  float: left;
+}
+
+.pc {
+  display: block !important;
+}
+
+.sp {
+  display: none !important;
+}
+
+.fixed {
+  position: fixed !important;
+  top: 0px;
+  z-index: 9999;
+}
+
+@media screen and (max-width: 768px) {
+  #wrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pc {
+    display: none !important;
+  }
+
+  .sp {
+    display: block !important;
+  }
+}
+/* Common
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#header a,
+#side a,
+.footArea a,
+#footer a,
+#gnaviSp a {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+}
+#header a:hover,
+#side a:hover,
+.footArea a:hover,
+#footer a:hover,
+#gnaviSp a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+#header a img:hover,
+#side a img:hover,
+.footArea a img:hover,
+#footer a img:hover,
+#gnaviSp a img:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+@media screen and (max-width: 768px) {
+  #header a img:hover,
+  #side a img:hover,
+  .footArea a img:hover,
+  #footer a img:hover,
+  #gnaviSp a img:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+#header small,
+#side small,
+.footArea small,
+#footer small,
+#gnaviSp small {
+  font-size: 80%;
+}
+#header b,
+#side b,
+.footArea b,
+#footer b,
+#gnaviSp b {
+  font-weight: normal;
+}
+#header p,
+#side p,
+.footArea p,
+#footer p,
+#gnaviSp p {
+  margin: 0;
+}
+#header input, #header select,
+#side input, #side select,
+.footArea input, .footArea select,
+#footer input, #footer select,
+#gnaviSp input, #gnaviSp select {
+  vertical-align: middle;
+}
+#header *,
+#side *,
+.footArea *,
+#footer *,
+#gnaviSp * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#header,
+#side,
+.footArea,
+#footer,
+#gnaviSp {
+  font-family: "Montserrat","メイリオ", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo", "MS Pゴシック", "MS P Gothic", sans-serif;
+  color: #000;
+  font-weight: normal;
+  text-align: left;
+}
+
+#header h1, #header h2, #header h3, #header h4, #header h5, #header h6,
+#side h1, #side h2, #side h3, #side h4, #side h5, #side h6,
+.footArea h1, .footArea h2, .footArea h3, .footArea h4, .footArea h5, .footArea h6,
+#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6,
+#gnaviSp h1, #gnaviSp h2, #gnaviSp h3, #gnaviSp h4, #gnaviSp h5, #gnaviSp h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/* ItemList
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#itemsList > ul > li .tags li,
+#items-list > ul > li .tags li {
+  display: block;
+  float: left;
+  width: 80px;
+  height: 18px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+#itemsList > ul > li .tags li img,
+#items-list > ul > li .tags li img {
+  width: 100%;
+  height: auto;
+}
+#itemsList > ul > li .tags li img:hover,
+#items-list > ul > li .tags li img:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#header {
+  width: 100%;
+  height: 181px;
+  /*font-size: 1.6em;*/
+  font-size: 16px;
+  line-height: 1.7;
+  border-bottom: 1px solid #000;
+}
+#header .headArea {
+  background-color: #000;
+  height: 30px;
+}
+#header .headArea .inner {
+  width: 984px;
+  margin: 0 auto;
+  position: relative;
+  color: #fff;
+  line-height: 30px;
+}
+#header .headArea .inner .title {
+  margin-right: 15px;
+}
+#header .headArea .inner .tel {
+  background: url(/app/img/common/ico_tel.png) no-repeat left center;
+  padding-left: 18px;
+}
+#header .headArea .inner .mail {
+/* background: url(/app/img/common/ico_mail.png) no-repeat left center;*/
+  float: right;
+  font-size: 1.3rem;
+}
+#header .headArea .inner .mail a {
+  color: #fff;
+  padding-left: 25px;
+}
+#header .bodyArea {
+  background-color: #fff;
+}
+#header .bodyArea .inner {
+  width: 984px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 40px;
+}
+#header .bodyArea .inner h1 {
+  text-align: center;
+  line-height: 1;
+  margin: 0 auto;
+  width: 258px;
+  height: 30px;
+}
+#header .bodyArea .inner h1 a {
+  width: 258px;
+  height: 30px;
+  background: url(/app/img/common/logo_pc.png) no-repeat center center;
+  background-size: 258px 30px;
+  border: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+#header .bodyArea .inner .menuBtn {
+  display: none;
+}
+#header .bodyArea .inner .keywords {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  border: 1px solid #dcdcdc;
+  width: 250px;
+  height: 30px;
+  border-radius: 3px;
+  /*overflow: hidden;*/
+  overflow: visible;
+}
+#header .bodyArea .inner .keywords #keyword {
+  display: block;
+  width: 220px;
+  /*height: 30px;*/
+  height: 28px;
+  position: relative;
+  margin: 0;
+  padding: 5px;
+  border: none;
+  background: #ffffff;
+  font-size: 12px;
+  /*line-height: 30px;*/
+  line-height: 28px;
+  outline: none;
+}
+#header .bodyArea .inner .keywords .submit {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 1px;
+  top: 0;
+  border: none;
+  background: url(/app/img/common/ico_search.svg) center center no-repeat;
+  background-size: 16px 16px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+}
+#header .bodyArea .inner .btn {
+  position: absolute;
+  right: 0;
+  top: 45px;
+}
+#header .bodyArea .inner .btn a {
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#header .bodyArea .inner .btn a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+#header .bodyArea .inner .btn .wishList {
+  float: left;
+}
+#header .bodyArea .inner .btn .wishList a {
+  background: url(/app/img/common/ico_wish.svg) no-repeat center center;
+  background-size: 20px 16px;
+  width: 20px;
+  height: 20px;
+}
+#header .bodyArea .inner .btn .cart {
+  float: left;
+  margin-left: 22px;
+}
+#header .bodyArea .inner .btn .cart a {
+  background: url(/app/img/common/ico_cart.svg) no-repeat center center;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+  text-indent: -9999px;
+}
+#header .bodyArea .inner .btn .cart a .count {
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  background-color: #dc2e62;
+  border-radius: 10px;
+  line-height: 1;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-indent: 0;
+}
+#header .bodyArea .inner .account {
+  position: absolute;
+  right: 80px;
+  top: 42px;
+}
+#header .gnavi {
+  width: 100%;
+  margin-top: 45px;
+}
+#header .gnavi .category {
+  position: relative;
+  width: 100%;
+  font-size: 1.4rem;
+}
+#header .gnavi .category > ul {
+  display: table;
+  width: 984px;
+  margin: 0 auto;
+}
+#header .gnavi .category > ul > li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0 25px;
+  cursor: pointer;
+}
+#header .gnavi .category > ul > li a {
+  padding: 15px 0 15px 0;
+  text-decoration: none;
+  position: relative;
+}
+#header .gnavi .category > ul > li:hover {
+  text-decoration: none;
+}
+#header .gnavi .category > ul > li:hover > b > a:before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+}
+#header .gnavi .category > ul > li:hover > div {
+/*  display: block;*/
+}
+#header .gnavi .category > ul > li.show > div {
+	visibility: visible;
+ 	-webkit-animation: gnavi-show 0.3s linear 0s forwards;
+	animation: gnavi-show 0.3s linear 0s forwards;
+}
+#header .gnavi .category > ul > li > div {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 38px;
+  width: 100%;
+  z-index: 9999;
+  margin: -2px 0 0 0;
+  padding: 12px 22px 15px 0;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  background: #ffffff;
+  text-align: left;
+  letter-spacing: -0.4em;
+}
+#header .gnavi .category > ul > li > div > .wrap {
+  width: 984px;
+  margin: 0 auto;
+}
+#header .gnavi .category > ul > li > div > .wrap > div {
+  display: inline-block;
+  margin: 0;
+  padding: 0 3px 15px 0;
+  letter-spacing: normal;
+  vertical-align: top;
+}
+#header .gnavi .category > ul > li > div > .wrap > div > ul {
+  display: inline-block;
+  padding: 12px 3px 0 27px;
+  letter-spacing: normal;
+  vertical-align: top;
+}
+#header .gnavi .category > ul > li > div > .wrap > div > ul > li {
+  width: 203px;
+}
+#header .gnavi .category > ul > li > div > .wrap > div > ul > li a {
+  display: block;
+  position: static;
+  margin: 0;
+  padding: 3px 0 2px 11px;
+  border: none;
+  font-size: 1.2rem;
+}
+#header .gnavi .category > ul > li > div > .wrap > div > ul > li a:hover {
+  text-decoration: underline;
+}
+#header .gnavi .category > ul > li > div > .wrap > div > b {
+  display: block;
+  margin: 0 0 0 27px;
+  padding: 15px 0;
+  border-bottom: 1px solid #000;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: normal;
+  cursor: default;
+}
+#header .gnavi .category > ul > li > div > .wrap > div > b > a {
+  margin: -15px 0;
+  padding: 15px 0;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#header .gnavi .category > ul > li > div > .wrap > div > b > a:hover {
+  text-decoration: underline;
+}
+#header .gnavi .category > ul > li.bra > div > div > div {
+  float: left;
+  margin-right: -1px;
+}
+
+#gnaviSp {
+  display: none;
+}
+
+/* LeftNavi
+-------------------------------------------------- */
+#page-wrapper #content-wrapper #side-area {
+    margin-top: 0 !important;
+}
+#page-wrapper #content-wrapper #side-area > .catalog-items {
+    border:none !important;
+}
+#side {
+  float: left;
+  width: 175px;
+  position: relative;
+}
+#side .bn {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+#side .block {
+  margin-top: 31px;
+}
+#side .block li.bold {
+    font-weight: bold;
+}
+#side .block .categories .categories ul > li.categories > div {
+    left: 162px;
+}
+#side .block > ul > li {
+  position: relative;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 1.4rem;
+}
+#side .block > ul > li > ul > li {
+  position: relative;
+  border-bottom: 1px solid #eaeaea;
+  padding-left: 5px;
+  font-size: 1.3rem;
+}
+#side .block > ul > li > ul > li:last-child {
+  border-bottom: none;
+}
+#side .block > ul > li > ul > li:hover > a {
+/*
+  background-color: #5d5d5d;
+  color: #fff;
+*/
+}
+#side .block > ul > li > ul > li > a {
+  display: block;
+  padding: 8px 0 8px 5px;
+  text-decoration: none;
+}
+#side .block ul > li > div {
+  display: none;
+  max-width: 793px;
+  position: relative;
+  z-index: 9990;
+  background: #ffffff;
+  min-height: 100%;
+}
+#side .block ul > li > div > div {
+  display: table;
+  width: 100%;
+}
+#side .block ul > li > div > div > ul {
+  display: table-cell;
+  padding: 6px 0 12px 1em;
+  letter-spacing: normal;
+  vertical-align: top;
+}
+#side .block ul > li > div > div > ul > li {
+  width: auto;
+  position: relative;
+}
+#side .block ul > li > div > div > ul > li > a {
+  display: block;
+  position: static;
+  margin: 0;
+  padding: 3px 0 2px 0;
+  border: none;
+  font-size: 1.2rem;
+}
+
+#side .block ul > li > div > div > ul > li > div {
+  position: absolute;
+  top: -10px;
+  left: 157px!important;
+  border: 1px solid #000;
+  white-space: nowrap;
+}
+
+#side .block ul > li > div > div > ul > li > div > div > ul  {
+  padding: 10px;
+}
+
+#side .block ul > li > div ul > li:hover > div  {
+  display: block;
+}
+
+#side .block > ul > li.categories:hover > b > a {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+#side .block > ul > li.categories > b > a {
+  background: #fff url(/app/img/common/ico_plus.svg) no-repeat right center;
+  background-size: 13px 13px;
+}
+#side .block > ul > li.categories > b > a:hover {
+  background-color: #fff;
+  color: #000;
+}
+#side .block > ul > li.categories > b.none-submenu > a {
+  background: #fff url(/app/img/common/ico_plus.svg) no-repeat right center;
+  background-size: 13px 13px;
+}
+#side .block > ul > li.categories > b.active-submenu > a {
+  background: #fff url(/app/img/common/ico_minus.svg) no-repeat right center;
+  background-size: 13px 13px;
+}
+#side .block > ul > li > b > a {
+  display: block;
+  padding: 8px 0 8px 5px;
+  text-decoration: none;
+}
+#side .block > ul > li > b > a:hover {
+  background-color: #5d5d5d;
+  color: #fff;
+}
+#side .block .acoCont {
+  display: none;
+}
+#side .block > a {
+  display: block;
+}
+#side .block > a:hover {
+  text-decoration: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+#side .block > ul > li.categories > ul > li > a.trigger {
+  background: #fff url(/app/img/common/ico_plus.svg) no-repeat right center;
+  background-size: 9px 9px;
+}
+#side .block > ul > li.categories > ul > li > a.trigger.active-submenu {
+  background: #fff url(/app/img/common/ico_minus.svg) no-repeat right center;
+  background-size: 9px 9px;
+}
+
+#side .block ul > li.categories.pickUp > div > div > ul {
+    padding: 10px;
+}
+#side .block > ul > li.categories.pickUp > ul > li > a.trigger {
+  background: none;
+}
+#side .block > ul > li.categories.pickUp > ul > li > a.trigger.active-submenu {
+  background: none;
+}
+#side .block > ul > li.categories.pickUp > ul > li  {
+    position: relative;
+}
+#side .block > ul > li.categories.pickUp > ul > li:hover > div.acoCont  {
+    display: block;
+}
+
+#side .block > ul > li.categories.pickUp > ul > li > div.acoCont {
+  position: absolute;
+  top: -10px;
+  left: 157px!important;
+  border: 1px solid #000;
+  white-space: nowrap;
+  max-width: 793px;
+  z-index: 9991;
+  background: #ffffff;
+  min-height: 100%;
+}
+
+#side .block > ul > li.categories.pickUp > ul > li > div.acoCont >div > ul {
+  padding: 10px;
+}
+#side h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000;
+}
+#side h3.helpGuide {
+  background: url(/app/img/common/ico_plus.svg) no-repeat right 25px;
+  background-size: 15px 15px;
+  cursor: pointer;
+}
+#side h3.helpGuide.none-submenu {
+  background: url(/app/img/common/ico_plus.svg) no-repeat right 25px;
+  background-size: 15px 15px;
+}
+#side h3.helpGuide.active-submenu {
+  background: url(/app/img/common/ico_minus.svg) no-repeat right 25px;
+  background-size: 15px 15px;
+}
+#side h3.app {
+  background: url(/app/img/common/ico_plus.svg) no-repeat right 25px;
+  background-size: 15px 15px;
+  cursor: pointer;
+}
+#side h3.app.none-submenu {
+  background: url(/app/img/common/ico_plus.svg) no-repeat right 25px;
+  background-size: 15px 15px;
+}
+#side h3.app.active-submenu {
+  background: url(/app/img/common/ico_minus.svg) no-repeat right 25px;
+  background-size: 15px 15px;
+}
+#side h3.app {
+  background: url(/app/img/common/ico_plus.svg) no-repeat right 25px;
+  background-size: 15px 15px;
+  cursor: pointer;
+}
+#side h3.app.none-submenu {
+  background: url(/app/img/common/ico_plus.svg) no-repeat right 25px;
+  background-size: 15px 15px;
+}
+#side h3.app.active-submenu {
+  background: url(/app/img/common/ico_minus.svg) no-repeat right 25px;
+  background-size: 15px 15px;
+}
+#side h3.store {
+  background: url(/app/img/common/ico_plus.svg) no-repeat right 4px;
+  background-size: 15px 15px;
+  cursor: pointer;
+}
+#side h3.store.none-submenu {
+  background: url(/app/img/common/ico_plus.svg) no-repeat right 4px;
+  background-size: 15px 15px;
+}
+#side h3.store.active-submenu {
+  background: url(/app/img/common/ico_minus.svg) no-repeat right 4px;
+  background-size: 15px 15px;
+}
+#side h3.service {
+  background: url(/app/img/common/ico_plus.svg) no-repeat right 4px;
+  background-size: 15px 15px;
+  cursor: pointer;
+}
+#side h3.service.none-submenu {
+  background: url(/app/img/common/ico_plus.svg) no-repeat right 4px;
+  background-size: 15px 15px;
+}
+#side h3.service.active-submenu {
+  background: url(/app/img/common/ico_minus.svg) no-repeat right 4px;
+  background-size: 15px 15px;
+}
+#side .searchBtn button {
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+#side .searchBtn button:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+.commonNavWrap01 .keywords {
+  display: none;
+}
+.commonNavWrap01 .categories.bra {
+  display: none;
+}
+.commonNavWrap01 .BrowsingHistory {
+  display: none;
+}
+.commonNavWrap01 .wishList > b {
+  display: none;
+}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.footArea {
+  width: 100%;
+  margin-top: 125px;
+}
+.footArea .sns {
+  width: 100%;
+  padding: 25px 0 30px;
+  border-top: 1px solid #c9c9c9;
+}
+.footArea .sns h3 {
+  font-size: 2.4rem;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.footArea .sns ul {
+  text-align: center;
+  margin: 0 auto;
+}
+.footArea .sns ul li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 10px;
+  width: 30px;
+}
+.footArea .sns ul li.line {
+  width: 40px;
+}
+.footArea .sns ul li a {
+  display: inline-block;
+}
+.footArea .sns ul li a img {
+  width: 100%;
+}
+.footArea .sns ul li a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+.footArea .banner {
+  width: 100%;
+  padding: 25px 0 20px;
+  border-top: 1px solid #c9c9c9;
+}
+.footArea .banner ul {
+  text-align: center;
+  margin: 0 auto;
+  width: 984px;
+}
+.footArea .banner ul li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.footArea .banner ul li.pj a {
+  background: url(/app/img/common/foot_logo_pj.png) no-repeat left top;
+  width: 303px;
+  height: 35px;
+}
+.footArea .banner ul li.salon a {
+  background: url(/app/img/common/foot_logo_salon.png) no-repeat left top;
+  width: 176px;
+  height: 51px;
+}
+.footArea .banner ul li.yummymart a {
+  background: url(/app/img/common/foot_logo_yummy.png) no-repeat left top;
+  width: 290px;
+  height: 34px;
+}
+.footArea .banner ul li.momolife a {
+  background: url(/app/img/common/foot_logo_momo.png) no-repeat left top;
+  width: 201px;
+  height: 51px;
+}
+.footArea .banner ul li a {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+.footArea .banner ul li a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+
+#footer {
+  width: 100%;
+  background-color: #eeeeee;
+}
+#footer .inner {
+  background-color: #eeeeee;
+}
+#footer #fnavi {
+  width: 800px;
+  position: relative;
+  margin: 0 auto;
+  padding: 14px 0;
+  display: block;
+}
+#footer #fnavi ul {
+  display: table;
+  width: 100%;
+}
+#footer #fnavi ul li {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1;
+  padding: 7px 15px 0px;
+  font-size: 1.2rem;
+}
+#footer #fnavi ul li a {
+  display: block;
+  color: #7d7d7d;
+}
+#footer #copyright {
+  background-color: #535353;
+  text-align: center;
+  color: #fff;
+  line-height: 1;
+  padding: 9px 0;
+  font-size: 1rem;
+}
+
+/* ===================================================================================================================================================
+    
+   sp
+   
+   =================================================================================================================================================== */
+@media screen and (max-width: 768px) {
+  /* Header
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  #header {
+    width: 100%;
+    height: 85px;
+    position: relative;
+    margin-top: 0;
+    z-index: 100;
+    font-family: "Montserrat","メイリオ", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",  "Meiryo", "MS Pゴシック", "MS P Gothic", sans-serif;
+    color: #000;
+    font-weight: normal;
+    text-align: left;
+  }
+  #header .headArea {
+    display: none;
+  }
+  #header.fixed .bodyArea {
+    border-bottom: 1px solid #dcdcdc;
+  }
+  #header .bodyArea {
+    height: 85px;
+  }
+  #header .bodyArea .inner {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 0px;
+  }
+  #header .bodyArea .inner:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 100%;
+    height: 1px;
+    background: #c9c9c9;
+  }
+  #header .bodyArea .inner h1 {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    text-align: center;
+    line-height: 1;
+    margin: 0 auto;
+    margin-left: -73px;
+    width: 146px;
+    height: 18px;
+  }
+  #header .bodyArea .inner h1 a {
+    width: 146px;
+    height: 18px;
+    background: url(/app/img/common/logo.png) no-repeat center center;
+    background-size: 146px 18px;
+  }
+  #header .bodyArea .inner .menuBtn {
+    position: absolute;
+    left: 1.6875%;
+    top: 42px;
+    width: 35px;
+    height: 35px;
+    background: url(/app/img/common/navbar.png) no-repeat center center;
+    background-size: 15px 12px;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  #header .bodyArea .inner .menuBtn:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  #header .bodyArea .inner .keywords {
+    position: absolute;
+    left: auto;
+    right: 5px;
+    top: 5px;
+    border: 1px solid #dcdcdc;
+    width: 48%;
+    height: 25px;
+    border-radius: 3px;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+  #header .bodyArea .inner .keywords #keyword {
+    display: block;
+    width: 100%;
+    height: 25px;
+    position: relative;
+    margin: 0;
+    padding: 5px 18px 5px 2px;
+    border: none;
+    background: #ffffff;
+    font-size: 1rem;
+    line-height: 25px;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  #header .bodyArea .inner .keywords .submit {
+    display: block;
+    width: 14%;
+    height: 25px;
+    position: absolute;
+    right: 1px;
+    top: 0;
+    border: none;
+    background: url(/app/img/common/ico_search.png) center center no-repeat;
+    background-size: 10px 10px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+  }
+  #header .bodyArea .inner .btn {
+    position: absolute;
+    right: 4.6875%;
+    top: 53px;
+  }
+  #header .bodyArea .inner .btn a {
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  #header .bodyArea .inner .btn a:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+  }
+  #header .bodyArea .inner .btn .wishList {
+    float: left;
+  }
+  #header .bodyArea .inner .btn .wishList a {
+    background: url(/app/img/common/ico_wish.svg) no-repeat center center;
+    background-size: 15px 13px;
+    width: 15px;
+    height: 13px;
+    margin-top: 1px;
+  }
+  #header .bodyArea .inner .btn .cart {
+    float: left;
+    margin-left: 13px;
+  }
+  #header .bodyArea .inner .btn .cart a {
+    background: url(/app/img/common/ico_cart.svg) no-repeat center center;
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+  }
+  #header .bodyArea .inner .btn .cart a .count {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    background-color: #dc2e62;
+    border-radius: 10px;
+    line-height: 1;
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    text-indent: 0;
+  }
+  #header .bodyArea .inner .account {
+    position: absolute;
+    left: 5px;
+    right: auto;
+    top: 8px;
+    font-size: 1.2rem;
+  }
+  #header .gnavi {
+    display: none;
+  }
+
+  #gnaviSp {
+    overflow: auto;
+	-webkit-overflow-scrolling: touch;
+  }
+  #gnaviSp .gnaviInner .wrap {
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+  #gnaviSp .gnaviInner .head {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    background-color: #eee;
+    display: table;
+    width: 100%;
+  }
+  #gnaviSp .gnaviInner .head .account {
+    text-align: center;
+    float: left;
+    font-size: 1.2rem;
+    width: 100%;
+    padding-right: 40px;
+  }
+  #gnaviSp .gnaviInner .head .closeBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border-left: 1px solid #d2d2d2;
+    -webkit-transform: translate3d(0, 0, 1px);
+    transform: translate3d(0, 0, 1px);
+    z-index: 10000;
+  }
+  #gnaviSp .gnaviInner .head .closeBtn:before {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 10px;
+    height: 10px;
+    background: url(/app/img/common/ico_delete.svg) no-repeat center center;
+    background-size: 10px 10px;
+  }
+  #gnaviSp .gnaviInner .banner {
+    width: 100%;
+    padding: 20px 0 30px;
+  }
+  #gnaviSp .gnaviInner .banner ul {
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+  }
+  #gnaviSp .gnaviInner .banner ul li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  #gnaviSp .gnaviInner .banner ul li.pj {
+    margin: 0 23% 20px;
+  }
+  #gnaviSp .gnaviInner .banner ul li.pj a {
+    background: url(/app/img/common/foot_logo_pj.png) no-repeat left top;
+    background-size: contain;
+    width: 145px;
+    height: 17px;
+  }
+  #gnaviSp .gnaviInner .banner ul li.salon {
+    margin: 0 10px;
+  }
+  #gnaviSp .gnaviInner .banner ul li.salon a {
+    background: url(/app/img/common/foot_logo_salon.png) no-repeat left top;
+    background-size: contain;
+    width: 85px;
+    height: 26px;
+  }
+  #gnaviSp .gnaviInner .banner ul li.yummymart {
+    margin: 0 10px;
+  }
+  #gnaviSp .gnaviInner .banner ul li.yummymart a {
+    background: url(/app/img/common/foot_logo_yummy.png) no-repeat left top;
+    background-size: contain;
+    width: 130px;
+    height: 15px;
+  }
+  #gnaviSp .gnaviInner .banner ul li a {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+  }
+  #gnaviSp .gnaviInner .banner ul li a:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+  }
+  #gnaviSp .gnaviInner .block {
+    margin-top: 0;
+  }
+  #gnaviSp .gnaviInner .block .BrowsingHistory {
+    border-bottom: 1px solid #eaeaea;
+  }
+  #gnaviSp .gnaviInner .block .BrowsingHistory b a {
+    display: block;
+    padding: 3% 0% 3% 2%;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.1rem;
+  }
+  #gnaviSp .gnaviInner .block .BrowsingHistory b a:before {
+    content: "MORE";
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    margin-top: -10px;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    background: url(/app/img/common/arrow_right.svg) no-repeat right center;
+    background-size: 6px 10px;
+  }
+  #gnaviSp .gnaviInner .block .BrowsingHistory div.none {
+    text-align: center;
+    color: #dcdcdc;
+    font-size: 1.5rem;
+    padding: 15px 0;
+  }
+  #gnaviSp .gnaviInner .block .wishList b a {
+    display: block;
+    padding: 3% 0% 3% 20px;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.1rem;
+  }
+  #gnaviSp .gnaviInner .block .wishList b a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    width: 15px;
+    height: 12px;
+    background: url(/app/img/common/ico_wish.svg) no-repeat right center;
+    background-size: 15px 12px;
+  }
+  #gnaviSp .gnaviInner .block .wishList b a:before {
+    content: "MORE";
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    margin-top: -10px;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    background: url(/app/img/common/arrow_right.svg) no-repeat right center;
+    background-size: 6px 10px;
+  }
+  #gnaviSp .gnaviInner .block .wishList div ul {
+    letter-spacing: -0.4em;
+    overflow: hidden;
+  }
+  #gnaviSp .gnaviInner .block .wishList div ul li {
+    display: inline-block;
+    letter-spacing: normal;
+    padding: 0 1%;
+    width: 20%;
+  }
+  #gnaviSp .gnaviInner .block .special100 b a {
+    display: block;
+    padding: 3% 0% 3% 25px;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.1rem;
+  }
+  #gnaviSp .gnaviInner .block .special100 b a:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -6px;
+    width: 15px;
+    height: 12px;
+    background: url(/app/img/common/ico_100.png) no-repeat right center;
+    background-size: 15px 12px;
+  }
+  #gnaviSp .gnaviInner .block .keywords {
+    border: 1px solid #dcdcdc;
+    width: 100%;
+    height: 25px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 4%;
+    position: relative;
+  }
+  #gnaviSp .gnaviInner .block .keywords #keyword {
+    display: block;
+    width: 100%;
+    height: 25px;
+    position: relative;
+    margin: 0;
+    padding: 5px 18px 5px 5px;
+    border: none;
+    background: #ffffff;
+    font-size: 1rem;
+    line-height: 25px;
+    outline: none;
+  }
+  #gnaviSp .gnaviInner .block .keywords .submit {
+    display: block;
+    width: 10%;
+    height: 25px;
+    position: absolute;
+    right: 1px;
+    top: 0;
+    border: none;
+    background: url(/app/img/common/ico_search.png) center center no-repeat;
+    background-size: 10px 10px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+  }
+  #gnaviSp .gnaviInner .block > ul {
+    padding: 0 4.6875%;
+  }
+  #gnaviSp .gnaviInner .block > ul > li {
+    font-size: 1.4rem;
+  }
+  #gnaviSp .gnaviInner .block > ul > li > ul > li {
+    position: relative;
+    border-bottom: 1px solid #eaeaea;
+    margin-left: 5%;
+    font-size: 1rem;
+  }
+  #gnaviSp .gnaviInner .block > ul > li > ul > li > a {
+    display: block;
+    padding: 4% 0% 4% 2%;
+    text-decoration: none;
+    position: relative;
+  }
+  #gnaviSp .gnaviInner .block > ul > li > ul > li > a.trigger:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -6px;
+    width: 12px;
+    height: 12px;
+    background: #fff url(/app/img/common/ico_plus.svg) no-repeat left top;
+    background-size: 12px 12px;
+  }
+  #gnaviSp .gnaviInner .block > ul > li > ul > li > a.trigger.none-submenu:before {
+    background: #fff url(/app/img/common/ico_plus.svg) no-repeat left top;
+    background-size: 12px 12px;
+  }
+  #gnaviSp .gnaviInner .block > ul > li > ul > li > a.trigger.active-submenu:before {
+    background: #fff url(/app/img/common/ico_minus.svg) no-repeat left top;
+    background-size: 12px 12px;
+  }
+  #gnaviSp .gnaviInner .block > ul > li > ul > li > div {
+    position: relative;
+  }
+  #gnaviSp .gnaviInner .block > ul > li > ul > li > div > div > ul {
+    border-top: 1px solid #eaeaea;
+  }
+  #gnaviSp .gnaviInner .block > ul > li > ul > li > div > div > ul > li {
+    position: relative;
+    border-bottom: 1px solid #eaeaea;
+    margin-left: 5%;
+  }
+  #gnaviSp .gnaviInner .block > ul > li > ul > li > div > div > ul > li:last-child {
+    border-bottom: none;
+  }
+  #gnaviSp .gnaviInner .block > ul > li > ul > li > div > div > ul > li > a {
+    display: block;
+    padding: 3% 0% 3% 2%;
+    text-decoration: none;
+    position: relative;
+  }
+  #gnaviSp .gnaviInner .block > ul > li.categories > b > a {
+    position: relative;
+  }
+  #gnaviSp .gnaviInner .block > ul > li.categories > b > a:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -6px;
+    width: 12px;
+    height: 12px;
+    background: #fff url(/app/img/common/ico_plus.svg) no-repeat left top;
+    background-size: 12px 12px;
+  }
+  #gnaviSp .gnaviInner .block > ul > li.categories > b > a.none-submenu:before {
+    background: #fff url(/app/img/common/ico_plus.svg) no-repeat left top;
+    background-size: 12px 12px;
+  }
+  #gnaviSp .gnaviInner .block > ul > li.categories > b > a.active-submenu:before {
+    background: #fff url(/app/img/common/ico_minus.svg) no-repeat left top;
+    background-size: 12px 12px;
+  }
+  #gnaviSp .gnaviInner .block > ul > li.categories > b.none-submenu > a:before {
+    background: #fff url(/app/img/common/ico_plus.svg) no-repeat left top;
+    background-size: 12px 12px;
+  }
+  #gnaviSp .gnaviInner .block > ul > li.categories > b.active-submenu > a {
+    border-bottom: 1px solid #eaeaea;
+  }
+  #gnaviSp .gnaviInner .block > ul > li.categories > b.active-submenu > a:before {
+    background: #fff url(/app/img/common/ico_minus.svg) no-repeat left top;
+    background-size: 12px 12px;
+  }
+  #gnaviSp .gnaviInner .block > ul > li > b > a {
+    display: block;
+    padding: 4% 0% 4% 2%;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #eaeaea;
+  }
+  #gnaviSp .gnaviInner .block > ul > li > b > a:before {
+    content: "";
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    margin-top: -6px;
+    width: 6px;
+    height: 10px;
+    background: url(/app/img/common/arrow_right.svg) no-repeat left top;
+    background-size: 6px 10px;
+  }
+  #gnaviSp .gnaviInner .block .acoCont {
+    display: none;
+  }
+  #gnaviSp .gnaviInner .block > a {
+    display: block;
+  }
+  #gnaviSp .gnaviInner h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1;
+    padding: 4.6875%;
+    border-bottom: 1px solid #000;
+    position: relative;
+  }
+  #gnaviSp .gnaviInner h3:before {
+    content: "";
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    margin-top: -5px;
+    width: 6px;
+    height: 10px;
+    background: url(/app/img/common/arrow_right.svg) no-repeat left top;
+    background-size: 6px 10px;
+  }
+  #gnaviSp .gnaviInner h3.trigger:before {
+    content: "";
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    margin-top: -3px;
+    width: 10px;
+    height: 6px;
+    background: url(/app/img/common/arrow_down_single.svg) no-repeat left top;
+    background-size: 10px 6px;
+  }
+  #gnaviSp .gnaviInner h3.trigger.none-submenu:before {
+    background: url(/app/img/common/arrow_down_single.svg) no-repeat left top;
+    background-size: 10px 6px;
+  }
+  #gnaviSp .gnaviInner h3.trigger.active-submenu:before {
+    background: url(/app/img/common/arrow_up.svg) no-repeat left top;
+    background-size: 10px 6px;
+  }
+  #gnaviSp .gnaviInner .bannerArea {
+	text-align: center;
+	padding: 10px 0;
+  }
+  #gnaviSp .gnaviInner .bannerWrap {
+	overflow: hidden;
+	font-size: 0;
+  }
+  #gnaviSp .gnaviInner a.pjbrand {
+	text-indent: -9999px;
+	background: url(../../img/common/foot_logo_pj.png) no-repeat center center;
+	background-size: 40% auto;
+	display: block;
+	height: 0;
+	padding-top: 13%;
+  }
+  #gnaviSp .gnaviInner a.pjbrand:before {
+    display: none;
+  }
+  #gnaviSp .gnaviInner a.salon {
+	text-indent: -9999px;
+	background: url(../../img/common/foot_logo_salon.png) no-repeat center center;
+	background-size: 50% auto;
+	display: inline-block;
+	width: 50%;
+	height: 0;
+	padding-top: 13%;
+	margin-left: -5%;
+  }
+  #gnaviSp .gnaviInner a.salon:before {
+    display: none;
+  }
+	#gnaviSp .gnaviInner a.yummy {
+	text-indent: -9999px;
+	background: url(../../img/common/foot_logo_yummy.png) no-repeat center center;
+	background-size: 80% auto;
+	display: inline-block;
+	width: 50%;
+	height: 0;
+	padding-top: 13%;
+  }
+  #gnaviSp .gnaviInner a.yummy:before {
+    display: none;
+  }
+	#gnaviSp .gnaviInner a.momolife {
+	text-indent: -9999px;
+	background: url(../../img/common/foot_logo_momo.png) no-repeat center center;
+	background-size: 28% auto;
+	display: block;
+	height: 0;
+	padding-top: 13%;
+  }
+  #gnaviSp .gnaviInner a.momolife:before {
+    display: none;
+  }
+  
+  /* LeftNavi
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  #side {
+    display: none;
+  }
+  .commonNavWrap01 .keywords {
+    display: block;
+  }
+  .commonNavWrap01 .categories.bra {
+    display: none;
+  }
+  .commonNavWrap01 .BrowsingHistory {
+    display: block;
+  }
+  .commonNavWrap01 .wishList > b {
+    display: block;
+  }
+  
+  /* Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .footArea {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .footArea .sns {
+    width: 100%;
+    padding: 25px 0 20px;
+    border-top: 1px solid #c9c9c9;
+    text-align: center;
+  }
+  .footArea .sns h3 {
+    font-size: 2rem;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .footArea .sns ul {
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+  }
+  .footArea .sns ul li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 5px;
+    width: 20px;
+  }
+  .footArea .sns ul li.line {
+    width: 30px;
+  }
+  .footArea .sns ul li a {
+    display: inline-block;
+  }
+  .footArea .sns ul li a img {
+    width: 100%;
+  }
+  .footArea .sns ul li a:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  .footArea .banner {
+    width: 100%;
+    padding: 25px 0 20px;
+    border-top: 1px solid #c9c9c9;
+  }
+  .footArea .banner ul {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+  }
+  .footArea .banner ul li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .footArea .banner ul li.pj {
+    margin: 0 23% 20px;
+  }
+  .footArea .banner ul li.pj a {
+    background: url(/app/img/common/foot_logo_pj.png) no-repeat left top;
+    background-size: contain;
+    width: 145px;
+    height: 17px;
+  }
+  .footArea .banner ul li.salon {
+    margin: 0 10px;
+  }
+  .footArea .banner ul li.salon a {
+    background: url(/app/img/common/foot_logo_salon.png) no-repeat left top;
+    background-size: contain;
+    width: 85px;
+    height: 26px;
+  }
+  .footArea .banner ul li.yummymart {
+    margin: 0 10px;
+  }
+  .footArea .banner ul li.yummymart a {
+    background: url(/app/img/common/foot_logo_yummy.png) no-repeat left top;
+    background-size: contain;
+    width: 130px;
+    height: 15px;
+  }
+  .footArea .banner ul li.momolife {
+    margin: 20px 23% 0;
+  }
+  .footArea .banner ul li.momolife a {
+    background: url(/app/img/common/foot_logo_momo.png) no-repeat left top;
+    background-size: contain;
+    width: 100px;
+    height: 25px;
+  }
+  .footArea .banner ul li a {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+  }
+  .footArea .banner ul li a:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+  }
+
+  #footer {
+    width: 100%;
+    background-color: #eeeeee;
+  }
+  #footer #fnavi {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 15px 0 18px;
+    text-align: center;
+  }
+  #footer #fnavi ul {
+    display: inline-block;
+    width: 90%;
+  }
+  #footer #fnavi ul li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    padding: 0 15px;
+    font-size: 1rem;
+  }
+  #footer #fnavi ul li a {
+    display: block;
+    color: #7d7d7d;
+  }
+  #footer #copyright {
+    background-color: #535353;
+    text-align: center;
+    color: #fff;
+    line-height: 1;
+    padding: 9px 0;
+    font-size: 1rem;
+  }
+}
+
+@-webkit-keyframes gnavi-show{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes gnavi-show{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+

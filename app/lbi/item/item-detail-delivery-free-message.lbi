@@ -1,0 +1,56 @@
+<div class="message">
+    <div class="balanceToDeliveryNonfree" style="display:none;">
+        <p>
+            <b>送料無料対象商品をお買い上げの場合を除き、1回のご注文につき送料(￥540)がかかります。</b>
+        </p>
+    </div>
+    <div class="balanceToDeliveryDetail" style="display:none;">
+        <p class="text-A13">
+            <b>あと<span class="highlight amountFree"></span>のお買い上げ（各種割引適用後）で<span class="highlight">送料(￥540)が無料</span>になります。</b>
+        </p>
+    </div>
+    <div class="balanceToDeliveryFree" style="display:none;">
+        <p class="text-A13">
+            <b><span class="highlight">送料(￥540)無料</span>にてお届けします。</b>
+        </p>
+    </div>
+    <div class="balanceToDeliverySale" style="display:none;">
+        <p class="text-A13">
+            <div Align="left" >※セール対象商品はセールアイコンが表示されているカラーが対象となります。<br/>
+                                             ※セール商品をご注文の場合は返品交換をお受けできません。<br />
+            </div>
+        </p>
+    </div>
+</div>
+<script type="text/javascript">
+buildDeliveryFreeMessage = function() {
+    var cartTotalPrice = pagePolicy.getCommonData(COMMON_CONSTS.COMMON_DATA_API.REQUEST.CART_TOTAL_PRICE);
+    var deliveryFreePrice = pagePolicy.getCommonData(COMMON_CONSTS.COMMON_DATA_API.REQUEST.DELIVERY_FREE_PRICE);
+    
+    jQuery(".message > .balanceToDeliveryDetail .highlight.amountFree").empty();
+    jQuery(".message > .balanceToDeliveryNonfree").css("display", "none");
+    jQuery(".message > .balanceToDeliveryDetail").css("display", "none");
+    jQuery(".message > .balanceToDeliveryFree").css("display", "none");
+    jQuery(".message > .balanceToDeliverySale").css("display", "none");
+    if (deliveryFreePrice > cartTotalPrice) {
+        var balance = deliveryFreePrice - cartTotalPrice;
+        jQuery(".message > .balanceToDeliveryDetail .highlight.amountFree").text("\u00A5" + CommonUtils.numberFormat(balance));
+        jQuery(".message > .balanceToDeliveryDetail").css("display", "");
+    } else if (deliveryFreePrice > -1 && deliveryFreePrice <= cartTotalPrice) {
+        jQuery(".message > .balanceToDeliveryFree").css("display", "");
+    } else {
+        jQuery(".message > .balanceToDeliveryNonfree").css("display", "");
+    }
+    if (ItemData.iconList.length > 0) {
+        var path = ['ico_0049.gif','ico_0030.gif','ico_0013.gif','ico_110_21.gif'];
+        jQuery.each(ItemData.iconList, function(index, icon) {
+            if (jQuery.inArray(icon.iconPath.match(/[^\/]+\.(jpg|gif|png|bmp|jpeg)/i)[0], path) > -1) {
+                jQuery(".message > .balanceToDeliverySale").css("display", "");
+            }
+        });
+    }
+}
+pagePolicy.putCommonData(COMMON_CONSTS.COMMON_DATA_API.REQUEST.CART_TOTAL_PRICE);
+pagePolicy.putCommonData(COMMON_CONSTS.COMMON_DATA_API.REQUEST.DELIVERY_FREE_PRICE);
+pagePolicy.addParameter(COMMON_CONSTS.PAGE_POLICY.PARAMETER_NAMES.SUCCESS_FUNCTION, buildDeliveryFreeMessage);
+</script>

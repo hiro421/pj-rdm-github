@@ -1,0 +1,532 @@
+/* ====================
+   Foundation
+   ==================== */
+
+select{
+    outline:none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    background: none transparent;
+    vertical-align: middle;
+    font-size: inherit;
+    color: inherit;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+}
+select option{
+    background-color: #fff;
+    color: #333;
+}
+select::-ms-expand {
+    display: none;
+}
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #828c9a;
+}
+
+@media screen and (max-width:768px) {
+    select{
+        font-size: 80%;
+    }
+}
+/* ====================
+   Object
+   ==================== */
+
+/* Component
+   -------------------- */
+
+.c-list--border > li {
+    border-top: 1px solid #DCDCDC;
+    padding: 10px 10px 10px 20px;
+}
+
+.c-list--border > li:last-of-type {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.c-form__group--inline {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+
+.c-form__group--error {
+    background-color: #f6e9e9;
+}
+
+.c-form__input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border: 1px solid #dcdcdc;
+}
+.c-form__input_label--require:after {
+    content: "*";
+    color: #bd3260;
+}
+
+.c-form__mail_label--require:after {
+    content: "*";
+    color: #1184d1;
+}
+
+.c-form__input:-ms-input-placeholder {
+    color: #dcdcdc;
+}
+
+.c-form__select {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #DCDCDC;
+    padding-left: 5px;
+    background: url("/app/img/common/arrow_down.png") no-repeat;
+    background-size: 10px;
+
+}
+
+.c-form__select--short {
+    background-position: 90%;
+    width:120px;
+    height: 40px;
+}
+
+.c-form__select--midium {
+    background-position: 95%;
+    width:250px;
+    height: 40px;
+}
+
+.c-form__select > select {
+    border: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    line-height: 1.7;
+    width: calc(100% + 5px);
+    height: 100%;
+    padding-left: 5px;
+    margin-left: -5px;
+    border-radius: 0;
+}
+
+.c-form__radio {
+    display: none;
+}
+
+.c-form__radio + label {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 5px;
+    padding-left: 30px;
+    cursor: pointer;
+
+}
+
+.c-form__radio + label:before {
+    content: "";
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #c83264;
+}
+
+.c-form__radio:checked + label:before {
+    opacity:1;
+}
+
+.c-form__radio + label:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: 0;
+    border: 1px solid #DCDCDC;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.c-step {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.c-step > li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 5px 10px;
+    line-height: 1.3;
+}
+
+.c-step > li:not(:last-of-type):after{
+    position: absolute;
+    top: 40%;
+    left: 110%;
+    content: url("/app/img/common2/step_arrow.png");
+}
+.c-step__list {
+    width: 283px;
+    height:80px;
+    background-color: #f0f0f0;
+    color: #6e6e6e;
+}
+
+.c-step__list--active {
+    background-color: #e983a2;
+    color: #fefefe;
+}
+
+.c-step__list__text {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.c-step__list__text--small {
+    font-weight: normal;
+    font-size: 80%;
+}
+.c-error_msg {
+    color: #bd3260;
+    font-weight: bolder;
+    font-size: 100%;
+}
+
+.c-mailmagazine-info {
+    border: 3px solid #eaa9b3;
+    border-radius: 15px;
+    color: #dd7584;
+    width:178px;
+    height: 80px;
+}
+
+.c-mailmagazine-info__text {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    height: 100%;
+    line-height: 1.4;
+}
+
+/**
+ * ƒ‚[ƒ_ƒ‹
+ **/
+
+.c-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.c-header__discription {
+    margin-left: 40px;
+    width: 70%;
+    font-size: 16px;
+}
+.c-rule {
+    font-size: 14px;
+}
+
+.c-rule h3 {
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.c-rule__discription {
+    margin-bottom: 30px;
+}
+.c-rule__lists > li {
+    margin-bottom: 30px;
+    list-style: decimal inside;
+}
+
+.c-rule__lists__header {
+    display: inline;
+    font-weight: bolder;
+}
+
+.c-rule__lists__content {
+    padding-left: 2.5em;
+}
+
+.c-support {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f5f5fa;
+}
+
+.c-support > p {
+    font-size: 100%;
+    font-weight: bolder;
+}
+
+.c-attention dt{
+    margin-top: 25px;
+    font-weight: bolder;
+}
+
+.c-attention dd {
+    padding-top: 0.5em;
+    padding-left:1em;
+}
+
+.c-attention ol {
+    padding-top: 1em;
+    padding-left: 2em;
+}
+.c-attention ol li{
+    list-style: decimal outside;
+}
+
+.c-note dt{
+    font-weight: bolder;
+}
+
+.c-note dd {
+    padding:10px;
+}
+
+@media screen and (max-width:768px) {
+    .c-form__group--inline {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .c-form__input_label {
+        margin-bottom: 5px;
+        font-size: 86%;
+    }
+
+    .c-form__select--short {
+        width:68px;
+        height: 30px;
+    }
+
+    .c-form__radio + label {
+        margin-left: 0;
+        font-size: 90%;
+
+    }
+
+    .c-form__checkbox[type="checkbox"].checkBox01 + .c-form__checkbox-label {
+        line-height: 20px;
+    }
+
+    .c-step > li:not(:last-of-type):after{
+        content: "";
+        background: url("/app/img/common2/step_arrow.png") no-repeat;
+        background-size: contain;
+        right: -22px;
+        left: auto;
+        width: 10px;
+        height: 10px;
+    }
+
+    .c-step__list {
+        counter-increment: step;
+        max-width: 215px;
+        width: 60%;
+        max-height:45px;
+    }
+
+    .c-step li:not(.c-step__list--active) {
+        width: 14%;
+    }
+
+    .c-step li:not(.c-step__list--active) .c-step__list__text {
+        font-size: 0;
+    }
+
+    .c-step li:not(.c-step__list--active) .c-step__list__text:before {
+        font-size: 12px;
+        content: counter(step);
+    }
+
+    .c-step__list__text {
+        font-size: 85%;
+        font-weight: normal;
+        line-height: 1;
+    }
+
+    .c-step__list__text--small {
+        font-size: 68%;
+    }
+    .c-header {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .c-header__discription {
+        margin-left: 20px;
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .c-rule__discription {
+        margin-bottom: 10px;
+    }
+
+    .c-rule__lists__text {
+        width: 86%;
+    }
+
+    .c-rule__lists__content {
+        padding-left: 2em;
+    }
+
+    .c-rule__lists > li {
+        margin-bottom: 20px;
+    }
+
+    .c-form__checkbox[type="checkbox"].checkBox01 + .c-form__checkbox-label {
+        background-position: 1px 50px;
+    }
+
+    .c-mailmagazine-info {
+        margin-right: 5px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        width:128px;
+        height: 60px;
+    }
+
+    .c-mailmagazine-info__text {
+        font-size: 78%;
+        line-height: 1.2;
+    }
+}
+
+@media screen and (max-width:374px) {
+    .c-step > li:not(:last-of-type):after{
+        right: -16px;
+    }
+}
+
+/* Project
+   -------------------- */
+.p-link--decoration {
+    color: #c83264;
+    text-decoration: underline;
+}
+
+.p-modal {
+    max-height: 600px;
+    height: auto;
+    overflow: auto;
+    scrollbar-track-color: #f0f0f0;
+    scrollbar-face-color: #000;
+    scrollbar-shadow-color: #000;
+    scrollbar-arrow-color: #f0f0f0;
+}
+
+.p-modal::-webkit-scrollbar {
+    all: unset;
+}
+
+.p-modal::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+
+.p-modal::-webkit-scrollbar-thumb {
+    background-color: #000;
+}
+
+.p-modall > .title {
+    text-align: center;
+}
+
+.p-regist-form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    margin-top:20px;
+    margin-bottom: 80px;
+}
+
+.p-regist-form .p-regist-form__header {
+    border-top: 2px solid #000;
+    margin-right:40px;
+    padding-top: 10px;
+    font-weight: bolder;
+    width:235px;
+}
+/* Utility
+   -------------------- */
+.u-flex-basis-190per {
+    -webkit-flex-basis: 190% !important;
+    -ms-flex-preferred-size: 190% !important;
+    flex-basis: 190% !important;
+}
+
+.u-flex-item-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.u-m-left-0 {
+    margin-left: 0 !important;
+}

@@ -1,0 +1,109 @@
+#MobileSliderContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 100000;
+}
+#MobileSliderContainer .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 2200;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+#MobileSliderContainer .close::before, #MobileSliderContainer .close::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: #fff;
+}
+#MobileSliderContainer .close::before {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#MobileSliderContainer .close::after {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#MobileSliderContainer .close.big {
+  -moz-transform: scale(3);
+  -ms-transform: scale(3);
+  -webkit-transform: scale(3);
+  transform: scale(3);
+}
+#MobileSliderContainer .close.hairline::before, #MobileSliderContainer .close.hairline::after {
+  height: 1px;
+}
+#MobileSliderContainer .slider_num {
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2100;
+}
+#MobileSliderContainer .flexslider {
+  background-color: #000;
+}
+
+#MobileSlider .slides {
+  margin: 70px 0 0 0;
+}
+#MobileSlider .slides img {
+  width: 100%;
+}
+
+#MobileThumbsSlider {
+  position: relative;
+}
+#MobileThumbsSlider .slides {
+  margin: 5px 0 0 0;
+}
+#MobileThumbsSlider .slides img {
+  width: 100%;
+}
+#MobileThumbsSlider .slides .flex-active-slide {
+  position: relative;
+}
+#MobileThumbsSlider .slides .flex-active-slide:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 2px solid #f06a80;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media all and (max-width: 767px) {
+  #MobileThumbsSlider .flex-direction-nav a {
+    top: 60%;
+  }
+  #MobileThumbsSlider .flex-direction-nav .flex-prev {
+    background: url(/app/img/common/mslider_prev.png) no-repeat left top;
+    background-size: 15px 26px;
+    width: 15px;
+    height: 26px;
+  }
+  #MobileThumbsSlider .flex-direction-nav .flex-next {
+    text-align: left;
+    background: url(/app/img/common/mslider_next.png) no-repeat left top;
+    background-size: 15px 26px;
+    width: 15px;
+    height: 26px;
+  }
+}

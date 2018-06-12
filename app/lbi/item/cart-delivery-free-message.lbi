@@ -1,0 +1,38 @@
+<div id="message-nonfree" style="display:none;">
+<p class="text-A12">
+    <b>送料無料対象商品をお買い上げの場合を除き、1回のご注文につき送料(￥540)がかかります。</b>
+</p>
+</div>
+<div id="message-detail" style="display:none;">
+<p class="text-A12">
+    <b>あと<span id="balanceToDeliveryFree" class="highlight"></span>のお買い上げ（各種割引適用後）で<span class="highlight">送料(￥540)が無料</span>になります。</b>
+</p>
+</div>
+<div id="message-free" style="display:none;">
+<p class="text-A12">
+    <b>今だけ<span class="highlight">送料無料</span>にてお届けします！</b>
+</p>
+</div>
+<script type="text/javascript">
+buildDeliveryFreeMessage = function() {
+    var cartTotalPrice = pagePolicy.getCommonData(COMMON_CONSTS.COMMON_DATA_API.REQUEST.CART_TOTAL_PRICE);
+    var deliveryFreePrice = pagePolicy.getCommonData(COMMON_CONSTS.COMMON_DATA_API.REQUEST.DELIVERY_FREE_PRICE);
+    
+    jQuery("#balanceToDeliveryFree").empty();
+    jQuery("#message-nonfree").css("display", "none");
+    jQuery("#message-detail").css("display", "none");
+    jQuery("#message-free").css("display", "none");
+    if (deliveryFreePrice > cartTotalPrice) {
+        var balance = deliveryFreePrice - cartTotalPrice;
+        jQuery("#balanceToDeliveryFree").text("\u00A5" + CommonUtils.numberFormat(balance));
+        jQuery("#message-detail").css("display", "");
+    } else if (deliveryFreePrice > -1 && deliveryFreePrice <= cartTotalPrice) {
+        jQuery("#message-free").css("display", "");
+    } else {
+        jQuery("#message-nonfree").css("display", "");
+    }
+}
+pagePolicy.putCommonData(COMMON_CONSTS.COMMON_DATA_API.REQUEST.CART_TOTAL_PRICE);
+pagePolicy.putCommonData(COMMON_CONSTS.COMMON_DATA_API.REQUEST.DELIVERY_FREE_PRICE);
+pagePolicy.addParameter(COMMON_CONSTS.PAGE_POLICY.PARAMETER_NAMES.SUCCESS_FUNCTION, buildDeliveryFreeMessage);
+</script>

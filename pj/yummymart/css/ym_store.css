@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+
+.yummymart .event{
+    margin: 120px auto 0;
+    width:772px;
+    padding-top: 6px;
+}
+
+.yummymart .event p{
+    font-size: 15px;
+}
+
+.yummymart .titel01 {
+    font-size: 38px;
+    font-family: ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS P Gothic", Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0.3em 0;
+    letter-spacing: 2px;
+}
+
+.yummymart h2.titel02{
+    font-size: 38px;
+    text-align: center;
+    background-color: #000;
+    color:#FFF;
+    padding: 0.3em 0;
+    margin-top: 60px;
+    letter-spacing: 2px;
+}
+
+.yummymart .shop{
+    margin: 50px auto 0;
+    width:772px;
+}
+
+.yummymart .shop .text_shop{
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.yummymart h3.titel03 {
+    border-left-color: #fff;
+    border-left: 5px solid;
+    margin: 0 0 0 5px;
+    padding: 0 0 0 5px;
+}
+
+.yummymart .shop_left {
+    float: left;
+    width: 378px;
+}
+
+.yummymart .shop_right {
+    float: right;
+    width: 378px;
+}
+
+.yummymart .shop_blockA {
+    display: block;
+    height: 378px;
+}
+
+.yummymart .store_cust {
+    background: #f7f7f7;
+    padding: 10px 18px;
+    margin-top: 10px;
+    clear: both;
+}
+
+.yummymart .store_cust dt {
+    margin-bottom: 11px;
+    font-weight: bold;
+}
+
+.yummymart .store_cust .store_cust_img {
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    display: inline-block;
+    width: 50px;
+    vertical-align: bottom;
+    margin-bottom: 0;
+}
+
+.yummymart .store_cust .store_cust_tel {
+    width: 148px;
+    margin-left: 11px;
+    padding: 3px;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+
+.yummymart .tax {
+    margin: 10px 0;
+}
+
+.yummymart .store_service{
+    width: 772px;
+　　height: 820px;
+    margin: 50px auto 0;
+}
+
+.yummymart .store_service .left {
+    display: inline-block;
+    width: 362px;
+    margin: 10px 0 20px 0;
+    letter-spacing: normal;
+    vertical-align: top;
+    float: left;
+}
+
+
+.yummymart .store_service .right {
+    display: inline-block;
+    width: 362px;
+    margin: 10px 0 20px 0;
+    letter-spacing: normal;
+    vertical-align: top;
+    float: right;
+}
+
+
+.yummymart #yummyFooter {
+    border-top: 4px #000 solid;
+    overflow: hidden;
+    clear: both;
+}
+
+
+
+
+
+

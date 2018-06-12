@@ -1,0 +1,49 @@
+/* ====================
+   Object
+   ==================== */
+
+/* Project
+   -------------------- */
+
+.c-header-title.p-header-title {
+    font-size: inherit;
+    margin-bottom: 88px;
+}
+
+.p-l-main__box--width {
+    max-width: 100%;
+    width: 100%;
+}
+
+.p-l-main__box--width > .p-l-main__child--width {
+    margin: 0 auto;
+    margin-bottom: 88px;
+    width: 46%;
+}
+
+.u-button-margin{
+    margin-bottom: 22px !important;
+}
+
+@media screen and (max-width:768px) {
+    .c-header-title.p-header-title {
+        font-size: 10px;
+        margin-bottom: 44px;
+        width: 100%;
+    }
+    
+    .p-l-main__box--width  {
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .p-l-main__box--width > .p-l-main__child--width {
+        margin-bottom: 22px;
+        width: 100%;
+    }
+
+    .u-button-margin{
+    margin-bottom: 11px !important;
+    }
+    
+}

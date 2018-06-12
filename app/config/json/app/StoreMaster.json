@@ -1,0 +1,797 @@
+{
+  "last_update": "201803281402",
+  "stores": [
+    {
+      "name": "札幌店",
+      "pref":"北海道",
+      "storeCode": "4302",
+      "zipcode": "〒060-0062",
+      "address": "札幌市中央区南二条西4-11 PIVOT2F",
+      "location": {
+        "latitude": 43.0579106,
+        "longitude": 141.35213469999997
+      },
+      "checkin": {
+        "code": "s001",
+        "range": 500
+      },
+      "opening": "10：00～20：00　火曜不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/sapporo.html"
+    },
+    {
+      "name": "仙台店",
+      "pref":"宮城",
+      "storeCode": "4307",
+      "zipcode": "〒980-0021",
+      "address": "仙台市青葉区中央1-1-1 エスパル仙台2F",
+      "location": {
+        "latitude": 38.2601439,
+        "longitude": 140.88212709999993
+      },
+      "checkin": {
+        "code": "s002",
+        "range": 500
+      },
+      "opening": "10：00～21：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/sendai.html"
+    },
+    {
+      "name": "渋谷店",
+      "pref":"東京",
+      "storeCode": "4001",
+      "zipcode": "〒150-0043",
+      "address": "東京都渋谷区道玄坂2-29-1 SHIBUYA109-3F",
+      "location": {
+        "latitude": 35.6597466,
+        "longitude": 139.69860889999995
+      },
+      "checkin": {
+        "code": "s003",
+        "range": 200
+      },
+      "opening": "10：00～21：00　年中無休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/shibuya.html"
+    },
+    {
+      "name": "新宿店",
+      "pref":"東京",
+      "storeCode": "4002",
+      "zipcode": "〒160-0022",
+      "address": "東京都新宿区新宿3-38-2 新宿ルミネ２　２F",
+      "location": {
+        "latitude": 35.6894189,
+        "longitude": 139.70106350000003
+      },
+      "checkin": {
+        "code": "s004",
+        "range": 200
+      },
+      "opening": "11：00～22：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/shinjuku.html"
+    },
+    {
+      "name": "新宿三丁目店",
+      "pref":"東京",
+      "storeCode": "4015",
+      "zipcode": "〒160-0022",
+      "address": "東京都新宿区新宿3丁目5-3 高山ランド会館１　２F",
+      "location": {
+        "latitude": 35.6911572,
+        "longitude": 139.70534650000002
+      },
+      "checkin": {
+        "code": "s012",
+        "range": 200
+      },
+      "opening": "11：00～21：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/shinjuku3.html"
+    },
+    {
+      "name": "有楽町店",
+      "pref":"東京",
+      "storeCode": "4016",
+      "zipcode": "〒100-0006",
+      "address": "東京都千代田区有楽町2-5-1 ルミネ有楽町店ルミネ１　５F",
+      "location": {
+        "latitude": 35.6733346,
+        "longitude": 139.763055
+      },
+      "checkin": {
+        "code": "s013",
+        "range": 200
+      },
+      "opening": "11：00～21：30　年中無休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/yuurakuchou.html"
+    },
+    {
+      "name": "池袋店",
+      "pref":"東京",
+      "storeCode": "4014",
+      "zipcode": "〒171-0021",
+      "address": "東京都豊島区西池袋1-11-1 LUMINE 池袋3F",
+      "location": {
+        "latitude": 35.7288449,
+        "longitude": 139.70930829999998
+      },
+      "checkin": {
+        "code": "s011",
+        "range": 200
+      },
+      "opening": "11：00～21：30　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/ikebukuro.html"
+    },
+    {
+      "name": "立川店",
+      "pref":"東京",
+      "storeCode": "4008",
+      "zipcode": "〒190-0012",
+      "address": "東京都立川市曙町2-1-1 LUMINE立川4Ｆ",
+      "location": {
+        "latitude": 35.6981189,
+        "longitude": 139.41403190000005
+      },
+      "checkin": {
+        "code": "s007",
+        "range": 200
+      },
+      "opening": "10：00～21：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/tachikawa.html"
+    },
+    {
+      "name": "吉祥寺店",
+      "pref":"東京",
+      "storeCode": "4018",
+      "zipcode": "〒190-0012",
+      "address": "東京都武蔵野市吉祥寺南町1-1-24 アトレ吉祥寺 本館B1F",
+      "location": {
+        "latitude": 35.70304970000001,
+        "longitude": 139.5796414
+      },
+      "checkin": {
+        "code": "s033",
+        "range": 200
+      },
+      "opening": "10：00～21：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/kichijoji.html"
+    },
+    {
+      "name": "町田店",
+      "pref":"東京",
+      "storeCode": "4022",
+      "zipcode": "〒194-0013",
+      "address": "東京都町田市原町田6-1-11 ルミネ町田 5F",
+      "location": {
+        "latitude": 35.542043,
+        "longitude": 139.446118
+      },
+      "checkin": {
+        "code": "s009",
+        "range": 200
+      },
+      "opening": "10：00～21：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/machida.html"
+    },
+    {
+      "name": "横浜店",
+      "pref":"神奈川",
+      "storeCode": "4003",
+      "zipcode": "〒220-0011",
+      "address": "横浜市西区高島2-16-1 LUMINE横浜3F",
+      "location": {
+        "latitude": 35.4652635,
+        "longitude": 139.62284810000006
+      },
+      "checkin": {
+        "code": "s005",
+        "range": 200
+      },
+      "opening": "10：00～21：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/yokohama.html"
+    },
+    {
+      "name": "川崎店",
+      "pref":"神奈川",
+      "storeCode": "4009",
+      "zipcode": "〒212-0013",
+      "address": "神奈川県川崎市幸区堀川町72番1 ラゾーナ川崎プラザ サウス2F",
+      "location": {
+        "latitude": 35.5330921,
+        "longitude": 139.69594440000003
+      },
+      "checkin": {
+        "code": "s008",
+        "range": 200
+      },
+      "opening": "10：00～21：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/kawasaki.html"
+    },
+    {
+      "name": "千葉店",
+      "pref":"千葉",
+      "storeCode": "4005",
+      "zipcode": "〒260-0031",
+      "address": "千葉県千葉市中央区 新千葉1-1-1 ペリエ千葉4F",
+      "location": {
+        "latitude": 35.6130595,
+        "longitude": 140.11304840000003
+      },
+      "checkin": {
+        "code": "s014",
+        "range": 200
+      },
+      "opening": "10：00～20：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/chiba.html"
+    },
+    {
+      "name": "船橋店",
+      "pref":"千葉",
+      "storeCode": "4011",
+      "zipcode": "〒273-8530",
+      "address": "千葉県船橋市浜町2-1-1 ららぽーと TOKYO BAY 南館2F",
+      "location": {
+        "latitude": 35.6848429,
+        "longitude": 139.99203920000002
+      },
+      "checkin": {
+        "code": "s010",
+        "range": 200
+      },
+      "opening": "10:00～20:00 （金・土・日・祝日は21:00まで） 不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/funabashi.html"
+    },
+    {
+      "name": "アウトレット佐野店",
+      "pref":"栃木",
+      "storeCode": "4701",
+      "zipcode": "〒327-0822",
+      "address": "栃木県佐野市越名町2058番 佐野プレミアム・アウトレット Eゾーン 1630",
+      "location": {
+        "latitude": 36.29475409999999,
+        "longitude": 139.60495030000004
+      },
+      "checkin": {
+        "code": "s015",
+        "range": 300
+      },
+      "opening": "10：00～20：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/sano.html"
+    },
+    {
+      "name": "アウトレット入間店",
+      "pref":"埼玉",
+      "storeCode": "4702",
+      "zipcode": "〒358-8515",
+      "address": "埼玉県入間市宮寺3169-1 三井アウトレットパーク入間 2F",
+      "location": {
+        "latitude": 35.81055889999999,
+        "longitude": 139.38123050000002
+      },
+      "checkin": {
+        "code": "s016",
+        "range": 300
+      },
+      "opening": "10：00～20：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/iruma.html"
+    },
+    {
+      "name": "SALON 銀座店",
+      "pref":"東京",
+      "storeCode": "4501",
+      "zipcode": "〒104-0061",
+      "address": "東京都中央区銀座４丁目１番先 西銀座　B1F",
+      "location": {
+        "latitude": 35.6733166,
+        "longitude": 139.76408400000003
+      },
+      "checkin": {
+        "code": "s031",
+        "range": 200
+      },
+      "opening": "月～土／11：00～21：00 日・祝／11：00～20：00　不定休",
+      "type": "SALON",
+      "url": "https://www.peachjohn.co.jp/pj/salon/store/#a03"
+    },
+    {
+      "name": "静岡店",
+      "pref":"静岡",
+      "storeCode": "4304",
+      "zipcode": "〒420-0852",
+      "address": "静岡市葵区紺屋町６-７ 静岡PARCO3F",
+      "location": {
+        "latitude": 34.9729261,
+        "longitude": 138.3861167
+      },
+      "checkin": {
+        "code": "s019",
+        "range": 500
+      },
+      "opening": "10:00～20:00 不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/shizuoka.html"
+    },
+    {
+      "name": "名古屋店",
+      "pref":"愛知",
+      "storeCode": "4281",
+      "zipcode": "〒450-0002",
+      "address": "名古屋市中村区名駅1-2-2 近鉄パッセ5F",
+      "location": {
+        "latitude": 35.16911399999999,
+        "longitude": 136.88452089999998
+      },
+      "checkin": {
+        "code": "s017",
+        "range": 200
+      },
+      "opening": "10：00～20：00　年中無休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/nagoya.html"
+    },
+    {
+      "name": "名古屋栄店",
+      "pref":"愛知",
+      "storeCode": "4283",
+      "zipcode": "〒460-0008",
+      "address": "愛知県名古屋市中区栄3-29-1 名古屋PARCO 西館3F",
+      "location": {
+        "latitude": 35.1633425,
+        "longitude": 136.90719809999996
+      },
+      "checkin": {
+        "code": "s018",
+        "range": 200
+      },
+      "opening": "10:00～21：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/nagoya_sakae.html"
+    },
+    {
+      "name": "京都河原町店",
+      "pref":"京都",
+      "storeCode": "4202",
+      "zipcode": "〒604-8505",
+      "address": "京都市中京区河原町通四条上ル 河原町OPA 5F",
+      "location": {
+        "latitude": 35.0045788,
+        "longitude": 135.76870110000004
+      },
+      "checkin": {
+        "code": "s020",
+        "range": 500
+      },
+      "opening": "11:00～21:00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/kawaramachi.html"
+    },
+    {
+      "name": "なんば店",
+      "pref":"大阪",
+      "storeCode": "4205",
+      "zipcode": "〒542-0076",
+      "address": "大阪市中央区難波5-1-60 なんばCITY本館 1F",
+      "location": {
+        "latitude": 34.66338549999999,
+        "longitude": 135.50154699999996
+      },
+      "checkin": {
+        "code": "s022",
+        "range": 200
+      },
+      "opening": "10：00～21：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/nanba.html"
+    },
+    {
+      "name": "あべの店",
+      "pref":"大阪",
+      "storeCode": "4206",
+      "zipcode": "〒545-8545",
+      "address": "大阪府大阪市阿倍野区阿倍野筋1-1-43 あべのハルカス近鉄本店ウイング館 2F",
+      "location": {
+        "latitude": 34.6456653,
+        "longitude": 135.51414279999995
+      },
+      "checkin": {
+        "code": "s023",
+        "range": 200
+      },
+      "opening": "10：00～21：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/abeno.html"
+    },
+    {
+      "name": "大阪店",
+      "pref":"大阪",
+      "storeCode": "4207",
+      "zipcode": "〒530-0001",
+      "address": "大阪府大阪市北区梅田3-1-3 大阪駅ノースゲートビルディング　LUCUA　6F",
+      "location": {
+        "latitude": 34.7034478,
+        "longitude": 135.49641229999997
+      },
+      "checkin": {
+        "code": "s024",
+        "range": 200
+      },
+      "opening": "10：00～21：00",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/osaka.html"
+    },
+    {
+      "name": "アウトレットりんくう店",
+      "pref":"大阪",
+      "storeCode": "4705",
+      "zipcode": "〒598-8508",
+      "address": "大阪府泉佐野市りんくう往来南3-28 りんくうプレミアムアウトレット 区画No.2405",
+      "location": {
+        "latitude": 34.4063867,
+        "longitude": 135.2952163
+      },
+      "checkin": {
+        "code": "s025",
+        "range": 300
+      },
+      "opening": "10：00～20：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/rinku.html"
+    },
+    {
+      "name": "エキスポシティ店",
+      "pref":"大阪",
+      "storeCode": "4208",
+      "zipcode": "〒565-0826",
+      "address": "大阪府吹田市千里万博公園2-1ららぽーとEXPOCITY2階　20060",
+      "location": {
+        "latitude": 34.805489,
+        "longitude": 135.53446640000004
+      },
+      "checkin": {
+        "code": "s037",
+        "range": 300
+      },
+      "opening": "10：00～21：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/expocity.html"
+    },
+    {
+      "name": "西宮店",
+      "pref":"兵庫",
+      "storeCode": "4204",
+      "zipcode": "〒663-8204",
+      "address": "兵庫県西宮市高松町14-2 阪急西宮ガーデンズ 2F",
+      "location": {
+        "latitude": 34.7441936,
+        "longitude": 135.36070700000005
+      },
+      "checkin": {
+        "code": "s021",
+        "range": 500
+      },
+      "opening": "10:00～21:00 不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/nishinomiya.html"
+    },
+    {
+      "name": "アウトレット倉敷店",
+      "pref":"岡山",
+      "storeCode": "4704",
+      "zipcode": "〒710-0813",
+      "address": "岡山県倉敷市寿町12-3 三井アウトレットパーク　倉敷　１Ｆ 1600",
+      "location": {
+        "latitude": 34.6034944,
+        "longitude": 133.7620637
+      },
+      "checkin": {
+        "code": "s026",
+        "range": 300
+      },
+      "opening": "10：00～20：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/kurashiki.html"
+    },
+    {
+      "name": "広島店",
+      "pref":"広島",
+      "storeCode": "4306",
+      "zipcode": "〒730-0035",
+      "address": "広島市中区本通10-1 広島PARCO 本館3F",
+      "location": {
+        "latitude": 34.3921246,
+        "longitude": 132.4619808
+      },
+      "checkin": {
+        "code": "s034",
+        "range": 500
+      },
+      "opening": "10：00～20：30　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/hiroshima.html"
+    },
+    {
+      "name": "福岡店",
+      "pref":"福岡",
+      "storeCode": "4301",
+      "zipcode": "〒810-0001",
+      "address": "福岡県福岡市中央区天神2-11-1 福岡PARCO 本館増床部４F",
+      "location": {
+        "latitude": 33.590589,
+        "longitude": 130.39887440000007
+      },
+      "checkin": {
+        "code": "s027",
+        "range": 500
+      },
+      "opening": "10：00～20：30　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/fukuoka.html"
+    },
+    {
+      "name": "博多店",
+      "pref":"福岡",
+      "storeCode": "4308",
+      "zipcode": "〒812-0012",
+      "address": "福岡県福岡市博多区博多駅中央街1番1号 JR博多シティ　アミュプラザ博多5階",
+      "location": {
+        "latitude": 33.5901566,
+        "longitude": 130.42009540000004
+      },
+      "checkin": {
+        "code": "s028",
+        "range": 500
+      },
+      "opening": "10:00～21:00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/hakata.html"
+    },
+    {
+      "name": "アウトレットマリノアシティ福岡店",
+      "pref":"福岡",
+      "storeCode": "4703",
+      "zipcode": "〒819-0001",
+      "address": "福岡県福岡市西区小戸2-12-30 マリノアシティ福岡 2F",
+      "location": {
+        "latitude": 33.59449290000001,
+        "longitude": 130.32040689999997
+      },
+      "checkin": {
+        "code": "s030",
+        "range": 300
+      },
+      "opening": "10：00～21：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/marinoa.html"
+    },
+    {
+      "name": "鹿児島店",
+      "pref":"鹿児島",
+      "storeCode": "4309",
+      "zipcode": "〒890-0053",
+      "address": "鹿児島県鹿児島市中央町1-1 アミュプラザ鹿児島２F",
+      "location": {
+        "latitude": 31.583821,
+        "longitude": 130.54180299999996
+      },
+      "checkin": {
+        "code": "s029",
+        "range": 500
+      },
+      "opening": "10：00～21：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/kagoshima.html"
+    },
+    {
+      "name": "大宮店",
+      "pref":"埼玉",
+      "storeCode": "4007",
+      "zipcode": "〒330-0853",
+      "address": "埼玉県さいたま市大宮区錦町630 LUMINE大宮1 3F",
+      "location": {
+        "latitude": 35.9069481,
+        "longitude": 139.62486609999996
+      },
+      "checkin": {
+        "code": "s041",
+        "range": 300
+      },
+      "opening": "10：00～21：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/ohmiya.html"
+    },
+    {
+      "name": "SALON 新宿店",
+      "pref":"東京",
+      "storeCode": "4502",
+      "zipcode": "〒160-0023",
+      "address": "東京都新宿区西新宿1-1-5 LUMINE新宿1 3F",
+      "location": {
+        "latitude": 35.6892235,
+        "longitude": 139.69941360000007
+      },
+      "checkin": {
+        "code": "s042",
+        "range": 200
+      },
+      "opening": "11:00 ～ 22:00　不定休",
+      "type": "SALON",
+      "url": "https://www.peachjohn.co.jp/pj/salon/store/#a02"
+    },
+    {
+      "name": "北千住店",
+      "pref":"東京",
+      "storeCode": "4019",
+      "zipcode": "〒120-0026",
+      "address": "東京都足立区千住旭町42-2 LUMINE北千住",
+      "location": {
+        "latitude": 35.7510593,
+        "longitude": 139.80538030000002
+      },
+      "checkin": {
+        "code": "s043",
+        "range": 200
+      },
+      "opening": "10：00～20：30　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/kitasenju.html"
+    },
+    {
+      "name": "平塚店",
+      "pref":"神奈川",
+      "storeCode": "4020",
+      "zipcode": "〒254-8510",
+      "address": "神奈川県平塚市天沼10-1 三井ショッピングパークららぽーと湘南平塚 2F",
+      "location": {
+        "latitude": 35.3366293,
+        "longitude": 139.3559209
+      },
+      "checkin": {
+        "code": "s044",
+        "range": 200
+      },
+      "opening": "10：00～21：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/hiratsuka.html"
+    },
+    {
+      "name": "SALON 名古屋店",
+      "pref":"愛知",
+      "storeCode": "4503",
+      "zipcode": "〒460-0008",
+      "address": "愛知県名古屋市中区栄3-6-1ラシック ５Ｆ",
+      "location": {
+        "latitude": 35.1674246,
+        "longitude": 136.90789440000003
+      },
+      "checkin": {
+        "code": "s045",
+        "range": 200
+      },
+      "opening": "11:00～21:00　不定休",
+      "type": "SALON",
+      "url": "https://www.peachjohn.co.jp/pj/store/nagoya.html"
+    },
+    {
+      "name": "柏店",
+      "pref":"千葉",
+      "storeCode": "4021",
+      "zipcode": "〒277-8550",
+      "address": "千葉県柏市末広町1-1 柏高島屋ステーションモール　S館　5F",
+      "location": {
+        "latitude": 35.8625353,
+        "longitude": 139.97069820000002
+      },
+      "checkin": {
+        "code": "s046",
+        "range": 200
+      },
+      "opening": "10：00～21：00　不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/kashiwa.html"
+    },
+    {
+      "name": "秋田店",
+      "pref":"秋田",
+      "storeCode": "4102",
+      "zipcode": "〒010-0874",
+      "address": "秋田県秋田市千秋久保田町4-2 秋田OPA 2F",
+      "location": {
+        "latitude": 39.717865,
+        "longitude": 140.12814500000002
+      },
+      "checkin": {
+        "code": "s048",
+        "range": 200
+      },
+      "opening": "12:00～20:00 不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/akita.html"
+    },
+    {
+      "name": "アウトレット長島店",
+      "pref":"三重",
+      "storeCode": "4706",
+      "zipcode": "〒511-1135",
+      "address": "三重県桑名市長島町浦安368 ジャズドリーム長島 区画番号 増床棟 V期 2F-11090室",
+      "location": {
+        "latitude": 35.029435,
+        "longitude": 136.72579999999994
+      },
+      "checkin": {
+        "code": "s049",
+        "range": 200
+      },
+      "opening": "12:00～20:00 不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/nagashima.html"
+    },
+    {
+      "name": "金沢店",
+      "pref":"石川",
+      "storeCode": "4310",
+      "zipcode": "〒920-0858",
+      "address": "石川県金沢市木ノ新保町1-1",
+      "location": {
+        "latitude": 36.5783424,
+        "longitude": 136.64798280000002
+      },
+      "checkin": {
+        "code": "s050",
+        "range": 200
+      },
+      "opening": "12:00～20:00 不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/kanazawa.html"
+    },
+    {
+      "name": "SALON 大阪店",
+      "pref":"大阪",
+      "storeCode": "4504",
+      "zipcode": "〒530-0011",
+      "address": "大阪市北区大深町4-20 グランフロント大阪 南館 3F",
+      "location": {
+        "latitude": 34.704328,
+        "longitude": 135.49480399999993
+      },
+      "checkin": {
+        "code": "s051",
+        "range": 200
+      },
+      "opening": "12:00～20:00 不定休",
+      "type": "SALON",
+      "url": "https://www.peachjohn.co.jp/pj/salon/store/#a04"
+    },
+    {
+      "name": "札幌ステラプレイス店",
+      "pref":"北海道",
+      "storeCode": "4311",
+      "zipcode": "〒060-0005",
+      "address": "札幌市中央区北5条西2丁目5番地札幌ステラプレイス B1F (E-B-2A)",
+      "location": {
+        "latitude": 43.068233,
+        "longitude": 141.352585
+      },
+      "checkin": {
+        "code": "s052",
+        "range": 500
+      },
+      "opening": "10:00～21:00 不定休",
+      "type": "PEACHJOHN",
+      "url": "https://www.peachjohn.co.jp/pj/store/sapporo_stella.html"
+    }
+  ]
+}

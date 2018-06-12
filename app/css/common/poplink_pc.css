@@ -1,0 +1,212 @@
+/*
+   (c) 2016 Business Search Technologies Corporation
+   All Rights Reserved
+*/
+/* Reset styles for div.poplink */
+div.poplink {
+  z-index: 9999;
+}
+div.poplink div, div.poplink span, div.poplink p, div.poplink pre, div.poplink img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-align: left;
+}
+
+.poplink_invisible {
+  visibility: hidden;
+}
+
+div.poplink > div.poplink_suggest {
+  border: 1px solid #666;
+  color: #000;
+  background-color: #fff;
+}
+div.poplink > div.poplink_suggest > div.word {
+  padding: 2px 5px;
+  font-size:12px;
+}
+div.poplink > div.poplink_suggest > div.word:hover {
+  background-color: #EfEfEf;
+}
+div.poplink > div.poplink_suggest .poplink_invisible {
+  display: none !important;
+}
+div.poplink > div.poplink_search {
+  border: 1px solid #666;
+  color: #000;
+  background-color: #fff;
+}
+div.poplink > div.poplink_search > div.header {
+  border: none;
+  color: #fff!important;
+  background-color: #000!important;
+  padding: 2px 5px;
+  font-size:13px;
+}
+div.poplink > div.poplink_search > div.item {
+  padding: 0px 0px !important;
+  height:90px;
+}
+div.poplink > div.poplink_search > div.item:hover {
+  background-color: #E6E6E6;
+}
+div.poplink > div.poplink_search > div.item a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  overflow:hidden;
+}
+div.poplink > div.poplink_search > div.item a > div.item_left {
+  float: left;
+}
+div.poplink > div.poplink_search > div.item a > div.item_left > div.image_box {
+  width: auto!important;
+  height: auto!important;
+  display: block!important;
+  vertical-align: middle!important;
+  text-align: left!important;
+}
+div.poplink > div.poplink_search > div.item a > div.item_left > div.image_box > img {
+  max-width: 90px;
+  max-height: 90px;
+}
+div.poplink > div.poplink_search > div.item a > div.item_right {
+  margin-left: 5px;
+  overflow: hidden;
+  padding:5px;
+}
+div.poplink > div.poplink_search > div.item a > div.item_right > div.title {
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  font-size:13px;
+}
+div.poplink > div.poplink_search > div.item a > div.item_right > div.summary {
+  overflow: hidden;
+  text-overflow: ellipsis!important;
+  -webkit-text-overflow: ellipsis!important;
+  -o-text-overflow: ellipsis!important;
+  margin-bottom: 3px;
+  white-space: normal!important;
+  font-size:11px;
+}
+div.poplink > div.poplink_search > div.item a > div.item_right > div.any1, div.poplink > div.poplink_search > div.item a > div.item_right > div.any2, div.poplink > div.poplink_search > div.item a > div.item_right > div.any3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #696969;
+  margin-bottom: 1px;
+  font-size: 90%;
+}
+div.poplink > div.poplink_search .poplink_invisible {
+  display: none !important;
+}
+div.poplink > div.poplink_recommend {
+  border: 1px solid #666;
+  color: #000;
+  background-color: #fff;
+}
+div.poplink > div.poplink_recommend > div.header {
+  border: none;
+  color: #fff!important;
+  background-color: #000!important;
+  padding: 2px 5px;
+  font-size:13px;
+}
+div.poplink > div.poplink_recommend > div.item {
+  padding: 0px 0px!important;
+  height:90px;
+}
+div.poplink > div.poplink_recommend > div.item:hover {
+  background-color: #E6E6E6;
+}
+div.poplink > div.poplink_recommend > div.item a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  overflow:hidden;
+}
+div.poplink > div.poplink_recommend > div.item a > div.item_left {
+  float: left;
+}
+div.poplink > div.poplink_recommend > div.item a > div.item_left > div.image_box {
+  width: auto!important;
+  height: auto!important;
+  display: block!important;
+  vertical-align: middle!important;
+  text-align: left!important;
+}
+div.poplink > div.poplink_recommend > div.item a > div.item_left > div.image_box > img {
+  max-width: 90px;
+  max-height: 90px;
+}
+div.poplink > div.poplink_recommend > div.item a > div.item_right {
+  margin-left: 5px;
+  overflow: hidden;
+  padding: 5px;
+}
+div.poplink > div.poplink_recommend > div.item a > div.item_right > div.title {
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  font-size:13px;
+}
+div.poplink > div.poplink_recommend > div.item a > div.item_right > div.summary {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  margin-bottom: 3px;
+  white-space: nowrap;
+  font-size:11px;
+}
+div.poplink > div.poplink_recommend > div.item a > div.item_right > div.any1, div.poplink > div.poplink_recommend > div.item a > div.item_right > div.any2, div.poplink > div.poplink_recommend > div.item a > div.item_right > div.any3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #696969;
+  margin-bottom: 1px;
+  font-size: 11px!important;
+}
+div.poplink > div.poplink_recommend .poplink_invisible {
+  display: none !important;
+}
+div.poplink div.highlighted {
+  color: #000000;
+  background-color: #f6f6f6;
+}
+div.poplink div.highlighted:hover {
+  color: #000000;
+  background-color: #D6D6D6;
+}
+div.poplink div.clear {
+  clear: both;
+  display:none;
+}
+div.poplink.pc011 {
+  width: 310px;
+}
+div.poplink.pc011 > div.poplink_search {
+  border-top: none;
+  clear: both;
+}
+div.poplink.pc011 > div.poplink_recommend {
+  border-top: none;
+}

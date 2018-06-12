@@ -1,0 +1,23 @@
+<div class="recommendItems pc" id="rt_pc_auto_detail_list1" style="display: none !important;">
+    <h2>RECOMMEND LIST<span class="parts-subTitle">この商品を見ている人にはこのリストもおすすめです</span></h2>
+    <div class="btnWrap">
+        <div id="rt_pc_auto_detail_list1_1"></div>
+        <div id="rt_pc_auto_detail_list1_2"></div>
+    </div></div>
+<div class="recommendItems pc" id="rt_auto_detail3" style="display: none !important;">
+    <h2>RECOMMEND<span class="parts-subTitle">この商品を買っている人はこんな商品も買っています</span></h2>
+    <div> 
+        <div class="slides">
+            <div class="item" id="rt_auto_detail3_1"></div>
+            <div class="item" id="rt_auto_detail3_2"></div>
+            <div class="item" id="rt_auto_detail3_3"></div>
+            <div class="item" id="rt_auto_detail3_4"></div>
+            <div class="item" id="rt_auto_detail3_5"></div>
+            <div class="item" id="rt_auto_detail3_6"></div>
+            <div class="item" id="rt_auto_detail3_7"></div>
+            <div class="item" id="rt_auto_detail3_8"></div>
+            <div class="item" id="rt_auto_detail3_9"></div>
+            <div class="item" id="rt_auto_detail3_10"></div>
+        </div>
+    </div>
+</div></div>

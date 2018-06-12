@@ -1,0 +1,37 @@
+<!--yummyFooter-->
+<div id="yummyFooter">
+		<div class="inner">
+			<div class="snsArea">
+				<ul>
+					<li><a href="https://twitter.com/YUMMY_MART" target="_blank"><img src="/app/img/yummymart/ico_tw_w.png" alt=""/></a></li>
+					<li><a href="https://www.facebook.com/yummymart.jp" target="_blank"><img src="/app/img/yummymart/ico_fb_w.png" alt=""/></a></li>
+					<li><a href="http://yummy-mart.tumblr.com/" target="_blank"><img src="/app/img/yummymart/ico_tum_w.png" alt=""/></a></li>
+					<li><a href="https://instagram.com/yummymart/" target="_blank"><img src="/app/img/yummymart/ico_insta_w.png" alt=""/></a></li>
+					<li><a href="https://line.me/ti/p/%40vql1238i" target="_blank"><img src="/app/img/yummymart/ico_line_w.png" alt=""/></a></li>
+				</ul>
+			</div>
+			<div class="wrap">
+			<div class="navArea">
+				<ul>
+					<li><a href="https://faq.peachjohn.co.jp/" target="_blank">お問い合わせ</a></li>
+					<li><a href="/al/info/about/index.html?sid=ym_footer_info">会社概要</a></li>
+					<li><a href="/pj/yummymart/harajuku.html?sid=ym_footer_shop">店舗情報</a></li>
+					<li><a href="https://peachjohn-recruit.net/jobfind-pc/?sid=ym_footer_recruit">求人情報</a></li>
+					<li><a href="/al/rule/privacy_policy.html?sid=ym_footer_policy">プライバシーポリシー</a></li>
+					<li><a href="/al/info/browser/index.html?sid=ym_footer_browser">推奨環境</a></li>
+					<li><a href="https://peachjohn.tmall.com/p/rd422867.htm?spm=a1z10.1-b-s.w5003-15922759541.1.AkqKGj&amp;scene=taobao_shop&amp;sid=ym_footer_china" target="_blank">CHINA</a></li>
+					<li><a href="https://www.peachjohn.asia/collection-detail.php?cid=10&amp;sid=ym_footer_hongkong" target="_blank">HONG KONG</a></li>
+					<li><a href="https://peachjohn.wacoal.com.tw/?sid=ym_footer_taiwan" target="_blank">TAIWAN</a></li>
+</ul>
+			</div>
+			<div class="logoArea">
+				<ul>
+					<li class="pj"><a href="/?sid=ym_footer_peachjohn"><img src="/app/img/yummymart/logo_pj.png" alt="PEACH JOHN"/></a></li>
+					<li class="salon"><a href="/pj/salon/?sid=ym_footer_salon"><img src="/app/img/yummymart/logo_salon.png" alt="SALON"/></a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<div class="copyRight">COPYRIGHT&copy;PEACH JOHN CO.,LTD</div>
+	</div>
+</div>

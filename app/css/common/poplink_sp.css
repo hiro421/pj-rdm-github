@@ -1,0 +1,292 @@
+/*
+   (c) 2016 Business Search Technologies Corporation
+   All Rights Reserved
+*/
+
+
+/* Reset styles for div.poplink */
+
+div.poplink div,
+div.poplink span,
+div.poplink p,
+div.poplink pre,
+div.poplink img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-align: left;
+}
+
+div.poplink {
+    z-index: 9999;
+}
+
+.poplink_invisible {
+    visibility: visible!important;
+}
+
+div.poplink > div.close_button {
+    position: absolute;
+    top: -0.1em;
+    left: 90%;
+    left: calc(100% - 39px);
+    width: 37px;
+    height: 37px;
+    background: url(../renewal_common/img/common/ico_delete_sp.png) no-repeat center center;
+    background-color: #fff;
+    border:1px solid #000;
+}
+
+div.poplink > div.close_button img {
+    opacity:0;
+}
+
+
+div.poplink.sphsr {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+div.poplink.sphsr > div.poplink_suggest {
+    background-color: #ffffff;
+    padding-top: 0.1em;
+    margin-top: 0!important;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: auto;
+    height: auto;
+}
+
+div.poplink.sphsr > div.poplink_suggest::-webkit-scrollbar{
+	width: 5px;
+	background: #fefefe;
+}
+
+div.poplink.sphsr > div.poplink_suggest::-webkit-scrollbar:horizontal{
+	height: 5px;
+}
+
+div.poplink.sphsr > div.poplink_suggest::-webkit-scrollbar-thumb{
+	background: #000;
+}
+
+div.poplink.sphsr > div.poplink_suggest > div.word {
+    line-height: 1.8em;
+    border: 1px solid #aaaaaa;
+    background-color: #ffffff;
+    border-radius: 0px!important;
+    color: #333333;
+    padding: 0 0.3em;
+    display: inline-block;
+    height: auto;
+    position: relative;
+    margin: 0 0.1em 0.4em 0.1em;
+    font-size: 80%;
+}
+
+div.poplink.sphsr > div.poplink_suggest > div.word.highlighted {
+    background-color: #000000!important;
+    border: 1px solid #000000!important;
+    color: #ffffff;
+}
+
+div.poplink.sphsr > div.poplink_suggest > div.word.highlighted.poplink_invisible {
+    visibility:hidden!important;
+}
+
+div.poplink.sphsr > div.poplink_suggest > div.word.highlighted:after {
+    content: "";
+    position: absolute;
+    bottom: -0.5em;
+    left: 50%;
+    margin-left: -0.5em;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0.5em 0.5em 0 0.5em;
+    border-color: #000000 transparent transparent transparent!important;
+}
+
+div.poplink.sphsr > div.scroll_area {
+    background-color: #ffffff;
+    border: 1px solid #000!important;
+    border-radius: 0px!important;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: auto;
+    overflow-y: auto;
+    width: auto;
+    white-space: nowrap;
+}
+
+
+div.poplink.sphsr > div.scroll_area::-webkit-scrollbar{
+	width: 5px;
+	background: #fefefe;
+}
+
+div.poplink.sphsr > div.scroll_area::-webkit-scrollbar:horizontal{
+	height: 5px;
+}
+
+div.poplink.sphsr > div.scroll_area::-webkit-scrollbar-thumb{
+	background: #000;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_search {
+    float: left;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_search > div.item {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #aaaaaa;
+    width: 120px;
+    border-radius: 0px!important;
+    box-shadow: 0 0 0 #cccccc!important;
+    margin: 0.5em 0.3em!important;
+    height: auto;
+    display: inline-block;
+    min-height: none!important;
+    max-height: none!important;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_search > div.item > a {
+    display: block;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_search > div.item > a > div.poplink_invisible {
+    display: none !important;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_search > div.item > a > div.title,
+div.poplink.sphsr > div.scroll_area > div.poplink_search > div.item > a > div.summary,
+div.poplink.sphsr > div.scroll_area > div.poplink_search > div.item > a > div.any1,
+div.poplink.sphsr > div.scroll_area > div.poplink_search > div.item > a > div.any2,
+div.poplink.sphsr > div.scroll_area > div.poplink_search > div.item > a > div.any3 {
+    padding: 0 0.5em!important;
+    white-space: normal;
+    color: #333333;
+    font-size: 80%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_search > div.item > a > div.title{
+	line-height:1.5;
+	margin-bottom: 0.5em;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_search > div.item > a > div.image_box {
+    margin-bottom: 0.3em!important;
+    text-align: center;
+    height: auto!important;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_search > div.item > a > div.image_box > img {
+    text-align: center;
+    width: 100%;
+    max-width: none!important;
+    max-height: none!important;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_search > div.item > a:link,
+div.poplink.sphsr > div.scroll_area > div.poplink_search > div.item > a:visited {
+    color: #333333;
+    text-decoration: none;
+    text-align: center;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_search > div.item.poplink_invisible {
+    display: none;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_recommend.poplink_invisible {
+	display:block;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_recommend > div.item {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #aaaaaa;
+    width: 120px;
+    border-radius: 0px!important;
+    box-shadow: 0 0 0 #cccccc!important;
+    margin: 0.5em 0.3em!important;
+    height: auto;
+    display: inline-block;
+    min-height: none!important;
+    max-height: none!important;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_recommend > div.item > a {
+    display: block;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_recommend > div.item > a > div.poplink_invisible {
+    display: none !important;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_recommend > div.item > a > div.title,
+div.poplink.sphsr > div.scroll_area > div.poplink_recommend > div.item > a > div.summary,
+div.poplink.sphsr > div.scroll_area > div.poplink_recommend > div.item > a > div.any1,
+div.poplink.sphsr > div.scroll_area > div.poplink_recommend > div.item > a > div.any2,
+div.poplink.sphsr > div.scroll_area > div.poplink_recommend > div.item > a > div.any3 {
+    padding: 0 0.5em!important;
+    white-space: normal;
+    color: #333333;
+    font-size: 80%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_recommend > div.item > a > div.title{
+	line-height:1.5;
+	margin-bottom: 0.5em;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_recommend > div.item > a > div.image_box {
+    margin-bottom: 0.3em!important;
+    text-align: center;
+    height: auto!important;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_recommend > div.item > a > div.image_box > img {
+    text-align: center;
+    width: 100%;
+    max-width: none!important;
+    max-height: none!important;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_recommend > div.item > a:link,
+div.poplink.sphsr > div.scroll_area > div.poplink_recommend > div.item > a:visited {
+    color: #333333;
+    text-decoration: none;
+    text-align: center;
+}
+
+div.poplink.sphsr > div.scroll_area > div.poplink_recommend > div.item.poplink_invisible {
+    display: none;
+}
+
+div.poplink.sphsr.invisible {
+    display: none;
+}
+
+.poplink_invisible {
+    display: none;
+}

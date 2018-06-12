@@ -1,0 +1,11 @@
+<div class ="p-mypage_list p-regist-form">
+            <ul class="p-regist-form__content c-form c-list--border ">
+            <h2 class="p-mypage p-regist-form__header">MY PAGE</h2>
+            <li class="p-li c-form__group--inline"><a href="javascript:void(0);" class="p-list_align" onclick="pagePolicy.setFormData('nextPageParam','orderHistory'); return CommonUtils.doPostBack('next',pagePolicy.formDataPool,'mainform');">ご注文履歴の確認・口コミ投稿</a><img src="/app/img/common/mslider_next.png" class="p-next_img--style"></li>
+            <li class="p-li c-form__group--inline"><a href="javascript:void(0);" class="p-list_align" onclick="pagePolicy.setFormData('nextPageParam','customerInfo'); return CommonUtils.doPostBack('next',pagePolicy.formDataPool,'mainform');">お客様情報の確認・更新</a><img src="/app/img/common/mslider_next.png" class="p-next_img--style"></li>
+            <li class="p-li c-form__group--inline"><a href="javascript:void(0);" class="p-li-color p-list_align" onclick="pagePolicy.setFormData('nextPageParam','addressList'); return CommonUtils.doPostBack('next',pagePolicy.formDataPool,'mainform');" class="p-li-color">お届け先住所登録</a><img src="/app/img/common/mslider_next.png" class="p-next_img--style"></li>
+            <li class="p-li c-form__group--inline"><a href="javascript:void(0);" class="p-list_align" onclick="pagePolicy.setFormData('nextPageParam','itemReviewHistory'); return CommonUtils.doPostBack('next',pagePolicy.formDataPool,'mainform');">投稿口コミ一覧</a><img src="/app/img/common/mslider_next.png" class="p-next_img--style"></li>
+            <li class="p-li c-form__group--inline"><a href="javascript:void(0);" class="p-list_align" onclick="pagePolicy.setFormData('nextPageParam','wishList'); return CommonUtils.doPostBack('next',pagePolicy.formDataPool,'mainform');">ほしいものリスト</a><img src="/app/img/common/mslider_next.png" class="p-next_img--style"></li>
+            <li class="p-li c-form__group--inline"><a href="javascript:void(0);" class="p-list_align" onclick="pagePolicy.setFormData('nextPageParam','logout'); return CommonUtils.doPostBack('next',pagePolicy.formDataPool,'mainform');">ログアウト</a><img src="/app/img/common/mslider_next.png" class="p-next_img--style"></li>
+            </ul>
+</div> 
