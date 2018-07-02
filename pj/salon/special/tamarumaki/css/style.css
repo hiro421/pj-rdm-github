@@ -1,0 +1,409 @@
+body.salon a {
+  color:#000000;
+}
+
+body.salon #contents {
+  background: url(../img/bg.jpg) no-repeat 40% -3%;
+  width: 100%;
+}
+
+body.salon h2 {
+  width: 984px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body.salon .contentArea {
+  width: 984px;
+	margin: 0 auto;
+}
+
+/*  interviewArea01 */
+body.salon .contentArea .interviewArea01 .lead img {
+  margin: 70px auto;
+  text-align: center;
+}
+
+body.salon .contentArea .interviewArea01 .box {
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+body.salon .contentArea .interviewArea01 .box > div {
+  float: left;
+}
+
+body.salon .contentArea .interviewArea01 .box div.model-txt {
+  margin: 232px 0 0 17px;
+}
+
+body.salon .contentArea .interviewArea01 .box div.model-txt .model-txt-item {
+  margin-top: 33px;
+  text-align: right;
+}
+
+body.salon .contentArea .interviewArea01 .box div a {
+  text-decoration: underline;
+}
+
+body.salon .contentArea .interviewArea01 .box div a:hover {
+  text-decoration: none;
+}
+
+body.salon .contentArea .interviewArea01 .box02 > div {
+  float: right;
+}
+
+body.salon .contentArea .interviewArea01 .box02 div.model-txt {
+  margin: 232px 17px 0 0;
+}
+
+body.salon .contentArea .interviewArea01 .box02 div.model-txt .model-txt-item {
+  text-align: left;
+}
+
+/*  interviewArea02 */
+body.salon .contentArea .interviewArea02 {
+}
+
+body.salon .contentArea .interviewArea02 .interview_main {
+}
+
+body.salon .contentArea .interviewArea02 .interview_txt img {
+  margin: 60px auto;
+  text-align: center;
+}
+
+body.salon .contentArea .interviewArea02 .interview_sec {
+  margin-bottom: 35px;
+}
+
+body.salon .contentArea .interviewArea02 .interview_sec h4 {
+  font-size: 18px;
+  color: #7589b2;
+  font-weight: normal;
+}
+
+body.salon .contentArea .interviewArea02 .interview_sec p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.profile {
+  background: url(../img/profile.png) no-repeat left center;
+  margin-top: 140px;
+  margin-left: 0;
+  border-bottom: 1px solid #999;
+  text-indent: 100%;
+  overflow: hidden;
+  height: 46px;
+}
+
+.wrap {
+  border-bottom: 1px solid #999;
+}
+
+.wrap .profile_box {
+  margin-bottom: 5%;
+  margin-top: 30px;
+}
+
+.wrap .profile_box p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 3%;
+}
+
+.wrap .profile_box p a {
+  color: #758ab3;
+}
+
+
+/*  recommend*/
+body.salon .recommendArea .columnListArea {
+    width: 984px;
+    margin: 70px auto 0;
+}
+
+body.salon .recommendArea .columnListArea h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body.salon .recommendArea .columnListArea ul {
+    overflow: hidden;
+    margin-right: -12px;
+    margin-bottom: 78px;
+}
+
+body.salon .recommendArea .columnListArea ul li {
+    float: left;
+    overflow: hidden;
+    width: 320px;
+    margin-right: 12px;
+    margin-bottom: 78px;
+    text-align: center;
+}
+
+body.salon .recommendArea .columnListArea ul li.column4 {
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 240px;
+}
+
+body.salon .recommendArea .columnListArea ul li p {
+	margin: 20px auto 25px;
+}
+
+body.salon .recommendArea .columnListArea ul li.column4 .btnCart {
+    display: none;
+}
+
+body.salon .recommendArea .columnListArea ul li.column4 .btnCart img {
+    width: 220px;
+}
+
+body.salon .recommendArea .columnListArea ul li.column4 .btnDetail img {
+    width: 220px;
+}
+
+body.salon .recommendArea .columnListArea ul li .rank {
+    width: 100%;
+    height: 70px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+body.salon .recommendArea .columnListArea ul li .pic {
+    border: 1px solid #EEEFF2;
+    margin-bottom: 5px;
+}
+
+body.salon .recommendArea .columnListArea ul li .pic img {
+    width: 100%;
+    height: auto;
+}
+
+body.salon .recommendArea .columnListArea ul li .text {
+    color: #7589b2;
+    font-size: 18px;
+    margin: 20px 15px 25px;
+}
+
+body.salon .recommendArea .columnListArea ul li .text a {
+    color: #7589b2;
+}
+
+body.salon .recommendArea .columnListArea ul li .name {
+    font-size: 14px;
+}
+
+body.salon .recommendArea .columnListArea ul li .price {
+    margin-bottom: 20px;
+}
+
+body.salon .recommendArea .columnListArea ul li .btnCart {
+    margin-bottom: 5px;
+    display: none;
+}
+
+body.salon .recommendArea .columnListArea .btnAllItem {
+    width: 580px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*  movie */
+body.salon .moviearea {
+	width: 984px;
+	margin: 70px auto;
+}
+
+/* ===================================================================================================================================================
+	
+   sp
+   
+   =================================================================================================================================================== */
+@media screen and (max-width: 768px) {
+  /* ===========================================================
+     interview vol01
+  ============================================================== */
+body.salon #contents {
+  background: url(../img/sp_bg.jpg) no-repeat 0 -2%;
+  background-size: contain;
+}
+
+body.salon h2 {
+　width: 100%;
+}
+
+body.salon .contentArea {
+  width: 100%;
+}
+
+/*  interviewArea01 */
+body.salon .contentArea .interviewArea01 .lead img {
+  width: 83.75%;
+  margin: 7% auto;
+}
+
+body.salon .contentArea .interviewArea01 .box {
+  margin-bottom: 10.9%;
+}
+	
+body.salon .contentArea .interviewArea01 .box div.model {
+  width: 77.81%;
+}
+	
+body.salon .contentArea .interviewArea01 .box div.model-txt {
+  margin: -9% 2.6% 0 0;
+  width: 77.81%;
+  float: right;
+}
+
+body.salon .contentArea .interviewArea01 .box div.model-txt .model-txt-item {
+  margin-top: 3%;
+  margin-right: 5%;
+  font-size: 1.2rem;
+}
+	
+body.salon .contentArea .interviewArea01 .box02 div.model-txt {
+  margin: -9% 0 0 2.6%;
+  float: left;
+}
+	
+body.salon .contentArea .interviewArea01 .box03 div.model-txt {
+  margin: -2% 2.6% 0 0;
+}
+	
+/*  interviewArea02 */
+body.salon .contentArea .interviewArea02 .interview_txt img {
+  margin: 6% auto;
+  width: 68.12%;
+}
+
+body.salon .contentArea .interviewArea02 .interview_sec {
+  padding: 0 4.68%;
+}
+	
+body.salon .contentArea .interviewArea02 .interview_sec h4 {
+  font-size: 1.2rem;
+}
+	
+body.salon .contentArea .interviewArea02 .interview_sec p {
+  font-size: 1.2rem;
+}
+
+body.salon h3.profile {
+  background: url(../img/profile.png) no-repeat center center;
+  margin: 0 4.68%;
+}
+
+body.salon .wrap {
+  margin: 0 4.68%;
+}
+
+/*  recommend */	
+body.salon .recommendArea .columnListArea {
+	width: 100%;
+	margin: 16% auto 0;
+}
+
+body.salon .recommendArea .columnListArea h3 {
+  text-align: center;
+  margin: 0 auto 15px;
+  width: 61.4%;
+}
+
+body.salon .recommendArea .columnListArea ul {
+	overflow: hidden;
+	margin-right: 0;
+	margin-left: 4%;
+	margin-bottom: 40px;
+}
+body.salon .recommendArea .columnListArea ul li {
+	float: left;
+	overflow: hidden;
+	width: 30%;
+	margin-right: 3%;
+	margin-bottom: 0px;
+	text-align: center;
+	font-size: 1rem;
+}
+body.salon .recommendArea .columnListArea ul li.column4 {
+	float: left;
+	margin-right: 4%;
+	margin-bottom: 4%;
+	text-align: center;
+	width: 46%;
+}
+body.salon .recommendArea .columnListArea ul li.column4 .btnCart {
+	display: none;
+}
+body.salon .recommendArea .columnListArea ul li.column4 .btnCart img {
+	width: 100%;
+}
+body.salon .recommendArea .columnListArea ul li.column4 .btnDetail img {
+	width: 100%;
+}
+body.salon .recommendArea .columnListArea ul li .rank {
+	width: 100%;
+	height: 70px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+body.salon .recommendArea .columnListArea ul li .pic {
+	border: 1px solid #EEEFF2;
+}
+body.salon .recommendArea .columnListArea ul li .pic img {
+	width: 100%;
+	height: auto;
+}
+body.salon .recommendArea .columnListArea ul li .text {
+	color: #7589b2;
+	font-size: 18px;
+	margin: 20px 15px 25px;
+}
+body.salon .recommendArea .columnListArea ul li .text a {
+	color: #7589b2;
+}
+body.salon .recommendArea .columnListArea ul li .name {
+	font-size: 14px;
+}
+body.salon .recommendArea .columnListArea ul li .price {
+	margin-bottom: 20px;
+}
+body.salon .recommendArea .columnListArea ul li .btnCart {
+	margin-bottom: 5px;
+	display: none;
+}
+body.salon .recommendArea .columnListArea .btnAllItem {
+	width: 580px;
+	margin: 0 auto;
+	text-align: center;
+}
+	
+/*  movie */
+body.salon .moviearea {
+	width: 100%;
+	margin: 6% auto;
+	position: relative;
+	padding-top: 56.25%;
+}
+
+body.salon .moviearea iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+}
+	  
+
+

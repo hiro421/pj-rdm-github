@@ -1,0 +1,350 @@
+/*all
+----------------------------*/
+body.salon.column.vol12 #contents .columnArea {
+	width:980px;
+	margin:0 auto;
+}
+body.salon.column.vol12 #contents .columnArea >h3 {
+	width:700px;
+	margin:100px auto 0 auto;
+}
+body.salon.column.vol12 #contents .columnArea div[class*="sec"] .text p {
+	width:70%;
+	text-align:left;
+	margin:0 15%;
+}
+/*sec01
+----------------------------*/
+body.salon.column.vol12 #contents .columnArea .sec01 {
+	height:auto;
+}
+body.salon.column.vol12 #contents .columnArea .sec01 .inner .titleAboutSilk {
+	margin:100px 0 0 0;
+}
+body.salon.column.vol12 #contents .columnArea .sec01  .inner .text {
+	margin:30px 0;
+}
+body.salon.column.vol12 #contents .columnArea .sec01  .inner .img {
+	width:800px;
+	margin:0 auto;
+}
+/*sec02
+----------------------------*/
+body.salon .columnArea .sec02 {
+	background:0;
+	height:auto;
+}
+body.salon .columnArea .sec02 .inner p {
+	padding: 0;
+}
+body.salon.column.vol12 #contents .columnArea .sec02 .inner .titleFablic {
+	margin-top:100px;
+	padding:0;
+}
+body.salon.column.vol12 #contents .columnArea .sec02  .inner .text {
+	margin:30px 0;
+}
+body.salon.column.vol12 #contents .columnArea .sec02  .inner .img {
+	width:800px;
+	margin:0 auto;
+}
+/*sec03
+----------------------------*/
+body.salon.column.vol12 #contents .columnArea .sec03 {
+	height:auto;
+	padding:0;
+	background:0;
+	background-color:#ffffff;
+}
+body.salon.column.vol12 #contents .columnArea .sec03 .inner .titleDesignPoint {
+	margin-top:100px;
+}
+body.salon.column.vol12 #contents .columnArea .sec03  .inner .text {
+	margin:30px 0;
+}
+body.salon.column.vol12 #contents .columnArea .sec03  .inner .img {
+	width:800px;
+	margin:0 auto;
+}
+/*sec04
+----------------------------*/
+body.salon.column.vol12 #contents .columnArea .sec04 .inner .titleAllItemList {
+	margin-top:100px;
+}
+body.salon.column.vol12 #contents .columnArea .sec04 div[class*="item"] {
+	margin-top: 10%;
+}
+/*item01*/
+body.salon.column.vol12 #contents .columnArea .sec04 .item01 {
+	width:800px;
+	margin:0 auto;
+	position:relative;
+}
+body.salon.column.vol12 #contents .columnArea .sec04 .item01 .btn01 {
+	position: absolute;
+	top: 90px;
+	left:30px;
+}
+body.salon.column.vol12 #contents .columnArea .sec04 .item01 .btn02 {
+	position: absolute;
+	bottom: 0;
+	right:30px;
+}
+/*item02*/
+body.salon.column.vol12 #contents .columnArea .sec04 .item02 {
+	width:800px;
+	margin:0 auto;
+	position:relative;
+}
+body.salon.column.vol12 #contents .columnArea .sec04 .item02 .btn03 {
+	position: absolute;
+	top: 70px;
+	right:30px;
+}
+/*item03*/
+body.salon.column.vol12 #contents .columnArea .sec04 .item03 {
+	width:800px;
+	margin:0 auto;
+	position:relative;
+}
+body.salon.column.vol12 #contents .columnArea .sec04 .item03 .btn04 {
+	position: absolute;
+	top: 80px;
+	left:30px;
+}
+/*item04*/
+body.salon.column.vol12 #contents .columnArea .sec04 .item04 {
+	width:800px;
+	margin:0 auto;
+	position:relative;
+}
+body.salon.column.vol12 #contents .columnArea .sec04 .item04 .btn05 {
+	position: absolute;
+	top: 70px;
+	right:30px;
+}
+/*item05*/
+body.salon.column.vol12 #contents .columnArea .sec04 .item05 {
+	width:800px;
+	margin:0 auto;
+	position:relative;
+}
+body.salon.column.vol12 #contents .columnArea .sec04 .item05 .btn06 {
+	position: absolute;
+	top: 100px;
+	right:30px;
+}
+body.salon.column.vol12 #contents .columnArea .sec04 .item05 .btn07 {
+	position: absolute;
+	bottom: 56px;
+	right:120px;
+}
+/*item06*/
+body.salon.column.vol12 #contents .columnArea .sec04 .item06 {
+	width:800px;
+	margin:0 auto;
+	position:relative;
+}
+body.salon.column.vol12 #contents .columnArea .sec04 .item06 .btn08 {
+	position: absolute;
+	top: 70px;
+	right:30px;
+}
+/*item07*/
+body.salon.column.vol12 #contents .columnArea .sec04 .item07 {
+	width:800px;
+	margin:0 auto;
+	position:relative;
+}
+body.salon.column.vol12 #contents .columnArea .sec04 .item07 .btn09 {
+	position: absolute;
+	top: 130px;
+	left:30px;
+}
+body.salon.column.vol12 #contents .columnArea .sec04 .item07 .btn10 {
+	position: absolute;
+	bottom: 56px;
+	right:140px;
+}
+/*mainBtn
+----------------------------*/
+body.salon.column.vol12 #contents .columnArea .mainBtn {
+	width: 560px;
+	margin: 180px auto;
+}
+
+@media screen and (max-width: 768px) {
+	body.salon.column.vol12 #contents .columnArea {
+		width:100%;
+		/*width:90%;
+		margin:0 5%;*/
+	}
+	body.salon.column.vol12 #contents .columnArea >h3 {
+		width:100%;
+		margin:26px auto 0 auto;
+	}
+	body.salon.column.vol12 #contents .columnArea div[class*="sec"] .text p {
+		width:80%;
+		margin:0 10%;
+	}
+	/*sec01
+	----------------------------*/
+	body.salon.column.vol12 #contents .columnArea .sec01 .inner .titleAboutSilk {
+		margin: 16px 0 0 0;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec01  .inner .text {
+		margin:16px 0;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec01  .inner .img {
+		width:90%;
+		margin:0 5%;
+	}	
+	/*sec02
+	----------------------------*/
+	body.salon .columnArea .sec02 .inner {
+		margin:0;
+	}
+	body.salon .columnArea .sec02 .inner p {
+		color:#333333;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec02 .inner .titleFablic {
+		margin-top:50px;
+		padding:0;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec02  .inner .text {
+		margin:16px 0;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec02  .inner .img {
+		width:90%;
+		margin:0 5%;
+	}
+	/*sec03
+	----------------------------*/
+	body.salon .columnArea .sec03 .inner p {
+		color:#333333;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec03 .inner .titleDesignPoint {
+		margin-top:50px;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec03  .inner .text {
+		margin:16px 0;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec03  .inner .img {
+		width:90%;
+		margin:0 5%;
+	}
+	/*sec04
+	----------------------------*/
+	body.salon.column.vol12 #contents .columnArea .sec04 .inner .titleAllItemList {
+		margin-top:50px;
+	}
+	/*item01*/
+	body.salon.column.vol12 #contents .columnArea .sec04 .item01 {
+		width:90%;
+		margin:0 5%;
+		position:relative;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec04 .item01 .btn01 {
+		width:34%;
+		position: absolute;
+		top: 10%;
+		left:2%;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec04 .item01 .btn02 {
+		width:34%;
+		position: absolute;
+		bottom: 0;
+		right:2%;
+	}
+	/*item02*/
+	body.salon.column.vol12 #contents .columnArea .sec04 .item02 {
+		width:90%;
+		margin:0 5%;
+		position:relative;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec04 .item02 .btn03 {
+		width:34%;
+		position: absolute;
+		top: 10%;
+		right:2%;
+	}
+	/*item03*/
+	body.salon.column.vol12 #contents .columnArea .sec04 .item03 {
+		width:90%;
+		margin:0 5%;
+		position:relative;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec04 .item03 .btn04 {
+		width:34%;
+		position: absolute;
+		top: 10%;
+		left:2%;
+	}
+	/*item04*/
+	body.salon.column.vol12 #contents .columnArea .sec04 .item04 {
+		width:90%;
+		margin:0 5%;
+		position:relative;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec04 .item04 .btn05 {
+		width:34%;
+		position: absolute;
+		top: 10%;
+		right:2%;
+	}
+	/*item05*/
+	body.salon.column.vol12 #contents .columnArea .sec04 .item05 {
+		width:90%;
+		margin:0 5%;
+		position:relative;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec04 .item05 .btn06 {
+		width:34%;
+		position: absolute;
+		top: 10%;
+		right:2%;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec04 .item05 .btn07 {
+		width:34%;
+		position: absolute;
+		bottom: 5%;
+		right:5%;
+	}
+	/*item06*/
+	body.salon.column.vol12 #contents .columnArea .sec04 .item06 {
+		width:90%;
+		margin:0 5%;
+		position:relative;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec04 .item06 .btn08 {
+		width:34%;
+		position: absolute;
+		top: 10%;
+		right:2%;
+	}
+	/*item07*/
+	body.salon.column.vol12 #contents .columnArea .sec04 .item07 {
+		width:90%;
+		margin:0 5%;
+		position:relative;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec04 .item07 .btn09 {
+		width:34%;
+		position: absolute;
+		top: 12%;
+		left:2%;
+	}
+	body.salon.column.vol12 #contents .columnArea .sec04 .item07 .btn10 {
+		width:34%;
+		position: absolute;
+		bottom: 3%;
+		right:10%;
+	}
+	/*mainBtn
+	----------------------------*/
+	body.salon.column.vol12 #contents .columnArea .mainBtn {
+		width: 258px;
+		margin: 50px auto;
+	}
+
+}

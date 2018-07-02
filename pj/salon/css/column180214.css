@@ -1,0 +1,533 @@
+/* ===========================================================
+    column vol13
+  ============================================================== */
+  
+
+ body.salon.column.vol13 .columnArea .sec01 {
+	background-size: cover;
+	background-color: #ffffff;
+	margin: auto;
+	height: auto;
+
+}
+
+body.salon.column.vol13 .columnArea .sec01 .inner {
+    padding: 0;
+}
+  
+  body.salon.column.vol13 .columnArea .sec01 .inner h3 {
+	background-size: contain;
+  }
+  body.salon.column.vol13 .columnArea .sec01 .inner h4 {
+	background-size: contain;
+	padding-bottom: 5%;
+	margin-bottom: 0;
+	height: auto;
+	background: none;
+  }
+  body.salon.column.vol13 .columnArea .sec02 {
+	background: url(../column/img/161107/161107bg02.jpg) no-repeat center top;
+	background-color: #FFF;
+	background-size: cover;
+	margin-top: 30px;
+	height: 250px;
+  }
+  
+body.salon.column.vol13 .columnArea .sec02 .inner p {
+    color: #000;
+    line-height: 20px;
+    text-align: left;
+    font-size: 1.0rem;
+    padding: 4% 0% 4% 38%;
+    width: 90%;
+    
+}
+
+body.salon.column.vol13 .columnArea .sec03 .titleSideStory {
+margin: 15px 0;
+}
+
+body.salon.column.vol13 .columnArea .sec03 .inner .titleSideStory {
+margin: 0px 0 15px 0;
+}
+
+body.salon.column.vol13 .columnArea .sec02 .inner p img {
+	width: 100%;
+	padding: 45px 0 0 5px;
+}
+
+body.salon.column.vol13 .columnArea .sec03 .lay02 .inner h4{
+	font-size: 90%;
+	margin: 0px;
+}
+
+body.salon.column.vol13 .columnArea .sec03 .inner .lay01 h4{
+	font-size: 90%;
+	margin: 0 0 10px 0;
+}
+
+body.salon.column.vol13 .columnArea .sec03 .inner .lay01 p {
+	margin: 10px 0 15px 0;
+	padding: 0;
+}
+
+  body.salon.column.vol13 .columnArea .sec03 {
+	background: url(../column/img/161107/) no-repeat center top;
+	background-size: contain;
+	background-color: #fff;
+	padding-bottom: 0%;
+}
+
+body.salon.column.vol13 .columnArea .sec03 .inner p.titleSideStory {
+    width: 100%;
+}
+
+body.salon.column.vol13 .columnArea .sec03 .lay01 .left .pic {
+	margin-bottom: 20px;
+	float: left;
+	width: 100%;
+}
+
+body.salon.column.vol13 .columnArea .sec03 .lay02 .left .pic {
+	margin-bottom: 20px;
+	float: left;
+	width: 100%;
+}
+
+
+body.salon.column.vol13 .columnArea .sec03 .lay01 .right .pic {
+	margin-bottom: 20px;
+	float: left;
+	width: 100%;
+}
+
+
+body.salon.column.vol13 .columnArea .sec03 .lay02 .left {
+    width: auto;
+}
+
+
+body.salon.column.vol13 .columnArea .sec03 .lay02 .right .pic {
+	margin-bottom: 20px;
+	float: left;
+	width: 100%;
+}
+
+
+body.salon.column.vol13 .columnArea .sec03 .lay03 .pic {
+    margin: 0 auto;
+    width: 100%;
+}
+
+body.salon.column.vol13 .columnArea .sec03 p {
+    color: #111;
+    margin-bottom: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+
+body.salon.column.vol13 .columnArea .sec03 .lay02 .right {
+    width: 100%;
+    margin: auto;
+}
+
+
+body.salon.column.vol13 .columnArea .sec05{
+    width: 100%;
+}	
+
+	
+	body.salon.column.vol13 .columnArea .sec01 .inner h4 {
+    width: 100%;
+    padding: 0;
+    margin: 4% auto;
+}
+	
+	body.salon.column.vol13 .columnArea .sec03 .lay02 {
+    margin: 0 auto ;
+    
+}
+	
+	body.salon.column.vol13 .columnArea .sec04 {
+    width: 100%;
+	margin-left: 170px;
+}
+
+    body.salon.column.vol13 .columnArea .sec04 .titleSideStory {
+    width: 100%;
+	margin: 0 0 20px 170px;
+}
+	
+	body.salon.column.vol13 .columnArea .sec04 .lay02 .left {
+    width: 38%;
+   
+}
+	
+	body.salon.column.vol13 .columnArea .sec04 .lay02 .right {
+    width: 60%;
+    margin-top: 10%;
+    font-size: 1.0rem;
+}
+	
+	body.salon.column.vol13 .columnArea .sec05 .ue {
+    margin: 0 auto;
+    width: 980px;
+}
+	
+body.salon .columnArea .sec03 .lay01 .left {
+overflow: hidden;
+}
+
+body.salon .columnArea .sec03 .lay01 .right {
+     overflow: hidden;
+}
+
+body.salon .columnArea .backnumber ul li:last-child {
+    display: block;
+}
+
+body.salon.column.vol13 .columnArea .flower {
+    position: relative;
+}
+
+body.salon.column.vol13 .columnArea .lead {
+	font-family:"Yu Mincho", "游明朝体", YuMincho, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #000;
+    font-weight: normal;
+	line-height: 2;
+	position: absolute;
+	margin: 0 100px;
+    width: 980px;
+	bottom: 75px
+}
+
+body.salon.column.vol13 .columnArea .lead2 {
+	font-family:"Yu Mincho", "游明朝体", YuMincho, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+    font-size: 1.3rem;
+    text-align: left;
+    color: #000;
+    font-weight: normal;
+	margin: 40px 220px;
+    width: 980px;
+}
+
+body.salon.column.vol13 .columnArea .text3 {
+	font-family:"Yu Mincho", "游明朝体", YuMincho, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    color: #000;
+    font-weight: normal;
+}
+
+body.salon.column.vol13 .columnArea .text4 {
+	font-family:"Yu Mincho", "游明朝体", YuMincho, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+    font-size: 1.0rem;
+    text-align: left;
+    color: #000;
+    font-weight: normal;
+}
+
+body.salon.column.vol13 .columnArea .photo .fact {
+    margin: 0 auto;
+    width: 980px;
+}
+
+body.salon.column.vol13 .columnArea .mcm {
+    margin: 0 270px 0;
+    width: 980px;
+}
+
+body.salon.column.vol13 .columnArea .lace {  
+}
+
+body.salon.column.vol13 .columnArea .detail {
+	margin-top: 80px;   
+}
+
+body.salon.column.vol13 .columnArea .disc {
+    margin: 70px auto 0px;
+    width: 980px;
+}
+
+body.salon.column.vol13 .columnArea .disc2 {
+    margin: 0px auto 0px;
+    width: 980px;
+}
+
+body.salon.column.vol13 .columnArea .color {
+    margin: 0 auto;
+    width: 980px;
+}
+
+body.salon.column.vol13 .columnArea .white {
+    float: left;
+}
+
+body.salon.column.vol13 .columnArea .series {
+    margin: 70px auto 0px;
+    width: 980px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+	body.salon.column.vol13 #contents .columnArea {
+		width:100%;
+		margin:0 0%;
+	}
+	body.salon.column.vol13 #contents .columnArea >h3 {
+		width:100%;
+		margin:26px auto 0 auto;
+	}
+	body.salon.column.vol13 #contents .columnArea div[class*="sec"] .text p {
+		width:80%;
+		margin:0 10%;
+	}
+	/*sec01
+	----------------------------*/
+	body.salon.column.vol13 #contents .columnArea .sec01 .inner .titleAboutSilk {
+		margin: 16px 0 0 0;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec01  .inner .text {
+		margin:16px 0;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec01  .inner .img {
+		width:90%;
+		margin:0 5%;
+	}	
+	/*sec02
+	----------------------------*/
+	body.salon .columnArea .sec02 .inner {
+		margin:0;
+	}
+	body.salon .columnArea .sec02 .inner p {
+		color:#333333;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec02 .inner .titleFablic {
+		margin-top:50px;
+		padding:0;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec02  .inner .text {
+		margin:16px 0;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec02  .inner .img {
+		width:90%;
+		margin:0 5%;
+	}
+	/*sec03
+	----------------------------*/
+	body.salon .columnArea .sec03 .inner p {
+		color:#333333;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec03 .inner .titleDesignPoint {
+		margin-top:50px;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec03  .inner .text {
+		margin:16px 0;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec03  .inner .img {
+		width:90%;
+		margin:0 5%;
+	}
+	/*sec04
+	----------------------------*/
+	body.salon.column.vol13 #contents .columnArea .sec04 .inner .titleAllItemList {
+		margin-top:50px;
+	}
+	/*item01*/
+	body.salon.column.vol13 #contents .columnArea .sec04 .item01 {
+		width:90%;
+		margin:0 5%;
+		position:relative;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec04 .item01 .btn01 {
+		width:34%;
+		position: absolute;
+		top: 10%;
+		left:2%;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec04 .item01 .btn02 {
+		width:34%;
+		position: absolute;
+		bottom: 0;
+		right:2%;
+	}
+	/*item02*/
+	body.salon.column.vol13 #contents .columnArea .sec04 .item02 {
+		width:90%;
+		margin:0 5%;
+		position:relative;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec04 .item02 .btn03 {
+		width:34%;
+		position: absolute;
+		top: 10%;
+		right:2%;
+	}
+	/*item03*/
+	body.salon.column.vol13 #contents .columnArea .sec04 .item03 {
+		width:90%;
+		margin:0 5%;
+		position:relative;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec04 .item03 .btn04 {
+		width:34%;
+		position: absolute;
+		top: 10%;
+		left:2%;
+	}
+	/*item04*/
+	body.salon.column.vol13 #contents .columnArea .sec04 .item04 {
+		width:90%;
+		margin:0 5%;
+		position:relative;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec04 .item04 .btn05 {
+		width:34%;
+		position: absolute;
+		top: 10%;
+		right:2%;
+	}
+	/*item05*/
+	body.salon.column.vol13 #contents .columnArea .sec04 .item05 {
+		width:90%;
+		margin:0 5%;
+		position:relative;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec04 .item05 .btn06 {
+		width:34%;
+		position: absolute;
+		top: 10%;
+		right:2%;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec04 .item05 .btn07 {
+		width:34%;
+		position: absolute;
+		bottom: 5%;
+		right:5%;
+	}
+	/*item06*/
+	body.salon.column.vol13 #contents .columnArea .sec04 .item06 {
+		width:90%;
+		margin:0 5%;
+		position:relative;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec04 .item06 .btn08 {
+		width:34%;
+		position: absolute;
+		top: 10%;
+		right:2%;
+	}
+	/*item07*/
+	body.salon.column.vol13 #contents .columnArea .sec04 .item07 {
+		width:90%;
+		margin:0 5%;
+		position:relative;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec04 .item07 .btn09 {
+		width:34%;
+		position: absolute;
+		top: 12%;
+		left:2%;
+	}
+	body.salon.column.vol13 #contents .columnArea .sec04 .item07 .btn10 {
+		width:34%;
+		position: absolute;
+		bottom: 3%;
+		right:10%;
+	}
+	/*mainBtn
+	----------------------------*/
+	body.salon.column.vol13 #contents .columnArea .mainBtn {
+		width: 258px;
+		margin: 50px auto;
+	}
+	
+	body.salon.column.vol13 .columnArea .lead {
+	font-family:"Yu Mincho", "游明朝体", YuMincho, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #000;
+    font-weight: normal;
+	position: absolute;
+	margin: 0 auto;
+    width: 100%;
+    bottom: 10%;
+}
+	
+body.salon.column.vol13 .columnArea .lead2 {
+	font-family:"Yu Mincho", "游明朝体", YuMincho, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+    font-size: 1.1rem;
+    text-align: left;
+    color: #000;
+    font-weight: normal;
+	margin: 5% 2% 4%;
+    width: 96%;
+}
+	
+body.salon.column.vol13 .columnArea .photo .fact {
+    margin: 3% auto;
+    width: 100%;
+}
+	
+body.salon.column.vol13 .columnArea .mcm {
+    width: 96%;
+    margin: 2% 2% 0;
+}
+	
+	body.salon.column.vol13 .columnArea .text3 {
+	font-family:"Yu Mincho", "游明朝体", YuMincho, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+    font-size: 1.0rem;
+    text-align: left;
+    color: #000;
+    font-weight: normal;
+}
+	
+body.salon.column.vol13 .columnArea .text4 {
+	font-family:"Yu Mincho", "游明朝体", YuMincho, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+    font-size: 0.9rem;
+    text-align: left;
+    color: #000;
+    font-weight: normal;
+}	
+
+body.salon.column.vol13 .columnArea .detail {
+	margin: 10% auto 0;  
+}
+
+body.salon.column.vol13 .columnArea .disc {
+    margin: 0% auto;
+	width: 96%;
+}
+	
+body.salon.column.vol13 .columnArea .color {
+    margin: 0 auto;
+    width: 96%;
+}	
+	
+body.salon.column.vol13 .columnArea .white {
+    margin: 0% auto;
+}
+body.salon.column.vol13 .columnArea .black {
+    margin: 0% auto;
+}
+body.salon.column.vol13 .columnArea .disc2 {
+    margin: 0% auto;
+	width: 96%;
+}
+	
+body.salon.column.vol13 .columnArea .sec04 {
+    width: 100%;
+	margin-left: 0%;
+}
+	
+    body.salon.column.vol13 .columnArea .sec04 .titleSideStory {
+    width: 100%;
+	margin-left: 0%;
+}
+
+}

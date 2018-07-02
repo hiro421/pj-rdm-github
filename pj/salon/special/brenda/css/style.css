@@ -1,0 +1,788 @@
+body.salon a {
+  color:#000000;
+}
+
+body.salon #wrapper {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+body.salon #mainVisual {
+  width: 984px;
+  margin: 160px auto 0;
+}
+
+body.salon .contentArea {
+  width: 984px;
+  margin: 0 auto;
+}
+
+body.salon .contentArea a img {
+    border-style:none;
+}
+
+/*allitems*/
+body.salon .contentArea .interviewArea01 .allitems img,
+body.salon .recommendArea .allitems img {
+	text-align:center;
+	margin:0 auto 100px auto;
+}
+
+/*  interviewArea01 */
+body.salon .contentArea .interviewArea01 {
+  width: 904px;
+  margin: 0 auto;
+}
+body.salon .contentArea .interviewArea01 .lead img {
+  margin: 50px auto 90px;
+  text-align: center;
+}
+
+/*ここから今回追加部分---------------*/
+body.salon .contentArea .interviewArea01 .box {
+  margin-bottom: 170px;
+}
+
+body.salon .contentArea .interviewArea01 .box a {
+	text-decoration: none;  
+}
+
+body.salon .contentArea .interviewArea01 .box a:hover {
+  text-decoration: underline;
+}
+
+body.salon .contentArea .interviewArea01 .box .model01 {
+  float: left;
+}
+body.salon .contentArea .interviewArea01 .box .butu01 {
+  float: left;
+  margin-left: 38px;
+}
+body.salon .contentArea .interviewArea01 .box .model02 {
+  float: right;
+}
+body.salon .contentArea .interviewArea01 .box .butu02 {
+  float: right;
+  margin-right: 58px;
+}
+body.salon .contentArea .interviewArea01 .box .model03 {
+	display:block;
+	text-align:center;
+}
+body.salon .contentArea .interviewArea01 .box .item-txt {
+	margin-top: 26px;
+}
+body.salon .contentArea .interviewArea01 .box .butuInner01 {
+	margin-bottom: 140px;
+}
+/*box01*/
+body.salon .contentArea .interviewArea01 .box .item-txt01 {
+	float: right;
+	margin-right: 28px;
+}
+body.salon .contentArea .interviewArea01 .box01 {
+  position: relative;
+}
+body.salon .contentArea .interviewArea01 .box01 .model01 {
+	margin-top: 82px;
+}
+body.salon .contentArea .interviewArea01 .box01 .item-txt01:after {
+  content:"";
+  display: inline-block;
+  position:absolute;
+  top: 440px;
+  right: -40px;
+  width: 458px;
+  height: 2px;
+  background-color: #000000;
+}
+body.salon .contentArea .interviewArea01 .box01 .item-txt02 {
+  position:absolute;
+  bottom: 140px;
+  left: 0px;
+}
+body.salon .contentArea .interviewArea01 .box01 .item-txt02:after {
+  content:"";
+  display: inline-block;
+  position:absolute;
+  bottom: 0;
+  left: -40px;
+  width: 582px;
+  height: 2px;
+  background-color: #000000;
+}
+/*box02*/
+body.salon .contentArea .interviewArea01 .box02 {
+  position: relative;
+}
+body.salon .contentArea .interviewArea01 .box02 > .item-txt {
+  position: absolute;
+  top: 58px;
+  right: 0;
+}
+body.salon .contentArea .interviewArea01 .box02 > .item-txt:after {
+  content:"";
+  display: inline-block;
+  position:absolute;
+  top: 26px;
+  right: -28px;
+  width: 446px;
+  height: 2px;
+  background-color: #000000;
+}
+/*box03*/
+body.salon .contentArea .interviewArea01 .box03 {
+  position: relative;
+  margin-bottom: 0;
+}
+body.salon .contentArea .interviewArea01 .box03 .butu01 {
+	margin-top: 40px;
+}
+body.salon .contentArea .interviewArea01 .box03 .item-txt:after {
+  content:"";
+  display: inline-block;
+  position:absolute;
+  bottom: 116px;
+  left: -40px;
+  width: 492px;
+  height: 2px;
+  background-color: #000000;
+}
+/*box04*/
+body.salon .contentArea .interviewArea01 .box04 {
+  position: relative;
+}
+body.salon .contentArea .interviewArea01 .box04 .butu02 {
+	margin-top: 138px;
+	text-align:right;
+}
+body.salon .contentArea .interviewArea01 .box04 .item-txt:after {
+  content:"";
+  display: inline-block;
+  position:absolute;
+  bottom: 126px;
+  right: -0;
+  width: 450px;
+  height: 2px;
+  background-color: #000000;
+}
+/*box05*/
+body.salon .contentArea .interviewArea01 .box05 .butu01 {
+	position: relative;
+	top: -224px;
+	left: -78px;
+}
+body.salon .contentArea .interviewArea01 .box05 {
+  position: relative;
+  margin-bottom:0;
+}
+body.salon .contentArea .interviewArea01 .box05 .item-txt {
+  position:absolute;
+  top: 692px;
+  right: 10px;
+}
+body.salon .contentArea .interviewArea01 .box05 .item-txt:after {
+  content:"";
+  display: inline-block;
+  position:absolute;
+  bottom: -8px;
+  right: -40px;
+  width: 651px;
+  height: 2px;
+  background-color: #000000;
+}
+/*box06*/
+body.salon .contentArea .interviewArea01 .box06 {
+  position: relative;
+}
+body.salon .contentArea .interviewArea01 .box06 .butuInner01 {
+	margin-top: 44px;
+}
+body.salon .contentArea .interviewArea01 .box06 .item-txt01 {
+	float: none;
+	text-align:center;
+}
+body.salon .contentArea .interviewArea01 .box06 .item-txt01:after {
+  content:"";
+  display: inline-block;
+  position:absolute;
+  top: 444px;
+  left: 28px;
+  width: 424px;
+  height: 2px;
+  background-color: #000000;
+}
+body.salon .contentArea .interviewArea01 .box06 .item-txt02 {
+  position:absolute;
+  bottom: 60px;
+  right: 28px;
+}
+body.salon .contentArea .interviewArea01 .box06 .item-txt02:after {
+  content:"";
+  display: inline-block;
+  position:absolute;
+  top:  24px;
+  right: -40px;
+  width: 519px;
+  height: 2px;
+  background-color: #000000;
+}
+
+/*box07*/
+body.salon .contentArea .interviewArea01 .box07 {
+  position: relative;
+  margin-bottom: 240px;
+}
+body.salon .contentArea .interviewArea01 .box07 > .butu02 {
+  position: absolute;
+  top: 150px;
+  right: -98px;
+}
+body.salon .contentArea .interviewArea01 .box07 .item-txt:after {
+  content:"";
+  display: inline-block;
+  position:absolute;
+  bottom: -6px;
+  right: 0;
+  width: 400px;
+  height: 2px;
+  background-color: #000000;
+}
+body.salon .contentArea .interviewArea01 .box07 .item-txt {
+  text-align:center;
+}
+/*ここまで今回追加部分---------------*/
+
+/*  interviewArea02 */
+body.salon .contentArea .interviewArea02 {
+}
+
+body.salon .contentArea .interviewArea02 .interview_main {
+}
+
+body.salon .contentArea .interviewArea02 .interview_txt img {
+  margin: 60px auto;
+  text-align: center;
+}
+
+body.salon .contentArea .interviewArea02 .interview_sec {
+  margin-bottom: 35px;
+}
+
+body.salon .contentArea .interviewArea02 .interview_sec h4 {
+  font-size: 18px;
+  color: #7589b2;
+  font-weight: normal;
+}
+
+body.salon .contentArea .interviewArea02 .interview_sec p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.profile {
+  background: url(../img/profile.png) no-repeat left center;
+  margin-top: 140px;
+  margin-left: 0;
+  border-bottom: 1px solid #999;
+  text-indent: 100%;
+  overflow: hidden;
+  height: 46px;
+}
+
+.wrap {
+  border-bottom: 1px solid #999;
+}
+
+.wrap .profile_box {
+  margin-bottom: 5%;
+  margin-top: 30px;
+}
+
+.wrap .profile_box p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 3%;
+}
+
+.wrap .profile_box p a {
+  color: #758ab3;
+}
+
+
+/*  recommend*/
+body.salon .recommendArea .columnListArea {
+    width: 984px;
+    margin: 70px auto 0;
+}
+
+body.salon .recommendArea .columnListArea h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body.salon .recommendArea .columnListArea ul {
+    overflow: hidden;
+    margin-right: -12px;
+    margin-bottom: 48px;
+}
+
+body.salon .recommendArea .columnListArea ul li {
+    float: left;
+    overflow: hidden;
+    width: 320px;
+    margin-right: 12px;
+    margin-bottom: 78px;
+    text-align: center;
+}
+
+body.salon .recommendArea .columnListArea ul li.column4 {
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 240px;
+}
+
+body.salon .recommendArea .columnListArea ul li p {
+	margin: 20px auto 25px;
+}
+
+body.salon .recommendArea .columnListArea ul li.column4 .btnCart {
+    display: none;
+}
+
+body.salon .recommendArea .columnListArea ul li.column4 .btnCart img {
+    width: 220px;
+}
+
+body.salon .recommendArea .columnListArea ul li.column4 .btnDetail img {
+    width: 220px;
+}
+
+body.salon .recommendArea .columnListArea ul li .rank {
+    width: 100%;
+    height: 70px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+body.salon .recommendArea .columnListArea ul li .pic {
+    border: 1px solid #EEEFF2;
+    margin-bottom: 5px;
+}
+
+body.salon .recommendArea .columnListArea ul li .pic img {
+    width: 100%;
+    height: auto;
+}
+
+body.salon .recommendArea .columnListArea ul li .text {
+    color: #7589b2;
+    font-size: 18px;
+    margin: 20px 15px 25px;
+}
+
+body.salon .recommendArea .columnListArea ul li .text a {
+    color: #7589b2;
+}
+
+body.salon .recommendArea .columnListArea ul li .name {
+    font-size: 14px;
+}
+
+body.salon .recommendArea .columnListArea ul li .price {
+    margin-bottom: 20px;
+}
+
+body.salon .recommendArea .columnListArea ul li .btnCart {
+    margin-bottom: 5px;
+    display: none;
+}
+
+body.salon .recommendArea .columnListArea .btnAllItem {
+    width: 580px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*clearFix
+---------------------------*/
+body.salon .contentArea .interviewArea01 .box:after {
+	display: block;
+	clear: both;
+	content: " ";
+}
+
+
+/* ===================================================================================================================================================
+	
+   sp
+   
+   =================================================================================================================================================== */
+@media screen and (max-width: 768px) {
+  /* ===========================================================
+     interview vol01
+  ============================================================== */
+	body.salon #wrapper {
+	  background: 0;
+	  font-size:1.2rem;
+	}
+	
+	body.salon #mainVisual {
+	  width: 100%;
+	  margin: 85px auto 0;
+	}
+	
+	body.salon .contentArea {
+	  width: 100%;
+	  margin: 0;
+	}
+	
+	/*allitems*/
+	body.salon .contentArea .interviewArea01 .allitems img,
+	body.salon .recommendArea .allitems img {
+		margin:0 auto 60px auto;
+		padding:0 9%;
+	}
+	
+	/*ここから今回追加部分---------------*/
+	
+	/*  interviewArea01 */
+	body.salon .contentArea .interviewArea01 {
+	  width: 100%;
+	  margin: 0;
+	}
+	
+	body.salon .contentArea .interviewArea01 .lead img {
+	  width: 83.75%;
+	  margin: 10% auto;
+	}
+	
+	body.salon .contentArea .interviewArea01 .box {
+	  margin-bottom: 80px;
+	}
+	
+	body.salon .contentArea .interviewArea01 .box .butu01 {
+	  margin-left: 0;
+	}
+	
+	body.salon .contentArea .interviewArea01 .box .butu02 {
+	  margin-right: 0;
+	}
+	body.salon .contentArea .interviewArea01 .box .item-txt {
+		font-size: 1.1rem;
+		line-height: 1.4;
+		margin-top: 8px;
+	}
+	body.salon .contentArea .interviewArea01 .box .butuInner01 {
+		margin-bottom: 68%;
+	}
+	
+	/*box01*/
+	body.salon .contentArea .interviewArea01 .box01 .item-txt01 {
+		position:absolute;
+	    top: 39%;
+	    right: 0;
+	    width: 41%;
+		padding: 0 3%;
+		margin-right:0;
+	}
+	body.salon .contentArea .interviewArea01 .box01 .model01 {
+		margin-top: 30px;
+		width: 57%;
+	}
+	body.salon .contentArea .interviewArea01 .box01 .butu02 {
+		width: 43%;
+		padding-right: 3%;
+	}
+	
+	body.salon .contentArea .interviewArea01 .box01 .item-txt01:after {
+	  top: 100%;
+	  right: 0;
+	  width: 100%;
+	}
+	body.salon .contentArea .interviewArea01 .box01 .item-txt02 {
+	  position:absolute;
+	  bottom: 10%;
+	  left: 0;
+	  width: 60%;
+	  padding-left: 3%;
+	}
+	body.salon .contentArea .interviewArea01 .box01 .item-txt02:after {
+	  bottom: -10%;
+	  left: 0;
+	  width: 100%;
+	}
+	
+	/*box02*/
+	body.salon .contentArea .interviewArea01 .box02 {
+	  position: relative;
+	}
+	body.salon .contentArea .interviewArea01 .box02 > .item-txt {
+	  position: absolute;
+	  top: -3%;
+	  left: 54%;
+	  padding-right: 5%;
+	  width: 46%;
+	}
+	body.salon .contentArea .interviewArea01 .box02 > .item-txt:after {
+	  top: 100%;
+	  right: 6%;
+	  width: 100%;
+	}
+	
+	/*box03*/
+	body.salon .contentArea .interviewArea01 .box03 {
+	  margin-bottom: 80px;
+	}
+	body.salon .contentArea .interviewArea01 .box03 .model02 {
+		width: 52%;
+	}
+	body.salon .contentArea .interviewArea01 .box03 .butu01 {
+		width: 48%;
+		margin-top: 3%;
+		padding: 0 3%;
+	}
+	body.salon .contentArea .interviewArea01 .box03 .item-txt {
+	  position: absolute;
+	  top: 74%;
+	  left: 0;
+	  width: 46%;
+	  margin-right: 0;
+	  text-align: center;
+	}
+	body.salon .contentArea .interviewArea01 .box03 .item-txt:after {
+	  top: 100%;
+	  left: 4%;
+	  width: 100%;
+	}
+	
+	/*box04*/
+	body.salon .contentArea .interviewArea01 .box04 .model01 {
+		width: 52%;
+	}
+	body.salon .contentArea .interviewArea01 .box04 .butu02 {
+		width: 48%;
+		margin-top: 10%;
+		padding: 0 5%;
+	}
+	body.salon .contentArea .interviewArea01 .box04 .item-txt {
+	  position: absolute;
+	  top: 68%;
+	  right: 0;
+	  width: 46%;
+	  margin-right: 0;
+	  text-align: center;
+	}
+	body.salon .contentArea .interviewArea01 .box04 .item-txt:after {
+	  top: 100%;
+	  right: 4%;
+	  width: 100%;
+	}
+	
+	/*box05*/
+	body.salon .contentArea .interviewArea01 .box05 {
+		margin-bottom: 0;
+	}
+	body.salon .contentArea .interviewArea01 .box05 .butu01 {
+		position: relative;
+		top: -80px;
+		left: 2%;
+		width:  36%;
+	}
+	body.salon .contentArea .interviewArea01 .box05 .item-txt {
+	  position:absolute;
+	  top: 60%;
+	  right: 0;
+	  padding-left: 10%;
+	  width: 65%;
+	}
+	body.salon .contentArea .interviewArea01 .box05 .item-txt:after {
+	  bottom: -8px;
+	  right: 0;
+	  width: 100%;
+	}
+	
+	/*box06*/
+	body.salon .contentArea .interviewArea01 .box06 .model02 {
+		width: 52%;
+	}
+	body.salon .contentArea .interviewArea01 .box06 .butu01 {
+		width: 40%;
+		padding-left: 2%;
+	}
+	body.salon .contentArea .interviewArea01 .box06 .butuInner01 {
+		margin: 26% 0 80%;
+	}
+	body.salon .contentArea .interviewArea01 .box06 .item-txt01 {
+	  position: absolute;
+      top: 39%;
+      left: 0;
+      width: 46%;
+    	  text-align: center;
+	}
+	body.salon .contentArea .interviewArea01 .box06 .item-txt01:after {
+	  top: 100%;
+	  left: 5%;
+	  width: 100%;
+	}
+	body.salon .contentArea .interviewArea01 .box06 .item-txt02 {
+	  position:absolute;
+	  bottom: 8%;
+	  right: 0;
+	  text-align:right;
+	  padding-right: 3%;
+	  width: 65%;
+	}
+	body.salon .contentArea .interviewArea01 .box06 .item-txt02:after {
+	  top:  100%;
+	  right: 0;
+	  width: 94%;
+	}
+	
+	/*box07*/
+	body.salon .contentArea .interviewArea01 .box07 {
+	  position: relative;
+	  margin-bottom: 120px;
+	}
+	body.salon .contentArea .interviewArea01 .box07 .model01 {
+	  width:67%;
+	}
+	body.salon .contentArea .interviewArea01 .box07 > .butu02 {
+	  position: absolute;
+	  top: 20%;
+	  right: 0;
+	  width: 40%;
+	}
+	body.salon .contentArea .interviewArea01 .box07 .item-txt:after {
+	  bottom: -2%;
+	  right: 0;
+	  width: 100%;
+	}
+	
+	
+	
+	/*ここまで今回追加部分---------------*/
+	
+	/*  interviewArea02 */
+	body.salon .contentArea .interviewArea02 .interview_txt img {
+	  margin: 6% auto;
+	  width: 88.12%;
+	}
+	
+	body.salon .contentArea .interviewArea02 .interview_sec {
+	  padding: 0 4.68%;
+	}
+		
+	body.salon .contentArea .interviewArea02 .interview_sec h4 {
+	  font-size: 1.2rem;
+	}
+		
+	body.salon .contentArea .interviewArea02 .interview_sec p {
+	  font-size: 1.2rem;
+	}
+	
+	body.salon h3.profile {
+	  background: url(../img/profile.png) no-repeat center center;
+	  margin: 0 4.68%;
+	}
+	
+	body.salon .wrap {
+	  margin: 0 4.68%;
+	}
+	/*  recommend */	
+	body.salon .recommendArea .columnListArea {
+		width: 100%;
+		margin: 16% auto 0;
+	}
+	
+	body.salon .recommendArea .columnListArea h3 {
+	  text-align: center;
+	  margin: 0 auto 15px;
+	  width: 61.4%;
+	}
+	
+	body.salon .recommendArea .columnListArea ul {
+		overflow: hidden;
+		margin-right: 0;
+		margin-left: 4%;
+		margin-bottom: 6%;
+	}
+	body.salon .recommendArea .columnListArea ul li {
+		float: left;
+		overflow: hidden;
+		width: 30%;
+		margin-right: 3%;
+		margin-bottom: 0px;
+		text-align: center;
+		font-size: 1rem;
+	}
+	body.salon .recommendArea .columnListArea ul li.column4 {
+		float: left;
+		margin-right: 4%;
+		margin-bottom: 4%;
+		text-align: center;
+		width: 46%;
+	}
+	body.salon .recommendArea .columnListArea ul li.column4 .btnCart {
+		display: none;
+	}
+	body.salon .recommendArea .columnListArea ul li.column4 .btnCart img {
+		width: 100%;
+	}
+	body.salon .recommendArea .columnListArea ul li.column4 .btnDetail img {
+		width: 100%;
+	}
+	body.salon .recommendArea .columnListArea ul li .rank {
+		width: 100%;
+		height: 70px;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	body.salon .recommendArea .columnListArea ul li .pic {
+		border: 1px solid #EEEFF2;
+	}
+	body.salon .recommendArea .columnListArea ul li .pic img {
+		width: 100%;
+		height: auto;
+	}
+	body.salon .recommendArea .columnListArea ul li .text {
+		color: #7589b2;
+		font-size: 18px;
+		margin: 20px 15px 25px;
+	}
+	body.salon .recommendArea .columnListArea ul li .text a {
+		color: #7589b2;
+	}
+	body.salon .recommendArea .columnListArea ul li .name {
+		font-size: 14px;
+	}
+	body.salon .recommendArea .columnListArea ul li .price {
+		margin-bottom: 20px;
+	}
+	body.salon .recommendArea .columnListArea ul li .btnCart {
+		margin-bottom: 5px;
+		display: none;
+	}
+	/*body.salon .recommendArea .columnListArea .btnAllItem {
+		width: 580px;
+		margin: 0 auto;
+		text-align: center;
+	}*/
+		
+	/*  movie */
+	body.salon .moviearea {
+		width: 100%;
+		margin: 6% auto;
+		position: relative;
+		padding-top: 56.25%;
+	}
+
+
+}
+	  
+
+

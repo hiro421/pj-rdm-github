@@ -1,0 +1,2087 @@
+/* ===========================================================
+   interview vol01
+============================================================== */
+body.salon.interview.vol01 .interviewArea .lead {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url(../interview/img/lead.png) no-repeat center top;
+  background-size: contain;
+  width: 830px;
+  height: 350px;
+  padding-top: 0%;
+  margin: 94px auto 100px;
+  border-top: none;
+  border-bottom: none; }
+body.salon.interview.vol01 .interviewArea .text01 {
+  color: #7589b2;
+  width: 984px;
+  height: 200px;
+  text-align: left;
+  font-size: 28px;
+  margin: 0 auto;
+  padding-top: 57px;
+  padding-left: 240px;
+  background: url(../interview/img/bg01.png) no-repeat center center;
+  margin-bottom: 90px; }
+  body.salon.interview.vol01 .interviewArea .text01 small {
+    font-size: 22px; }
+body.salon.interview.vol01 .interviewArea .box {
+  margin: 0;
+  position: relative; }
+  body.salon.interview.vol01 .interviewArea .box .acoCont {
+    padding: 0 0 0 0; }
+  body.salon.interview.vol01 .interviewArea .box h3 {
+    border-bottom: 1px solid #999;
+    margin: 0 0 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 46px; }
+  body.salon.interview.vol01 .interviewArea .box h4 {
+    font-size: 18px;
+    color: #7589b2;
+    text-align: left;
+    padding: 20px 0;
+    font-weight: normal; }
+  body.salon.interview.vol01 .interviewArea .box p {
+    font-size: 1.1rem;
+    line-height: 1.4; }
+    body.salon.interview.vol01 .interviewArea .box p br {
+      line-height: 1; }
+body.salon.interview.vol01 .interviewArea .talk01 {
+  margin-bottom: 90px; }
+  body.salon.interview.vol01 .interviewArea .talk01 h3 {
+    background: url(../interview/img/title01.png) no-repeat left center;
+    width: 470px;
+    height: 46px; }
+  body.salon.interview.vol01 .interviewArea .talk01 .pic {
+    width: auto;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  body.salon.interview.vol01 .interviewArea .talk01 p {
+    width: 470px; }
+body.salon.interview.vol01 .interviewArea .talk02 {
+  margin-bottom: 130px; }
+  body.salon.interview.vol01 .interviewArea .talk02 h3 {
+    background: url(../interview/img/title02.png) no-repeat left center;
+    margin-left: 514px; }
+  body.salon.interview.vol01 .interviewArea .talk02 h4 {
+    margin-left: 514px; }
+  body.salon.interview.vol01 .interviewArea .talk02 .pic {
+    float: none;
+    position: absolute;
+    width: auto;
+    margin: 0;
+    left: 0;
+    top: 0; }
+  body.salon.interview.vol01 .interviewArea .talk02 p {
+    margin-left: 514px; }
+body.salon.interview.vol01 .interviewArea .talk03 {
+  margin-bottom: 90px; }
+  body.salon.interview.vol01 .interviewArea .talk03 h3 {
+    background: url(../interview/img/title03.png) no-repeat left center;
+    width: 470px; }
+  body.salon.interview.vol01 .interviewArea .talk03 .pic {
+    float: right;
+    width: auto;
+    margin: -110px 0 30px 50px; }
+body.salon.interview.vol01 .interviewArea .talk04 {
+  overflow: hidden;
+  margin-bottom: 90px; }
+  body.salon.interview.vol01 .interviewArea .talk04 h3 {
+    background: url(../interview/img/title04.png) no-repeat left center;
+    margin-left: 514px; }
+  body.salon.interview.vol01 .interviewArea .talk04 h4 {
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: 514px; }
+  body.salon.interview.vol01 .interviewArea .talk04 .stitle {
+    margin-bottom: 2%; }
+  body.salon.interview.vol01 .interviewArea .talk04 .pic01 {
+    float: none;
+    position: absolute;
+    width: auto;
+    margin: 0;
+    left: 0;
+    top: 0; }
+  body.salon.interview.vol01 .interviewArea .talk04 .wrap p {
+    margin-left: 514px; }
+  body.salon.interview.vol01 .interviewArea .talk04 .wrap02 {
+    display: block;
+    margin: 100px 0 0;
+    width: 100%; }
+    body.salon.interview.vol01 .interviewArea .talk04 .wrap02 .pic02 {
+      display: block;
+      float: left;
+      width: 470px;
+      margin: 0 auto; }
+    body.salon.interview.vol01 .interviewArea .talk04 .wrap02 h4 {
+      display: block;
+      vertical-align: top;
+      text-align: left;
+      padding-left: 0;
+      padding-top: 0; }
+  body.salon.interview.vol01 .interviewArea .talk04 .wrap01 {
+    margin-left: 514px; }
+  body.salon.interview.vol01 .interviewArea .talk04 .btnBox {
+    overflow: hidden;
+    display: block;
+    margin: 0 0 0; }
+    body.salon.interview.vol01 .interviewArea .talk04 .btnBox p {
+      display: block;
+      vertical-align: middle;
+      font-size: 16px;
+      margin-left: 47px;
+      margin-top: 15px; }
+    body.salon.interview.vol01 .interviewArea .talk04 .btnBox .btnCart {
+      display: block;
+      vertical-align: middle;
+      width: auto;
+      margin-left: 47px;
+      margin-top: 15px; }
+body.salon.interview.vol01 .interviewArea .talk05 h3.title01 {
+  background: url(../interview/img/title05.png) no-repeat left center;
+  width: 470px; }
+body.salon.interview.vol01 .interviewArea .talk05 h3.title02 {
+  background: url(../interview/img/title06.png) no-repeat left center;
+  margin-top: 90px; }
+body.salon.interview.vol01 .interviewArea .talk05 h4 {
+  width: 470px; }
+body.salon.interview.vol01 .interviewArea .talk05 p {
+  width: 470px; }
+body.salon.interview.vol01 .interviewArea .talk05 .pic {
+  width: auto;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0; }
+body.salon.interview.vol01 .interviewArea .talk05 .name {
+  font-size: 1.2rem;
+  margin-bottom: 1.5%; }
+body.salon.interview.vol01 .interviewArea .talk05 a {
+  color: #758ab3; }
+body.salon.interview.vol01 .interviewArea .talk05 .wrap {
+  overflow: hidden; }
+body.salon.interview.vol01 .interviewArea .talk05 .left {
+  float: left;
+  margin-bottom: 5%;
+  margin-top: 30px; }
+  body.salon.interview.vol01 .interviewArea .talk05 .left p {
+    margin-bottom: 3%; }
+body.salon.interview.vol01 .interviewArea .talk05 .right {
+  float: right;
+  margin-bottom: 5%;
+  margin-top: 30px; }
+  body.salon.interview.vol01 .interviewArea .talk05 .right p {
+    margin-bottom: 3%; }
+body.salon.interview.vol01 .interviewArea .talk05 .fin {
+  border-bottom: 1px solid #999;
+  position: relative;
+  margin: 30px 0 0;
+  text-indent: -9999px; }
+  body.salon.interview.vol01 .interviewArea .talk05 .fin:before {
+    content: "";
+    background: url(../interview/img/fin.png) no-repeat center center;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -100px; }
+body.salon.interview.vol01 .interviewArea .backnumber {
+  margin: 90px 0 0 0; }
+  body.salon.interview.vol01 .interviewArea .backnumber h3 {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(../interview/img/title_backnumber.png) no-repeat left top;
+    height: 34px;
+    padding-top: 0;
+    border-bottom: none; }
+  body.salon.interview.vol01 .interviewArea .backnumber ul {
+    overflow: hidden;
+    display: block;
+    margin-top: 20px;
+    margin-right: -26px; }
+    body.salon.interview.vol01 .interviewArea .backnumber ul li {
+      width: 220px;
+      margin-right: 32px;
+      float: left;
+      overflow: hidden; }
+      body.salon.interview.vol01 .interviewArea .backnumber ul li a {
+        display: block;
+        text-decoration: underline;
+        color: #758ab3; }
+        body.salon.interview.vol01 .interviewArea .backnumber ul li a:hover {
+          text-decoration: none; }
+      body.salon.interview.vol01 .interviewArea .backnumber ul li p {
+        font-size: 16px;
+        width: auto;
+        margin-left: 90px; }
+      body.salon.interview.vol01 .interviewArea .backnumber ul li .thumb {
+        margin-bottom: 0;
+        float: left; }
+
+/* ===========================================================
+   interview vol02
+============================================================== */
+body.salon.interview.vol02 .interviewArea .lead {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url(../interview/img/160301/lead.png) no-repeat center top;
+  background-size: contain;
+  width: 830px;
+  height: 350px;
+  padding-top: 0%;
+  margin: 94px auto 50px;
+  border-top: none;
+  border-bottom: none; }
+body.salon.interview.vol02 .interviewArea .text01 {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #7589b2;
+  width: 984px;
+  height: 200px;
+  text-align: left;
+  font-size: 28px;
+  margin: 0 auto;
+  padding-top: 57px;
+  padding-left: 240px;
+  background: url(../interview/img/160301/bg01.png) no-repeat center center;
+  margin-bottom: 90px; }
+  body.salon.interview.vol02 .interviewArea .text01 small {
+    font-size: 22px; }
+body.salon.interview.vol02 .interviewArea .box {
+  margin: 0;
+  position: relative; }
+  body.salon.interview.vol02 .interviewArea .box .acoCont {
+    padding: 0 0 0 0; }
+  body.salon.interview.vol02 .interviewArea .box h3 {
+    border-bottom: 1px solid #999;
+    margin: 0 0 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 46px; }
+  body.salon.interview.vol02 .interviewArea .box h4 {
+    font-size: 18px;
+    color: #7589b2;
+    text-align: left;
+    padding: 20px 0;
+    font-weight: normal; }
+  body.salon.interview.vol02 .interviewArea .box p {
+    font-size: 1.1rem;
+    line-height: 1.4; }
+    body.salon.interview.vol02 .interviewArea .box p br {
+      line-height: 1; }
+body.salon.interview.vol02 .interviewArea .talk01 {
+  margin-bottom: 50px;
+  overflow: hidden;
+  height: 600px; }
+  body.salon.interview.vol02 .interviewArea .talk01 h3 {
+    background: url(../interview/img/title03.png) no-repeat left center;
+    width: 470px;
+    height: 46px; }
+  body.salon.interview.vol02 .interviewArea .talk01 .pic {
+    width: auto;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  body.salon.interview.vol02 .interviewArea .talk01 p {
+    width: 470px; }
+body.salon.interview.vol02 .interviewArea .talk02 {
+  margin-bottom: 50px; }
+  body.salon.interview.vol02 .interviewArea .talk02 h3 {
+    background: url(../interview/img/title_hobby.png) no-repeat left center;
+    margin-left: 514px; }
+  body.salon.interview.vol02 .interviewArea .talk02 h4 {
+    margin-left: 514px; }
+  body.salon.interview.vol02 .interviewArea .talk02 .pic {
+    float: none;
+    position: absolute;
+    width: auto;
+    margin: 0;
+    left: 0;
+    top: 0; }
+  body.salon.interview.vol02 .interviewArea .talk02 p {
+    margin-left: 514px; }
+body.salon.interview.vol02 .interviewArea .talk03 {
+  margin-bottom: 50px;
+  height: 386px; }
+  body.salon.interview.vol02 .interviewArea .talk03 h3 {
+    background: url(../interview/img/title_beauty.png) no-repeat left center;
+    width: 470px; }
+  body.salon.interview.vol02 .interviewArea .talk03 .pic {
+    float: right;
+    width: auto;
+    margin: -110px 0 30px 50px; }
+body.salon.interview.vol02 .interviewArea .talk04 {
+  margin-bottom: 90px;
+  height: 600px; }
+  body.salon.interview.vol02 .interviewArea .talk04 h3 {
+    background: url(../interview/img/title_message.png) no-repeat left center;
+    margin-left: 514px; }
+  body.salon.interview.vol02 .interviewArea .talk04 h4 {
+    margin-left: 514px; }
+  body.salon.interview.vol02 .interviewArea .talk04 .pic {
+    float: none;
+    position: absolute;
+    width: auto;
+    margin: 0;
+    left: 0;
+    top: 0; }
+  body.salon.interview.vol02 .interviewArea .talk04 p {
+    margin-left: 514px; }
+body.salon.interview.vol02 .interviewArea .talk05 {
+  margin-bottom: 50px; }
+  body.salon.interview.vol02 .interviewArea .talk05 h3 {
+    background: url(../interview/img/title_salonlike.png) no-repeat left center;
+    margin-left: 514px; }
+  body.salon.interview.vol02 .interviewArea .talk05 h3.title02 {
+    background: url(../interview/img/title06.png) no-repeat left center;
+    margin-top: 140px;
+    margin-left: 0; }
+  body.salon.interview.vol02 .interviewArea .talk05 h4 {
+    margin-left: 514px; }
+  body.salon.interview.vol02 .interviewArea .talk05 .pic {
+    float: none;
+    position: absolute;
+    width: auto;
+    margin: 0;
+    left: 0;
+    top: 0; }
+  body.salon.interview.vol02 .interviewArea .talk05 .stitle {
+    margin-bottom: 2%; }
+  body.salon.interview.vol02 .interviewArea .talk05 .pic01 {
+    float: none;
+    position: absolute;
+    width: auto;
+    margin: 0;
+    left: 0;
+    top: 0; }
+  body.salon.interview.vol02 .interviewArea .talk05 .wrap p {
+    margin-left: 514px; }
+  body.salon.interview.vol02 .interviewArea .talk05 .wrap02 {
+    display: block;
+    margin: 170px 0 0;
+    width: 100%; }
+    body.salon.interview.vol02 .interviewArea .talk05 .wrap02 .pic02 {
+      display: block;
+      float: left;
+      width: 470px;
+      margin: 0 auto; }
+    body.salon.interview.vol02 .interviewArea .talk05 .wrap02 h4 {
+      display: block;
+      vertical-align: top;
+      text-align: left;
+      padding-left: 0;
+      padding-top: 0; }
+  body.salon.interview.vol02 .interviewArea .talk05 .wrap01 {
+    margin-left: 514px; }
+  body.salon.interview.vol02 .interviewArea .talk05 .wrap03 {
+    overflow: hidden; }
+  body.salon.interview.vol02 .interviewArea .talk05 .left {
+    float: left;
+    margin-bottom: 5%;
+    margin-top: 30px; }
+    body.salon.interview.vol02 .interviewArea .talk05 .left p {
+      margin-bottom: 3%; }
+  body.salon.interview.vol02 .interviewArea .talk05 .right {
+    float: right;
+    margin-bottom: 5%;
+    margin-top: 30px; }
+    body.salon.interview.vol02 .interviewArea .talk05 .right p {
+      margin-bottom: 3%; }
+  body.salon.interview.vol02 .interviewArea .talk05 .btnBox {
+    overflow: hidden;
+    display: block;
+    margin: 0 0 0; }
+    body.salon.interview.vol02 .interviewArea .talk05 .btnBox p {
+      display: block;
+      vertical-align: middle;
+      font-size: 16px;
+      margin-left: 47px;
+      margin-top: 15px; }
+    body.salon.interview.vol02 .interviewArea .talk05 .btnBox .btnCart {
+      display: block;
+      vertical-align: middle;
+      width: auto;
+      margin-left: 47px;
+      margin-top: 15px; }
+  body.salon.interview.vol02 .interviewArea .talk05 .fin {
+    border-bottom: 1px solid #999;
+    position: relative;
+    margin: 30px 0 0;
+    text-indent: -9999px; }
+    body.salon.interview.vol02 .interviewArea .talk05 .fin:before {
+      content: "";
+      background: url(../interview/img/fin.png) no-repeat center center;
+      width: 200px;
+      height: 50px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      margin-left: -100px; }
+body.salon.interview.vol02 .interviewArea .backnumber {
+  margin: 90px 0 0 0; }
+  body.salon.interview.vol02 .interviewArea .backnumber h3 {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(../interview/img/title_backnumber.png) no-repeat left top;
+    height: 34px;
+    padding-top: 0;
+    border-bottom: none; }
+  body.salon.interview.vol02 .interviewArea .backnumber ul {
+    overflow: hidden;
+    display: block;
+    margin-top: 20px;
+    margin-right: -26px; }
+    body.salon.interview.vol02 .interviewArea .backnumber ul li {
+      width: 220px;
+      margin-right: 32px;
+      float: left;
+      overflow: hidden; }
+      body.salon.interview.vol02 .interviewArea .backnumber ul li a {
+        display: block;
+        text-decoration: underline;
+        color: #758ab3; }
+        body.salon.interview.vol02 .interviewArea .backnumber ul li a:hover {
+          text-decoration: none; }
+      body.salon.interview.vol02 .interviewArea .backnumber ul li p {
+        font-size: 16px;
+        width: auto;
+        margin-left: 90px; }
+      body.salon.interview.vol02 .interviewArea .backnumber ul li .thumb {
+        margin-bottom: 0;
+        float: left; }
+	
+	
+	
+	
+	
+	
+	
+	
+/* ===========================================================
+   interview vol03
+============================================================== */
+body.salon.interview.vol03 .interviewArea .lead {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url(../interview/img/160518/lead.png) no-repeat center top;
+  background-size: contain;
+  width: 830px;
+  height: 400px;
+  padding-top: 0%;
+  margin: 94px auto 50px;
+  border-top: none;
+  border-bottom: none; }
+body.salon.interview.vol03 .interviewArea .text01 {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #7589b2;
+  width: 984px;
+  height: 200px;
+  text-align: left;
+  font-size: 28px;
+  margin: 0 auto;
+  padding-top: 57px;
+  padding-left: 240px;
+  background: url(../interview/img/160518/bg01.png) no-repeat center center;
+  margin-bottom: 90px; }
+  body.salon.interview.vol03 .interviewArea .text01 small {
+    font-size: 22px; }
+body.salon.interview.vol03 .interviewArea .box {
+  margin: 0;
+  position: relative; }
+  body.salon.interview.vol03 .interviewArea .box .acoCont {
+    padding: 0 0 0 0; }
+  body.salon.interview.vol03 .interviewArea .box h3 {
+    border-bottom: 1px solid #999;
+    margin: 0 0 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 46px; }
+  body.salon.interview.vol03 .interviewArea .box h4 {
+    font-size: 18px;
+    color: #7589b2;
+    text-align: left;
+    padding: 20px 0;
+    font-weight: normal; }
+  body.salon.interview.vol03 .interviewArea .box p {
+    font-size: 1.1rem;
+    line-height: 1.4; }
+    body.salon.interview.vol03 .interviewArea .box p br {
+      line-height: 1; }
+      
+      
+      
+body.salon.interview.vol03 .interviewArea .talk01 {
+  margin-bottom: 50px;
+  overflow: hidden;
+  height: auto; }
+
+  body.salon.interview.vol03 .interviewArea .talk01 h3 {
+    background: url(../interview/img/title_fashion.png) no-repeat left center;
+    width: 470px;
+    height: 46px; }
+  body.salon.interview.vol03 .interviewArea .talk01 .pic {
+    width: auto;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  body.salon.interview.vol03 .interviewArea .talk01 p {
+    width: 470px; }
+
+body.salon.interview.vol03 .interviewArea .talk01 .wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+
+body.salon.interview.vol03 .interviewArea .talk01 .lay02{
+	margin: 20px auto 85px auto;
+}
+
+body.salon.interview.vol03 .interviewArea .talk01 .lay02 .pic {
+ left: 0;
+}
+
+
+body.salon.interview.vol03 .interviewArea .box .lay02 h4 {
+    font-size: 18px;
+    color: #7589b2;
+    text-align: left;
+    padding: 20px 0;
+    font-weight: normal;
+    margin-left: 500px;
+    width: 400px;
+}
+
+
+body.salon.interview.vol03 .interviewArea .box .lay02 p {
+    margin-left: 500px;
+    width: 400px;
+}
+
+
+body.salon.interview.vol03 .interviewArea .talk02 {
+  margin-bottom: 90px;
+  height: 600px; }
+  body.salon.interview.vol03 .interviewArea .talk02 h3 {
+    background: url(../interview/img/title_beauty.png) no-repeat left center;
+    margin-left: 514px; }
+  body.salon.interview.vol03 .interviewArea .talk02 h4 {
+    margin-left: 514px; }
+  body.salon.interview.vol03 .interviewArea .talk02 .pic {
+    float: none;
+    position: absolute;
+    width: auto;
+    margin: 0;
+    left: 0;
+    top: 0; }
+  body.salon.interview.vol03 .interviewArea .talk02 p {
+    margin-left: 514px; }
+
+
+
+body.salon.interview.vol03 .interviewArea .talk03 {
+  margin-bottom: 50px;
+  overflow: hidden;
+ }
+
+  body.salon.interview.vol03 .interviewArea .talk03 h3 {
+    background: url(../interview/img/title03.png) no-repeat left center;
+    width: 470px;
+    height: 46px; }
+  body.salon.interview.vol03 .interviewArea .talk03 .pic {
+    width: auto;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  body.salon.interview.vol03 .interviewArea .talk03 p {
+    width: 470px; }
+
+
+------   
+
+
+   body.salon.interview.vol03 .interviewArea .talk01_2 h4 {
+	width: 470px; 
+    font-size: 18px;
+    color: #7589b2;
+    text-align: left;
+    padding: 20px 0;
+    font-weight: normal; } 
+  
+body.salon.interview.vol03 .interviewArea .talk01_2 p {
+  width: 470px; }
+body.salon.interview.vol03 .interviewArea .talk01_2 .pic {
+  width: auto;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+
+body.salon.interview.vol03 .interviewArea .talk01_2 .wrap {
+  overflow: hidden; }
+body.salon.interview.vol03 .interviewArea .talk01_2 .left {
+  float: left;
+  margin-bottom: 5%;
+  margin-top: 30px; }
+  body.salon.interview.vol03 .interviewArea .talk01_2 .left p {
+    margin-bottom: 3%; }
+body.salon.interview.vol03 .interviewArea .talk01_2 .right {
+  float: right;
+  margin-bottom: 5%;
+  margin-top: 30px; }
+  body.salon.interview.vol03 .interviewArea .talk01_2 .right p {
+    margin-bottom: 3%; }
+
+    
+ -------  
+    
+
+
+
+    
+    
+
+
+
+body.salon.interview.vol03 .interviewArea .talk05 {
+  margin-bottom: 50px; }
+  body.salon.interview.vol03 .interviewArea .talk05 h3 {
+    background: url(../interview/img/title_salonlike.png) no-repeat left center;
+    margin-left: 514px; }
+  body.salon.interview.vol03 .interviewArea .talk05 h3.title02 {
+    background: url(../interview/img/title06.png) no-repeat left center;
+    margin-top: 140px;
+    margin-left: 0; }
+  body.salon.interview.vol03 .interviewArea .talk05 h4 {
+    margin-left: 514px; }
+    body.salon.interview.vol03 .interviewArea .talk05 h5{
+    color:#000;
+    margin-left: 514px; }
+  body.salon.interview.vol03 .interviewArea .talk05 .pic {
+    float: none;
+    position: absolute;
+    width: auto;
+    margin: 0;
+    left: 0;
+    top: 0; }
+  body.salon.interview.vol03 .interviewArea .talk05 .stitle {
+    margin-bottom: 2%; }
+  body.salon.interview.vol03 .interviewArea .talk05 .pic01 {
+    float: none;
+    position: absolute;
+    width: auto;
+    margin: 0;
+    left: 0;
+    top: 0; }
+  body.salon.interview.vol03 .interviewArea .talk05 .wrap p {
+    margin-left: 514px; }
+    
+      body.salon.interview.vol03 .interviewArea .talk05 .wrap .sl{
+    margin: 90px 0px 0px 514px;
+    font-size: 18px;
+ }
+    
+    
+  body.salon.interview.vol03 .interviewArea .talk05 .wrap02 {
+    display: block;
+    margin: 170px 0 0;
+    width: 100%; }
+    body.salon.interview.vol03 .interviewArea .talk05 .wrap02 .pic02 {
+      display: block;
+      float: left;
+      width: 470px;
+      margin: 0 auto; }
+    body.salon.interview.vol03 .interviewArea .talk05 .wrap02 h4 {
+      display: block;
+      vertical-align: top;
+      text-align: left;
+      padding-left: 0;
+      padding-top: 0; }
+  body.salon.interview.vol03 .interviewArea .talk05 .wrap01 {
+    margin-left: 514px; }
+  body.salon.interview.vol03 .interviewArea .talk05 .wrap03 {
+    overflow: hidden; }
+  body.salon.interview.vol03 .interviewArea .talk05 .left {
+    float: left;
+    margin-bottom: 5%;
+    margin-top: 30px; }
+    body.salon.interview.vol03 .interviewArea .talk05 .left p {
+      margin-bottom: 3%; }
+  body.salon.interview.vol03 .interviewArea .talk05 .right {
+    float: right;
+    margin-bottom: 5%;
+    margin-top: 30px; }
+    body.salon.interview.vol03 .interviewArea .talk05 .right p {
+      margin-bottom: 3%; }
+  body.salon.interview.vol03 .interviewArea .talk05 .btnBox {
+    overflow: hidden;
+    display: block;
+    margin: 0 0 0; }
+    body.salon.interview.vol03 .interviewArea .talk05 .btnBox p {
+      display: block;
+      vertical-align: middle;
+      font-size: 16px;
+      margin-left: 47px;
+      margin-top: 15px; }
+    body.salon.interview.vol03 .interviewArea .talk05 .btnBox .btnCart {
+      display: block;
+      vertical-align: middle;
+      width: auto;
+      margin-left: 47px;
+      margin-top: 15px; }
+  body.salon.interview.vol03 .interviewArea .talk05 .fin {
+    border-bottom: 1px solid #999;
+    position: relative;
+    margin: 30px 0 0;
+    text-indent: -9999px; }
+    body.salon.interview.vol03 .interviewArea .talk05 .fin:before {
+      content: "";
+      background: url(../interview/img/fin.png) no-repeat center center;
+      width: 200px;
+      height: 50px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      margin-left: -100px; }
+body.salon.interview.vol03 .interviewArea .backnumber {
+  margin: 90px 0 0 0; }
+  body.salon.interview.vol03 .interviewArea .backnumber h3 {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(../interview/img/title_backnumber.png) no-repeat left top;
+    height: 34px;
+    padding-top: 0;
+    border-bottom: none; }
+  body.salon.interview.vol03 .interviewArea .backnumber ul {
+    overflow: hidden;
+    display: block;
+    margin-top: 20px;
+    margin-right: -26px; }
+    body.salon.interview.vol03 .interviewArea .backnumber ul li {
+      width: 220px;
+      margin-right: 32px;
+      float: left;
+      overflow: hidden; }
+      body.salon.interview.vol03 .interviewArea .backnumber ul li a {
+        display: block;
+        text-decoration: underline;
+        color: #758ab3; }
+        body.salon.interview.vol03 .interviewArea .backnumber ul li a:hover {
+          text-decoration: none; }
+      body.salon.interview.vol03 .interviewArea .backnumber ul li p {
+        font-size: 16px;
+        width: auto;
+        margin-left: 90px; }
+      body.salon.interview.vol03 .interviewArea .backnumber ul li .thumb {
+        margin-bottom: 0;
+        float: left; }	
+	
+	
+	
+	
+	
+	
+		
+/* ===========================================================
+   interview vol04
+============================================================== */
+body.salon.interview.vol04 .interviewArea .lead {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url(../interview/img/160824/lead.png) no-repeat center top;
+  background-size: contain;
+  width: 830px;
+  height: 400px;
+  padding-top: 0%;
+  margin: 94px auto 50px;
+  border-top: none;
+  border-bottom: none; }
+body.salon.interview.vol04 .interviewArea .text01 {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #7589b2;
+  width: 984px;
+  height: 200px;
+  text-align: left;
+  font-size: 28px;
+  margin: 0 auto;
+  padding-top: 57px;
+  padding-left: 240px;
+  background: url(../interview/img/160824/bg01.png) no-repeat center center;
+  margin-bottom: 90px; }
+  body.salon.interview.vol04 .interviewArea .text01 small {
+    font-size: 22px; }
+body.salon.interview.vol04 .interviewArea .box {
+  margin: 0;
+  position: relative; }
+  body.salon.interview.vol04 .interviewArea .box .acoCont {
+    padding: 0 0 0 0; }
+  body.salon.interview.vol04 .interviewArea .box h3 {
+    border-bottom: 1px solid #999;
+    margin: 0 0 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 46px; }
+  body.salon.interview.vol04 .interviewArea .box h4 {
+    font-size: 18px;
+    color: #7589b2;
+    text-align: left;
+    padding: 20px 0;
+    font-weight: normal; }
+  body.salon.interview.vol04 .interviewArea .box p {
+    font-size: 1.1rem;
+    line-height: 1.4; }
+    body.salon.interview.vol04 .interviewArea .box p br {
+      line-height: 1; }
+      
+      
+      
+body.salon.interview.vol04 .interviewArea .talk01 {
+  margin-bottom: 50px;
+  overflow: hidden;
+  height: auto; }
+
+  body.salon.interview.vol04 .interviewArea .talk01 h3 {
+    background: url(../interview/img/title_fashion.png) no-repeat left center;
+    width: 470px;
+    height: 46px; }
+  body.salon.interview.vol04 .interviewArea .talk01 .pic {
+    width: auto;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  body.salon.interview.vol04 .interviewArea .talk01 p {
+    width: 470px; }
+
+body.salon.interview.vol04 .interviewArea .talk01 .wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+
+body.salon.interview.vol04 .interviewArea .talk01 .lay02{
+	margin: 20px auto 85px auto;
+}
+
+body.salon.interview.vol04 .interviewArea .talk01 .lay02 .pic {
+ left: 0;
+}
+
+
+body.salon.interview.vol04 .interviewArea .box .lay02 h4 {
+    font-size: 18px;
+    color: #7589b2;
+    text-align: left;
+    padding: 20px 0;
+    font-weight: normal;
+    margin-left: 500px;
+    width: 400px;
+}
+
+
+body.salon.interview.vol04 .interviewArea .box .lay02 p {
+    margin-left: 500px;
+    width: 450px;
+}
+
+
+body.salon.interview.vol04 .interviewArea .talk02 {
+    height: 600px; }
+  body.salon.interview.vol04 .interviewArea .talk02 h3 {
+    background: url(../interview/img/title_makise.png) no-repeat left center;
+    margin-left: 514px; }
+  body.salon.interview.vol04 .interviewArea .talk02 h4 {
+    margin-left: 514px; }
+  body.salon.interview.vol04 .interviewArea .talk02 .pic {
+    float: none;
+    position: absolute;
+    width: auto;
+    margin: 0;
+    left: 0;
+    top: 0; }
+  body.salon.interview.vol04 .interviewArea .talk02 p {
+    margin-left: 514px; }
+
+
+
+body.salon.interview.vol04 .interviewArea .talk03 {
+  margin-bottom: 50px;
+  overflow: hidden;
+ }
+
+  body.salon.interview.vol04 .interviewArea .talk03 h3 {
+    background: url(../interview/img/title03.png) no-repeat left center;
+    width: 470px;
+    height: 46px; }
+  body.salon.interview.vol04 .interviewArea .talk03 .pic {
+    width: auto;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  body.salon.interview.vol04 .interviewArea .talk03 p {
+    width: 470px; }
+
+
+------   
+
+
+   body.salon.interview.vol04 .interviewArea .talk01_2 h4 {
+	width: 470px; 
+    font-size: 18px;
+    color: #7589b2;
+    text-align: left;
+    padding: 20px 0;
+    font-weight: normal; } 
+  
+body.salon.interview.vol04 .interviewArea .talk01_2 p {
+  width: 470px; }
+body.salon.interview.vol04 .interviewArea .talk01_2 .pic {
+  width: auto;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+
+body.salon.interview.vol04 .interviewArea .talk01_2 .wrap {
+  overflow: hidden; }
+body.salon.interview.vol04 .interviewArea .talk01_2 .left {
+  float: left;
+  margin-bottom: 5%;
+  margin-top: 30px; }
+  body.salon.interview.vol04 .interviewArea .talk01_2 .left p {
+    margin-bottom: 3%; }
+body.salon.interview.vol04 .interviewArea .talk01_2 .right {
+  float: right;
+  margin-bottom: 5%;
+  margin-top: 30px; }
+  body.salon.interview.vol04 .interviewArea .talk01_2 .right p {
+    margin-bottom: 3%; }
+
+    
+ -------  
+    
+
+
+
+    
+    
+
+
+
+body.salon.interview.vol04 .interviewArea .talk05 {
+  margin-bottom: 50px; }
+  body.salon.interview.vol04 .interviewArea .talk05 h3 {
+    background: url(../interview/img/title_makise.png) no-repeat left center;
+    margin-left: 0; }
+  body.salon.interview.vol04 .interviewArea .talk05 h3.title02 {
+    background: url(../interview/img/title06.png) no-repeat left center;
+    margin-top: 140px;
+    margin-left: 0; }
+  body.salon.interview.vol04 .interviewArea .talk05 h4 {
+    margin-left: 514px; }
+    body.salon.interview.vol04 .interviewArea .talk05 h5{
+    color:#000;
+    margin-left: 514px; }
+  body.salon.interview.vol04 .interviewArea .talk05 .pic {
+    float: none;
+    position: absolute;
+    width: auto;
+    margin: 0;
+    left: 0;
+    top: 0; }
+  body.salon.interview.vol04 .interviewArea .talk05 .stitle {
+    margin-bottom: 2%; }
+  body.salon.interview.vol04 .interviewArea .talk05 .pic01 {
+    float: none;
+    position: absolute;
+    width: auto;
+    margin: 0;
+    left: 0;
+    top: 0; }
+  body.salon.interview.vol04 .interviewArea .talk05 .wrap p {
+    margin-left: 514px; }
+    
+      body.salon.interview.vol04 .interviewArea .talk05 .wrap .sl{
+    margin: 90px 0px 0px 514px;
+    font-size: 18px;
+ }
+    
+    
+  body.salon.interview.vol04 .interviewArea .talk05 .wrap02 {
+    display: block;
+    margin: 170px 0 0;
+    width: 100%; }
+    body.salon.interview.vol04 .interviewArea .talk05 .wrap02 .pic02 {
+      display: block;
+      float: left;
+      width: 470px;
+      margin: 0 auto; }
+    body.salon.interview.vol04 .interviewArea .talk05 .wrap02 h4 {
+      display: block;
+      vertical-align: top;
+      text-align: left;
+      padding-left: 0;
+      padding-top: 0; }
+  body.salon.interview.vol04 .interviewArea .talk05 .wrap01 {
+    margin-left: 514px; }
+  body.salon.interview.vol04 .interviewArea .talk05 .wrap03 {
+    overflow: hidden; }
+  body.salon.interview.vol04 .interviewArea .talk05 .left {
+    float: left;
+    margin-bottom: 5%;
+    margin-top: 30px; }
+    body.salon.interview.vol03 .interviewArea .talk05 .left p {
+      margin-bottom: 3%; }
+  body.salon.interview.vol03 .interviewArea .talk05 .right {
+    float: right;
+    margin-bottom: 5%;
+    margin-top: 30px; }
+    body.salon.interview.vol04 .interviewArea .talk05 .right p {
+      margin-bottom: 3%; }
+  body.salon.interview.vol04 .interviewArea .talk05 .btnBox {
+    overflow: hidden;
+    display: block;
+    margin: 0 0 0; }
+    body.salon.interview.vol04 .interviewArea .talk05 .btnBox p {
+      display: block;
+      vertical-align: middle;
+      font-size: 16px;
+      margin-left: 47px;
+      margin-top: 15px; }
+    body.salon.interview.vol04 .interviewArea .talk05 .btnBox .btnCart {
+      display: block;
+      vertical-align: middle;
+      width: auto;
+      margin-left: 47px;
+      margin-top: 15px; }
+  body.salon.interview.vol04 .interviewArea .talk05 .fin {
+    border-bottom: 1px solid #999;
+    position: relative;
+    margin: 30px 0 0;
+    text-indent: -9999px; }
+    body.salon.interview.vol04 .interviewArea .talk05 .fin:before {
+      content: "";
+      background: url(../interview/img/fin.png) no-repeat center center;
+      width: 200px;
+      height: 50px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      margin-left: -100px; }
+body.salon.interview.vol04 .interviewArea .backnumber {
+  margin: 90px 0 0 0; }
+  body.salon.interview.vol04 .interviewArea .backnumber h3 {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(../interview/img/title_backnumber.png) no-repeat left top;
+    height: 34px;
+    padding-top: 0;
+    border-bottom: none; }
+  body.salon.interview.vol04 .interviewArea .backnumber ul {
+    overflow: hidden;
+    display: block;
+    margin-top: 20px;
+    margin-right: -26px; }
+    body.salon.interview.vol04 .interviewArea .backnumber ul li {
+      width: 220px;
+      margin-right: 32px;
+      float: left;
+      overflow: hidden; }
+      body.salon.interview.vol04 .interviewArea .backnumber ul li a {
+        display: block;
+        text-decoration: underline;
+        color: #758ab3; }
+        body.salon.interview.vol04 .interviewArea .backnumber ul li a:hover {
+          text-decoration: none; }
+      body.salon.interview.vol04 .interviewArea .backnumber ul li p {
+        font-size: 16px;
+        width: auto;
+        margin-left: 90px; }
+      body.salon.interview.vol04 .interviewArea .backnumber ul li .thumb {
+        margin-bottom: 0;
+        float: left; }	
+	
+	
+
+/* ===================================================================================================================================================
+	
+   sp
+   
+   =================================================================================================================================================== */
+@media screen and (max-width: 768px) {
+  /* ===========================================================
+     interview vol01
+  ============================================================== */
+  body.salon.interview.vol01 .interviewArea .lead {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(../interview/img/lead_sp.png) no-repeat center top;
+    background-size: contain;
+    width: auto;
+    height: 0;
+    padding-top: 80%;
+    margin: 0 4.6875%;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999; }
+  body.salon.interview.vol01 .interviewArea .text01 {
+    color: #7589b2;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 5% 3%;
+    background: none;
+    width: auto;
+    height: auto;
+    padding: 0; }
+    body.salon.interview.vol01 .interviewArea .text01 small {
+      font-size: 1.0rem; }
+  body.salon.interview.vol01 .interviewArea .box {
+    margin: 0 4.6875%; }
+    body.salon.interview.vol01 .interviewArea .box .acoCont {
+      padding: 0 0 10% 0; }
+    body.salon.interview.vol01 .interviewArea .box h3 {
+      border-bottom: 1px solid #999;
+      margin: 3% 0 0;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      height: auto; }
+    body.salon.interview.vol01 .interviewArea .box h4 {
+      font-size: 1.1rem;
+      color: #7589b2;
+      text-align: center;
+      padding: 3% 0;
+      font-weight: normal; }
+    body.salon.interview.vol01 .interviewArea .box p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      width: auto; }
+      body.salon.interview.vol01 .interviewArea .box p br {
+        line-height: 1; }
+  body.salon.interview.vol01 .interviewArea .talk01 h3 {
+    background: url(../interview/img/title01.png) no-repeat center center;
+    background-size: 68px 23px;
+    margin-left: 0;
+    width: auto;
+    height: auto; }
+  body.salon.interview.vol01 .interviewArea .talk01 .pic {
+    width: 69%;
+    margin: 0 auto 3%;
+    position: static; }
+  body.salon.interview.vol01 .interviewArea .talk01 p {
+    width: auto; }
+  body.salon.interview.vol01 .interviewArea .talk02 h3 {
+    background: url(../interview/img/title02.png) no-repeat center center;
+    background-size: 60px 23px; }
+  body.salon.interview.vol01 .interviewArea .talk02 h4 {
+    margin: 0; }
+  body.salon.interview.vol01 .interviewArea .talk02 .pic {
+    float: left;
+    width: 50.6%;
+    margin: 0 4% 3% 0;
+    position: static; }
+  body.salon.interview.vol01 .interviewArea .talk02 p {
+    margin: 0; }
+  body.salon.interview.vol01 .interviewArea .talk03 h3 {
+    background: url(../interview/img/title03.png) no-repeat center center;
+    background-size: 50px 23px;
+    width: auto; }
+  body.salon.interview.vol01 .interviewArea .talk03 .pic {
+    float: right;
+    width: 50.6%;
+    margin: 0 0 3% 4%;
+    position: static; }
+  body.salon.interview.vol01 .interviewArea .talk04 h3 {
+    background: url(../interview/img/title04.png) no-repeat center center;
+    background-size: 86px 23px; }
+  body.salon.interview.vol01 .interviewArea .talk04 h4 {
+    margin-left: -1%;
+    margin-right: -1%; }
+  body.salon.interview.vol01 .interviewArea .talk04 .stitle {
+    margin-bottom: 2%; }
+  body.salon.interview.vol01 .interviewArea .talk04 .pic01 {
+    width: 69%;
+    margin: 0 auto 3%;
+    position: static; }
+  body.salon.interview.vol01 .interviewArea .talk04 .wrap p {
+    margin: 0; }
+  body.salon.interview.vol01 .interviewArea .talk04 .wrap01 {
+    margin: 0; }
+  body.salon.interview.vol01 .interviewArea .talk04 .wrap02 {
+    display: table;
+    margin: 4% 0; }
+    body.salon.interview.vol01 .interviewArea .talk04 .wrap02 .pic02 {
+      display: table-cell;
+      vertical-align: middle;
+      width: 50.6%;
+      margin: 0 auto 3%;
+      float: none; }
+    body.salon.interview.vol01 .interviewArea .talk04 .wrap02 h4 {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 4%; }
+  body.salon.interview.vol01 .interviewArea .talk04 .btnBox {
+    overflow: hidden;
+    display: table;
+    margin: 4% 0 0 0; }
+    body.salon.interview.vol01 .interviewArea .talk04 .btnBox p {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 0.9rem; }
+    body.salon.interview.vol01 .interviewArea .talk04 .btnBox .btnCart {
+      display: table-cell;
+      vertical-align: middle;
+      width: 45%;
+      margin: 0; }
+  body.salon.interview.vol01 .interviewArea .talk05 h3.title01 {
+    background: url(../interview/img/title05.png) no-repeat center center;
+    background-size: 55px 23px;
+    width: auto; }
+  body.salon.interview.vol01 .interviewArea .talk05 h3.title02 {
+    background: url(../interview/img/title06.png) no-repeat center center;
+    background-size: 48px 23px;
+    margin-top: 10%; }
+  body.salon.interview.vol01 .interviewArea .talk05 h4 {
+    width: auto; }
+  body.salon.interview.vol01 .interviewArea .talk05 .pic {
+    width: 69%;
+    margin: 0 auto 3%;
+    position: static; }
+  body.salon.interview.vol01 .interviewArea .talk05 .name {
+    font-size: 1.2rem;
+    margin-bottom: 1.5%; }
+  body.salon.interview.vol01 .interviewArea .talk05 a {
+    color: #758ab3; }
+  body.salon.interview.vol01 .interviewArea .talk05 .left {
+    float: none;
+    margin-bottom: 5%;
+    margin-top: 5%; }
+    body.salon.interview.vol01 .interviewArea .talk05 .left p {
+      margin-bottom: 3%; }
+  body.salon.interview.vol01 .interviewArea .talk05 .right {
+    float: none;
+    margin-bottom: 5%; }
+    body.salon.interview.vol01 .interviewArea .talk05 .right p {
+      margin-bottom: 3%; }
+  body.salon.interview.vol01 .interviewArea .talk05 .fin {
+    border-bottom: 1px solid #999;
+    position: relative;
+    margin: 0 0 10%;
+    text-indent: -9999px; }
+    body.salon.interview.vol01 .interviewArea .talk05 .fin:before {
+      content: "";
+      background: url(../interview/img/fin.png) no-repeat center center;
+      width: 100px;
+      height: 25px;
+      background-size: contain;
+      position: absolute;
+      left: 50%;
+      top: 12px;
+      margin-left: -50px; }
+  body.salon.interview.vol01 .interviewArea .backnumber {
+    margin: 10% 4.6875% 0; }
+    body.salon.interview.vol01 .interviewArea .backnumber h3 {
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background: url(../interview/img/title_backnumber_sp.png) no-repeat;
+      background-size: contain;
+      height: 0;
+      padding-top: 6%; }
+    body.salon.interview.vol01 .interviewArea .backnumber ul {
+      overflow: hidden;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      display: -ms-flexbox;
+      -ms-flex-direction: row;
+      -ms-flex-align: center;
+      -ms-flex-pack: justify;
+      margin-top: 4%;
+      margin-right: 0; }
+      body.salon.interview.vol01 .interviewArea .backnumber ul li {
+        width: 29.8%;
+        margin: 0;
+        float: none; }
+        body.salon.interview.vol01 .interviewArea .backnumber ul li:last-child {
+          display: none; }
+        body.salon.interview.vol01 .interviewArea .backnumber ul li .thumb {
+          margin-bottom: 2%;
+          float: none; }
+        body.salon.interview.vol01 .interviewArea .backnumber ul li p {
+          margin: 0;
+          font-size: 1.1rem; }
+
+  /* ===========================================================
+    interview vol02
+  ============================================================== */
+  body.salon.interview.vol02 .interviewArea .lead {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(../interview/img/160301/lead_sp.png) no-repeat center top;
+    background-size: contain;
+    width: auto;
+    height: 0;
+    padding-top: 80%;
+    margin: 0 4.6875%;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999; }
+  body.salon.interview.vol02 .interviewArea .text01 {
+    text-indent: 0;
+    white-space: normal;
+    color: #7589b2;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 5% 3%;
+    background: none;
+    width: auto;
+    height: auto;
+    padding: 0; }
+    body.salon.interview.vol02 .interviewArea .text01 small {
+      font-size: 1.0rem; }
+  body.salon.interview.vol02 .interviewArea .box {
+    margin: 0 4.6875%; }
+    body.salon.interview.vol02 .interviewArea .box .acoCont {
+      padding: 0 0 10% 0; }
+    body.salon.interview.vol02 .interviewArea .box h3 {
+      border-bottom: 1px solid #999;
+      margin: 3% 0 0;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      height: auto; }
+    body.salon.interview.vol02 .interviewArea .box h4 {
+      font-size: 1.1rem;
+      color: #7589b2;
+      text-align: center;
+      padding: 3% 0;
+      font-weight: normal; }
+    body.salon.interview.vol02 .interviewArea .box p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      width: auto; }
+      body.salon.interview.vol02 .interviewArea .box p br {
+        line-height: 1; }
+  body.salon.interview.vol02 .interviewArea .talk01 {
+    height: auto; }
+    body.salon.interview.vol02 .interviewArea .talk01 h3 {
+      background: url(../interview/img/title03.png) no-repeat center center;
+      background-size: 50px 23px;
+      margin-left: 0;
+      width: auto;
+      height: auto; }
+    body.salon.interview.vol02 .interviewArea .talk01 .pic {
+      width: 69%;
+      margin: 0 auto 3%;
+      position: static; }
+    body.salon.interview.vol02 .interviewArea .talk01 p {
+      width: auto; }
+  body.salon.interview.vol02 .interviewArea .talk02 {
+    height: auto; }
+    body.salon.interview.vol02 .interviewArea .talk02 h3 {
+      background: url(../interview/img/title_hobby.png) no-repeat center center;
+      background-size: 45px 23px; }
+    body.salon.interview.vol02 .interviewArea .talk02 h4 {
+      margin: 0; }
+    body.salon.interview.vol02 .interviewArea .talk02 .pic {
+      float: left;
+      width: 50.6%;
+      margin: 0 4% 3% 0;
+      position: static; }
+    body.salon.interview.vol02 .interviewArea .talk02 p {
+      margin: 0; }
+  body.salon.interview.vol02 .interviewArea .talk03 {
+    height: auto; }
+    body.salon.interview.vol02 .interviewArea .talk03 h3 {
+      background: url(../interview/img/title_beauty.png) no-repeat center center;
+      background-size: 49px 23px;
+      width: auto; }
+    body.salon.interview.vol02 .interviewArea .talk03 .pic {
+      float: right;
+      width: 50.6%;
+      margin: 0 0 3% 4%;
+      position: static; }
+  body.salon.interview.vol02 .interviewArea .talk04 {
+    height: auto; }
+    body.salon.interview.vol02 .interviewArea .talk04 h3 {
+      background: url(../interview/img/title_message.png) no-repeat center center;
+      background-size: 59px 23px;
+      width: auto; }
+    body.salon.interview.vol02 .interviewArea .talk04 h4 {
+      margin: 0; }
+    body.salon.interview.vol02 .interviewArea .talk04 p {
+      margin: 0; }
+    body.salon.interview.vol02 .interviewArea .talk04 .pic {
+      float: right;
+      width: 50.6%;
+      margin: 0 0 3% 4%;
+      position: static; }
+  body.salon.interview.vol02 .interviewArea .talk05 h3 {
+    background: url(../interview/img/title_salonlike.png) no-repeat center center;
+    background-size: 106px 23px; }
+  body.salon.interview.vol02 .interviewArea .talk05 h3.title02 {
+    background: url(../interview/img/title06.png) no-repeat center center;
+    background-size: 48px 23px;
+    margin-top: 10%; }
+  body.salon.interview.vol02 .interviewArea .talk05 h4 {
+    margin-left: -1%;
+    margin-right: -1%;
+    width: auto; }
+  body.salon.interview.vol02 .interviewArea .talk05 .stitle {
+    margin-bottom: 2%; }
+  body.salon.interview.vol02 .interviewArea .talk05 .pic {
+    width: 69%;
+    margin: 0 auto 3%;
+    position: static; }
+  body.salon.interview.vol02 .interviewArea .talk05 .pic01 {
+    width: 69%;
+    margin: 0 auto 3%;
+    position: static; }
+  body.salon.interview.vol02 .interviewArea .talk05 .wrap p {
+    margin: 0; }
+  body.salon.interview.vol02 .interviewArea .talk05 .wrap01 {
+    margin: 0; }
+  body.salon.interview.vol02 .interviewArea .talk05 .wrap02 {
+    display: table;
+    margin: 4% 0; }
+    body.salon.interview.vol02 .interviewArea .talk05 .wrap02 .pic02 {
+      display: table-cell;
+      vertical-align: middle;
+      width: 50.6%;
+      margin: 0 auto 3%;
+      float: none; }
+    body.salon.interview.vol02 .interviewArea .talk05 .wrap02 h4 {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 4%; }
+  body.salon.interview.vol02 .interviewArea .talk05 .name {
+    font-size: 1.2rem;
+    margin-bottom: 1.5%; }
+  body.salon.interview.vol02 .interviewArea .talk05 a {
+    color: #758ab3; }
+  body.salon.interview.vol02 .interviewArea .talk05 .left {
+    float: none;
+    margin-bottom: 5%;
+    margin-top: 5%; }
+    body.salon.interview.vol02 .interviewArea .talk05 .left p {
+      margin-bottom: 3%; }
+  body.salon.interview.vol02 .interviewArea .talk05 .right {
+    float: none;
+    margin-bottom: 5%; }
+    body.salon.interview.vol02 .interviewArea .talk05 .right p {
+      margin-bottom: 3%; }
+  body.salon.interview.vol02 .interviewArea .talk05 .fin {
+    border-bottom: 1px solid #999;
+    position: relative;
+    margin: 0 0 10%;
+    text-indent: -9999px; }
+    body.salon.interview.vol02 .interviewArea .talk05 .fin:before {
+      content: "";
+      background: url(../interview/img/fin.png) no-repeat center center;
+      width: 100px;
+      height: 25px;
+      background-size: contain;
+      position: absolute;
+      left: 50%;
+      top: 12px;
+      margin-left: -50px; }
+  body.salon.interview.vol02 .interviewArea .talk05 .btnBox {
+    overflow: hidden;
+    display: table;
+    margin: 4% 0 0 0; }
+    body.salon.interview.vol02 .interviewArea .talk05 .btnBox p {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 0.9rem; }
+    body.salon.interview.vol02 .interviewArea .talk05 .btnBox .btnCart {
+      display: table-cell;
+      vertical-align: middle;
+      width: 45%;
+      margin: 0; }
+  body.salon.interview.vol02 .interviewArea .backnumber {
+    margin: 10% 4.6875% 0; }
+    body.salon.interview.vol02 .interviewArea .backnumber h3 {
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background: url(../interview/img/title_backnumber_sp.png) no-repeat;
+      background-size: contain;
+      height: 0;
+      padding-top: 6%; }
+    body.salon.interview.vol02 .interviewArea .backnumber ul {
+      overflow: hidden;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      display: -ms-flexbox;
+      -ms-flex-direction: row;
+      -ms-flex-align: center;
+      -ms-flex-pack: justify;
+      margin-top: 4%;
+      margin-right: 0; }
+      body.salon.interview.vol02 .interviewArea .backnumber ul li {
+        width: 29.8%;
+        margin: 0;
+        float: none; }
+        body.salon.interview.vol02 .interviewArea .backnumber ul li:last-child {
+          display: none; }
+        body.salon.interview.vol02 .interviewArea .backnumber ul li .thumb {
+          margin-bottom: 2%;
+          float: none; }
+        body.salon.interview.vol02 .interviewArea .backnumber ul li p {
+          margin: 0;
+          font-size: 1.1rem; }
+	  
+
+
+
+  /* ===========================================================
+    interview vol03
+  ============================================================== */
+  body.salon.interview.vol03 .interviewArea .lead {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(../interview/img/160518/lead_sp.png) no-repeat center top;
+    background-size: contain;
+    width: auto;
+    height: 0;
+    padding-top: 80%;
+    margin: 0 4.6875%;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999; }
+  body.salon.interview.vol03 .interviewArea .text01 {
+    text-indent: 0;
+    white-space: normal;
+    color: #7589b2;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 5% 3%;
+    background: none;
+    width: auto;
+    height: auto;
+    padding: 0; }
+    body.salon.interview.vol03 .interviewArea .text01 small {
+      font-size: 1.0rem; }
+  body.salon.interview.vol03 .interviewArea .box {
+    margin: 0 4.6875%; }
+    body.salon.interview.vol03 .interviewArea .box .acoCont {
+      padding: 0 0 10% 0; }
+    body.salon.interview.vol03 .interviewArea .box h3 {
+      border-bottom: 1px solid #999;
+      margin: 3% 0 0;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      height: auto; }
+    body.salon.interview.vol03 .interviewArea .box h4 {
+      font-size: 1.1rem;
+      color: #7589b2;
+      text-align: center;
+      padding: 3% 0;
+      font-weight: normal; }
+    body.salon.interview.vol03 .interviewArea .box p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      width: auto; }
+      body.salon.interview.vol03 .interviewArea .box p br {
+        line-height: 1; }
+  body.salon.interview.vol03 .interviewArea .talk01 {
+    height: auto; }
+    body.salon.interview.vol03 .interviewArea .talk01 h3 {
+      background: url(../interview/img/title_fashion.png) no-repeat center center;
+      background-size: 50px 23px;
+      margin-left: 0;
+      width: auto;
+      height: auto; }
+    body.salon.interview.vol03 .interviewArea .talk01 .pic {
+      width: 69%;
+      margin: 0 auto 3%;
+      position: static; }
+    body.salon.interview.vol03 .interviewArea .talk01 p {
+      width: auto; }
+  body.salon.interview.vol03 .interviewArea .talk02 {
+    height: auto; }
+    body.salon.interview.vol03 .interviewArea .talk02 h3 {
+      background: url(../interview/img/title_beauty.png) no-repeat center center;
+      background-size: 45px 23px; }
+    body.salon.interview.vol03 .interviewArea .talk02 h4 {
+      margin: 0; }
+    body.salon.interview.vol03 .interviewArea .talk02 .pic {
+      float: left;
+      width: 50.6%;
+      margin: 0 4% 3% 0;
+      position: static; }
+    body.salon.interview.vol03 .interviewArea .talk02 p {
+      margin: 0; }
+  body.salon.interview.vol03 .interviewArea .talk03 {
+    height: auto; }
+    body.salon.interview.vol03 .interviewArea .talk03 h3 {
+      background: url(../interview/img/title03.png) no-repeat center center;
+      background-size: 49px 23px;
+      width: auto; }
+    body.salon.interview.vol03 .interviewArea .talk03 .pic {
+      float: right;
+      width: 50.6%;
+      margin: 0 0 3% 4%;
+      position: static; }
+  body.salon.interview.vol03 .interviewArea .talk04 {
+    height: auto; }
+    body.salon.interview.vol03 .interviewArea .talk04 h3 {
+      background: url(../interview/img/title_message.png) no-repeat center center;
+      background-size: 59px 23px;
+      width: auto; }
+    body.salon.interview.vol03 .interviewArea .talk04 h4 {
+      margin: 0; }
+    body.salon.interview.vol03 .interviewArea .talk04 p {
+      margin: 0; }
+    body.salon.interview.vol03 .interviewArea .talk04 .pic {
+      float: right;
+      width: 50.6%;
+      margin: 0 0 3% 4%;
+      position: static; }
+  body.salon.interview.vol03 .interviewArea .talk05 h3 {
+    background: url(../interview/img/title_salonlike.png) no-repeat center center;
+    background-size: 106px 23px; }
+  body.salon.interview.vol03 .interviewArea .talk05 h3.title02 {
+    background: url(../interview/img/title06.png) no-repeat center center;
+    background-size: 48px 23px;
+    margin-top: 10%; }
+  body.salon.interview.vol03 .interviewArea .talk05 h4 {
+    margin-left: -1%;
+    margin-right: -1%;
+    width: auto; }
+  body.salon.interview.vol03 .interviewArea .talk05 .stitle {
+    margin-bottom: 2%; }
+  body.salon.interview.vol03 .interviewArea .talk05 .pic {
+    width: 69%;
+    margin: 0 auto 3%;
+    position: static; }
+  body.salon.interview.vol03 .interviewArea .talk05 .pic01 {
+    width: 69%;
+    margin: 0 auto 3%;
+    position: static; }
+  body.salon.interview.vol03 .interviewArea .talk05 .wrap p {
+    margin: 0; }
+  body.salon.interview.vol03 .interviewArea .talk05 .wrap01 {
+    margin: 0; }
+  body.salon.interview.vol03 .interviewArea .talk05 .wrap02 {
+    display: table;
+    margin: 4% 0; }
+    body.salon.interview.vol03 .interviewArea .talk05 .wrap02 .pic02 {
+      display: table-cell;
+      vertical-align: middle;
+      width: 50.6%;
+      margin: 0 auto 3%;
+      float: none; }
+    body.salon.interview.vol03 .interviewArea .talk05 .wrap02 h4 {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 4%; }
+  body.salon.interview.vol03 .interviewArea .talk05 .name {
+    font-size: 1.2rem;
+    margin-bottom: 1.5%; }
+  body.salon.interview.vol03 .interviewArea .talk05 a {
+    color: #758ab3; }
+  body.salon.interview.vol03 .interviewArea .talk05 .left {
+    float: none;
+    margin-bottom: 5%;
+    margin-top: 5%; }
+    body.salon.interview.vol03 .interviewArea .talk05 .left p {
+      margin-bottom: 3%; }
+  body.salon.interview.vol03 .interviewArea .talk05 .right {
+    float: none;
+    margin-bottom: 5%; }
+    body.salon.interview.vol03 .interviewArea .talk05 .right p {
+      margin-bottom: 3%; }
+  body.salon.interview.vol03 .interviewArea .talk05 .fin {
+    border-bottom: 1px solid #999;
+    position: relative;
+    margin: 0 0 10%;
+    text-indent: -9999px; }
+    body.salon.interview.vol03 .interviewArea .talk05 .fin:before {
+      content: "";
+      background: url(../interview/img/fin.png) no-repeat center center;
+      width: 100px;
+      height: 25px;
+      background-size: contain;
+      position: absolute;
+      left: 50%;
+      top: 12px;
+      margin-left: -50px; }
+  body.salon.interview.vol03 .interviewArea .talk05 .btnBox {
+    overflow: hidden;
+    display: table;
+    margin: 4% 0 0 0; }
+    body.salon.interview.vol03 .interviewArea .talk05 .btnBox p {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 0.9rem; }
+    body.salon.interview.vol03 .interviewArea .talk05 .btnBox .btnCart {
+      display: table-cell;
+      vertical-align: middle;
+      width: 45%;
+      margin: 0; }
+  body.salon.interview.vol03 .interviewArea .backnumber {
+    margin: 10% 4.6875% 0; }
+    body.salon.interview.vol03 .interviewArea .backnumber h3 {
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background: url(../interview/img/title_backnumber_sp.png) no-repeat;
+      background-size: contain;
+      height: 0;
+      padding-top: 6%; }
+    body.salon.interview.vol03 .interviewArea .backnumber ul {
+      overflow: hidden;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      display: -ms-flexbox;
+      -ms-flex-direction: row;
+      -ms-flex-align: center;
+      -ms-flex-pack: justify;
+      margin-top: 4%;
+      margin-right: 0; }
+      body.salon.interview.vol03 .interviewArea .backnumber ul li {
+        width: 29.8%;
+        margin: 0;
+        float: none; }
+        body.salon.interview.vol03 .interviewArea .backnumber ul li:last-child {
+          display: none; }
+        body.salon.interview.vol03 .interviewArea .backnumber ul li .thumb {
+          margin-bottom: 2%;
+          float: none; }
+        body.salon.interview.vol03 .interviewArea .backnumber ul li p {
+          margin: 0;
+          font-size: 1.1rem; }
+	  
+	  
+	  
+	  
+	  
+body.salon.interview.vol03 .interviewArea .talk05 .wrap .sl {
+    margin: auto;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5%;
+}	  
+	  
+body.salon.interview.vol03 .interviewArea .talk01 .lay02 {
+    margin: auto;
+}
+
+
+body.salon.interview.vol03 .interviewArea .box .lay02 h4 {
+    margin-left: 0px;
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+
+body.salon.interview.vol03 .interviewArea .box .lay02 p {
+    margin-left: 0px;
+    width: 100%;
+}
+	  
+  
+	  
+	  
+	  
+	  /* ===========================================================
+    interview vol04
+  ============================================================== */
+  body.salon.interview.vol04 .interviewArea .lead {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(../interview/img/160824/lead_sp.png) no-repeat center top;
+    background-size: contain;
+    width: auto;
+    height: 0;
+    padding-top: 80%;
+    margin: 0 4.6875%;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999; }
+  body.salon.interview.vol04 .interviewArea .text01 {
+    text-indent: 0;
+    white-space: normal;
+    color: #7589b2;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 5% 3%;
+    background: none;
+    width: auto;
+    height: auto;
+    padding: 0; }
+    body.salon.interview.vol04 .interviewArea .text01 small {
+      font-size: 1.0rem; }
+  body.salon.interview.vol04 .interviewArea .box {
+    margin: 0 4.6875%; }
+    body.salon.interview.vol04 .interviewArea .box .acoCont {
+      padding: 0 0 10% 0; }
+    body.salon.interview.vol04 .interviewArea .box h3 {
+      border-bottom: 1px solid #999;
+      margin: 3% 0 0;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      height: auto; }
+    body.salon.interview.vol04 .interviewArea .box h4 {
+      font-size: 1.1rem;
+      color: #7589b2;
+      text-align: center;
+      padding: 3% 0;
+      font-weight: normal; }
+    body.salon.interview.vol04 .interviewArea .box p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      width: auto; }
+      body.salon.interview.vol04 .interviewArea .box p br {
+        line-height: 1; }
+  body.salon.interview.vol04 .interviewArea .talk01 {
+    height: auto; }
+    body.salon.interview.vol04 .interviewArea .talk01 h3 {
+      background: url(../interview/img/title_fashion.png) no-repeat center center;
+      background-size: 50px 23px;
+      margin-left: 0;
+      width: auto;
+      height: auto; }
+    body.salon.interview.vol04 .interviewArea .talk01 .pic {
+      width: 69%;
+      margin: 0 auto 3%;
+      position: static; }
+    body.salon.interview.vol04 .interviewArea .talk01 p {
+      width: auto; }
+  body.salon.interview.vol04 .interviewArea .talk02 {
+    height: auto; }
+    body.salon.interview.vol04 .interviewArea .talk02 h3 {
+      background: url(../interview/img/title_makise.png) no-repeat center center;
+       }
+    body.salon.interview.vol04 .interviewArea .talk02 h4 {
+      margin: 0; }
+    body.salon.interview.vol04 .interviewArea .talk02 .pic {
+      float: left;
+      width: 50.6%;
+      margin: 0 4% 3% 0;
+      position: static; }
+    body.salon.interview.vol04 .interviewArea .talk02 p {
+      margin: 0; }
+  body.salon.interview.vol04 .interviewArea .talk03 {
+    height: auto; }
+    body.salon.interview.vol04 .interviewArea .talk03 h3 {
+      background: url(../interview/img/title03.png) no-repeat center center;
+      background-size: 49px 23px;
+      width: auto; }
+    body.salon.interview.vol04 .interviewArea .talk03 .pic {
+      float: right;
+      width: 50.6%;
+      margin: 0 0 3% 4%;
+      position: static; }
+  body.salon.interview.vol04 .interviewArea .talk04 {
+    height: auto; }
+    body.salon.interview.vol04 .interviewArea .talk04 h3 {
+      background: url(../interview/img/title_message.png) no-repeat center center;
+      background-size: 59px 23px;
+      width: auto; }
+    body.salon.interview.vol04 .interviewArea .talk04 h4 {
+      margin: 0; }
+    body.salon.interview.vol04 .interviewArea .talk04 p {
+      margin: 0; }
+    body.salon.interview.vol04 .interviewArea .talk04 .pic {
+      float: right;
+      width: 50.6%;
+      margin: 0 0 3% 4%;
+      position: static; }
+  body.salon.interview.vol04 .interviewArea .talk05 h3 {
+    background: url(../interview/img/title_salonlike.png) no-repeat center center;
+    background-size: 106px 23px; }
+  body.salon.interview.vol04 .interviewArea .talk05 h3.title02 {
+    background: url(../interview/img/title06.png) no-repeat center center;
+    background-size: 48px 23px;
+    margin-top: 10%; }
+  body.salon.interview.vol04 .interviewArea .talk05 h4 {
+    margin-left: -1%;
+    margin-right: -1%;
+    width: auto; }
+  body.salon.interview.vol04 .interviewArea .talk05 .stitle {
+    margin-bottom: 2%; }
+  body.salon.interview.vol04 .interviewArea .talk05 .pic {
+    width: 69%;
+    margin: 0 auto 3%;
+    position: static; }
+  body.salon.interview.vol04 .interviewArea .talk05 .pic01 {
+    width: 69%;
+    margin: 0 auto 3%;
+    position: static; }
+  body.salon.interview.vol04 .interviewArea .talk05 .wrap p {
+    margin: 0; }
+  body.salon.interview.vol04 .interviewArea .talk05 .wrap01 {
+    margin: 0; }
+  body.salon.interview.vol04 .interviewArea .talk05 .wrap02 {
+    display: table;
+    margin: 4% 0; }
+    body.salon.interview.vol04 .interviewArea .talk05 .wrap02 .pic02 {
+      display: table-cell;
+      vertical-align: middle;
+      width: 50.6%;
+      margin: 0 auto 3%;
+      float: none; }
+    body.salon.interview.vol04 .interviewArea .talk05 .wrap02 h4 {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 4%; }
+  body.salon.interview.vol04 .interviewArea .talk05 .name {
+    font-size: 1.2rem;
+    margin-bottom: 1.5%; }
+  body.salon.interview.vol04 .interviewArea .talk05 a {
+    color: #758ab3; }
+  body.salon.interview.vol04 .interviewArea .talk05 .left {
+    float: none;
+    margin-bottom: 5%;
+    margin-top: 5%; }
+    body.salon.interview.vol04 .interviewArea .talk05 .left p {
+      margin-bottom: 3%; }
+  body.salon.interview.vol04 .interviewArea .talk05 .right {
+    float: none;
+    margin-bottom: 5%; }
+    body.salon.interview.vol04 .interviewArea .talk05 .right p {
+      margin-bottom: 3%; }
+  body.salon.interview.vol04 .interviewArea .talk05 .fin {
+    border-bottom: 1px solid #999;
+    position: relative;
+    margin: 0 0 10%;
+    text-indent: -9999px; }
+    body.salon.interview.vol04 .interviewArea .talk05 .fin:before {
+      content: "";
+      background: url(../interview/img/fin.png) no-repeat center center;
+      width: 100px;
+      height: 25px;
+      background-size: contain;
+      position: absolute;
+      left: 50%;
+      top: 12px;
+      margin-left: -50px; }
+  body.salon.interview.vol04 .interviewArea .talk05 .btnBox {
+    overflow: hidden;
+    display: table;
+    margin: 4% 0 0 0; }
+    body.salon.interview.vol04 .interviewArea .talk05 .btnBox p {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 0.9rem; }
+    body.salon.interview.vol04 .interviewArea .talk05 .btnBox .btnCart {
+      display: table-cell;
+      vertical-align: middle;
+      width: 45%;
+      margin: 0; }
+  body.salon.interview.vol04 .interviewArea .backnumber {
+    margin: 10% 4.6875% 0; }
+    body.salon.interview.vol04 .interviewArea .backnumber h3 {
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background: url(../interview/img/title_backnumber_sp.png) no-repeat;
+      background-size: contain;
+      height: 0;
+      padding-top: 6%; }
+    body.salon.interview.vol04 .interviewArea .backnumber ul {
+      overflow: hidden;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      display: -ms-flexbox;
+      -ms-flex-direction: row;
+      -ms-flex-align: center;
+      -ms-flex-pack: justify;
+      margin-top: 4%;
+      margin-right: 0; }
+      body.salon.interview.vol04 .interviewArea .backnumber ul li {
+        width: 29.8%;
+        margin: 0;
+        float: none; }
+        body.salon.interview.vol04 .interviewArea .backnumber ul li:last-child {
+          display: none; }
+        body.salon.interview.vol04 .interviewArea .backnumber ul li .thumb {
+          margin-bottom: 2%;
+          float: none; }
+        body.salon.interview.vol04 .interviewArea .backnumber ul li p {
+          margin: 0;
+          font-size: 1.1rem; }
+	  
+	  
+	  
+	  
+	  
+body.salon.interview.vol04 .interviewArea .talk05 .wrap .sl {
+    margin: auto;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5%;
+}	  
+	  
+body.salon.interview.vol04 .interviewArea .talk01 .lay02 {
+    margin: auto;
+}
+
+
+body.salon.interview.vol04 .interviewArea .box .lay02 h4 {
+    margin-left: 0px;
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+
+body.salon.interview.vol04 .interviewArea .box .lay02 p {
+    margin-left: 0px;
+    width: 100%;
+}
+	    
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  }
+	  
+
+

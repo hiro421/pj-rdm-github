@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body.salon .interview a img:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100)!important;
+    opacity: 1!important;
+}
+
+

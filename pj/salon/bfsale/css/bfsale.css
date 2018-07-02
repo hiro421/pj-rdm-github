@@ -1,0 +1,253 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+#wrapper {
+	background-color:#000000;
+	}
+	
+.bftxt{
+	color: #ffffff;
+	text-align: center;
+}
+
+h3{
+	 text-align: center;
+}
+
+
+#setprice1{
+	height:806px;
+    background-image: url(/pj/salon/bfsale/img/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 718px 806px;
+    margin:20px 0px;
+	position:relative;
+}
+
+#setprice1 ul .set1 li {
+	position: absolute;
+    top: 1063px;
+	left: 822px;
+}
+
+#setprice1 ul .set2 li {
+	position: absolute;
+    top: 1100px;
+	left: 822px;
+}
+
+#setprice1 ul .set3 li {
+	position: absolute;
+    top: 1200px;
+	left: 822px;
+}
+
+#setprice1 ul li{
+	float: right;
+	margin-left: 15px;
+}
+
+
+
+#setprice2{
+	height:806px;
+    background-image: url(/pj/salon/bfsale/img/bg_2.jpg);
+    background-repeat: no-repeat;
+    background-size: 718px 806px;
+    margin:20px 0px;
+	position:relative;
+}
+
+
+#setprice2 ul li{
+	float: left;
+	margin-left: 15px;
+}
+
+#setprice3{
+	height:806px;
+    background-image: url(/pj/salon/bfsale/img/bg_3.jpg);
+    background-repeat: no-repeat;
+    background-size: 718px 806px;
+    margin:20px 0px;
+	position:relative;
+}
+
+#setprice3 ul li{
+	float: right;
+	margin-left: 15px;
+}
+
+
+
+#spprice {
+	height:1448px;
+    background-image: url(/pj/salon/bfsale/img/bg_4.jpg);
+    background-repeat: no-repeat;
+    background-size: 715px 1448px;
+    margin:20px 0px;
+	position:relative;	
+}
+
+
+#spprice ul.special1{
+	position: absolute;
+ 	top:670px;
+	left:60px;
+}
+
+#spprice ul.special2{
+	position: absolute;
+	top: 1090px;
+	left: 60px;
+}
+
+
+
+#spprice ul li{
+	float: left;
+	margin-right: 60px;
+}
+
+.allbtn{
+	position:absolute;
+	top:1300px;
+	left: 100px;
+}
+	  
+
+/*add*/
+
+#setprice1{
+	position: relative;
+}
+
+.bgLink{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+	  
+ @media screen and (max-width: 768px) {
+
+h3 img.sp{
+	width:100%;
+	height:auto;
+}
+	 
+#spsetprice1 {
+    background-image: url(/pj/salon/bfsale/img/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin: 20px 0px;
+    position: relative;
+}
+
+#spsetprice1:before {
+	content: "";
+	display: block;
+    padding-top: 112.2%;
+}
+
+
+
+#spsetprice2{
+    background-image: url(/pj/salon/bfsale/img/bg_2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin:20px 0px;
+	position:relative;
+}
+
+#spsetprice2:before {
+	content: "";
+	display: block;
+    padding-top: 112.2%;
+}
+
+
+#spsetprice3{
+    background-image: url(/pj/salon/bfsale/img/bg_3_sp.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin:20px 0px;
+	position:relative;
+}
+
+#spsetprice3:before {
+	content: "";
+	display: block;
+    padding-top: 126.2%;
+}
+
+#spspprice {
+    background-image: url(/pj/salon/bfsale/img/bg_4_sp.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin:20px 0px;
+	position:relative;	
+}
+
+#spspprice a {
+    display: block;
+}
+
+#spspprice:before {
+	content: "";
+	display: block;
+    padding-top: 240.5%;
+}
+
+#spspprice ul.spspecial1{
+	position: absolute;
+	top: 38%;
+	left: 2%;
+	width: 100%;
+}
+
+#spspprice ul.spspecial2{
+	position: absolute;
+	top: 76%;
+    left: 2%;
+	width: 100%;
+}
+
+#spspprice ul li{
+	float: left;
+	margin-right: 3%;
+}
+
+.spallbtn{
+	position:absolute;
+	left: 11%;
+    width: 78%;
+    margin: auto;
+    bottom: 1.7%;
+}
+
+p{
+	font-size: smaller;
+}
+	
+/*add*/
+
+#setprice1{
+	position: relative;
+}
+
+#setprice1 .bgLink{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+  
+}

@@ -1,0 +1,173 @@
+/* ===========================================================
+    column vol15
+  ============================================================== */
+body.salon.column.vol15 .columnArea .clearfix {
+	clear: both;
+} 
+body.salon.column.vol15 .columnArea .lead {
+	font-family:"Yu Mincho", "游明朝体", YuMincho, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    line-height: 2;
+    width: 984px;
+    margin: 70px auto 0;
+    letter-spacing: 4px;
+}
+body.salon.column.vol15 .columnArea .contents01 {
+	margin: 0 auto;
+    width: 984px;
+}
+body.salon.column.vol15 .columnArea .contents01 .btn01 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+body.salon.column.vol15 .columnArea .contents01 .btn01 p{
+    font-size: 17px;
+    padding: 40px 0 20px;
+    letter-spacing: 2px;
+}
+body.salon.column.vol15 .columnArea .contents01 .detail ul li{
+    float: left;
+}	
+body.salon.column.vol15 .columnArea .contents01 .care {
+    margin: 100px auto;
+}
+body.salon.column.vol15 .columnArea .contents01 .func {
+    margin: 0 0 100px;
+}
+body.salon.column.vol15 .columnArea .contents01 ul.item_img li {
+    display: table-cell;
+}
+body.salon.column.vol15 .columnArea .contents01 ul.item_img {
+    display: block;
+	margin: 50px auto 0;
+    width: 600px;
+}
+body.salon.column.vol15 .recommendListArea {
+    width: 984px;
+    margin: 150px auto;
+}
+body.salon.column.vol15 .columnArea .recommendListArea h3 {
+	font-family:"Yu Mincho", "游明朝体", YuMincho, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+	font-size: 2.5rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    line-height: 1;
+    width: 435px;
+    margin: 70px auto 0;
+    border-bottom: solid 2px;
+}
+body.salon.column.vol15 .columnArea .recommendListArea ul li {
+	float: left;
+    padding: 0 3px 100px;
+}
+body.salon.column.vol15 .columnArea .recommendListArea ul li .pic {
+    margin-bottom: 5px;
+}
+body.salon.column.vol15 .columnArea .recommendListArea ul li p {
+    margin: 20px auto 25px;
+	text-align: center;
+    font-size: 1.1rem;
+}
+body.salon.column.vol15 .columnArea .recommendListArea h4 {
+    text-align: center;
+    font-size: 21px;
+    padding: 20px 0;
+    letter-spacing: 2px;
+    font-weight: normal;
+    line-height: 23px;
+}
+body.salon.column.vol15 .columnArea .recommendListArea h4 sup , .recommendListArea h4 span{
+    font-size: 12px;
+}
+body.salon.column.vol15 .columnArea .continue {
+    clear: both;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+	
+body.salon.column.vol15 .columnArea .lead{
+	font-family:"Yu Mincho", "游明朝体", YuMincho, serif;
+    width: 100%;
+    margin: 8% auto 0;
+	font-size: 1.4rem;
+    letter-spacing: 1px;	
+}		
+body.salon.column.vol15 .columnArea .contents01 {
+    width: 100%;
+}
+body.salon.column.vol15 .columnArea .contents01 .btn01 p {
+    font-size: 1rem;
+    letter-spacing: initial;
+    margin: 4% 0;
+}
+body.salon.column.vol15 .columnArea .contents01 .btn01 p {
+    font-size: 1rem;
+    letter-spacing: initial;
+    margin: 4% 0 2%;
+    padding: 0;
+}
+body.salon.column.vol15 .columnArea .contents01 .btn01 img{
+	width: 50%;
+}	
+body.salon.column.vol15 .columnArea .contents01 .detail {
+    margin: 13% auto;
+}
+body.salon.column.vol15 .columnArea .contents01 .detail ul li {
+    width: 50%;
+}
+body.salon.column.vol15 .columnArea .contents01 .care {
+    margin: 13% auto;
+}
+body.salon.column.vol15 .columnArea .contents01 .func {
+    margin: 0 0 10%;
+}
+body.salon.column.vol15 .columnArea .contents01 ul.item_img {
+    margin: 5% auto 0;
+    width: 88%;
+}	
+body.salon.column.vol15 .recommendListArea {
+    width: 100%;
+    margin: 10% auto;
+}	
+body.salon.column.vol15 .columnArea .recommendListArea h3{
+    width: 62%;
+	font-family:"Yu Mincho", "游明朝体", YuMincho, serif;
+	font-size: 2.2rem;
+}	
+body.salon.column.vol15 .columnArea .recommendListArea h4 {
+    font-size: 1.3rem;
+    padding: 2% 0;
+    line-height: 1.5rem;
+}	
+body.salon.column.vol15 .columnArea .recommendListArea h4 sup, .recommendListArea h4 span {
+    font-size: 1rem;
+}
+body.salon.column.vol15 .columnArea .recommendListArea ul {
+    width: 95%;
+    margin: 0 auto;
+}
+body.salon.column.vol15 .columnArea .recommendListArea ul li {
+    width: 50%;
+    padding: 0 2% 10%;
+}	
+body.salon.column.vol15 .columnArea .continue {
+    clear: both;
+}	
+	
+	
+	
+	
+	
+	
+	
+	
+}
