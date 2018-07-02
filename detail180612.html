@@ -286,6 +286,426 @@ jQuery(document).ready(function(){
     new ItemDetailPage({itemData: ItemData}).build();
 });
 </script>
+<style>
+.costomerReview {
+  text-align: left;
+  position: relative;
+}
+.costomerReview > b {
+  display: none;
+}
+.costomerReview .overAllReview {
+  text-align: left;
+  display: block;
+  vertical-align: middle;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.costomerReview .overAllReview .stars {
+  letter-spacing: 0.3em;
+}
+.costomerReview .overAllReview .stars b {
+  color: #dc2e62;
+}
+.costomerReview .overAllReview .detailBtn {
+  float: right;
+  display: block;
+  border: 1px solid #dc2e62;
+  padding: 5px 33px 5px 11px;
+  position: relative;
+  color: #E6417D;
+}
+.costomerReview .overAllReview .detailBtn.active:after {
+  background: url(/app/img/common/ico_minus_white.png) #dc2e62 no-repeat center center;
+  background-size: 12px 12px;
+}
+.costomerReview .overAllReview .detailBtn:after {
+  content: "";
+  width: 25px;
+  height: 100%;
+  display: inline-block;
+  background-color: #dc2e62;
+  background: url(/app/img/common/ico_plus_white.png) #dc2e62 no-repeat center center;
+  background-size: 12px 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.costomerReview dl dt {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.costomerReview dl dt .stars {
+  letter-spacing: 0.3em;
+}
+.costomerReview dl dt .stars b {
+  color: #dc2e62;
+}
+.costomerReview dl dd {
+  text-align: left;
+  margin: 0 0 30px 0;
+}
+.costomerReview .btnBox {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+.costomerReview .btnBox div {
+  margin: 0 5px;
+  display: inline-block;
+  text-align: center;
+}
+.costomerReview .btnBox div a {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 10px 30px;
+  display: block;
+}
+.costomerReview .btnBox div a:hover {
+  text-decoration: none;
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+.costomerReview .starsBalloon {
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: 125px;
+  border: 1px solid #dc2e62;
+  padding: 15px 20px 5px;
+  text-align: left;
+  background-color: #fff;
+}
+.costomerReview .starsBalloon a {
+  color: #E6417D;
+}
+.costomerReview .starsBalloon p {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.costomerReview .starsBalloon .stars {
+  letter-spacing: 0.3em;
+}
+.costomerReview .starsBalloon .stars b {
+  color: #E6417D;
+}
+.costomerReview .review_count {
+  float: right;
+  margin-left: 10px;
+}
+.staffVoice {
+}
+.staffVoice > b {
+}
+.staffVoice dl {
+  margin: 0;
+}
+.staffVoice dl dt {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.staffVoice dl dd {
+  text-align: left;
+  margin: 0 0 30px 0;
+}
+.staffVoice .btnBox {
+  display: inline-block;
+  text-align: center;
+}
+.staffVoice .btnBox div {
+  margin: 0 5px;
+  display: inline-block;
+  text-align: center;
+}
+.staffVoice .btnBox div a {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 10px 30px;
+  display: block;
+}
+.staffVoice .btnBox div a:hover {
+  text-decoration: none;
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+.productDetail {
+  padding: 0;
+  border: none;
+}
+.detail-parts {
+  border-top: 1px solid #dcdcdc;
+}
+.detail-parts:last-of-type {
+  border-bottom: 1px solid #dcdcdc;
+}
+.detail-parts > .wrap {
+  padding-bottom: 60px;
+}
+.detail-parts.modal {
+  margin-bottom: 30px;
+}
+.detail-parts .subText {
+  font-size: 1.4rem;
+  color: #424242;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+.detail-parts > b {
+  font-size: 20px;
+  padding: 25px 0;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  line-height: 1;
+}
+.detail-parts > b:hover {
+  text-decoration: underline;
+}
+.detail-parts > b:before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border: 0px;
+  border-top: solid 2px #9c9c9c;
+  border-right: solid 2px #9c9c9c;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  margin-top: -2px;
+  background: none;
+}
+.detail-parts > b.none-submenu:before {
+  background: none;
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  margin-top: -10px;
+}
+.detail-parts > b.active-submenu:before {
+  background: none;
+}
+.itemDetailList {
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+.review-info {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+.detail-parts {
+  border-top: 1px solid #dcdcdc;
+  margin-bottom: 0;/* margin: 0 4.6875% 0; */
+}
+.detail-parts:last-of-type {
+  border-bottom: 1px solid #dcdcdc;
+}
+.detail-parts > .wrap {
+  padding: 20px 0;
+}
+.detail-parts > b {
+  font-size: 1.4rem;
+  line-height: 1;
+  margin-bottom: 0px;
+  display: block;
+  width: 100%;
+  position: relative;
+  font-weight: 600;
+}
+.detail-parts > b:before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border: 0px;
+  border-top: solid 2px #9c9c9c;
+  border-right: solid 2px #9c9c9c;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -2px;
+  background: none;
+}
+.detail-parts > b.none-submenu:before {
+  background: none;
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  margin-top: -10px;
+}
+.detail-parts > b.active-submenu:before {
+  background: none;
+}
+.detail-parts.modal {
+  margin-bottom: 0;
+}
+.detail-parts.modal > b:before {
+  display: none;
+}
+.detail-parts.modal > b > a {
+  display: block;
+}
+.detail-parts .mainText {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  padding-top: 10px;
+}
+.detail-parts .subText {
+  font-size: 1.4rem;
+  color: #424242;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+.costomerReview {
+  text-align: left;
+}
+.costomerReview .overAllReview {
+  text-align: left;
+  display: block;
+  vertical-align: middle;
+  line-height: 1;
+  margin-bottom: 0px;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.costomerReview .overAllReview .stars {
+  letter-spacing: 0.3em;
+}
+.costomerReview .overAllReview .stars b {
+  color: #dc2e62;
+}
+.costomerReview .overAllReview .detailBtn {
+  float: right;
+  display: block;
+  border: 1px solid #dc2e62;
+  padding: 5px 33px 5px 11px;
+  position: relative;
+}
+.costomerReview .overAllReview .detailBtn:after {
+  content: "";
+  width: 25px;
+  height: 100%;
+  display: inline-block;
+  background-color: #dc2e62;
+  background: url(/app/img/common/ico_plus_white.png) #dc2e62 no-repeat center center;
+  background-size: 12px 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.costomerReview dl {
+  margin: 0;
+}
+.costomerReview dl dt {
+  margin-bottom: 5px;
+  text-align: left;
+  font-size: 1.3rem;
+}
+.costomerReview dl dt .stars {
+  letter-spacing: 0.3em;
+}
+.costomerReview dl dt .stars b {
+  color: #dc2e62;
+}
+.costomerReview dl dd {
+  text-align: left;
+  margin: 0 0 15px 0;
+  font-size: 1.2rem;
+}
+.costomerReview .btnBox {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+.costomerReview .btnBox div {
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  padding: 0 2px;
+  width: 49%;
+}
+.costomerReview .btnBox div a {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 6px 0px;
+  display: block;
+}
+.costomerReview .btnBox div a:hover {
+  text-decoration: none;
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+.costomerReview .starsBalloon {
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: 90px;
+  border: 1px solid #dc2e62;
+  padding: 10px 10px 0px;
+  text-align: left;
+  background-color: #fff;
+  font-size: 1.2rem;
+}
+.costomerReview .starsBalloon a {
+  color: #E6417D;
+  text-decoration: underline;
+}
+.costomerReview .starsBalloon p {
+  margin-bottom: 10px;
+}
+.costomerReview .starsBalloon .stars {
+  letter-spacing: 0.3em;
+}
+.costomerReview .starsBalloon .stars b {
+  color: #E6417D;
+}
+.staffVoice {
+  display: block;
+}
+.staffVoice dl {
+  margin: 0;
+}
+.staffVoice dl dt {
+  margin-bottom: 5px;
+  text-align: left;
+  font-size: 1.3rem;
+}
+.staffVoice dl dd {
+  text-align: left;
+  margin: 0 0 15px 0;
+  font-size: 1.2rem;
+}
+}
+</style>
+<script>
+jQuery(document).ready(function(){
+  var DETAIL_PARTS = $(".detail-parts");
+  var DETAIL_PARTS_WRAP = DETAIL_PARTS.next();
+  DETAIL_PARTS.find("b").click(function(){
+    if ($(this).next().is(":hidden")) {
+        $(this).removeClass("none-submenu");
+        $(this).addClass("active");
+        $(this).next().slideDown(200);
+    } else {
+        $(this).removeClass("active-submenu");
+        $(this).addClass("none-submenu");
+        $(this).next().slideUp(200);
+    } 
+  });
+});
+</script>
 </head>
 <body class="itemDetail">
 <!-- wrapper -->
@@ -395,179 +815,237 @@ CommonUtils.loadContents("/app/lbi/common/leftnavi.lbi", function(contents){jQue
 </script> 
     <!-- #main-->
     <div id="main">
-      <div class="productDetail clearfix" id="productDetail"> <b>Product Detail</b>
-        <div>
-          <p class="mainText"> 【CMで着用！】クールな「インクブルー」追加！グミワイヤーが柔らかくフィット。洗濯ラクちんなフルレースブラ。<br />
-          </p>
-          <p class="subText"> フェミニンで美しいルックスながら、ガンガン使い回せるタフさで大人気！切りっぱなしでもほつれないストレッチレース、他の洗濯ものに引っ掛からないホックを使用し、ネットいらずでカンタンお洗濯可能。グニャグニャ曲がるグミワイヤーがボディに柔らかく沿って、気持ちいいフィット感です。ほんのり底厚のモールドカップを内蔵し、ナチュラルなバストライン。<br />
-            <br />
-            ［カップ裏］<br />
-            ヌードカラーのカップはほんのり底厚のモールドパッド。バストトップをぎりぎり隠す面積小さめで、レース一枚もののようなルックスに。バストを優しく包んでナチュラルな丸みをメイク。<br />
-            <br />
-            【インポート気分の贅沢フルレース -ヌーディ(R)ブラ- 】<br />
-            憧れのインポートランジェリーのような繊細な美しさと、着けやすさを両立。作り込まない自然なバストメイクで、大人のデイリーブラとして愛用しているリピーターも多数。<br />
-            <br />
-            ●薄手カップ内蔵で透けずに安心<br />
-            透け感の高いレースをフルに使用。バスト部にヌードカラーの薄手カップ内蔵で、レース一枚ものさながらの美しさを気軽に楽しめる。<br />
-            ●足さない、盛らない、抜け感メイク<br />
-            ドロップ型のカップがバストをそっと包み込み、面で引き上げてナチュラルで形良いバストをメイク。わざとらしい盛りや寄せが苦手な方に好評。<br />
-          </p>
-          <p class="subText"> ナイロン、ポリウレタン<br />
-            中国製<br />
-          </p>
+      <div class="detail-parts-wrap">
+        <div class="productDetail detail-parts" id="productDetail"> <b>商品概要</b>
+          <div class="wrap">
+            <p class="mainText"> 【CMで着用！】クールな「インクブルー」追加！グミワイヤーが柔らかくフィット。洗濯ラクちんなフルレースブラ。<br />
+            </p>
+            <p class="subText"> フェミニンで美しいルックスながら、ガンガン使い回せるタフさで大人気！切りっぱなしでもほつれないストレッチレース、他の洗濯ものに引っ掛からないホックを使用し、ネットいらずでカンタンお洗濯可能。グニャグニャ曲がるグミワイヤーがボディに柔らかく沿って、気持ちいいフィット感です。ほんのり底厚のモールドカップを内蔵し、ナチュラルなバストライン。<br />
+              <br />
+              ［カップ裏］<br />
+              ヌードカラーのカップはほんのり底厚のモールドパッド。バストトップをぎりぎり隠す面積小さめで、レース一枚もののようなルックスに。バストを優しく包んでナチュラルな丸みをメイク。<br />
+              <br />
+              【インポート気分の贅沢フルレース -ヌーディ(R)ブラ- 】<br />
+              憧れのインポートランジェリーのような繊細な美しさと、着けやすさを両立。作り込まない自然なバストメイクで、大人のデイリーブラとして愛用しているリピーターも多数。<br />
+              <br />
+              ●薄手カップ内蔵で透けずに安心<br />
+              透け感の高いレースをフルに使用。バスト部にヌードカラーの薄手カップ内蔵で、レース一枚ものさながらの美しさを気軽に楽しめる。<br />
+              ●足さない、盛らない、抜け感メイク<br />
+              ドロップ型のカップがバストをそっと包み込み、面で引き上げてナチュラルで形良いバストをメイク。わざとらしい盛りや寄せが苦手な方に好評。<br />
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="reviewVoiceArea" id="reviewVoiceArea">
-        <ul class="tab">
-          <li class="active">Customer Review (533)</li>
-          <li >Staff Voice</li>
-        </ul>
-        <ul class="content">
-          <li class="costomerReview" id="customerReview"> <b>Customer Review (533)</b>
-            <div class="wrap">
-              <div class="overAllReview"> <span>総合評価：</span> <span class="stars"> <b>★★★★☆</b></span> <a href="javascript:void(0);" class="detailBtn" id="reviewStarDetail">詳細</a>
-                <div class="starsBalloon">
-                  <div class="inner">
-                    <p> <span class="stars"> <b>★★★★★</b></span> <span class="review_count"> <a href="javascript:void(0);" onclick="javascript:detailPageInstance.doRefineScore(5.0);">311件</a> </span> </p>
-                    <p> <span class="stars"> <b>★★★★</b>☆</span> <span class="review_count"> <a href="javascript:void(0);" onclick="javascript:detailPageInstance.doRefineScore(4.0);">143件</a> </span> </p>
-                    <p> <span class="stars"> <b>★★★</b>☆☆</span> <span class="review_count"> <a href="javascript:void(0);" onclick="javascript:detailPageInstance.doRefineScore(3.0);">42件</a> </span> </p>
-                    <p> <span class="stars"> <b>★★</b>☆☆☆</span> <span class="review_count"> <a href="javascript:void(0);" onclick="javascript:detailPageInstance.doRefineScore(2.0);">22件</a> </span> </p>
-                    <p> <span class="stars"> <b>★</b>☆☆☆☆</span> <span class="review_count"> <a href="javascript:void(0);" onclick="javascript:detailPageInstance.doRefineScore(1.0);">15件</a> </span> </p>
-                  </div>
+        <div class="productSpec detail-parts"> <b>仕様</b>
+          <div class="wrap">
+            <p class="subText"> ナイロン、ポリウレタン<br />
+              中国製<br />
+            </p>
+          </div>
+        </div>
+        <div class="all-element detail-parts"> <b>全成分・使用上の注意</b>
+          <div class="wrap">
+            <p class="subText">●全成分 <br>
+              水、グリセリン、BG、ペンチレングリコール、PVP、ハナスゲ根エキス、豆乳発酵液、ヒト遺伝子組換オリゴペプチド－１、テトラヘキシルデカン酸アスコルビル、ヒアルロン酸Na、水溶性コラーゲン、アーモンドエキス、キサンタンガムクロスポリマー、加水分解エラスチン、ハス花エキス、カルボキシメチルフェニルアミノカルボキシプロピルホスホン酸メチル、パルミチン酸レチノール、パルミトイルオリゴペプチド、カラスムギ穀粒エキス、ラネラ／ダイズタンパク発酵物、ジ酢酸ジペプチドジアミノブチロイルベンジルアミド、フラーレン、エチルヘキシルグリセリン、（アクリル酸グリセリル／アクリル酸）コポリマー、ヒドロキシエチルセルロース、アルギン酸Na、水添レシチン、水添ポリイソブテン、キサンタンガム、カルボマー、トコフェロール、PEG－8、コーン油、シリカ、（HDI／トリメチロールヘキシルラクトン）クロスポリマー、ポリソルベート80、シアノコバラミン、酸化チタン、酸化スズ、酸化鉄、酸化（Al／コバルト）、マイカ、ホウケイ酸（Ca／Al）、クエン酸、クエン酸Na、水酸化K、PG、ココイルサルコシンNa、コレステロール、炭酸水素Na、フェノキシエタノール、エタノール<br>
+              <br>
+              ●【使用上の注意】<br>
+              　・お肌に異常が生じていないかよく注意してご使用ください。<br>
+              　・化粧品がお肌に合わないとき即ち次のような場合には、使用を中止してください。そのまま化粧品類の使用を続けますと、症状を悪化させることがありますので、皮膚科専門医等にご相談されることをおすすめします。<br>
+              (1)使用中、赤味、はれ、かゆみ、刺激、色抜け（白斑等）や黒ずみ等の異常があらわれた場合。<br>
+              (2)使用したお肌に、直射日光があたって上記のような異常があらわれた場合。<br>
+              　・傷、はれもの、湿疹等異常のある部位にはご使用にならないでください。<br>
+              　・目に入ったときは、直ちに洗い流してください。<br>
+              　・使用後は必ずしっかり蓋をしめてください。<br>
+              　・乳幼児の手の届かないところに保管してください。<br>
+              　・極端に高温又は低温の場所、直射日光のあたる場所には保管しないでください。<br>
+            </p>
+          </div>
+        </div>
+        <div class="shipping-cost detail-parts"> <b>送料について</b>
+          <div class="wrap">
+            <p class="subText">◆送料 <br>
+              税込　540円/税込8,000円以上(※)のご注文で無料<br>
+              ※ステイタスやキャンペーン、クーポンなど各種割引適用後<br>
+              <br>
+              ◆お届け<br>
+              最短で翌日発送、2～3日でお届け<br>
+              ※一部地域（沖縄、離島など）は5日前後<br>
+              <br>
+              ◆配送業者<br>
+              佐川急便<br>
+              ※一部地域（沖縄、離島など）を除く<br>
+              <br>
+              ◆お届け<br>
+              日時指定<br>
+              ご注文日より5日目以降から指定可能<br>
+            </p>
+          </div>
+        </div>
+        <div class="returned detail-parts"> <b>返品・交換</b>
+          <div class="wrap">
+            <p class="subText">商品到着後、30日間返品・交換をお受けしております。<br>
+              <br>
+              ※不良品は3ヶ月以内。<br>
+              ※ストアでご購入の商品は、ご購入店舗にご相談ください。<br>
+              <br>
+              ◆返品・交換をお受けできないもの（不良品を除く）<br>
+              ・セール価格商品<br>
+              ・布タグを切った商品（紙タグは可）<br>
+              ・ご使用済み、洗濯済みの商品<br>
+              ・開封後の食品、化粧品、雑貨<br>
+              ・返品、交換の受付期間を過ぎた商品<br>
+              ・ギフト発送の商品（色、サイズ交換は可）<br>
+              <br>
+              ◆試着時のご注意<br>
+              ・パンティ、ストッキング類のご試着はできません<br>
+              ・水着のボトム部分の直履きはご遠慮ください<br>
+              ・靴は必ず室内でご試着ください<br>
+            </p>
+          </div>
+        </div>
+        <div class="costomerReview detail-parts"> <b>口コミ (533)</b>
+          <div class="wrap">
+            <div class="overAllReview"> <span>総合評価：</span> <span class="stars"> <b>★★★★☆</b></span> <a href="javascript:void(0);" class="detailBtn" id="reviewStarDetail">詳細</a>
+              <div class="starsBalloon">
+                <div class="inner">
+                  <p> <span class="stars"> <b>★★★★★</b></span> <span class="review_count"> <a href="javascript:void(0);" onclick="javascript:detailPageInstance.doRefineScore(5.0);">311件</a> </span> </p>
+                  <p> <span class="stars"> <b>★★★★</b>☆</span> <span class="review_count"> <a href="javascript:void(0);" onclick="javascript:detailPageInstance.doRefineScore(4.0);">143件</a> </span> </p>
+                  <p> <span class="stars"> <b>★★★</b>☆☆</span> <span class="review_count"> <a href="javascript:void(0);" onclick="javascript:detailPageInstance.doRefineScore(3.0);">42件</a> </span> </p>
+                  <p> <span class="stars"> <b>★★</b>☆☆☆</span> <span class="review_count"> <a href="javascript:void(0);" onclick="javascript:detailPageInstance.doRefineScore(2.0);">22件</a> </span> </p>
+                  <p> <span class="stars"> <b>★</b>☆☆☆☆</span> <span class="review_count"> <a href="javascript:void(0);" onclick="javascript:detailPageInstance.doRefineScore(1.0);">15件</a> </span> </p>
                 </div>
               </div>
-              <dl>
-                <dt> <span class="stars"> ★★★★★</span> サイズ：B65</dt>
-                <dd id="review-comment-1">
-                  <p> GOOD</p>
-                  <div class="date">GOODさん&nbsp;2018年06月10日</div>
-                </dd>
-                <dt> <span class="stars"> ★★☆☆☆</span> サイズ：F75</dt>
-                <dd id="review-comment-2">
-                  <p> 全体的には柔らかく、肩紐も食い込まずいいなぁとおもったのですが、使用しているとアンダーの部分が痛くなってきました。色違いで購入していたのでもう１つも試してみたの・・・
-                  <p style="text-align:right;"> <a href="javascript:void(0)" onclick="document.getElementById('review-comment-2').style.display='none';document.getElementById('review-comment-2-all').style.display = 'block';">続きを読む &gt;&gt;</a> </p>
-                  </p>
-                  <div class="date">あずさん&nbsp;2018年06月09日</div>
-                </dd>
-                <dd id="review-comment-2-all" style="display:none;">
-                  <p> 全体的には柔らかく、肩紐も食い込まずいいなぁとおもったのですが、使用しているとアンダーの部分が痛くなってきました。色違いで購入していたのでもう１つも試してみたのですが、やはり同じく痛くなりました。何が当たっているんだろうと原因を探ってみたら、モールドカップ（肌色のやつ）が胸の下あたりで両サイド同じようにS字になってしまい、それが当たって痛くなっているとわかりました。モールドカップ自体は柔らかいのですが、端の部分は何か加工がしてあるようで、指で触っても固いと感じるくらいだったので、それが柔らかい部分に当たりすごく不快で長時間つけられませんでした。私のお腹のせいかもしれませんが...。あと、やはり年齢的なものなのである程度はしょうがない事ですが、胸が広がったままになり形もあまりきれいにならなかったです。補正力はゼロですね。色違いで購入してしまい、期待していただけにとても残念でした。<br>
-                  </p>
-                  <div class="date">あずさん&nbsp;2018年06月09日</div>
-                </dd>
-                <dt> <span class="stars"> ★★★★★</span> サイズ：B75</dt>
-                <dd id="review-comment-3">
-                  <p> ワイヤーが苦手で、総レースが好きなので こちらはお気に入りです、心地よく締め付け感が無いのに、形が綺麗に出ます。 白をセットで買いました</p>
-                  <div class="date">No42さん&nbsp;2018年06月08日</div>
-                </dd>
-              </dl>
-              <div class="btnBox">
-                <div class="moreBtn"><a href="javascript:void(0)" onclick="CommonUtils.doPostBack(ItemDetailPage.prototype.PAGE_PARAMETERS.ACTION_READ_REVIEW, pagePolicy.formDataPool);">全ての口コミを見る</a></div>
-                <div class="reviewBtn"><a href="javascript:void(0)" onclick="CommonUtils.doPostBack(ItemDetailPage.prototype.PAGE_PARAMETERS.ACTION_ADD_REVIEW, pagePolicy.formDataPool);">口コミを書く</a></div>
-              </div>
-              <p class="review-info">※口コミ内容は、お客様個人のご意見・ご感想です。使用感には個人差があります。</p>
             </div>
-          </li>
-          <li class="staffVoice" id="staffVoice"> <b>Staff Voice</b>
-            <div class="wrap">
-              <dl>
-                <dd> ［VELL］<br />
-                  ・普段のブラサイズ：D75<br />
-                  ・試着サイズD75<br />
-                  ・盛り度　　　　★★☆☆☆<br />
-                  ・ナチュラル度　★★★★☆<br />
-                  ・楽ちん度　　　★★★★☆<br />
-                  ・補正力　　　　★★☆☆☆<br />
-                  ・カップの深さ　★★☆☆☆<br />
-                  <br />
-                  柔らかいフィット感で楽ちん！疲れない！洗濯もしましたが、5回洗っても変わらず問題なし。洗濯がラクなので着用回数が増えます。特殊なホックもすぐに慣れました。いつものサイズでぴったりです。<br />
-                  <br />
-                  ［ASH］<br />
-                  ・普段のブラサイズ：D65<br />
-                  ・試着サイズ：D65<br />
-                  ・盛り度　　　　★★☆☆☆<br />
-                  ・ナチュラル度　★★★☆☆<br />
-                  ・楽ちん度　　　★★★☆☆<br />
-                  ・補正力　　　　★★☆☆☆<br />
-                  ・カップの深さ　★★☆☆☆<br />
-                  <br />
-                  普段のサイズでちょうど。着け心地抜群です！レースは品のある色っぽさ。ホックがカチッと留まる手ごたえが心地いいです。<br />
-                  <br />
-                  ［RIO］<br />
-                  ・普段のブラサイズ：B70<br />
-                  ・試着サイズ：B70<br />
-                  ・盛り度　　　　★★☆☆☆<br />
-                  ・ナチュラル度　★★★★☆<br />
-                  ・楽ちん度　　　★★★★★<br />
-                  ・補正力　　　　★★★☆☆<br />
-                  ・カップの深さ　★★★☆☆<br />
-                  <br />
-                  盛りたい派の私ですが、自然な谷間に大満足。フィット感も軽く、デイリーにもデートにもOKなルックスです。いつものサイズで問題なし。<br />
-                  <br />
-                  ［KATY］<br />
-                  ・普段のブラサイズ：D65<br />
-                  ・試着サイズ：D65<br />
-                  ・盛り度　　　　★☆☆☆☆<br />
-                  ・ナチュラル度　★★★★★<br />
-                  ・楽ちん度　　　★★★☆☆<br />
-                  ・補正力　　　　★★☆☆☆<br />
-                  ・カップの深さ　★★☆☆☆<br />
-                  <br />
-                  手洗いはどんなにお気に入りでも正直面倒…。洗濯機にポイッとがこんなに楽とは！お泊りもくるくる丸めて詰めて形崩れなし。クローゼットの収納もコンパクトで全色揃えたい！<br />
-                  <br />
-                  ［CREA］<br />
-                  ・普段のブラサイズ：C75<br />
-                  ・柔らかめな肉質<br />
-                  ・試着サイズ：C75<br />
-                  ・盛り度　　　　★★★☆☆<br />
-                  ・ナチュラル度　★★★☆☆<br />
-                  ・楽ちん度　　　★★★★★<br />
-                  ・補正力　　　　★★☆☆☆<br />
-                  ・カップの深さ　★★☆☆☆<br />
-                  <br />
-                  インポートのような繊細さ。儚い見た目からはイメージできないほどしっかりなホールド感で、ほどよく寄せ上げします。<br />
-                  <br />
-                  ［KIKO］<br />
-                  ・普段のブラサイズ：D70<br />
-                  ・固めで締まった肉質<br />
-                  ・試着サイズ：D70<br />
-                  ・盛り度　　　　★★☆☆☆<br />
-                  ・ナチュラル度　★★★★☆<br />
-                  ・楽ちん度　　　★★★★☆<br />
-                  ・補正力　　　　★★☆☆☆<br />
-                  ・カップの深さ　★★☆☆☆<br />
-                  <br />
-                  ワイヤー入りブラとは思えないフィット感。横流れせず、自然に寄せて綺麗な谷間！ちょうどなサイズ感です。<br />
-                  <br />
-                  ［AYA］<br />
-                  ・普段のブラサイズ：E70（ブラによりE75・F70）<br />
-                  ・柔らかめな肉質<br />
-                  ・試着サイズ：F70<br />
-                  ・盛り度　　　　★★☆☆☆<br />
-                  ・ナチュラル度　★★★★☆<br />
-                  ・楽ちん度　　　★★★★☆<br />
-                  ・補正力　　　　★★☆☆☆<br />
-                  ・カップの深さ　★★☆☆☆<br />
-                  <br />
-                  ぴったりフィットして、段差なくなめらか。E75でおさまるもののバージスラインが深めに感じ、F70でちょうどです。<br />
-                  <br />
-                  ［MOCA］<br />
-                  ・普段のブラサイズ：B70<br />
-                  ・柔らかめな肉質<br />
-                  ・試着サイズ：B70<br />
-                  ・盛り度　　　　★☆☆☆☆<br />
-                  ・ナチュラル度　★★★★☆<br />
-                  ・楽ちん度　　　★★★★☆<br />
-                  ・補正力　　　　★☆☆☆☆<br />
-                  ・カップの深さ　★☆☆☆☆<br />
-                  <br />
-                  ボリュームアップはのぞめませんが、大人っぽい美しいバストにしてくれます。よく伸びるレースはソフトで浮きなくフィットします。<br />
-                </dd>
-              </dl>
+            <dl>
+              <dt> <span class="stars"> ★★★★★</span> サイズ：B65</dt>
+              <dd id="review-comment-1">
+                <p> GOOD</p>
+                <div class="date">GOODさん&nbsp;2018年06月10日</div>
+              </dd>
+              <dt> <span class="stars"> ★★☆☆☆</span> サイズ：F75</dt>
+              <dd id="review-comment-2">
+                <p> 全体的には柔らかく、肩紐も食い込まずいいなぁとおもったのですが、使用しているとアンダーの部分が痛くなってきました。色違いで購入していたのでもう１つも試してみたの・・・
+                <p style="text-align:right;"> <a href="javascript:void(0)" onclick="document.getElementById('review-comment-2').style.display='none';document.getElementById('review-comment-2-all').style.display = 'block';">続きを読む &gt;&gt;</a> </p>
+                </p>
+                <div class="date">あずさん&nbsp;2018年06月09日</div>
+              </dd>
+              <dd id="review-comment-2-all" style="display:none;">
+                <p> 全体的には柔らかく、肩紐も食い込まずいいなぁとおもったのですが、使用しているとアンダーの部分が痛くなってきました。色違いで購入していたのでもう１つも試してみたのですが、やはり同じく痛くなりました。何が当たっているんだろうと原因を探ってみたら、モールドカップ（肌色のやつ）が胸の下あたりで両サイド同じようにS字になってしまい、それが当たって痛くなっているとわかりました。モールドカップ自体は柔らかいのですが、端の部分は何か加工がしてあるようで、指で触っても固いと感じるくらいだったので、それが柔らかい部分に当たりすごく不快で長時間つけられませんでした。私のお腹のせいかもしれませんが...。あと、やはり年齢的なものなのである程度はしょうがない事ですが、胸が広がったままになり形もあまりきれいにならなかったです。補正力はゼロですね。色違いで購入してしまい、期待していただけにとても残念でした。<br>
+                </p>
+                <div class="date">あずさん&nbsp;2018年06月09日</div>
+              </dd>
+              <dt> <span class="stars"> ★★★★★</span> サイズ：B75</dt>
+              <dd id="review-comment-3">
+                <p> ワイヤーが苦手で、総レースが好きなので こちらはお気に入りです、心地よく締め付け感が無いのに、形が綺麗に出ます。 白をセットで買いました</p>
+                <div class="date">No42さん&nbsp;2018年06月08日</div>
+              </dd>
+            </dl>
+            <div class="btnBox">
+              <div class="moreBtn"><a href="javascript:void(0)" onclick="CommonUtils.doPostBack(ItemDetailPage.prototype.PAGE_PARAMETERS.ACTION_READ_REVIEW, pagePolicy.formDataPool);">全ての口コミを見る</a></div>
+              <div class="reviewBtn"><a href="javascript:void(0)" onclick="CommonUtils.doPostBack(ItemDetailPage.prototype.PAGE_PARAMETERS.ACTION_ADD_REVIEW, pagePolicy.formDataPool);">口コミを書く</a></div>
             </div>
-          </li>
-        </ul>
+            <p class="review-info">※口コミ内容は、お客様個人のご意見・ご感想です。使用感には個人差があります。</p>
+          </div>
+        </div>
+        <div class="staffVoice detail-parts"> <b>スタッフボイス</b>
+          <div class="wrap">
+            <dl>
+              <dd> ［VELL］<br />
+                ・普段のブラサイズ：D75<br />
+                ・試着サイズD75<br />
+                ・盛り度　　　　★★☆☆☆<br />
+                ・ナチュラル度　★★★★☆<br />
+                ・楽ちん度　　　★★★★☆<br />
+                ・補正力　　　　★★☆☆☆<br />
+                ・カップの深さ　★★☆☆☆<br />
+                <br />
+                柔らかいフィット感で楽ちん！疲れない！洗濯もしましたが、5回洗っても変わらず問題なし。洗濯がラクなので着用回数が増えます。特殊なホックもすぐに慣れました。いつものサイズでぴったりです。<br />
+                <br />
+                ［ASH］<br />
+                ・普段のブラサイズ：D65<br />
+                ・試着サイズ：D65<br />
+                ・盛り度　　　　★★☆☆☆<br />
+                ・ナチュラル度　★★★☆☆<br />
+                ・楽ちん度　　　★★★☆☆<br />
+                ・補正力　　　　★★☆☆☆<br />
+                ・カップの深さ　★★☆☆☆<br />
+                <br />
+                普段のサイズでちょうど。着け心地抜群です！レースは品のある色っぽさ。ホックがカチッと留まる手ごたえが心地いいです。<br />
+                <br />
+                ［RIO］<br />
+                ・普段のブラサイズ：B70<br />
+                ・試着サイズ：B70<br />
+                ・盛り度　　　　★★☆☆☆<br />
+                ・ナチュラル度　★★★★☆<br />
+                ・楽ちん度　　　★★★★★<br />
+                ・補正力　　　　★★★☆☆<br />
+                ・カップの深さ　★★★☆☆<br />
+                <br />
+                盛りたい派の私ですが、自然な谷間に大満足。フィット感も軽く、デイリーにもデートにもOKなルックスです。いつものサイズで問題なし。<br />
+                <br />
+                ［KATY］<br />
+                ・普段のブラサイズ：D65<br />
+                ・試着サイズ：D65<br />
+                ・盛り度　　　　★☆☆☆☆<br />
+                ・ナチュラル度　★★★★★<br />
+                ・楽ちん度　　　★★★☆☆<br />
+                ・補正力　　　　★★☆☆☆<br />
+                ・カップの深さ　★★☆☆☆<br />
+                <br />
+                手洗いはどんなにお気に入りでも正直面倒…。洗濯機にポイッとがこんなに楽とは！お泊りもくるくる丸めて詰めて形崩れなし。クローゼットの収納もコンパクトで全色揃えたい！<br />
+                <br />
+                ［CREA］<br />
+                ・普段のブラサイズ：C75<br />
+                ・柔らかめな肉質<br />
+                ・試着サイズ：C75<br />
+                ・盛り度　　　　★★★☆☆<br />
+                ・ナチュラル度　★★★☆☆<br />
+                ・楽ちん度　　　★★★★★<br />
+                ・補正力　　　　★★☆☆☆<br />
+                ・カップの深さ　★★☆☆☆<br />
+                <br />
+                インポートのような繊細さ。儚い見た目からはイメージできないほどしっかりなホールド感で、ほどよく寄せ上げします。<br />
+                <br />
+                ［KIKO］<br />
+                ・普段のブラサイズ：D70<br />
+                ・固めで締まった肉質<br />
+                ・試着サイズ：D70<br />
+                ・盛り度　　　　★★☆☆☆<br />
+                ・ナチュラル度　★★★★☆<br />
+                ・楽ちん度　　　★★★★☆<br />
+                ・補正力　　　　★★☆☆☆<br />
+                ・カップの深さ　★★☆☆☆<br />
+                <br />
+                ワイヤー入りブラとは思えないフィット感。横流れせず、自然に寄せて綺麗な谷間！ちょうどなサイズ感です。<br />
+                <br />
+                ［AYA］<br />
+                ・普段のブラサイズ：E70（ブラによりE75・F70）<br />
+                ・柔らかめな肉質<br />
+                ・試着サイズ：F70<br />
+                ・盛り度　　　　★★☆☆☆<br />
+                ・ナチュラル度　★★★★☆<br />
+                ・楽ちん度　　　★★★★☆<br />
+                ・補正力　　　　★★☆☆☆<br />
+                ・カップの深さ　★★☆☆☆<br />
+                <br />
+                ぴったりフィットして、段差なくなめらか。E75でおさまるもののバージスラインが深めに感じ、F70でちょうどです。<br />
+                <br />
+                ［MOCA］<br />
+                ・普段のブラサイズ：B70<br />
+                ・柔らかめな肉質<br />
+                ・試着サイズ：B70<br />
+                ・盛り度　　　　★☆☆☆☆<br />
+                ・ナチュラル度　★★★★☆<br />
+                ・楽ちん度　　　★★★★☆<br />
+                ・補正力　　　　★☆☆☆☆<br />
+                ・カップの深さ　★☆☆☆☆<br />
+                <br />
+                ボリュームアップはのぞめませんが、大人っぽい美しいバストにしてくれます。よく伸びるレースはソフトで浮きなくフィットします。<br />
+              </dd>
+            </dl>
+            <p class="review-info">※口コミ内容は、お客様個人のご意見・ご感想です。使用感には個人差があります。</p>
+          </div>
+        </div>
       </div>
-      <p class="review-info">※口コミ内容は、お客様個人のご意見・ご感想です。使用感には個人差があります。</p>
       <div id="flamingo_detail"></div>
       <div id="RtoasterRecommendItems"></div>
       <script type="text/javascript">
