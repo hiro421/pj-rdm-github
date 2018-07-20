@@ -41,9 +41,14 @@ jQuery(function() {
     });
 
     //slider
-    jQuery('#topMainVisual').flexslider({
-        animation: "slide",
-		slideshowSpeed:"4000"
+    jQuery('.topHeadBlock .slides').slick({
+      arrows: true,
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      appendArrows: $('.topHeadBlock__slide__nav'),
+      appendDots: $('.topHeadBlock__slide__nav'),
+      easing: "easeOutExpo"
     });
 
     var owl1 = jQuery(".checkedItemArea .slides");
@@ -78,6 +83,19 @@ jQuery(function() {
         slideSpeed: 300,
         paginationSpeed: 400,
         singleItem: true
+    });
+  
+    var owl4 = jQuery(".recommendArea .slides");
+    owl4.owlCarousel({
+        items: 4,
+        itemsDesktop: [1199, 4],
+        itemsDesktopSmall: [979, 4],
+        itemsTablet: [768, 3],
+        itemsTabletSmall: false,
+        itemsMobile: [479, 3],
+        navigation: true,
+        pagination: false,
+        responsiveBaseWidth: ".recommendArea .owl-carousel"
     });
 
     //gnavi	 
@@ -186,6 +204,14 @@ jQuery(function() {
     });
 
     jQuery('.style01').customSelect();
+  
+    jQuery('.popup-youtube').magnificPopup({
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false
+    });
 
 });
 
@@ -269,10 +295,12 @@ function gNavi(){
 	html += '			<div class="box">';
 	html += '				<p class="stitle"><img src="img/common/gnavi_title_special.png" alt="SPECIAL"/></p>';
 	html += '				<ul>';
-	html += '					<li><a href="/pj/salon/column/">コラム</a></li>';
-	html += '					<li><a href="/pj/salon/interview/">インタビュー</a></li>';
-	html += '					<li><a href="/pj/salon/ranking/">ランキング</a></li>';
-	html += '					<li><a href="/pj/salon/pickup/">口コミ人気アイテム</a></li>';
+  html += '					<li><a href="/pj/salon/ranking/">ランキング</a></li>';
+  html += '					<li><a href="/pj/salon/column/">すべてのアイテム</a></li>';
+  html += '					<li><a href="/pj/salon/pickup/">口コミ人気アイテム</a></li>';
+  html += '					<li><a href="/pj/salon/column/">コラム</a></li>';
+	html += '					<li><a href="http://peachjohn.scene7.com/s7viewers/html5/eCatalogViewer.html?emailurl=http://peachjohn.scene7.com/s7/emailFriend&serverUrl=http://peachjohn.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_eCatalog&contenturl=http://peachjohn.scene7.com/skins/&config2=companypreset&asset=PeachJohn/SLvol22&direction=left" target="_blank">LOOKBOOK</a></li>';
+  html += '					<li><a href="https://www.youtube.com/watch?v=Mg0pt533lXU" class="popup-youtube">MOVIE</a></li>';
 	html += '					<li><a href="/pj/salon/store/">ストア</a></li>';
 	html += '					<li><a href="/pj/salon/about/">SALON by PEACH JOHNについて</a></li>';
 	html += '				</ul>';

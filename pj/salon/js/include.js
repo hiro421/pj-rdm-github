@@ -13,12 +13,6 @@ function Header(){
 	html += '			</div>';
 	html += '		</div>';
 	html += '	</div>';
-	html += '	<div class="subArea">';
-	html += '		<ul>';
-	html += '			<li class="ranking"><a href="/pj/salon/ranking/">RANKING</a></li>';
-	html += '			<li class="allitems"><a href="/pjitem/list/?_al=sa_all&count=150&_iid=1&outlet=include&sort=6&itemSrcFlt=1">ALL ITEMS</a></li>';
-	html += '		</ul>';
-	html += '	</div>';
 	html += '</header>';
     document.write(html);}
 	
@@ -34,31 +28,34 @@ function gNavi(){
 	html += '			</div>';
 	html += '			<div class="box">';
 	html += '				<ul>';
-	html += '					<li class="catTopLogin"><a href="https://www.peachjohn.co.jp/member/login/">ログイン／会員登録</a></li>';
-	html += '					<li><a href="http://www.peachjohn.co.jp/shopping/bag/">カート</a></li>';
-	html += '					<li><a href="http://www.peachjohn.co.jp/member/wishlist/">ほしいものリスト</a></li>';
-	html += '					<li><a href="http://www.peachjohn.co.jp/pj/cliplist/">お気に入り</a></li>';
+	html += '					<li class="catTopLogin"><a href="/member/login/">ログイン／会員登録</a></li>';
+	html += '					<li><a href="/shopping/bag/">カート</a></li>';
+	html += '					<li><a href="/member/wishlist/">ほしいものリスト</a></li>';
+	html += '					<li><a href="/pj/cliplist/">お気に入り</a></li>';
 	html += '				</ul>';
 	html += '			</div>';
 	html += '			<div class="box">';
 	html += '				<p class="stitle"><img src="/pj/salon/img/common/gnavi_title_category.png" alt="CATEGORY"/></p>';
 	html += '				<ul>';
-	html += '					<li class="catTop"><a href="/pjitem/list/?_al=sa_all&outlet=include&_iid=0&sort=6&itemSrcFlt=1">全てのアイテム</a></li>';
-	html += '					<li><a href="/pjitem/list/?_al=sa_bra&outlet=include&_iid=0&sort=6&itemSrcFlt=1">ブラジャー</a></li>';
-	html += '					<li><a href="/pjitem/list/?_al=sa_lin&outlet=include&_iid=0&sort=6&itemSrcFlt=1">ランジェリー</a></li>';
-	html += '					<li><a href="/pjitem/list/?_al=sa_room&outlet=include&_iid=0&sort=6&itemSrcFlt=1">ルームウェア</a></li>';
-	html += '					<li><a href="/pjitem/list/?_al=sa_oth&outlet=include&sort=6&count=30&itemSrcFlt=1">グッズ</a></li>';
+	html += '					<li class="catTop"><a href="/pjitem/list/?_al=sa_all&sort=6&outlet=include&count=150&_iid=1&itemSrcFlt=1&_dm=2">全てのアイテム</a></li>';
+	html += '					<li><a href="/pjitem/list/?_pcg=101&_al=sa_all&sort=6&outlet=include&count=150&_iid=1&itemSrcFlt=1&_dm=2">ブラジャー</a></li>';
+  html += '					<li><a href="/pjitem/list/?_pcg=102&_al=sa_all&sort=6&outlet=include&count=150&_iid=1&itemSrcFlt=1&_dm=2">パンティ</a></li>';
+	html += '					<li><a href="/pjitem/list/?_pcg=105&_al=sa_all&sort=6&outlet=include&count=150&_iid=1&itemSrcFlt=1&_dm=2">ランジェリー</a></li>';
+  html += '					<li><a href="/pjitem/list/?_pcg=104&_al=sa_all&sort=6&outlet=include&count=150&_iid=1&itemSrcFlt=1&_dm=2">ルームウェア</a></li>';
+	html += '					<li><a href="/pjitem/list/?_pcg=304&_al=sa_all&sort=6&outlet=include&count=150&_iid=1&itemSrcFlt=1&_dm=2">アクセサリー</a></li>';
+  html += '					<li><a href="/pjitem/list/?_al=sa_all&sort=6&outlet=only&count=150&_iid=1&itemSrcFlt=1&_dm=2">セール</a></li>';
 	html += '				</ul>';
 	html += '			</div>';
 	html += '			<div class="box">';
 	html += '				<p class="stitle specialTitle"><img src="/pj/salon/img/common/gnavi_title_special.png" alt="SPECIAL"/></p>';
 	html += '				<ul>';
-	html += '					<li><a href="/pj/salon/column/">コラム</a></li>';
-	html += '					<li><a href="/pj/salon/special/tamarumaki/">インタビュー</a></li>';
 	html += '					<li><a href="/pj/salon/ranking/">ランキング</a></li>';
-	html += '					<li><a href="/pj/salon/pickup/">口コミ人気アイテム</a></li>';
-	html += '					<li><a href="/pj/salon/store/">ストア</a></li>';
-	html += '					<li><a href="/pj/salon/about/">SALON by PEACH JOHNについて</a></li>';
+  html += '					<li><a href="/pjitem/list/?_al=sl_new&count=60&_iid=1&outlet=include&sort=6">新着アイテム</a></li>';
+  html += '					<li><a href="/pj/salon/pickup/">口コミ人気アイテム</a></li>';
+  html += '					<li><a href="https://www.youtube.com/watch?v=Mg0pt533lXU" class="popup-youtube">MOVIE</a></li>';
+  html += '					<li><a href="/pj/salon/store/">ストア</a></li>';
+	html += '					<li><a href="http://peachjohn.scene7.com/s7viewers/html5/eCatalogViewer.html?emailurl=http://peachjohn.scene7.com/s7/emailFriend&serverUrl=http://peachjohn.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_eCatalog&contenturl=http://peachjohn.scene7.com/skins/&config2=companypreset&asset=PeachJohn/SLvol22&direction=left" target="_blank">最新カタログ</a></li>';
+	html += '					<li><a href="/pj/salon/about/">SALON by PEACH JOHNとは</a></li>';
 	html += '				</ul>';
 	html += '			</div>';
 	html += '			<div class="box bannerArea">';
@@ -85,6 +82,13 @@ function gNavi(){
 //footer Footer(){
 function Footer(){
     var html = "";
+  html += '<div id="footBannerArea">';
+	html += '	<ul>';
+	html += '		<li><a href="/pj/salon/about/index.html"><img src="/pj/salon/img/common/foot_bn_about.png" alt="ABOUT SALON"/></a></li>';
+	html += '		<li><a href="http://peachjohn.scene7.com/s7viewers/html5/eCatalogViewer.html?emailurl=http://peachjohn.scene7.com/s7/emailFriend&serverUrl=http://peachjohn.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_eCatalog&contenturl=http://peachjohn.scene7.com/skins/&config2=companypreset&asset=PeachJohn/SLvol22&direction=left" target="_blank"><img src="/pj/salon/img/common/foot_bn_lookbook.png" alt="DIGITAL CATALOG"/></a></li>';
+  html += '		<li><a href="/pj/salon/store/"><img src="/pj/salon/img/common/foot_bn_store.png" alt="STORE 店舗情報"/></a></li>';
+	html += '	</ul>';
+	html += '</div>';
 	html += '<div id="snsArea">';
 	html += '	<h3><img src="/pj/salon/img/common/title_sns.png" alt="SALON OFFICIAL SNS"/></h3>';
 	html += '	<ul>';
