@@ -1628,11 +1628,16 @@ body.salon #topBtnAreaSub ul {
   overflow: hidden;
   width: 985px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body.salon #topBtnAreaSub ul li {
-  float: left;
-  margin-left: 8px;
+  margin: 4px;
   position: relative;
 }
 
@@ -1660,7 +1665,7 @@ body.salon #topBtnAreaSub ul li a.over {
 }
 
 body.salon #topBtnAreaSub ul li a img:hover {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 body.salon #newsArea {
@@ -2038,6 +2043,7 @@ body.salon .recommendArea .item {
 
 body.salon .recommendArea .item a {
   text-decoration: none;
+  color: #333;
 }
 
 body.salon .recommendArea .item a:hover {
@@ -4486,9 +4492,13 @@ body.salon #items-list > ul > li .more-color, body.salon #items-list > ul > li .
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   body.salon #topBtnAreaSub ul li {
     width: 48%;
+    margin-right: 0;
     margin-left: 0;
     margin-bottom: 15px;
   }
@@ -6344,6 +6354,11 @@ body.salon .movie-btn:after {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+body.salon .itemName {
+  text-align: left;
+  margin-top: 0.3em;
 }
 
 @media screen and (max-width: 768px) {
