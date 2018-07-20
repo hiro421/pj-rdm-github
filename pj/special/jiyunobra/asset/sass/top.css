@@ -1,0 +1,629 @@
+/* ===============================================================================
+Top CSS
+=============================================================================== */
+/* mainVisual
+	======================================== */
+.mainVisual {
+  margin-bottom: 80px; }
+  .mainVisual > .inner {
+    width: 984px;
+    margin: 0 auto;
+    position: relative; }
+  .mainVisual .logo {
+    position: absolute;
+    top: 14px;
+    right: 15px; }
+  .mainVisual .text {
+    position: absolute;
+    top: 475px;
+    left: 238px; }
+  @media screen and (max-width: 768px) {
+    .mainVisual {
+      padding-top: 47px;
+      margin-bottom: 37px; }
+      .mainVisual > .inner {
+        width: auto; }
+      .mainVisual .img img {
+        width: 100%; }
+      .mainVisual .logo {
+        top: -38px;
+        left: 0;
+        right: 0;
+        width: 78px;
+        margin: 0 auto; }
+      .mainVisual .text {
+        width: 200px;
+        margin: 0 auto;
+        bottom: 11px;
+        top: auto;
+        left: 0;
+        right: 0; } }
+
+/* topBlock01
+	======================================== */
+.topBlock01 {
+  text-align: center;
+  margin-bottom: 76px; }
+  .topBlock01 > .inner {
+    width: 984px;
+    margin: 0 auto; }
+  .topBlock01 .heading {
+    margin-bottom: 80px;
+    font-style: italic; }
+    .topBlock01 .heading h2 {
+      font-size: 6.581rem;
+      line-height: 1;
+      margin-bottom: 26px;
+      font-weight: 500; }
+    .topBlock01 .heading p {
+      font-weight: bold;
+      font-size: 1.733rem;
+      line-height: 1; }
+  .topBlock01 .text p {
+    font-size: 1.333rem;
+    line-height: 2;
+    margin-bottom: 40px; }
+    .topBlock01 .text p:last-child {
+      margin-bottom: 0; }
+    .topBlock01 .text p span {
+      font-weight: bold; }
+  @media screen and (max-width: 768px) {
+    .topBlock01 {
+      margin-bottom: 55px; }
+      .topBlock01 > .inner {
+        width: 93.75%; }
+      .topBlock01 .heading {
+        margin-bottom: 28px;
+        background: url(../img/top/top_contents_arw06.png) no-repeat center bottom;
+        background-size: 12px auto;
+        padding-bottom: 40px; }
+        .topBlock01 .heading h2 {
+          font-size: 3.105rem;
+          margin-bottom: 22px; }
+        .topBlock01 .heading p {
+          font-size: 1.083rem; }
+      .topBlock01 .text p {
+        font-size: 1.083rem;
+        line-height: 2.31;
+        margin-bottom: 30px; } }
+
+/* topBlock02
+	======================================== */
+.topBlock02 {
+  margin-bottom: 103px; }
+  .topBlock02 > .inner {
+    width: 984px;
+    margin: 0 auto; }
+  .topBlock02 .box {
+    width: 882px;
+    box-sizing: border-box;
+    background: #faefe6;
+    margin: 0 auto;
+    padding: 30px 30px 65px; }
+  .topBlock02 .heading {
+    text-align: center;
+    margin: -52px 0 48px; }
+    .topBlock02 .heading p {
+      width: 172px;
+      margin: 0 auto 20px; }
+    .topBlock02 .heading h3 {
+      font-size: 2.133rem;
+      font-weight: bold;
+      line-height: 1; }
+  .topBlock02 .list {
+    padding: 0  80px 0 104px;
+    margin-bottom: 39px; }
+    .topBlock02 .list li {
+      margin-bottom: 32px;
+      font-size: 1.2rem;
+      line-height: 1.611;
+      position: relative;
+      padding-left: 46px; }
+      .topBlock02 .list li:last-child {
+        margin-bottom: 0; }
+      .topBlock02 .list li::before {
+        content: "";
+        display: block;
+        width: 29px;
+        height: 29px;
+        background: #f48e92;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .topBlock02 .list li::after {
+        content: "";
+        display: block;
+        width: 22px;
+        height: 17px;
+        background: url(../img/top/top_contents_ico01.png) no-repeat 0 0;
+        background-size: 100% auto;
+        position: absolute;
+        top: 6px;
+        left: 3px; }
+  .topBlock02 .text {
+    text-align: center;
+    font-size: 1.689rem;
+    font-weight: bold; }
+  @media screen and (max-width: 768px) {
+    .topBlock02 {
+      margin-bottom: 57px; }
+      .topBlock02 > .inner {
+        width: 93.75%; }
+      .topBlock02 .box {
+        width: auto;
+        padding: 30px 0; }
+      .topBlock02 .heading {
+        margin: -45px 0 31px; }
+        .topBlock02 .heading p {
+          width: 108px;
+          margin: 0 auto 12px; }
+        .topBlock02 .heading h3 {
+          font-size: 1.667rem; }
+      .topBlock02 .list {
+        padding: 0 10px 0 18px;
+        margin-bottom: 23px; }
+        .topBlock02 .list li {
+          margin-bottom: 21px;
+          font-size: 1rem;
+          line-height: 1.36;
+          padding-left: 28px; }
+          .topBlock02 .list li::before {
+            width: 18px;
+            height: 18px; }
+          .topBlock02 .list li::after {
+            width: 14px;
+            height: 10px;
+            top: 4px;
+            left: 2px; }
+      .topBlock02 .text {
+        font-size: 1.32rem;
+        line-height: 1.45; } }
+
+/* topBlock03
+	======================================== */
+.topBlock03 {
+  background: #d6d2e0;
+  padding: 19px 0 16px;
+  height: 400px;
+  box-sizing: border-box;
+  min-width: 984px; }
+  .topBlock03 > .inner {
+    width: 984px;
+    margin: 0 auto; }
+  .topBlock03 .cover01 {
+    margin-bottom: 5px; }
+    .topBlock03 .cover01 .number {
+      float: left;
+      width: 108px;
+      margin: -43px 0 0 15px; }
+    .topBlock03 .cover01 .cover02 {
+      float: left;
+      width: 861px; }
+    .topBlock03 .cover01 .heading {
+      float: left;
+      margin: 0 0 0 17px; }
+      .topBlock03 .cover01 .heading h3 {
+        font-size: 2.159rem;
+        font-weight: bold;
+        color: #1b7f96; }
+        .topBlock03 .cover01 .heading h3 span {
+          font-size: 1.6rem;
+          margin-left: 5px; }
+    .topBlock03 .cover01 .btn {
+      float: right; }
+      .topBlock03 .cover01 .btn a {
+        width: 249px;
+        box-sizing: border-box;
+        padding: 9px 10px 9px 46px;
+        border-radius: 30px;
+        display: block;
+        border: solid 2px #1b7f96;
+        font-size: 1.173rem;
+        font-weight: bold;
+        color: #1b7f96;
+        background: url(../img/top/top_contents_arw01.png) no-repeat 19px 17px;
+        transition-property: opacity;
+        transition-duration: .2s; }
+        .topBlock03 .cover01 .btn a:hover {
+          opacity: .6;
+          text-decoration: none; }
+  .topBlock03 .img {
+    text-align: center; }
+  @media screen and (max-width: 768px) {
+    .topBlock03 {
+      padding: 10px 0 12px;
+      height: auto;
+      box-sizing: border-box;
+      min-width: auto; }
+      .topBlock03 > .inner {
+        width: 93.75%; }
+      .topBlock03 .cover01 {
+        margin-bottom: 5px; }
+        .topBlock03 .cover01 .number {
+          float: left;
+          width: 54px;
+          margin: 0 0 0 10px; }
+        .topBlock03 .cover01 .cover02 {
+          float: none;
+          width: 246px;
+          margin-left: 64px; }
+        .topBlock03 .cover01 .heading {
+          float: none;
+          display: inline-block;
+          margin: 0 0 0 12px; }
+          .topBlock03 .cover01 .heading h3 {
+            font-size: 1.345rem; }
+            .topBlock03 .cover01 .heading h3 span {
+              display: none; }
+        .topBlock03 .cover01 .text {
+          display: inline-block;
+          vertical-align: top;
+          font-size: 1rem;
+          font-weight: bold;
+          color: #1b7f96;
+          margin: 3px 0 0 12px; }
+        .topBlock03 .cover01 .btn {
+          display: inline-block;
+          vertical-align: top;
+          float: none;
+          margin: 3px 0 0 15px; }
+          .topBlock03 .cover01 .btn a {
+            width: 125px;
+            box-sizing: border-box;
+            padding: 4px 5px 4px 23px;
+            border-radius: 15px;
+            border: solid 1px #1b7f96;
+            font-size: 0.733rem;
+            background: url(../img/top/top_contents_arw01.png) no-repeat 10px 9px;
+            background-size: 10px auto; }
+      .topBlock03 .img {
+        width: 97%;
+        margin: 0 auto; } }
+
+/* topBlock04
+	======================================== */
+.topBlock04 {
+  background: url(../img/top/top_contents_bg01.jpg) no-repeat center top;
+  background-size: cover;
+  padding: 30px 0 40px;
+  height: 400px;
+  box-sizing: border-box;
+  min-width: 984px; }
+  .topBlock04 > .inner {
+    width: 984px;
+    margin: 0 auto;
+    text-align: center; }
+  .topBlock04 .number {
+    margin-bottom: 22px; }
+  .topBlock04 .heading {
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold; }
+    .topBlock04 .heading p {
+      font-size: 1.233rem;
+      margin-bottom: 2px; }
+    .topBlock04 .heading h3 {
+      font-size: 2.689rem;
+      line-height: 1.4; }
+      .topBlock04 .heading h3 span {
+        font-size: 3.467rem;
+        line-height: 1.22; }
+  .topBlock04 .btn {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: top; }
+    .topBlock04 .btn a {
+      width: 273px;
+      box-sizing: border-box;
+      padding: 9px 10px 9px 46px;
+      border-radius: 30px;
+      display: block;
+      border: solid 2px #fff;
+      font-size: 1.173rem;
+      font-weight: bold;
+      color: #fff;
+      background: url(../img/top/top_contents_arw02.png) no-repeat 19px 17px;
+      transition-property: opacity;
+      transition-duration: .2s; }
+      .topBlock04 .btn a:hover {
+        opacity: .6;
+        text-decoration: none; }
+  @media screen and (max-width: 768px) {
+    .topBlock04 {
+      background: url(../img/top/top_contents_bg01_sp.jpg) no-repeat center top;
+      background-size: cover;
+      padding: 62.5% 0 0 0;
+      height: auto;
+      position: relative;
+      min-width: auto; }
+      .topBlock04 > .inner {
+        padding-bottom: 6px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        width: auto; }
+      .topBlock04 .number {
+        width: 61px;
+        margin: 0 auto 10px; }
+      .topBlock04 .heading {
+        margin-bottom: 10px; }
+        .topBlock04 .heading p {
+          font-size: 0.77rem;
+          margin-bottom: 2px; }
+        .topBlock04 .heading h3 {
+          font-size: 1.68rem; }
+          .topBlock04 .heading h3 span {
+            font-size: 2.167rem; }
+      .topBlock04 .btn {
+        display: inline-block;
+        font-size: 0;
+        vertical-align: top; }
+        .topBlock04 .btn a {
+          width: 136px;
+          padding: 4px 5px 4px 23px;
+          border-radius: 15px;
+          border: solid 1px #fff;
+          font-size: 0.733rem;
+          background: url(../img/top/top_contents_arw02.png) no-repeat 10px 9px;
+          background-size: 10px auto;
+          color: #fff; } }
+
+/* topBlock05
+	======================================== */
+.topBlock05 {
+  background: #e7e4eb url(../img/top/top_contents_bg02.jpg) no-repeat center top;
+  padding: 30px 0 40px;
+  height: 400px;
+  box-sizing: border-box;
+  min-width: 984px; }
+  .topBlock05 > .inner {
+    width: 984px;
+    margin: 0 auto;
+    text-align: right; }
+  .topBlock05 .number {
+    margin: 0 42px 29px 0; }
+  .topBlock05 .heading {
+    margin: 0 40px 21px 0;
+    font-weight: bold; }
+    .topBlock05 .heading h3 {
+      font-size: 3.039rem;
+      line-height: 1; }
+      .topBlock05 .heading h3 span {
+        display: block;
+        margin-top: 18px;
+        font-size: 4.122rem;
+        line-height: 1; }
+  .topBlock05 .btn {
+    margin-right: 45px;
+    display: inline-block;
+    font-size: 0;
+    vertical-align: top; }
+    .topBlock05 .btn a {
+      width: 273px;
+      box-sizing: border-box;
+      padding: 9px 10px 9px 46px;
+      border-radius: 30px;
+      display: block;
+      border: solid 2px #000;
+      font-size: 1.173rem;
+      font-weight: bold;
+      color: #000;
+      background: url(../img/top/top_contents_arw03.png) no-repeat 19px 17px;
+      transition-property: opacity;
+      transition-duration: .2s; }
+      .topBlock05 .btn a:hover {
+        opacity: .6;
+        text-decoration: none; }
+  @media screen and (max-width: 768px) {
+    .topBlock05 {
+      background: url(../img/top/top_contents_bg02_sp.jpg) no-repeat center top;
+      background-size: cover;
+      padding: 62.5% 0 0 0;
+      height: auto;
+      position: relative;
+      min-width: auto; }
+      .topBlock05 > .inner {
+        padding-bottom: 6px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); }
+      .topBlock05 .number {
+        width: 61px;
+        margin: 0 3.125% 15px auto; }
+      .topBlock05 .heading {
+        margin: 0 3.125%  11px 0;
+        font-weight: bold; }
+        .topBlock05 .heading h3 {
+          font-size: 1.667rem; }
+          .topBlock05 .heading h3 span {
+            margin-top: 8px;
+            font-size: 2.069rem; }
+      .topBlock05 .btn {
+        margin-right: 3.125%; }
+        .topBlock05 .btn a {
+          width: 141px;
+          padding: 4px 5px 4px 23px;
+          border-radius: 15px;
+          border: solid 1px #000;
+          font-size: 0.733rem;
+          background: url(../img/top/top_contents_arw03.png) no-repeat 10px 9px;
+          background-size: 10px auto;
+          color: #000; } }
+
+/* topBlock06
+	======================================== */
+.topBlock06 {
+  background: #a4abac url(../img/top/top_contents_bg03.jpg) no-repeat center top;
+  padding: 30px 0 40px;
+  height: 400px;
+  box-sizing: border-box;
+  min-width: 984px; }
+  .topBlock06 > .inner {
+    width: 984px;
+    margin: 0 auto; }
+  .topBlock06 .heading {
+    margin: 115px 0 0 33px;
+    font-weight: bold;
+    color: #fff; }
+    .topBlock06 .heading h3 {
+      font-size: 1.829rem;
+      line-height: 1; }
+      .topBlock06 .heading h3 span {
+        display: block;
+        margin-top: 15px;
+        font-size: 3.955rem;
+        line-height: 1; }
+  @media screen and (max-width: 768px) {
+    .topBlock06 {
+      background: url(../img/top/top_contents_bg03_sp.jpg) no-repeat center top;
+      background-size: cover;
+      padding: 62.5% 0 0 0;
+      height: auto;
+      position: relative;
+      min-width: auto; }
+      .topBlock06 > .inner {
+        padding-top: 4px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); }
+      .topBlock06 .heading {
+        margin: 0 0 0 3.125%; }
+        .topBlock06 .heading h3 {
+          font-size: 0.867rem; }
+          .topBlock06 .heading h3 span {
+            margin-top: 5px;
+            font-size: 1.875rem; } }
+
+/* topBlock07
+	======================================== */
+.topBlock07 {
+  background: #ffebeb url(../img/top/top_contents_bg04.jpg) no-repeat center bottom;
+  background-size: cover;
+  padding: 55px 0 53px;
+  min-width: 984px; }
+  .topBlock07 > .inner {
+    width: 984px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center; }
+  .topBlock07 .logo {
+    position: absolute;
+    top: 2px;
+    right: 39px; }
+  .topBlock07 .text {
+    padding: 0 160px;
+    font-size: 1.173rem;
+    font-weight: bold;
+    color: #f48e92;
+    margin-bottom: 35px; }
+  .topBlock07 .heading {
+    padding: 0 160px;
+    margin-bottom: 32px; }
+    .topBlock07 .heading h3 {
+      font-size: 1.6rem;
+      line-height: 1;
+      font-weight: bold;
+      margin-bottom: 30px; }
+      .topBlock07 .heading h3 span {
+        display: block;
+        margin-top: 14px;
+        font-size: 2.4rem;
+        line-height: 1; }
+    .topBlock07 .heading p {
+      width: 312px;
+      margin: 0 auto; }
+  .topBlock07 .box {
+    width: 905px;
+    box-sizing: border-box;
+    margin: 0 auto 45px;
+    background: #fff;
+    padding: 56px 45px 0;
+    height: 559px;
+    overflow-y: auto;
+    top: 0;
+    position: relative; }
+  .topBlock07 .voiceList {
+    text-align: left; }
+    .topBlock07 .voiceList li {
+      margin-bottom: 30px;
+      font-size: 1.2rem;
+      line-height: 1.56;
+      opacity: 0;
+      transition-property: opacity;
+      transition-duration: .8s; }
+      .topBlock07 .voiceList li.active {
+        opacity: 1; }
+      .topBlock07 .voiceList li:last-child {
+        margin-bottom: 0; }
+      .topBlock07 .voiceList li .name {
+        text-align: right; }
+  .topBlock07 .btn a {
+    display: inline-block;
+    background: url(../img/common/common_contents_arw02.png) no-repeat left 9px;
+    transition-property: opacity;
+    transition-duration: .2s; }
+    .topBlock07 .btn a:hover {
+      opacity: .6;
+      text-decoration: none; }
+    .topBlock07 .btn a span {
+      background: url(../img/common/common_contents_arw01.png) no-repeat 10px center;
+      font-weight: bold;
+      color: #000;
+      font-size: 1.233rem;
+      line-height: 1.73;
+      padding-left: 57px;
+      min-height: 32px;
+      display: block; }
+  @media screen and (max-width: 768px) {
+    .topBlock07 {
+      background: #ffebeb url(../img/top/top_contents_bg04_sp.jpg) no-repeat center bottom;
+      background-size: 100% auto;
+      padding: 32px 0 35px;
+      min-width: auto; }
+      .topBlock07 > .inner {
+        width: 93.75%; }
+      .topBlock07 .logo {
+        display: none; }
+      .topBlock07 .text {
+        padding: 0;
+        font-size: 0.917rem;
+        margin-bottom: 22px; }
+      .topBlock07 .heading {
+        padding: 0;
+        margin-bottom: 15px; }
+        .topBlock07 .heading h3 {
+          font-size: 1rem;
+          margin-bottom: 17px; }
+          .topBlock07 .heading h3 span {
+            margin-top: 9px;
+            font-size: 1.417rem; }
+        .topBlock07 .heading p {
+          width: 195px;
+          margin: 0 auto; }
+      .topBlock07 .box {
+        width: 91.16%;
+        margin: 0 auto 21px;
+        background: #fff;
+        padding: 26px 17px 2px 22px;
+        height: 450px;
+        overflow-y: auto; }
+      .topBlock07 .voiceList {
+        text-align: left; }
+        .topBlock07 .voiceList li {
+          margin-bottom: 25px;
+          font-size: 0.917rem;
+          line-height: 1.64; }
+      .topBlock07 .btn a {
+        display: inline-block;
+        background: url(../img/common/common_contents_arw02.png) no-repeat left 4px;
+        background-size: 16px auto; }
+        .topBlock07 .btn a span {
+          background: url(../img/common/common_contents_arw01.png) no-repeat 6px center;
+          background-size: 16px auto;
+          font-size: 0.77rem;
+          line-height: 1.73;
+          padding-left: 29px;
+          min-height: 16px; } }
