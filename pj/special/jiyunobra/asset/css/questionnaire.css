@@ -82,8 +82,7 @@ Questionnaire CSS
 .questionnaireBlock02 .heading p {
   display: block;
   width: 128px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0 auto 13px;
   padding: 8px 5px 6px;
   font-size: 1.2rem;
@@ -110,10 +109,8 @@ Questionnaire CSS
   height: 100%;
   background: url(../img/questionnaire/questionnaire_contents_img01.jpg) no-repeat center center;
   background-size: cover;
-  -webkit-transition-property: opacity;
   transition-property: opacity;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
+  transition-duration: .2s;
 }
 
 .questionnaireBlock02 .imageLeft .img:hover {
@@ -130,8 +127,7 @@ Questionnaire CSS
   word-break: break-all;
   padding: 46px 35px 36px 50px;
   min-height: 328px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .questionnaireBlock02 .imageLeft .inner .text01 {
@@ -166,10 +162,8 @@ Questionnaire CSS
   height: 100%;
   background: url(../img/questionnaire/questionnaire_contents_img02.jpg) no-repeat center center;
   background-size: cover;
-  -webkit-transition-property: opacity;
   transition-property: opacity;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
+  transition-duration: .2s;
 }
 
 .questionnaireBlock02 .imageRight .img:hover {
@@ -186,8 +180,7 @@ Questionnaire CSS
   word-break: break-all;
   padding: 46px 35px 36px 50px;
   min-height: 328px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .questionnaireBlock02 .imageRight .inner .text01 {
@@ -322,8 +315,7 @@ Questionnaire CSS
 .questionnaireBlock03 .heading p:first-child {
   display: block;
   width: 128px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0 auto 13px;
   padding: 8px 5px 6px;
   font-size: 1.2rem;
@@ -352,8 +344,7 @@ Questionnaire CSS
 
 .questionnaireBlock03 .list > li {
   width: 424px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   float: left;
   border: solid 4px #e4edf2;
   border-radius: 20px;
@@ -435,8 +426,7 @@ Questionnaire CSS
   margin: auto;
   width: 175px;
   height: 175px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-top: 45px;
   background: url(../img/questionnaire/questionnaire_contents_ico03.png) no-repeat center center;
   background-size: 104px auto;
@@ -482,8 +472,7 @@ Questionnaire CSS
   margin: auto;
   width: 175px;
   height: 175px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-top: 45px;
   background: url(../img/questionnaire/questionnaire_contents_ico03.png) no-repeat center center;
   background-size: 104px auto;
@@ -529,8 +518,7 @@ Questionnaire CSS
   position: absolute;
   width: 270px;
   height: 90px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-top: 10px;
   top: 0;
   left: 0;
@@ -553,8 +541,7 @@ Questionnaire CSS
   position: absolute;
   width: 90px;
   height: 90px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-top: 22px;
   top: 0;
   right: 0;
@@ -588,8 +575,7 @@ Questionnaire CSS
   position: absolute;
   width: 220px;
   height: 90px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-top: 10px;
   top: 0;
   left: 0;
@@ -612,8 +598,7 @@ Questionnaire CSS
   position: absolute;
   width: 140px;
   height: 90px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-top: 22px;
   top: 0;
   right: 0;
@@ -653,8 +638,7 @@ Questionnaire CSS
   position: absolute;
   width: 362px;
   height: 92px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 22px 0 0 16px;
   top: 0;
   left: 0;
@@ -683,8 +667,7 @@ Questionnaire CSS
   position: absolute;
   width: 362px;
   height: 92px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 31px 0 0 16px;
   top: 0;
   left: 0;
@@ -725,8 +708,7 @@ Questionnaire CSS
   position: absolute;
   width: 362px;
   height: 92px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 22px 0 0 16px;
   top: 0;
   left: 0;
@@ -755,8 +737,7 @@ Questionnaire CSS
   position: absolute;
   width: 362px;
   height: 92px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 31px 0 0 16px;
   top: 0;
   left: 0;
@@ -797,8 +778,7 @@ Questionnaire CSS
   position: absolute;
   width: 362px;
   height: 52px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 13px 0 0 17px;
   top: 0;
   left: 0;
@@ -833,8 +813,7 @@ Questionnaire CSS
   position: absolute;
   width: 362px;
   height: 52px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 13px 0 0 17px;
   top: 0;
   left: 0;
@@ -869,8 +848,7 @@ Questionnaire CSS
   position: absolute;
   width: 362px;
   height: 52px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 13px 0 0 17px;
   top: 0;
   left: 0;
@@ -919,8 +897,7 @@ Questionnaire CSS
   position: absolute;
   width: 362px;
   height: 52px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 13px 0 0 17px;
   top: 0;
   left: 0;
@@ -955,8 +932,7 @@ Questionnaire CSS
   position: absolute;
   width: 362px;
   height: 52px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 13px 0 0 17px;
   top: 0;
   left: 0;
@@ -991,8 +967,7 @@ Questionnaire CSS
   position: absolute;
   width: 362px;
   height: 52px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 13px 0 0 17px;
   top: 0;
   left: 0;
@@ -1025,8 +1000,7 @@ Questionnaire CSS
   position: absolute;
   width: 362px;
   height: 52px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 5px 0 0 17px;
   top: 0;
   left: 0;
@@ -1086,8 +1060,7 @@ Questionnaire CSS
   margin: auto;
   width: 175px;
   height: 175px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-top: 45px;
   background: url(../img/questionnaire/questionnaire_contents_ico03.png) no-repeat center center;
   background-size: 104px auto;
@@ -1234,8 +1207,7 @@ Questionnaire CSS
     font-size: 0.917rem;
     line-height: 1.64;
     width: 245px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding: 13px 5px 10px;
     border-radius: 4px;
     text-align: center;
@@ -1343,8 +1315,7 @@ Questionnaire CSS
   .questionnaireBlock03 .list > li .question03 .graph01 .no {
     width: 61px;
     height: 62px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding-top: 14px;
   }
   .questionnaireBlock03 .list > li .question03 .graph01 .no p:first-child {
@@ -1378,8 +1349,7 @@ Questionnaire CSS
   .questionnaireBlock03 .list > li .question03 .graph02 .no {
     width: 94px;
     height: 62px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding-top: 14px;
   }
   .questionnaireBlock03 .list > li .question03 .graph02 .no p:first-child {
@@ -1769,8 +1739,7 @@ Questionnaire CSS
 
 .questionnaireBlock04 .bnr {
   min-height: 303px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: url(../img/questionnaire/questionnaire_contents_img03.jpg) no-repeat 0 0;
   background-size: cover;
   padding: 70px 69px 30px 69px;
@@ -1798,8 +1767,7 @@ Questionnaire CSS
 
 .questionnaireBlock04 .bnr .btn a {
   width: 269px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 8px 14px 8px 42px;
   border-radius: 22px;
   display: block;
@@ -1809,10 +1777,8 @@ Questionnaire CSS
   color: #000;
   background: url(../img/common/common_contents_arw02.png) no-repeat 19px 17px;
   background-size: 21px auto;
-  -webkit-transition-property: opacity;
   transition-property: opacity;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
+  transition-duration: .2s;
 }
 
 .questionnaireBlock04 .bnr .btn a:hover {
@@ -1859,8 +1825,7 @@ Questionnaire CSS
     width: 100%;
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     right: 3.5%;
   }
   .questionnaireBlock04 .bnr .text03 {
@@ -1873,8 +1838,7 @@ Questionnaire CSS
   }
   .questionnaireBlock04 .bnr .btn a {
     width: 125px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding: 4px 6px 4px 15px;
     display: block;
     border: solid 1px #000;
@@ -1892,10 +1856,8 @@ Questionnaire CSS
 }
 
 .slide .donuts_wrap {
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform-origin: center;
+  transform: rotate(-90deg);
 }
 
 .slide .donuts .draw {
@@ -1907,8 +1869,7 @@ Questionnaire CSS
   display: block;
   width: 362px;
   height: 92px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid #cfcfcf;
 }
 
@@ -1947,7 +1908,6 @@ Questionnaire CSS
 }
 
 .slide.showed .rate:before, .slide.showed .rate:after {
-  -webkit-transition: width 1.5s;
   transition: width 1.5s;
 }
 

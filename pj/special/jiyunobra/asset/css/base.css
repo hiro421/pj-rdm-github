@@ -203,11 +203,15 @@ HeaderArea
 }
 
 #headerArea #grobalNav .list li:nth-child(2) p:nth-child(1) {
-  font-size: 1.067rem;
   margin-bottom: 11px;
 }
 
 #headerArea #grobalNav .list li:nth-child(2) p:nth-child(2) {
+  font-size: 1.067rem;
+  margin-bottom: 11px;
+}
+
+#headerArea #grobalNav .list li:nth-child(2) p:nth-child(3) {
   margin-bottom: 8px;
 }
 
@@ -218,6 +222,10 @@ HeaderArea
 }
 
 #headerArea #grobalNav .list li:nth-child(3) p:nth-child(1) {
+  margin-bottom: 11px;
+}
+
+#headerArea #grobalNav .list li:nth-child(3) p:nth-child(2) {
   font-size: 1.067rem;
   margin-bottom: 10px;
 }
@@ -226,11 +234,19 @@ HeaderArea
   margin-bottom: 45px;
 }
 
+#headerArea #grobalNav .list li:nth-child(4) p:nth-child(1) {
+  margin-bottom: 11px;
+}
+
 #headerArea #grobalNav .list li:nth-child(5) {
   padding-bottom: 0;
 }
 
 #headerArea #grobalNav .list li:nth-child(5) p:nth-child(1) {
+  margin-bottom: 11px;
+}
+
+#headerArea #grobalNav .list li:nth-child(5) p:nth-child(2) {
   font-size: 1.067rem;
   margin-bottom: 8px;
 }

@@ -14,6 +14,7 @@
 
 <!-- local css -->
 <link rel="stylesheet" href="asset/css/top.css">
+<link rel="stylesheet" href="asset/css/perfect-scrollbar.css">
 <!-- / local css -->
 
 </head>
@@ -35,6 +36,7 @@
 			</li>
 			<li>
 				<a href="#">
+          <p>01</p>
 					<p>隠れノンワイヤー女子マンガ by 峰なゆか</p>
 					<p>これって私のこと!?</p>
 					<p>隠れノンワイヤー女子!!</p>
@@ -42,16 +44,19 @@
 			</li>
 			<li>
 				<a href="./questionnaire/index.html">
+          <p>02</p>
 					<p>隠れノンワイヤー女子をリアル調査!</p>
 					<p>もしかして、あなたも？？</p>
 				</a>
 			</li>
 			<li>
 				<a href="./details/index.html">
+          <p>03</p>
 					<p>自由のブラのここがすごい！</p>
 				</a>
 			</li>
 			<li>
+        <p>04</p>
 				<p>中村アン meets 自由のブラ</p>
 				<p>COMINGSOON</p>
 			</li>
@@ -96,13 +101,13 @@
 							<h3>隠れノンワイヤー女子</h3>
 						</div>
 						<ul class="list">
-							<li>週に３日以上ノンワイヤーブラを着けている</li>
-							<li>ファッションへの意識は高いのに、<br class="spOnly">下着は後回しにしがち</li>
-							<li>ブラトップやノンワイヤー以外の下着を<br class="spOnly">１年以上購入していない</li>
-							<li>デートのときや異性と会う時だけ、<br class="spOnly">仕方なくワイヤーブラを着ける</li>
-							<li>最近オフィシャルなシーンでも<br class="spOnly">ノンワイヤーブラを着けるようになった</li>
-							<li>洋服を着た時の胸のシルエットを<br class="spOnly">意識したことがない</li>
-							<li>仕事や子育てなど忙しさに比例して、<br class="spOnly">ノンワイヤー着用率が増える</li>
+							<li class="fade01">週に３日以上ノンワイヤーブラを着けている</li>
+							<li class="fade01">ファッションへの意識は高いのに、<br class="spOnly">下着は後回しにしがち</li>
+							<li class="fade01">ブラトップやノンワイヤー以外の下着を<br class="spOnly">１年以上購入していない</li>
+							<li class="fade01">デートのときや異性と会う時だけ、<br class="spOnly">仕方なくワイヤーブラを着ける</li>
+							<li class="fade01">最近オフィシャルなシーンでも<br class="spOnly">ノンワイヤーブラを着けるようになった</li>
+							<li class="fade01">洋服を着た時の胸のシルエットを<br class="spOnly">意識したことがない</li>
+							<li class="fade01">仕事や子育てなど忙しさに比例して、<br class="spOnly">ノンワイヤー着用率が増える</li>
 						</ul>
 						<p class="text">３つ以上あてはまるあなたは<br class="spOnly">「隠れノンワイヤー女子」です！</p>
 					</div>
@@ -240,7 +245,7 @@
 <!-- js -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="asset/js/common.js"></script>
-<script src="asset/js/scrollreveal.min.js"></script>
+<script src="asset/js/scrollreveal4.min.js"></script>
 <script>
 	window.sr = ScrollReveal({ reset: false ,mobile: true, viewFactor:0.2});
 	sr.reveal( '.fade01', { origin: 'bottom' , distance: '0', duration: 2000 , scale: 1, delay :100 ,opacity: 0,});
@@ -248,10 +253,20 @@
 	sr.reveal( '.fade03', { origin: 'bottom' , distance: '0', duration: 2000 , scale: 1, delay :500 ,opacity: 0,});
 	sr.reveal( '.fade04', { origin: 'bottom' , distance: '0', duration: 2000 , scale: 1, delay :800 ,opacity: 0,});
 	sr.reveal( '.slide', { origin: 'bottom' , distance: '20%', duration: 1500 , scale: 1, delay :100 ,opacity: 0,});
+  sr.reveal('.fade01', {
+        origin: 'bottom' , distance: '0', duration: 2000 , scale: 1, delay :100 ,opacity: 0,
+        beforeReveal: function (el) {
+            var _this = $(el);
+            setTimeout(function(){
+                el.classList.add("showed");
+            },500);
+        }
+    });
 </script>
 <!-- / js -->
 
 <!-- local js -->
+<script src="asset/js/perfect-scrollbar.min.js"></script>
 <script src="asset/js/top.js"></script>
 <!-- / local js -->
 
