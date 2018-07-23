@@ -143,6 +143,9 @@ HeaderArea
 		}
 		.list{
 			margin-left:3px;
+			height: 100%;
+       overflow: auto;
+       -webkit-overflow-scrolling: touch;
 			li{
 				padding:2px 0 1px 18px;
 				line-height:1;
@@ -219,6 +222,9 @@ HeaderArea
 				}
 			}
 		}
+		.logo{
+				margin-top:50px;
+			}
 	}
 	@media screen and (max-width:$spViewport){
 		padding:12px 0 13px;
