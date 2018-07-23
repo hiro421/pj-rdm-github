@@ -176,15 +176,24 @@ Top CSS
   margin-bottom: 0;
 }
 
+.topBlock02 .list li.showed::before {
+  background: #f48e92;
+}
+
+.topBlock02 .list li.showed::after {
+  opacity: 1;
+}
+
 .topBlock02 .list li::before {
   content: "";
   display: block;
   width: 29px;
   height: 29px;
-  background: #f48e92;
+  background: #ddd;
   position: absolute;
   top: 0;
   left: 0;
+  transition: all 0.5s 0.3s;
 }
 
 .topBlock02 .list li::after {
@@ -197,6 +206,8 @@ Top CSS
   position: absolute;
   top: 6px;
   left: 3px;
+  opacity: 0;
+  transition: all 0.5s 0.8s;
 }
 
 .topBlock02 .text {

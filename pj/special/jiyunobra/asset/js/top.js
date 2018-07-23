@@ -16,3 +16,5 @@ $(function(){
 	});
 	$('.fadeVoice').scroll();
 });
+
+var ps = new PerfectScrollbar('.topBlock07 .box');

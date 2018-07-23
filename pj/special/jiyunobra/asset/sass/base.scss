@@ -143,6 +143,9 @@ HeaderArea
 		}
 		.list{
 			margin-left:3px;
+			height: 100%;
+       overflow: auto;
+       -webkit-overflow-scrolling: touch;
 			li{
 				padding:2px 0 1px 18px;
 				line-height:1;
@@ -171,11 +174,14 @@ HeaderArea
 						color:#f48e92;
 					}
 					p{
-						&:nth-child(1){
-							font-size:round((16/$fontPC)*1000)/1000+rem;
+  					&:nth-child(1){
 							margin-bottom:11px;
 						}
 						&:nth-child(2){
+							font-size:round((16/$fontPC)*1000)/1000+rem;
+							margin-bottom:11px;
+						}
+						&:nth-child(3){
 							margin-bottom:8px;
 						}
 					}
@@ -185,7 +191,10 @@ HeaderArea
 					padding-top:1px;
 					padding-bottom:0;
 					p{
-						&:nth-child(1){
+  					&:nth-child(1){
+							margin-bottom:11px;
+						}
+						&:nth-child(2){
 							font-size:round((16/$fontPC)*1000)/1000+rem;
 							margin-bottom:10px;
 						}
@@ -193,11 +202,19 @@ HeaderArea
 				}
 				&:nth-child(4){
 					margin-bottom:45px;
+					p{
+  					&:nth-child(1){
+							margin-bottom:11px;
+						}
+					}
 				}
 				&:nth-child(5){
 					padding-bottom:0;
 					p{
-						&:nth-child(1){
+  					&:nth-child(1){
+							margin-bottom:11px;
+						}
+						&:nth-child(2){
 							font-size:round((16/$fontPC)*1000)/1000+rem;
 							margin-bottom:8px;
 						}
@@ -205,6 +222,9 @@ HeaderArea
 				}
 			}
 		}
+		.logo{
+				margin-top:50px;
+			}
 	}
 	@media screen and (max-width:$spViewport){
 		padding:12px 0 13px;
