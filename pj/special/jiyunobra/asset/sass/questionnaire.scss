@@ -264,7 +264,7 @@ Questionnaire CSS
 	======================================== */
 .questionnaireBlock03{
 	min-width:984px;
-	margin-bottom:86px;
+	margin-bottom:50px;
 	>.inner{
 		width:984px; margin:0 auto;
 	}
@@ -296,7 +296,7 @@ Questionnaire CSS
 		}
 	}
 	.list{
-		width:918px; margin:0 auto;
+		width:918px; margin:0 auto 30px;
 		>li{
 			width:424px; box-sizing:border-box;
 			float:left;
@@ -919,7 +919,11 @@ Questionnaire CSS
 			}
 		}
 		.list{
-			width:auto; margin:0 7px;
+			width:auto; margin:0 7px 20px;
+			+ p{
+  			font-size:round((13.29/2/$fontSP)*1000)/1000+rem;
+  			margin-left: 10px;
+			}
 			>li{
 				width:auto;
 				float:none;
@@ -1504,7 +1508,7 @@ Questionnaire CSS
 			}
 			.btn{
 				a{
-					width:125px; box-sizing:border-box;
+					width:145px; box-sizing:border-box;
 					padding:4px 6px 4px 15px;
 					display:block;
 					border:solid 1px #000;

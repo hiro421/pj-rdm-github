@@ -14,6 +14,35 @@ Top CSS
 =============================================================================== */
 /* mainVisual
 	======================================== */
+.loaded{
+  .mainVisual{
+    .text{
+      opacity: 1;
+    }
+    .img{
+      img{
+        &.mv1{
+        	opacity: 1;
+      	}
+        &.mv2{
+        	opacity: 0;
+      	}
+      	&.mv3{
+        	opacity: 0;
+      	}
+      	&.mv4{
+        	opacity: 0;
+      	}
+      	&.mv5{
+        	opacity: 0;
+      	}
+      	&.mv6{
+        	opacity: 0;
+      	}
+      }
+    }
+  }
+}
 .mainVisual{
 	margin-bottom:80px;
 	>.inner{
@@ -27,6 +56,38 @@ Top CSS
 	.text{
 		position:absolute;
 		top:475px; left:238px;
+		opacity: 0;
+		transition: 1s;
+		transition-delay: 2.6s;
+	}
+	.img{
+  	position: relative;
+  	height: 577px;
+  	img{
+    	position: absolute;
+    	left: 0;
+    	top: 0;
+    	opacity: 1;
+    	transition: opacity 0s;
+    	&.mv1{
+      	opacity: 0;
+    	}
+    	&.mv2{
+      	transition-delay: 1.8s;
+    	}
+    	&.mv3{
+      	transition-delay: 1.6s;
+    	}
+    	&.mv4{
+      	transition-delay: 1.4s;
+    	}
+    	&.mv5{
+      	transition-delay: 1.2s;
+    	}
+    	&.mv6{
+      	transition-delay: 1s;
+    	}
+  	}
 	}
 	@media screen and (max-width:$spViewport){
 		padding-top:47px;
@@ -35,6 +96,7 @@ Top CSS
 			width:auto;
 		}
 		.img{
+  		height: 80vw;
 			img{
 				width:100%;
 			}
@@ -66,6 +128,7 @@ Top CSS
 			line-height:1;
 			margin-bottom:26px;
 			font-weight:500;
+			letter-spacing: 0.1em;
 		}
 		p{
 			font-weight:bold;
@@ -229,12 +292,21 @@ Top CSS
 /* topBlock03
 	======================================== */
 .topBlock03{
-	background:#d6d2e0;
-	padding:19px 0 16px;
-	height:400px; box-sizing:border-box;
-	min-width:984px;
-	>.inner{
-		width:984px; margin:0 auto;
+	a{
+		display:block;
+		background:#d6d2e0;
+		padding:19px 0 16px;
+		height:400px; box-sizing:border-box;
+		min-width:984px;
+		transition-property:opacity;
+		transition-duration:.2s;
+		&:hover{
+			opacity:.6;
+			text-decoration:none;
+		}
+		>.inner{
+			width:984px; margin:0 auto;
+		}
 	}
 	.cover01{
 		margin-bottom:5px;
@@ -262,7 +334,7 @@ Top CSS
 		}
 		.btn{
 			float:right;
-			a{
+			span{
 				width:249px; box-sizing:border-box;
 				padding:9px 10px 9px 46px;
 				border-radius:30px;
@@ -272,12 +344,6 @@ Top CSS
 				font-weight:bold;
 				color:#1b7f96;
 				background:url(../img/top/top_contents_arw01.png) no-repeat 19px 17px;
-				transition-property:opacity;
-				transition-duration:.2s;
-				&:hover{
-					opacity:.6;
-					text-decoration:none;
-				}
 			}
 		}
 	}
@@ -285,11 +351,13 @@ Top CSS
 		text-align:center;
 	}
 	@media screen and (max-width:$spViewport){
-		padding:10px 0 12px;
-		height:auto; box-sizing:border-box;
-		min-width:auto;
-		>.inner{
-			width:93.75%;
+		a{
+			padding:10px 0 12px;
+			height:auto; box-sizing:border-box;
+			min-width:auto;
+			>.inner{
+				width:93.75%;
+			}
 		}
 		.cover01{
 			margin-bottom:5px;
@@ -327,8 +395,9 @@ Top CSS
 				vertical-align:top;
 				float:none;
 				margin:3px 0 0 15px;
-				a{
-					width:125px; box-sizing:border-box;
+				span{
+  				white-space: nowrap;
+					width:140px; box-sizing:border-box;
 					padding:4px 5px 4px 23px;
 					border-radius:15px;
 					border:solid 1px #1b7f96;
@@ -347,14 +416,23 @@ Top CSS
 /* topBlock04
 	======================================== */
 .topBlock04{
-	background:url(../img/top/top_contents_bg01.jpg) no-repeat center top;
-	background-size:cover;
-	padding:30px 0 40px;
-	height:400px; box-sizing:border-box;
-	min-width:984px;
-	>.inner{
-		width:984px; margin:0 auto;
-		text-align:center;
+	a{
+		display:block;
+		background:url(../img/top/top_contents_bg01.jpg) no-repeat center top;
+		background-size:cover;
+		padding:30px 0 40px;
+		height:400px; box-sizing:border-box;
+		min-width:984px;
+		transition-property:opacity;
+		transition-duration:.2s;
+		>.inner{
+			width:984px; margin:0 auto;
+			text-align:center;
+		}
+		&:hover{
+			opacity:.7;
+			text-decoration:none;
+		}
 	}
 	.number{
 		margin-bottom:22px;
@@ -378,8 +456,9 @@ Top CSS
 	}
 	.btn{
 		display:inline-block; font-size:0; vertical-align:top;
-		a{
-			width:273px; box-sizing:border-box;
+		span{
+  		white-space: nowrap;
+			width:283px; box-sizing:border-box;
 			padding:9px 10px 9px 46px;
 			border-radius:30px;
 			display:block;
@@ -388,28 +467,24 @@ Top CSS
 			font-weight:bold;
 			color:#fff;
 			background:url(../img/top/top_contents_arw02.png) no-repeat 19px 17px;
-			transition-property:opacity;
-			transition-duration:.2s;
-			&:hover{
-				opacity:.6;
-				text-decoration:none;
-			}
 		}
 	}
 	@media screen and (max-width:$spViewport){
-		background:url(../img/top/top_contents_bg01_sp.jpg) no-repeat center top;
-		background-size:cover;
-		padding:62.5% 0 0 0;
-		height:auto;
-		position:relative;
-		min-width:auto;
-		>.inner{
-			padding-bottom:6px;
-			position:absolute;
-			top: 50%;
-			left: 50%;
-			transform: translateY(-50%) translateX(-50%);
-			width:auto;
+		a{
+			background:url(../img/top/top_contents_bg01_sp.jpg) no-repeat center top;
+			background-size:cover;
+			padding:62.5% 0 0 0;
+			height:auto;
+			position:relative;
+			min-width:auto;
+			>.inner{
+				padding-bottom:6px;
+				position:absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%) translateX(-50%);
+				width:auto;
+			}
 		}
 		.number{
 			width:61px;
@@ -430,8 +505,9 @@ Top CSS
 		}
 		.btn{
 			display:inline-block; font-size:0; vertical-align:top;
-			a{
-				width:136px;
+			span{
+  			white-space: nowrap;
+				width:146px;
 				padding:4px 5px 4px 23px;
 				border-radius:15px;
 				border:solid 1px #fff;
@@ -447,13 +523,24 @@ Top CSS
 /* topBlock05
 	======================================== */
 .topBlock05{
-	background:#e7e4eb url(../img/top/top_contents_bg02.jpg) no-repeat center top;
-	padding:30px 0 40px;
-	height:400px; box-sizing:border-box;
-	min-width:984px;
-	>.inner{
-		width:984px; margin:0 auto;
-		text-align:right
+	a{
+		display:block;
+		background:#e7e4eb url(../img/top/top_contents_bg02.jpg) no-repeat center top;
+		padding:30px 0 40px;
+		height:400px; box-sizing:border-box;
+		min-width:984px;
+		text-decoration:none;
+		color:#000;
+		transition-property:opacity;
+		transition-duration:.2s;
+		&:hover{
+			opacity:.7;
+			text-decoration:none;
+		}
+		>.inner{
+			width:984px; margin:0 auto;
+			text-align:right
+		}
 	}
 	.number{
 		margin:0 42px 29px 0;
@@ -475,7 +562,7 @@ Top CSS
 	.btn{
 		margin-right:45px;
 		display:inline-block; font-size:0; vertical-align:top;
-		a{
+		span{
 			width:273px; box-sizing:border-box;
 			padding:9px 10px 9px 46px;
 			border-radius:30px;
@@ -485,27 +572,23 @@ Top CSS
 			font-weight:bold;
 			color:#000;
 			background:url(../img/top/top_contents_arw03.png) no-repeat 19px 17px;
-			transition-property:opacity;
-			transition-duration:.2s;
-			&:hover{
-				opacity:.6;
-				text-decoration:none;
-			}
 		}
 	}
 	@media screen and (max-width:$spViewport){
-		background:url(../img/top/top_contents_bg02_sp.jpg) no-repeat center top;
-		background-size:cover;
-		padding:62.5% 0 0 0;
-		height:auto;
-		position:relative;
-		min-width:auto;
-		>.inner{
-			padding-bottom:6px;
-			width:100%;
-			position:absolute;
-			top: 50%;
-			transform: translateY(-50%);
+		a{
+			background:url(../img/top/top_contents_bg02_sp.jpg) no-repeat center top;
+			background-size:cover;
+			padding:62.5% 0 0 0;
+			height:auto;
+			position:relative;
+			min-width:auto;
+			>.inner{
+				padding-bottom:6px;
+				width:100%;
+				position:absolute;
+				top: 50%;
+				transform: translateY(-50%);
+			}
 		}
 		.number{
 			width:61px;
@@ -524,8 +607,8 @@ Top CSS
 		}
 		.btn{
 			margin-right:3.125%;
-			a{
-				width:141px;
+			span{
+				width:151px;
 				padding:4px 5px 4px 23px;
 				border-radius:15px;
 				border:solid 1px #000;
@@ -541,7 +624,7 @@ Top CSS
 /* topBlock06
 	======================================== */
 .topBlock06{
-	background:#a4abac url(../img/top/top_contents_bg03.jpg) no-repeat center top;
+	background:#6f7171 url(../img/top/top_contents_bg03.jpg) no-repeat center top;
 	padding:30px 0 40px;
 	height:400px; box-sizing:border-box;
 	min-width:984px;
@@ -652,31 +735,44 @@ Top CSS
 			&.active{
 				opacity:1;
 			}
-			&:last-child{margin-bottom:0;}
+			//&:last-child{margin-bottom:0;}
 			.name{
 				text-align:right;
 			}
 		}
 	}
+/*
 	.btn{
-		a{
-			display:inline-block;
-			background:url(../img/common/common_contents_arw02.png) no-repeat left 9px;
-			transition-property:opacity;
-			transition-duration:.2s;
-			&:hover{
-				opacity:.6;
-				text-decoration:none;
-			}
+			margin-right:3.125%;
 			span{
-				background:url(../img/common/common_contents_arw01.png) no-repeat 10px center;
-				font-weight:bold;
+				width:151px;
+				padding:4px 5px 4px 23px;
+				border-radius:15px;
+				border:solid 1px #000;
+				font-size:round((17.6/2/$fontSP)*1000)/1000+rem;
+				background:url(../img/top/top_contents_arw03.png) no-repeat 10px 9px;
+				background-size:10px auto;
 				color:#000;
-				font-size:round((18.49/$fontPC)*1000)/1000+rem;
-				line-height:round(32/18.49*100)/100;
-				padding-left:57px;
-				min-height:32px;
-				display:block;
+			}
+		}
+*/
+	.btn{
+  	text-align: center;
+		a{
+			width:192px; box-sizing:border-box;
+			padding:9px 10px 9px 46px;
+			margin: auto;
+			border-radius:30px;
+			display:block;
+			border:solid 2px #000;
+			font-size:round((17.6/$fontPC)*1000)/1000+rem;
+			font-weight:bold;
+			color:#000;
+			background:#fff url(../img/top/top_contents_arw03.png) no-repeat 19px 17px;
+			transition: opacity .2s;
+			text-decoration: none;
+			&:hover{
+  			opacity: .8;
 			}
 		}
 	}
@@ -727,19 +823,34 @@ Top CSS
 			}
 		}
 		.btn{
-			a{
-				display:inline-block;
-				background:url(../img/common/common_contents_arw02.png) no-repeat left 4px;
-				background-size:16px auto;
-				span{
-					background:url(../img/common/common_contents_arw01.png) no-repeat 6px center;
-					background-size:16px auto;
-					font-size:round((18.49/2/$fontSP)*1000)/1000+rem;
-					line-height:round(32/18.49*100)/100;
-					padding-left:29px;
-					min-height:16px;
-				}
-			}
-		}
+    	text-align: center;
+  		a{
+  			width:110px; box-sizing:border-box;
+  			padding:5px 5px 5px 23px;
+  			margin: auto;
+  			border-radius:30px;
+  			display:block;
+  			border:solid 2px #000;
+  			font-size:round((17.6/2/$fontSP)*1000)/1000+rem;
+  			font-weight:bold;
+  			color:#000;
+  			background:#fff url(../img/top/top_contents_arw03.png) no-repeat 14px 10px;
+        background-size: 11px auto;
+  			transition: opacity .2s;
+  			text-decoration: none;
+  			&:hover{
+    			opacity: .8;
+  			}
+  		}
+  	}
 	}
+}
+
+.wide-banner{
+  margin-bottom: 45px;
+}
+@media screen and (max-width:$spViewport){
+  .wide-banner{
+    margin-bottom: 25px;
+  }
 }

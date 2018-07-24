@@ -3,6 +3,34 @@ Top CSS
 =============================================================================== */
 /* mainVisual
 	======================================== */
+.loaded .mainVisual .text {
+  opacity: 1;
+}
+
+.loaded .mainVisual .img img.mv1 {
+  opacity: 1;
+}
+
+.loaded .mainVisual .img img.mv2 {
+  opacity: 0;
+}
+
+.loaded .mainVisual .img img.mv3 {
+  opacity: 0;
+}
+
+.loaded .mainVisual .img img.mv4 {
+  opacity: 0;
+}
+
+.loaded .mainVisual .img img.mv5 {
+  opacity: 0;
+}
+
+.loaded .mainVisual .img img.mv6 {
+  opacity: 0;
+}
+
 .mainVisual {
   margin-bottom: 80px;
 }
@@ -23,6 +51,46 @@ Top CSS
   position: absolute;
   top: 475px;
   left: 238px;
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 2.6s;
+}
+
+.mainVisual .img {
+  position: relative;
+  height: 577px;
+}
+
+.mainVisual .img img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: opacity 0s;
+}
+
+.mainVisual .img img.mv1 {
+  opacity: 0;
+}
+
+.mainVisual .img img.mv2 {
+  transition-delay: 1.8s;
+}
+
+.mainVisual .img img.mv3 {
+  transition-delay: 1.6s;
+}
+
+.mainVisual .img img.mv4 {
+  transition-delay: 1.4s;
+}
+
+.mainVisual .img img.mv5 {
+  transition-delay: 1.2s;
+}
+
+.mainVisual .img img.mv6 {
+  transition-delay: 1s;
 }
 
 @media screen and (max-width: 768px) {
@@ -32,6 +100,9 @@ Top CSS
   }
   .mainVisual > .inner {
     width: auto;
+  }
+  .mainVisual .img {
+    height: 80vw;
   }
   .mainVisual .img img {
     width: 100%;
@@ -75,6 +146,7 @@ Top CSS
   line-height: 1;
   margin-bottom: 26px;
   font-weight: 500;
+  letter-spacing: 0.1em;
 }
 
 .topBlock01 .heading p {
@@ -265,15 +337,23 @@ Top CSS
 
 /* topBlock03
 	======================================== */
-.topBlock03 {
+.topBlock03 a {
+  display: block;
   background: #d6d2e0;
   padding: 19px 0 16px;
   height: 400px;
   box-sizing: border-box;
   min-width: 984px;
+  transition-property: opacity;
+  transition-duration: .2s;
 }
 
-.topBlock03 > .inner {
+.topBlock03 a:hover {
+  opacity: .6;
+  text-decoration: none;
+}
+
+.topBlock03 a > .inner {
   width: 984px;
   margin: 0 auto;
 }
@@ -313,7 +393,7 @@ Top CSS
   float: right;
 }
 
-.topBlock03 .cover01 .btn a {
+.topBlock03 .cover01 .btn span {
   width: 249px;
   box-sizing: border-box;
   padding: 9px 10px 9px 46px;
@@ -324,13 +404,6 @@ Top CSS
   font-weight: bold;
   color: #1b7f96;
   background: url(../img/top/top_contents_arw01.png) no-repeat 19px 17px;
-  transition-property: opacity;
-  transition-duration: .2s;
-}
-
-.topBlock03 .cover01 .btn a:hover {
-  opacity: .6;
-  text-decoration: none;
 }
 
 .topBlock03 .img {
@@ -338,13 +411,13 @@ Top CSS
 }
 
 @media screen and (max-width: 768px) {
-  .topBlock03 {
+  .topBlock03 a {
     padding: 10px 0 12px;
     height: auto;
     box-sizing: border-box;
     min-width: auto;
   }
-  .topBlock03 > .inner {
+  .topBlock03 a > .inner {
     width: 93.75%;
   }
   .topBlock03 .cover01 {
@@ -385,8 +458,9 @@ Top CSS
     float: none;
     margin: 3px 0 0 15px;
   }
-  .topBlock03 .cover01 .btn a {
-    width: 125px;
+  .topBlock03 .cover01 .btn span {
+    white-space: nowrap;
+    width: 140px;
     box-sizing: border-box;
     padding: 4px 5px 4px 23px;
     border-radius: 15px;
@@ -403,19 +477,27 @@ Top CSS
 
 /* topBlock04
 	======================================== */
-.topBlock04 {
+.topBlock04 a {
+  display: block;
   background: url(../img/top/top_contents_bg01.jpg) no-repeat center top;
   background-size: cover;
   padding: 30px 0 40px;
   height: 400px;
   box-sizing: border-box;
   min-width: 984px;
+  transition-property: opacity;
+  transition-duration: .2s;
 }
 
-.topBlock04 > .inner {
+.topBlock04 a > .inner {
   width: 984px;
   margin: 0 auto;
   text-align: center;
+}
+
+.topBlock04 a:hover {
+  opacity: .7;
+  text-decoration: none;
 }
 
 .topBlock04 .number {
@@ -449,8 +531,9 @@ Top CSS
   vertical-align: top;
 }
 
-.topBlock04 .btn a {
-  width: 273px;
+.topBlock04 .btn span {
+  white-space: nowrap;
+  width: 283px;
   box-sizing: border-box;
   padding: 9px 10px 9px 46px;
   border-radius: 30px;
@@ -460,17 +543,10 @@ Top CSS
   font-weight: bold;
   color: #fff;
   background: url(../img/top/top_contents_arw02.png) no-repeat 19px 17px;
-  transition-property: opacity;
-  transition-duration: .2s;
-}
-
-.topBlock04 .btn a:hover {
-  opacity: .6;
-  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
-  .topBlock04 {
+  .topBlock04 a {
     background: url(../img/top/top_contents_bg01_sp.jpg) no-repeat center top;
     background-size: cover;
     padding: 62.5% 0 0 0;
@@ -478,7 +554,7 @@ Top CSS
     position: relative;
     min-width: auto;
   }
-  .topBlock04 > .inner {
+  .topBlock04 a > .inner {
     padding-bottom: 6px;
     position: absolute;
     top: 50%;
@@ -508,8 +584,9 @@ Top CSS
     font-size: 0;
     vertical-align: top;
   }
-  .topBlock04 .btn a {
-    width: 136px;
+  .topBlock04 .btn span {
+    white-space: nowrap;
+    width: 146px;
     padding: 4px 5px 4px 23px;
     border-radius: 15px;
     border: solid 1px #fff;
@@ -522,15 +599,25 @@ Top CSS
 
 /* topBlock05
 	======================================== */
-.topBlock05 {
+.topBlock05 a {
+  display: block;
   background: #e7e4eb url(../img/top/top_contents_bg02.jpg) no-repeat center top;
   padding: 30px 0 40px;
   height: 400px;
   box-sizing: border-box;
   min-width: 984px;
+  text-decoration: none;
+  color: #000;
+  transition-property: opacity;
+  transition-duration: .2s;
 }
 
-.topBlock05 > .inner {
+.topBlock05 a:hover {
+  opacity: .7;
+  text-decoration: none;
+}
+
+.topBlock05 a > .inner {
   width: 984px;
   margin: 0 auto;
   text-align: right;
@@ -564,7 +651,7 @@ Top CSS
   vertical-align: top;
 }
 
-.topBlock05 .btn a {
+.topBlock05 .btn span {
   width: 273px;
   box-sizing: border-box;
   padding: 9px 10px 9px 46px;
@@ -575,17 +662,10 @@ Top CSS
   font-weight: bold;
   color: #000;
   background: url(../img/top/top_contents_arw03.png) no-repeat 19px 17px;
-  transition-property: opacity;
-  transition-duration: .2s;
-}
-
-.topBlock05 .btn a:hover {
-  opacity: .6;
-  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
-  .topBlock05 {
+  .topBlock05 a {
     background: url(../img/top/top_contents_bg02_sp.jpg) no-repeat center top;
     background-size: cover;
     padding: 62.5% 0 0 0;
@@ -593,7 +673,7 @@ Top CSS
     position: relative;
     min-width: auto;
   }
-  .topBlock05 > .inner {
+  .topBlock05 a > .inner {
     padding-bottom: 6px;
     width: 100%;
     position: absolute;
@@ -618,8 +698,8 @@ Top CSS
   .topBlock05 .btn {
     margin-right: 3.125%;
   }
-  .topBlock05 .btn a {
-    width: 141px;
+  .topBlock05 .btn span {
+    width: 151px;
     padding: 4px 5px 4px 23px;
     border-radius: 15px;
     border: solid 1px #000;
@@ -633,7 +713,7 @@ Top CSS
 /* topBlock06
 	======================================== */
 .topBlock06 {
-  background: #a4abac url(../img/top/top_contents_bg03.jpg) no-repeat center top;
+  background: #6f7171 url(../img/top/top_contents_bg03.jpg) no-repeat center top;
   padding: 30px 0 40px;
   height: 400px;
   box-sizing: border-box;
@@ -698,6 +778,21 @@ Top CSS
   background-size: cover;
   padding: 55px 0 53px;
   min-width: 984px;
+  /*
+	.btn{
+			margin-right:3.125%;
+			span{
+				width:151px;
+				padding:4px 5px 4px 23px;
+				border-radius:15px;
+				border:solid 1px #000;
+				font-size:round((17.6/2/$fontSP)*1000)/1000+rem;
+				background:url(../img/top/top_contents_arw03.png) no-repeat 10px 9px;
+				background-size:10px auto;
+				color:#000;
+			}
+		}
+*/
 }
 
 .topBlock07 > .inner {
@@ -774,35 +869,32 @@ Top CSS
   opacity: 1;
 }
 
-.topBlock07 .voiceList li:last-child {
-  margin-bottom: 0;
-}
-
 .topBlock07 .voiceList li .name {
   text-align: right;
 }
 
-.topBlock07 .btn a {
-  display: inline-block;
-  background: url(../img/common/common_contents_arw02.png) no-repeat left 9px;
-  transition-property: opacity;
-  transition-duration: .2s;
+.topBlock07 .btn {
+  text-align: center;
 }
 
-.topBlock07 .btn a:hover {
-  opacity: .6;
+.topBlock07 .btn a {
+  width: 192px;
+  box-sizing: border-box;
+  padding: 9px 10px 9px 46px;
+  margin: auto;
+  border-radius: 30px;
+  display: block;
+  border: solid 2px #000;
+  font-size: 1.173rem;
+  font-weight: bold;
+  color: #000;
+  background: #fff url(../img/top/top_contents_arw03.png) no-repeat 19px 17px;
+  transition: opacity .2s;
   text-decoration: none;
 }
 
-.topBlock07 .btn a span {
-  background: url(../img/common/common_contents_arw01.png) no-repeat 10px center;
-  font-weight: bold;
-  color: #000;
-  font-size: 1.233rem;
-  line-height: 1.73;
-  padding-left: 57px;
-  min-height: 32px;
-  display: block;
+.topBlock07 .btn a:hover {
+  opacity: .8;
 }
 
 @media screen and (max-width: 768px) {
@@ -855,17 +947,36 @@ Top CSS
     font-size: 0.917rem;
     line-height: 1.64;
   }
-  .topBlock07 .btn a {
-    display: inline-block;
-    background: url(../img/common/common_contents_arw02.png) no-repeat left 4px;
-    background-size: 16px auto;
+  .topBlock07 .btn {
+    text-align: center;
   }
-  .topBlock07 .btn a span {
-    background: url(../img/common/common_contents_arw01.png) no-repeat 6px center;
-    background-size: 16px auto;
-    font-size: 0.77rem;
-    line-height: 1.73;
-    padding-left: 29px;
-    min-height: 16px;
+  .topBlock07 .btn a {
+    width: 110px;
+    box-sizing: border-box;
+    padding: 5px 5px 5px 23px;
+    margin: auto;
+    border-radius: 30px;
+    display: block;
+    border: solid 2px #000;
+    font-size: 0.733rem;
+    font-weight: bold;
+    color: #000;
+    background: #fff url(../img/top/top_contents_arw03.png) no-repeat 14px 10px;
+    background-size: 11px auto;
+    transition: opacity .2s;
+    text-decoration: none;
+  }
+  .topBlock07 .btn a:hover {
+    opacity: .8;
+  }
+}
+
+.wide-banner {
+  margin-bottom: 45px;
+}
+
+@media screen and (max-width: 768px) {
+  .wide-banner {
+    margin-bottom: 25px;
   }
 }

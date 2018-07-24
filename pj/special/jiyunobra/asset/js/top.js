@@ -17,4 +17,8 @@ $(function(){
 	$('.fadeVoice').scroll();
 });
 
+$(window).on('load',function(){
+    $("body").addClass("loaded");
+});
+
 var ps = new PerfectScrollbar('.topBlock07 .box');

@@ -24,3 +24,16 @@ $(function(){
 		 
 	 });
 });
+
+$(function(){
+  $(window).on('load resize',function(){
+    var mH = $('#grobalNav').innerHeight();
+    var wH = $(window).height();
+    if(mH > wH){
+    	// div#examplに高さを加える
+    	$('#grobalNav ul').css('height',wH - 150 +'px'); 
+    } else{
+      $('#grobalNav ul').css('height','auto'); 
+    }
+  });
+});

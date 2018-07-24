@@ -31,12 +31,10 @@ $(function(){
 
 // colorSelect
 $(function(){
-	$('.colorSelect ul li').on('click', function(){
-		var selectColor = $(this).index();
-		$(this).siblings().removeClass('active');
-		$(this).addClass('active');
-		$(this).parents('.colorSelect').prev().children('li').removeClass('active');
-		$(this).parents('.colorSelect').prev().children('li').eq(selectColor).addClass('active');
+	$('.slider02').slick({
+		arrows:false,
+		dots:true,
+		fade:true
 	});
 });
 

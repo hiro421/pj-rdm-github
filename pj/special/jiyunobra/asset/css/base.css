@@ -179,6 +179,10 @@ HeaderArea
   letter-spacing: 2px;
 }
 
+#headerArea #grobalNav .list li.logo {
+  border: none;
+}
+
 #headerArea #grobalNav .list li a {
   color: #000;
   transition-property: opacity;
@@ -286,12 +290,16 @@ HeaderArea
   }
   #headerArea #grobalNav .list {
     margin: 0 0 29px 4px;
+    height: auto !important;
   }
   #headerArea #grobalNav .list li {
     padding: 0 0 0 10px;
     border-left: solid 1px #000;
     font-size: 1.167rem;
     letter-spacing: 1px;
+  }
+  #headerArea #grobalNav .list li.logo {
+    padding: 0;
   }
   #headerArea #grobalNav .list li:nth-child(1) {
     margin-bottom: 22px;
@@ -301,18 +309,18 @@ HeaderArea
     padding-bottom: 0;
     border-left: solid 1px #f48e92;
   }
-  #headerArea #grobalNav .list li:nth-child(2) p:nth-child(1) {
+  #headerArea #grobalNav .list li:nth-child(2) p:nth-child(2) {
     font-size: 0.833rem;
     margin-bottom: 5px;
   }
-  #headerArea #grobalNav .list li:nth-child(2) p:nth-child(2) {
+  #headerArea #grobalNav .list li:nth-child(2) p:nth-child(3) {
     margin-bottom: 3px;
   }
   #headerArea #grobalNav .list li:nth-child(3) {
     margin-bottom: 22px;
     padding-top: 0;
   }
-  #headerArea #grobalNav .list li:nth-child(3) p:nth-child(1) {
+  #headerArea #grobalNav .list li:nth-child(3) p:nth-child(2) {
     font-size: 0.833rem;
     margin-bottom: 5px;
   }
@@ -322,13 +330,14 @@ HeaderArea
   #headerArea #grobalNav .list li:nth-child(5) {
     padding-bottom: 0;
   }
-  #headerArea #grobalNav .list li:nth-child(5) p:nth-child(1) {
+  #headerArea #grobalNav .list li:nth-child(5) p:nth-child(2) {
     font-size: 0.833rem;
     margin-bottom: 5px;
   }
   #headerArea #grobalNav .logo {
-    width: 53px;
+    width: 135px;
     margin-left: 5px;
+    margin-top: 30px;
   }
 }
 
@@ -414,12 +423,12 @@ ContentsArea
   display: inline-block;
   background: url(../img/common/common_contents_arw02.png) no-repeat left 8px;
   background-size: 24px auto;
-  transition-property: opacity;
-  transition-duration: .2s;
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 #contentsArea .commonBlock01 .btn a:hover {
-  opacity: .5;
+  background: url(../img/common/common_contents_arw02.png) no-repeat 9px 8px;
+  background-size: 24px auto;
   text-decoration: none;
 }
 
@@ -481,6 +490,10 @@ ContentsArea
     background: url(../img/common/common_contents_arw02.png) no-repeat left 5px;
     background-size: 15px auto;
   }
+  #contentsArea .commonBlock01 .btn a:hover {
+    background: url(../img/common/common_contents_arw02.png) no-repeat left 5px;
+    background-size: 15px auto;
+  }
   #contentsArea .commonBlock01 .btn a span {
     background: url(../img/common/common_contents_arw01.png) no-repeat 5px center;
     background-size: 16px auto;
@@ -511,4 +524,8 @@ ContentsArea
     margin-top: 21px;
     float: none;
   }
+}
+
+a, button {
+  outline: none;
 }
