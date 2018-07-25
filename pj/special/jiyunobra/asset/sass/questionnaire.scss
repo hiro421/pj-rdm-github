@@ -54,7 +54,7 @@ Questionnaire CSS
 				margin-bottom:8px;
 			}
 			p:last-child{
-				font-size:round((20/2/$fontSP)*1000)/1000+rem;
+				font-size:round((22/2/$fontSP)*1000)/1000+rem;
 			}
 		}
 	}
@@ -97,7 +97,7 @@ Questionnaire CSS
 			position:absolute;
 			top:0; left:0;
 			width:491px; height:100%;
-			background:url(../img/questionnaire/questionnaire_contents_img01.jpg) no-repeat center center;
+			background:url(../img/questionnaire/questionnaire_contents_img01_sp.jpg) no-repeat center center;
 			background-size:cover;
 			transition-property:opacity;
 			transition-duration:.2s;
@@ -139,7 +139,7 @@ Questionnaire CSS
 			position:absolute;
 			top:0; right:0;
 			width:491px; height:100%;
-			background:url(../img/questionnaire/questionnaire_contents_img02.jpg) no-repeat center center;
+			background:url(../img/questionnaire/questionnaire_contents_img02_sp.jpg) no-repeat center center;
 			background-size:cover;
 			transition-property:opacity;
 			transition-duration:.2s;
@@ -223,7 +223,7 @@ Questionnaire CSS
 					margin-bottom:10px;
 				}
 				.text03{
-					font-size:round((20/2/$fontSP)*1000)/1000+rem;
+					font-size:round((22/2/$fontSP)*1000)/1000+rem;
 					line-height:round(32.73/20*100)/100;
 				}
 			}
@@ -252,7 +252,7 @@ Questionnaire CSS
 					margin-bottom:10px;
 				}
 				.text03{
-					font-size:round((20/2/$fontSP)*1000)/1000+rem;
+					font-size:round((22/2/$fontSP)*1000)/1000+rem;
 					line-height:round(32.73/20*100)/100;
 				}
 			}
@@ -297,6 +297,11 @@ Questionnaire CSS
 	}
 	.list{
 		width:918px; margin:0 auto 30px;
+		+ p{
+  		display: flex;
+  		justify-content: flex-end;
+  		padding-right: 2.5em;
+		}
 		>li{
 			width:424px; box-sizing:border-box;
 			float:left;
@@ -1047,7 +1052,7 @@ Questionnaire CSS
 						}
 					}
 					.text02{
-						font-size:round((24/2/$fontSP)*1000)/1000+rem;
+						font-size:round((26/2/$fontSP)*1000)/1000+rem;
 						margin:0 0 14px;
 					}
 					.graph02{
@@ -1175,9 +1180,10 @@ Questionnaire CSS
 							background-size:32px auto;
 							p{
 								font-size:round((27/2/$fontSP)*1000)/1000+rem;
+								white-space: nowrap;
 								.rank{
 									margin-right:11px;
-									font-size:round((22/2/$fontSP)*1000)/1000+rem;
+									font-size:round((24/2/$fontSP)*1000)/1000+rem;
 								}
 								.percentage{
 									margin-left:7px;
@@ -1196,9 +1202,10 @@ Questionnaire CSS
 							background-size:32px auto;
 							p{
 								font-size:round((27/2/$fontSP)*1000)/1000+rem;
+								white-space: nowrap;
 								.rank{
 									margin-right:11px;
-									font-size:round((22/2/$fontSP)*1000)/1000+rem;
+									font-size:round((24/2/$fontSP)*1000)/1000+rem;
 								}
 								.percentage{
 									margin-left:7px;
@@ -1215,9 +1222,10 @@ Questionnaire CSS
 							padding:10px 0 0 12px;
 							p{
 								font-size:round((27/2/$fontSP)*1000)/1000+rem;
+								white-space: nowrap;
 								.rank{
 									margin-right:9px;
-									font-size:round((22/2/$fontSP)*1000)/1000+rem;
+									font-size:round((24/2/$fontSP)*1000)/1000+rem;
 								}
 								.percentage{
 									margin-left:5px;
@@ -1246,7 +1254,7 @@ Questionnaire CSS
 								font-size:round((27/2/$fontSP)*1000)/1000+rem;
 								.rank{
 									margin-right:11px;
-									font-size:round((22/2/$fontSP)*1000)/1000+rem;
+									font-size:round((24/2/$fontSP)*1000)/1000+rem;
 								}
 								.percentage{
 									margin-left:2px;
@@ -1267,7 +1275,7 @@ Questionnaire CSS
 								font-size:round((27/2/$fontSP)*1000)/1000+rem;
 								.rank{
 									margin-right:11px;
-									font-size:round((20/2/$fontSP)*1000)/1000+rem;
+									font-size:round((22/2/$fontSP)*1000)/1000+rem;
 								}
 								.percentage{
 									margin-left:10px;
@@ -1286,7 +1294,7 @@ Questionnaire CSS
 								font-size:round((27/2/$fontSP)*1000)/1000+rem;
 								.rank{
 									margin-right:9px;
-									font-size:round((20/2/$fontSP)*1000)/1000+rem;
+									font-size:round((22/2/$fontSP)*1000)/1000+rem;
 								}
 								.percentage{
 									margin-left:5px;
@@ -1306,7 +1314,7 @@ Questionnaire CSS
 								font-size:round((24/2/$fontSP)*1000)/1000+rem;
 							}
 							p:nth-child(2){
-								font-size:round((20/2/$fontSP)*1000)/1000+rem;
+								font-size:round((22/2/$fontSP)*1000)/1000+rem;
 								line-height:round(25.55/21.36*100)/100;
 							}
 							p:nth-child(3){
@@ -1368,7 +1376,7 @@ Questionnaire CSS
 					}
 					.voice{
 						padding:8px 0;
-						font-size:round((20/2/$fontSP)*1000)/1000+rem;
+						font-size:round((22/2/$fontSP)*1000)/1000+rem;
 						line-height:round(36/20*100)/100;
 						text-align:left;
 						p{
@@ -1476,12 +1484,12 @@ Questionnaire CSS
 				}
 			}
 			.text01{
-				font-size:round((20/2/$fontSP)*1000)/1000+rem;
+				font-size:round((22/2/$fontSP)*1000)/1000+rem;
 				line-height:round(34/20*100)/100;
 				margin-bottom:22px;
 			}
 			.text02{
-				font-size:round((20/2/$fontSP)*1000)/1000+rem;
+				font-size:round((22/2/$fontSP)*1000)/1000+rem;
 				line-height:round(32/20*100)/100;
 			}
 		}

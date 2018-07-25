@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 /* ===============================================================================
 Reset
@@ -77,6 +78,20 @@ img{
 }
 .clrF::after{content:""; display:block; clear:both;}
 
+.mont{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal!important;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width:$spViewport){
+  .mont{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold!important;
+    letter-spacing: 3px;
+  }
+}
+
 @media screen and (min-width:$spViewport+1){
 	.spOnly{
 		display:none!important;
@@ -153,6 +168,12 @@ HeaderArea
 				font-weight:bold;
 				font-size:round((24/$fontPC)*1000)/1000+rem;
 				letter-spacing:2px;
+				&.current{
+  				border-left:solid 2px #f48e92;
+  				a{
+						color:#f48e92;
+					}
+				}
 				&.logo{
   				border: none;
 				}
@@ -172,10 +193,6 @@ HeaderArea
 				&:nth-child(2){
 					margin-bottom:53px;
 					padding-bottom:3px;
-					border-left:solid 2px #f48e92;
-					a{
-						color:#f48e92;
-					}
 					p{
   					&:nth-child(1){
 							margin-bottom:11px;
@@ -258,6 +275,9 @@ HeaderArea
 					border-left:solid 1px #000;
 					font-size:round((28/2/$fontSP)*1000)/1000+rem;
 					letter-spacing:1px;
+					&.current{
+  					border-left:solid 1px #f48e92;
+					}
 					&.logo{
   					padding: 0;
 					}
@@ -267,7 +287,6 @@ HeaderArea
 					&:nth-child(2){
 						margin-bottom:22px;
 						padding-bottom:0;
-						border-left:solid 1px #f48e92;
 						p{
 							&:nth-child(2){
 								font-size:round((20/2/$fontSP)*1000)/1000+rem;
@@ -409,8 +428,11 @@ ContentsArea
 			p{
 				text-align:center;
 				margin-bottom:45px;
-				font-weight:bold;
+				font-weight:normal;
 				font-size:round((26/$fontPC)*1000)/1000+rem;
+				font-family: 'Montserrat', sans-serif;
+        font-weight: normal!important;
+        letter-spacing: 3px;
 			}
 			a{
 				display:block;
@@ -461,8 +483,10 @@ ContentsArea
 				p{
 					text-align:center;
 					margin-bottom:30px;
-					font-weight:bold;
 					font-size:round((30/2/$fontSP)*1000)/1000+rem;
+					font-family: 'Montserrat', sans-serif;
+          font-weight: bold!important;
+          letter-spacing: 3px;
 				}
 				a{
 					float:none;

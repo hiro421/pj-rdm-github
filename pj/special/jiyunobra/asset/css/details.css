@@ -120,10 +120,21 @@ Details CSS
   }
   .detailsBlock01 .heading h2 {
     font-size: 3.178rem;
-    background: url(../img/top/top_contents_arw06.png) no-repeat center bottom;
-    background-size: 12px auto;
     padding-bottom: 35px;
     margin-bottom: 28px;
+    position: relative;
+  }
+  .detailsBlock01 .heading h2:before {
+    content: "";
+    background: url(../img/top/top_contents_arw06.png) no-repeat center bottom;
+    background-size: 12px auto;
+    width: 12px;
+    height: 30px;
+    position: absolute;
+    margin-left: -3px;
+    left: 50%;
+    bottom: -5px;
+    animation: fuwafuwa ease-in-out 1.5s 3s infinite both;
   }
   .detailsBlock01 .heading p {
     font-size: 1.167rem;
@@ -232,7 +243,7 @@ Details CSS
   .detailsBlock02 .text {
     padding: 0 6px;
     text-align: left;
-    font-size: 0.917rem;
+    font-size: 1rem;
     line-height: 1.64;
   }
 }
@@ -671,6 +682,10 @@ Details CSS
     background: url(../img/common/common_contents_arw02.png) no-repeat left 6px;
     background-size: 12px auto;
   }
+  .detailsBlock03 .product01 .modalBtn > span:hover {
+    background: url(../img/common/common_contents_arw02.png) no-repeat left 6px;
+    background-size: 12px auto;
+  }
   .detailsBlock03 .product01 .modalBtn > span span {
     background: url(../img/common/common_contents_arw01.png) no-repeat 4px center;
     background-size: 13px auto;
@@ -1053,7 +1068,7 @@ Details CSS
     margin-bottom: 9px;
   }
   .detailsBlock04 .column2block .text p:last-child {
-    font-size: 0.917rem;
+    font-size: 1rem;
     line-height: 1.64;
   }
 }
@@ -1278,7 +1293,7 @@ Details CSS
     margin-bottom: 17px;
   }
   .detailsBlock05 .box01 .imageLeft .text p:last-child {
-    font-size: 0.917rem;
+    font-size: 1rem;
     line-height: 1.64;
   }
   .detailsBlock05 .box01 .imageRight .img {
@@ -1300,7 +1315,7 @@ Details CSS
     margin-bottom: 14px;
   }
   .detailsBlock05 .box01 .imageRight .text p:last-child {
-    font-size: 0.917rem;
+    font-size: 1rem;
     line-height: 1.64;
   }
   .detailsBlock05 .box02 {
@@ -1332,7 +1347,7 @@ Details CSS
     text-align: center;
   }
   .detailsBlock05 .text03 {
-    font-size: 0.917rem;
+    font-size: 1rem;
     line-height: 1.64;
   }
 }
@@ -2002,7 +2017,7 @@ Details CSS
     left: 2%;
   }
   .detailsBlock06 .block01 .column2block .left .box p:first-child {
-    font-size: 0.688rem;
+    font-size: 0.75rem;
     margin-bottom: 2px;
   }
   .detailsBlock06 .block01 .column2block .left .box p:last-child {
@@ -2014,7 +2029,7 @@ Details CSS
     background: url(../img/details/details_contents_arw01.png) no-repeat center top;
     background-size: 5px auto;
     padding: 33px 0 0;
-    font-size: 0.688rem;
+    font-size: 0.75rem;
   }
   .detailsBlock06 .block01 .column2block .left .box p:last-child > span span {
     margin-top: 5px;
@@ -2029,7 +2044,7 @@ Details CSS
     padding: 0 5px;
   }
   .detailsBlock06 .block01 .column2block .right .text p {
-    font-size: 0.917rem;
+    font-size: 1rem;
     line-height: 1.64;
   }
   .detailsBlock06 .block02 {
@@ -2086,7 +2101,7 @@ Details CSS
     height: 13px;
   }
   .detailsBlock06 .block02 .list > li .text p {
-    font-size: 0.917rem;
+    font-size: 1rem;
     line-height: 1.56;
   }
   .detailsBlock06 .block02 .list > li .text p span {
@@ -2145,7 +2160,7 @@ Details CSS
   .detailsBlock06 .block02 .btn a span {
     background: url(../img/common/common_contents_arw01.png) no-repeat 5px center;
     background-size: 16px auto;
-    font-size: 0.917rem;
+    font-size: 1rem;
     padding-left: 27px;
     min-height: 16px;
   }
@@ -2380,6 +2395,45 @@ Details CSS
   transition-duration: .5s;
 }
 
+.modalBlock01 .modalBox .inner {
+  position: relative;
+}
+
+.modalBlock01 .closeBtn {
+  height: 40px;
+  width: 40px;
+  display: block;
+  position: absolute;
+  right: -45px;
+  top: -45px;
+  cursor: pointer;
+}
+
+.modalBlock01 .closeBtn:before,
+.modalBlock01 .closeBtn:after {
+  content: '';
+  height: 2px;
+  width: 40px;
+  display: block;
+  background: #333;
+  position: absolute;
+  top: 15px;
+  left: 1px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+
+.modalBlock01 .closeBtn:after {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
 .modalBlock01 .closeWrap {
   display: none;
   position: fixed;
@@ -2430,6 +2484,38 @@ Details CSS
     padding: 30px;
     transition-property: opacity;
     transition-duration: .5s;
+  }
+  .modalBlock01 .closeBtn {
+    height: 20px;
+    width: 20px;
+    display: block;
+    position: absolute;
+    right: -22px;
+    top: -38px;
+    cursor: pointer;
+  }
+  .modalBlock01 .closeBtn:before,
+  .modalBlock01 .closeBtn:after {
+    content: '';
+    height: 1px;
+    width: 20px;
+    display: block;
+    background: #333;
+    position: absolute;
+    top: 15px;
+    left: 1px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+  }
+  .modalBlock01 .closeBtn:after {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
   }
   .modalBlock01 .slider .slick-arrow {
     width: 13px;
@@ -3797,5 +3883,17 @@ Details CSS
   .add-tyo-cart.error footer {
     border: none;
     padding: 0;
+  }
+}
+
+@keyframes fuwafuwa {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -7px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }

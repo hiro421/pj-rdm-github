@@ -52,7 +52,7 @@ Questionnaire CSS
     margin-bottom: 8px;
   }
   .questionnaireBlock01 .heading p:last-child {
-    font-size: 0.833rem;
+    font-size: 0.917rem;
   }
 }
 
@@ -107,7 +107,7 @@ Questionnaire CSS
   left: 0;
   width: 491px;
   height: 100%;
-  background: url(../img/questionnaire/questionnaire_contents_img01.jpg) no-repeat center center;
+  background: url(../img/questionnaire/questionnaire_contents_img01_sp.jpg) no-repeat center center;
   background-size: cover;
   transition-property: opacity;
   transition-duration: .2s;
@@ -160,7 +160,7 @@ Questionnaire CSS
   right: 0;
   width: 491px;
   height: 100%;
-  background: url(../img/questionnaire/questionnaire_contents_img02.jpg) no-repeat center center;
+  background: url(../img/questionnaire/questionnaire_contents_img02_sp.jpg) no-repeat center center;
   background-size: cover;
   transition-property: opacity;
   transition-duration: .2s;
@@ -258,7 +258,7 @@ Questionnaire CSS
     margin-bottom: 10px;
   }
   .questionnaireBlock02 .imageLeft .inner .text03 {
-    font-size: 0.833rem;
+    font-size: 0.917rem;
     line-height: 1.64;
   }
   .questionnaireBlock02 .imageRight .img {
@@ -286,7 +286,7 @@ Questionnaire CSS
     margin-bottom: 10px;
   }
   .questionnaireBlock02 .imageRight .inner .text03 {
-    font-size: 0.833rem;
+    font-size: 0.917rem;
     line-height: 1.64;
   }
 }
@@ -340,6 +340,12 @@ Questionnaire CSS
 .questionnaireBlock03 .list {
   width: 918px;
   margin: 0 auto 30px;
+}
+
+.questionnaireBlock03 .list + p {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2.5em;
 }
 
 .questionnaireBlock03 .list > li {
@@ -1329,7 +1335,7 @@ Questionnaire CSS
     font-size: 1.446rem;
   }
   .questionnaireBlock03 .list > li .question03 .text02 {
-    font-size: 1rem;
+    font-size: 1.083rem;
     margin: 0 0 14px;
   }
   .questionnaireBlock03 .list > li .question03 .graph02 {
@@ -1479,10 +1485,11 @@ Questionnaire CSS
   }
   .questionnaireBlock03 .list > li .question06 .graph01 .text p {
     font-size: 1.125rem;
+    white-space: nowrap;
   }
   .questionnaireBlock03 .list > li .question06 .graph01 .text p .rank {
     margin-right: 11px;
-    font-size: 0.917rem;
+    font-size: 1rem;
   }
   .questionnaireBlock03 .list > li .question06 .graph01 .text p .percentage {
     margin-left: 7px;
@@ -1501,10 +1508,11 @@ Questionnaire CSS
   }
   .questionnaireBlock03 .list > li .question06 .graph02 .text p {
     font-size: 1.125rem;
+    white-space: nowrap;
   }
   .questionnaireBlock03 .list > li .question06 .graph02 .text p .rank {
     margin-right: 11px;
-    font-size: 0.917rem;
+    font-size: 1rem;
   }
   .questionnaireBlock03 .list > li .question06 .graph02 .text p .percentage {
     margin-left: 7px;
@@ -1521,10 +1529,11 @@ Questionnaire CSS
   }
   .questionnaireBlock03 .list > li .question06 .graph03 .text p {
     font-size: 1.125rem;
+    white-space: nowrap;
   }
   .questionnaireBlock03 .list > li .question06 .graph03 .text p .rank {
     margin-right: 9px;
-    font-size: 0.917rem;
+    font-size: 1rem;
   }
   .questionnaireBlock03 .list > li .question06 .graph03 .text p .percentage {
     margin-left: 5px;
@@ -1558,7 +1567,7 @@ Questionnaire CSS
   }
   .questionnaireBlock03 .list > li .question07 .graph01 .text p:first-child .rank {
     margin-right: 11px;
-    font-size: 0.917rem;
+    font-size: 1rem;
   }
   .questionnaireBlock03 .list > li .question07 .graph01 .text p:first-child .percentage {
     margin-left: 2px;
@@ -1580,7 +1589,7 @@ Questionnaire CSS
   }
   .questionnaireBlock03 .list > li .question07 .graph02 .text p:first-child .rank {
     margin-right: 11px;
-    font-size: 0.833rem;
+    font-size: 0.917rem;
   }
   .questionnaireBlock03 .list > li .question07 .graph02 .text p:first-child .percentage {
     margin-left: 10px;
@@ -1600,7 +1609,7 @@ Questionnaire CSS
   }
   .questionnaireBlock03 .list > li .question07 .graph03 .text p:first-child .rank {
     margin-right: 9px;
-    font-size: 0.833rem;
+    font-size: 0.917rem;
   }
   .questionnaireBlock03 .list > li .question07 .graph03 .text p:first-child .percentage {
     margin-left: 5px;
@@ -1620,7 +1629,7 @@ Questionnaire CSS
     font-size: 1rem;
   }
   .questionnaireBlock03 .list > li .question07 .graph04 .text p:nth-child(2) {
-    font-size: 0.833rem;
+    font-size: 0.917rem;
     line-height: 1.2;
   }
   .questionnaireBlock03 .list > li .question07 .graph04 .text p:nth-child(3) {
@@ -1686,7 +1695,7 @@ Questionnaire CSS
   }
   .questionnaireBlock03 .list > li .question08 .voice {
     padding: 8px 0;
-    font-size: 0.833rem;
+    font-size: 0.917rem;
     line-height: 1.8;
     text-align: left;
   }
@@ -1810,12 +1819,12 @@ Questionnaire CSS
     margin-bottom: 14px;
   }
   .questionnaireBlock04 .box .text01 {
-    font-size: 0.833rem;
+    font-size: 0.917rem;
     line-height: 1.7;
     margin-bottom: 22px;
   }
   .questionnaireBlock04 .box .text02 {
-    font-size: 0.833rem;
+    font-size: 0.917rem;
     line-height: 1.6;
   }
   .questionnaireBlock04 .bnr {

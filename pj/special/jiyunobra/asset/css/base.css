@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 /* ===============================================================================
 Reset
 =============================================================================== */
@@ -79,6 +80,20 @@ img {
   content: "";
   display: block;
   clear: both;
+}
+
+.mont {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal !important;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .mont {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold !important;
+    letter-spacing: 3px;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -179,6 +194,14 @@ HeaderArea
   letter-spacing: 2px;
 }
 
+#headerArea #grobalNav .list li.current {
+  border-left: solid 2px #f48e92;
+}
+
+#headerArea #grobalNav .list li.current a {
+  color: #f48e92;
+}
+
 #headerArea #grobalNav .list li.logo {
   border: none;
 }
@@ -202,11 +225,6 @@ HeaderArea
 #headerArea #grobalNav .list li:nth-child(2) {
   margin-bottom: 53px;
   padding-bottom: 3px;
-  border-left: solid 2px #f48e92;
-}
-
-#headerArea #grobalNav .list li:nth-child(2) a {
-  color: #f48e92;
 }
 
 #headerArea #grobalNav .list li:nth-child(2) p:nth-child(1) {
@@ -298,6 +316,9 @@ HeaderArea
     font-size: 1.167rem;
     letter-spacing: 1px;
   }
+  #headerArea #grobalNav .list li.current {
+    border-left: solid 1px #f48e92;
+  }
   #headerArea #grobalNav .list li.logo {
     padding: 0;
   }
@@ -307,7 +328,6 @@ HeaderArea
   #headerArea #grobalNav .list li:nth-child(2) {
     margin-bottom: 22px;
     padding-bottom: 0;
-    border-left: solid 1px #f48e92;
   }
   #headerArea #grobalNav .list li:nth-child(2) p:nth-child(2) {
     font-size: 0.833rem;
@@ -455,8 +475,11 @@ ContentsArea
 #contentsArea .commonBlock01 .column2block p {
   text-align: center;
   margin-bottom: 45px;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1.733rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal !important;
+  letter-spacing: 3px;
 }
 
 #contentsArea .commonBlock01 .column2block a {
@@ -511,8 +534,10 @@ ContentsArea
   #contentsArea .commonBlock01 .column2block p {
     text-align: center;
     margin-bottom: 30px;
-    font-weight: bold;
     font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold !important;
+    letter-spacing: 3px;
   }
   #contentsArea .commonBlock01 .column2block a {
     float: none;

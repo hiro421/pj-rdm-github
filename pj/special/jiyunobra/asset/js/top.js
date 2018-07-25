@@ -15,10 +15,13 @@ $(function(){
 		});
 	});
 	$('.fadeVoice').scroll();
+  setTimeout(function(){
+        $("body").addClass("loaded");
+    },1000);
 });
 
-$(window).on('load',function(){
-    $("body").addClass("loaded");
-});
+//$(window).on('load',function(){
+//    $("body").addClass("loaded");
+//});
 
 var ps = new PerfectScrollbar('.topBlock07 .box');

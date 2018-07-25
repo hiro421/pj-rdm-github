@@ -26,7 +26,7 @@ $(function(){
 			$(this).find('li').removeClass('active');
 			$(this).find('li').eq(selectImage).addClass('active');
 		});
-	},3000);
+	},2000);
 });
 
 // colorSelect
@@ -46,6 +46,7 @@ $(function(){
 			'opacity':'1'
 		});
 		$('.modalBlock01 .closeWrap').css('display','block');
+    $('.modalBlock01 .closeBtn').css('display','block');
 	});
 	$('.closeWrap').on('click', function(){
 		$('.modalBlock01 .modalBox').css({
@@ -54,8 +55,18 @@ $(function(){
 		});
 		$(this).css('display','none');
 	});
+  $('.closeBtn').on('click', function(){
+		$('.modalBlock01 .modalBox').css({
+			'z-index':'-10',
+			'opacity':'0'
+		});
+		$(this).css('display','none');
+	});
 
-	$('.slider').slick();
+	$('.slider').slick({
+    autoplay: true,
+    autoplaySpeed: 2000
+  });
 });
 
 // compareImage
@@ -75,3 +86,18 @@ $(function(){
 				}
 		});
 });
+
+$(window).on('load scroll', function () {
+    var winH = $(window).height();
+    var scroll = $(window).scrollTop();
+    var bottom = winH - (scroll * 0.2)
+    if (bottom < 100) {
+      $('.fixedCartBtn').css({
+        bottom: 100 + "px"
+      });
+    } else {
+      $('.fixedCartBtn').css({
+        bottom: bottom + "px"
+      });
+    }
+  });

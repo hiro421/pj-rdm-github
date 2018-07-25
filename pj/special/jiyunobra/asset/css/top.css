@@ -53,7 +53,7 @@ Top CSS
   left: 238px;
   opacity: 0;
   transition: 1s;
-  transition-delay: 2.6s;
+  transition-delay: 4s;
 }
 
 .mainVisual .img {
@@ -74,23 +74,23 @@ Top CSS
 }
 
 .mainVisual .img img.mv2 {
-  transition-delay: 1.8s;
+  transition-delay: 3.6s;
 }
 
 .mainVisual .img img.mv3 {
-  transition-delay: 1.6s;
+  transition-delay: 3.2s;
 }
 
 .mainVisual .img img.mv4 {
-  transition-delay: 1.4s;
+  transition-delay: 2.8s;
 }
 
 .mainVisual .img img.mv5 {
-  transition-delay: 1.2s;
+  transition-delay: 2.4s;
 }
 
 .mainVisual .img img.mv6 {
-  transition-delay: 1s;
+  transition-delay: 2s;
 }
 
 @media screen and (max-width: 768px) {
@@ -178,9 +178,8 @@ Top CSS
   }
   .topBlock01 .heading {
     margin-bottom: 28px;
-    background: url(../img/top/top_contents_arw06.png) no-repeat center bottom;
-    background-size: 12px auto;
     padding-bottom: 40px;
+    position: relative;
   }
   .topBlock01 .heading h2 {
     font-size: 3.105rem;
@@ -188,6 +187,18 @@ Top CSS
   }
   .topBlock01 .heading p {
     font-size: 1.083rem;
+  }
+  .topBlock01 .heading p:before {
+    content: "";
+    background: url(../img/top/top_contents_arw06.png) no-repeat center bottom;
+    background-size: 12px auto;
+    width: 12px;
+    height: 30px;
+    position: absolute;
+    margin-left: -3px;
+    left: 50%;
+    bottom: -5px;
+    animation: fuwafuwa ease-in-out 1.5s 3s infinite both;
   }
   .topBlock01 .text p {
     font-size: 1.083rem;
@@ -236,6 +247,15 @@ Top CSS
   margin-bottom: 39px;
 }
 
+.topBlock02 .list.showed li::before {
+  opacity: 1;
+  background-color: #f48e92;
+}
+
+.topBlock02 .list.showed li::after {
+  opacity: 1;
+}
+
 .topBlock02 .list li {
   margin-bottom: 32px;
   font-size: 1.2rem;
@@ -248,12 +268,60 @@ Top CSS
   margin-bottom: 0;
 }
 
-.topBlock02 .list li.showed::before {
-  background: #f48e92;
+.topBlock02 .list li:nth-child(1):before {
+  transition-delay: 0s,0.5s;
 }
 
-.topBlock02 .list li.showed::after {
-  opacity: 1;
+.topBlock02 .list li:nth-child(1):after {
+  transition-delay: 1s;
+}
+
+.topBlock02 .list li:nth-child(2):before {
+  transition-delay: 0.2s,0.7s;
+}
+
+.topBlock02 .list li:nth-child(2):after {
+  transition-delay: 1.2s;
+}
+
+.topBlock02 .list li:nth-child(3):before {
+  transition-delay: 0.4s,0.9s;
+}
+
+.topBlock02 .list li:nth-child(3):after {
+  transition-delay: 1.4s;
+}
+
+.topBlock02 .list li:nth-child(4):before {
+  transition-delay: 0.6s,1.1s;
+}
+
+.topBlock02 .list li:nth-child(4):after {
+  transition-delay: 1.6s;
+}
+
+.topBlock02 .list li:nth-child(5):before {
+  transition-delay: 0.8s,1.3s;
+}
+
+.topBlock02 .list li:nth-child(5):after {
+  transition-delay: 1.8s;
+}
+
+.topBlock02 .list li:nth-child(6):before {
+  transition-delay: 1s,1.5s;
+}
+
+.topBlock02 .list li:nth-child(6):after {
+  transition-delay: 2s;
+}
+
+.topBlock02 .list li:nth-child(7):before {
+  transition-delay: 1.2s,1.7s;
+}
+
+.topBlock02 .list li:nth-child(7):after {
+  transition-delay: 2.2s;
 }
 
 .topBlock02 .list li::before {
@@ -265,7 +333,8 @@ Top CSS
   position: absolute;
   top: 0;
   left: 0;
-  transition: all 0.5s 0.3s;
+  opacity: 0;
+  transition: opacity 0.5s 0.3s,background-color 0.5s 0.8s;
 }
 
 .topBlock02 .list li::after {
@@ -279,7 +348,7 @@ Top CSS
   top: 6px;
   left: 3px;
   opacity: 0;
-  transition: all 0.5s 0.8s;
+  transition: all 0.5s 1.3s;
 }
 
 .topBlock02 .text {
@@ -843,13 +912,19 @@ Top CSS
 .topBlock07 .box {
   width: 905px;
   box-sizing: border-box;
-  margin: 0 auto 45px;
+  margin: 0 auto 25px;
   background: #fff;
   padding: 56px 45px 0;
   height: 559px;
   overflow-y: auto;
   top: 0;
   position: relative;
+}
+
+.topBlock07 .caution {
+  margin-bottom: 1.5em;
+  text-align: left;
+  padding-left: 3em;
 }
 
 .topBlock07 .voiceList {
@@ -939,6 +1014,12 @@ Top CSS
     height: 450px;
     overflow-y: auto;
   }
+  .topBlock07 .caution {
+    margin-bottom: 1.5em;
+    text-align: left;
+    padding-left: 1.5em;
+    font-size: 10px;
+  }
   .topBlock07 .voiceList {
     text-align: left;
   }
@@ -978,5 +1059,45 @@ Top CSS
 @media screen and (max-width: 768px) {
   .wide-banner {
     margin-bottom: 25px;
+  }
+}
+
+.animated.bounce {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@keyframes fuwafuwa {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -7px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
