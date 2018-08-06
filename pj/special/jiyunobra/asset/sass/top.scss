@@ -413,6 +413,7 @@ Top CSS
 				font-weight:bold;
 				color:#1b7f96;
 				background:url(../img/top/top_contents_arw01.png) no-repeat 19px 17px;
+				animation: arrow-anime2 2s infinite;
 			}
 		}
 	}
@@ -528,7 +529,7 @@ Top CSS
 		span{
   		white-space: nowrap;
 			width:283px; box-sizing:border-box;
-			padding:9px 10px 9px 46px;
+			padding:9px 10px 9px 34px;
 			border-radius:30px;
 			display:block;
 			border:solid 2px #fff;
@@ -536,6 +537,7 @@ Top CSS
 			font-weight:bold;
 			color:#fff;
 			background:url(../img/top/top_contents_arw02.png) no-repeat 19px 17px;
+			animation: arrow-anime2 2s infinite;
 		}
 	}
 	@media screen and (max-width:$spViewport){
@@ -641,6 +643,7 @@ Top CSS
 			font-weight:bold;
 			color:#000;
 			background:url(../img/top/top_contents_arw03.png) no-repeat 19px 17px;
+			animation: arrow-anime2 2s infinite;
 		}
 	}
 	@media screen and (max-width:$spViewport){
@@ -971,4 +974,21 @@ from,20%,53%,80%,to {
 	0% {transform:translate(0, 0);}
 	50% {transform:translate(0, -7px);}
 	100% {transform:translate(0, 0);}
+}
+
+
+@keyframes arrow-anime2 {
+	0% {background-position: 12px 17px;}
+	50% {background-position: 19px 17px;}
+	100% {background-position: 12px 17px;}
+}
+
+@media screen and (max-width:$spViewport){
+  
+@keyframes arrow-anime2 {
+	0% {background-position: 5px 9px;}
+	50% {background-position: 10px 9px;}
+	100% {background-position: 5px 9px;}
+}
+  
 }
