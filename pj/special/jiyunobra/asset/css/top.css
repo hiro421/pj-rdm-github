@@ -485,7 +485,7 @@ Top CSS
     padding: 10px 0 12px;
     height: auto;
     box-sizing: border-box;
-    min-width: auto;
+    min-width: initial;
   }
   .topBlock03 a > .inner {
     width: 93.75%;
@@ -623,7 +623,7 @@ Top CSS
     padding: 62.5% 0 0 0;
     height: auto;
     position: relative;
-    min-width: auto;
+    min-width: initial;
   }
   .topBlock04 a > .inner {
     padding-bottom: 6px;
@@ -743,7 +743,7 @@ Top CSS
     padding: 62.5% 0 0 0;
     height: auto;
     position: relative;
-    min-width: auto;
+    min-width: initial;
   }
   .topBlock05 a > .inner {
     padding-bottom: 6px;
@@ -822,7 +822,7 @@ Top CSS
     padding: 62.5% 0 0 0;
     height: auto;
     position: relative;
-    min-width: auto;
+    min-width: initial;
   }
   .topBlock06 > .inner {
     padding-top: 4px;
@@ -980,7 +980,7 @@ Top CSS
     background: #ffebeb url(../img/top/top_contents_bg04_sp.jpg) no-repeat center bottom;
     background-size: 100% auto;
     padding: 32px 0 35px;
-    min-width: auto;
+    min-width: initial;
   }
   .topBlock07 > .inner {
     width: 93.75%;

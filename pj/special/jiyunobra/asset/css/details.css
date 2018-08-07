@@ -109,7 +109,7 @@ Details CSS
 
 @media screen and (max-width: 768px) {
   .detailsBlock01 {
-    min-width: auto;
+    min-width: initial;
     margin-bottom: 27px;
   }
   .detailsBlock01 > .inner {
@@ -210,7 +210,7 @@ Details CSS
     background: #f4f4f4 url(../img/details/details_contents_bg01_sp.png) no-repeat 0 top;
     background-size: 100% 40px;
     padding: 63px 0 16px;
-    min-width: auto;
+    min-width: initial;
   }
   .detailsBlock02 > .inner {
     width: 93.75%;
@@ -625,7 +625,7 @@ Details CSS
 @media screen and (max-width: 768px) {
   .detailsBlock03 {
     padding: 45px 0 38px;
-    min-width: auto;
+    min-width: initial;
   }
   .detailsBlock03 > .inner {
     width: 93.75%;
@@ -980,7 +980,7 @@ Details CSS
     background: #faefe6 url(../img/details/details_contents_bg02_sp.png) no-repeat 0 top;
     background-size: 100% 36px;
     padding: 66px 0 30px;
-    min-width: auto;
+    min-width: initial;
   }
   .detailsBlock04 > .inner {
     width: auto;
@@ -1247,7 +1247,7 @@ Details CSS
 @media screen and (max-width: 768px) {
   .detailsBlock05 {
     padding: 33px 0 30px;
-    min-width: auto;
+    min-width: initial;
   }
   .detailsBlock05 > .inner {
     width: 93.75%;
@@ -1980,7 +1980,7 @@ Details CSS
   .detailsBlock06 {
     background: url(../img/details/details_contents_bg03_sp.png) no-repeat center 421px;
     background-size: 100% 1201px;
-    min-width: auto;
+    min-width: initial;
     margin-bottom: 53px;
   }
   .detailsBlock06 .block01 {

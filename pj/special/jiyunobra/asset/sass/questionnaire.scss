@@ -38,7 +38,7 @@ Questionnaire CSS
 		}
 	}
 	@media screen and (max-width:$spViewport){
-		min-width:auto;
+		min-width:initial;
 		padding:20px 0 17px;
 		margin-top:0;
 		>.inner{
@@ -176,7 +176,7 @@ Questionnaire CSS
 		}
 	}
 	@media screen and (max-width:$spViewport){
-		min-width:auto;
+		min-width:initial;
 		padding:24px 0 0;
 		margin-bottom:53px;
 		>.inner{
@@ -898,7 +898,7 @@ Questionnaire CSS
 		}
 	}
 	@media screen and (max-width:$spViewport){
-		min-width:auto;
+		min-width:initial;
 		margin-bottom:39px;
 		>.inner{
 			width:93.75%;
@@ -1467,7 +1467,7 @@ Questionnaire CSS
 		}
 	}
 	@media screen and (max-width:$spViewport){
-		min-width:auto;
+		min-width:initial;
 		margin-bottom:48px;
 		>.inner{
 			width:93.75%;

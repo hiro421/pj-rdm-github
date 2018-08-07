@@ -283,7 +283,7 @@ HeaderArea
 @media screen and (max-width: 768px) {
   #headerArea {
     padding: 12px 0 13px;
-    min-width: auto;
+    min-width: initial;
   }
   #headerArea #headerLogo {
     width: 123px;
@@ -404,7 +404,7 @@ FooterArea
 @media screen and (max-width: 768px) {
   #footerArea {
     padding: 30px 0;
-    min-width: auto;
+    min-width: initial;
   }
   #footerArea .list {
     margin-bottom: 25px;
@@ -502,7 +502,7 @@ ContentsArea
 
 @media screen and (max-width: 768px) {
   #contentsArea .commonBlock01 {
-    min-width: auto;
+    min-width: initial;
   }
   #contentsArea .commonBlock01 > .inner {
     width: 93.75%;

@@ -19,7 +19,7 @@ Manga CSS
 
 @media screen and (max-width: 768px) {
   .mangaBlock01 {
-    min-width: auto;
+    min-width: initial;
     padding: 20px 0 17px;
     margin-top: 0;
   }

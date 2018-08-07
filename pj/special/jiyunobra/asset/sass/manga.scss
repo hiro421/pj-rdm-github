@@ -25,7 +25,7 @@ Manga CSS
 		text-align:center;
 	}
 	@media screen and (max-width:$spViewport){
-		min-width:auto;
+		min-width:initial;
 		padding:20px 0 17px;
 		margin-top:0;
 		>.inner{

@@ -107,7 +107,7 @@ Details CSS
 		}
 	}
 	@media screen and (max-width:$spViewport){
-		min-width:auto;
+		min-width:initial;
 		margin-bottom:27px;
 		>.inner{
 			width:93.75%;
@@ -198,7 +198,7 @@ Details CSS
 		background:#f4f4f4 url(../img/details/details_contents_bg01_sp.png) no-repeat 0 top;
 		background-size:100% 40px;
 		padding:63px 0 16px;
-		min-width:auto;
+		min-width:initial;
 		>.inner{
 			width:93.75%;
 		}
@@ -548,7 +548,7 @@ Details CSS
 	}
 	@media screen and (max-width:$spViewport){
 		padding:45px 0 38px;
-		min-width:auto;
+		min-width:initial;
 		>.inner{
 			width:93.75%;
 		}
@@ -873,7 +873,7 @@ Details CSS
 		background:#faefe6 url(../img/details/details_contents_bg02_sp.png) no-repeat 0 top;
 		background-size:100% 36px;
 		padding:66px 0 30px;
-		min-width:auto;
+		min-width:initial;
 		>.inner{
 			width:auto;
 		}
@@ -1097,7 +1097,7 @@ Details CSS
 	}
 	@media screen and (max-width:$spViewport){
 		padding:33px 0 30px;
-		min-width:auto;
+		min-width:initial;
 		>.inner{
 			width:93.75%;
 		}
@@ -1723,7 +1723,7 @@ Details CSS
 	@media screen and (max-width:$spViewport){
 		background:url(../img/details/details_contents_bg03_sp.png) no-repeat center 421px;
 		background-size:100% 1201px;
-		min-width:auto;
+		min-width:initial;
 		margin-bottom:53px;
 		.block01{
 			padding:32px 0 20px;

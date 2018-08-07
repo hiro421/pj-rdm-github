@@ -36,7 +36,7 @@ Questionnaire CSS
 
 @media screen and (max-width: 768px) {
   .questionnaireBlock01 {
-    min-width: auto;
+    min-width: initial;
     padding: 20px 0 17px;
     margin-top: 0;
   }
@@ -205,7 +205,7 @@ Questionnaire CSS
 
 @media screen and (max-width: 768px) {
   .questionnaireBlock02 {
-    min-width: auto;
+    min-width: initial;
     padding: 24px 0 0;
     margin-bottom: 53px;
   }
@@ -1152,7 +1152,7 @@ Questionnaire CSS
 
 @media screen and (max-width: 768px) {
   .questionnaireBlock03 {
-    min-width: auto;
+    min-width: initial;
     margin-bottom: 39px;
   }
   .questionnaireBlock03 > .inner {
@@ -1801,7 +1801,7 @@ Questionnaire CSS
 
 @media screen and (max-width: 768px) {
   .questionnaireBlock04 {
-    min-width: auto;
+    min-width: initial;
     margin-bottom: 48px;
   }
   .questionnaireBlock04 > .inner {

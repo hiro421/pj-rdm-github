@@ -248,7 +248,7 @@ HeaderArea
 	}
 	@media screen and (max-width:$spViewport){
 		padding:12px 0 13px;
-		min-width:auto;
+		min-width:initial;
 		#headerLogo{
 			width:123px; margin:0 auto;
 		}
@@ -364,7 +364,7 @@ FooterArea
 	}
 	@media screen and (max-width:$spViewport){
 		padding:30px 0;
-		min-width:auto;
+		min-width:initial;
 		.list{
 			margin-bottom:25px;
 			li{
@@ -453,7 +453,7 @@ ContentsArea
 	}
 	@media screen and (max-width:$spViewport){
 		.commonBlock01{
-			min-width:auto;
+			min-width:initial;
 			>.inner{
 				width:93.75%;
 			}
