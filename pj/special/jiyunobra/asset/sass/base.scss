@@ -235,8 +235,8 @@ HeaderArea
 							margin-bottom:11px;
 						}
 						&:nth-child(2){
-							font-size:round((16/$fontPC)*1000)/1000+rem;
-							margin-bottom:8px;
+							//font-size:round((16/$fontPC)*1000)/1000+rem;
+							//margin-bottom:8px;
 						}
 					}
 				}
@@ -314,8 +314,8 @@ HeaderArea
 						padding-bottom:0;
 						p{
 							&:nth-child(2){
-								font-size:round((20/2/$fontSP)*1000)/1000+rem;
-								margin-bottom:5px;
+								//font-size:round((20/2/$fontSP)*1000)/1000+rem;
+								//margin-bottom:5px;
 							}
 						}
 					}

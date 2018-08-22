@@ -784,62 +784,117 @@ Top CSS
 
 /* topBlock06
 	======================================== */
-.topBlock06 {
-  background: #6f7171 url(../img/top/top_contents_bg03.jpg) no-repeat center top;
+.topBlock06 a {
+  display: block;
+  background: #e5eff2 url(../img/top/top_contents_bg03.jpg) no-repeat center top;
   padding: 30px 0 40px;
   height: 400px;
   box-sizing: border-box;
   min-width: 984px;
+  text-decoration: none;
+  color: #000;
+  transition-property: opacity;
+  transition-duration: .2s;
 }
 
-.topBlock06 > .inner {
+.topBlock06 a:hover {
+  opacity: .7;
+  text-decoration: none;
+}
+
+.topBlock06 a > .inner {
   width: 984px;
   margin: 0 auto;
 }
 
+.topBlock06 .number {
+  margin: 0 42px 29px 0;
+}
+
 .topBlock06 .heading {
-  margin: 115px 0 0 33px;
+  margin: 0 40px 21px 0;
   font-weight: bold;
-  color: #fff;
 }
 
 .topBlock06 .heading h3 {
-  font-size: 1.829rem;
-  line-height: 1;
+  font-size: 3.039rem;
+  line-height: 1.2;
 }
 
 .topBlock06 .heading h3 span {
   display: block;
-  margin-top: 15px;
-  font-size: 3.955rem;
+  margin-bottom: 11px;
+  font-size: 2.333rem;
   line-height: 1;
 }
 
+.topBlock06 .btn {
+  margin-right: 45px;
+  display: inline-block;
+  font-size: 0;
+  vertical-align: top;
+}
+
+.topBlock06 .btn span {
+  width: 223px;
+  box-sizing: border-box;
+  padding: 9px 10px 9px 46px;
+  border-radius: 30px;
+  display: block;
+  border: solid 2px #000;
+  font-size: 1.173rem;
+  font-weight: bold;
+  color: #000;
+  background: url(../img/top/top_contents_arw03.png) no-repeat 19px 17px;
+  text-align: center;
+  animation: arrow-anime2 2s infinite;
+}
+
 @media screen and (max-width: 768px) {
-  .topBlock06 {
+  .topBlock06 a {
     background: url(../img/top/top_contents_bg03_sp.jpg) no-repeat center top;
     background-size: cover;
     padding: 62.5% 0 0 0;
     height: auto;
     position: relative;
     min-width: initial;
+    min-width: auto;
   }
-  .topBlock06 > .inner {
-    padding-top: 4px;
+  .topBlock06 a > .inner {
+    padding-bottom: 6px;
     width: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
+  .topBlock06 .number {
+    width: 61px;
+    margin: 5px auto 14px 5.125%;
+  }
   .topBlock06 .heading {
-    margin: 0 0 0 3.125%;
+    margin: 0 0 11px 5.125%;
+    font-weight: bold;
   }
   .topBlock06 .heading h3 {
-    font-size: 0.867rem;
+    font-size: 2.069rem;
+    line-height: 1;
   }
   .topBlock06 .heading h3 span {
-    margin-top: 5px;
-    font-size: 1.875rem;
+    margin-top: 8px;
+    font-size: 1.667rem;
+  }
+  .topBlock06 .btn {
+    margin-left: 5.125%;
+  }
+  .topBlock06 .btn span {
+    width: 120px;
+    padding: 4px 5px 4px 23px;
+    border-radius: 15px;
+    border: solid 1px #000;
+    font-size: 0.733rem;
+    background: url(../img/top/top_contents_arw03.png) no-repeat 10px 9px;
+    background-size: 10px auto;
+    color: #000;
   }
 }
 
