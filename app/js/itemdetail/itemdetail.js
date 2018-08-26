@@ -80,7 +80,6 @@ ItemDetailPage.prototype = {
         REVIEW_VOICE_TAB_LIST : ".reviewVoiceArea .tab > li",
         REVIEW_VOICE_CONTENT_LIST : ".reviewVoiceArea .content > li",
         PRODUCT_DETAIL : "#productDetail",
-        PRODUCT_DETAIL_WRAP : "#productDetail > .wrap",
         CUSTOMER_REVIEW : "#customerReview",
         REVIEW_STAR_DETAIL : "#reviewStarDetail",
         STAFF_VOICE : "#staffVoice",
@@ -1437,7 +1436,7 @@ ItemDetailPage.prototype = {
         var instance = this;
         //All Element
         if (typeof instance.ITEM_COMPONENTS.PRODUCT_DETAIL != "undefined") {
-            var allElementBtn = $(".ingredientsText");
+            var allElementBtn = instance.ITEM_COMPONENTS.PRODUCT_DETAIL.find("> div > .subText > .ingredientsText");
             if (allElementBtn.length > 0) {
                 allElementBtn.click(function() {
                     instance.buildAllElementPanel($(this));
@@ -1571,18 +1570,18 @@ ItemDetailPage.prototype = {
         //Mobile Only Design
         if (CommonUtils.isMobile()) {
             //Product Detail
-            //var productDetailWrap = instance.ITEM_COMPONENTS.PRODUCT_DETAIL.find("> div");
-            //instance.ITEM_COMPONENTS.PRODUCT_DETAIL.find("b").click(function(){
-            //    if (productDetailWrap.is(":hidden")) {
-            //        $(this).removeClass("none-submenu");
-            //        $(this).addClass("active-submenu");
-            //        productDetailWrap.slideDown(200);
-            //    } else {
-            //        $(this).removeClass("active-submenu");
-            //        $(this).addClass("none-submenu");
-            //        productDetailWrap.slideUp(200);
-            //    }
-            //});
+            var productDetailWrap = instance.ITEM_COMPONENTS.PRODUCT_DETAIL.find("> div");
+            instance.ITEM_COMPONENTS.PRODUCT_DETAIL.find("b").click(function(){
+                if (productDetailWrap.is(":hidden")) {
+                    $(this).removeClass("none-submenu");
+                    $(this).addClass("active-submenu");
+                    productDetailWrap.slideDown(200);
+                } else {
+                    $(this).removeClass("active-submenu");
+                    $(this).addClass("none-submenu");
+                    productDetailWrap.slideUp(200);
+                }
+            });
             //Customer Review 
             var reviewWrap = instance.ITEM_COMPONENTS.CUSTOMER_REVIEW.find(".wrap");
             //reviewWrap.hide();
@@ -2775,7 +2774,7 @@ ItemDetailPage.prototype = {
         //Build Page
         var addtionalInfoComponents = {};
         CommonUtils.createHtmlConponent(instance.AddtionalInfoSetting, addtionalInfoComponents, null);
-        instance.ITEM_COMPONENTS.PRODUCT_DETAIL_WRAP.append(addtionalInfoComponents.Panel);
+        instance.ITEM_COMPONENTS.MAIN_INFO_PANEL.prepend(addtionalInfoComponents.Panel);
         
         //var itemCode = csvInfo[instance.AddtionalCsvTitles.ITEM_CODE];
         var wire = csvInfo[instance.AddtionalCsvTitles.WIRE];

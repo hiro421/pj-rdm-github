@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+// ===============================================================================
+// Variable Setting
+// ===============================================================================
+// ************* Viewport *************
+$spViewport:768px;
+$fontPC:15;
+$fontSP:12;
+$basicLineHeight:1.5;
+
+/* ===============================================================================
+moviegallery CSS
+=============================================================================== */
+
+#moviegalleryArea{
+  padding-top: 30px;
+  h2{
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 100px;
+    @media screen and (max-width:$spViewport){
+      font-size:round((48/2/$fontSP)*1000)/1000+rem;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/* moviegalleryBlock01
+	======================================== */
+.moviegalleryBlock01{
+	min-width:984px;
+	@media screen and (max-width:$spViewport){
+  	min-width: 100%;
+	}
+	>.inner{
+		width:984px; margin:0 auto 50px;
+		text-align:center;
+		display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	@media screen and (max-width:$spViewport){
+    	width:100%;
+	  }
+	}
+	a{
+  	display: block;
+  	margin-bottom: 20px;
+	}
+	.thumb{
+  	width: 400px;
+  	margin: 0 37px 50px;
+  	@media screen and (max-width:$spViewport){
+    	width:100%;
+	  }
+	}
+	.text01{
+  	font-size: 19px;
+  	font-weight: bold;
+  	@media screen and (max-width:$spViewport){
+    	font-size:round((24/2/$fontSP)*1000)/1000+rem;
+	  }
+	}
+	
+}

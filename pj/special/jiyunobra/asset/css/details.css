@@ -41,12 +41,34 @@ Details CSS
   text-align: center;
 }
 
+.mainVisual .coupon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  opacity: 1;
+  width: 192px;
+}
+
+.mainVisual .coupon:hover {
+  opacity: 0.7;
+}
+
 @media screen and (max-width: 768px) {
   .mainVisual {
     margin-bottom: 10px;
   }
   .mainVisual > .inner {
     width: auto;
+  }
+  .mainVisual .coupon {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    opacity: 1;
+    width: 90px;
+  }
+  .mainVisual .coupon:hover {
+    opacity: 0.7;
   }
   .mainVisual .list {
     height: auto;

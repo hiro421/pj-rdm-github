@@ -48,11 +48,29 @@ Details CSS
 		margin-top:-25px;
 		text-align:center;
 	}
+	.coupon{
+    position:absolute;
+		top:20px; left:20px;
+		opacity: 1;
+		width: 192px;
+		&:hover{
+  		opacity: 0.7;
+		}
+  }
 	@media screen and (max-width:$spViewport){
 		margin-bottom:10px;
 		>.inner{
 			width:auto;
 		}
+		.coupon{
+      position:absolute;
+  		top:20px; left:10px;
+  		opacity: 1;
+  		width: 90px;
+  		&:hover{
+    		opacity: 0.7;
+  		}
+    }
 		.list{
 			height:auto;
 			padding-top:94.375%;

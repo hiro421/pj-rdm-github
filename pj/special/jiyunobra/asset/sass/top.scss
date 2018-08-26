@@ -12,6 +12,20 @@ $basicLineHeight:1.5;
 /* ===============================================================================
 Top CSS
 =============================================================================== */
+#headerArea {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  @media screen and (max-width:$spViewport){}
+}
+#topArea{
+  @media screen and (max-width:$spViewport){
+    padding-top: 45px;
+  }
+}
 /* mainVisual
 	======================================== */
 .loaded{
@@ -112,6 +126,209 @@ Top CSS
 	}
 }
 
+/*
+.mainVisual--anne{
+	margin-bottom:80px;
+	height: 685px;
+	background-color: #eaeff3;
+	>.inner{
+		width:984px; margin:0 auto;
+		position:relative;
+		background:url(../img/top/anne-bg.png) no-repeat center top;
+	}
+	.logo{
+		position:absolute;
+		top:14px; right:15px;
+	}
+	.text{
+		position:absolute;
+		top:475px; left:238px;
+		opacity: 0;
+		transition: 1s;
+		transition-delay: 4s;
+	}
+	@media screen and (max-width:$spViewport){
+		padding-top:47px;
+		margin-bottom:37px;
+		>.inner{
+			width:auto;
+		}
+		.img{
+  		height: 80vw;
+			img{
+				width:100%;
+			}
+		}
+		.logo{
+			top:-38px; left:0; right:0;
+			width:78px; margin:0 auto;
+		}
+		.text{
+			width:200px; margin:0 auto;
+			bottom:11px; top:auto; left:0; right:0;
+		}
+	}
+}
+*/
+
+.mainVisual--anne {
+  overflow: hidden;
+  font-family: 'Ryumin Regular KL', 'リュウミン R-KL', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+  height: 790px;
+  margin-bottom: 80px;
+  position: relative;
+  background: -webkit-linear-gradient(left, #ebeff3 0%,#f1f7fa 100%);
+    background: linear-gradient(to right, #ebeff3 0%,#f1f7fa 100%); 
+    @media screen and (max-width:$spViewport){
+      height: 145.5vw;
+      margin-bottom: 50px;
+    }
+    .bg{
+      width: 100%;
+      height: 100%;
+      background:url(../img/top/anne-bg.png) no-repeat center top;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      -webkit-animation-name: animeImage;
+      animation-name: animeImage;
+       -webkit-animation-duration: 5.5s;
+      animation-duration: 5.5s;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease;
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      -webkit-animation-direction: normal;
+      animation-direction: normal;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      @media screen and (max-width:$spViewport){
+        background:url(../img/top/anne-bg_sp.png) no-repeat center top;
+        background-size: 100% auto;
+      }
+    }
+  > .inner {
+    position: relative;
+    height: 100%;
+    
+  }
+  .image, .title, .lead {
+    -webkit-animation-duration: 5.5s;
+    animation-duration: 5.5s;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .image {
+    -webkit-animation-name: animeImage;
+    animation-name: animeImage;
+    position: absolute;
+    left: 467px;
+    top: 102px;
+    transform: translateX(-50%);
+    z-index: 3;
+    @media screen and (max-width:$spViewport){
+      left: 0;
+      top: 0;
+      transform: translateX(0);
+    }
+  }
+  .textArea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    transition: -webkit-transform 0.1s ease;
+    transition: transform 0.1s ease;
+    transition: transform 0.1s ease, -webkit-transform 0.1s ease;
+  }
+  .title {
+    position: absolute;
+    font-size: 140px;
+    text-indent: -1.8em;
+    line-height: 1.0;
+    letter-spacing: 0.06em;
+    -webkit-transform: skewY(-11deg);
+    transform: skewY(-11deg);
+    -webkit-animation-name: animeTitleSp;
+    animation-name: animeTitleSp;
+    @media screen and (max-width:$spViewport){
+      font-size: 15vw;
+      line-height: 0.6;
+    }
+  }
+  .lead {
+    position: absolute;
+    padding-top: 2.1em;
+    font-size: 70px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    -webkit-animation-name: animeLeadSp;
+    animation-name: animeLeadSp;
+    @media screen and (max-width:$spViewport){
+      font-size: 9vw;
+      padding-top: 2.1em;
+      line-height: 0.8;
+      text-indent: -1.8em;
+      -webkit-transform: skewY(-11deg);
+      transform: skewY(-11deg);
+    }
+    span{
+      display: block;
+      -webkit-transform: skewY(-11deg);
+      transform: skewY(-11deg);
+
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mainVisual--anne {
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mainVisual--anne > .inner {
+    width: 984px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mainVisual--anne .image {
+    margin: 0 auto;
+    width: 616px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mainVisual--anne .title {
+    -webkit-animation-name: animeTitlePc;
+    animation-name: animeTitlePc;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mainVisual--anne .lead {
+    -webkit-animation-name: animeLeadPc;
+    animation-name: animeLeadPc;
+  }
+}
+
 /* topBlock01
 	======================================== */
 .topBlock01{
@@ -120,15 +337,18 @@ Top CSS
 	>.inner{
 		width:984px; margin:0 auto;
 	}
+	.coupon{
+  	a:hover{
+    	opacity: 0.7;
+  	}
+	}
 	.heading{
 		margin-bottom:80px;
 		font-style:italic;
 		h2{
-			font-size:round((98.71/$fontPC)*1000)/1000+rem;
+			font-weight:bold;
+			font-size:round((26/$fontPC)*1000)/1000+rem;
 			line-height:1;
-			margin-bottom:26px;
-			font-weight:500;
-			letter-spacing: 0.1em;
 		}
 		p{
 			font-weight:bold;
@@ -137,6 +357,7 @@ Top CSS
 		}
 	}
 	.text{
+  	margin-bottom: 60px;
 		p{
 			font-size:round((20/$fontPC)*1000)/1000+rem;
 			line-height:round(40/20*100)/100;
@@ -154,10 +375,10 @@ Top CSS
 		}
 		.heading{
 			margin-bottom:28px;
-			padding-bottom:40px;
+			padding-bottom:0px;
 			position: relative;
 			h2{
-				font-size:round((74.53/2/$fontSP)*1000)/1000+rem;
+				font-size:round((26/2/$fontSP)*1000)/1000+rem;
 				margin-bottom:22px;
 			}
 			p{
@@ -177,6 +398,7 @@ Top CSS
 			}
 		}
 		.text{
+  		margin-bottom: 30px;
 			p{
 				font-size:round((26/2/$fontSP)*1000)/1000+rem;
 				line-height:round(60/26*100)/100;
@@ -566,6 +788,7 @@ Top CSS
 			p{
 				font-size:round((18.49/2/$fontSP)*1000)/1000+rem;
 				margin-bottom:2px;
+				white-space: nowrap;
 			}
 			h3{
 				font-size:round((40.33/2/$fontSP)*1000)/1000+rem;
@@ -594,9 +817,10 @@ Top CSS
 /* topBlock05
 	======================================== */
 .topBlock05{
+  background: url(../img/top/top_contents_bg08.png) repeat center top;
 	a{
 		display:block;
-		background:#e7e4eb url(../img/top/top_contents_bg02.jpg) no-repeat center top;
+		background: url(../img/top/top_contents_bg02.jpg) no-repeat center top;
 		padding:30px 0 40px;
 		height:400px; box-sizing:border-box;
 		min-width:984px;
@@ -610,7 +834,7 @@ Top CSS
 		}
 		>.inner{
 			width:984px; margin:0 auto;
-			text-align:right
+			text-align:left;
 		}
 	}
 	.number{
@@ -664,10 +888,10 @@ Top CSS
 		}
 		.number{
 			width:61px;
-			margin:0 3.125% 15px auto;
+			margin:0 auto 15px 3.125%;
 		}
 		.heading{
-			margin:0 3.125%  11px 0;
+			margin:0 0  11px 3.125%;
 			font-weight:bold;
 			h3{
 				font-size:round((40/2/$fontSP)*1000)/1000+rem;
@@ -678,7 +902,7 @@ Top CSS
 			}
 		}
 		.btn{
-			margin-right:3.125%;
+			margin-left:3.125%;
 			span{
 				width:151px;
 				padding:4px 5px 4px 23px;
@@ -989,6 +1213,466 @@ Top CSS
 	}
 }
 
+/* topBlock08
+	======================================== */
+.topBlock08{
+	a{
+		display:block;
+		background:#f7f7f7 url(../img/top/top_contents_bg05.jpg) no-repeat center top;
+		padding:30px 0 40px;
+		height:400px; box-sizing:border-box;
+		min-width:984px;
+		text-decoration:none;
+		color:#000;
+		transition-property:opacity;
+		transition-duration:.2s;
+		overflow: hidden;
+		&:hover{
+			opacity:.7;
+			text-decoration:none;
+		}
+		>.inner{
+			width:984px; margin:0 auto;
+			text-align:right;
+			position: relative;
+			height: 100%;
+		}
+	}
+	.number{
+		//margin:0 42px 29px 0;
+		position: absolute;
+		right: 20px;
+		top:-20px;
+	}
+	.heading{
+		margin:0 40px 21px 0;
+		font-weight:bold;
+		writing-mode: vertical-rl;
+		font-family: 'Ryumin Regular KL', 'リュウミン R-KL', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+		h3{
+			position: absolute;
+			right: 170px;
+			top: -28px;
+			width: 185px;
+			img{
+  			width: 100%;
+  			height: auto;
+			}
+		}
+		h4{
+  		position: absolute;
+			right: 20px;
+			top: 80px;
+			width: 102px;
+			img{
+  			width: 100%;
+  			height: auto;
+			}
+		}
+	}
+	.btn{
+		margin-right:45px;
+		display:inline-block; font-size:0; vertical-align:top;
+		position: absolute;
+		left: 20px;
+		bottom: -20px;
+		span{
+			width:243px; box-sizing:border-box;
+			padding:9px 10px 9px 46px;
+			border-radius:30px;
+			display:block;
+			border:solid 2px #000;
+			font-size:round((17.6/$fontPC)*1000)/1000+rem;
+			font-weight:bold;
+			color:#000;
+			background:url(../img/top/top_contents_arw03.png) no-repeat 19px 17px;
+			animation: arrow-anime2 2s infinite;
+		}
+	}
+	@media screen and (max-width:$spViewport){
+		a{
+			background:url(../img/top/top_contents_bg05_sp.jpg) no-repeat center top;
+			background-size:cover;
+			padding:62.5% 0 0 0;
+			height:auto;
+			position:relative;
+			min-width:initial;
+			>.inner{
+				padding-bottom:6px;
+				width:100%;
+				position:absolute;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+		.number{
+			width:61px;
+			margin:8% -4.875% 15px auto;
+		}
+		.heading{
+			margin:0 3.125%  11px 0;
+			font-weight:bold;
+			h3{
+  			position: absolute;
+  			right: 23vw;
+  			top: 4vw;
+  			width: 	24.66vw;
+  			img{
+    			width: 100%;
+    			height: auto;
+  			}
+  		}
+  		h4{
+    		position: absolute;
+  			right: 3vw;
+  			top: 20vw;
+  			width: 14vw;
+  			img{
+    			width: 100%;
+    			height: auto;
+  			}
+  		}
+		}
+		.btn{
+			margin-right:3.125%;
+			left: 10px;
+			bottom: 10px;
+			span{
+				width:141px;
+				padding:4px 5px 4px 28px;
+				border-radius:15px;
+				border:solid 1px #000;
+				font-size:round((17.6/2/$fontSP)*1000)/1000+rem;
+				background:url(../img/top/top_contents_arw03.png) no-repeat 10px 9px;
+				background-size:10px auto;
+				color:#000;
+			}
+		}
+	}
+}
+
+/* topBlock09
+	======================================== */
+.topBlock09{
+	a{
+		display:block;
+		background:#ffe5e2 url(../img/top/top_contents_bg06.jpg) no-repeat center top;
+		padding:50px 0 40px;
+		height:400px; box-sizing:border-box;
+		min-width:984px;
+		transition-property:opacity;
+		transition-duration:.2s;
+		>.inner{
+			width:984px; margin:0 auto;
+			text-align:center;
+		}
+		&:hover{
+			opacity:.7;
+			text-decoration:none;
+		}
+	}
+	.number{
+		margin-bottom:22px;
+	}
+	.heading{
+		margin-bottom:20px;
+		color:#333;
+		font-weight:bold;
+		p{
+			font-size:round((18.49/$fontPC)*1000)/1000+rem;
+			margin-bottom:2px;
+		}
+		h3{
+			font-size:round((40.33/$fontPC)*1000)/1000+rem;
+			line-height:round(56.4/40.33*100)/100;
+			span{
+				font-size:round((52/$fontPC)*1000)/1000+rem;
+				line-height:round(63.4/52*100)/100;
+			}
+		}
+	}
+	.btn{
+		display:inline-block; font-size:0; vertical-align:top;
+		span{
+  		white-space: nowrap;
+			width:283px; box-sizing:border-box;
+			padding:9px 10px 9px 34px;
+			border-radius:30px;
+			display:block;
+			border:solid 2px #000;
+			font-size:round((17.6/$fontPC)*1000)/1000+rem;
+			font-weight:bold;
+			color:#333;
+			background:url(../img/top/top_contents_arw03.png) no-repeat 19px 17px;
+			animation: arrow-anime2 2s infinite;
+		}
+	}
+	@media screen and (max-width:$spViewport){
+		a{
+			background:url(../img/top/top_contents_bg06_sp.jpg) no-repeat center top;
+			background-size:cover;
+			padding:62.5% 0 0 0;
+			height:auto;
+			position:relative;
+			min-width:initial;
+			>.inner{
+				padding-bottom:6px;
+				position:absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%) translateX(-50%);
+				width:auto;
+			}
+		}
+		.number{
+			width:61px;
+			margin:0 auto 10px;
+		}
+		.heading{
+			margin-bottom:10px;
+			p{
+				font-size:round((18.49/2/$fontSP)*1000)/1000+rem;
+				margin-bottom:2px;
+			}
+			h3{
+				font-size:round((40.33/2/$fontSP)*1000)/1000+rem;
+				white-space: nowrap;
+				span{
+					font-size:round((52/2/$fontSP)*1000)/1000+rem;
+				}
+			}
+		}
+		.btn{
+			display:inline-block; font-size:0; vertical-align:top;
+			span{
+  			white-space: nowrap;
+				width:146px;
+				padding:4px 5px 4px 23px;
+				border-radius:15px;
+				border:solid 1px #333;
+				font-size:round((17.6/2/$fontSP)*1000)/1000+rem;
+				background:url(../img/top/top_contents_arw03.png) no-repeat 10px 9px;
+				background-size:10px auto;
+				color:#333;
+			}
+		}
+	}
+}
+
+/* topBlock10
+	======================================== */
+.topBlock10{
+	a{
+		display:block;
+		background: #eceff2 url(../img/top/top_contents_bg07.jpg) no-repeat center top;
+		padding:30px 0 40px;
+		height:400px; box-sizing:border-box;
+		min-width:984px;
+		text-decoration:none;
+		color:#000;
+		transition-property:opacity;
+		transition-duration:.2s;
+		&:hover{
+			opacity:.7;
+			text-decoration:none;
+		}
+		>.inner{
+			width:984px; margin:0 auto;
+			text-align:left;
+		}
+	}
+	.number{
+		margin:5px 42px 29px 0;
+	}
+	.heading{
+		margin:0 40px 21px 0;
+		font-weight:bold;
+		h3{
+			font-size:round((60/$fontPC)*1000)/1000+rem;
+			line-height:1.15;
+			font-family: 'Montserrat', sans-serif;
+			letter-spacing: 6px;
+		}
+	}
+	.btn{
+		margin-right:45px;
+		display:inline-block; font-size:0; vertical-align:top;
+		span{
+			width:245px; box-sizing:border-box;
+			padding:9px 10px 9px 80px;
+			border-radius:30px;
+			display:block;
+			border:solid 2px #000;
+			font-size:round((17.6/$fontPC)*1000)/1000+rem;
+			font-weight:bold;
+			color:#000;
+			background:url(../img/top/top_contents_arw03.png) no-repeat 19px 17px;
+			animation: arrow-anime2 2s infinite;
+		}
+	}
+	@media screen and (max-width:$spViewport){
+		a{
+			background:url(../img/top/top_contents_bg07_sp.jpg) no-repeat center top;
+			background-size:cover;
+			padding:62.5% 0 0 0;
+			height:auto;
+			position:relative;
+			min-width:initial;
+			>.inner{
+				padding-bottom:6px;
+				width:100%;
+				position:absolute;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+		.number{
+			width:61px;
+			margin:0 auto 15px 3.125%;
+		}
+		.heading{
+			margin:0 0  11px 3.125%;
+			font-weight:bold;
+			h3{
+				font-size:round((40/2/$fontSP)*1000)/1000+rem;
+				letter-spacing: 3px;
+				span{
+					margin-top:8px;
+					font-size:round((49.65/2/$fontSP)*1000)/1000+rem;
+				}
+			}
+		}
+		.btn{
+			margin-left:3.125%;
+			span{
+				width:121px;
+				padding:4px 5px 4px 38px;
+				border-radius:15px;
+				border:solid 1px #000;
+				font-size:round((17.6/2/$fontSP)*1000)/1000+rem;
+				background:url(../img/top/top_contents_arw03.png) no-repeat 10px 9px;
+				background-size:10px auto;
+				color:#000;
+			}
+		}
+	}
+}
+
+.campaign-block{
+  background-color: #bce3e2;
+  padding: 60px 0;
+  @media screen and (max-width:$spViewport){
+    padding: 30px 3.125%;
+  }
+  h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    margin-bottom: 45px;
+    @media screen and (max-width:$spViewport){
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+  }
+  .inner{
+    width: 947px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width:$spViewport){
+      display: block;
+      width: 100%;
+    }
+  }
+  .block{
+    width: 464px;
+    background-color: #fff;
+    text-align: center;
+    padding: 35px 30px 40px;
+    box-sizing: border-box;
+    &.right{
+      @media screen and (max-width:$spViewport){
+        .pic{
+          width: 80%;
+          margin: 0 auto 0 20px;
+        }
+      }
+    }
+    @media screen and (max-width:$spViewport){
+      width: 100%;
+      padding: 20px 20px 40px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+    h3{
+     font-weight: bold;
+     font-size:round((22/$fontPC)*1000)/1000+rem;
+     margin-bottom: 5px;
+     @media screen and (max-width:$spViewport){
+       font-size:1.3rem;
+     }
+    }
+    .date{
+      color: #66bfbd;
+      font-size:round((19/$fontPC)*1000)/1000+rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: normal;
+      margin-bottom: 20px;
+      @media screen and (max-width:$spViewport){
+        margin-bottom: 20px;
+      }
+    }
+    .pic{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 340px;
+      @media screen and (max-width:$spViewport){
+        height: auto;
+        margin-bottom: 20px;
+      }
+    }
+    .text{
+      text-align: left;
+      min-height: 180px;
+      @media screen and (max-width:$spViewport){
+        min-height: 0;
+        margin-bottom: 20px;
+      }
+      a{
+        color: #66bfbd;
+      }
+    }
+    .btn{
+      text-align: center;
+      a{
+        box-sizing: border-box;
+        padding: 9px 30px 9px 46px;
+        margin: auto;
+        border-radius: 30px;
+        display: inline-block;
+        border: solid 2px #000;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #000;
+        background: #fff url(../img/top/top_contents_arw03.png) no-repeat 19px 17px;
+        transition: opacity .2s;
+        text-decoration: none;
+        animation: arrow-anime2 2s infinite;
+        @media screen and (max-width:$spViewport){
+          padding: 5px 17px 5px 30px;
+          background: #fff url(../img/top/top_contents_arw03.png) no-repeat 14px 10px;
+        background-size: 11px auto;
+        }
+        &:hover{
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
 .wide-banner{
   margin-bottom: 45px;
 }
@@ -1052,3 +1736,238 @@ from,20%,53%,80%,to {
 }
   
 }
+
+
+/* mainVisual
+	======================================== */
+@-webkit-keyframes animeImage {
+	0% {
+		opacity: 0;
+	}
+	64% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes animeImage {
+	0% {
+		opacity: 0;
+	}
+	64% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes animeTitleSp {
+	0% {
+		bottom: 22vw;
+		left: 27vw;
+		opacity: 0;
+	}
+	33% {
+		opacity: 0;
+	}
+	51% {
+		bottom: 22vw;
+		left: 27vw;
+		opacity: 1;
+	}
+	64% {
+		bottom: 4vw;
+		left: 5vw;
+	}
+	100% {
+		bottom: 4vw;
+		left: 5vw;
+		opacity: 1;
+	}
+}
+
+@keyframes animeTitleSp {
+	0% {
+		bottom: 22vw;
+		left: 27vw;
+		opacity: 0;
+	}
+	33% {
+		opacity: 0;
+	}
+	51% {
+		bottom: 22vw;
+		left: 27vw;
+		opacity: 1;
+	}
+	64% {
+		bottom: 4vw;
+		left: 5vw;
+	}
+	100% {
+		bottom: 4vw;
+		left: 5vw;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes animeTitlePc {
+	0% {
+		bottom: 30px;
+		left: 200px;
+		opacity: 0;
+	}
+	33% {
+		opacity: 0;
+	}
+	51% {
+		bottom: 30px;
+		left: 200px;
+		opacity: 1;
+	}
+	64% {
+		bottom: -60px;
+		left: 0;
+	}
+	100% {
+		bottom: -60px;
+		left: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes animeTitlePc {
+	0% {
+		bottom: 110px;
+		left: 200px;
+		opacity: 0;
+	}
+	33% {
+		opacity: 0;
+	}
+	51% {
+		bottom: 110px;
+		left: 200px;
+		opacity: 1;
+	}
+	64% {
+		bottom: 110px;
+		left: 0;
+	}
+	100% {
+		bottom: 110px;
+		left: 0;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes animeLeadSp {
+	0% {
+		top: 15vw;
+		right: 23vw;
+		opacity: 0;
+	}
+	18% {
+		opacity: 0;
+	}
+	36% {
+		opacity: 1;
+	}
+	51% {
+		top: 15vw;
+		right: 23vw;
+	}
+	64% {
+		top: 1vw;
+		right: 1vw;
+	}
+	100% {
+		top: 1vw;
+		right: 1vw;
+		opacity: 1;
+	}
+}
+
+@keyframes animeLeadSp {
+	0% {
+		top: 15vw;
+		right: 23vw;
+		opacity: 0;
+	}
+	18% {
+		opacity: 0;
+	}
+	36% {
+		opacity: 1;
+	}
+	51% {
+		top: 15vw;
+		right: 23vw;
+	}
+	64% {
+		top: 1vw;
+		right: 1vw;
+	}
+	100% {
+		top: 1vw;
+		right: 1vw;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes animeLeadPc {
+	0% {
+		top: -25px;
+		right: 190px;
+		opacity: 0;
+	}
+	18% {
+		opacity: 0;
+	}
+	36% {
+		opacity: 1;
+	}
+	51% {
+		top: -25px;
+		right: 190px;
+	}
+	64% {
+		top: -25px;
+		right: 5px;
+	}
+	100% {
+		top: -25px;
+		right: 5px;
+		opacity: 1;
+	}
+}
+
+@keyframes animeLeadPc {
+	0% {
+		top: 30px;
+		right: 190px;
+		opacity: 0;
+	}
+	18% {
+		opacity: 0;
+	}
+	36% {
+		opacity: 1;
+	}
+	51% {
+		top: 30px;
+		right: 190px;
+	}
+	64% {
+		top: -15px;
+		right: 5px;
+	}
+	100% {
+		top: -15px;
+		right: 5px;
+		opacity: 1;
+	}
+}
+
