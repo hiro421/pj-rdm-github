@@ -114,6 +114,7 @@ HeaderArea
 #headerArea {
   padding: 33px 0 40px;
   min-width: 984px;
+  z-index: 4;
 }
 
 #headerArea #headerLogo {

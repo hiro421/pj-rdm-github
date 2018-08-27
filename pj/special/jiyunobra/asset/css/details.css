@@ -119,6 +119,10 @@ Details CSS
   line-height: 1.58;
 }
 
+.detailsBlock01 .text {
+  margin-bottom: 2em;
+}
+
 .detailsBlock01 .text p {
   font-size: 1.2rem;
   line-height: 1.78;
