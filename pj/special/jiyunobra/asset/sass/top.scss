@@ -1338,7 +1338,7 @@ Top CSS
 			left: 10px;
 			bottom: 10px;
 			span{
-				width:141px;
+				width:138px;
 				padding:4px 5px 4px 28px;
 				border-radius:15px;
 				border:solid 1px #000;
@@ -1659,7 +1659,7 @@ Top CSS
         background: #fff url(../img/top/top_contents_arw03.png) no-repeat 19px 17px;
         transition: opacity .2s;
         text-decoration: none;
-        animation: arrow-anime2 2s infinite;
+        animation: arrow-anime3 2s infinite;
         @media screen and (max-width:$spViewport){
           padding: 5px 17px 5px 30px;
           background: #fff url(../img/top/top_contents_arw03.png) no-repeat 14px 10px;
@@ -1727,12 +1727,24 @@ from,20%,53%,80%,to {
 	100% {background-position: 12px 17px;}
 }
 
+@keyframes arrow-anime3 {
+	0% {background-position: 12px 17px;}
+	50% {background-position: 19px 17px;}
+	100% {background-position: 12px 17px;}
+}
+
 @media screen and (max-width:$spViewport){
   
 @keyframes arrow-anime2 {
 	0% {background-position: 5px 9px;}
 	50% {background-position: 10px 9px;}
 	100% {background-position: 5px 9px;}
+}
+
+@keyframes arrow-anime3 {
+	0% {background-position: 5px 13px;}
+	50% {background-position: 10px 13px;}
+	100% {background-position: 5px 13px;}
 }
   
 }
