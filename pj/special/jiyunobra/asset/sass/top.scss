@@ -315,19 +315,25 @@ Top CSS
   }
 }
 
-@media screen and (min-width: 769px) {
-  .mainVisual--anne .title {
-    -webkit-animation-name: animeTitlePc;
-    animation-name: animeTitlePc;
+.mainVisual--anne .title {
+  -webkit-animation-name: animeTitlePc;
+  animation-name: animeTitlePc;
+  @media screen and (max-width:$spViewport){
+    -webkit-animation-name: animeTitleSp;
+    animation-name: animeTitleSp;
   }
 }
 
-@media screen and (min-width: 769px) {
-  .mainVisual--anne .lead {
-    -webkit-animation-name: animeLeadPc;
-    animation-name: animeLeadPc;
+.mainVisual--anne .lead {
+  -webkit-animation-name: animeLeadPc;
+  animation-name: animeLeadPc;
+  @media screen and (max-width:$spViewport){
+    -webkit-animation-name: animeLeadSp;
+    animation-name: animeLeadSp;
   }
 }
+
+
 
 /* topBlock01
 	======================================== */
@@ -1725,29 +1731,24 @@ from,20%,53%,80%,to {
 	0% {background-position: 12px 17px;}
 	50% {background-position: 19px 17px;}
 	100% {background-position: 12px 17px;}
+	@media screen and (max-width:$spViewport){
+  	0% {background-position: 5px 9px;}
+  	50% {background-position: 10px 9px;}
+  	100% {background-position: 5px 9px;}
+	}
 }
 
 @keyframes arrow-anime3 {
 	0% {background-position: 12px 17px;}
 	50% {background-position: 19px 17px;}
 	100% {background-position: 12px 17px;}
-}
-
-@media screen and (max-width:$spViewport){
-  
-@keyframes arrow-anime2 {
-	0% {background-position: 5px 9px;}
-	50% {background-position: 10px 9px;}
-	100% {background-position: 5px 9px;}
-}
-
-@keyframes arrow-anime3 {
-	0% {background-position: 5px 13px;}
-	50% {background-position: 10px 13px;}
-	100% {background-position: 5px 13px;}
+	@media screen and (max-width:$spViewport){
+  	0% {background-position: 5px 13px;}
+  	50% {background-position: 10px 13px;}
+  	100% {background-position: 5px 13px;}
+	}
 }
   
-}
 
 
 /* mainVisual

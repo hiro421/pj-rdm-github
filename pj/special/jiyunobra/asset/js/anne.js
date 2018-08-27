@@ -13,7 +13,7 @@ $(function(){
 		アニメーション開始
 	*/
 	Ts.onFontLoaded(function(){
-		box.addClass('anime');
+		//box.addClass('anime');
 		
 		getParams();
 		timer = setTimeout(function(){
@@ -21,7 +21,11 @@ $(function(){
 			scrollFnc();
 		}, 4600);
 	});
-
+  
+  $(window).on('load',function(){
+    $('.mainVisual > .inner').addClass("anime");
+  });
+  
 	/*
 		各種値取得
 	*/

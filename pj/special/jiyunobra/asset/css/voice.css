@@ -3,90 +3,62 @@ voice CSS
 =============================================================================== */
 #voiceArea {
   padding-top: 70px;
-  background-color: #ffebeb;
-}
-
-@media screen and (max-width: 768px) {
-  #voiceArea {
-    padding-top: 35px;
-  }
-}
-
-#voiceArea h2 {
-  text-align: center;
-  font-size: 48px;
-  letter-spacing: 4px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-@media screen and (max-width: 768px) {
+  background-color: #ffebeb; }
+  @media screen and (max-width: 768px) {
+    #voiceArea {
+      padding-top: 35px; } }
   #voiceArea h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-}
-
-#voiceArea .lead {
-  font-size: 20px;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 110px;
-}
-
-@media screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 768px) {
+      #voiceArea h2 {
+        font-size: 2rem;
+        margin-bottom: 20px; } }
   #voiceArea .lead {
-    font-size: 0.917rem;
-    margin-bottom: 55px;
-  }
-}
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 110px; }
+    @media screen and (max-width: 768px) {
+      #voiceArea .lead {
+        font-size: 0.917rem;
+        margin-bottom: 55px; } }
 
 /* voiceBlock01
 	======================================== */
 .voiceBlock01 {
-  min-width: 984px;
-}
-
-@media screen and (max-width: 768px) {
-  .voiceBlock01 {
-    min-width: 100%;
-  }
-}
-
-.voiceBlock01 > .inner {
-  width: 984px;
-  height: 740px;
-  overflow-y: scroll;
-  margin: 0 auto 50px;
-  background-color: #fff;
-  padding: 20px 0 0;
-  position: relative;
-}
-
-@media screen and (max-width: 768px) {
+  min-width: 984px; }
+  @media screen and (max-width: 768px) {
+    .voiceBlock01 {
+      min-width: 100%; } }
   .voiceBlock01 > .inner {
-    width: 100%;
-    height: 445px;
-    margin: 0 auto 0px;
-  }
-}
-
-.voiceBlock01 h3 {
-  width: 390px;
-  margin: 0 auto 40px;
-}
-
-@media screen and (max-width: 768px) {
+    width: 984px;
+    height: 740px;
+    overflow-y: scroll;
+    margin: 0 auto 50px;
+    background-color: #fff;
+    padding: 20px 0 0;
+    position: relative; }
+    @media screen and (max-width: 768px) {
+      .voiceBlock01 > .inner {
+        width: 100%;
+        height: 445px;
+        margin: 0 auto 0px;
+        overflow: auto !important;
+        -webkit-overflow-scrolling: touch !important; } }
   .voiceBlock01 h3 {
-    width: 195px;
-    margin: 0 auto 40px;
-  }
-}
-
-.voiceBlock01 h3 img {
-  width: 100%;
-  height: auto;
-}
+    width: 390px;
+    margin: 0 auto 40px; }
+    @media screen and (max-width: 768px) {
+      .voiceBlock01 h3 {
+        width: 195px;
+        margin: 0 auto 40px; } }
+    .voiceBlock01 h3 img {
+      width: 100%;
+      height: auto; }
 
 /* voiceBlock02
 	======================================== */
@@ -107,375 +79,291 @@ voice CSS
 				color:#000;
 			}
 		}
-*/
-}
-
-.voiceBlock02 > .inner {
-  width: 984px;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-}
-
-.voiceBlock02 .logo {
-  position: absolute;
-  top: 2px;
-  right: 39px;
-}
-
-.voiceBlock02 .text {
-  padding: 0 160px;
-  font-size: 1.173rem;
-  font-weight: bold;
-  color: #f48e92;
-  margin-bottom: 35px;
-}
-
-.voiceBlock02 .heading {
-  padding: 0 160px;
-  margin-bottom: 40px;
-}
-
-.voiceBlock02 .heading h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.4rem;
-  line-height: 1;
-  margin-bottom: 10px;
-  color: #f48e92;
-  letter-spacing: 2px;
-}
-
-.voiceBlock02 .heading h3 span {
-  display: block;
-  margin-top: 14px;
-  font-size: 2.4rem;
-  line-height: 1;
-}
-
-.voiceBlock02 .heading p {
-  font-weight: bold;
-  font-size: 1.333rem;
-}
-
-.voiceBlock02 .box {
-  width: 905px;
-  box-sizing: border-box;
-  margin: 0 auto 25px;
-  background: #fff;
-  padding: 56px 45px 0;
-  height: 559px;
-  overflow-y: auto;
-  top: 0;
-  position: relative;
-}
-
-.voiceBlock02 .caution {
-  margin-bottom: 1.5em;
-  text-align: right;
-  padding-left: 3em;
-}
-
-.voiceBlock02 .voiceList {
-  text-align: left;
-}
-
-.voiceBlock02 .voiceList li {
-  margin-bottom: 30px;
-  font-size: 1.2rem;
-  line-height: 1.56;
-  opacity: 0;
-  transition-property: opacity;
-  transition-duration: .8s;
-}
-
-.voiceBlock02 .voiceList li.active {
-  opacity: 1;
-}
-
-.voiceBlock02 .voiceList li .name {
-  text-align: right;
-}
-
-.voiceBlock02 .btn {
-  text-align: center;
-}
-
-.voiceBlock02 .btn a {
-  width: 192px;
-  box-sizing: border-box;
-  padding: 9px 10px 9px 46px;
-  margin: auto;
-  border-radius: 30px;
-  display: block;
-  border: solid 2px #000;
-  font-size: 1.173rem;
-  font-weight: bold;
-  color: #000;
-  background: transparent url(../img/top/top_contents_arw03.png) no-repeat 19px 17px;
-  transition: opacity .2s;
-  text-decoration: none;
-}
-
-.voiceBlock02 .btn a:hover {
-  opacity: .8;
-}
-
-@media screen and (max-width: 768px) {
-  .voiceBlock02 {
-    padding: 55px 0 35px;
-    min-width: initial;
-  }
+*/ }
   .voiceBlock02 > .inner {
-    width: 93.75%;
-  }
+    width: 984px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center; }
   .voiceBlock02 .logo {
-    display: none;
-  }
+    position: absolute;
+    top: 2px;
+    right: 39px; }
   .voiceBlock02 .text {
-    padding: 0;
-    font-size: 0.917rem;
-    margin-bottom: 22px;
-  }
-  .voiceBlock02 .heading {
-    padding: 0;
-    margin-bottom: 15px;
-  }
-  .voiceBlock02 .heading h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    line-height: 1;
-    margin-bottom: 10px;
-    color: #f48e92;
-    letter-spacing: 2px;
-  }
-  .voiceBlock02 .heading p {
+    padding: 0 160px;
+    font-size: 1.173rem;
     font-weight: bold;
-    font-size: 0.833rem;
-  }
+    color: #f48e92;
+    margin-bottom: 35px; }
+  .voiceBlock02 .heading {
+    padding: 0 160px;
+    margin-bottom: 40px; }
+    .voiceBlock02 .heading h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.4rem;
+      line-height: 1;
+      margin-bottom: 10px;
+      color: #f48e92;
+      letter-spacing: 2px; }
+      .voiceBlock02 .heading h3 span {
+        display: block;
+        margin-top: 14px;
+        font-size: 2.4rem;
+        line-height: 1; }
+    .voiceBlock02 .heading p {
+      font-weight: bold;
+      font-size: 1.333rem; }
   .voiceBlock02 .box {
-    width: 91.16%;
-    margin: 0 auto 21px;
+    width: 905px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0 auto 25px;
     background: #fff;
-    padding: 26px 17px 2px 22px;
-    height: 450px;
+    padding: 56px 45px 0;
+    height: 559px;
     overflow-y: auto;
-  }
+    top: 0;
+    position: relative; }
   .voiceBlock02 .caution {
     margin-bottom: 1.5em;
     text-align: right;
-    padding-right: 1.5em;
-    font-size: 10px;
-  }
+    padding-left: 3em; }
   .voiceBlock02 .voiceList {
-    text-align: left;
-  }
-  .voiceBlock02 .voiceList li {
-    margin-bottom: 25px;
-    font-size: 0.917rem;
-    line-height: 1.64;
-  }
+    text-align: left; }
+    .voiceBlock02 .voiceList li {
+      margin-bottom: 30px;
+      font-size: 1.2rem;
+      line-height: 1.56;
+      opacity: 0;
+      -webkit-transition-property: opacity;
+      transition-property: opacity;
+      -webkit-transition-duration: .8s;
+              transition-duration: .8s; }
+      .voiceBlock02 .voiceList li.active {
+        opacity: 1; }
+      .voiceBlock02 .voiceList li .name {
+        text-align: right; }
   .voiceBlock02 .btn {
-    text-align: center;
-  }
-  .voiceBlock02 .btn a {
-    width: 110px;
-    box-sizing: border-box;
-    padding: 5px 5px 5px 23px;
-    margin: auto;
-    border-radius: 30px;
-    display: block;
-    border: solid 2px #000;
-    font-size: 0.733rem;
-    font-weight: bold;
-    color: #000;
-    background: #fff url(../img/top/top_contents_arw03.png) no-repeat 14px 10px;
-    background-size: 11px auto;
-    transition: opacity .2s;
-    text-decoration: none;
-  }
-  .voiceBlock02 .btn a:hover {
-    opacity: .8;
-  }
-}
+    text-align: center; }
+    .voiceBlock02 .btn a {
+      width: 192px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 9px 10px 9px 46px;
+      margin: auto;
+      border-radius: 30px;
+      display: block;
+      border: solid 2px #000;
+      font-size: 1.173rem;
+      font-weight: bold;
+      color: #000;
+      background: transparent url(../img/top/top_contents_arw03.png) no-repeat 19px 17px;
+      -webkit-transition: opacity .2s;
+      transition: opacity .2s;
+      text-decoration: none; }
+      .voiceBlock02 .btn a:hover {
+        opacity: .8; }
+  @media screen and (max-width: 768px) {
+    .voiceBlock02 {
+      padding: 55px 0 35px;
+      min-width: 0;
+      min-width: initial; }
+      .voiceBlock02 > .inner {
+        width: 93.75%; }
+      .voiceBlock02 .logo {
+        display: none; }
+      .voiceBlock02 .text {
+        padding: 0;
+        font-size: 0.917rem;
+        margin-bottom: 22px; }
+      .voiceBlock02 .heading {
+        padding: 0;
+        margin-bottom: 15px; }
+        .voiceBlock02 .heading h3 {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1.5rem;
+          line-height: 1;
+          margin-bottom: 10px;
+          color: #f48e92;
+          letter-spacing: 2px; }
+        .voiceBlock02 .heading p {
+          font-weight: bold;
+          font-size: 0.833rem; }
+      .voiceBlock02 .box {
+        width: 91.16%;
+        margin: 0 auto 21px;
+        background: #fff;
+        padding: 26px 17px 2px 22px;
+        height: 450px;
+        overflow-y: auto; }
+      .voiceBlock02 .caution {
+        margin-bottom: 1.5em;
+        text-align: right;
+        padding-right: 1.5em;
+        font-size: 10px; }
+      .voiceBlock02 .voiceList {
+        text-align: left; }
+        .voiceBlock02 .voiceList li {
+          margin-bottom: 25px;
+          font-size: 0.917rem;
+          line-height: 1.64; }
+      .voiceBlock02 .btn {
+        text-align: center; }
+        .voiceBlock02 .btn a {
+          width: 110px;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          padding: 5px 5px 5px 23px;
+          margin: auto;
+          border-radius: 30px;
+          display: block;
+          border: solid 2px #000;
+          font-size: 0.733rem;
+          font-weight: bold;
+          color: #000;
+          background: #fff url(../img/top/top_contents_arw03.png) no-repeat 14px 10px;
+          background-size: 11px auto;
+          -webkit-transition: opacity .2s;
+          transition: opacity .2s;
+          text-decoration: none; }
+          .voiceBlock02 .btn a:hover {
+            opacity: .8; } }
 
 /* voiceBlock03
 	======================================== */
 .voiceBlock03 {
   padding: 55px 0 110px;
-  min-width: 984px;
-}
-
-.voiceBlock03 > .inner {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-}
-
-.voiceBlock03 .heading {
-  padding: 0 160px;
-  margin-bottom: 40px;
-}
-
-.voiceBlock03 .heading h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.4rem;
-  line-height: 1;
-  margin-bottom: 10px;
-  color: #f48e92;
-  letter-spacing: 2px;
-}
-
-.voiceBlock03 .heading h3 span {
-  display: block;
-  margin-top: 14px;
-  font-size: 2.4rem;
-  line-height: 1;
-}
-
-.voiceBlock03 .heading p {
-  font-weight: bold;
-  font-size: 1.333rem;
-}
-
-.voiceBlock03 .staffList {
-  height: 428px;
-  overflow: hidden;
-  opacity: 0;
-  transition: all 0.5s;
-}
-
-.loaded .voiceBlock03 .staffList {
-  opacity: 1;
-}
-
-@media screen and (max-width: 768px) {
-  .voiceBlock03 {
-    padding: 32px 0 35px;
-    min-width: initial;
-  }
+  min-width: 984px; }
   .voiceBlock03 > .inner {
-    width: 93.75%;
-  }
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center; }
   .voiceBlock03 .heading {
-    padding: 0;
-    margin-bottom: 15px;
-  }
-  .voiceBlock03 .heading h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    line-height: 1;
-    margin-bottom: 10px;
-    color: #f48e92;
-    letter-spacing: 2px;
-  }
-  .voiceBlock03 .heading p {
-    font-weight: bold;
-    font-size: 0.833rem;
-  }
+    padding: 0 160px;
+    margin-bottom: 40px; }
+    .voiceBlock03 .heading h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.4rem;
+      line-height: 1;
+      margin-bottom: 10px;
+      color: #f48e92;
+      letter-spacing: 2px; }
+      .voiceBlock03 .heading h3 span {
+        display: block;
+        margin-top: 14px;
+        font-size: 2.4rem;
+        line-height: 1; }
+    .voiceBlock03 .heading p {
+      font-weight: bold;
+      font-size: 1.333rem; }
   .voiceBlock03 .staffList {
-    height: 214px;
+    height: 428px;
     overflow: hidden;
     opacity: 0;
-    transition: all 0.5s;
-  }
-  .loaded .voiceBlock03 .staffList {
-    opacity: 1;
-  }
-  .voiceBlock03 .staffList img {
-    height: 107px;
-  }
-}
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    .loaded .voiceBlock03 .staffList {
+      opacity: 1; }
+  @media screen and (max-width: 768px) {
+    .voiceBlock03 {
+      padding: 32px 0 35px;
+      min-width: 0;
+      min-width: initial; }
+      .voiceBlock03 > .inner {
+        width: 93.75%; }
+      .voiceBlock03 .heading {
+        padding: 0;
+        margin-bottom: 15px; }
+        .voiceBlock03 .heading h3 {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1.5rem;
+          line-height: 1;
+          margin-bottom: 10px;
+          color: #f48e92;
+          letter-spacing: 2px; }
+        .voiceBlock03 .heading p {
+          font-weight: bold;
+          font-size: 0.833rem; }
+      .voiceBlock03 .staffList {
+        height: 214px;
+        overflow: hidden;
+        opacity: 0;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s; }
+        .loaded .voiceBlock03 .staffList {
+          opacity: 1; }
+        .voiceBlock03 .staffList img {
+          height: 107px; } }
 
 /* voiceBlock04
 	======================================== */
 .voiceBlock04 {
   background-color: #fff;
   padding: 110px 0 110px;
-  min-width: 984px;
-}
-
-.voiceBlock04 > .inner {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-}
-
-.voiceBlock04 .heading {
-  padding: 0 160px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.voiceBlock04 .heading h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.4rem;
-  line-height: 1;
-  margin-bottom: 10px;
-  color: #f48e92;
-  letter-spacing: 2px;
-  background: #fff;
-  padding: 0 20px;
-  display: inline-block;
-}
-
-.voiceBlock04 .heading h3 span {
-  display: block;
-  margin-top: 14px;
-  font-size: 2.4rem;
-  line-height: 1;
-}
-
-.voiceBlock04 .heading p {
-  font-weight: bold;
-  font-size: 1.333rem;
-}
-
-.voiceBlock04 .report {
-  width: 794px;
-  margin: -100px auto 0;
-  padding: 100px 0 80px;
-  text-align: center;
-  border: 2px solid #f48e92;
-}
-
-@media screen and (max-width: 768px) {
-  .voiceBlock04 {
-    padding: 32px 0 35px;
-    min-width: initial;
-  }
+  min-width: 984px; }
   .voiceBlock04 > .inner {
-    width: 93.75%;
-  }
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center; }
   .voiceBlock04 .heading {
-    padding: 0;
-    margin-bottom: 15px;
-    z-index: 2;
-    position: relative;
-  }
-  .voiceBlock04 .heading h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    line-height: 1;
-    margin-bottom: 10px;
-    color: #f48e92;
-    letter-spacing: 2px;
-  }
-  .voiceBlock04 .heading p {
-    font-weight: bold;
-    font-size: 0.833rem;
-  }
+    padding: 0 160px;
+    margin-bottom: 40px;
+    text-align: center; }
+    .voiceBlock04 .heading h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.4rem;
+      line-height: 1;
+      margin-bottom: 10px;
+      color: #f48e92;
+      letter-spacing: 2px;
+      background: #fff;
+      padding: 0 20px;
+      display: inline-block; }
+      .voiceBlock04 .heading h3 span {
+        display: block;
+        margin-top: 14px;
+        font-size: 2.4rem;
+        line-height: 1; }
+    .voiceBlock04 .heading p {
+      font-weight: bold;
+      font-size: 1.333rem; }
   .voiceBlock04 .report {
-    width: 80%;
-    margin: -50px auto 0;
-    padding: 50px 0 40px;
+    width: 794px;
+    margin: -100px auto 0;
+    padding: 100px 0 80px;
     text-align: center;
-    border: 2px solid #f48e92;
-    position: relative;
-  }
-  .voiceBlock04 .report .banner {
-    width: 90vw;
-    margin-left: -7.5vw;
-  }
-}
+    border: 2px solid #f48e92; }
+  @media screen and (max-width: 768px) {
+    .voiceBlock04 {
+      padding: 32px 0 35px;
+      min-width: 0;
+      min-width: initial; }
+      .voiceBlock04 > .inner {
+        width: 93.75%; }
+      .voiceBlock04 .heading {
+        padding: 0;
+        margin-bottom: 15px;
+        z-index: 2;
+        position: relative; }
+        .voiceBlock04 .heading h3 {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1.5rem;
+          line-height: 1;
+          margin-bottom: 10px;
+          color: #f48e92;
+          letter-spacing: 2px; }
+        .voiceBlock04 .heading p {
+          font-weight: bold;
+          font-size: 0.833rem; }
+      .voiceBlock04 .report {
+        width: 80%;
+        margin: -50px auto 0;
+        padding: 50px 0 40px;
+        text-align: center;
+        border: 2px solid #f48e92;
+        position: relative; }
+        .voiceBlock04 .report .banner {
+          width: 90vw;
+          margin-left: -7.5vw; } }

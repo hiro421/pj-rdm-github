@@ -2,74 +2,52 @@
 moviegallery CSS
 =============================================================================== */
 #moviegalleryArea {
-  padding-top: 30px;
-}
-
-#moviegalleryArea h2 {
-  text-align: center;
-  font-size: 48px;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 4px;
-  margin-bottom: 100px;
-}
-
-@media screen and (max-width: 768px) {
+  padding-top: 30px; }
   #moviegalleryArea h2 {
-    font-size: 2rem;
-    margin-bottom: 50px;
-  }
-}
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 100px; }
+    @media screen and (max-width: 768px) {
+      #moviegalleryArea h2 {
+        font-size: 2rem;
+        margin-bottom: 50px; } }
 
 /* moviegalleryBlock01
 	======================================== */
 .moviegalleryBlock01 {
-  min-width: 984px;
-}
-
-@media screen and (max-width: 768px) {
-  .moviegalleryBlock01 {
-    min-width: 100%;
-  }
-}
-
-.moviegalleryBlock01 > .inner {
-  width: 984px;
-  margin: 0 auto 50px;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-@media screen and (max-width: 768px) {
+  min-width: 984px; }
+  @media screen and (max-width: 768px) {
+    .moviegalleryBlock01 {
+      min-width: 100%; } }
   .moviegalleryBlock01 > .inner {
-    width: 100%;
-  }
-}
-
-.moviegalleryBlock01 a {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.moviegalleryBlock01 .thumb {
-  width: 400px;
-  margin: 0 37px 50px;
-}
-
-@media screen and (max-width: 768px) {
+    width: 984px;
+    margin: 0 auto 50px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media screen and (max-width: 768px) {
+      .moviegalleryBlock01 > .inner {
+        width: 100%; } }
+  .moviegalleryBlock01 a {
+    display: block;
+    margin-bottom: 20px; }
   .moviegalleryBlock01 .thumb {
-    width: 100%;
-  }
-}
-
-.moviegalleryBlock01 .text01 {
-  font-size: 19px;
-  font-weight: bold;
-}
-
-@media screen and (max-width: 768px) {
+    width: 400px;
+    margin: 0 37px 50px; }
+    @media screen and (max-width: 768px) {
+      .moviegalleryBlock01 .thumb {
+        width: 100%; } }
   .moviegalleryBlock01 .text01 {
-    font-size: 1rem;
-  }
-}
+    font-size: 19px;
+    font-weight: bold; }
+    @media screen and (max-width: 768px) {
+      .moviegalleryBlock01 .text01 {
+        font-size: 1rem; } }

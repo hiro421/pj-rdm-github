@@ -141,30 +141,30 @@ jQuery(document).ready(function(){
             <div class="scrollVisual">
               <ul class="images">
                 <li class="item01"><img src="../asset/img/anne/anne_contents_img02_01.jpg" alt="" class="slide">
-                  <p class="vertical fade03"><span class="skew">ノンワイヤーを<br>
+                  <p class="vertical slide-bottom"><span class="skew">ノンワイヤーを<br>
                     隠すのは人生の嘘</span></p>
                 </li>
                 <li class="item02"><img src="../asset/img/anne/anne_contents_img02_02.jpg" alt="" class="slide">
-                  <p class="fade03">邪魔だったのは<br>
+                  <p class="slide-right">邪魔だったのは<br>
                     <span class="big">ワイヤー</span>と<span class="big">常識</span></p>
                 </li>
                 <li class="item03"><img src="../asset/img/anne/anne_contents_img02_03.jpg" alt="" class="slide">
-                  <p class="vertical fade03"><span class="skew">だから世の中<br>
+                  <p class="vertical slide-bottom"><span class="skew">だから世の中<br>
                     息苦しいんだよ</span></p>
                 </li>
                 <li class="item04"><img src="../asset/img/anne/anne_contents_img02_04.jpg" alt="" class="slide">
-                  <p class="vertical fade03">下着を<span class="big">妥協</span>したぶんだけ、</p>
+                  <p class="vertical slide-bottom">下着を<span class="big">妥協</span>したぶんだけ、</p>
                 </li>
                 <li class="item05"><img src="../asset/img/anne/anne_contents_img02_05.jpg" alt="" class="slide">
-                  <p class="vertical fade03">私達は小さく<span class="big">嘘</span>を吐き続ける</p>
+                  <p class="vertical slide-bottom">私達は小さく<span class="big">嘘</span>を吐き続ける</p>
                 </li>
                 <li class="item06"><img src="../asset/img/anne/anne_contents_img02_06.jpg" alt="" class="slide"></li>
                 <li class="item07"><img src="../asset/img/anne/anne_contents_img02_07.jpg" alt="" class="slide">
-                  <p class="fade03">ある意味、<br>
+                  <p class="slide-left">ある意味、<br>
                     最終形</p>
                 </li>
                 <li class="item08"><img src="../asset/img/anne/anne_contents_img02_08.jpg" alt="" class="slide">
-                  <p class="vertical fade03"><span class="big">あの頃</span>のことを、もう<span class="big">思い出せない</span></p>
+                  <p class="vertical slide-bottom"><span class="big">あの頃</span>のことを、もう<span class="big">思い出せない</span></p>
                 </li>
                 <li class="item09"><img src="../asset/img/anne/anne_contents_img02_09.jpg" alt="" class="slide"></li>
               </ul>
@@ -195,7 +195,12 @@ jQuery(document).ready(function(){
           <div class="inner">
             <h3 class="title anneTitle01">Special Movie</h3>
             <ul class="movies">
-              <li><a href="https://www.youtube.com/watch?v=T0umZwk1f0k" class="popup-iframe"><img src="../asset/img/anne/anne_contents_img03.jpg" alt=""></a></li>
+              <li class="video"><a href="https://www.youtube.com/watch?v=T0umZwk1f0k" class="popup-iframe"><video class="video" id="video01" preload="auto" muted autoplay loop playsinline poster="//peachjohn.scene7.com/is/image/PeachJohn/jiyunobra18atposter?fit=constrain,1&amp;wid=984&amp;hei=553">
+                    <source src="//peachjohn.scene7.com/is/content/PeachJohn/jiyunobra18at">
+                    <source src="//peachjohn.scene7.com/is/content/PeachJohn/jiyunobra18at.m3u8">
+                    <source src="//peachjohn.scene7.com/is/content/PeachJohn/jiyunobra18at-AVS.m3u8">
+                    <source src="//peachjohn.scene7.com/is/content/PeachJohn/jiyunobra18at.mp4">
+                  </video></a></li>
               <li><a href="https://www.youtube.com/watch?v=gCcqDXOTv_U" class="popup-iframe"><img src="../asset/img/anne/anne_contents_img04.jpg" alt=""></a></li>
             </ul>
             <!-- / .inner --></div>
@@ -305,9 +310,9 @@ jQuery(document).ready(function(){
     <!-- / .modalBlock01 --></div>
   <footer id="footerArea" class="fade01">
     <ul class="list">
-      <li><a href="https://twitter.com/intent/tweet?url=https://www.peachjohn.co.jp/pj/special/jiyunobra/details/" target="_blank"><img src="../asset/img/common/common_footer_sns01.png" alt="Twitter"></a></li>
-      <li><a href="http://www.facebook.com/sharer.php?u=https://www.peachjohn.co.jp/pj/special/jiyunobra/details/" target="_blank"><img src="../asset/img/common/common_footer_sns02.png" alt="Facebook"></a></li>
-      <li class="spOnly"><a href="http://line.me/R/msg/text/?https://www.peachjohn.co.jp/pj/special/jiyunobra/details/" target="_blank"><img src="../asset/img/common/common_footer_sns03.png" alt="LINE"></a></li>
+      <li><a href="https://twitter.com/intent/tweet?url=https://www.peachjohn.co.jp/pj/special/jiyunobra/anne/" target="_blank"><img src="../asset/img/common/common_footer_sns01.png" alt="Twitter"></a></li>
+      <li><a href="http://www.facebook.com/sharer.php?u=https://www.peachjohn.co.jp/pj/special/jiyunobra/anne/" target="_blank"><img src="../asset/img/common/common_footer_sns02.png" alt="Facebook"></a></li>
+      <li class="spOnly"><a href="http://line.me/R/msg/text/?https://www.peachjohn.co.jp/pj/special/jiyunobra/anne/" target="_blank"><img src="../asset/img/common/common_footer_sns03.png" alt="LINE"></a></li>
     </ul>
     <p id="copyright"><small>Copyright&copy;PEACH JOHN CO.,LTD.</small></p>
     <!-- / #footerArea --></footer>
@@ -325,6 +330,9 @@ jQuery(document).ready(function(){
 	sr.reveal( '.fade03', { origin: 'bottom' , distance: '0', duration: 2000 , scale: 1, delay :500 ,opacity: 0,});
 	sr.reveal( '.fade04', { origin: 'bottom' , distance: '0', duration: 2000 , scale: 1, delay :800 ,opacity: 0,});
 	sr.reveal( '.slide', { origin: 'bottom' , distance: '10%', duration: 1500 , scale: 1, delay :100 ,opacity: 0,});
+  sr.reveal( '.slide-bottom', { origin: 'bottom' , distance: '20%', duration: 1500 , scale: 1, delay :100 ,opacity: 0,});
+  sr.reveal( '.slide-left', { origin: 'left' , distance: '20%', duration: 1500 , scale: 1, delay :100 ,opacity: 0,});
+  sr.reveal( '.slide-right', { origin: 'right' , distance: '20%', duration: 1500 , scale: 1, delay :100 ,opacity: 0,});
 </script> 
 <!-- / js --> 
 

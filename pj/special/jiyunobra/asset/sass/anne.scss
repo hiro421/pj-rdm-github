@@ -302,24 +302,17 @@ Anne CSS
   .anime {
     .image, .title, .lead {
       visibility: visible;
-      -webkit-animation-duration: 4.6s;
       animation-duration: 4.6s;
-      -webkit-animation-timing-function: ease;
       animation-timing-function: ease;
-      -webkit-animation-delay: 1.5s;
       animation-delay: 1.5s;
-      -webkit-animation-iteration-count: 1;
       animation-iteration-count: 1;
-      -webkit-animation-direction: normal;
       animation-direction: normal;
-      -webkit-animation-fill-mode: both;
       animation-fill-mode: both;
     }
   }
   .image {
     background: #eef3f7;
-    -webkit-animation-name: animeImage;
-    animation-name: animeImage;
+    animation: animeImage 4.6s 1.5s ease 1 both;
     img {
       width: 100%;
     }
@@ -341,8 +334,7 @@ Anne CSS
     letter-spacing: 0.06em;
     -webkit-transform: skewY(-11deg);
     transform: skewY(-11deg);
-    -webkit-animation-name: animeTitleSp;
-    animation-name: animeTitleSp;
+    animation: animeTitleSp 4.6s 1.5s ease 1 both;;
   }
   .lead {
     position: absolute;
@@ -353,8 +345,7 @@ Anne CSS
     letter-spacing: 0.20em;
     -webkit-transform: skewY(-11deg);
     transform: skewY(-11deg);
-    -webkit-animation-name: animeLeadSp;
-    animation-name: animeLeadSp;
+    animation: animeLeadSp 4.6s 1.5s ease 1 both;;
   }
 }
 
@@ -382,16 +373,14 @@ Anne CSS
 @media screen and (min-width: 769px) {
   .mainVisual .title {
     font-size: 95px;
-    -webkit-animation-name: animeTitlePc;
-    animation-name: animeTitlePc;
+    animation: animeTitlePc 4.6s 1.5s ease 1 both;;
   }
 }
 
 @media screen and (min-width: 769px) {
   .mainVisual .lead {
     font-size: 50px;
-    -webkit-animation-name: animeLeadPc;
-    animation-name: animeLeadPc;
+    animation: animeLeadPc 4.6s 1.5s ease 1 both;;
   }
 }
 
@@ -521,6 +510,7 @@ Anne CSS
         position: relative;
         //top: -264px;
         margin: -264px 73px 0 auto;
+        z-index: 3;
         @media screen and (max-width:$spViewport){
           width: 71.875vw;
           margin: 0 auto 0 2vw;
@@ -996,10 +986,42 @@ Anne CSS
   margin-top: 55px;
   .movies {
     margin-top: 20px;
+    li{
+      position: relative;
+      &.video{
+        @media screen and (max-width:$spViewport){
+          &:before{
+            content: "";
+            background: url(../img/common/movie_icon.png) no-repeat left top;
+            background-size: cover;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 10vw;
+            height: 10vw;
+          }
+        }
+        &:before{
+          content: "";
+          background: url(../img/common/movie_icon.png) no-repeat left top;
+          background-size: cover;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
     li + li {
       margin-top: 25px;
     }
     img {
+      width: 100%;
+    }
+    video {
       width: 100%;
     }
   }
@@ -1027,6 +1049,20 @@ Anne CSS
 @media screen and (min-width: 769px) {
   .anneBlock03 .movies li + li {
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .anneBlock03 .movies li.video:before {
+            content: "";
+            background: url(../img/common/movie_icon.png) no-repeat left top;
+            background-size: cover;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 10vw;
+            height: 10vw;
   }
 }
 
