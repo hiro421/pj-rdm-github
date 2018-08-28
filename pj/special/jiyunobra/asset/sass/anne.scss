@@ -118,17 +118,14 @@ Anne CSS
   0% {
     bottom: 30px;
     left: 200px;
-    opacity: 0;
   }
 
   18% {
-    opacity: 0;
   }
 
   40% {
     bottom: 30px;
     left: 200px;
-    opacity: 1;
   }
 
   57% {
@@ -139,7 +136,6 @@ Anne CSS
   100% {
     bottom: -60px;
     left: 0;
-    opacity: 1;
   }
 }
 
@@ -148,17 +144,14 @@ Anne CSS
   0% {
     bottom: 30px;
     left: 200px;
-    opacity: 0;
   }
 
   18% {
-    opacity: 0;
   }
 
   40% {
     bottom: 30px;
     left: 200px;
-    opacity: 1;
   }
 
   57% {
@@ -169,6 +162,27 @@ Anne CSS
   100% {
     bottom: -60px;
     left: 0;
+  }
+}
+
+@keyframes animeTitleText {
+  0% {
+    opacity: 0;
+  }
+
+  18% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  57% {
+    opacity: 1;
+  }
+
+  100% {
     opacity: 1;
   }
 }
@@ -334,7 +348,26 @@ Anne CSS
     letter-spacing: 0.06em;
     -webkit-transform: skewY(-11deg);
     transform: skewY(-11deg);
-    animation: animeTitleSp 4.6s 1.5s ease 1 both;;
+    animation: animeTitleSp 4.6s 1.5s ease 1 both;
+    span{
+      opacity: 0;
+      animation: animeTitleText 4.6s 1.5s ease 1 both;
+      &:nth-child(1){
+        animation-delay: 1.5s;
+      }
+      &:nth-child(2){
+        animation-delay: 1.6s;
+      }
+      &:nth-child(3){
+        animation-delay: 1.7s;
+      }
+      &:nth-child(4){
+        animation-delay: 1.8s;
+      }
+      &:nth-child(5){
+        animation-delay: 1.9s;
+      }
+    }
   }
   .lead {
     position: absolute;
@@ -373,7 +406,26 @@ Anne CSS
 @media screen and (min-width: 769px) {
   .mainVisual .title {
     font-size: 95px;
-    animation: animeTitlePc 4.6s 1.5s ease 1 both;;
+    animation: animeTitlePc 4.6s 1.5s ease 1 both;
+    span{
+      opacity: 0;
+      animation: animeTitleText 4.6s 1.5s ease 1 both;
+      &:nth-child(1){
+        animation-delay: 1.5s;
+      }
+      &:nth-child(2){
+        animation-delay: 1.6s;
+      }
+      &:nth-child(3){
+        animation-delay: 1.7s;
+      }
+      &:nth-child(4){
+        animation-delay: 1.8s;
+      }
+      &:nth-child(5){
+        animation-delay: 1.9s;
+      }
+    }
   }
 }
 

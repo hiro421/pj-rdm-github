@@ -72,39 +72,55 @@ Anne CSS
 @-webkit-keyframes animeTitlePc {
   0% {
     bottom: 30px;
-    left: 200px;
-    opacity: 0; }
-  18% {
-    opacity: 0; }
+    left: 200px; }
+  18% { }
   40% {
     bottom: 30px;
-    left: 200px;
-    opacity: 1; }
+    left: 200px; }
   57% {
     bottom: -60px;
     left: 0; }
   100% {
     bottom: -60px;
-    left: 0;
-    opacity: 1; } }
+    left: 0; } }
 
 @keyframes animeTitlePc {
   0% {
     bottom: 30px;
-    left: 200px;
-    opacity: 0; }
-  18% {
-    opacity: 0; }
+    left: 200px; }
+  18% { }
   40% {
     bottom: 30px;
-    left: 200px;
-    opacity: 1; }
+    left: 200px; }
   57% {
     bottom: -60px;
     left: 0; }
   100% {
     bottom: -60px;
-    left: 0;
+    left: 0; } }
+
+@-webkit-keyframes animeTitleText {
+  0% {
+    opacity: 0; }
+  18% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  57% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes animeTitleText {
+  0% {
+    opacity: 0; }
+  18% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  57% {
+    opacity: 1; }
+  100% {
     opacity: 1; } }
 
 @-webkit-keyframes animeLeadSp {
@@ -224,6 +240,25 @@ Anne CSS
     transform: skewY(-11deg);
     -webkit-animation: animeTitleSp 4.6s 1.5s ease 1 both;
             animation: animeTitleSp 4.6s 1.5s ease 1 both; }
+    .mainVisual .title span {
+      opacity: 0;
+      -webkit-animation: animeTitleText 4.6s 1.5s ease 1 both;
+              animation: animeTitleText 4.6s 1.5s ease 1 both; }
+      .mainVisual .title span:nth-child(1) {
+        -webkit-animation-delay: 1.5s;
+                animation-delay: 1.5s; }
+      .mainVisual .title span:nth-child(2) {
+        -webkit-animation-delay: 1.6s;
+                animation-delay: 1.6s; }
+      .mainVisual .title span:nth-child(3) {
+        -webkit-animation-delay: 1.7s;
+                animation-delay: 1.7s; }
+      .mainVisual .title span:nth-child(4) {
+        -webkit-animation-delay: 1.8s;
+                animation-delay: 1.8s; }
+      .mainVisual .title span:nth-child(5) {
+        -webkit-animation-delay: 1.9s;
+                animation-delay: 1.9s; }
   .mainVisual .lead {
     position: absolute;
     padding-top: 1.7em;
@@ -255,7 +290,26 @@ Anne CSS
   .mainVisual .title {
     font-size: 95px;
     -webkit-animation: animeTitlePc 4.6s 1.5s ease 1 both;
-            animation: animeTitlePc 4.6s 1.5s ease 1 both; } }
+            animation: animeTitlePc 4.6s 1.5s ease 1 both; }
+    .mainVisual .title span {
+      opacity: 0;
+      -webkit-animation: animeTitleText 4.6s 1.5s ease 1 both;
+              animation: animeTitleText 4.6s 1.5s ease 1 both; }
+      .mainVisual .title span:nth-child(1) {
+        -webkit-animation-delay: 1.5s;
+                animation-delay: 1.5s; }
+      .mainVisual .title span:nth-child(2) {
+        -webkit-animation-delay: 1.6s;
+                animation-delay: 1.6s; }
+      .mainVisual .title span:nth-child(3) {
+        -webkit-animation-delay: 1.7s;
+                animation-delay: 1.7s; }
+      .mainVisual .title span:nth-child(4) {
+        -webkit-animation-delay: 1.8s;
+                animation-delay: 1.8s; }
+      .mainVisual .title span:nth-child(5) {
+        -webkit-animation-delay: 1.9s;
+                animation-delay: 1.9s; } }
 
 @media screen and (min-width: 769px) {
   .mainVisual .lead {
