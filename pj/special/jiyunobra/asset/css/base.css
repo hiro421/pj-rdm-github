@@ -312,6 +312,10 @@ ContentsArea
       padding-left: 20px;
       -webkit-transition: all .2s;
       transition: all .2s; }
+      @media screen and (max-width: 768px) {
+        #contentsArea .commonBlock01 .btn a {
+          background: url(../img/common/common_contents_arw02.png) no-repeat -9px 8px;
+          background-size: 12px auto; } }
       #contentsArea .commonBlock01 .btn a:hover {
         opacity: 0.7;
         text-decoration: none; }
@@ -406,44 +410,6 @@ ContentsArea
 a, button {
   outline: none; }
 
-@-webkit-keyframes arrow-anime {
-  0% {
-    background: url(../img/common/common_contents_arw02.png) no-repeat 1px 8px; }
-  50% {
-    background: url(../img/common/common_contents_arw02.png) no-repeat 14px 8px; }
-  100% {
-    background: url(../img/common/common_contents_arw02.png) no-repeat 1px 8px; } }
-
-@keyframes arrow-anime {
-  0% {
-    background: url(../img/common/common_contents_arw02.png) no-repeat 1px 8px; }
-  50% {
-    background: url(../img/common/common_contents_arw02.png) no-repeat 14px 8px; }
-  100% {
-    background: url(../img/common/common_contents_arw02.png) no-repeat 1px 8px; } }
-
-@media screen and (max-width: 768px) {
-  @-webkit-keyframes arrow-anime {
-    0% {
-      background: url(../img/common/common_contents_arw02.png) no-repeat left 5px;
-      background-size: 15px auto; }
-    50% {
-      background: url(../img/common/common_contents_arw02.png) no-repeat 0.5em 5px;
-      background-size: 15px auto; }
-    100% {
-      background: url(../img/common/common_contents_arw02.png) no-repeat left 5px;
-      background-size: 15px auto; } }
-  @keyframes arrow-anime {
-    0% {
-      background: url(../img/common/common_contents_arw02.png) no-repeat left 5px;
-      background-size: 15px auto; }
-    50% {
-      background: url(../img/common/common_contents_arw02.png) no-repeat 0.5em 5px;
-      background-size: 15px auto; }
-    100% {
-      background: url(../img/common/common_contents_arw02.png) no-repeat left 5px;
-      background-size: 15px auto; } } }
-
 .inline-popup {
   width: 755px;
   margin: auto;
@@ -478,3 +444,41 @@ a, button {
         font-size: 20px;
         right: 0;
         top: 0; } }
+
+@media screen and (min-width: 769px) {
+  @-webkit-keyframes arrow-anime {
+    0% {
+      background: url(../img/common/common_contents_arw02.png) no-repeat 1px 8px; }
+    50% {
+      background: url(../img/common/common_contents_arw02.png) no-repeat 14px 8px; }
+    100% {
+      background: url(../img/common/common_contents_arw02.png) no-repeat 1px 8px; } }
+  @keyframes arrow-anime {
+    0% {
+      background: url(../img/common/common_contents_arw02.png) no-repeat 1px 8px; }
+    50% {
+      background: url(../img/common/common_contents_arw02.png) no-repeat 14px 8px; }
+    100% {
+      background: url(../img/common/common_contents_arw02.png) no-repeat 1px 8px; } } }
+
+@media screen and (max-width: 768px) {
+  @-webkit-keyframes arrow-anime {
+    0% {
+      background: url(../img/common/common_contents_arw02.png) no-repeat left 5px;
+      background-size: 15px auto; }
+    50% {
+      background: url(../img/common/common_contents_arw02.png) no-repeat 0.5em 5px;
+      background-size: 15px auto; }
+    100% {
+      background: url(../img/common/common_contents_arw02.png) no-repeat left 5px;
+      background-size: 15px auto; } }
+  @keyframes arrow-anime {
+    0% {
+      background: url(../img/common/common_contents_arw02.png) no-repeat left 5px;
+      background-size: 15px auto; }
+    50% {
+      background: url(../img/common/common_contents_arw02.png) no-repeat 0.5em 5px;
+      background-size: 15px auto; }
+    100% {
+      background: url(../img/common/common_contents_arw02.png) no-repeat left 5px;
+      background-size: 15px auto; } } }

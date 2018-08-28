@@ -414,6 +414,10 @@ ContentsArea
 				animation: arrow-anime 2s infinite;
 				padding-left: 20px;
 				transition:all .2s ;
+				@media screen and (max-width:$spViewport){
+  				background:url(../img/common/common_contents_arw02.png) no-repeat -9px 8px;
+  				background-size:12px auto;
+				}
 				&:hover{
 					opacity: 0.7;
 					text-decoration: none;
@@ -535,21 +539,7 @@ a,button{
   outline: none;
 }
 
-@keyframes arrow-anime {
-	0% {background:url(../img/common/common_contents_arw02.png) no-repeat 1px 8px;}
-	50% {background:url(../img/common/common_contents_arw02.png) no-repeat 14px 8px;}
-	100% {background:url(../img/common/common_contents_arw02.png) no-repeat 1px 8px;}
-}
 
-@media screen and (max-width:$spViewport){
-  
-@keyframes arrow-anime {
-	0% {background:url(../img/common/common_contents_arw02.png) no-repeat left 5px;background-size: 15px auto;}
-	50% {background:url(../img/common/common_contents_arw02.png) no-repeat 0.5em 5px;background-size: 15px auto;}
-	100% {background:url(../img/common/common_contents_arw02.png) no-repeat left 5px;background-size: 15px auto;}
-}
-  
-}
 
 .inline-popup{
   width: 755px;
@@ -594,4 +584,22 @@ a,button{
       top: 0;
     }
   }
+}
+
+@media screen and (min-width:769px){
+  @keyframes arrow-anime {
+  	0% {background:url(../img/common/common_contents_arw02.png) no-repeat 1px 8px;}
+  	50% {background:url(../img/common/common_contents_arw02.png) no-repeat 14px 8px;}
+  	100% {background:url(../img/common/common_contents_arw02.png) no-repeat 1px 8px;}
+  }
+}
+
+@media screen and (max-width:768px){
+  
+@keyframes arrow-anime {
+	0% {background:url(../img/common/common_contents_arw02.png) no-repeat left 5px; background-size: 15px auto;}
+	50% {background:url(../img/common/common_contents_arw02.png) no-repeat 0.5em 5px; background-size: 15px auto;}
+	100% {background:url(../img/common/common_contents_arw02.png) no-repeat left 5px; background-size: 15px auto;}
+}
+  
 }

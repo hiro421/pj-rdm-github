@@ -3,7 +3,7 @@ const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const cssnext = require('postcss-cssnext');
 const sassGlob = require("gulp-sass-glob");
-const mmq = require('gulp-merge-media-queries');
+//const mmq = require('gulp-merge-media-queries');
 
 gulp.task("sass", function () {
     var processors = [
@@ -13,7 +13,7 @@ gulp.task("sass", function () {
         .pipe(sassGlob())
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
-        .pipe(mmq({log: true}))
+        //.pipe(mmq({log: true}))
         .pipe(gulp.dest('./css/'))
 });
 

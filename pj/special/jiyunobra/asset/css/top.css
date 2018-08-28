@@ -608,10 +608,10 @@ Top CSS
       margin: 3px 0 0 15px; }
       .topBlock03 .cover01 .btn span {
         white-space: nowrap;
-        width: 140px;
+        width: 150px;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-        padding: 4px 5px 4px 23px;
+        padding: 4px 5px 4px 33px;
         border-radius: 15px;
         border: solid 1px #1b7f96;
         font-size: 0.733rem;
@@ -717,7 +717,7 @@ Top CSS
     vertical-align: top; }
     .topBlock04 .btn span {
       white-space: nowrap;
-      width: 146px;
+      width: 156px;
       padding: 4px 5px 4px 23px;
       border-radius: 15px;
       border: solid 1px #fff;
@@ -813,8 +813,8 @@ Top CSS
     .topBlock05 .btn {
       margin-left: 3.125%; }
       .topBlock05 .btn span {
-        width: 151px;
-        padding: 4px 5px 4px 23px;
+        width: 164px;
+        padding: 4px 5px 4px 32px;
         border-radius: 15px;
         border: solid 1px #000;
         font-size: 0.733rem;
@@ -1609,63 +1609,65 @@ Top CSS
 
 @-webkit-keyframes arrow-anime2 {
   0% {
-    background-position: 12px 17px; }
+    background-position: 12px center; }
   50% {
-    background-position: 19px 17px; }
+    background-position: 19px center; }
   100% {
-    background-position: 12px 17px; }
-  @media screen and (max-width: 768px) {
-    0% {
-      background-position: 5px 9px; }
-    50% {
-      background-position: 10px 9px; }
-    100% {
-      background-position: 5px 9px; } } }
+    background-position: 12px center; } }
 
 @keyframes arrow-anime2 {
   0% {
-    background-position: 12px 17px; }
+    background-position: 12px center; }
   50% {
-    background-position: 19px 17px; }
+    background-position: 19px center; }
   100% {
-    background-position: 12px 17px; }
-  @media screen and (max-width: 768px) {
-    0% {
-      background-position: 5px 9px; }
-    50% {
-      background-position: 10px 9px; }
-    100% {
-      background-position: 5px 9px; } } }
+    background-position: 12px center; } }
 
 @-webkit-keyframes arrow-anime3 {
   0% {
-    background-position: 12px 17px; }
+    background-position: 12px center; }
   50% {
-    background-position: 19px 17px; }
+    background-position: 19px center; }
   100% {
-    background-position: 12px 17px; }
-  @media screen and (max-width: 768px) {
-    0% {
-      background-position: 5px 13px; }
-    50% {
-      background-position: 10px 13px; }
-    100% {
-      background-position: 5px 13px; } } }
+    background-position: 12px center; } }
 
 @keyframes arrow-anime3 {
   0% {
-    background-position: 12px 17px; }
+    background-position: 12px center; }
   50% {
-    background-position: 19px 17px; }
+    background-position: 19px center; }
   100% {
-    background-position: 12px 17px; }
-  @media screen and (max-width: 768px) {
+    background-position: 12px center; } }
+
+@media screen and (max-width: 768px) {
+  @-webkit-keyframes arrow-anime2 {
     0% {
-      background-position: 5px 13px; }
+      background-position: 0px center; }
     50% {
-      background-position: 10px 13px; }
+      background-position: 5px center; }
     100% {
-      background-position: 5px 13px; } } }
+      background-position: 0px center; } }
+  @keyframes arrow-anime2 {
+    0% {
+      background-position: 0px center; }
+    50% {
+      background-position: 5px center; }
+    100% {
+      background-position: 0px center; } }
+  @-webkit-keyframes arrow-anime3 {
+    0% {
+      background-position: 5px center; }
+    50% {
+      background-position: 10px center; }
+    100% {
+      background-position: 5px center; } }
+  @keyframes arrow-anime3 {
+    0% {
+      background-position: 5px center; }
+    50% {
+      background-position: 10px center; }
+    100% {
+      background-position: 5px center; } } }
 
 /* mainVisual
 	======================================== */
