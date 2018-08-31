@@ -173,7 +173,7 @@ Top CSS
 
 .mainVisual--anne {
   overflow: hidden;
-  font-family: 'Ryumin Regular KL', 'リュウミン R-KL', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+  font-family: 'Ryumin Regular KL', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
   height: 790px;
   margin-bottom: 80px;
   position: relative;
@@ -1254,7 +1254,7 @@ Top CSS
 		margin:0 40px 21px 0;
 		font-weight:bold;
 		writing-mode: vertical-rl;
-		font-family: 'Ryumin Regular KL', 'リュウミン R-KL', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+		font-family: 'Ryumin Regular KL', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
 		h3{
 			position: absolute;
 			right: 170px;
@@ -1742,9 +1742,9 @@ from,20%,53%,80%,to {
 @media screen and (max-width:768px){
   
 @keyframes arrow-anime2 {
-  	0% {background-position: 0px center;}
-  	50% {background-position: 5px center;}
-  	100% {background-position: 0px center;}
+  	0% {background-position: 8px center;}
+  	50% {background-position: 13px center;}
+  	100% {background-position: 8px center;}
 }
 
 @keyframes arrow-anime3 {
