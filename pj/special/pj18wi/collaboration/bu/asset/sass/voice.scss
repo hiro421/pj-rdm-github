@@ -1,0 +1,426 @@
+@charset "utf-8";
+
+// ===============================================================================
+// Variable Setting
+// ===============================================================================
+// ************* Viewport *************
+$spViewport:768px;
+$fontPC:15;
+$fontSP:12;
+$basicLineHeight:1.5;
+
+/* ===============================================================================
+voice CSS
+=============================================================================== */
+
+#voiceArea{
+  padding-top: 70px;
+  background-color: #ffebeb;
+  @media screen and (max-width:$spViewport){
+    padding-top: 35px;
+  }
+  h2{
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    @media screen and (max-width:$spViewport){
+      font-size:round((48/2/$fontSP)*1000)/1000+rem;
+      margin-bottom: 20px;
+    }
+  }
+  .lead{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 110px;
+    @media screen and (max-width:$spViewport){
+      font-size:round((22/2/$fontSP)*1000)/1000+rem;
+      margin-bottom: 55px;
+    }
+  }
+}
+
+/* voiceBlock01
+	======================================== */
+.voiceBlock01{
+	min-width:984px;
+	@media screen and (max-width:$spViewport){
+  	min-width: 100%;
+	}
+	>.inner{
+		width:984px; 
+		height: 740px;
+		overflow-y: scroll;
+		margin:0 auto 50px;
+		background-color: #fff;
+		padding: 20px 0 0;
+		position: relative;
+		
+  	@media screen and (max-width:$spViewport){
+    	width:100%;
+    	height: 445px;
+    	margin:0 auto 0px;
+    	overflow:auto !important;
+		-webkit-overflow-scrolling:touch !important;
+	  }
+	}
+	h3{
+  	width: 390px;
+  	margin: 0 auto 40px;
+  	@media screen and (max-width:$spViewport){
+    	width: 195px;
+      margin: 0 auto 40px;  
+  	}
+  	img{
+    	width: 100%;
+    	height: auto;
+  	}
+	}
+}
+
+/* voiceBlock02
+	======================================== */
+.voiceBlock02{
+	padding:55px 0 53px;
+	min-width:984px;
+	>.inner{
+		width:984px; margin:0 auto;
+		position:relative;
+		text-align:center;
+	}
+	.logo{
+		position:absolute; top:2px; right:39px;
+	}
+	.text{
+		padding:0 160px;
+		font-size:round((17.6/$fontPC)*1000)/1000+rem;
+		font-weight:bold;
+		color:#f48e92;
+		margin-bottom:35px;
+	}
+	.heading{
+		padding:0 160px;
+		margin-bottom:40px;
+		h3{
+  		font-family: 'Montserrat', sans-serif;
+			font-size:round((36/$fontPC)*1000)/1000+rem;
+			line-height:1;
+			margin-bottom:10px;
+			color: #f48e92;
+			letter-spacing: 2px;
+			span{
+				display:block;
+				margin-top:14px;
+				font-size:round((36/$fontPC)*1000)/1000+rem;
+				line-height:1;
+			}
+		}
+		p{
+  		font-weight: bold;
+  		font-size:round((20/$fontPC)*1000)/1000+rem;
+		}
+	}
+	.box{
+		width:905px; box-sizing:border-box;
+		margin:0 auto 25px;
+		background:#fff;
+		padding:56px 45px 0;
+		height:559px; overflow-y:auto;
+		top:0;
+		position:relative;
+	}
+	.caution{
+  	margin-bottom: 1.5em;
+  	text-align: right;
+  	padding-left: 3em;
+	}
+	.voiceList{
+		text-align:left;
+		li{
+			margin-bottom:30px;
+			font-size:round((18/$fontPC)*1000)/1000+rem;
+			line-height:round(28/18*100)/100;
+			opacity:0;
+			transition-property:opacity;
+			transition-duration:.8s;
+			&.active{
+				opacity:1;
+			}
+			//&:last-child{margin-bottom:0;}
+			.name{
+				text-align:right;
+			}
+		}
+	}
+/*
+	.btn{
+			margin-right:3.125%;
+			span{
+				width:151px;
+				padding:4px 5px 4px 23px;
+				border-radius:15px;
+				border:solid 1px #000;
+				font-size:round((17.6/2/$fontSP)*1000)/1000+rem;
+				background:url(../img/top/top_contents_arw03.png) no-repeat 10px 9px;
+				background-size:10px auto;
+				color:#000;
+			}
+		}
+*/
+	.btn{
+  	text-align: center;
+		a{
+			width:192px; box-sizing:border-box;
+			padding:9px 10px 9px 46px;
+			margin: auto;
+			border-radius:30px;
+			display:block;
+			border:solid 2px #000;
+			font-size:round((17.6/$fontPC)*1000)/1000+rem;
+			font-weight:bold;
+			color:#000;
+			background:transparent url(../img/top/top_contents_arw03.png) no-repeat 19px 17px;
+			transition: opacity .2s;
+			text-decoration: none;
+			&:hover{
+  			opacity: .8;
+			}
+		}
+	}
+	@media screen and (max-width:$spViewport){
+		padding:55px 0 35px;
+		min-width:initial;
+		>.inner{
+			width:93.75%;
+		}
+		.logo{
+			display:none;
+		}
+		.text{
+			padding:0;
+			font-size:round((22/2/$fontSP)*1000)/1000+rem;
+			margin-bottom:22px;
+		}
+		.heading{
+  		padding:0;
+  		margin-bottom:15px;
+  		h3{
+    		font-family: 'Montserrat', sans-serif;
+  			font-size:round((36/2/$fontSP)*1000)/1000+rem;
+  			line-height:1;
+  			margin-bottom:10px;
+  			color: #f48e92;
+  			letter-spacing: 2px;
+  		}
+  		p{
+    		font-weight: bold;
+    		font-size:round((20/2/$fontSP)*1000)/1000+rem;
+  		}
+  	}
+		.box{
+			width:91.16%;
+			margin:0 auto 21px;
+			background:#fff;
+			padding:26px 17px 2px 22px;
+			height:450px; overflow-y:auto;
+		}
+		.caution{
+    	margin-bottom: 1.5em;
+    	text-align: right;
+    	padding-right: 1.5em;
+    	font-size: 10px;
+  	}
+		.voiceList{
+			text-align:left;
+			li{
+				margin-bottom:25px;
+				font-size:round((22/2/$fontSP)*1000)/1000+rem;
+				line-height:round(36/22*100)/100;
+			}
+		}
+		.btn{
+    	text-align: center;
+  		a{
+  			width:110px; box-sizing:border-box;
+  			padding:5px 5px 5px 23px;
+  			margin: auto;
+  			border-radius:30px;
+  			display:block;
+  			border:solid 2px #000;
+  			font-size:round((17.6/2/$fontSP)*1000)/1000+rem;
+  			font-weight:bold;
+  			color:#000;
+  			background:#fff url(../img/top/top_contents_arw03.png) no-repeat 14px 10px;
+        background-size: 11px auto;
+  			transition: opacity .2s;
+  			text-decoration: none;
+  			&:hover{
+    			opacity: .8;
+  			}
+  		}
+  	}
+	}
+}
+
+/* voiceBlock03
+	======================================== */
+.voiceBlock03{
+	padding:55px 0 110px;
+	min-width:984px;
+	>.inner{
+		width:100%; margin:0 auto;
+		position:relative;
+		text-align:center;
+	}
+	.heading{
+		padding:0 160px;
+		margin-bottom:40px;
+		h3{
+  		font-family: 'Montserrat', sans-serif;
+			font-size:round((36/$fontPC)*1000)/1000+rem;
+			line-height:1;
+			margin-bottom:10px;
+			color: #f48e92;
+			letter-spacing: 2px;
+			span{
+				display:block;
+				margin-top:14px;
+				font-size:round((36/$fontPC)*1000)/1000+rem;
+				line-height:1;
+			}
+		}
+		p{
+  		font-weight: bold;
+  		font-size:round((20/$fontPC)*1000)/1000+rem;
+		}
+	}
+	.staffList{
+    height: 428px;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    .loaded &{
+      opacity: 1;
+    }
+	}
+	@media screen and (max-width:$spViewport){
+		padding:32px 0 35px;
+		min-width:initial;
+		>.inner{
+			width:93.75%;
+		}
+		.heading{
+  		padding:0;
+  		margin-bottom:15px;
+  		h3{
+    		font-family: 'Montserrat', sans-serif;
+  			font-size:round((36/2/$fontSP)*1000)/1000+rem;
+  			line-height:1;
+  			margin-bottom:10px;
+  			color: #f48e92;
+  			letter-spacing: 2px;
+  		}
+  		p{
+    		font-weight: bold;
+    		font-size:round((20/2/$fontSP)*1000)/1000+rem;
+  		}
+  	}
+  	.staffList{
+      height: 214px;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.5s;
+      .loaded &{
+        opacity: 1;
+      }
+      img{
+        height: 107px;
+      }
+  	}
+	}
+}
+
+/* voiceBlock04
+	======================================== */
+.voiceBlock04{
+  background-color: #fff;
+	padding:110px 0 110px;
+	min-width:984px;
+	>.inner{
+		width:100%; margin:0 auto;
+		position:relative;
+		text-align:center;
+	}
+	.heading{
+		padding:0 160px;
+		margin-bottom:40px;
+		text-align: center;
+		h3{
+  		font-family: 'Montserrat', sans-serif;
+			font-size:round((36/$fontPC)*1000)/1000+rem;
+			line-height:1;
+			margin-bottom:10px;
+			color: #f48e92;
+			letter-spacing: 2px;
+			background: #fff;
+			padding: 0 20px;
+			display: inline-block;
+			span{
+				display:block;
+				margin-top:14px;
+				font-size:round((36/$fontPC)*1000)/1000+rem;
+				line-height:1;
+			}
+		}
+		p{
+  		font-weight: bold;
+  		font-size:round((20/$fontPC)*1000)/1000+rem;
+		}
+	}
+	.report{
+  	width: 794px;
+  	margin: -100px auto 0;
+  	padding: 100px 0 80px;
+  	text-align: center;
+  	border: 2px solid #f48e92;
+	}
+	@media screen and (max-width:$spViewport){
+		padding:32px 0 35px;
+		min-width:initial;
+		>.inner{
+			width:93.75%;
+		}
+		.heading{
+  		padding:0;
+  		margin-bottom:15px;
+  		z-index: 2;
+  		position: relative;
+  		h3{
+    		font-family: 'Montserrat', sans-serif;
+  			font-size:round((36/2/$fontSP)*1000)/1000+rem;
+  			line-height:1;
+  			margin-bottom:10px;
+  			color: #f48e92;
+  			letter-spacing: 2px;
+  		}
+  		p{
+    		font-weight: bold;
+    		font-size:round((20/2/$fontSP)*1000)/1000+rem;
+  		}
+  	}
+		.report{
+    	width: 80%;
+    	margin: -50px auto 0;
+    	padding: 50px 0 40px;
+    	text-align: center;
+    	border: 2px solid #f48e92;
+    	position: relative;
+    	.banner{
+      	width: 90vw;
+      	margin-left: -7.5vw;
+    	}
+  	}
+	}
+}

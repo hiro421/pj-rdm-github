@@ -1,0 +1,605 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* ===============================================================================
+Reset
+=============================================================================== */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a,
+abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike,
+strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+button {
+	border:none;
+}
+
+// ===============================================================================
+// Variable Setting
+// ===============================================================================
+// ************* Viewport *************
+$spViewport:768px;
+$fontPC:15;
+$fontSP:12;
+$basicLineHeight:1.5;
+
+/* ===============================================================================
+Body Setting
+=============================================================================== */
+html,body{
+	font-family:YuGothic, "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+	font-weight:500;
+	font-size:$fontPC+px;
+	-webkit-text-size-adjust:100%;
+	text-size-adjust:100%;
+	line-height:$basicLineHeight;
+	color:#000;
+	@media screen and (max-width:$spViewport){
+		font-size:$fontSP+px;
+	}
+}
+
+a{
+	color:#1d2088;
+	text-decoration:none;
+	&:hover{
+		text-decoration:underline;
+	}
+}
+
+img{
+	vertical-align:top;
+	max-width:100%;
+}
+.clrF::after{content:""; display:block; clear:both;}
+
+.mont{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal!important;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width:$spViewport){
+  .mont{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold!important;
+    letter-spacing: 3px;
+  }
+}
+
+@media screen and (min-width:$spViewport+1){
+	.spOnly{
+		display:none!important;
+	}
+}
+@media screen and (max-width:$spViewport){
+	.pcOnly{
+		display:none!important;
+	}
+}
+
+#pageWrap{
+  overflow: hidden;
+}
+
+/* ===============================================================================
+HeaderArea
+=============================================================================== */
+#headerArea{
+	padding:33px 0 40px;
+	min-width:984px;
+	z-index: 4;
+	#headerLogo{
+		width:250px; margin:0 auto;
+		a{
+			display:block;
+			transition-property:opacity;
+			transition-duration:.2s;
+			&:hover{
+				opacity:.7;
+			}
+		}
+	}
+	>.navBtn{
+		position:fixed;
+		z-index:1;
+		top:25px; left:26px;
+		cursor:pointer;
+		img{
+			transition-property:opacity;
+			transition-duration:.2s;
+			display:block;
+			&:hover{
+				opacity:.5;
+			}
+		}
+	}
+	#grobalNav{
+		position:fixed;
+		z-index:1;
+		top:0; left:-469px;
+		background:#fff;
+		width:469px; box-sizing:border-box;
+		padding:25px 26px 275px;
+		transition-property:left;
+		transition-duration:.2s;
+		&.active{
+			left:0;
+		}
+		.navBtn{
+			cursor:pointer;
+			margin-bottom:61px;
+			transition-property:opacity;
+			transition-duration:.2s;
+			display:block;
+			&:hover{
+				opacity:.5;
+			}
+		}
+		.list{
+			margin-left:3px;
+			height: 100%;
+       overflow: auto;
+       -webkit-overflow-scrolling: touch;
+			li{
+				padding:2px 0 1px 18px;
+				line-height:1;
+				border-left:solid 2px #000;
+				font-weight:bold;
+				font-size:round((24/$fontPC)*1000)/1000+rem;
+				letter-spacing:2px;
+				margin-bottom: 28px;
+				&.current{
+  				border-left:solid 2px #f48e92;
+  				a{
+						color:#f48e92;
+					}
+				}
+				&.logo{
+  				border: none;
+				}
+				a{
+					color:#000;
+					transition-property:opacity;
+					transition-duration:.2s;
+					display:block;
+					&:hover{
+						text-decoration:none;
+						opacity:.5;
+					}
+				}
+				p{
+  				margin-bottom: 10px;
+  				&:last-child{
+    				margin-bottom: 0;
+  				}
+  				&.small{
+    				font-size:round((16/$fontPC)*1000)/1000+rem;
+  				}
+				}
+				
+				&:nth-child(1){
+				}
+				&:nth-child(2){
+					padding-bottom:3px;
+					p{
+  					&:nth-child(1){
+						}
+						&:nth-child(2){
+						}
+						&:nth-child(3){
+							margin-bottom:8px;
+						}
+					}
+				}
+				&:nth-child(4){
+					padding-top:1px;
+					padding-bottom:0;
+					p{
+  					&:nth-child(1){
+						}
+						&:nth-child(2){
+						}
+					}
+				}
+				&:nth-child(4){
+					p{
+  					&:nth-child(1){
+
+						}
+					}
+				}
+				&:nth-child(5){
+					padding-bottom:0;
+					p{
+  					&:nth-child(1){
+
+						}
+						&:nth-child(2){
+							//font-size:round((16/$fontPC)*1000)/1000+rem;
+							//margin-bottom:8px;
+						}
+					}
+				}
+			}
+		}
+		.logo{
+				margin-top:50px;
+			}
+	}
+	@media screen and (max-width:$spViewport){
+		padding:12px 0 13px;
+		min-width:initial;
+		#headerLogo{
+			width:123px; margin:0 auto;
+		}
+		>.navBtn{
+			width:16px;
+			top:12px; left:14px;
+		}
+		#grobalNav{
+			left:-264px;
+			width:264px;
+			padding:12px 13px 58px;
+			&.active{
+				left:0;
+			}
+			.navBtn{
+				width:17px;
+				margin-bottom:21px;
+			}
+			.list{
+				margin:0 0 29px 4px;
+				height: auto!important;
+				li{
+					padding:0 0 0 10px;
+					border-left:solid 1px #000;
+					font-size:round((28/2/$fontSP)*1000)/1000+rem;
+					letter-spacing:1px;
+					p{
+    				margin-bottom:5px;
+    				&:last-child{
+      				margin-bottom: 0;
+    				}
+    				&.small{
+      				font-size:round((20/2/$fontSP)*1000)/1000+rem;
+    				}
+  				}
+					&.current{
+  					border-left:solid 1px #f48e92;
+					}
+					&.logo{
+  					padding: 0;
+					}
+					&:nth-child(1){
+						margin-bottom:22px;
+					}
+					&:nth-child(2){
+						margin-bottom:22px;
+						padding-bottom:0;
+						p{
+							&:nth-child(2){
+							}
+							&:nth-child(3){
+							}
+						}
+					}
+					&:nth-child(3){
+						margin-bottom:22px;
+						padding-top:0;
+						p{
+							&:nth-child(2){
+							}
+						}
+					}
+					&:nth-child(4){
+						margin-bottom:22px;
+					}
+					&:nth-child(5){
+						p{
+							&:nth-child(2){
+								//font-size:round((20/2/$fontSP)*1000)/1000+rem;
+								//margin-bottom:5px;
+							}
+						}
+					}
+				}
+			}
+			.logo{
+				width:135px;
+				margin-left:5px;
+				margin-top: 30px;
+			}
+		}
+	}
+}
+
+/* ===============================================================================
+FooterArea
+=============================================================================== */
+#footerArea{
+	text-align:center;
+	padding:62px 0 60px;
+	min-width:984px;
+	.list{
+		margin-bottom:23px;
+		display:inline-block;
+		vertical-align:top;
+		font-size:0;
+		li{
+			display:inline-block;
+			width:62px;
+			margin-left:38px;
+			&:first-child{
+				margin-left:0;
+			}
+			a{
+				display:block;
+				transition-property:opacity;
+				transition-duration:.2s;
+				&:hover{
+					opacity:.5;
+				}
+			}
+		}
+	}
+	#copyright{
+		font-size:round((18/$fontPC)*1000)/1000+rem;
+	}
+	@media screen and (max-width:$spViewport){
+		padding:30px 0;
+		min-width:initial;
+		.list{
+			margin-bottom:25px;
+			li{
+				width:39px;
+				margin-left:24px;
+				&:last-child{
+					a{
+						img{
+							padding:12px 0;
+						}
+					}
+				}
+			}
+		}
+		#copyright{
+			font-size:round((18/2/$fontSP)*1000)/1000+rem;
+		}
+	}
+}
+
+/* ===============================================================================
+ContentsArea
+=============================================================================== */
+#contentsArea{
+	.commonBlock01{
+		min-width:984px;
+		>.inner{
+			width:984px; margin:0 auto;
+		}
+		.btn{
+			text-align:right;
+			position:relative;
+			margin-bottom:30px;
+			a{
+				display:inline-block;
+				background:url(../img/common/common_contents_arw02.png) no-repeat -9px 8px;
+				background-size:24px auto;
+				animation: arrow-anime 2s infinite;
+				padding-left: 20px;
+				transition:all .2s ;
+				@media screen and (max-width:$spViewport){
+  				background:url(../img/common/common_contents_arw02.png) no-repeat -9px 8px;
+  				background-size:12px auto;
+				}
+				&:hover{
+					opacity: 0.7;
+					text-decoration: none;
+				}
+				span{
+					background:url(../img/common/common_contents_arw01.png) no-repeat 8px center;
+					background-size:25px auto;
+					color:#000;
+					font-size:round((18/$fontPC)*1000)/1000+rem;
+					padding-left:45px;
+					min-height:25px;
+					display:block;
+				}
+			}
+		}
+		.column2block{
+			background:#ffebeb;
+			padding:58px 0 65px;
+			>.inner{
+				width:984px; margin:0 auto;
+			}
+			p{
+				text-align:center;
+				margin-bottom:45px;
+				font-weight:normal;
+				font-size:round((26/$fontPC)*1000)/1000+rem;
+				font-family: 'Montserrat', sans-serif;
+        font-weight: normal!important;
+        letter-spacing: 3px;
+			}
+			a{
+				display:block;
+				float:left;
+				width:470px;
+				transition-property:opacity;
+				transition-duration:.2s;
+				&:hover{
+					opacity:.7;
+					text-decoration:none;
+				}
+				&:nth-child(2){
+					margin-bottom: 40px;
+					margin-right: 40px;
+				}
+				&:nth-child(3){
+					margin-bottom: 40px;
+				}
+				&:nth-child(4){
+					margin-right: 40px;
+				}
+				&:last-child{
+				}
+			}
+		}
+	}
+	@media screen and (max-width:$spViewport){
+		.commonBlock01{
+			min-width:initial;
+			>.inner{
+				width:93.75%;
+			}
+			.btn{
+				margin-bottom:15px;
+				a{
+					background:url(../img/common/common_contents_arw02.png) no-repeat left 5px;
+					background-size:15px auto;
+					padding-left: 5px;
+					&:hover{
+  					background:url(../img/common/common_contents_arw02.png) no-repeat left 5px;
+            background-size:15px auto;
+  				}
+					span{
+						background:url(../img/common/common_contents_arw01.png) no-repeat 5px center;
+						background-size:16px auto;
+						font-size:round((22/2/$fontSP)*1000)/1000+rem;
+						padding-left:27px;
+						min-height:16px;
+					}
+				}
+			}
+			.column2block{
+				background:#ffebeb;
+				padding:35px 0 35px;
+				>.inner{
+					width:93.75%;
+				}
+				p{
+					text-align:center;
+					margin-bottom:30px;
+					font-size:round((30/2/$fontSP)*1000)/1000+rem;
+					font-family: 'Montserrat', sans-serif;
+          font-weight: bold!important;
+          letter-spacing: 3px;
+				}
+				a{
+					float:none;
+					width:97.666%; margin:0 auto;
+					text-align:center;
+					margin-bottom: 20px;
+					&:nth-child(2){
+					  margin-bottom: 20px;
+  					margin-right: 0px;
+  				}
+  				&:nth-child(3){
+  					margin-bottom: 20px;
+  				}
+  				&:nth-child(4){
+  					margin-right: 0px;
+  				}
+  				&:last-child{
+  				}
+				}
+			}
+		}
+	}
+}
+
+a,button{
+  outline: none;
+}
+
+
+
+.inline-popup{
+  width: 755px;
+  margin: auto;
+  background-color: #fff;
+  padding: 40px;
+  position: relative;
+  p{
+    margin-bottom: 1.2em;
+  }
+  ul{
+    margin-bottom: 1.2em;
+    li{
+      position: relative;
+      padding-left: 1.1em;
+      &:before{
+        content: "・";
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+  .mfp-close{
+    color: #bdbdbd!important;
+    font-size: 36px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-family: inherit;
+    cursor: pointer;
+    &:active{
+      
+    }
+  }
+  @media screen and (max-width:$spViewport){
+    width: 85%;
+    padding: 20px;
+    .mfp-close{
+      font-size: 20px;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+@media screen and (min-width:769px){
+  @keyframes arrow-anime {
+  	0% {background:url(../img/common/common_contents_arw02.png) no-repeat 1px 8px;}
+  	50% {background:url(../img/common/common_contents_arw02.png) no-repeat 14px 8px;}
+  	100% {background:url(../img/common/common_contents_arw02.png) no-repeat 1px 8px;}
+  }
+}
+
+@media screen and (max-width:768px){
+  
+@keyframes arrow-anime {
+	0% {background:url(../img/common/common_contents_arw02.png) no-repeat left 5px; background-size: 15px auto;}
+	50% {background:url(../img/common/common_contents_arw02.png) no-repeat 0.5em 5px; background-size: 15px auto;}
+	100% {background:url(../img/common/common_contents_arw02.png) no-repeat left 5px; background-size: 15px auto;}
+}
+  
+}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+// ===============================================================================
+// Variable Setting
+// ===============================================================================
+// ************* Viewport *************
+$spViewport:768px;
+$fontPC:15;
+$fontSP:12;
+$basicLineHeight:1.5;
+
+/* ===============================================================================
+Manga CSS
+=============================================================================== */
+/* mangaBlock01
+	======================================== */
+.mangaBlock01{
+	min-width:984px;
+	background:#e2d1db;
+	padding:39px 0 34px;
+	margin-top:-5px;
+	margin-bottom: 70px;
+	>.inner{
+		width:984px; margin:0 auto;
+		text-align:center;
+	}
+	@media screen and (max-width:$spViewport){
+		min-width:initial;
+		padding:20px 0 17px;
+		margin-top:0;
+		>.inner{
+			width:auto;
+		}
+		.heading{
+			p:first-child{
+				width:168px;
+				margin:0 auto 7px;
+			}
+			h2{
+				font-size:round((48.81/2/$fontSP)*1000)/1000+rem;
+				margin-bottom:8px;
+			}
+			p:last-child{
+				font-size:round((20/2/$fontSP)*1000)/1000+rem;
+			}
+		}
+	}
+}
+
