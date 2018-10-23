@@ -1,0 +1,492 @@
+@charset "UTF-8";
+/* ===============================================================================
+Anne CSS
+=============================================================================== */
+
+
+/* mainVisual
+	======================================== */
+@-webkit-keyframes animeImage {
+  0% {
+    opacity: 0; }
+  57% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes animeImage {
+  0% {
+    opacity: 0; }
+  57% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes animeTitleSp {
+  0% {
+    bottom: 22vw;
+    left: 27vw; }
+  18% { }
+  40% {
+    bottom: 22vw;
+    left: 27vw; }
+  57% {
+    bottom: 4vw;
+    left: 5vw; }
+  100% {
+    bottom: 4vw;
+    left: 5vw; } }
+
+@keyframes animeTitleSp {
+  0% {
+    bottom: 22vw;
+    left: 27vw; }
+  18% { }
+  40% {
+    bottom: 22vw;
+    left: 27vw; }
+  57% {
+    bottom: 4vw;
+    left: 5vw; }
+  100% {
+    bottom: 4vw;
+    left: 5vw; } }
+
+@-webkit-keyframes animeTitlePc {
+  0% {
+    bottom: 30px;
+    left: 200px; }
+  18% { }
+  40% {
+    bottom: 30px;
+    left: 200px; }
+  57% {
+    bottom: -60px;
+    left: 0; }
+  100% {
+    bottom: -60px;
+    left: 0; } }
+
+@keyframes animeTitlePc {
+  0% {
+    bottom: 30px;
+    left: 200px; }
+  18% { }
+  40% {
+    bottom: 30px;
+    left: 200px; }
+  57% {
+    bottom: -60px;
+    left: 0; }
+  100% {
+    bottom: -60px;
+    left: 0; } }
+
+@-webkit-keyframes animeTitleText {
+  0% {
+    opacity: 0; }
+  18% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  57% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes animeTitleText {
+  0% {
+    opacity: 0; }
+  18% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  57% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes animeLeadSp {
+  0% {
+    top: 15vw;
+    right: 23vw; }
+  22% { }
+  40% {
+    top: 15vw;
+    right: 23vw; }
+  57% {
+    top: 1vw;
+    right: 7vw; }
+  100% {
+    top: 1vw;
+    right: 7vw; } }
+
+@keyframes animeLeadSp {
+  0% {
+    top: 15vw;
+    right: 23vw; }
+  22% { }
+  40% {
+    top: 15vw;
+    right: 23vw; }
+  57% {
+    top: 1vw;
+    right: 7vw; }
+  100% {
+    top: 1vw;
+    right: 7vw; } }
+
+@-webkit-keyframes animeLeadPc {
+  0% {
+    top: 30px;
+    right: 190px; }
+  22% { }
+  40% {
+    top: 30px;
+    right: 190px; }
+  57% {
+    top: -15px;
+    right: 5px; }
+  100% {
+    top: -15px;
+    right: 5px; } }
+
+@keyframes animeLeadPc {
+  0% {
+    top: 30px;
+    right: 190px; }
+  22% { }
+  40% {
+    top: 30px;
+    right: 190px; }
+  57% {
+    top: -15px;
+    right: 5px; }
+  100% {
+    top: -15px;
+    right: 5px; } }
+
+.mainVisual {
+   }
+	.mainVisual img {
+		width: 100%; }
+		.mainVisual .keyMovie_movie {
+			position: relative; }
+		.mainVisual .keyMovie_movie video {
+			display: block;
+			width: 100%; }
+
+@media screen and (min-width: 769px) {
+  .mainVisual {
+    margin-top: -70px;
+    padding: 70px 0 26px; } }
+		@media screen and (max-width: 768px) {
+			.mainVisual {
+				padding: 0 0 20px; }
+      .mainVisual.loaded .keyMovie {
+				background: url(../img/anne/18wijiyuteaser.jpg) no-repeat center 30px;
+				background-size: cover; }
+			.mainVisual .keyMovie_movie {
+				background-color: #fff; } }
+
+
+/* anneBlock01
+	======================================== */
+.anneBlock01  {
+  width: 100%;
+	text-align: center;
+	letter-spacing: 0.05em;
+   }
+	.anneBlock01 .title {
+		margin: 0 auto 30px;
+   }
+		@media screen and (max-width: 768px) {
+			.anneBlock01 .title {
+				width: 49%;
+				margin: 0 auto 16px;} }
+	.anneBlock01 .text {
+		margin-bottom: 20px;
+   }
+		@media screen and (max-width: 768px) {
+			.anneBlock01 .text {
+				margin-bottom: 10px;
+				font-size: 0.8rem;} }
+	.anneBlock01 .text_comingsoon {
+		font-weight: bold;
+		font-size: 24px;
+		color: #e95b86;
+		margin-bottom: 30px;
+   }
+	.anneBlock01 .text_comingsoon span {
+		font-size: 16px;
+   }
+		@media screen and (max-width: 768px) {
+			.anneBlock01 .text_comingsoon {
+				font-size: 1.0rem;
+				margin-bottom: 10px; }
+			.anneBlock01 .text_comingsoon span {
+				font-size: 0.8rem; } }
+ 	.anneBlock01 .share li {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 10px 30px;
+   }
+		@media screen and (max-width: 768px) {
+			.anneBlock01 .share li {
+				 margin: 0 3px 20px; }
+			.anneBlock01 .share li.fb_ico {
+				 width: 6.2%; }
+			.anneBlock01 .share li.tw_ico {
+				 width: 6.2%; }
+			.anneBlock01 .share li.hushtag {
+				 width: 28.7%; } }
+
+
+/* anneBlock02
+	======================================== */
+.anneBlock02 {
+	background: url(../../asset/img/teaser/lead_bg.jpg) no-repeat 0 0 ;
+	background-size: cover;
+	letter-spacing: 0.05em;
+   }
+	.anneBlock02 .inner {
+		width: 600px;
+		margin: 0 auto;
+		padding: 80px 0 60px 0;
+   }
+		@media screen and (max-width: 768px) {
+			.anneBlock02 .inner {
+				width: 85%;
+				padding: 10px 0 30px 0;} }
+ 	.anneBlock02 .title {
+		margin: 30px auto;
+   }
+		@media screen and (max-width: 768px) {
+			.anneBlock02 .title {
+				margin: 30px auto 12px; } }
+ 	.anneBlock02 p {
+		font-size: 23px;
+		line-height: 2.5;
+   }
+		@media screen and (max-width: 768px) {
+			.anneBlock02 p {
+				font-size: 0.9em;
+				letter-spacing: 0;} }
+
+/* anneBlock03
+	======================================== */
+.anneBlock03 {
+  min-width: 984px;
+  padding: 100px 0 69px;
+	background-color: #000;
+	color:#fff;}
+  .anneBlock03 > .inner {
+    width: 984px;
+    margin: 0 auto;
+		padding: 0 69px;
+		box-sizing: border-box; }	
+		@media screen and (max-width: 768px) {
+			.anneBlock03 {
+				min-width: 0;
+				min-width: initial;
+				padding: 45px 0 38px; }
+				.anneBlock03 > .inner {
+					width: 83.28%;
+					padding: 0; } }
+	.anneBlock03 .title {
+    margin-bottom: 50px;}
+		@media screen and (max-width: 768px) {
+			.anneBlock03 .title {
+				margin-bottom: 30px;
+				text-align: center; } }
+	.anneBlock03 .story_inner {
+		overflow: hidden;
+		margin-bottom: 50px;}
+		@media screen and (max-width: 768px) {
+			.anneBlock03 .story_inner {
+				margin-bottom: 30px;
+				text-align: center;} }
+	.anneBlock03 .story_inner > .story_img {
+		width: 446px;
+    float: left;}
+		@media screen and (max-width: 768px) {
+			.anneBlock03 .story_inner > .story_img {
+				float: inherit;
+				width: 100%; } }
+	.anneBlock03 .story_inner > .story_txt {
+    float: right;
+		color: #fff;
+		font-size: 16px;
+		line-height: 3.3em;
+		margin-top: -1.0em;}
+		@media screen and (max-width: 768px) {
+			.anneBlock03 .story_inner > .story_txt {
+				margin-top: 20px;
+				font-size: 0.9rem;
+				text-align: center;
+				line-height: 2.33;
+				float: inherit; } }
+	.anneBlock03 .story_next {
+		text-align: center;
+		font-size: 29px;
+		position: relative;
+		letter-spacing: 0.05em;
+		display: inline-block;
+		padding: 0 25px;
+		left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);}
+	.anneBlock03 .story_next::before , .anneBlock03 .story_next::after {
+    content: '';
+		position: absolute;
+		top: 50%;
+		display: inline-block;
+		width: 20px;
+		height: 1px;
+		background-color: #fff; }
+	.anneBlock03 .story_next::before  {
+    left:0; }
+	.anneBlock03 .story_next::after  {
+    right:0; }
+		@media screen and (max-width: 768px) {
+			.anneBlock03 .story_next {
+				font-size: 1.6em; } }
+
+
+/* anneBlock04
+	======================================== */
+.anneBlock04 {
+  min-width: 984px;
+  padding: 30px 0 69px;
+	background-color: #000;
+	color:#fff;}
+  .anneBlock04 > .inner {
+    width: 984px;
+    margin: 0 auto;
+		padding: 0 69px;
+		box-sizing: border-box; }
+		@media screen and (max-width: 768px) {
+			.anneBlock04 {
+				min-width: 0;
+				min-width: initial;
+				padding: 45px 0 38px; }
+				.anneBlock04 > .inner {
+					width: 83.28%;
+					padding: 0; } }
+	.anneBlock04 .title {
+    margin-bottom: 50px;}
+		@media screen and (max-width: 768px) {
+			.anneBlock04 .title {
+				margin-bottom: 30px;
+				text-align: center; } }
+	.anneBlock04 .trailer_copy {
+    margin: 0 auto 20px;
+		text-align: center;}
+		@media screen and (max-width: 768px) {
+			.anneBlock04 .trailer_copy {
+					width: 15%;
+					margin: 0 auto 5px; } }
+	.anneBlock04 .trailer_movie {
+    margin-bottom: 100px;}
+		@media screen and (max-width: 768px) {
+			.anneBlock04 .trailer_movie {
+					margin-bottom: 40px; } }
+		.anneBlock04 .trailer_movie video {
+			width: 100%;}
+
+
+/* anneBlock05
+	======================================== */
+.anneBlock05 {
+  min-width: 984px;
+  padding: 30px 0 69px;
+	background-color: #000;
+	color:#fff;
+	margin-bottom: 50px;}
+  .anneBlock05 > .inner {
+    width: 984px;
+    margin: 0 auto;
+		padding: 0 69px;
+		box-sizing: border-box; }
+		@media screen and (max-width: 768px) {
+			.anneBlock05 {
+				min-width: 0;
+				min-width: initial;
+				padding: 0 0 60px; }
+				.anneBlock05 > .inner {
+					width: 83.28%;
+					padding: 0; } }
+	.anneBlock05 .title {
+    margin-bottom: 50px;}
+		@media screen and (max-width: 768px) {
+			.anneBlock05 .title {
+				margin-bottom: 30px;
+				text-align: center; } }
+	.anneBlock05 .campaign_list ul {
+		overflow: hidden;}
+	.anneBlock05 .campaign_list li {
+		width: 256px;
+		float: left;
+    margin-bottom: 100px;
+		color: #fff;
+		font-size: 12px;
+		line-height: 1.6;
+		letter-spacing: 0.05em;}
+		@media screen and (max-width: 768px) {
+			.anneBlock05 .campaign_list li {
+				width: 100%;
+				font-size: 1.0rem;
+				margin-bottom: 40px; } }
+	.anneBlock05 .campaign_list li + li {
+		margin-left: 39px; }
+		@media screen and (max-width: 768px) {
+			.anneBlock05 .campaign_list li + li {
+					margin-left: 0; } }
+	.anneBlock05 .campaign_list .campaign_date {
+		}
+	.anneBlock05 .campaign_list .campaign_date span {
+		display: block;
+		height: 1px;
+		width: 100%;
+		background-color: #fff;
+		margin: 6px 0 10px 0;}
+		@media screen and (max-width: 768px) {
+			.anneBlock05 .campaign_list .campaign_date span {
+				margin: 10px 0 15px 0; } }
+	.anneBlock05 .campaign_list .campaign_title {
+		font-size: 18px;
+		margin-bottom: 10px;}
+		@media screen and (max-width: 768px) {
+			.anneBlock05 .campaign_list .campaign_title {
+				font-size: 1.6rem;
+				margin-bottom: 15px;} }
+	.anneBlock05 .campaign_list .campaign_img {
+		margin-bottom: 10px;}
+		@media screen and (max-width: 768px) {
+			.anneBlock05 .campaign_list .campaign_img {
+				    margin: 0 auto 10px;
+    				display: block;} }
+
+
+/* 181026 add */
+@media screen and (min-width: 769px) {
+  .mainVisual .keyMovie_movie.end{
+    background: url(../img/mainvisual_pc.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  .mainVisual .keyMovie_movie video {
+		width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainVisual .keyMovie_movie.end{
+    background: url(../img/mainvisual_sp.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  .mainVisual .keyMovie_movie video {
+		width: 100%;
+    vertical-align: top;
+  }
+}
