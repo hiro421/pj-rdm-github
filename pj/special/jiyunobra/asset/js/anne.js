@@ -153,17 +153,18 @@ $(function(){
 });
 
 // -------------------------------------------------------------------
-// main visualÅ@text
+// Movie popup
 // -------------------------------------------------------------------
-$(function(){
-	'use strict';
+// carousel
+$(function() {
 	
-	  var $allMsg = $('#leadSplit');
-    var $wordList = $('#leadSplit').html().split("");
-    $('#leadSplit').html("");
-    $.each($wordList, function(idx, elem) {
-        var newEL = $("<span/>").text(elem);
-        newEL.appendTo($allMsg);
+  var video = $('#videoTop');
+  video.on('ended', function () {
+    $(this).animate({
+      'opacity': 0,
+      'z-index': -1
     });
-    $('<br>').insertAfter("#leadSplit span:nth-child(7)");
+    $(".keyMovie_movie").addClass("end");
+  });
+	
 });
