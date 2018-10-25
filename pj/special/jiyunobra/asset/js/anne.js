@@ -153,52 +153,17 @@ $(function(){
 });
 
 // -------------------------------------------------------------------
-// Movie popup
+// main visualÅ@text
 // -------------------------------------------------------------------
-// carousel
-$(function() {
+$(function(){
+	'use strict';
 	
-//	var videoPc = $('.video-pc');
-//	var videoSp = $('.video-sp');
-//
-//	if(ww < SP_MAX_WIDTH) {
-//		videoPc.get(0).pause();
-//		setTimeout(function() {
-//        videoSp.get(0).play();
-//		},7300);
-//		videoSp.on('ended',function() {
-//				$(this).animate({
-//					'opacity':0,
-//					'z-index':-1
-//				});
-//		});
-//	} else{
-//		videoPc.on('ended',function() {
-//				$(this).animate({
-//					'opacity':0,
-//					'z-index':-1
-//				});
-//				$('.play_button').animate({
-//					'opacity':1,
-//					'z-index':1
-//				});
-//				$('.keyMovie_movie').css({
-//					'background-color':'transparent'
-//				});
-//				videoPc.css({
-//						'width':'100%'
-//					});
-//		});
-//
-//	}
-  
-  var video = $('#videoTop');
-  video.on('ended', function () {
-    $(this).animate({
-      'opacity': 0,
-      'z-index': -1
+	  var $allMsg = $('#leadSplit');
+    var $wordList = $('#leadSplit').html().split("");
+    $('#leadSplit').html("");
+    $.each($wordList, function(idx, elem) {
+        var newEL = $("<span/>").text(elem);
+        newEL.appendTo($allMsg);
     });
-    $(".keyMovie_movie").addClass("end");
-  });
-	
+    $('<br>').insertAfter("#leadSplit span:nth-child(7)");
 });
