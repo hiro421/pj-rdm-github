@@ -28,17 +28,17 @@
                                     <ul>
                                         <li> <a href="/pjitem/list/?_pcg=101&amp;outlet=include"> ブラジャーすべて </a> </li>
                                         <li> <a href="/pjitem/list/?_al=pj_new&count=150&_iid=1&outlet=include">新作ブラ　New in</a> </li>
-                                        <li> <a href="/pjitem/list/?_al=miracle&outlet=include&count=60&sort=6&_dm=2">洗濯機で洗えるブラ</a> </li>                                        
+                                        <li> <a href="/pjitem/list/?_al=miracle&amp;outlet=include&amp;sort=6&amp;_dm=2">洗濯機で洗えるミラクルグミワイヤーブラ</a> </li>
                                         <li> <a href="/pjitem/list/?_cg=10112&amp;outlet=include">ストラップレス・Tシャツブラ・ニップレス</a> </li>
-                                        <li> <a href="/pjitem/list/?_cg=10110&amp;outlet=include">ノンワイヤーブラ・ブラトップ・ブラレット</a> </li>                                        
+                                        <li> <a href="/pjitem/list/?_cg=10110&amp;outlet=include">ノンワイヤーブラ・ブラトップ・ブラレット</a> </li>
+                                        <li> <a href="/pjitem/list/?_cg=10114&amp;outlet=include">夏におすすめのブラ</a> </li>                                      
                                         <li> <a href="/pjitem/list/?_cg=10106&amp;outlet=include">ブラ＆パンティ（ショーツ）セット</a> </li>
                                         <li> <a href="/pjitem/list/?_cg=10101&amp;outlet=include">デイリーユースブラ</a> </li>
+                                        <li> <a href="/pjitem/list/?_cg=10104&amp;outlet=include">着やせブラ</a> </li>
                                         <li> <a href="/pjitem/list/?_cg=10107&amp;outlet=include">セクシーランジェリー</a> </li>                                        
                                         <li> <a href="/pjitem/list/?_cg=10102&amp;outlet=include">谷間ブラ</a> </li>
                                         <li> <a href="/pjitem/list/?_cg=10103&amp;outlet=include">ボリュームアップブラ</a> </li>
-                                        <li> <a href="/pjitem/list/?_cg=10104&amp;outlet=include">着やせブラ</a> </li>
                                         <li> <a href="/pjitem/list/?_cg=10117&amp;outlet=include">抜け感ブラ</a> </li>
-                                        <li> <a href="/pjitem/list/?_cg=10114&amp;outlet=include">夏におすすめのブラ</a> </li>
                                         <li> <a href="/pjitem/list/?_cg=10105&amp;outlet=include">グラマーサイズ（Eカップ以上）</a> </li>
                                         <li> <a href="/pjitem/list/?_cg=10113&amp;outlet=include">ナイトブラ・インナー</a> </li>                                        
                                         <li> <a href="/pjitem/list/?_cg=20803&amp;outlet=include">マタニティ下着</a> </li>
@@ -72,6 +72,7 @@
                                         <li> <a href="/pjitem/detail/?ITM=1014680&amp;outlet=include">胸きゅんブラ</a> </li>
                                         <li> <a href="/pjitem/list/?_sr=192&amp;outlet=include">マキシマムメイカー</a> </li>
                                         <li> <a href="/pjitem/list/?_sr=189&amp;outlet=include&sort=2">ボムバスト</a> </li>
+                                        <li> <a href="/pjitem/list/?_al=tanimamisenai&amp;sort=6&amp;_dm=2&amp;outlet=include">谷間見せないブラ</a> </li>
                                         <li> <a href="/pjitem/list/?_sr=430&amp;outlet=include&sort=2">スリムルック</a> </li>
                                         <li> <a href="/pjitem/list/?_sr=391&amp;outlet=include&sort=2">はみ肉グイ寄せ</a> </li>
                                         <li> <a href="/pjitem/list/?_sr=47&amp;outlet=include">デコルタン</a> </li>
@@ -355,6 +356,7 @@
                 <li> <b><a href="/al/info/return/">ブラ返品＆交換返送料￥0</a></b> </li>
                 <li> <b><a href="/al/info/gift/">ギフトサービス</a></b> </li>
                 <li> <b><a href="https://egift.peachjohn.co.jp/">eGift</a></b> </li>
+                <li> <b><a href="/al/info/chat/">チャットサービス</a></b> </li>
             </ul>
         </div>
         <div class="block">
@@ -365,11 +367,11 @@
                 <li class="pc"> <b><a href="/al/rule/beginners.html">初めての方へ</a></b> </li>
                 <li class="sp"> <b><a href="/member/regist/">新規会員登録</a></b> </li>
                 <li class="sp"> <b><a href="/al/rule/beginners.html">初めての方へ</a></b> </li>
-                <li> <b><a href="https://faq.peachjohn.co.jp" target="_blank">よくあるご質問</a></b> </li>
+                <li> <b><a href="https://faq.peachjohn.co.jp/?site_domain=default&sid=top_chatside" target="_blank">よくあるご質問</a></b> </li>
             </ul>
         </div>
         <div class="block">
-        <h3 class="trigger helpGuide">
+        <h3 class="trigger appcatalogue">
         		APP &amp; <br class="pc">CATALOGUE</h3>
             <ul class="acoCont">
                 <li class="sp"> <b><a href="/al/appli/operation/">アプリダウンロード</a></b> </li>
@@ -378,9 +380,13 @@
                <li class="pc"> <b><a href="/al/digicata/">デジタルカタログを見る</a></b> </li>-->
             </ul>
         </div>
-        <div class="block"> <a href="/al/info/recruit/">
-            <h3>RECRUIT</h3>
-            </a> </div>
+        <div class="block">
+           	<h3 class="trigger recruit">RECRUIT</h3>
+            <ul class="acoCont">
+                <li> <b><a href="https://peachjohn-recruit.net/" target="_blank">採用情報</a></b> </li>
+                <li> <b><a href="https://peachjohn-recruit.net/jobfind-pc/job/All/2412" target="_blank">カムバック制度</a></b> </li>
+            </ul>
+        </div>
         <div class="block"> <a href="https://faq.peachjohn.co.jp" target="_blank">
             <h3>CONTACT</h3>
             </a> </div>

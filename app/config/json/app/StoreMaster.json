@@ -3,6 +3,7 @@
   "stores": [
     {
       "name": "札幌店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア札幌店",
       "pref":"北海道",
       "storeCode": "4302",
       "zipcode": "〒060-0062",
@@ -11,6 +12,7 @@
         "latitude": 43.0579106,
         "longitude": 141.35213469999997
       },
+      "mypeachjohnId": "642",
       "checkin": {
         "code": "s001",
         "range": 500
@@ -21,6 +23,7 @@
     },
     {
       "name": "仙台店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア仙台店",
       "pref":"宮城",
       "storeCode": "4307",
       "zipcode": "〒980-0021",
@@ -29,6 +32,7 @@
         "latitude": 38.2601439,
         "longitude": 140.88212709999993
       },
+      "mypeachjohnId": "643",
       "checkin": {
         "code": "s002",
         "range": 500
@@ -39,6 +43,7 @@
     },
     {
       "name": "渋谷店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア渋谷店",
       "pref":"東京",
       "storeCode": "4001",
       "zipcode": "〒150-0043",
@@ -47,6 +52,7 @@
         "latitude": 35.6597466,
         "longitude": 139.69860889999995
       },
+      "mypeachjohnId": "644",
       "checkin": {
         "code": "s003",
         "range": 200
@@ -57,6 +63,7 @@
     },
     {
       "name": "新宿店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア新宿店",
       "pref":"東京",
       "storeCode": "4002",
       "zipcode": "〒160-0022",
@@ -65,6 +72,7 @@
         "latitude": 35.6894189,
         "longitude": 139.70106350000003
       },
+      "mypeachjohnId": "645",
       "checkin": {
         "code": "s004",
         "range": 200
@@ -75,6 +83,7 @@
     },
     {
       "name": "新宿三丁目店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア新宿三丁目店",
       "pref":"東京",
       "storeCode": "4015",
       "zipcode": "〒160-0022",
@@ -83,6 +92,7 @@
         "latitude": 35.6911572,
         "longitude": 139.70534650000002
       },
+      "mypeachjohnId": "653",
       "checkin": {
         "code": "s012",
         "range": 200
@@ -93,6 +103,7 @@
     },
     {
       "name": "有楽町店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア有楽町店",
       "pref":"東京",
       "storeCode": "4016",
       "zipcode": "〒100-0006",
@@ -101,6 +112,7 @@
         "latitude": 35.6733346,
         "longitude": 139.763055
       },
+      "mypeachjohnId": "654",
       "checkin": {
         "code": "s013",
         "range": 200
@@ -111,6 +123,7 @@
     },
     {
       "name": "池袋店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア池袋店",
       "pref":"東京",
       "storeCode": "4014",
       "zipcode": "〒171-0021",
@@ -119,6 +132,7 @@
         "latitude": 35.7288449,
         "longitude": 139.70930829999998
       },
+      "mypeachjohnId": "652",
       "checkin": {
         "code": "s011",
         "range": 200
@@ -129,6 +143,7 @@
     },
     {
       "name": "立川店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア立川店",
       "pref":"東京",
       "storeCode": "4008",
       "zipcode": "〒190-0012",
@@ -137,6 +152,7 @@
         "latitude": 35.6981189,
         "longitude": 139.41403190000005
       },
+      "mypeachjohnId": "648",
       "checkin": {
         "code": "s007",
         "range": 200
@@ -147,6 +163,7 @@
     },
     {
       "name": "吉祥寺店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア吉祥寺店",
       "pref":"東京",
       "storeCode": "4018",
       "zipcode": "〒190-0012",
@@ -155,6 +172,7 @@
         "latitude": 35.70304970000001,
         "longitude": 139.5796414
       },
+      "mypeachjohnId": "674",
       "checkin": {
         "code": "s033",
         "range": 200
@@ -165,6 +183,7 @@
     },
     {
       "name": "町田店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア町田店",
       "pref":"東京",
       "storeCode": "4022",
       "zipcode": "〒194-0013",
@@ -173,6 +192,7 @@
         "latitude": 35.542043,
         "longitude": 139.446118
       },
+      "mypeachjohnId": "650",
       "checkin": {
         "code": "s009",
         "range": 200
@@ -183,6 +203,7 @@
     },
     {
       "name": "横浜店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア横浜店",
       "pref":"神奈川",
       "storeCode": "4003",
       "zipcode": "〒220-0011",
@@ -191,6 +212,7 @@
         "latitude": 35.4652635,
         "longitude": 139.62284810000006
       },
+      "mypeachjohnId": "646",
       "checkin": {
         "code": "s005",
         "range": 200
@@ -201,6 +223,7 @@
     },
     {
       "name": "川崎店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア川崎店",
       "pref":"神奈川",
       "storeCode": "4009",
       "zipcode": "〒212-0013",
@@ -209,6 +232,7 @@
         "latitude": 35.5330921,
         "longitude": 139.69594440000003
       },
+      "mypeachjohnId": "649",
       "checkin": {
         "code": "s008",
         "range": 200
@@ -219,6 +243,7 @@
     },
     {
       "name": "千葉店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア千葉店",
       "pref":"千葉",
       "storeCode": "4005",
       "zipcode": "〒260-0031",
@@ -227,6 +252,7 @@
         "latitude": 35.6130595,
         "longitude": 140.11304840000003
       },
+      "mypeachjohnId": "655",
       "checkin": {
         "code": "s014",
         "range": 200
@@ -237,6 +263,7 @@
     },
     {
       "name": "船橋店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア船橋店",
       "pref":"千葉",
       "storeCode": "4011",
       "zipcode": "〒273-8530",
@@ -245,6 +272,7 @@
         "latitude": 35.6848429,
         "longitude": 139.99203920000002
       },
+      "mypeachjohnId": "651",
       "checkin": {
         "code": "s010",
         "range": 200
@@ -255,6 +283,7 @@
     },
     {
       "name": "アウトレット佐野店",
+      "searchKey": "ピーチ･ジョン・ザ・ストアアウトレット佐野店",
       "pref":"栃木",
       "storeCode": "4701",
       "zipcode": "〒327-0822",
@@ -263,6 +292,7 @@
         "latitude": 36.29475409999999,
         "longitude": 139.60495030000004
       },
+      "mypeachjohnId": "656",
       "checkin": {
         "code": "s015",
         "range": 300
@@ -273,6 +303,7 @@
     },
     {
       "name": "アウトレット入間店",
+      "searchKey": "ピーチ･ジョン・ザ・ストアアウトレット入間店",
       "pref":"埼玉",
       "storeCode": "4702",
       "zipcode": "〒358-8515",
@@ -281,6 +312,7 @@
         "latitude": 35.81055889999999,
         "longitude": 139.38123050000002
       },
+      "mypeachjohnId": "657",
       "checkin": {
         "code": "s016",
         "range": 300
@@ -291,6 +323,7 @@
     },
     {
       "name": "SALON 銀座店",
+      "searchKey": "SALON by PEACH JOHN 銀座店",
       "pref":"東京",
       "storeCode": "4501",
       "zipcode": "〒104-0061",
@@ -299,6 +332,7 @@
         "latitude": 35.6733166,
         "longitude": 139.76408400000003
       },
+      "mypeachjohnId": "672",
       "checkin": {
         "code": "s031",
         "range": 200
@@ -309,6 +343,7 @@
     },
     {
       "name": "静岡店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア静岡店",
       "pref":"静岡",
       "storeCode": "4304",
       "zipcode": "〒420-0852",
@@ -317,6 +352,7 @@
         "latitude": 34.9729261,
         "longitude": 138.3861167
       },
+      "mypeachjohnId": "660",
       "checkin": {
         "code": "s019",
         "range": 500
@@ -327,6 +363,7 @@
     },
     {
       "name": "名古屋店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア名古屋店",
       "pref":"愛知",
       "storeCode": "4281",
       "zipcode": "〒450-0002",
@@ -335,6 +372,7 @@
         "latitude": 35.16911399999999,
         "longitude": 136.88452089999998
       },
+      "mypeachjohnId": "658",
       "checkin": {
         "code": "s017",
         "range": 200
@@ -345,6 +383,7 @@
     },
     {
       "name": "名古屋栄店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア名古屋栄店",
       "pref":"愛知",
       "storeCode": "4283",
       "zipcode": "〒460-0008",
@@ -353,6 +392,7 @@
         "latitude": 35.1633425,
         "longitude": 136.90719809999996
       },
+      "mypeachjohnId": "659",
       "checkin": {
         "code": "s018",
         "range": 200
@@ -363,6 +403,7 @@
     },
     {
       "name": "京都河原町店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア京都河原町店",
       "pref":"京都",
       "storeCode": "4202",
       "zipcode": "〒604-8505",
@@ -371,6 +412,7 @@
         "latitude": 35.0045788,
         "longitude": 135.76870110000004
       },
+      "mypeachjohnId": "661",
       "checkin": {
         "code": "s020",
         "range": 500
@@ -381,6 +423,7 @@
     },
     {
       "name": "なんば店",
+      "searchKey": "ピーチ･ジョン・ザ・ストアなんば店",
       "pref":"大阪",
       "storeCode": "4205",
       "zipcode": "〒542-0076",
@@ -389,6 +432,7 @@
         "latitude": 34.66338549999999,
         "longitude": 135.50154699999996
       },
+      "mypeachjohnId": "663",
       "checkin": {
         "code": "s022",
         "range": 200
@@ -399,14 +443,16 @@
     },
     {
       "name": "あべの店",
+      "searchKey": "ピーチ･ジョン・ザ・ストアあべの店",
       "pref":"大阪",
       "storeCode": "4206",
       "zipcode": "〒545-8545",
-      "address": "大阪府大阪市阿倍野区阿倍野筋1-1-43 あべのハルカス近鉄本店ウイング館 2F",
+      "address": "大阪府大阪市阿倍野区阿倍野筋1-1-43 あべのハルカス近鉄本店ウイング館 3F",
       "location": {
         "latitude": 34.6456653,
         "longitude": 135.51414279999995
       },
+      "mypeachjohnId": "664",
       "checkin": {
         "code": "s023",
         "range": 200
@@ -417,6 +463,7 @@
     },
     {
       "name": "大阪店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア大阪店",
       "pref":"大阪",
       "storeCode": "4207",
       "zipcode": "〒530-0001",
@@ -425,6 +472,7 @@
         "latitude": 34.7034478,
         "longitude": 135.49641229999997
       },
+      "mypeachjohnId": "665",
       "checkin": {
         "code": "s024",
         "range": 200
@@ -435,6 +483,7 @@
     },
     {
       "name": "アウトレットりんくう店",
+      "searchKey": "ピーチ･ジョン・ザ・ストアアウトレットりんくう店",
       "pref":"大阪",
       "storeCode": "4705",
       "zipcode": "〒598-8508",
@@ -443,6 +492,7 @@
         "latitude": 34.4063867,
         "longitude": 135.2952163
       },
+      "mypeachjohnId": "666",
       "checkin": {
         "code": "s025",
         "range": 300
@@ -453,6 +503,7 @@
     },
     {
       "name": "エキスポシティ店",
+      "searchKey": "ピーチ･ジョン・ザ・ストアエキスポシティ店",
       "pref":"大阪",
       "storeCode": "4208",
       "zipcode": "〒565-0826",
@@ -461,6 +512,7 @@
         "latitude": 34.805489,
         "longitude": 135.53446640000004
       },
+      "mypeachjohnId": "980",
       "checkin": {
         "code": "s037",
         "range": 300
@@ -471,6 +523,7 @@
     },
     {
       "name": "西宮店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア西宮店",
       "pref":"兵庫",
       "storeCode": "4204",
       "zipcode": "〒663-8204",
@@ -479,6 +532,7 @@
         "latitude": 34.7441936,
         "longitude": 135.36070700000005
       },
+      "mypeachjohnId": "662",
       "checkin": {
         "code": "s021",
         "range": 500
@@ -489,6 +543,7 @@
     },
     {
       "name": "アウトレット倉敷店",
+      "searchKey": "ピーチ･ジョン・ザ・ストアアウトレット倉敷店",
       "pref":"岡山",
       "storeCode": "4704",
       "zipcode": "〒710-0813",
@@ -497,6 +552,7 @@
         "latitude": 34.6034944,
         "longitude": 133.7620637
       },
+      "mypeachjohnId": "667",
       "checkin": {
         "code": "s026",
         "range": 300
@@ -507,6 +563,7 @@
     },
     {
       "name": "広島店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア広島店",
       "pref":"広島",
       "storeCode": "4306",
       "zipcode": "〒730-0035",
@@ -515,6 +572,7 @@
         "latitude": 34.3921246,
         "longitude": 132.4619808
       },
+      "mypeachjohnId": "965",
       "checkin": {
         "code": "s034",
         "range": 500
@@ -525,6 +583,7 @@
     },
     {
       "name": "福岡店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア福岡店",
       "pref":"福岡",
       "storeCode": "4301",
       "zipcode": "〒810-0001",
@@ -533,6 +592,7 @@
         "latitude": 33.590589,
         "longitude": 130.39887440000007
       },
+      "mypeachjohnId": "668",
       "checkin": {
         "code": "s027",
         "range": 500
@@ -543,6 +603,7 @@
     },
     {
       "name": "博多店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア博多店",
       "pref":"福岡",
       "storeCode": "4308",
       "zipcode": "〒812-0012",
@@ -551,6 +612,7 @@
         "latitude": 33.5901566,
         "longitude": 130.42009540000004
       },
+      "mypeachjohnId": "669",
       "checkin": {
         "code": "s028",
         "range": 500
@@ -561,6 +623,7 @@
     },
     {
       "name": "アウトレットマリノアシティ福岡店",
+      "searchKey": "ピーチ･ジョン・ザ・ストアアウトレットマリノアシティ福岡店",
       "pref":"福岡",
       "storeCode": "4703",
       "zipcode": "〒819-0001",
@@ -569,6 +632,7 @@
         "latitude": 33.59449290000001,
         "longitude": 130.32040689999997
       },
+      "mypeachjohnId": "671",
       "checkin": {
         "code": "s030",
         "range": 300
@@ -579,6 +643,7 @@
     },
     {
       "name": "鹿児島店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア鹿児島店",
       "pref":"鹿児島",
       "storeCode": "4309",
       "zipcode": "〒890-0053",
@@ -587,6 +652,7 @@
         "latitude": 31.583821,
         "longitude": 130.54180299999996
       },
+      "mypeachjohnId": "670",
       "checkin": {
         "code": "s029",
         "range": 500
@@ -597,6 +663,7 @@
     },
     {
       "name": "大宮店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア大宮店",
       "pref":"埼玉",
       "storeCode": "4007",
       "zipcode": "〒330-0853",
@@ -605,6 +672,7 @@
         "latitude": 35.9069481,
         "longitude": 139.62486609999996
       },
+      "mypeachjohnId": "647",
       "checkin": {
         "code": "s041",
         "range": 300
@@ -615,6 +683,7 @@
     },
     {
       "name": "SALON 新宿店",
+      "searchKey": "SALON by PEACH JOHN 新宿店",
       "pref":"東京",
       "storeCode": "4502",
       "zipcode": "〒160-0023",
@@ -623,6 +692,7 @@
         "latitude": 35.6892235,
         "longitude": 139.69941360000007
       },
+      "mypeachjohnId": "672",
       "checkin": {
         "code": "s042",
         "range": 200
@@ -633,6 +703,7 @@
     },
     {
       "name": "北千住店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア北千住店",
       "pref":"東京",
       "storeCode": "4019",
       "zipcode": "〒120-0026",
@@ -641,6 +712,7 @@
         "latitude": 35.7510593,
         "longitude": 139.80538030000002
       },
+      "mypeachjohnId": "1343",
       "checkin": {
         "code": "s043",
         "range": 200
@@ -651,6 +723,7 @@
     },
     {
       "name": "平塚店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア平塚店",
       "pref":"神奈川",
       "storeCode": "4020",
       "zipcode": "〒254-8510",
@@ -659,6 +732,7 @@
         "latitude": 35.3366293,
         "longitude": 139.3559209
       },
+      "mypeachjohnId": "1360",
       "checkin": {
         "code": "s044",
         "range": 200
@@ -669,6 +743,7 @@
     },
     {
       "name": "SALON 名古屋店",
+      "searchKey": "SALON by PEACH JOHN 名古屋店",
       "pref":"愛知",
       "storeCode": "4503",
       "zipcode": "〒460-0008",
@@ -677,16 +752,18 @@
         "latitude": 35.1674246,
         "longitude": 136.90789440000003
       },
+      "mypeachjohnId": "672",
       "checkin": {
         "code": "s045",
         "range": 200
       },
       "opening": "11:00～21:00　不定休",
       "type": "SALON",
-      "url": "https://www.peachjohn.co.jp/pj/store/nagoya.html"
+      "url": "https://www.peachjohn.co.jp/pj/salon/store/#a01"
     },
     {
       "name": "柏店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア柏店",
       "pref":"千葉",
       "storeCode": "4021",
       "zipcode": "〒277-8550",
@@ -695,6 +772,7 @@
         "latitude": 35.8625353,
         "longitude": 139.97069820000002
       },
+      "mypeachjohnId": "3135",
       "checkin": {
         "code": "s046",
         "range": 200
@@ -705,6 +783,7 @@
     },
     {
       "name": "秋田店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア秋田店",
       "pref":"秋田",
       "storeCode": "4102",
       "zipcode": "〒010-0874",
@@ -713,6 +792,7 @@
         "latitude": 39.717865,
         "longitude": 140.12814500000002
       },
+      "mypeachjohnId": "3007",
       "checkin": {
         "code": "s048",
         "range": 200
@@ -723,6 +803,7 @@
     },
     {
       "name": "アウトレット長島店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア アウトレット長島店",
       "pref":"三重",
       "storeCode": "4706",
       "zipcode": "〒511-1135",
@@ -731,6 +812,7 @@
         "latitude": 35.029435,
         "longitude": 136.72579999999994
       },
+      "mypeachjohnId": "3013",
       "checkin": {
         "code": "s049",
         "range": 200
@@ -741,6 +823,7 @@
     },
     {
       "name": "金沢店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア金沢店",
       "pref":"石川",
       "storeCode": "4310",
       "zipcode": "〒920-0858",
@@ -749,6 +832,7 @@
         "latitude": 36.5783424,
         "longitude": 136.64798280000002
       },
+      "mypeachjohnId": "3012",
       "checkin": {
         "code": "s050",
         "range": 200
@@ -759,6 +843,7 @@
     },
     {
       "name": "SALON 大阪店",
+      "searchKey": "SALON by PEACH JOHN 大阪店",
       "pref":"大阪",
       "storeCode": "4504",
       "zipcode": "〒530-0011",
@@ -767,6 +852,7 @@
         "latitude": 34.704328,
         "longitude": 135.49480399999993
       },
+      "mypeachjohnId": "672",
       "checkin": {
         "code": "s051",
         "range": 200
@@ -777,6 +863,7 @@
     },
     {
       "name": "札幌ステラプレイス店",
+      "searchKey": "ピーチ･ジョン・ザ・ストア札幌ステラプレイス店",
       "pref":"北海道",
       "storeCode": "4311",
       "zipcode": "〒060-0005",
@@ -785,6 +872,7 @@
         "latitude": 43.068233,
         "longitude": 141.352585
       },
+      "mypeachjohnId": "4937",
       "checkin": {
         "code": "s052",
         "range": 500

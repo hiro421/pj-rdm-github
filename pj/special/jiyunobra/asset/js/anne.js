@@ -145,7 +145,7 @@ $(function(){
 				youtube: {
 					index: 'youtube.com', 
 					id: 'v=', 
-					src: '//www.youtube.com/embed/%id%?rel=0&autoplay=1'
+					src: '//www.youtube.com/embed/%id%?rel=0&autoplay=1&iv_load_policy=1'
 				}
 			}
 		}

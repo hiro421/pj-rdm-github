@@ -18,6 +18,7 @@
 						</div>
 						<li> <b><a href="/member/pjmypage/">MY PAGE</a></b> </li>
 						<li> <b><a href="/member/login/">LOG IN/新規会員登録</a></b> </li>
+                 		<!--<li> <b><a href="/pj/sale/" style="color: #ff0000;">セール</a></b></li>-->
                   		<li class="categories bold"> <b class="trigger active-submenu"><a href="javascript:void(0);">CATEGORY</a></b>
 							<ul class="acoCont" style="display: block;">
 								<li class="bold"><a href="/pj/bra/">ブラ・パンティ</a></li>
@@ -36,7 +37,7 @@
 								<li><a href="/pj/salon/">SALON by PEACH JOHN</a></li>
 								<li><a href="/pj/yummymart/">YUMMY MART</a></li>
 							</ul>
-                        <li> <b><a href="/pj/sale/">セール</a></b> </li>
+                         <li> <b><a href="/pj/sale/">セール</a></b> </li>
 						</li>
 						
 						<li> <b><a href="/pj/search/">こだわりで探す</a></b> </li>
@@ -77,6 +78,7 @@
 							<li> <b><a href="/al/info/return/">ブラ返品＆交換返送料￥0</a></b> </li>
 							<li> <b><a href="/al/info/gift/">ギフトサービス</a></b> </li>
 							<li> <b><a href="https://egift.peachjohn.co.jp/">eGift</a></b> </li>
+							<li> <b><a href="/al/info/chat/">チャットサービス</a></b> </li>
 						</ul>
 					</div>
 					<div class="block">
@@ -87,7 +89,7 @@
 							<li class="pc"> <b><a href="/al/rule/beginners.html">初めての方へ</a></b> </li>
 							<li class="sp"> <b><a href="/member/regist/">新規会員登録</a></b> </li>
 							<li class="sp"> <b><a href="/al/rule/beginners.html">初めての方へ</a></b> </li>
-							<li> <b><a href="https://faq.peachjohn.co.jp" target="_blank">よくあるご質問</a></b> </li>
+							<li> <b><a href="https://faq.peachjohn.co.jp/?site_domain=default&sid=top_chatside" target="_blank">よくあるご質問・チャット</a></b> </li>
 						</ul>
 					</div>
 					<div class="block">
@@ -98,9 +100,13 @@
 							<li class="pc"> <b><a href="/al/digicata/">デジタルカタログを見る</a></b> </li>
 						</ul>
 					</div>
-					<div class="block"> <a href="/al/info/recruit/">
-						<h3>RECRUIT</h3>
-						</a> </div>
+					<div class="block">
+						<h3 class="trigger app">RECRUIT</h3>
+						<ul class="acoCont">
+							<li> <b><a href="https://peachjohn-recruit.net/" target="_blank">求人情報</a></b> </li>
+							<li> <b><a href="https://peachjohn-recruit.net/jobfind-pc/job/All/2412" target="_blank">カムバック制度</a></b> </li>
+						</ul>
+					</div>
 					<div class="block"> <a href="https://faq.peachjohn.co.jp" target="_blank">
 						<h3>CONTACT</h3>
 						</a> </div>

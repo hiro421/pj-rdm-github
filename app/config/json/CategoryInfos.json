@@ -11,13 +11,9 @@
                         "type" : "_al=",
                         "url"  : "/pjitem/list/?_al=pj_new&count=150&_iid=1&outlet=include"
                     },
-                    "洗濯機で洗えるブラ" : {
+                    "洗濯機で洗えるミラクルグミワイヤーブラ" : {
                         "type" : "_al=",
                         "url"  : "/pjitem/list/?_al=miracle&outlet=include&count=60&sort=6&_dm=2"
-                    },
-                    "ブラ＆パンティ（ショーツ）セット" : {
-                        "type" : "_cg",
-                        "url"  : "/pjitem/list/?_cg=10106&outlet=include"
                     },
                     "ストラップレス・Tシャツブラ・\rニップレス" : {
                         "type" : "_cg",
@@ -27,9 +23,21 @@
                         "type" : "_cg",
                         "url"  : "/pjitem/list/?_cg=10110&outlet=include"
                     },
+					"夏におすすめのブラ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10114&outlet=include"
+                    },
+					"ブラ＆パンティ（ショーツ）セット" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10106&outlet=include"
+                    },
                     "デイリーユースブラ" : {
                         "type" : "_cg",
                         "url"  : "/pjitem/list/?_cg=10101&outlet=include"
+                    },
+					"着やせブラ" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10104&outlet=include"
                     },
                     "セクシーランジェリー" : {
                         "type" : "_cg",
@@ -43,17 +51,9 @@
                         "type" : "_cg",
                         "url"  : "/pjitem/list/?_cg=10103&outlet=include"
                     },
-                    "着やせブラ" : {
-                        "type" : "_cg",
-                        "url"  : "/pjitem/list/?_cg=10104&outlet=include"
-                    },
                     "抜け感ブラ" : {
                         "type" : "_cg",
                         "url"  : "/pjitem/list/?_cg=10117&outlet=include"
-                    },
-                    "夏におすすめのブラ" : {
-                        "type" : "_cg",
-                        "url"  : "/pjitem/list/?_cg=10114&outlet=include"
                     },
                     "ナイトブラ・インナー" : {
                         "type" : "_cg",
@@ -148,6 +148,10 @@
                         "type" : "_sr",
                         "url"  : "/pjitem/list/?_sr=189&outlet=include&sort=2"
                     },
+					"谷間見せないブラ" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_al=tanimamisenai&sort=6&outlet=include&_dm=2"
+                    },
                     "スリムルック" : {
                         "type" : "_sr",
                         "url"  : "/pjitem/list/?_sr=430&outlet=include&sort=2"
@@ -180,14 +184,15 @@
                         "type" : "_sr",
                         "url"  : "/pjitem/list/?_sr=465&outlet=include&sort=2"
                     },
-                    "SALON by PEACH JOHN" : {
-                        "type" : "_sr",
-                        "url"  : "/pjitem/list/?_sr=377&outlet=include"
-                    },
                     "YUMMY MART" : {
                         "type" : "_sr",
                         "url"  : "/pjitem/list/?_sr=419&outlet=include"
+                    },
+					"SALON by PEACH JOHN" : {
+                        "type" : "_sr",
+                        "url"  : "/pjitem/list/?_sr=377&outlet=include"
                     }
+                    
                 }
             }
         }
@@ -212,10 +217,6 @@
                         "type" : "_cg",
                         "url"  : "/pjitem/list/?_cg=10501-10302&outlet=include"
                     },
-                    "あったかインナー" : {
-                        "type" : "_cg",
-                        "url"  : "/pjitem/list/?_cg=10503&outlet=include"
-                    },
                     "透け防止アイテム" : {
                         "type" : "_cg",
                         "url"  : "/pjitem/list/?_cg=10505&outlet=include"
@@ -235,6 +236,10 @@
                     "セクシーランジェリー・コスプレ・ラブグッズ" : {
                         "type" : "_cg",
                         "url"  : "/pjitem/list/?_cg=10306&outlet=include"
+                    },
+					"あったかインナー" : {
+                        "type" : "_cg",
+                        "url"  : "/pjitem/list/?_cg=10503&outlet=include"
                     },
                     "インナー人気ランキング" : {
                         "type" : "_rk",

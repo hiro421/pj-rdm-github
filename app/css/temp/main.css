@@ -676,6 +676,19 @@ html {
   background: url(/app/img/common/ico_minus.svg) no-repeat right 25px;
   background-size: 15px 15px;
 }
+#side h3.appcatalogue {
+  background: url(/app/img/common/ico_plus.svg) no-repeat right 25px;
+  background-size: 15px 15px;
+  cursor: pointer;
+}
+#side h3.appcatalogue.none-submenu {
+  background: url(/app/img/common/ico_plus.svg) no-repeat right 25px;
+  background-size: 15px 15px;
+}
+#side h3.appcatalogue.active-submenu {
+  background: url(/app/img/common/ico_minus.svg) no-repeat right 25px;
+  background-size: 15px 15px;
+}
 #side h3.app {
   background: url(/app/img/common/ico_plus.svg) no-repeat right 25px;
   background-size: 15px 15px;
@@ -725,6 +738,19 @@ html {
   background-size: 15px 15px;
 }
 #side h3.service.active-submenu {
+  background: url(/app/img/common/ico_minus.svg) no-repeat right 4px;
+  background-size: 15px 15px;
+}
+#side h3.recruit {
+  background: url(/app/img/common/ico_plus.svg) no-repeat right 4px;
+  background-size: 15px 15px;
+  cursor: pointer;
+}
+#side h3.recruit.none-submenu {
+  background: url(/app/img/common/ico_plus.svg) no-repeat right 4px;
+  background-size: 15px 15px;
+}
+#side h3.recruit.active-submenu {
   background: url(/app/img/common/ico_minus.svg) no-repeat right 4px;
   background-size: 15px 15px;
 }

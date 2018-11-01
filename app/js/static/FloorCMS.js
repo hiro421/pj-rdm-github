@@ -188,7 +188,7 @@ FloorCMS.prototype = {
     categoryType : null,
     initialize : function(params) {
         instance = this;
-        instance.sysDate = new Date();
+        instance.sysDate = CommonUtils.getSysDate();
         //Initialize variate
         instance.categoryType = null;
         //Get categoryType

@@ -1,6 +1,6 @@
 <header id="header">
     <div class="headArea">
-        <div class="inner"> <span class="title">Contact Us</span><span class="tel">0120-066-107 <small>(9:00 - 20:00 MON - FRI / 10:00 - 18:00 SAT.SUN.HOLIDAY)</small></span> <span class="mail"><a href="https://faq.peachjohn.co.jp" target="_blank">よくあるご質問 ＞</a></span> </div>
+        <div class="inner"> <span class="title">Contact Us</span><span class="tel">0120-066-107 <small>(9:00 - 20:00 MON - FRI / 10:00 - 18:00 SAT.SUN.HOLIDAY)</small></span> <span class="mail"><a href="https://faq.peachjohn.co.jp/?site_domain=default&sid=top_chatheader" target="_blank">よくあるご質問・チャット ＞</a></span> </div>
     </div>
     <div class="bodyArea">
         <div class="inner">
@@ -38,18 +38,19 @@
                             <div class="bra"> <b> <a href="/pjitem/list/?_pcg=101&amp;outlet=include">ブラジャー</a> </b>
                                 <ul>
                                 	<li><a href="/pjitem/list/?_al=pj_new&count=150&_iid=1&outlet=include"></a><a href="/pjitem/list/?_al=pj_new&count=150&_iid=1&outlet=include">新作ブラ　New in</a></li>
-                                	<li><a href="/pjitem/list/?_al=miracle&outlet=include&count=60&sort=6&_dm=2"></a><a href="/pjitem/list/?_al=miracle&outlet=include&count=60&sort=6&_dm=2">洗濯機で洗えるブラ</a></li>
-                                    <li><a href="/pjitem/list/?_cg=10112&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10112&amp;outlet=include">ストラップレス・Tシャツブラ・<br>ニップレス</a></li>
-                                    <li><a href="/pjitem/list/?_cg=10110&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10110&amp;outlet=include">ノンワイヤーブラ・ブラトップ・<br>ブラレット</a></li>                                    <li><a href="/pjitem/list/?_cg=10106&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10106&amp;outlet=include">ブラ＆パンティ（ショーツ）セット</a></li>
+                                	<li><a href="/pjitem/list/?_al=miracle&outlet=include&count=60&sort=6&_dm=2"></a><a href="/pjitem/list/?_al=miracle&outlet=include&sort=6&_dm=2">洗濯機で洗えるミラクルグミワイヤーブラ</a></li>
+                                    <li><a href="/pjitem/list/?_cg=10110&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10110&amp;outlet=include">ノンワイヤーブラ・ブラトップ・<br>ブラレット</a></li>
+                                    <!-- <li><a href="/pjitem/list/?_cg=10114&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10114&amp;outlet=include">夏におすすめのブラ</a></li>-->
+                                    <li><a href="/pjitem/list/?_cg=10106&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10106&amp;outlet=include">ブラ＆パンティ（ショーツ）セット</a></li>
                                     <li><a href="/pjitem/list/?_cg=10101&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10101&amp;outlet=include">デイリーユースブラ</a></li>
-                                     <li><a href="/pjitem/list/?_cg=10107&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10107&amp;outlet=include">セクシーランジェリー</a></li>                                   
+                                    <li><a href="/pjitem/list/?_cg=10104&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10104&amp;outlet=include">着やせブラ</a></li>
+                                    <li><a href="/pjitem/list/?_cg=10107&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10107&amp;outlet=include">セクシーランジェリー</a></li>    
                                     <li><a href="/pjitem/list/?_cg=10102&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10102&amp;outlet=include">谷間ブラ</a></li>
                                     <li><a href="/pjitem/list/?_cg=10103&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10103&amp;outlet=include">ボリュームアップブラ</a></li>
-                                    <li><a href="/pjitem/list/?_cg=10104&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10104&amp;outlet=include">着やせブラ</a></li>
+                                     <li><a href="/pjitem/list/?_cg=10112&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10112&amp;outlet=include">ストラップレス・Tシャツブラ・<br>ニップレス</a></li>
                                     <li><a href="/pjitem/list/?_cg=10117&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10117&amp;outlet=include">抜け感ブラ</a></li>
-                                    <li><a href="/pjitem/list/?_cg=10114&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10114&amp;outlet=include">夏におすすめのブラ</a></li>
                                     <li><a href="/pjitem/list/?_cg=10105&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10105&amp;outlet=include">グラマーサイズ（Eカップ以上）</a></li>
-                                    <li><a href="/pjitem/list/?_cg=10113&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10113&amp;outlet=include">ナイトブラ・インナー</a></li>                                    
+                                    <li><a href="/pjitem/list/?_cg=10113&amp;outlet=include"></a><a href="/pjitem/list/?_cg=10113&amp;outlet=include">ナイトブラ・インナー</a></li>                           
                                 </ul>
                                 <ul>
                                     <li><a href="/pjitem/list/?_cg=20803&amp;outlet=include"></a><a href="/pjitem/list/?_cg=20803&amp;outlet=include">マタニティ下着</a></li>
@@ -79,7 +80,7 @@
                                     <li><a href="/pjitem/detail/?ITM=1014680&amp;outlet=include"></a><a href="/pjitem/detail/?ITM=1014680&amp;outlet=include">胸きゅんブラ</a></li>
                                     <li><a href="/pjitem/list/?_sr=192&amp;outlet=include"></a><a href="/pjitem/list/?_sr=192&amp;outlet=include&sort=2">マキシマムメイカー</a></li>
 									<li><a href="/pjitem/list/?_sr=189&amp;outlet=include"></a><a href="/pjitem/list/?_sr=189&amp;outlet=include&sort=2">ボムバスト</a></li>
-                                    <li><a href="/pjitem/list/?_sr=419&amp;outlet=include"></a><a href="/pjitem/list/?_sr=419&amp;outlet=include">YUMMY MART</a></li>
+                                   <li><a href="/pjitem/list/?_al=tanimamisenai&amp;sort=6&amp;_dm=2&amp;outlet=include"></a><a href="/pjitem/list/?_al=tanimamisenai&amp;sort=6&amp;_dm=2&amp;outlet=include">谷間見せないブラ</a></li>
 								</ul>
                                 <ul>
                                     <li><a href="/pjitem/list/?_sr=430&amp;outlet=include"></a><a href="/pjitem/list/?_sr=430&amp;outlet=include&sort=2">スリムルック</a></li>
@@ -89,7 +90,8 @@
                                     <li><a href="/pjitem/list/?_sr=434&amp;outlet=include"></a><a href="/pjitem/list/?_sr=434&amp;outlet=include">PJ COLORS</a></li>
                                     <li><a href="/pjitem/list/?_sr=27&amp;outlet=include"></a><a href="/pjitem/list/?_sr=27&amp;outlet=include">グランディーナ</a></li>
                                     <li><a href="/pjitem/list/?_sr=466&amp;outlet=include"></a><a href="/pjitem/list/?_sr=466&outlet=include&sort=2">Sweet(R) by PJ</a></li>
-                                     <li><a href="/pjitem/list/?_sr=466&amp;outlet=include"></a><a href="/pjitem/list/?_sr=465&outlet=include&sort=2">シアーメイク</a></li>
+                                    <li><a href="/pjitem/list/?_sr=466&amp;outlet=include"></a><a href="/pjitem/list/?_sr=465&outlet=include&sort=2">シアーメイク</a></li>
+                                    <li><a href="/pjitem/list/?_sr=419&amp;outlet=include"></a><a href="/pjitem/list/?_sr=419&amp;outlet=include">YUMMY MART</a></li>
                                     <li><a href="/pjitem/list/?_sr=377&amp;outlet=include"></a><a href="/pjitem/list/?_sr=377&amp;outlet=include">SALON by PEACH JOHN</a></li>
                                 </ul>
                             </div>
@@ -102,15 +104,15 @@
                             <div class="roomwear"> <b> <a href="/pjitem/list/?_pcg=105&outlet=include">インナー</a> </b>
                                 <ul>
                                     <li><a href="/pjitem/list/?_cg=10504&outlet=include">パッド付きインナー</a></li>
-                                    <li><a href="/pjitem/list/?_cg=10502&outlet=include">デオドラント</a></li>
-                                    <li><a href="/pjitem/list/?_cg=10501-10302&outlet=include">キャミソール・タンク</a></li>
                                     <li><a href="/pjitem/list/?_cg=10503&outlet=include">あったかインナー</a></li>
+                                    <li><a href="/pjitem/list/?_cg=10501-10302&outlet=include">キャミソール・タンク</a></li>
                                     <li><a href="/pjitem/list/?_cg=10505&outlet=include">透け防止アイテム</a></li>
+                                      <li><a href="/pjitem/list/?_cg=10502&outlet=include">デオドラント</a></li>
                                     <li><a href="/pjitem/list/?_cg=10601&outlet=include">補整インナー</a></li>
                                     <li><a href="/pjitem/list/?_cg=10301&outlet=include">スリップ・ベビードール</a></li>
                                     <li><a href="/pjitem/list/?_cg=10303&outlet=include">ランジェリー系ボトム</a></li>
                                     <li><a href="/pjitem/list/?_cg=10306&outlet=include">セクシーランジェリー・コスプレ・ラブグッズ</a></li>
-                                    <li><a href="/pj/special/ranking/inner.html">インナー人気ランキング</a></li>
+                                 <li><a href="/pj/special/ranking/inner.html">インナー人気ランキング</a></li>
                                 </ul>
                             </div>
                             <div class="lingerie"><b>シリーズ</b>
@@ -305,6 +307,7 @@ if (CommonUtils.isMobile()) {
         target: "#header #keyword",
         displayTarget: "#header",
         deviceType: "sphsr",           // 変更
+        skipStyleSheetLoadCheck: true, //181031追加
         useRecommend: true,            // 必須
         recommendRequestType: 'bulk',  // 必須
         clientIDCookieName: '_rt.uid', // Rtoasterのmember_idのクッキー名
@@ -322,9 +325,10 @@ if (CommonUtils.isMobile()) {
     jQuery("<link>").attr({rel:"stylesheet",type:"text/css",href:"/app/css/common/poplink_pc.css"}).appendTo("head");
     var poplink3 = {
         uid: "a9f13ca24a2c8ed4eb90592e75fcb763q",
-        target: "#keyword",
+        target: "#header #keyword",
         deviceType: 'pc011',
         useRecommend: true,            // 必須
+        skipStyleSheetLoadCheck: true, //181031追加
         recommendRequestType: 'bulk',  // 必須
         clientIDCookieName: '_rt.uid', // Rtoasterのmember_idのクッキー名
         displayItemAny1: true,         // 価格を表示する (商品検索結果)

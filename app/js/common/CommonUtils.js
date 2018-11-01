@@ -32,7 +32,7 @@ var CommonUtils = (function() {
         },
         fullToHalf : function(value) {
             if (CommonUtils.isNotNull(value)) {
-                value = value.replace(/[Ôº°-Ôº∫ÔΩÅ-ÔΩöÔºê-Ôºô]/g, function(s) {
+                value = value.replace(/[Ç`-ÇyÇÅ-ÇöÇO-ÇX]/g, function(s) {
                     return String.fromCharCode(s.charCodeAt(0) - 0xFEE0);
                 });
             }
@@ -708,6 +708,18 @@ var CommonUtils = (function() {
             } else {
                 readCsv();
             }
+        },
+        /**
+         * @description get Selected System Date.
+         */
+        getSysDate: function() {
+            var currentDomain = location.hostname;
+            if (COMMON_CONSTS.SYS_DATE_SETTING[currentDomain]) {
+                if (typeof COMMON_CONSTS.SYS_DATE_SETTING[currentDomain] != "undefined" && CommonUtils.isNotNull(COMMON_CONSTS.SYS_DATE_SETTING[currentDomain])) {
+                         return new Date(COMMON_CONSTS.SYS_DATE_SETTING[currentDomain]);
+                     }
+            }
+            return new Date();
         }
     }
 })();

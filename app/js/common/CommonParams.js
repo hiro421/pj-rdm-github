@@ -46,11 +46,11 @@ var COMMON_CONSTS = {
         SIZE_GUIDE_PAGE      : "/pj/size/",
         WISH_LIST_PAGE       : "/member/wishlist/",
         ALL_ELEMENT_PAGE     : "/pjitem/seibun/?item={0}",
-        COMMON_DATA_API      : "/common/commondata/",
+        COMMON_DATA_API      : "/common/commondata/?encode=utf8",
         ADD_SHOPPING_BAG_API : "/item/addshoppingbag/",
         ITEM_DETAIL_INFO_API : "/item/detailinfo/",
         ADD_WISH_LIST_API    : "/item/addwishlist/",
-        STORE_STOCK_INFO_API : "/stock/storestock/",
+        STORE_STOCK_INFO_API : "/stock/storestock/?encode=utf8",
         SEARCH_ADDRESS_API   : "/member/searchAddress/",
         WITHDRAW_PAGE        : "/member/withdrawalconfirm/",
         CATALOG_TERM_PAGE    : "/member/catalognoneed/",
@@ -310,6 +310,11 @@ var COMMON_CONSTS = {
                 }
             }
         }
+    },
+    //Selected System Date
+    SYS_DATE_SETTING   : {
+        "momo.preview-testsite.peachjohn.co.jp" : "2018/10/31 15:00:00",
+        "09ngs-momo.qaenv-ext.peachjohn.co.jp" : "2018/10/31 15:00:00"
     }
 };
 

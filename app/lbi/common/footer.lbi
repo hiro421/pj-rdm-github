@@ -7,8 +7,8 @@
             <li class="insta"><a href="http://instagram.com/peachjohn_official" target="_blank"><img src="/app/img/common/ico_sns_insta.png" alt="instagram"/></a></li>
             <li class="line"><a href="/al/info/line/" target="_blank"><img src="/app/img/common/ico_sns_line.png" alt="line"/></a></li>
             <li class="yt"><a href="https://mypj.peachjohn.co.jp/story/1533?mypj_sid=footer" target="_blank"><img src="/app/img/common/ico_sns_yt.png" alt="youtube"/></a></li>
-            <li class="app"><a href="https://www.peachjohn.co.jp/al/catalog/?sid=footer" target="_blank"><img src="/app/img/common/ico_sns_app.png" alt="app"/></a></li>
-            <li class="mypj"><a href="https://mypj.peachjohn.co.jp/story/1528?mypj_sid=footer" target="_blank"><img src="/app/img/common/ico_sns_mypj.png" alt="myPJ"/></a></li>
+            <li class="app"><a href="https://www.peachjohn.co.jp/al/catalog/?sid=footer#appcoupon" target="_blank"><img src="/app/img/common/ico_sns_app.png" alt="app"/></a></li>
+            <!--<li class="mypj"><a href="https://mypj.peachjohn.co.jp/story/1528?mypj_sid=footer" target="_blank"><img src="/app/img/common/ico_sns_mypj.png" alt="myPJ"/></a></li>-->
         </ul>
     </div>
     <div class="banner">
@@ -30,7 +30,7 @@
                 <li><a href="/pj/store/store.html?sid=footer_store">店舗一覧</a></li>
                 <li><a href="http://peachjohn.com/?sid=footer_brand">公式ブランドサイト</a></li>
                 <li><a href="/al/rule/index.html?sid=footer_rule">ご利用ガイド</a></li>
-                <li><a href="https://faq.peachjohn.co.jp" target="_blank">よくあるご質問</a></li>				
+                <li><a href="https://faq.peachjohn.co.jp/?site_domain=default&sid=top_chatfooter" target="_blank">よくあるご質問・チャット</a></li>				
                 <li><a href="/al/info/about/index.html?sid=footer_about">会社概要</a></li>
             </ul>
             <ul>

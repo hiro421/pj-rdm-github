@@ -14,6 +14,13 @@
             <b><span class="highlight">送料(￥540)無料</span>にてお届けします。</b>
         </p>
     </div>
+<!--
+		<div>
+        <p class="text-A13">
+            <b><span class="highlight">さらに、今なら自由割クーポンで全品￥1000オフ！</span></b><br /><br />
+        </p>
+    </div>
+-->
     <div class="balanceToDeliverySale" style="display:none;">
         <p class="text-A13">
             <div Align="left" >※セール対象商品はセールアイコンが表示されているカラーが対象となります。<br/>
@@ -23,6 +30,35 @@
     </div>
 </div>
 <script type="text/javascript">
+changeState = function(){
+    if($("#selectColorList").children().length > 0 && $("#selectColorList .active > .pic").length > 0) {
+        salesMessageFuction($("#selectColorList .active > .pic"));
+        $("#selectColorList").find(".pic").click(function(){salesMessageFuction($(this))}); 
+    }else{
+        setTimeout("changeState()",1000 );
+    }
+}
+
+changeState();
+
+function salesMessageFuction(obj){
+    var path = ['\u30bb\u30fc\u30eb'];
+    var abc = obj.find("img").attr("code");
+
+    jQuery(".message > .balanceToDeliverySale").css("display", "none");
+    jQuery.each(ItemData.colorInfo, function(i,subColorInfo) {
+    if(abc == subColorInfo.imgSet){
+        jQuery.each(subColorInfo.iconName, function(i,object) {
+            if (jQuery.inArray(object, path) > -1) {
+                jQuery(".message > .balanceToDeliverySale").css("display", "");
+                return false;
+            }
+        });
+    return false;
+    }
+    });
+}
+
 buildDeliveryFreeMessage = function() {
     var cartTotalPrice = pagePolicy.getCommonData(COMMON_CONSTS.COMMON_DATA_API.REQUEST.CART_TOTAL_PRICE);
     var deliveryFreePrice = pagePolicy.getCommonData(COMMON_CONSTS.COMMON_DATA_API.REQUEST.DELIVERY_FREE_PRICE);
@@ -31,7 +67,6 @@ buildDeliveryFreeMessage = function() {
     jQuery(".message > .balanceToDeliveryNonfree").css("display", "none");
     jQuery(".message > .balanceToDeliveryDetail").css("display", "none");
     jQuery(".message > .balanceToDeliveryFree").css("display", "none");
-    jQuery(".message > .balanceToDeliverySale").css("display", "none");
     if (deliveryFreePrice > cartTotalPrice) {
         var balance = deliveryFreePrice - cartTotalPrice;
         jQuery(".message > .balanceToDeliveryDetail .highlight.amountFree").text("\u00A5" + CommonUtils.numberFormat(balance));
@@ -40,14 +75,6 @@ buildDeliveryFreeMessage = function() {
         jQuery(".message > .balanceToDeliveryFree").css("display", "");
     } else {
         jQuery(".message > .balanceToDeliveryNonfree").css("display", "");
-    }
-    if (ItemData.iconList.length > 0) {
-        var path = ['ico_0049.gif','ico_0030.gif','ico_0013.gif','ico_110_21.gif'];
-        jQuery.each(ItemData.iconList, function(index, icon) {
-            if (jQuery.inArray(icon.iconPath.match(/[^\/]+\.(jpg|gif|png|bmp|jpeg)/i)[0], path) > -1) {
-                jQuery(".message > .balanceToDeliverySale").css("display", "");
-            }
-        });
     }
 }
 pagePolicy.putCommonData(COMMON_CONSTS.COMMON_DATA_API.REQUEST.CART_TOTAL_PRICE);
