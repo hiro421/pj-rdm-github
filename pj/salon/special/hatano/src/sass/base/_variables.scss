@@ -1,0 +1,101 @@
+$img_path: "../images/";
+
+// ==========================================================================
+//
+// Font
+//
+// ==========================================================================
+
+/**
+ * Noto Sans CJK JP: https://www.google.com/get/noto/#sans-jpan
+ * Noto Sans JP: https://fonts.google.com/earlyaccess#Noto+Sans+JP
+ */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Noto Sans CJK JP Thin"),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Thin.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Thin.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Noto Sans CJK JP Light"),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Noto Sans CJK JP Regular"),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Noto Sans CJK JP Medium"),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Medium.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Medium.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Medium.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Noto Sans CJK JP Bold"),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Bold.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Bold.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 900;
+  src: local("Noto Sans CJK JP Black"),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Black.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Black.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Black.otf) format('opentype');
+}
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+$default-font: 'Noto Sans JP',Helvetica, YuGothic, "游ゴシック", "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+
+// ==========================================================================
+//
+// 幅
+//
+// ==========================================================================
+
+//break points
+$bp_pc: 769px;
+$bp_tab: 1200px;
+$bp_sp: 768px;
+$pc_width: 1280px;
+
+// ==========================================================================
+//
+// カラー
+//
+// ==========================================================================
+$main_color: #F9D9DD;
+$black: #000;
+$color_dark_txt: #231815;
+$color_gray: #595757;
+$color_dgray: #585757;
+$color_link: #2B9AF3;
+$gbcol_gray: #D1D1D2;
+
+// ==========================================================================
+//
+// z-index
+//
+// ==========================================================================
+$z: content, button, cover, pullmenu,logo,trigger, header, modal;

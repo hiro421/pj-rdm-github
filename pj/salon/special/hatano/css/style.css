@@ -1,185 +1,253 @@
 body.salon a {
-  color:#000000;
+	color: #000;
 }
 
 body.salon #wrapper {
-  background-color: #ffffff;
-  width: 100%;
+	width: 100%;
+	background-color: #fff;
 }
 
 body.salon #mainVisual {
-  width: 984px;
-  margin: 160px auto 0;
+	width: 984px;
+	margin: 100px auto 0;
+	padding-top: 60px;
+	background: url(../img/main_back.png) no-repeat;
 }
 
 body.salon .contentArea {
-  width: 984px;
-  margin: 0 auto;
-  color: #1b1b1b;
+	width: 984px;
+	margin: 0 auto;
+	color: #1b1b1b;
 }
 
 body.salon .contentArea a img {
-    border-style:none;
+	border-style: none;
 }
 
-/*allitems*/
-body.salon .contentArea .interviewArea01 .allitems img,
+body.salon .contentArea .interviewArea01 .allitems img {
+	margin: 0 auto 100px auto;
+	text-align: center;
+}
+
 body.salon .recommendArea .allitems img {
-	text-align:center;
-	margin:0 auto 100px auto;
+	margin: 0 auto 100px auto;
+	text-align: center;
 }
 
-/*  interviewArea01 */
 body.salon .contentArea .interviewArea01 {
-  width: 984px;
-  margin: 0 auto;
-}
-body.salon .contentArea .interviewArea01 a {
-	text-decoration: none;  
-}
-body.salon .contentArea .interviewArea01 a:hover {
-  text-decoration: underline;
+	width: 984px;
+	margin: 0 auto;
 }
 
-/*ここから今回追加部分---------------*/
+body.salon .contentArea .interviewArea01 a {
+	text-decoration: none;
+}
+
+body.salon .contentArea .interviewArea01 a:hover {
+	text-decoration: underline;
+}
 
 body.salon .contentArea .interviewArea01 p.lead {
-	font-family:"Yu Mincho", "游明朝体", YuMincho, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
-    font-size: 1.3rem;
-    text-align: center;
-    font-weight: normal;
-    width: 984px;
-    padding-top: 70px;
-    line-height: 2.5rem;
-    background: url(../img/read_back.png) no-repeat;
-    height: 373px;
+	font-family: 'Yu Mincho', '游明朝体', YuMincho, 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+	font-size: 1.25rem;
+	font-weight: normal;
+	line-height: 1.95em;
+	width: 984px;
+	height: 379px;
+	padding-top: 60px;
+	text-align: center;
+	background: url(../img/read_back.png) no-repeat;
 }
 
 body.salon .contentArea .interviewArea01 .box p.come {
-	font-family:"Yu Mincho", "游明朝体", YuMincho, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
-    font-size: 1.2rem;
-    text-align: center;
-    margin: 50px 0;
-    letter-spacing: 0.13rem;
-    line-height: 2.2rem;
+	font-family: 'Yu Mincho', '游明朝体', YuMincho, 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+	font-size: 1.2rem;
+	line-height: 2.2rem;
+	margin: 50px 0;
+	text-align: center;
+	letter-spacing: .13rem;
 }
-body.salon .contentArea .interviewArea01 .box03, .box04, .box06{
-    margin-top: 80px;
+
+/*allitems*/
+
+/*  interviewArea01 */
+
+/*ここから今回追加部分---------------*/
+
+body.salon .contentArea .interviewArea01 .box06 {
+	margin-top: 50px;
 }
-body.salon .contentArea .interviewArea01 .box06{
-    margin-top: 50px;
-}
-body.salon .contentArea .interviewArea01 .box .m_img img{
+
+body.salon .contentArea .interviewArea01 .box .m_img img {
 	margin: 0 auto;
 }
-body.salon .contentArea .interviewArea01 .box .btnArea{
+
+body.salon .contentArea .interviewArea01 .box .btnArea {
 	text-align: center;
 }
-body.salon .contentArea .interviewArea01 .box .btnArea p{
+
+body.salon .contentArea .interviewArea01 .box .btnArea .btn {
+	width: 747px;
+	margin: 0 auto 27px;
+}
+
+body.salon .contentArea .interviewArea01 .box .btnArea .btn a {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+body.salon .contentArea .interviewArea01 .box .btnArea .btn a p {
+	font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+	font-size: 1.062rem;
+	display: inline-block;
+	margin-right: 28px;
+	margin-bottom: 0;
+	text-align: right;
+}
+
+body.salon .contentArea .interviewArea01 .box .btnArea .btn02 {
+	width: 233px;
+	margin-bottom: 30px;
+}
+
+body.salon .contentArea .interviewArea01 .box .btnArea .btn02 a {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+body.salon .contentArea .interviewArea01 .box .btnArea .btn02 a p {
+	font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+	font-size: 1.062rem;
+	display: inline-block;
+	margin-bottom: 5px;
 	text-align: center;
-    margin-bottom: 1rem;
-}
-body.salon .contentArea .interviewArea01 .box .btnArea .btn img{
-    margin: 0 auto;
-}
-body.salon .btnArea p.mt_20{
-   margin-top: 20px;
 }
 
-
-
-/*  interviewArea02 */
-body.salon .contentArea .interviewArea02 {
-    margin-top: 100px;
+body.salon .btnArea p.mt_20 {
+	margin-top: 20px;
 }
-
-
 
 body.salon .contentArea .interviewArea02 {
+	margin-top: 172px;
 }
 
-body.salon .contentArea .interviewArea02 .interview_main {
+body.salon .contentArea .interviewArea02 .lead {
+	font-family: 'Yu Mincho', '游明朝体', YuMincho, 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+	font-size: 1.437rem;
+	line-height: 2.084em;
+	margin: 70px auto 100px;
+	text-align: center;
+}
+
+body.salon .contentArea .interviewArea02 .lead p {
+	margin-bottom: 30px;
+}
+
+body.salon .contentArea .interviewArea02 .lead span {
+	font-size: 1.187rem;
 }
 
 body.salon .contentArea .interviewArea02 .interview_txt img {
-  margin: 60px auto;
-  text-align: center;
+	margin: 60px auto;
+	text-align: center;
 }
 
 body.salon .contentArea .interviewArea02 .interview_sec {
-  margin-bottom: 35px;
+	font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+	margin-bottom: 35px;
 }
 
 body.salon .contentArea .interviewArea02 .interview_sec h4 {
-  font-size: 18px;
-  color: #8884af;
-  font-weight: normal;
+	font-size: 18px;
+	font-weight: normal;
+	color: #8884af;
 }
 
 body.salon .contentArea .interviewArea02 .interview_sec p {
-  font-size: 1.1rem;
-  margin-bottom: 40px;
+	font-size: 1.125rem;
+	line-height: 1.772em;
+	margin-bottom: 20px;
+}
+
+body.salon .contentArea .interviewArea02 .interview_sec p .h_hatano {
+	color: #b884a1;
+}
+
+body.salon .contentArea .interviewArea02 .interview_sec p .k_suzuki {
+	color: #7f9bbd;
 }
 
 body.salon .contentArea .interviewArea02 .profile {
-  margin-top: 140px;
-  border-bottom: 1px solid #999;
-  height: 46px;
-  text-align: center;
+	height: 46px;
+	margin-top: 140px;
+	text-align: center;
+	border-bottom: 1px solid #999;
 }
 
+/*  interviewArea02 */
+
 .wrap {
-  border-bottom: 1px solid #999;
+	border-bottom: 1px solid #999;
 }
 
 .wrap .profile_box {
-  margin-bottom: 5%;
-  margin-top: 30px;
+	font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+	margin-top: 30px;
+	margin-bottom: 60px;
 }
 
 .wrap .profile_box p {
-  font-size: 1.1rem;
-  line-height: 1.4;
-  margin-bottom: 3%;
+	font-size: 1.125rem;
+	line-height: 1.392;
+	margin-bottom: 25px;
 }
 
 .wrap .profile_box p a {
-  color: #8884af;
+	color: #8884af;
 }
 
+.wrap .profile_box:last-of-type {
+	margin-bottom: 37px;
+}
 
 /*  recommend*/
+
 body.salon .recommendArea .columnListArea {
-    width: 984px;
-    margin: 70px auto 0;
+	width: 984px;
+	margin: 70px auto 0;
 }
 
 body.salon .recommendArea .columnListArea h3 {
-  text-align: center;
-  margin-bottom: 50px;
+	margin-bottom: 50px;
+	text-align: center;
 }
 
 body.salon .recommendArea .columnListArea ul {
-    overflow: hidden;
-    margin-right: -12px;
-    margin-bottom: 48px;
+	overflow: hidden;
+	margin-right: -12px;
+	margin-bottom: 48px;
 }
 
 body.salon .recommendArea .columnListArea ul li {
-    float: left;
-    overflow: hidden;
-    width: 320px;
-    margin-right: 12px;
-    margin-bottom: 78px;
-    text-align: center;
+	float: left;
+	overflow: hidden;
+	width: 320px;
+	margin-right: 12px;
+	margin-bottom: 78px;
+	text-align: center;
 }
 
 body.salon .recommendArea .columnListArea ul li.column4 {
-    float: left;
-    margin-right: 8px;
-    margin-bottom: 0px;
-    text-align: center;
-    width: 240px;
+	float: left;
+	width: 240px;
+	margin-right: 8px;
+	margin-bottom: 0;
+	text-align: center;
 }
 
 body.salon .recommendArea .columnListArea ul li p {
@@ -187,266 +255,587 @@ body.salon .recommendArea .columnListArea ul li p {
 }
 
 body.salon .recommendArea .columnListArea ul li.column4 .btnCart {
-    display: none;
+	display: none;
 }
 
 body.salon .recommendArea .columnListArea ul li.column4 .btnCart img {
-    width: 220px;
+	width: 220px;
 }
 
 body.salon .recommendArea .columnListArea ul li.column4 .btnDetail img {
-    width: 220px;
+	width: 220px;
 }
 
 body.salon .recommendArea .columnListArea ul li .rank {
-    width: 100%;
-    height: 70px;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
+	overflow: hidden;
+	width: 100%;
+	height: 70px;
+	white-space: nowrap;
+	text-indent: 100%;
 }
 
 body.salon .recommendArea .columnListArea ul li .pic {
-    border: 1px solid #EEEFF2;
-    margin-bottom: 5px;
+	margin-bottom: 5px;
+	border: 1px solid #eeeff2;
 }
 
 body.salon .recommendArea .columnListArea ul li .pic img {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
 
 body.salon .recommendArea .columnListArea ul li .text {
-    color: #7589b2;
-    font-size: 18px;
-    margin: 20px 15px 25px;
+	font-size: 18px;
+	margin: 20px 15px 25px;
+	color: #7589b2;
 }
 
 body.salon .recommendArea .columnListArea ul li .text a {
-    color: #7589b2;
+	color: #7589b2;
 }
 
 body.salon .recommendArea .columnListArea ul li .name {
-    font-size: 14px;
+	font-size: 14px;
 }
 
 body.salon .recommendArea .columnListArea ul li .price {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 body.salon .recommendArea .columnListArea ul li .btnCart {
-    margin-bottom: 5px;
-    display: none;
+	display: none;
+	margin-bottom: 5px;
 }
 
 body.salon .recommendArea .columnListArea .btnAllItem {
-    width: 580px;
-    margin: 0 auto;
-    text-align: center;
+	width: 580px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+body.salon .contentArea .interviewArea01 .box:after {
+	display: block;
+	clear: both;
+	content: ' ';
+}
+
+body.salon .campaign {
+	margin: 88px auto 142px;
+	text-align: center;
+}
+
+body.salon .campaign_btn01 {
+	margin: 0 auto;
+	text-align: center;
+}
+
+body.salon .box01 {
+	position: relative;
+}
+
+body.salon .box01_lead {
+	font-family: 'Yu Mincho', '游明朝体', YuMincho, 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+	font-size: 1.312rem;
+	font-weight: normal;
+	line-height: 2em;
+	position: absolute;
+	top: 0;
+	left: 170px;
+	text-align: left;
+	background-image: none;
+}
+
+body.salon .box01 .butu_img {
+	position: absolute;
+	top: 253px;
+	right: 100px;
+}
+
+body.salon .box01 .btnArea {
+	margin-top: 186px;
+}
+
+body.salon .box02 {
+	position: relative;
+	margin-top: 185px;
+}
+
+body.salon .box02_lead {
+	font-family: 'Yu Mincho', '游明朝体', YuMincho, 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+	font-size: 1.312rem;
+	font-weight: normal;
+	line-height: 2em;
+	position: absolute;
+	top: 45px;
+	left: 120px;
+	text-align: left;
+	background-image: none;
+}
+
+body.salon .box02 .butu_img {
+	position: absolute;
+	top: 210px;
+	left: 150px;
+}
+
+body.salon .box02 .btnArea {
+	margin-top: 35px;
+}
+
+body.salon .box02 .btnArea .btn {
+	width: 707px;
+}
+
+body.salon .box03 {
+	position: relative;
+	margin-top: 215px;
+}
+
+body.salon .box03_lead {
+	font-family: 'Yu Mincho', '游明朝体', YuMincho, 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+	font-size: 1.312rem;
+	font-weight: normal;
+	line-height: 2em;
+	position: absolute;
+	top: 30px;
+	right: 75px;
+	text-align: right;
+	background-image: none;
+}
+
+body.salon .box03 .butu_img {
+	position: absolute;
+	top: 150px;
+	right: 110px;
+}
+
+body.salon .box03 .btnArea {
+	margin-top: 48px;
+}
+
+body.salon .box03 .btnArea .btn {
+	width: 707px;
+}
+
+body.salon .box04 {
+	position: relative;
+	margin-top: 215px;
+}
+
+body.salon .box04_lead {
+	font-family: 'Yu Mincho', '游明朝体', YuMincho, 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+	font-size: 1.312rem;
+	font-weight: normal;
+	line-height: 2em;
+	position: absolute;
+	top: -15px;
+	right: 230px;
+	text-align: right;
+	background-image: none;
+}
+
+body.salon .box04 .butu_img {
+	position: absolute;
+	top: 487px;
+	left: 150px;
+}
+
+body.salon .box04 .btnArea {
+	margin-top: 70px;
+}
+
+body.salon .box04 .btnArea .btn02 {
+	margin: 0 200px 30px auto;
+}
+
+body.salon .box05 {
+	position: relative;
+	margin-top: 170px;
+}
+
+body.salon .box05_lead {
+	font-family: 'Yu Mincho', '游明朝体', YuMincho, 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+	font-size: 1.312rem;
+	font-weight: normal;
+	line-height: 2em;
+	position: absolute;
+	top: 600px;
+	right: 150px;
+	text-align: center;
+	background-image: none;
+}
+
+body.salon .box05 .butu_img {
+	position: absolute;
+	top: 475px;
+	left: 84px;
+}
+
+body.salon .box05 .btnArea {
+	margin-top: 140px;
+}
+
+body.salon .box05 .btnArea .btn02 {
+	margin: 0 200px 30px auto;
+}
+
+body.salon .btnBox {
+	margin-top: 185px;
+	text-align: center;
+}
+
+body.salon .btnBox a {
+	margin: 0 auto;
+}
+
+body.salon #campaign02 {
+	margin: 0 auto;
+	text-align: center;
+}
+
+body.salon #campaign02 .campaign {
+	box-sizing: border-box;
+	width: 787px;
+	height: 304px;
+	margin: 88px auto 0;
+	padding-top: 28px;
+	text-align: center;
+	background: url(../img/canpaign_02_back.png) no-repeat top;
+}
+
+body.salon #campaign02 dl {
+	width: 787px;
+	margin: 0 auto;
+}
+
+body.salon #campaign02 .acBtn {
+	display: block !important;
+	width: 100%;
+	height: 74px;
+	cursor: pointer;
+	background: url(../img/cam_btn-open.png) no-repeat;
+}
+
+body.salon #campaign02 .acBtn.active {
+	width: 100%;
+	height: 74px;
+	background: url(../img/cam_btn-close.png) no-repeat;
+}
+
+body.salon #campaign02 dd {
+	display: none;
+	width: 100%;
+	height: 1554px;
+	margin: 0 auto;
+	background: url(../img/canpaign_02_back.png) no-repeat bottom;
+}
+
+body.salon #campaign02 dd.active {
+	display: block;
+}
+
+body.salon p {
+	font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.8em;
+	margin-bottom: 25px;
+	color: #080507;
+}
+
+body.salon .cam_about {
+	font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+	margin: 60px;
+	padding: 40px 40px 20px;
+	border: solid 1px #31303b;
+}
+
+body.salon .cam_about span {
+	font-size: .875rem;
+	line-height: 1.577em;
+	color: #787376;
+}
+
+body.salon .cam_entry {
+	text-align: center;
+}
+
+body.salon .cam_entry_title {
+	font-family: 'Yu Mincho', '游明朝体', YuMincho, 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+	font-size: 1.875rem;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+body.salon .cam_entry_title::after {
+	position: absolute;
+	right: 0;
+	bottom: -15px;
+	left: 0;
+	width: 94px;
+	height: 1px;
+	margin: 0 auto;
+	content: '';
+	border-bottom: 1px solid #838389;
+	background: #adacb1;
+}
+
+body.salon .cam_entry ul {
+	width: 592px;
+	margin: 0 auto 25px;
+}
+
+body.salon .cam_entry ul li {
+	display: flex;
+	width: 100%;
+	padding: 35px 25px;
+	border-bottom: solid 1px #b3b3b7;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+body.salon .cam_entry ul li span {
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+body.salon .cam_entry ul li p {
+	font-size: 1.25rem;
+	line-height: 1.6005em;
+	display: block;
+	width: 100%;
+	margin-bottom: 0;
+	text-align: left;
+}
+
+body.salon .cam_entry ul li:last-of-type {
+	border-bottom: none;
 }
 
 /*clearFix
 ---------------------------*/
-body.salon .contentArea .interviewArea01 .box:after {
-	display: block;
-	clear: both;
-	content: " ";
-}
-
 
 /* ===================================================================================================================================================
 	
    sp
    
    =================================================================================================================================================== */
+
 @media screen and (max-width: 768px) {
-  /* ===========================================================
+
+/* ===========================================================
      interview vol01
   ============================================================== */
-	body.salon #wrapper {
-	  background: 0;
-	  font-size:1.2rem;
-	}
-	
-	body.salon #mainVisual {
-	  width: 100%;
-	  margin: 85px auto 0;
-	}
-	
-	body.salon .contentArea {
-	  width: 100%;
-	  margin: 0;
-	}
-	
-	/*allitems*/
-	body.salon .contentArea .interviewArea01 .allitems img,
-	body.salon .recommendArea .allitems img {
-		margin:0 auto 60px auto;
-		padding:0 9%;
-	}
-	
-	/*ここから今回追加部分---------------*/
-	
-	/*  interviewArea01 */
-	
+
+body.salon #wrapper {
+	font-size: 1.2rem;
+	background: 0;
+}
+
+body.salon #mainVisual {
+	width: 100%;
+	margin: 85px auto 0;
+}
+
+body.salon .contentArea {
+	width: 100%;
+	margin: 0;
+}
+
+body.salon .contentArea .interviewArea01 .allitems img {
+	margin: 0 auto 60px auto;
+	padding: 0 9%;
+}
+
+body.salon .recommendArea .allitems img {
+	margin: 0 auto 60px auto;
+	padding: 0 9%;
+}
+
+body.salon .contentArea .interviewArea01 {
+	width: 100%;
+	margin: 0;
+}
+
 body.salon .contentArea .interviewArea01 p.lead {
-    background: url(../img/read_sp_back.png) no-repeat;
-    background-size: contain;
-    width: 100%;
-    font-size: 1.4rem;
-    line-height: 2.8rem;
+	font-family: 'Yu Mincho', '游明朝体', YuMincho, serif;
+	font-size: 1.4rem;
+	line-height: 2.8rem;
+	width: 100%;
+	height: auto;
 	padding: 10% 0;
-	font-family:"Yu Mincho", "游明朝体", YuMincho, serif;
+	background: url(../img/read_sp_back.png) no-repeat;
+	background-size: contain;
+}
+
+body.salon .contentArea .interviewArea01 .lead img {
+	width: 83.75%;
+	margin: 10% auto;
+}
+
+body.salon .contentArea .interviewArea01 .btn {
+	width: 65%;
+	margin: 0 auto;
+}
+
+body.salon .contentArea .interviewArea01 .box p.come {
+	font-family: 'Yu Mincho', '游明朝体', YuMincho, serif;
+	font-size: 1.3rem;
+	margin: 5% auto;
+	letter-spacing: 0;
+}
+
+body.salon .contentArea .interviewArea01 .box .btnArea p {
+	font-size: 1rem;
+}
+
+body.salon .contentArea .interviewArea01 .box02 {
+	margin-top: 50px;
+}
+
+/*allitems*/
+
+/*ここから今回追加部分---------------*/
+
+/*  interviewArea01 */
+
+.box05 {
+	margin-top: 50px;
+}
+
+body.salon .contentArea .interviewArea02 .profile {
+	margin-top: 50px;
+}
+
+body.salon .contentArea .interviewArea02 .interview_txt img {
+	width: 88.12%;
+	margin: 6% auto;
+}
+
+body.salon .contentArea .interviewArea02 .interview_sec {
+	padding: 0 4.68%;
+}
+
+body.salon .contentArea .interviewArea02 .interview_sec h4,
+body.salon .contentArea .interviewArea02 .interview_sec p {
+	font-size: 1.2rem;
+}
+
+body.salon h3.profile img {
+	width: 20%;
+}
+
+body.salon .wrap {
+	margin: 0 4.68%;
+}
+
+body.salon .recommendArea .columnListArea {
+	width: 100%;
+	margin: 16% auto 0;
+}
+
+body.salon .recommendArea .columnListArea h3 {
+	width: 61.4%;
+	margin: 0 auto 15px;
+	text-align: center;
+}
+
+body.salon .recommendArea .columnListArea ul {
+	overflow: hidden;
+	margin-right: 0;
+	margin-bottom: 6%;
+	margin-left: 4%;
+}
+
+body.salon .recommendArea .columnListArea ul li {
+	font-size: 1rem;
+	float: left;
+	overflow: hidden;
+	width: 30%;
+	margin-right: 3%;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+body.salon .recommendArea .columnListArea ul li.column4 {
+	float: left;
+	width: 46%;
+	margin-right: 4%;
+	margin-bottom: 4%;
+	text-align: center;
+}
+
+body.salon .recommendArea .columnListArea ul li.column4 .btnCart {
+	display: none;
+}
+
+body.salon .recommendArea .columnListArea ul li.column4 .btnCart img {
+	width: 100%;
+}
+
+body.salon .recommendArea .columnListArea ul li.column4 .btnDetail img {
+	width: 100%;
+}
+
+body.salon .recommendArea .columnListArea ul li .rank {
+	overflow: hidden;
+	width: 100%;
+	height: 70px;
+	white-space: nowrap;
+	text-indent: 100%;
+}
+
+body.salon .recommendArea .columnListArea ul li .pic {
+	border: 1px solid #eeeff2;
+}
+
+body.salon .recommendArea .columnListArea ul li .pic img {
+	width: 100%;
 	height: auto;
 }
-	
-	body.salon .contentArea .interviewArea01 {
-	  width: 100%;
-	  margin: 0;
-	}
-	
-	body.salon .contentArea .interviewArea01 .lead img {
-	  width: 83.75%;
-	  margin: 10% auto;
-	}
-	
-	body.salon .contentArea .interviewArea01 .btn {
-		width: 65%;
-		margin: 0 auto;
-	}
-	body.salon .contentArea .interviewArea01 .box p.come{
-		font-family:"Yu Mincho", "游明朝体", YuMincho, serif;
-		letter-spacing: 0;
-		font-size: 1.3rem;
-		margin: 5% auto;
-	}
-	body.salon .contentArea .interviewArea01 .box .btnArea p {
-		font-size: 1rem;
-	}	
-	body.salon .contentArea .interviewArea01 .box02, .box05{
-		margin-top: 50px;
-	}	
-	body.salon .contentArea .interviewArea02 .profile{
-		margin-top: 50px;
-	}	
 
-	
-	/*  interviewArea02 */
-	body.salon .contentArea .interviewArea02 .interview_txt img {
-	  margin: 6% auto;
-	  width: 88.12%;
-	}
-	
-	body.salon .contentArea .interviewArea02 .interview_sec {
-	  padding: 0 4.68%;
-	}
-		
-	body.salon .contentArea .interviewArea02 .interview_sec h4 {
-	  font-size: 1.2rem;
-	}
-		
-	body.salon .contentArea .interviewArea02 .interview_sec p {
-	  font-size: 1.2rem;
-	}
-	
-	body.salon h3.profile img{
-	  width:20%;
-	}
-	
-	body.salon .wrap {
-	  margin: 0 4.68%;
-	}
-	/*  recommend */	
-	body.salon .recommendArea .columnListArea {
-		width: 100%;
-		margin: 16% auto 0;
-	}
-	
-	body.salon .recommendArea .columnListArea h3 {
-	  text-align: center;
-	  margin: 0 auto 15px;
-	  width: 61.4%;
-	}
-	
-	body.salon .recommendArea .columnListArea ul {
-		overflow: hidden;
-		margin-right: 0;
-		margin-left: 4%;
-		margin-bottom: 6%;
-	}
-	body.salon .recommendArea .columnListArea ul li {
-		float: left;
-		overflow: hidden;
-		width: 30%;
-		margin-right: 3%;
-		margin-bottom: 0px;
-		text-align: center;
-		font-size: 1rem;
-	}
-	body.salon .recommendArea .columnListArea ul li.column4 {
-		float: left;
-		margin-right: 4%;
-		margin-bottom: 4%;
-		text-align: center;
-		width: 46%;
-	}
-	body.salon .recommendArea .columnListArea ul li.column4 .btnCart {
-		display: none;
-	}
-	body.salon .recommendArea .columnListArea ul li.column4 .btnCart img {
-		width: 100%;
-	}
-	body.salon .recommendArea .columnListArea ul li.column4 .btnDetail img {
-		width: 100%;
-	}
-	body.salon .recommendArea .columnListArea ul li .rank {
-		width: 100%;
-		height: 70px;
-		text-indent: 100%;
-		white-space: nowrap;
-		overflow: hidden;
-	}
-	body.salon .recommendArea .columnListArea ul li .pic {
-		border: 1px solid #EEEFF2;
-	}
-	body.salon .recommendArea .columnListArea ul li .pic img {
-		width: 100%;
-		height: auto;
-	}
-	body.salon .recommendArea .columnListArea ul li .text {
-		color: #7589b2;
-		font-size: 18px;
-		margin: 20px 15px 25px;
-	}
-	body.salon .recommendArea .columnListArea ul li .text a {
-		color: #7589b2;
-	}
-	body.salon .recommendArea .columnListArea ul li .name {
-		font-size: 14px;
-	}
-	body.salon .recommendArea .columnListArea ul li .price {
-		margin-bottom: 20px;
-	}
-	body.salon .recommendArea .columnListArea ul li .btnCart {
-		margin-bottom: 5px;
-		display: none;
-	}
-	/*body.salon .recommendArea .columnListArea .btnAllItem {
-		width: 580px;
-		margin: 0 auto;
-		text-align: center;
-	}*/
-		
-	/*  movie */
-	body.salon .moviearea {
-		width: 100%;
-		margin: 6% auto;
-		position: relative;
-		padding-top: 56.25%;
-	}
+body.salon .recommendArea .columnListArea ul li .text {
+	font-size: 18px;
+	margin: 20px 15px 25px;
+	color: #7589b2;
+}
 
+body.salon .recommendArea .columnListArea ul li .text a {
+	color: #7589b2;
+}
+
+body.salon .recommendArea .columnListArea ul li .name {
+	font-size: 14px;
+}
+
+body.salon .recommendArea .columnListArea ul li .price {
+	margin-bottom: 20px;
+}
+
+body.salon .recommendArea .columnListArea ul li .btnCart {
+	display: none;
+	margin-bottom: 5px;
+}
+
+body.salon .moviearea {
+	position: relative;
+	width: 100%;
+	margin: 6% auto;
+	padding-top: 56.25%;
+}
+
+/*  interviewArea02 */
+
+/*  recommend */
+
+/*body.salon .recommendArea .columnListArea .btnAllItem {
+  	width: 580px;
+  	margin: 0 auto;
+  	text-align: center;
+  }*/
+
+/*  movie */
 
 }
-	  
-
 

@@ -1,0 +1,63 @@
+@mixin pc($break-point:$bp_pc) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin sp($break-point:$bp_sp) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin pc-sp($break-point-min:$bp_pc, $break-point-max:$bp_tab) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+@mixin sp-pc($break-point-max:$bp_tab,$break-point-min:$bp_pc) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+@mixin sp_pad{
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+@mixin last-mb0() {
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin metrics{
+  font-feature-settings : "palt";
+}
+
+@mixin clearfix(){
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+
+// ==============================
+//
+// 750px幅のスマートフォン用デザインのpxをvw値に変換
+// ※デザイン内で24pxのフォントサイズの場合
+// font-size: spvw(24);
+// のように使用
+//
+// ==============================
+
+
+@function spvw($value,$width:7.5)
+{
+  @return ($value / $width) + vw;
+}
+
