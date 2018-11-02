@@ -613,6 +613,18 @@ body.salon .cam_entry ul li:last-of-type {
 	border-bottom: none;
 }
 
+body.salon .cam_ig_btn {
+	margin-bottom: 73px;
+}
+
+body.salon .cam_caution {
+	overflow-y: hidden;
+	width: 661px;
+	height: 342px;
+	margin: 60px 60px 81px;
+	border: solid 1px #31303b;
+}
+
 /*clearFix
 ---------------------------*/
 
