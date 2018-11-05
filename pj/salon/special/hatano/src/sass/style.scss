@@ -1,3 +1,29 @@
+@charset "utf-8";
+
+// ==========================================================================
+// variables
+// ==========================================================================
+@import "base/variables";
+
+// ==========================================================================
+// tools
+// ==========================================================================
+@import "tool/mixins";
+
+/*
+// ==========================================================================
+// animation
+// ==========================================================================
+*/
+@import "tool/animation";
+
+/*
+// ==========================================================================
+// utility
+// ==========================================================================
+*/
+@import "tool/util";
+
 body.salon {
   a {
     color: #000000;
@@ -283,6 +309,9 @@ body.salon {
     &_btn01 {
       text-align: center;
       margin: 0 auto;
+      img {
+        margin: 0 auto;
+      }
     }
   }
   .box01{
@@ -420,7 +449,13 @@ body.salon {
   }
   #campaign02 {
     text-align: center;
-    margin: 0 auto;
+    margin: -150px auto 0;
+    padding-top: 150px;
+    p{
+      img {
+        margin: 0 auto;
+      }
+    }
     .campaign {
       background: url(../img/canpaign_02_back.png)no-repeat top;
       width: 787px;
@@ -429,6 +464,9 @@ body.salon {
       box-sizing: border-box;
       margin: 88px auto 0;
       text-align: center;
+      img {
+        margin: 0 auto;
+      }
     }
     dl {
       width: 787px;
@@ -556,21 +594,6 @@ body.salon {
           }
         }
       }
-     /* &::-webkit-scrollbar{
-        width: 32px;
-      }
-      &::-webkit-scrollbar-track{
-        background: #f2f2f2;
-        border: none;
-        border-radius: 25px;
-        box-shadow: inset 0 0 2px #e9e9e9; 
-        margin: 10px 8px 10px 0px;
-      }
-      &::-webkit-scrollbar-thumb{
-        background: #31303b;
-        border-radius: 25px;
-        box-shadow: none;
-      }*/
     }
   }
 }
@@ -590,13 +613,26 @@ body.salon {
      interview vol01
   ============================================================== */
   body.salon {
+  .campaign {
+    text-align: center;
+    margin: spvw(50) auto spvw(103);
+    &_btn01 {
+      text-align: center;
+      img{
+        width: 74.13333vw;
+        height: 34.26667vw;
+        margin: 0 auto;
+      }
+    }
+  } 
     #wrapper {
       background: 0;
       font-size: 1.2rem;
     }
     #mainVisual {
       width: 100%;
-      margin: 85px auto 0;
+      margin: 50px auto 0;
+      padding-top: 50px;
     }
     .contentArea {
       width: 100%;
@@ -615,9 +651,9 @@ body.salon {
         background: url(../img/read_sp_back.png) no-repeat;
         background-size: contain;
         width: 100%;
-        font-size: 1.4rem;
-        line-height: 2.8rem;
-        padding: 10% 0;
+        font-size: spvw(24);
+        line-height: 1.75em;
+        padding: spvw(60) 0;
         font-family: "Yu Mincho", "游明朝体", YuMincho, serif;
         height: auto;
       }
@@ -655,6 +691,26 @@ body.salon {
   }
   body.salon {
     .contentArea .interviewArea02 {
+      margin-top: 172px;
+      .lead {
+        text-align: center!important;
+        margin: spvw(-30) auto spvw(75)!important;
+        padding: 0 spvw(40);
+        p{
+          text-align: left!important;
+          margin: 0 auto!important;
+          font-family: "Yu Mincho", "游明朝体", YuMincho, serif!important;
+          font-size: spvw(29)!important;
+          line-height: 2.084em;
+          margin-bottom: spvw(60);
+          text-indent: -1em;
+          margin-left: 1em;
+          display: inline-block;
+        }
+        span {
+          font-size: spvw(25)!important;
+        }
+      }
       .profile {
         margin-top: 50px;
       }
@@ -664,13 +720,44 @@ body.salon {
       }
       .interview_sec {
         padding: 0 4.68%;
+        margin-bottom: spvw(70)!important;
         h4, p {
-          font-size: 1.2rem;
+          font-size: spvw(22)!important;
+        }
+        p {
+          margin-bottom: spvw(35)!important;
         }
       }
     }
-    h3.profile img {
-      width: 20%;
+    h3.profile { 
+      height: auto!important;
+      margin: spvw(105) spvw(35) 0!important;
+      img {
+        width: spvw(87)!important;
+        height: spvw(22)!important;
+      }
+    }
+    /*  interviewArea02 */
+
+    .wrap {
+      .profile_box {
+        font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+        p {
+          font-size: spvw(22)!important;
+          margin-bottom: spvw(40)!important;
+          a {
+            color: #8884af;
+          }
+          &.profile_career {
+            margin-bottom: spvw(0)!important;
+          }
+          &.profile_ig_id {
+          }
+        }
+        &:last-of-type {
+          margin-bottom: spvw(42)!important;
+        }
+      }
     }
     .wrap {
       margin: 0 4.68%;
@@ -754,6 +841,366 @@ body.salon {
       padding-top: 56.25%;
     }
   }
+  .box {
+      .m_img img {
+        margin: 0 auto;
+      }
+      .btnArea {
+        text-align: center;
+        .btn{
+          width: spvw(590)!important;
+          margin: 0 auto spvw(45)!important;
+          a {
+            p {
+              font-size: spvw(18)!important;
+            }
+            img {
+              width: spvw(232);
+              height: spvw(50);
+            }
+          }
+        }
+        .btn02{
+          width: spvw(245)!important;
+          margin-bottom: spvw(25)!important;
+          &:last-of-type {
+            margin-bottom: none;
+          }
+          a {
+            p {
+              font-size: spvw(18)!important;
+              text-align: left!important;
+              margin-bottom: spvw(10)!important;
+            }
+            img {
+              width: spvw(232)!important;
+              height: spvw(50)!important;
+            }
+          }
+        }
+      }
+    }
+  .box01{
+    &_lead {
+      font-size: spvw(23)!important;
+      left: spvw(25)!important;
+      top: spvw(650)!important;
+      text-align: center!important;
+    }
+    .butu_img {
+      right: spvw(20)!important;
+      top: spvw(479)!important;
+      width: spvw(362);
+      height: spvw(449);
+    }
+    .btnArea {
+      margin-top: spvw(358)!important;
+      .btn{
+        a{
+          p{
+            margin-right: spvw(37)!important;
+          } 
+        }
+      }
+    }
+  }
+  .box02{
+    margin-top: spvw(188)!important;
+    &_lead {
+      font-size: spvw(23)!important;
+      left: spvw(25)!important;
+      top: spvw(300)!important;
+    }
+    .butu_img {
+      width: spvw(239);
+      height: spvw(424);
+      left: spvw(17)!important;
+      top: spvw(496)!important;
+    }
+    .btnArea {
+      margin-top: spvw(60)!important;
+      position: relative;
+      .btn{
+        width: spvw(234)!important;
+        position: absolute;
+        right: spvw(90);
+        top: spvw(-100);
+        p {
+          margin-right: auto!important;
+          text-align: center!important;
+          margin: 0 auto spvw(15)!important;
+        }
+        a {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  .box03{
+    margin-top: spvw(394)!important;
+    &_lead {
+      font-size: spvw(23)!important;
+      right: spvw(30)!important;
+      top: spvw(-100)!important;
+    }
+    .butu_img {
+      width: spvw(274);
+      height: spvw(510);
+      right: spvw(15)!important;
+      top: spvw(266)!important;
+    }
+    .btnArea {
+      margin-top: spvw(105)!important;
+      .btn{
+        a{
+          p{
+            text-align: left!important;
+            margin-right: spvw(37)!important;
+          }
+        }
+      }
+    }
+  }
+  .box04{
+    margin-top: spvw(339)!important;
+    &_lead {
+      font-size: spvw(23)!important;
+      right: spvw(60)!important;
+      top: spvw(10)!important;
+    }
+    .butu_img {
+      width: spvw(267);
+      height: spvw(473);
+      left: spvw(30)!important;
+      top: spvw(460)!important;
+    }
+    .btnArea {
+      margin-top: spvw(40)!important;
+      .btn02{
+        margin: 0 spvw(50) spvw(25) spvw(360) !important;
+      }
+    }
+  }
+  .box05{
+    margin-top: spvw(170)!important;
+    &_lead {
+      font-size: spvw(23)!important;
+      right: spvw(90)!important;
+      top: spvw(668)!important;
+    }
+    .butu_img {
+      width: spvw(267);
+      height: spvw(473);
+      left: spvw(17)!important;
+      top: spvw(508)!important;
+    }
+    .btnArea {
+      margin-top: spvw(155)!important;
+      position: relative;
+      .btn02{
+        position: absolute;
+        top: 0;
+        right: spvw(90);
+        margin: 0!important;
+      }
+    }
+  }
+  .btnBox {
+    text-align: center;
+    margin-top: spvw(418)!important;
+    a {
+      margin: 0 auto;
+      text-align: center;
+      img{ 
+        margin: 0 auto;
+        width: spvw(475);
+        height: spvw(80);
+      }
+    }
+  }
+  #campaign02 {
+    text-align: center;
+    margin: -150px auto 0;
+    padding-top: 150px;
+    .campaign {
+      background: url(../img/canpaign_02_back_sp.png)no-repeat top!important;
+      background-size: cover!important;
+      width: spvw(630)!important;
+      height: spvw(294)!important;
+      padding-top: spvw(40)!important;
+      box-sizing: border-box;
+      margin: spvw(125) auto 0!important;
+      text-align: center;
+      img {
+        width: spvw(573);
+        height: spvw(254);
+        margin: 0 auto;
+      }
+    }
+    dl {
+      width: spvw(630)!important;
+      margin: 0 auto;
+    }
+    .acBtn {
+      background: url(../img/cam_btn-open_sp.png)no-repeat!important;
+      background-size: cover!important;
+      width: spvw(630)!important;
+      height: spvw(82)!important;
+      margin: 0 auto;
+    }
+    .acBtn.active {
+      background: url(../img/cam_btn-close_sp.jpg)no-repeat!important;
+      background-size: cover!important;
+      width: spvw(630)!important;
+      height: spvw(82)!important;
+      margin: 0 auto;
+    }
+    dd {
+      display: none;
+      height: 100%!important;
+      /*height: spvw(1554)!important;*/
+      width: spvw(630)!important;
+      background: url(../img/canpaign_02_back_sp.png)repeat-y bottom!important;
+      background-size: cover!important;
+      margin: 0 auto;
+      &.active {
+        display: block;
+      }
+    }
+  }
+  .cam{
+    &_period {
+      text-align: center;
+      img{
+        height: spvw(49)!important;
+        width: spvw(350)!important;
+        margin: 0 auto;
+      }
+    }
+    &_about {
+      margin: spvw(50) spvw(25)!important;
+      font-size: spvw(22);
+      padding: spvw(40) spvw(28) spvw(20)!important;
+      p {
+        margin-bottom: spvw(30)!important;
+      }
+      span {
+        line-height: 1.468em!important;
+        font-size: spvw(15)!important;
+        color: #787376;
+      }
+    }
+    &_entry {
+      text-align: center;
+      &_title {
+        font-size: 1.875rem;
+        font-family: "Yu Mincho", "游明朝体", YuMincho, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+        position: relative;
+        margin-bottom: 35px;
+        &::after {
+          content: "";
+          width: 94px;
+          height: 1px;
+          position: absolute; 
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          bottom: -15px;
+          background: #adacb1;
+          border-bottom: 1px solid #838389;
+        }
+      }
+      ul {
+        width: spvw(575)!important;
+        margin: 0 auto spvw(25)!important;
+        li {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          border-bottom: solid 1px #b3b3b7;
+          padding: spvw(30) spvw(23)!important;
+          span {
+            display: block;
+            text-align: left;
+            margin-bottom: spvw(15)!important;
+          }
+          p {
+            width: 100%;
+            display: block;
+            text-align: left;
+            font-size: 1.25rem;
+            line-height: 1.6005em;
+            margin-bottom: 0;
+          }
+          &:last-of-type {
+            border-bottom: none;
+          }
+          &.step01{
+            span {
+              img{
+                height: spvw(20);
+                width: spvw(83);
+              }
+            }
+          }
+          &.step02{
+            span {
+              img{
+                height: spvw(18);
+                width: spvw(86);
+              }
+            }
+          }
+          &.step03{
+            span {
+              img{
+                height: spvw(18);
+                width: spvw(86);
+              }
+            }
+          }
+        }
+      }
+    }
+    &_ig-btn{
+      margin-bottom: spvw(71)!important;
+      text-align: center;
+      img {
+        width: spvw(572)!important;
+        height: spvw(82)!important;
+        margin: 0 auto!important;
+      }
+    }
+    &_caution{
+      width: spvw(572)!important;
+      height: spvw(325)!important;
+      border: solid 1px #31303b;
+      margin: 0 auto spvw(94)!important;
+      padding-right: spvw(8)!important;
+      position: relative;
+      &-title {
+        color: #87566f;
+        margin-bottom: 15px!important;
+      }
+      ul {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        li {
+          margin: spvw(38) spvw(33)!important;
+          p {
+            font-size: spvw(18);
+            line-height: 2em;
+            margin-bottom: 0;
+            text-align: left;
+            text-indent: -1em;
+            margin-left: 1em;
+          }
+        }
+      }
+    }
+  }
   /*  interviewArea02 */
   /*  recommend */
   /*body.salon .recommendArea .columnListArea .btnAllItem {
@@ -762,4 +1209,29 @@ body.salon {
   	text-align: center;
   }*/
   /*  movie */
+  
+  
+  
+  
+  /*
+ * Scrollbar rail styles
+ */
+
+.ps__rail-y {
+  margin: spvw(10) spvw(10) spvw(10) 0px!important;
+  width: spvw(32)!important;
+}
+/*
+ * Scrollbar thumb styles
+ */
+
+.ps__thumb-y {
+  width: spvw(32)!important;
+}
+.ps__rail-y:hover > .ps__thumb-y,
+.ps__rail-y:focus > .ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
+  background-color: #31303b;
+  width: spvw(32)!important;
+}
 }

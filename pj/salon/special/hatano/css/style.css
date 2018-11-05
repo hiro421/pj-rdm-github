@@ -1,3 +1,118 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+/**
+ * Noto Sans CJK JP: https://www.google.com/get/noto/#sans-jpan
+ * Noto Sans JP: https://fonts.google.com/earlyaccess#Noto+Sans+JP
+ */
+
+@font-face {
+	font-family: 'Noto Sans JP';
+	font-weight: 100;
+	font-style: normal;
+	src: local('Noto Sans CJK JP Thin'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Thin.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Thin.woff) format('woff'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Thin.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans JP';
+	font-weight: 300;
+	font-style: normal;
+	src: local('Noto Sans CJK JP Light'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.woff) format('woff'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans JP';
+	font-weight: 400;
+	font-style: normal;
+	src: local('Noto Sans CJK JP Regular'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format('woff'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans JP';
+	font-weight: 500;
+	font-style: normal;
+	src: local('Noto Sans CJK JP Medium'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Medium.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Medium.woff) format('woff'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Medium.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans JP';
+	font-weight: 700;
+	font-style: normal;
+	src: local('Noto Sans CJK JP Bold'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Bold.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Bold.woff) format('woff'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Bold.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans JP';
+	font-weight: 900;
+	font-style: normal;
+	src: local('Noto Sans CJK JP Black'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Black.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Black.woff) format('woff'), url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Black.otf) format('opentype');
+}
+
+/*
+// ==========================================================================
+// animation
+// ==========================================================================
+*/
+
+/*
+// ==========================================================================
+// utility
+// ==========================================================================
+*/
+
+/* margin reset */
+
+.u-mt-reset {
+	margin-top: 0 !important;
+}
+
+.u-mb-reset {
+	margin-bottom: 0 !important;
+}
+
+.u-ml-reset {
+	margin-left: 0 !important;
+}
+
+.u-mr-reset {
+	margin-right: 0 !important;
+}
+
+/* padding reset */
+
+.u-pt-reset {
+	padding-top: 0 !important;
+}
+
+.u-pb-reset {
+	padding-bottom: 0 !important;
+}
+
+.u-pl-reset {
+	padding-left: 0 !important;
+}
+
+.u-pr-reset {
+	padding-right: 0 !important;
+}
+
+/* align */
+
+.u-align-center {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.u-align-left {
+	margin-right: auto;
+	text-align: left;
+}
+
+.u-align-right {
+	margin-left: auto;
+	text-align: right;
+}
+
 body.salon a {
 	color: #000;
 }
@@ -329,6 +444,10 @@ body.salon .campaign_btn01 {
 	text-align: center;
 }
 
+body.salon .campaign_btn01 img {
+	margin: 0 auto;
+}
+
 body.salon .box01 {
 	position: relative;
 }
@@ -489,8 +608,13 @@ body.salon .btnBox a {
 }
 
 body.salon #campaign02 {
-	margin: 0 auto;
+	margin: -150px auto 0;
+	padding-top: 150px;
 	text-align: center;
+}
+
+body.salon #campaign02 p img {
+	margin: 0 auto;
 }
 
 body.salon #campaign02 .campaign {
@@ -501,6 +625,10 @@ body.salon #campaign02 .campaign {
 	padding-top: 28px;
 	text-align: center;
 	background: url(../img/canpaign_02_back.png) no-repeat top;
+}
+
+body.salon #campaign02 .campaign img {
+	margin: 0 auto;
 }
 
 body.salon #campaign02 dl {
@@ -623,21 +751,7 @@ body.salon .cam_caution {
 	height: 342px;
 	margin: 60px 60px 81px;
 	padding-right: 8px;
-	border: solid 1px #31303b; /* &::-webkit-scrollbar{
-        width: 32px;
-      }
-      &::-webkit-scrollbar-track{
-        background: #f2f2f2;
-        border: none;
-        border-radius: 25px;
-        box-shadow: inset 0 0 2px #e9e9e9; 
-        margin: 10px 8px 10px 0px;
-      }
-      &::-webkit-scrollbar-thumb{
-        background: #31303b;
-        border-radius: 25px;
-        box-shadow: none;
-      }*/
+	border: solid 1px #31303b;
 }
 
 body.salon .cam_caution-title {
@@ -673,11 +787,46 @@ body.salon .cam_caution ul li p {
    
    =================================================================================================================================================== */
 
+@media screen and (min-width: 769px) {
+
+.sp {
+	display: none !important;
+}
+
+}
+
+@media screen and (min-width: 990px) {
+
+.tab {
+	display: none !important;
+}
+
+}
+
 @media screen and (max-width: 768px) {
+
+.pc {
+	display: none !important;
+}
 
 /* ===========================================================
      interview vol01
   ============================================================== */
+
+body.salon .campaign {
+	margin: 6.66667vw auto 13.73333vw;
+	text-align: center;
+}
+
+body.salon .campaign_btn01 {
+	text-align: center;
+}
+
+body.salon .campaign_btn01 img {
+	width: 74.13333vw;
+	height: 34.26667vw;
+	margin: 0 auto;
+}
 
 body.salon #wrapper {
 	font-size: 1.2rem;
@@ -686,7 +835,8 @@ body.salon #wrapper {
 
 body.salon #mainVisual {
 	width: 100%;
-	margin: 85px auto 0;
+	margin: 50px auto 0;
+	padding-top: 50px;
 }
 
 body.salon .contentArea {
@@ -711,11 +861,11 @@ body.salon .contentArea .interviewArea01 {
 
 body.salon .contentArea .interviewArea01 p.lead {
 	font-family: 'Yu Mincho', '游明朝体', YuMincho, serif;
-	font-size: 1.4rem;
-	line-height: 2.8rem;
+	font-size: 3.2vw;
+	line-height: 1.75em;
 	width: 100%;
 	height: auto;
-	padding: 10% 0;
+	padding: 8vw 0;
 	background: url(../img/read_sp_back.png) no-repeat;
 	background-size: contain;
 }
@@ -755,6 +905,35 @@ body.salon .contentArea .interviewArea01 .box02 {
 	margin-top: 50px;
 }
 
+body.salon { /*  interviewArea02 */
+}
+
+body.salon .contentArea .interviewArea02 {
+	margin-top: 172px;
+}
+
+body.salon .contentArea .interviewArea02 .lead {
+	margin: -4vw auto 10vw !important;
+	padding: 0 5.33333vw;
+	text-align: center !important;
+}
+
+body.salon .contentArea .interviewArea02 .lead p {
+	font-family: 'Yu Mincho', '游明朝体', YuMincho, serif !important;
+	font-size: 3.86667vw !important;
+	line-height: 2.084em;
+	display: inline-block;
+	margin: 0 auto !important;
+	margin-bottom: 8vw;
+	margin-left: 1em;
+	text-align: left !important;
+	text-indent: -1em;
+}
+
+body.salon .contentArea .interviewArea02 .lead span {
+	font-size: 3.33333vw !important;
+}
+
 body.salon .contentArea .interviewArea02 .profile {
 	margin-top: 50px;
 }
@@ -765,16 +944,48 @@ body.salon .contentArea .interviewArea02 .interview_txt img {
 }
 
 body.salon .contentArea .interviewArea02 .interview_sec {
+	margin-bottom: 9.33333vw !important;
 	padding: 0 4.68%;
 }
 
 body.salon .contentArea .interviewArea02 .interview_sec h4,
 body.salon .contentArea .interviewArea02 .interview_sec p {
-	font-size: 1.2rem;
+	font-size: 2.93333vw !important;
+}
+
+body.salon .contentArea .interviewArea02 .interview_sec p {
+	margin-bottom: 4.66667vw !important;
+}
+
+body.salon h3.profile {
+	height: auto !important;
+	margin: 14vw 4.66667vw 0 !important;
 }
 
 body.salon h3.profile img {
-	width: 20%;
+	width: 11.6vw !important;
+	height: 2.93333vw !important;
+}
+
+body.salon .wrap .profile_box {
+	font-family: 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+}
+
+body.salon .wrap .profile_box p {
+	font-size: 2.93333vw !important;
+	margin-bottom: 5.33333vw !important;
+}
+
+body.salon .wrap .profile_box p a {
+	color: #8884af;
+}
+
+body.salon .wrap .profile_box p.profile_career {
+	margin-bottom: 0vw !important;
+}
+
+body.salon .wrap .profile_box:last-of-type {
+	margin-bottom: 5.6vw !important;
 }
 
 body.salon .wrap {
@@ -876,6 +1087,404 @@ body.salon .moviearea {
 	padding-top: 56.25%;
 }
 
+.box .m_img img {
+	margin: 0 auto;
+}
+
+.box .btnArea {
+	text-align: center;
+}
+
+.box .btnArea .btn {
+	width: 78.66667vw !important;
+	margin: 0 auto 6vw !important;
+}
+
+.box .btnArea .btn a p {
+	font-size: 2.4vw !important;
+}
+
+.box .btnArea .btn a img {
+	width: 30.93333vw;
+	height: 6.66667vw;
+}
+
+.box .btnArea .btn02 {
+	width: 32.66667vw !important;
+	margin-bottom: 3.33333vw !important;
+}
+
+.box .btnArea .btn02:last-of-type {
+	margin-bottom: none;
+}
+
+.box .btnArea .btn02 a p {
+	font-size: 2.4vw !important;
+	margin-bottom: 1.33333vw !important;
+	text-align: left !important;
+}
+
+.box .btnArea .btn02 a img {
+	width: 30.93333vw !important;
+	height: 6.66667vw !important;
+}
+
+.box01_lead {
+	font-size: 3.06667vw !important;
+	top: 86.66667vw !important;
+	left: 3.33333vw !important;
+	text-align: center !important;
+}
+
+.box01 .butu_img {
+	top: 63.86667vw !important;
+	right: 2.66667vw !important;
+	width: 48.26667vw;
+	height: 59.86667vw;
+}
+
+.box01 .btnArea {
+	margin-top: 47.73333vw !important;
+}
+
+.box01 .btnArea .btn a p {
+	margin-right: 4.93333vw !important;
+}
+
+.box02 {
+	margin-top: 25.06667vw !important;
+}
+
+.box02_lead {
+	font-size: 3.06667vw !important;
+	top: 40vw !important;
+	left: 3.33333vw !important;
+}
+
+.box02 .butu_img {
+	top: 66.13333vw !important;
+	left: 2.26667vw !important;
+	width: 31.86667vw;
+	height: 56.53333vw;
+}
+
+.box02 .btnArea {
+	position: relative;
+	margin-top: 8vw !important;
+}
+
+.box02 .btnArea .btn {
+	position: absolute;
+	top: -13.33333vw;
+	right: 12vw;
+	width: 31.2vw !important;
+}
+
+.box02 .btnArea .btn p {
+	margin: 0 auto 2vw !important;
+	margin-right: auto !important;
+	text-align: center !important;
+}
+
+.box02 .btnArea .btn a {
+	flex-wrap: wrap;
+}
+
+.box03 {
+	margin-top: 52.53333vw !important;
+}
+
+.box03_lead {
+	font-size: 3.06667vw !important;
+	top: -13.33333vw !important;
+	right: 4vw !important;
+}
+
+.box03 .butu_img {
+	top: 35.46667vw !important;
+	right: 2vw !important;
+	width: 36.53333vw;
+	height: 68vw;
+}
+
+.box03 .btnArea {
+	margin-top: 14vw !important;
+}
+
+.box03 .btnArea .btn a p {
+	margin-right: 4.93333vw !important;
+	text-align: left !important;
+}
+
+.box04 {
+	margin-top: 45.2vw !important;
+}
+
+.box04_lead {
+	font-size: 3.06667vw !important;
+	top: 1.33333vw !important;
+	right: 8vw !important;
+}
+
+.box04 .butu_img {
+	top: 61.33333vw !important;
+	left: 4vw !important;
+	width: 35.6vw;
+	height: 63.06667vw;
+}
+
+.box04 .btnArea {
+	margin-top: 5.33333vw !important;
+}
+
+.box04 .btnArea .btn02 {
+	margin: 0 6.66667vw 3.33333vw 48vw !important;
+}
+
+.box05 {
+	margin-top: 22.66667vw !important;
+}
+
+.box05_lead {
+	font-size: 3.06667vw !important;
+	top: 89.06667vw !important;
+	right: 12vw !important;
+}
+
+.box05 .butu_img {
+	top: 67.73333vw !important;
+	left: 2.26667vw !important;
+	width: 35.6vw;
+	height: 63.06667vw;
+}
+
+.box05 .btnArea {
+	position: relative;
+	margin-top: 20.66667vw !important;
+}
+
+.box05 .btnArea .btn02 {
+	position: absolute;
+	top: 0;
+	right: 12vw;
+	margin: 0 !important;
+}
+
+.btnBox {
+	margin-top: 55.73333vw !important;
+	text-align: center;
+}
+
+.btnBox a {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.btnBox a img {
+	width: 63.33333vw;
+	height: 10.66667vw;
+	margin: 0 auto;
+}
+
+#campaign02 {
+	margin: -150px auto 0;
+	padding-top: 150px;
+	text-align: center;
+}
+
+#campaign02 .campaign {
+	box-sizing: border-box;
+	width: 84vw !important;
+	height: 39.2vw !important;
+	margin: 16.66667vw auto 0 !important;
+	padding-top: 5.33333vw !important;
+	text-align: center;
+	background: url(../img/canpaign_02_back_sp.png) no-repeat top !important;
+	background-size: cover !important;
+}
+
+#campaign02 .campaign img {
+	width: 76.4vw;
+	height: 33.86667vw;
+	margin: 0 auto;
+}
+
+#campaign02 dl {
+	width: 84vw !important;
+	margin: 0 auto;
+}
+
+#campaign02 .acBtn {
+	width: 84vw !important;
+	height: 10.93333vw !important;
+	margin: 0 auto;
+	background: url(../img/cam_btn-open_sp.png) no-repeat !important;
+	background-size: cover !important;
+}
+
+#campaign02 .acBtn.active {
+	width: 84vw !important;
+	height: 10.93333vw !important;
+	margin: 0 auto;
+	background: url(../img/cam_btn-close_sp.jpg) no-repeat !important;
+	background-size: cover !important;
+}
+
+#campaign02 dd {
+	display: none; /*height: spvw(1554)!important;*/
+	width: 84vw !important;
+	height: 100% !important;
+	margin: 0 auto;
+	background: url(../img/canpaign_02_back_sp.png) repeat-y bottom !important;
+	background-size: cover !important;
+}
+
+#campaign02 dd.active {
+	display: block;
+}
+
+.cam_period {
+	text-align: center;
+}
+
+.cam_period img {
+	width: 46.66667vw !important;
+	height: 6.53333vw !important;
+	margin: 0 auto;
+}
+
+.cam_about {
+	font-size: 2.93333vw;
+	margin: 6.66667vw 3.33333vw !important;
+	padding: 5.33333vw 3.73333vw 2.66667vw !important;
+}
+
+.cam_about p {
+	margin-bottom: 4vw !important;
+}
+
+.cam_about span {
+	font-size: 2vw !important;
+	line-height: 1.468em !important;
+	color: #787376;
+}
+
+.cam_entry {
+	text-align: center;
+}
+
+.cam_entry_title {
+	font-family: 'Yu Mincho', '游明朝体', YuMincho, 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', sans-serif;
+	font-size: 1.875rem;
+	position: relative;
+	margin-bottom: 35px;
+}
+
+.cam_entry_title::after {
+	position: absolute;
+	right: 0;
+	bottom: -15px;
+	left: 0;
+	width: 94px;
+	height: 1px;
+	margin: 0 auto;
+	content: '';
+	border-bottom: 1px solid #838389;
+	background: #adacb1;
+}
+
+.cam_entry ul {
+	width: 76.66667vw !important;
+	margin: 0 auto 3.33333vw !important;
+}
+
+.cam_entry ul li {
+	display: flex;
+	width: 100%;
+	padding: 4vw 3.06667vw !important;
+	border-bottom: solid 1px #b3b3b7;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.cam_entry ul li span {
+	display: block;
+	margin-bottom: 2vw !important;
+	text-align: left;
+}
+
+.cam_entry ul li p {
+	font-size: 1.25rem;
+	line-height: 1.6005em;
+	display: block;
+	width: 100%;
+	margin-bottom: 0;
+	text-align: left;
+}
+
+.cam_entry ul li:last-of-type {
+	border-bottom: none;
+}
+
+.cam_entry ul li.step01 span img {
+	width: 11.06667vw;
+	height: 2.66667vw;
+}
+
+.cam_entry ul li.step02 span img {
+	width: 11.46667vw;
+	height: 2.4vw;
+}
+
+.cam_entry ul li.step03 span img {
+	width: 11.46667vw;
+	height: 2.4vw;
+}
+
+.cam_ig-btn {
+	margin-bottom: 9.46667vw !important;
+	text-align: center;
+}
+
+.cam_ig-btn img {
+	width: 76.26667vw !important;
+	height: 10.93333vw !important;
+	margin: 0 auto !important;
+}
+
+.cam_caution {
+	position: relative;
+	width: 76.26667vw !important;
+	height: 43.33333vw !important;
+	margin: 0 auto 12.53333vw !important;
+	padding-right: 1.06667vw !important;
+	border: solid 1px #31303b;
+}
+
+.cam_caution-title {
+	margin-bottom: 15px !important;
+	color: #87566f;
+}
+
+.cam_caution ul {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.cam_caution ul li {
+	margin: 5.06667vw 4.4vw !important;
+}
+
+.cam_caution ul li p {
+	font-size: 2.4vw;
+	line-height: 2em;
+	margin-bottom: 0;
+	margin-left: 1em;
+	text-align: left;
+	text-indent: -1em;
+}
+
 /*  interviewArea02 */
 
 /*  recommend */
@@ -887,6 +1496,38 @@ body.salon .moviearea {
   }*/
 
 /*  movie */
+
+/*
+ * Scrollbar rail styles
+ */
+
+.ps__rail-y {
+	width: 4.26667vw !important;
+	margin: 1.33333vw 1.33333vw 1.33333vw 0 !important;
+}
+
+/*
+ * Scrollbar thumb styles
+ */
+
+.ps__thumb-y {
+	width: 4.26667vw !important;
+}
+
+.ps__rail-y:hover > .ps__thumb-y,
+.ps__rail-y:focus > .ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
+	width: 4.26667vw !important;
+	background-color: #31303b;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+
+.tab {
+	display: none !important;
+}
 
 }
 
