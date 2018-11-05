@@ -24,7 +24,7 @@
 <link rel="stylesheet" href="../../css/salon.css">
 <!-- content -->
 <link rel="stylesheet" href="css/style.css">
-
+<link rel="stylesheet" href="css/perfect-scrollbar.css" />
 <!-- Rtoaster.js -->
 <!--<script type="text/javascript" src="/common/front/js/PrepRtoaster.js"></script>
 <script type="text/javascript" src="//rt.rtoaster.jp/Rtoaster.js"></script>
@@ -39,7 +39,7 @@ Rtoaster.track();
 <script src="../../js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="../../js/salon.js"></script>
 <script src="../../js/include.js"></script>
-
+<script src="../../js/perfect-scrollbar.js"></script>
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -237,7 +237,28 @@ Rtoaster.track();
       </div>
       <p><a class="cam_ig-btn"><img src="img/btn_ig.png" alt=""/></a></p>
       <div class="cam_caution">
-        <p></p>
+        <ul>
+          <li>
+            <p class="cam_caution-title">プレゼントについて</p>
+            <p>・賞品のカラーはお選びいただけません。</p>
+            <p>・プレゼントは男女セットでお届けします(10組20名様)。</p>
+            <p>・ご希望のサイズは当選ダイレクトメール内にて確認させていただき<br>ます。返品交換は一切受け付けません。</p>
+            <p>・当選者へはSALON by PEACH JOHN公式インスタグラムアカウント<br>
+              (@salonbypj)のダイレクトメールにて11月中にご連絡いたします。</p>
+            <p>・賞品の発送にはWEB会員登録（無料）が必要です。</p>
+            <p>・賞品の発送先は日本国内に限らせていただきます。</p>
+          </li>
+          <li>
+            <p class="cam_caution-title">注意事項</p>
+            <p>・賞品のカラーはお選びいただけません。</p>
+            <p>・プレゼントは男女セットでお届けします(10組20名様)。</p>
+            <p>・ご希望のサイズは当選ダイレクトメール内にて確認させていただき<br>ます。返品交換は一切受け付けません。</p>
+            <p>・当選者へはSALON by PEACH JOHN公式インスタグラムアカウント<br>
+              (@salonbypj)のダイレクトメールにて11月中にご連絡いたします。</p>
+            <p>・賞品の発送にはWEB会員登録（無料）が必要です。</p>
+            <p>・賞品の発送先は日本国内に限らせていただきます。</p>
+          </li>
+        </ul>
       </div>
     </div>
   </dd>
@@ -261,14 +282,23 @@ jQuery(".customScroll").mCustomScrollbar({
 	advanced:{autoExpandHorizontalScroll:true}
 });
 </script> 
+<!--scroll bar-->
+<script>
+  
+  </script>
+  <!--scroll bar-->
+  <!--acordion-->
 <script>
 $(function(){
 $("#acMenu dt").on("click", function() {
 $("#acMenu dd").before().slideToggle();
 $("#acMenu dt").toggleClass("active");//追加部分
+  var container = document.querySelector('.cam_caution ul');
+  var ps = new PerfectScrollbar(container);
 });
 });
 </script>
+  <!--acordion-->
 
 <!--<script type="text/javascript">
 Rtoaster.recommendNow("rt_userauto_top_1","rt_userauto_top_2","rt_rule_top1","rt_rule_top2","rt_rule_top3","rt_rule_top4","rt_rule_top5","rt_auto_list","rt_auto_detail1","rt_auto_detail2","rt_auto_cart","rt_auto_wishlist1","rt_auto_wishlist2","rt_auto_mypage1","rt_auto_mypage2","rt_auto_thanks","rt_rule_coupon1","rt_rule_coupon2","rt_userhistory","rt_rule_login","rt_rule_top6","rt_rule_sptop1","rt_rule_coupon3","rt_rule_coupon4","rt_rule_coupon5","rt_rule_coupon6","rt_rule_coupon7","rt_rule_coupon8","rt_rule_coupon9","rt_rule_coupon10","rt_rule_coupon11","rt_rule_coupon12","rt_ranking1","rt_ranking2","rt_ranking3","rt_ranking4","rt_rule_top7","rt_rule_top8","rt_rule_sptop2","rt_rule_sptop3","rt_rule_coupon13","rt_rule_coupon14","rt_rule_leftnavigation","rt_rule_navigation","rt_userhistory2","rt_ranking5","rt_ranking6","rt_rule_app","rt_auto_plusoneitems","rt_auto_detail3","rt_ranking7","rt_ranking8","rt_userauto_floor_1","rt_userauto_floor_2","rt_rule_top9","rt_rule_sptop4","rt_rule_sptop5","rt_rule_abtest","rt_rule_spabtest","rt_ranking9","rt_ranking10","rt_userauto_ymtop_1","rt_userauto_ymtop_2","rt_userhistory3","rt_ranking11","rt_ranking12","rt_userauto_salon1");
