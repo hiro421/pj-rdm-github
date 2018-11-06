@@ -9,45 +9,55 @@ moviegallery CSS
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 4px;
     margin-bottom: 100px; }
-    @media screen and (max-width: 768px) {
-      #moviegalleryArea h2 {
-        font-size: 2rem;
-        margin-bottom: 50px; } }
+
+@media screen and (max-width: 768px) {
+  #moviegalleryArea h2 {
+    font-size: 2rem;
+    margin-bottom: 50px; } }
 
 /* moviegalleryBlock01
-	======================================== */
+  ======================================== */
 .moviegalleryBlock01 {
   min-width: 984px; }
-  @media screen and (max-width: 768px) {
-    .moviegalleryBlock01 {
-      min-width: 100%; } }
   .moviegalleryBlock01 > .inner {
     width: 984px;
     margin: 0 auto 50px;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    @media screen and (max-width: 768px) {
-      .moviegalleryBlock01 > .inner {
-        width: 100%; } }
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
   .moviegalleryBlock01 a {
     display: block;
     margin-bottom: 20px; }
   .moviegalleryBlock01 .thumb {
     width: 400px;
     margin: 0 37px 50px; }
-    @media screen and (max-width: 768px) {
-      .moviegalleryBlock01 .thumb {
-        width: 100%; } }
   .moviegalleryBlock01 .text01 {
     font-size: 19px;
     font-weight: bold; }
-    @media screen and (max-width: 768px) {
-      .moviegalleryBlock01 .text01 {
-        font-size: 1rem; } }
+
+@media screen and (max-width: 768px) {
+  .moviegalleryBlock01 {
+    min-width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .moviegalleryBlock01 > .inner {
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .moviegalleryBlock01 .thumb {
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .moviegalleryBlock01 .text01 {
+    font-size: 1rem; } }
+
+/*# sourceMappingURL=moviegallery.css.map */
