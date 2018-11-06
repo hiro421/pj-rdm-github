@@ -624,13 +624,10 @@ Anne CSS
   position: relative;
   background-position: center; }
   @media (min-width: 769px) {
-    .mv {
-      height: 745px;
-      background-image: url(../img/anne/201811/anne_mv.png); } }
-  @media (max-width: 768px) {
-    .mv {
-      height: calc(100vh - 43px);
-      background-image: url(../img/anne/201811/anne_mv_sp.png); } }
+    .mv .topimg {
+      min-width: 984px; } }
+  .mv .topimg img {
+    width: 100%; }
   .mv div {
     position: absolute;
     top: 50%;
@@ -644,7 +641,7 @@ Anne CSS
     @media (max-width: 768px) {
       .mv div.mv_starring {
         width: 72.5%;
-        margin-top: 170px; } }
+        margin-top: 160px; } }
     @media (min-width: 769px) {
       .mv div.mv_title {
         margin-top: 30px; } }
@@ -664,15 +661,16 @@ Anne CSS
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    bottom: 15px; }
+    transform: translateX(-50%); }
     @media (min-width: 769px) {
       .mv .sprite {
-        width: 426px; } }
+        width: 426px;
+        bottom: 15px; } }
     @media (max-width: 768px) {
       .mv .sprite {
         width: 64%;
-        background-size: contain; } }
+        background-size: contain;
+        bottom: 10px; } }
     .mv .sprite li a {
       display: block;
       background-image: url(../img/anne/201811/anne_mv_menu_spri.png);
@@ -1360,7 +1358,7 @@ Anne CSS
 
 @media screen and (max-width: 768px) {
   .inline-popup {
-    width: 85%; } }
+    width: 95%; } }
 
 @media screen and (max-width: 768px) {
   .inline-popup .inline-popup_inner {
@@ -1368,7 +1366,9 @@ Anne CSS
 
 @media screen and (max-width: 768px) {
   .inline-popup .inline-popup_inner p {
-    font-size: 1.0rem; } }
+    font-size: 1.0rem; }
+    .inline-popup .inline-popup_inner p.center {
+      text-align: center; } }
 
 @media screen and (max-width: 768px) {
   .inline-popup .inline-popup_inner .cpImg {

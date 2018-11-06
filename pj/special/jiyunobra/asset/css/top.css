@@ -633,13 +633,10 @@ Top CSS
   position: relative;
   background-position: center; }
   @media (min-width: 769px) {
-    .mv {
-      height: 745px;
-      background-image: url(../img/anne/201811/anne_mv.png); } }
-  @media (max-width: 768px) {
-    .mv {
-      height: calc(100vh - 43px);
-      background-image: url(../img/anne/201811/anne_mv_sp.png); } }
+    .mv .topimg {
+      min-width: 984px; } }
+  .mv .topimg img {
+    width: 100%; }
   .mv div {
     position: absolute;
     top: 50%;
@@ -660,7 +657,7 @@ Top CSS
     @media (max-width: 768px) {
       .mv div.mv_title {
         width: 75%;
-        margin-top: 70px; } }
+        margin-top: 60px; } }
 
 /* mainVisual
   ======================================== */

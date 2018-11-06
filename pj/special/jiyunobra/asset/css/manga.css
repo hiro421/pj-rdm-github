@@ -659,7 +659,9 @@ button.swiper-pagination-bullet {
       font-size: 13px; } }
   @media (min-width: 769px) {
     .backnumber .img {
-      margin-top: 24px; } }
+      margin-top: 24px; }
+      .backnumber .img a:hover {
+        opacity: .8; } }
   @media (max-width: 768px) {
     .backnumber .img {
       width: 70.3%;
