@@ -13,11 +13,13 @@ const sassGlob = require("gulp-sass-glob");
 //const frontnote = require('gulp-frontnote');
 //const ejs = require('gulp-ejs');
 const rename = require("gulp-rename");
+const sourcemaps = require('gulp-sourcemaps');
 gulp.task('sass',function(){
     var processors = [
         cssnext({browsers: ["last 2 versions", "ie >= 11", "Android >= 4", "ios_saf >= 10"]})
     ];
     return gulp.src(['./sass/**/*.scss'])
+        .pipe(sourcemaps.init())
         .pipe(sassGlob())
         .pipe(plumber({
             handleError: function (err) {
@@ -31,6 +33,7 @@ gulp.task('sass',function(){
         .pipe(autoPrefixer())
         .pipe(cssComb())
         .pipe(cmq({log:true}))
+        .pipe(sourcemaps.write('../maps'))
         //.pipe(csslint())
         //.pipe(csslint.formatter())
         .pipe(gulp.dest('../css'))
