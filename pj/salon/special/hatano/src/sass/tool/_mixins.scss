@@ -56,7 +56,7 @@
 // ==============================
 
 
-@function spvw($value,$width:7.5)
+@function spvw($value,$width:6.4)
 {
   @return ($value / $width) + vw;
 }
