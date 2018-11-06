@@ -30,6 +30,8 @@ gulp.task('sass',function(){
         .pipe(sass())
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
+        .pipe(sourcemaps.write({includeContent: false}))
+        .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(autoPrefixer())
         .pipe(cssComb())
         .pipe(cmq({log:true}))
