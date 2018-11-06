@@ -1,0 +1,156 @@
+html {
+  width: 100%;
+  font-size: 62.5%;
+  background: #FFF;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $default-font;
+  font-weight: 400;
+  line-height: 1.75;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  margin: 0;
+  color: $c_text;
+  font-size: 1.4rem;
+  @include max {
+    font-size: spvw(28);
+  }
+  &.news{
+    @include min {
+      background: url(../images/map.png) no-repeat center center;
+      background-size: cover;
+    }
+  }
+  &.report{
+    @include min {
+      background: url(../images/map.png) no-repeat center center;
+      background-size: cover;
+    }
+  }
+}
+
+body, html {
+  height: 100%;
+}
+
+body > noscript > img,
+body > iframe {
+  display: none;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2,
+h3, h4, h5, h6, pre, code, form, fieldset, figure,
+legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+  word-break: break-word;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+em {
+  font-style: italic;
+}
+
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+/*because legend doesn't inherit in IE */
+legend {
+  color: #000;
+}
+
+img {
+  vertical-align: bottom;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+a[href^="tel"]{
+  color:inherit;
+}
+
+/* clearfix */
+.clearfix {
+  min-height: 1px;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.sp {
+  @include min {
+    display: none !important;
+  }
+}
+
+.pc {
+  @include max {
+    display: none !important;
+  }
+}
+

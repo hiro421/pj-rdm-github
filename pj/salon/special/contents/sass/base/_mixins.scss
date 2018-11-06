@@ -1,0 +1,55 @@
+// ==============================
+//
+// MediaQuery
+//
+// ==============================
+
+@mixin min($break-point:$pc_min) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin max($break-point:$sp_max) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+
+//sp以上pc以下の調整用
+
+@mixin min-max($break-point-min:$pc_min, $break-point-max:$pc_width) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+@mixin max-min($break-point-max:$tab_max,$break-point-min:$pc_min) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+@mixin last-mb0() {
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin metrics {
+  font-feature-settings: "palt";
+}
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin text_hide() {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
