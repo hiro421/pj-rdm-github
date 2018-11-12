@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- <script id="flamingo-switcher" type="text/javascript" src="/app/js/flamingo/flamingo-switcher.js" charset="utf-8"></script> -->
+<title>注目コンテンツ｜ピーチ・ジョン</title>
+<meta name="description" content="ピーチ･ジョンWEB会員のログインや新規登録はこちらから。情報満載のメールマガジンにも合わせてご登録いただけます。" />
+<meta name="keywords" content="PEACH JOHN,ピーチジョン,通販,カタログ,店舗" />
+<link rel="shortcut icon" href="/common/front/img/al/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="/common/front/img/al/favicon.ico" type="image/vnd.microsoft.icon" />
+<!-- Rtoaster Area Start -->
+<script type="text/javascript" src="//js.rtoaster.jp/Rtoaster.js"></script>
+<script type="text/javascript" src="//cdn.optimizely.com/js/1252940166.js"></script>
+<link rel="stylesheet" type="text/css" href="/common/front/css/Rtoaster.css" />
+<script type="text/javascript" src="/common/front/js/PrepRtoaster.js"></script>
+<script type="text/javascript">
+Rtoaster.init(PJRtoasterID);
+Rtoaster.track();
+</script>
+<!-- Rtoaster Area End -->
+<!-- Common Import Start -->
+<script type="text/javascript" src="/app/js/lib/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/lib/lib.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/lib/modernizr.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/lib/jquery.panzoom.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/common/CommonParams.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/common/CommonUtils.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/common/common.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/common/cliplist.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="/app/css/common/normalize.css">
+<link rel="stylesheet" type="text/css" href="/app/css/common/main.css">
+<link rel="stylesheet" type="text/css" href="/app/css/common/common.css">
+<link rel="stylesheet" type="text/css" href="/app/css/common/common2.css">
+<!-- Common Import End -->
+<!-- Page Import Start -->
+<script type="text/javascript" src="/app/js/lib/mixitup.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/lib/mixitup-multifilter.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/lib/mixitup-pagination.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/lib/lazyload.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/app/js/lib/papaparse.min.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="/app/css/floor/contents.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<!-- CMS JavaScript Component -->
+<script type="text/javascript" src="/app/js/static/FloorCMS.js" charset="utf-8"></script>
+<!-- Page Import End -->
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper">
+<!-- #header -->
+<div id="CommonHeader"></div>
+<!-- #header -->
+<script type="text/javascript">
+/** header.lbi */
+CommonUtils.loadContents("/app/lbi/common/header.lbi", function (contents) {
+    jQuery("#CommonHeader").append(contents);
+});
+/** sp-menu.lbi */
+CommonUtils.loadContents("/app/lbi/common/sp-menu.lbi", function (contents) {
+    jQuery("#CommonHeader").append(contents);
+});
+</script>
+<!--#breadcrumbs-->
+<div id="breadcrumbs">
+    <ul class="clearfix" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <li class="home"><a href="https://www.peachjohn.co.jp/" itemprop="url"> ホーム </a></li>
+        <li><a href="https://www.peachjohn.co.jp/pj/special/conents/" itemprop="url"> TREND CONTENTS </a></li>
+    </ul>
+</div>
+<!--#breadcrumbs-->
+<!--#contents-->
+<div id="contents" class="clearfix">
+    <div class="c-header-title u-text-center">
+        <h1 class="c-header-title__main">TREND CONTENTS</h1>
+        <p class="c-header-title__sub">注目コンテンツをチェック！</p>
+    </div>
+    <div class="l-main">
+        <div class="p-l-main__box--width l-main__box">
+            <!-- Header Banner Start -->
+            <!--<div class="c-banner__wide">
+                <a href=""><img src="/pj/special/contents/img/banner01.jpg" alt="" /></a>
+            </div>-->
+            <!-- Header Banner End -->
+            <h3 class="p-header-title--margin c-header-title u-text-center" id="dataFilterTitle" style="display:none;">絞り込み</h3>
+            <div class="mixitup-sandbox_menu-groups">
+                <div class="c-sort_block" id="categoryPanel" style="display:none;">
+                    <div class="c-sort_block__title">CATEGORY</div>
+                    <div class="c-sort_block__list" id="categoryList" data-filter-group></div>
+                </div>
+                <div class="c-sort_block last" id="brandPanel" style="display:none;">
+                    <div class="c-sort_block__title">BRAND</div>
+                    <div class="c-sort_block__list" id="brandList" data-filter-group></div>
+                </div>
+            </div>
+            <div class="p-item_list" id="contentsPanel" style="display:none;">
+                <!-- Top Pagenation Start -->
+                <div class="pagenationArea">
+                    <div class="pagenation">
+                        <div class="mixitup-page-list"></div>
+                        <div class="mixitup-page-stats"></div>
+                    </div>
+                </div>
+                <!-- Top Pagenation End -->
+                <!-- Contents List Start -->
+                <ul id="contentsList"></ul>
+                <!-- Contents List End -->
+                <!-- Bottom Pagenation Start -->
+                <div class="pagenationArea">
+                    <div class="pagenation">
+                        <div class="mixitup-page-list"></div>
+                        <div class="mixitup-page-stats"></div>
+                    </div>
+                </div>
+                <!-- Bottom Pagenation Start -->
+            </div>
+        </div>
+    </div>
+</div>
+<!--#contents-->
+<!-- #footer -->
+<div id="CommonFooter"></div>
+<!-- #footer -->
+<script type="text/javascript">
+/** footer.lbi */
+CommonUtils.loadContents("/app/lbi/common/footer.lbi", function (contents) {
+    jQuery("#CommonFooter").html(contents);
+});
+</script>
+
+<script type="text/javascript">
+var pageData = {
+"navigation": {
+"customerID":"",
+"device":"pc",
+"page_type":"other"
+}};
+</script> 
+<script type="text/javascript">
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.yjtag.jp/tag.js#site=wafn7h2";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
+</script>
+<noscript>
+<iframe src="//b.yjtag.jp/iframe?c=wafn7h2" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
+
+<!-- SiteCatalyst code version: H.15.1.
+Copyright 1997-2008 Omniture, Inc. More info available at
+http://www.omniture.com --> 
+<script language="JavaScript" type="text/javascript" src="//www.peachjohn.co.jp/common/front/js/s_code.js"></script> 
+<script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script> 
+
+
+</div>
+<a href="javascript:void(0);" id="back-top" style="display:none;"><span></span></a> 
+
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+#contents {
+  width: 984px;
+  margin: 0 auto;
+  -webkit-transform: translate3d(0, 0, 0px);
+  transform: translate3d(0, 0, 0px);
+}
+
+#contents.widthFull {
+  width: 100%;
+}
+
+#breadcrumbs {
+  width: 100%;
+  background-color: #eee;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "MS Pゴシック", "MS P Gothic", sans-serif;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+#breadcrumbs ul {
+  width: 984px;
+  margin: 0 auto;
+}
+
+#breadcrumbs ul li {
+  float: left;
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 4px 0;
+  text-align: left;
+}
+
+#breadcrumbs ul li.home a {
+  background: url(/app/img/common/ico_home.svg) no-repeat left center;
+  padding-left: 20px;
+  background-size: 17px 15px;
+  width: 17px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#breadcrumbs ul li:last-child:after {
+  content: "";
+}
+
+#breadcrumbs ul li:after {
+  content: ">";
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.8em;
+}
+
+#breadcrumbs ul li a {
+  display: inline-block;
+  color: #333;
+}
+
+#breadcrumbs ul li span {
+  vertical-align: middle;
+}
+
+/* ===================================================================================================================================================
+	
+   sp
+   
+   =================================================================================================================================================== */
+@media screen and (max-width: 768px) {
+  #contents {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #breadcrumbs {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  #breadcrumbs ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4.6875%;
+  }
+  #breadcrumbs ul li {
+    font-size: 1rem;
+  }
+  #breadcrumbs ul li.home a {
+    background: none;
+    padding-left: 14px;
+    position: relative;
+    height: 11px;
+  }
+  #breadcrumbs ul li.home a:before {
+    content: "";
+    background: url(/app/img/common/ico_home.svg) no-repeat left center;
+    background-size: 14px 11px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 14px;
+    height: 11px;
+  }
+  #breadcrumbs ul li:last-child:after {
+    content: "";
+    display: none;
+  }
+  #breadcrumbs ul li:after {
+    content: ">";
+  }
+  #breadcrumbs ul li a {
+    display: inline-block;
+  }
+}

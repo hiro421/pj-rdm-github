@@ -46,6 +46,7 @@ FloorCMS.prototype = {
         "/pj/fashion/"                      : ["FASHION"],
         "/pj/beauty/"                       : ["BEAUTY"],
         "/pj/sale/"                         : ["CAMPAIGN"],
+        "/pj/salon/special/contents/"       : ["SALON"],
         "/pj/special/contents/"             : ["BRA","INNER","ROOMWEAR","FASHION","CAMPAIGN","BEAUTY"]
         ,"/webshop/Ming_FloorCMS_TEST.html" : ["BRA"]
     },
