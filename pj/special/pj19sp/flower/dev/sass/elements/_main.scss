@@ -1,0 +1,701 @@
+#flower19{
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, -apple-system, BlinkMacSystemFont,"Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  background-color: rgb(255, 246, 245);
+  color: rgb(87, 68, 62);
+  @include PC {min-width: 1000px;}
+  .header{
+    text-align: center;
+    
+    background-color: #fff;
+    @include PC {padding: 34px 0;}
+    @include SP {
+      line-height: 1em;
+      padding: 13px 0 14px;
+      img{
+        width: 123px;
+      }
+    }
+  }
+  .head-img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    @include PC{
+      width: 100%;
+      height: 440px;
+      background: url(../img/head_bg.png) no-repeat center center;
+      background-size: cover;
+    }
+    .head_txt01{
+      @include PC{
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .lead-top{
+    text-align: center;
+    @include PC{
+      padding: 85px 0 100px;
+    }
+  }
+  .main{
+    text-align: center;
+  }
+  .campaign_head{
+    padding: 95px 0;
+  }
+  .campaign_head_wrap{
+    text-align: center;
+    background-color: #fcf6f5;
+    position: relative;
+    @include PC{
+      width: 720px;
+      margin: auto;
+      border: 16px solid #f1cbc9;
+      padding: 45px 0 16px;
+    }
+    .title{
+      position: absolute;
+      left: -40px;
+      top: -55px;
+    }
+    .txt01{
+      @include PC{
+        margin-bottom: 23px;
+      }
+    }
+    .pic{
+      margin-bottom: 10px;
+    }
+    .txt{
+      @include PC{
+        font-size: 18px;
+        margin-bottom: 30px;
+        letter-spacing: 0.05em;
+        line-height: 1.7;
+      }
+    }
+  }
+  .sec1{
+    @include PC {
+      padding-top: 135px;
+      padding-bottom: 130px;
+    }
+    @include SP {padding-bottom: 50px;}
+    h2{
+      position: absolute;
+      left: -60px;
+      top: -60px;
+      z-index: 2;
+    }
+    .slideWrap{
+      width: 603px; 
+      height: 643px;
+      box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+      overflow: hidden;
+      margin-bottom: 43px;
+    }
+    .slide{
+      @include PC {
+        width: 619px; 
+        height: 654px;
+        margin-bottom: 30px;
+      }
+      @include SP {width: 51.56%;}
+    }
+    .para{
+      @include PC{
+        overflow: hidden;
+        width: 749px;
+        height: 424px;
+        margin-left: auto;
+        margin-bottom: 106px;
+        position: relative;
+        box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+      }
+      img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: auto;
+        max-width: initial;
+      }
+    }
+    .leadWrap{
+      position: absolute;
+      @include PC{
+        left: 84px;
+        top: 973px;
+        width: 268px;
+      }
+      p{
+        margin-bottom: 25px;
+      }
+    }
+    .itemWrap{
+      display: flex;
+      margin: auto;
+      align-items: baseline;
+      margin: auto;
+      @include PC{
+        padding-left: 124px;
+      }
+      .item{
+        text-align: center;
+        &:nth-child(1){
+          margin-right: 70px;
+        }
+        .pic{
+          margin-bottom: 20px;
+        }
+        .info{
+          font-size: 15px;
+          margin-bottom: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 4em;
+          line-height: 1.5;
+        }
+      }
+    }
+    .imgWrap{
+      @include SP {margin-top: 25px;}
+      .rightPos01{
+        position: absolute;
+        right: 0;
+        @include PC {top: 380px;}
+        @include SP {top: 23%;}
+      }
+      .leftPos01{
+        @include PC {margin: 90px 0 0 70px;}
+        @include SP {
+          width: 35%;
+          margin: 6% 0 0 6%;
+        }
+      }
+    }
+    .cartWrap{
+      @include PC {width: 872px;}
+      @include SP {
+        margin-top: 40px;
+      }
+      .itemImg{
+        margin-bottom: 4%;
+        @include SP {width: 90%;}
+      }
+    }
+  }
+  .sec2{
+    @include PC {
+      padding-top: 135px;
+      padding-bottom: 130px;
+    }
+    @include SP {padding-bottom: 50px;}
+    h2{
+      position: absolute;
+      right: 70px;
+      top: -60px;
+      z-index: 2;
+    }
+    .slideWrap{
+      width: 556px; 
+      height: 682px;
+      box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+      overflow: hidden;
+      margin-bottom: 0;
+      margin-left: 124px;
+    }
+    .slide{
+      @include PC {
+        width: 572px; 
+        height: 694px;
+        margin-bottom: 30px;
+      }
+      @include SP {width: 51.56%;}
+    }
+    .para{
+      @include PC{
+        overflow: hidden;
+        width: 304px;
+        height: 304px;
+        margin-top: -40px;
+        margin-left: auto;
+        margin-right: 72px;
+        position: relative;
+        box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+      }
+      img{
+        position: absolute;
+        left: -40px;
+        top: 0;
+        width: auto;
+        max-width: initial;
+      }
+    }
+    .leadWrap{
+      position: absolute;
+      @include PC{
+        right: 136px;
+        top: 100px;
+        width: 240px;
+      }
+      p{
+        margin-bottom: 25px;
+      }
+    }
+    .itemImg{
+      @include PC{
+        margin-top: 30px;
+        justify-content: center;
+      }
+      
+    }
+    .itemWrap{
+      display: flex;
+      margin: auto;
+      align-items: baseline;
+      margin: auto;
+      @include PC{
+        padding-left: 124px;
+      }
+      .item{
+        text-align: center;
+        &:nth-child(1){
+          margin-right: 70px;
+        }
+        .pic{
+          margin-bottom: 20px;
+        }
+        .info{
+          font-size: 15px;
+          margin-bottom: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 4em;
+          line-height: 1.5;
+        }
+      }
+    }
+    .imgWrap{
+      @include SP {margin-top: 25px;}
+      .rightPos01{
+        position: absolute;
+        right: 0;
+        @include PC {top: 380px;}
+        @include SP {top: 23%;}
+      }
+      .leftPos01{
+        @include PC {margin: 90px 0 0 70px;}
+        @include SP {
+          width: 35%;
+          margin: 6% 0 0 6%;
+        }
+      }
+    }
+    .cartWrap{
+      @include PC {width: 872px;}
+      @include SP {
+        margin-top: 40px;
+      }
+      .itemImg{
+        margin-bottom: 4%;
+        @include SP {width: 90%;}
+      }
+    }
+  }
+  .sec3{
+    @include PC {
+      padding-top: 135px;
+      padding-bottom: 130px;
+    }
+    @include SP {padding-bottom: 50px;}
+    h2{
+      position: absolute;
+      left: 0px;
+      top: -60px;
+      z-index: 2;
+    }
+    .slideWrap{
+      width: 100%; 
+      height: 518px;
+      box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+      overflow: hidden;
+      margin-bottom: 43px;
+    }
+    .slide{
+      @include PC {
+        width: 900px; 
+      }
+      @include SP {width: 51.56%;}
+    }
+    .para{
+      @include PC{
+        overflow: hidden;
+        width: 368px;
+        height: 424px;
+        margin-left: 41px;
+        position: relative;
+        box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+      }
+      img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: auto;
+        max-width: initial;
+      }
+    }
+    .leadWrap{
+      position: absolute;
+      @include PC{
+        right: 87px;
+        top: 633px;
+        width: 240px;
+      }
+      p{
+        margin-bottom: 25px;
+      }
+    }
+    .itemInfo{
+      flex-direction: column;
+      position: absolute;
+      left: 40px;
+      bottom: 20px;
+    }
+    .itemSpec{
+      @include PC{
+        margin-bottom: 10px;
+      }
+    }
+    .itemImg{
+      @include PC{
+        margin-top: 20px;
+        justify-content: center;
+      }
+      li{
+        &:nth-child(1){
+          margin-right: -220px;
+        }
+      }
+    }
+    .itemWrap{
+      display: flex;
+      margin: auto;
+      align-items: baseline;
+      margin: auto;
+      @include PC{
+        padding-left: 124px;
+      }
+      .item{
+        text-align: center;
+        &:nth-child(1){
+          margin-right: 70px;
+        }
+        .pic{
+          margin-bottom: 20px;
+        }
+        .info{
+          font-size: 15px;
+          margin-bottom: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 4em;
+          line-height: 1.5;
+        }
+      }
+    }
+    .imgWrap{
+      @include SP {margin-top: 25px;}
+      .rightPos01{
+        position: absolute;
+        right: 0;
+        @include PC {top: 380px;}
+        @include SP {top: 23%;}
+      }
+      .leftPos01{
+        @include PC {margin: 90px 0 0 70px;}
+        @include SP {
+          width: 35%;
+          margin: 6% 0 0 6%;
+        }
+      }
+    }
+    .cartWrap{
+      position: relative;
+      @include PC {width: 872px;}
+      @include SP {
+        margin-top: 40px;
+      }
+      .itemImg{
+        margin-bottom: 4%;
+        @include SP {width: 90%;}
+      }
+    }
+  }
+  .sec4{
+    @include PC {
+      padding-top: 135px;
+      padding-bottom: 160px;
+    }
+    @include SP {padding-bottom: 50px;}
+    h2{
+      position: absolute;
+      right: 70px;
+      top: -60px;
+      z-index: 2;
+    }
+    .slideWrap{
+      width: 556px; 
+      height: 682px;
+      box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+      overflow: hidden;
+      margin-bottom: 0;
+      margin-left: 124px;
+    }
+    .slide{
+      @include PC {
+        width: 572px; 
+        height: 694px;
+        margin-bottom: 30px;
+      }
+      @include SP {width: 51.56%;}
+    }
+    .para{
+      @include PC{
+        overflow: hidden;
+        width: 304px;
+        height: 304px;
+        margin-top: -40px;
+        margin-left: auto;
+        margin-right: 72px;
+        position: relative;
+        box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+      }
+      img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 320px;
+        max-width: initial;
+      }
+    }
+    .leadWrap{
+      position: absolute;
+      @include PC{
+        left: 88px;
+        top: 143px;
+        width: 261px;
+      }
+      p{
+        margin-bottom: 25px;
+      }
+    }
+    .itemImg{
+      @include PC{
+        margin-top: 30px;
+        justify-content: center;
+      }
+      
+    }
+    .itemWrap{
+      display: flex;
+      margin: auto;
+      align-items: baseline;
+      margin: auto;
+      @include PC{
+        padding-left: 124px;
+      }
+      .item{
+        text-align: center;
+        &:nth-child(1){
+          margin-right: 70px;
+        }
+        .pic{
+          margin-bottom: 20px;
+        }
+        .info{
+          font-size: 15px;
+          margin-bottom: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 4em;
+          line-height: 1.5;
+        }
+      }
+    }
+    .imgWrap{
+      @include SP {margin-top: 25px;}
+      .rightPos01{
+        position: absolute;
+        right: 0;
+        @include PC {top: 380px;}
+        @include SP {top: 23%;}
+      }
+      .leftPos01{
+        @include PC {margin: 90px 0 0 70px;}
+        @include SP {
+          width: 35%;
+          margin: 6% 0 0 6%;
+        }
+      }
+    }
+    .cartWrap{
+      @include PC {width: 872px;}
+      @include SP {
+        margin-top: 40px;
+      }
+      .itemImg{
+        margin-bottom: 4%;
+        @include SP {width: 90%;}
+      }
+    }
+  }
+  .btn_all{
+    margin-top: 145px;
+    text-align: center;
+  }
+  .campaign_foot{
+    @include PC {padding: 80px 0 40px 0;}
+    @include SP {padding: 80px 0 30px 0;}
+  }
+  .campaign_block{
+    background-color: #fcf6f5;
+    position: relative;
+    text-align: center;
+    @include PC{
+      width: 720px;
+      margin: 0 auto 40px;
+      padding: 80px 45px 45px;
+    }
+    .title{
+      position: absolute;
+      left: -40px;
+      top: -45px;
+    }
+    .txt01{
+      @include PC{
+        margin-bottom: 30px;
+      }
+    }
+    .txt02{
+      text-align: left;
+      @include PC{
+        font-size: 17px;
+        margin-bottom: 30px;
+        letter-spacing: 0.05em;
+        line-height: 1.7;
+      }
+    }
+    .pic{
+      margin-bottom: 30px;
+    }
+    .txt{
+      text-align: left;
+      @include PC{
+        font-size: 17px;
+        margin-bottom: 20px;
+        letter-spacing: 0.05em;
+        line-height: 1.7;
+      }
+      a{
+        color: #d6636c;
+      }
+    }
+    .list{
+      li{
+        position: relative;
+        padding-left: 1.2em;
+        &:before{
+          content: "・";
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+    .btn{
+      margin: 35px auto 40px;
+      display: block;
+    }
+  }
+  .campaign_block01{
+    padding-top: 85px;
+  }
+  .campaign_block02{
+    padding-top: 45px;
+  }
+  .footer{
+    text-align: center;
+    @include PC {padding: 90px 0 65px;}
+    @include SP {
+      text-align: center;
+      padding: 20px 0 10px;
+    }
+    p{
+      @include SP {
+        margin: auto;       
+      }
+      &.footlogo{
+        @include PC {margin-bottom: 60px;}
+        @include SP {
+          width: 38.43%;
+          line-height: 1em;
+          margin-bottom: 20px;
+        }
+      }
+      &:last-child{
+        @include SP {
+          width: 51.56%;
+          line-height: .6em;
+        }
+      }
+    }
+    .sns{
+      margin: auto;
+      overflow: hidden;
+      color: #ba5e65;
+      @include PC {
+        width: 180px;
+        font-size: 23px;
+        margin-bottom: 95px;
+      }
+      @include SP {
+        width: 140px;
+        font-size: 12px;
+        margin-top: 70px;
+      }
+      dt{
+        @include PC {margin-bottom: 20px;}
+        @include SP {margin-bottom: 10px;}
+      }
+      dd{
+        float: left;
+        @include PC {margin-right: 42px;}
+        @include SP {
+          width: 25%;
+          margin-right: 12%;
+        }
+        &:nth-child(3){
+          @include PC{
+            margin-right: 0;
+          }
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+        &:first-child{
+          @include SP {margin-top: 4px;}
+        }
+      }
+      // display: block;
+    }
+  }
+}

@@ -1,0 +1,1277 @@
+@charset "UTF-8";
+/* -------------------------
+
+main.cssに記述
+
+PCのみ表示...... class="pc"
+SPのみ表示...... class="sp"
+
+----------------------------*/
+#main {
+  overflow: hidden;
+}
+#roomwear p {
+  font-family: "游ゴシック",'Yu Gothic',YuGothic,"ＭＳ ゴシック",sans-serif;
+}
+#roomwear p.h2_text,#roomwear p.lead {
+  color: #b14048;
+}
+p.product_text {
+  font-size: 16px;
+  line-height: 30px;
+}
+p.product_text a {
+  color: #333333;
+}
+
+#roomwear img.roomwear_pc,
+#roomwear br.roomwear_pc {
+  display: block;
+}
+#roomwear img.roomwear_sp,
+#roomwear br.roomwear_sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  #main {
+    padding: 0;
+  }
+  body {
+    font-size:62.5%;
+  }
+  p.product_text {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+  #roomwear img.roomwear_pc,
+  #roomwear br.roomwear_pc {
+    display: none;
+  }
+  #roomwear img.roomwear_sp,
+  #roomwear br.roomwear_sp {
+    display: block;
+  }
+  div.icon_ladies {
+    width: 16%;
+    height: 9%;
+  }
+  div.icon_mens {
+    width: 14.5%;
+    height: 10%;
+  }
+  #roomwear li.cart a img {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+  }
+}
+
+/*nav
+----------------------------*/
+#roomwear div.nav {
+  margin-top: 24px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #d6d6d6;
+}
+#roomwear div.nav ul {
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+#roomwear .nav li {
+  margin: 0 70px;
+}
+#roomwear .nav li:after {
+  content: "";
+  background-color: #d6d6d6;
+  width: 1px;
+  height: 75px;
+  position: absolute;
+  margin: 12px 0 0 70px;
+}
+#roomwear .nav li:last-child:after {
+  content: none;
+}
+
+@media screen and (max-width: 768px){
+  #roomwear div.nav {
+    margin-top: 16px;
+    display: block;
+    padding-bottom: 15px;
+  }
+  #roomwear div.nav ul {
+    margin: 0;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  #roomwear .nav li {
+    margin: 0;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    border-right: solid 1px #d6d6d6;
+  }
+  #roomwear .nav li a {
+    width: 100%;
+  }
+  #roomwear .nav li img {
+    height: auto;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  #roomwear .nav li img.nav1 {
+    width: 43%;
+  }
+  #roomwear .nav li img.nav2 {
+    width: 50%;
+  }
+  #roomwear .nav li img.nav3 {
+    width: 55%;
+  }
+  #roomwear .nav li:after {
+    content: none;
+  }
+}
+/*h2
+----------------------------*/
+#lovely div.h2 {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  vertical-align: middle;
+  margin: 75px 0 20px 40px;
+}
+#heroine div.h2,
+#feminine div.h2 {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  vertical-align: middle;
+  margin: 75px 0 38px 40px;
+}
+#roomwear p.h2_text {
+  font-size: 32px;
+  line-height: 42px;
+  margin: auto 0 auto 38px;
+}
+
+@media screen and (max-width: 768px){
+  #lovely div.h2,
+  #heroine div.h2,
+  #feminine div.h2 {
+    margin: 27px 0 23px 3%;
+  }
+  #roomwear #lovely h2.h2_title img {
+    width: 60%;
+    height: auto;
+  }
+  #roomwear #heroine h2.h2_title img {
+    width: 60%;
+    height: auto;
+  }
+  #roomwear #feminine h2.h2_title img {
+    width: 60%;
+    height: auto;
+  }
+  #roomwear p.h2_text {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: auto 0 auto -7%;
+  }
+}
+
+/*lead
+----------------------------*/
+#roomwear p.lead {
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px){
+  #roomwear p.lead {
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  }
+}
+
+/*1 Lovely
+----------------------------*/
+section#lovely {
+  background-image: url(../img/star01.png);
+  background-repeat: no-repeat;
+  background-position: 0px 26px;
+  margin-top: -1px;
+  padding-top: 1px;
+}
+@media screen and (max-width: 768px){
+  section#lovely{
+    background-image: url(../img/star01_sp.png);
+    background-position: 0px -88px;
+    background-size: 100% auto;
+    margin-top: -30px;
+    padding-top: 30px;
+  }
+}
+
+/*whiply
+----------------------------*/
+
+.whiply div.block {
+  position: relative;
+   width: 100%;
+}
+.whiply div.block.block01 {
+  margin-bottom: 26px;
+}
+.whiply div.block.block02 {
+  margin-bottom: 8px;
+}
+.whiply div.block.block03 {
+  margin-bottom: 89px;
+}
+.whiply .block.block02 div,
+.whiply .block.block03 div {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.whiply .block.block02 div.product_left {
+  margin:auto 65px auto 67px;
+  display: block;
+}
+.whiply .block.block02 div.product_right {
+  margin-top: 74px;
+  display: block;
+}
+.whiply .block.block03 div.product_left {
+  margin: 32px 65px 0 69px;
+  display: block;
+}
+.whiply img.whiply_ladies {
+  position: relative;
+}
+.whiply div.icon_ladies {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+.whiply div.icon_ladies img {
+  width: 94px;
+  height: 34px;
+}
+.whiply div.icon_mens {
+  position: absolute;
+  top: 20px;
+  left: 405px;
+}
+.whiply div.icon_mens img {
+  width: 77px;
+  height: 34px;
+}
+.whiply p.lead {
+  position: absolute;
+  top:43px;
+  left: 65px;
+}
+.whiply div div.btnArea {
+  margin: auto 0;
+}
+.whiply .btnArea p{
+  margin-bottom: 26px;
+}
+.whiply .btnArea ul li.cart {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+  .whiply div.block.block01 {
+    margin-bottom: 80px;
+  }
+  .whiply div.block.block02 {
+    margin-bottom: 20px;
+    padding: 0 6% 0 3%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  .whiply div.block.block03 {
+    margin-bottom: 70px;
+    padding: 0 3% 0 6%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  .whiply .block.block02 div.product_left {
+    margin: auto 28px auto 0;
+  }
+  .whiply .block.block02 div.product_right {
+    margin: auto 0;
+  }
+  .whiply .block.block03 div.product_left {
+    margin: auto 8px auto 0;
+  }
+  .whiply div.icon_ladies {
+    top: -7%;
+    left: 3%;
+  }
+  .whiply div.icon_mens {
+    top: -15%;
+    right: 3%;
+    left: auto;
+  }
+  .whiply p.lead {
+    position: absolute;
+    top: auto;
+    bottom: -13%;
+    left: auto;
+    right: 4%;
+  }
+  .whiply div div.btnArea {
+    margin: auto 0;
+  }
+  .whiply .btnArea p{
+    margin-bottom: 14px;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+  .whiply .btnArea ul li.cart {
+    margin-bottom: 10px;
+  }
+}
+
+/*flannel_red
+----------------------------*/
+
+.flannel_red div.block {
+  position: relative;
+  width: 100%;
+}
+.flannel_red div.block.block01 {
+  margin-bottom: 26px;
+}
+.flannel_red div.block.block02 {
+  margin-bottom: 46px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+.flannel_red div.mens {
+  margin-left: 91px;
+}
+.flannel_red div.icon_ladies,
+.flannel_red div.icon_mens {
+  margin-bottom: 20px;
+}
+.flannel_red div.icon_ladies img {
+  width: 94px;
+  height: 34px;
+}
+.flannel_red div.icon_mens img {
+  width: 77px;
+  height: 34px;
+}
+.flannel_red p.lead {
+  position: absolute;
+  top:67px;
+  left: 23px;
+}
+.flannel_red div.btnArea {
+  margin: auto 0;
+}
+.flannel_red .btnArea p{
+  margin-bottom: 26px;
+}
+.flannel_red .btnArea ul li.cart {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+  section.flannel_red{
+    background-image: url(../img/star02_sp.png);
+    background-position: 0px 0px;
+    background-size:100% auto;
+    margin-top: -30px;
+    padding-top: 30px;
+  }
+  .flannel_red div.block {
+    position: relative;
+    width: 100%;
+  }
+  .flannel_red div.block.block01 {
+    margin-bottom: 26px;
+  }
+  .flannel_red div.block.block02 {
+    margin-bottom: 46px;
+    padding: 0 7%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+  }
+  .flannel_red div.mens {
+    margin-left: 24px;
+  }
+  .flannel_red div.icon_ladies {
+    width: 33%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .flannel_red div.icon_mens {
+    width: 28%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .flannel_red div.icon_ladies img {
+    width: 94px;
+    height: 34px;
+  }
+  .flannel_red div.icon_mens img {
+    width: 77px;
+    height: 34px;
+  }
+  .flannel_red p.lead {
+    position: absolute;
+    top: -12%;
+    left: 4%;
+  }
+  .flannel_red div.btnArea {
+    margin: auto 0;
+  }
+  .flannel_red .btnArea p{
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+  .flannel_red .btnArea ul li.cart {
+    margin-bottom: 10px;
+  }
+}
+
+/*2 heroine
+----------------------------*/
+section#heroine {
+  background-image: url(../img/star02.png);
+  background-repeat: no-repeat;
+   background-position: 0px 50px;
+  margin-top: -1px;
+  padding-top: 1px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px){
+  section#heroine {
+    background-image: url(../img/star03_sp.png);
+    background-position: 0 -2%;
+    background-size:100% auto;
+    margin-top: -30px;
+    padding-top: 30px;
+  }
+}
+
+/*fleece_pajamas
+----------------------------*/
+
+.fleece_pajamas div.block {
+  position: relative;
+   width: 100%;
+}
+.fleece_pajamas div.block.block01 {
+  margin-bottom: 60px;
+}
+.fleece_pajamas div.block.block02 {
+  margin-bottom: 8px;
+  position: absolute;
+  top: 472px;
+  left: 470px;
+}
+.fleece_pajamas div.block.block03 {
+  margin-bottom: 89px;
+}
+.fleece_pajamas .block.block03 div {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.fleece_pajamas .block.block02 div.product {
+  margin-bottom: 30px;
+}
+.fleece_pajamas .block.block02 div.product_right {
+  display: block;
+}
+.fleece_pajamas .block.block03 div.product_left {
+  margin:auto 65px auto 110px;
+}
+.fleece_pajamas .block.block03 div.product_right {
+  margin-top: 45px;
+  display: block;
+}
+.fleece_pajamas img.fleece_pajamas_ladies {
+  position: relative;
+}
+.fleece_pajamas div.icon_ladies {
+  position: absolute;
+  top: -20px;
+  left: 190px;
+}
+.fleece_pajamas div.icon_ladies img {
+  width: 94px;
+  height: 34px;
+}
+.fleece_pajamas div.icon_mens {
+  position: absolute;
+  top: 36px;
+  left: 86px;
+}
+.fleece_pajamas div.icon_mens img {
+  width: 77px;
+  height: 34px;
+}
+.fleece_pajamas p.lead {
+  position: absolute;
+  top:75px;
+  right: 65px;
+  text-align: right;
+}
+.fleece_pajamas div.btnArea {
+  margin: auto 0;
+}
+.fleece_pajamas .btnArea p{
+  margin-bottom: 26px;
+}
+.fleece_pajamas .btnArea ul li.cart {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+  .fleece_pajamas div.block.block01 {
+    margin-bottom: 40px;
+  }
+  .fleece_pajamas div.block.block02 {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0 6% 0 7%;
+    top: auto;
+    left: auto;
+  }
+  .fleece_pajamas div.block.block02 div {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  .fleece_pajamas div.block.block03 {
+    margin-bottom: 85px;
+    padding: 0 6% 0 4%;
+  }
+  .fleece_pajamas .block.block02 div.product {
+    margin: auto 6% auto 0;
+  }
+  .fleece_pajamas .block.block03 div.product_left {
+    margin: auto 0 auto 8%;
+    -ms-flex-order:2;
+    -webkit-order:2;
+    order: 2;
+  }
+  .fleece_pajamas .block.block03 div.product_right {
+    margin: auto 0;
+  }
+  .fleece_pajamas div.icon_ladies {
+    height: 16%;
+    top: -20%;
+    left: 3%;
+  }
+  .fleece_pajamas div.icon_ladies img {
+    width: 94px;
+    height: 34px;
+  }
+  .fleece_pajamas div.icon_mens {
+    top: 4%;
+    right: 36%;
+    left: auto;
+  }
+  .fleece_pajamas div.icon_mens img {
+    width: 77px;
+    height: 34px;
+  }
+  .fleece_pajamas p.lead {
+    position: absolute;
+    top:auto;
+    bottom: 10%;
+    right: 6%;
+    text-align: right;
+  }
+  .fleece_pajamas div.btnArea {
+    order: 1;
+    margin: auto 0;
+  }
+  .fleece_pajamas .btnArea p{
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+  .fleece_pajamas .btnArea ul li.cart {
+    margin-bottom: 10px;
+  }
+}
+
+/*flannel
+----------------------------*/
+
+.flannel div.block {
+  position: relative;
+  width: 100%;
+}
+.flannel div.block.block01 {
+  margin-bottom: 34px;
+}
+.flannel div.icon {
+  position: relative;
+}
+.flannel div.block.block02 {
+  margin-bottom: 93px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+.flannel div.product_flannel {
+  margin-bottom:32px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.flannel div.ladies {
+  margin-left: 52px;
+}
+.flannel div.icon_ladies img {
+  position: absolute;
+  top: 190px;
+  right: 30px;
+}
+.flannel div.icon_mens img {
+  position: absolute;
+  width: 77px;
+  height: 34px;
+  top: 40px;
+  left: 80px;
+}
+.flannel p.lead {
+  position: absolute;
+  top: 107px;
+  left: 50px;
+}
+.flannel div.btnArea {
+  margin: auto 0;
+}
+.flannel .btnArea p{
+  margin-bottom: 26px;
+}
+.flannel .btnArea ul li.cart {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+  section.flannel {
+    background-image: url(../img/star04_sp.png);
+    background-position: 0px -23px;
+    background-size: 100% auto;
+    margin-top: -70px;
+    padding-top: 70px;
+  }
+  .flannel div.block.block01 {
+    margin-bottom: 34px;
+  }
+  .flannel div.block.block02 {
+    margin-bottom: 93px;
+    padding: 0 6%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+  }
+  .flannel div.product_flannel {
+    margin-bottom:32px;
+    padding: 0 8%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+  }
+  .flannel div.ladies {
+    margin-left: 25px;
+  }
+  .flannel div.icon_ladies {
+    position: absolute;
+    bottom: -10%;
+    right: 4%;
+  }
+  .flannel div.icon_mens {
+    position: absolute;
+    top: 7%;
+    left: 3%;
+  }
+  .flannel div.icon_ladies img {
+    position: static;
+  }
+  .flannel div.icon_mens img {
+    position: static;
+  }
+  .flannel p.lead {
+    top: -14%;
+    left: 4%;
+  }
+  .flannel div.btnArea {
+    margin: auto 0;
+  }
+  .flannel .btnArea p{
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+  .flannel .btnArea ul li.cart {
+    margin-bottom: 10px;
+  }
+}
+
+/*mallyarn
+----------------------------*/
+
+.mallyarn div.block {
+  position: relative;
+   width: 100%;
+}
+.mallyarn div.block.block01 {
+  margin-bottom: 84px;
+}
+.mallyarn div.block.block02 {
+  margin-bottom: 66px;
+}
+.mallyarn div.block.block03 {
+  margin-bottom: 89px;
+}
+.mallyarn .block.block02 div,
+.mallyarn .block.block03 div {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.mallyarn .block.block02 div.product_left {
+  margin:auto 65px auto 67px;
+}
+.mallyarn .block.block02 div.product_right {
+  margin-top: 18px;
+  display: block;
+}
+.mallyarn .block.block03 div.product_left {
+  margin:2px 65px 0 69px;
+  display: block;
+}
+.mallyarn img.whiply_ladies {
+  position: relative;
+}
+.mallyarn div.icon_ladies {
+  position: absolute;
+  top: -28px;
+  left: 48px;
+}
+.mallyarn div.icon_ladies img {
+  width: 94px;
+  height: 34px;
+}
+.mallyarn div.icon_mens {
+  position: absolute;
+  top: -38px;
+  right: 0px;
+}
+.mallyarn div.icon_mens img {
+  width: 77px;
+  height: 34px;
+}
+.mallyarn p.lead {
+  position: absolute;
+  top: 88px;
+  right: 42px;
+}
+.mallyarn div.btnArea {
+  margin: auto 0;
+}
+.mallyarn .btnArea p{
+  margin-bottom: 26px;
+}
+.mallyarn .btnArea ul li.cart {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+  section.mallyarn {
+    background-image: url(../img/star05_sp.png);
+    background-position: 0px 0px;
+    background-size: 100% auto;
+    margin-top: -100px;
+    padding-top: 100px;
+  }
+  .mallyarn div.block.block01 {
+    margin-bottom: 40px;
+  }
+  .mallyarn div.block.block02 {
+    margin-bottom: 32px;
+    padding: 0 6% 0 3%;
+  }
+  .mallyarn div.block.block03 {
+    margin-bottom: 35px;
+    padding: 0 3% 0 6%;
+  }
+  .mallyarn .block.block02 div,
+  .mallyarn .block.block03 div {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  .mallyarn .block.block02 div.product_left {
+    margin:auto 16px auto 0;
+  }
+  .mallyarn .block.block02 div.product_right {
+    margin: auto 0;
+  }
+  .mallyarn .block.block03 div.product_left {
+    margin:auto 16px auto 0;
+  }
+  .mallyarn img.whiply_ladies {
+    position: relative;
+  }
+  .mallyarn div.icon_ladies {
+    height: 13%;
+    top: -16%;
+    left: 5%;
+  }
+  .mallyarn div.icon_ladies img {
+    width: 94px;
+    height: 34px;
+  }
+  .mallyarn div.icon_mens {
+    position: absolute;
+    height: 14%;
+    top: -9%;
+    right: 38%;
+  }
+  .mallyarn div.icon_mens img {
+    width: 77px;
+    height: 34px;
+  }
+  .mallyarn p.lead {
+    top: -9%;
+    right: 4%;
+  }
+  .mallyarn div.btnArea {
+    margin: auto 0;
+  }
+  .mallyarn .btnArea p{
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+  .mallyarn .btnArea ul li.cart {
+    margin-bottom: 10px;
+  }
+}
+
+/*3 Feminine
+----------------------------*/
+section#feminine {
+  background-image: url(../img/star03.png);
+  background-repeat: no-repeat;
+  background-position: 0px 20px;
+  margin-top: -1px;
+  padding-top: 1px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px){
+  section#feminine{
+  background-image: url(../img/star06_sp.png);
+  background-position: 0px 10px;
+  background-size:100% auto;
+  margin-top: -30px;
+  padding-top: 30px;
+  }
+}
+
+/*fleece_onepiece
+----------------------------*/
+
+.fleece_onepiece div.block {
+   width: 100%;
+}
+.fleece_onepiece div.block.block01 {
+  margin-bottom: 38px;
+}
+.fleece_onepiece div.block.block02 {
+  margin-bottom: 89px;
+  position: relative;
+}
+.fleece_onepiece .block.block02 div.product {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+.fleece_onepiece img.product_left{
+    margin-right: 62px;
+}
+.fleece_onepiece div.icon_ladies {
+  position: absolute;
+  top: -20px;
+  left: 190px;
+}
+.fleece_onepiece div.icon_ladies img {
+  width: 94px;
+  height: 34px;
+}
+.fleece_onepiece div.icon_mens {
+  position: absolute;
+  top: 36px;
+  left: 86px;
+}
+.fleece_onepiece div.icon_mens img {
+  width: 77px;
+  height: 34px;
+}
+.fleece_onepiece p.lead {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+}
+.fleece_onepiece div.btnArea {
+  margin: auto 0;
+}
+.fleece_onepiece .btnArea p{
+  margin: 28px 0 24px 0;
+  text-align: center;
+}
+.fleece_onepiece .btnArea ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+.fleece_onepiece .btnArea ul li.cart {
+  margin-right: 24px;
+}
+
+@media screen and (max-width: 768px){
+  .fleece_onepiece div.block.block01 {
+    margin-bottom: 74px;
+  }
+  .fleece_onepiece div.block.block02 {
+    margin-bottom: 89px;
+    padding: 0 7%;
+    position: relative;
+  }
+  .fleece_onepiece .block.block02 div.product {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .fleece_onepiece img.product_left{
+    padding-right: 8px;
+    margin-right: 0px;
+  }
+  .fleece_onepiece div.icon_ladies {
+    position: absolute;
+    top: -20px;
+    left: 190px;
+  }
+  .fleece_onepiece div.icon_ladies img {
+    width: 94px;
+    height: 34px;
+  }
+  .fleece_onepiece div.icon_mens {
+    position: absolute;
+    top: 36px;
+    left: 86px;
+  }
+  .fleece_onepiece div.icon_mens img {
+    width: 77px;
+    height: 34px;
+  }
+  .fleece_onepiece p.lead {
+    position: absolute;
+    top: -56px;
+    right: 30px;
+  }
+  .fleece_onepiece div.btnArea {
+    margin: auto 0;
+  }
+  .fleece_onepiece .btnArea p{
+    margin: 20px 0 15px 0;
+    text-align: center;
+  }
+  .fleece_onepiece .btnArea ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+  }
+  .fleece_onepiece .btnArea ul li.cart {
+    margin-right: 12px;
+  }
+}
+
+/*teddy
+----------------------------*/
+
+.teddy div.block {
+   width: 100%;
+}
+.teddy div.block.block01 {
+  margin-bottom: 38px;
+  position: relative;
+}
+.teddy div.block.block02 {
+  margin-bottom: 67px;
+  padding: 0 3%;
+}
+.teddy .block.block02 div.product {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+.teddy img.product_left{
+    margin-right: 30px;
+  }
+.teddy div.icon_ladies {
+  position: absolute;
+  top: -20px;
+  left: 190px;
+}
+.teddy div.icon_ladies img {
+  width: 94px;
+  height: 34px;
+}
+.teddy div.icon_mens {
+  position: absolute;
+  top: 36px;
+  left: 86px;
+}
+.teddy div.icon_mens img {
+  width: 77px;
+  height: 34px;
+}
+.teddy p.lead {
+  position: absolute;
+  top: 90px;
+  left: 50px;
+}
+.teddy div.btnArea {
+  margin: auto 0;
+}
+.teddy .btnArea p{
+  margin: 28px 0 24px 0;
+  text-align: center;
+}
+.teddy .btnArea ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+.teddy .btnArea ul li.cart {
+  margin-right: 24px;
+}
+
+@media screen and (max-width: 768px){
+  section.teddy {
+    background-image: url(../img/star07_sp.png);
+    background-position: 0px -35px;
+    background-size: 100% auto;
+    margin-top: -70px;
+    padding-top: 70px;
+  }
+  .teddy div.block {
+    width: 100%;
+  }
+  .teddy div.block.block01 {
+    margin-bottom: 38px;
+    position: relative;
+  }
+  .teddy div.block.block02 {
+    margin-bottom: 40px;
+  }
+  .teddy .block.block02 div.product {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 75%;
+    margin: -60px auto 0;
+  }
+  .teddy img.product_left{
+    padding-right: 16px;
+    margin-right: 0;
+  }
+  .teddy div.icon_ladies {
+    position: absolute;
+    top: -20px;
+    left: 190px;
+  }
+  .teddy div.icon_ladies img {
+    width: 94px;
+    height: 34px;
+  }
+  .teddy div.icon_mens {
+    position: absolute;
+    top: 36px;
+    left: 86px;
+  }
+  .teddy div.icon_mens img {
+    width: 77px;
+    height: 34px;
+  }
+  .teddy p.lead {
+    position: absolute;
+    top: -14%;
+    left: 5%;
+  }
+  .teddy div.btnArea {
+    margin: auto 0;
+  }
+  .teddy .btnArea p{
+    margin: 17px 0 16px 0;
+    text-align: center;
+  }
+  .teddy .btnArea ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+  }
+  .teddy .btnArea ul li.cart {
+    margin-right: 12px;
+  }
+}
+
+/*TW
+----------------------------*/
+.TW_text {
+	font-family: "游ゴシック",'Yu Gothic',YuGothic,"ＭＳ ゴシック",sans-serif;
+}
+.TW_text ul {
+	margin-top: 16px;
+}
+.TW_text ul li {
+	text-indent: -1em; 
+	padding-left: 1em; 
+}
+
+@media screen and (max-width: 768px){
+.TW_text {
+	font-size: 12px;
+	margin: 10px;
+}
+}
+
+
+
+/*more_btn
+----------------------------*/
+#roomwear div.more_btn {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+#roomwear div.gift_btn {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+  #roomwear div.more_btn {
+    margin-bottom: 24px;
+  }
+  #roomwear div.gift_btn {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+main {
+  display: block;
+}

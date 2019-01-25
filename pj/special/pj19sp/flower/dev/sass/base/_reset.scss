@@ -1,0 +1,122 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  background:transparent;
+  background-repeat: no-repeat;
+  font-weight: normal;
+}
+body {
+  // line-height:1em;
+}
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration: none;
+}
+
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted #000;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+  border-radius: 0;
+}
+::selection {
+    background:rgba(255,255,255,0);
+}
+:focus{outline: none;}
+
+a,button{
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+a:hover,button:hover{
+  outline: none;
+}
+a:disabled,button:disabled,input:disabled{pointer-events:none;}
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-repeat: no-repeat;
+  box-sizing:border-box;
+  vertical-align:inherit;
+  vertical-align: bottom;
+}
+em,i{
+  font-style: normal;
+}

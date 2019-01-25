@@ -1,0 +1,66 @@
+  
+
+  <script src="defaultjs/resize.min.js"></script>
+  <script src="defaultjs/script.min.js"></script>
+
+  <!-- ここまで -->
+<script type="text/javascript">
+var pageData = {
+"navigation": {
+"customerID":"",
+"device":"pc",
+"page_type":"other"
+}};
+</script> 
+
+<script type="text/javascript">
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.yjtag.jp/tag.js#site=wafn7h2";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
+</script>
+<noscript>
+<iframe src="//b.yjtag.jp/iframe?c=wafn7h2" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
+
+<!-- SiteCatalyst code version: H.15.1.
+Copyright 1997-2008 Omniture, Inc. More info available at
+http://www.omniture.com --> 
+<script language="JavaScript" type="text/javascript"
+src="//www.peachjohn.co.jp/common/front/js/s_code.js"></script> 
+<script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script> 
+<!--/DO NOT REMOVE/--> 
+<!-- End SiteCatalyst code version: H.15.1. --><!-- #BeginLibraryItem "/common/front/library/rtoaster/RecommendNow.lbi" --><script type="text/javascript">
+
+</script> 
+<!-- #footer -->
+<div id="RtoasterSwitcher"></div>
+<!-- #footer --> 
+<script type="text/javascript">
+/** footer.lbi */
+CommonUtils.loadContents("/app/lbi/rtoaster/rtoaster-switcher.lbi", function(contents){jQuery("#RtoasterSwitcher").html(contents);});
+</script> <!-- #EndLibraryItem --> 
+<script type="text/javascript">
+jQuery(document).ready(function(){
+    jQuery(".CallPurchaseItem").bind("click", function(){
+        var itemCode = jQuery(this).attr("itemCode");
+        var dispColorCode = jQuery(this).attr("dispColorCode");
+        var dispSkuCode = jQuery(this).attr("skuCode");
+        var btn = new Purchase({itemCode: itemCode, dispColorCode: dispColorCode, dispSkuCode: dispSkuCode});
+        btn.initializePurchasePanel();
+    });
+});
+</script>
+
+  
+
+  </body>
+</html>

@@ -1,0 +1,69 @@
+// @charset "UTF-8";
+
+//ブロック
+@import "parts/*.scss";
+// @import "parts/swiper";
+
+//基礎
+@import "base/reset";
+@import "base/base";
+
+
+//部品
+@import "elements/*.scss";
+// @import "elements/kv";
+// @import "elements/about";
+// @import "elements/features";
+// @import "elements/voice";
+// @import "elements/column";
+// @import "elements/information";
+// @import "elements/order";
+// @import "elements/footer";
+
+@import "elements/page/*.scss";
+@import "elements/page/**/*.scss";
+// @import "elements/page/pageJqueryUi";
+// @import "elements/page/pageorderForm";
+// @import "elements/page/pageorderConfirm";
+// @import "elements/page/pageorderThanks";
+
+// @import "elements/page/pageprivacypolicy";
+
+
+
+
+// @charset "UTF-8";
+
+/* -------------------------
+
+main.cssに記述
+
+PCのみ表示...... class="pc"
+SPのみ表示...... class="sp"
+
+----------------------------*/
+
+#main {
+  overflow: hidden;
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------
+
+sp
+
+-----------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:768px) { 
+
+#main {
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+}
+
+

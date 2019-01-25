@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+html{
+  width: 100%;
+  background-color: #fff;
+}
+body {
+  img{
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  a{
+    color: #57443e;
+    &:hover{
+      opacity: .8;
+    }
+  }
+}
+#flower19{
+  .pc{
+    @include PC {display: block;}
+    @include SP {display: none;}
+  }
+  .sp{
+    @include PC {display: none;}
+    @include SP {display: block;}
+  }
+  .block{
+    @include PC {padding-top: 100px;}
+    @include SP {padding-top: 25px;}
+  }
+  h2{
+  }
+  .color01{
+    background-color: rgb(241, 203, 201);
+    h2+p{
+      color: #fff;
+    }
+  }
+  .imgWrap{
+    margin: auto;
+    position: relative;
+    @include PC {
+      width: 872px;
+    }
+    // overflow: hidden;
+  }
+  .itemImg{
+    display: flex;
+    @include PC {margin-top: 100px;}
+    // @include SP {margin-top: 65%;}
+    li{
+      @include PC {font-size: 18px;}
+      @include SP {font-size: 13px;}
+      &:first-child{
+        @include PC {margin-right: 70px;}
+        @include SP {margin-right: 2%;}
+      }
+    }
+  }
+  .itemInfo{
+    margin: auto;
+    overflow: hidden;
+    @include PC {width: 520px;}
+    @include SP {width: 85%;}
+    .itemSpec{
+      float: left;
+    }
+    .button{
+      float: right;
+      margin-top: 4px;
+      @include SP {
+        width: 37%;
+      }
+    }
+  }
+  .cartWrap{
+    margin: auto;
+    li{
+      line-height: 1.5em;
+      color: rgb(52, 52, 52);
+      @include PC {
+        font-size: 15px;
+      }
+      @include SP {font-size: 11px;}
+    }
+    .itemImg{
+      @include SP {margin: auto;}
+    }
+  }
+  .itemInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include PC{
+      width: 440px;
+    }
+  }
+  // button非表示のとき
+  .btnnone{
+    .itemSpec{
+      text-align: center;
+      float: none;
+    }
+    .button{display: none;}
+  }
+  .slide{
+    position: relative;
+    height: auto;
+    &:before{
+      @include SP {
+        content: "";
+        display: block;
+        padding-top: 137%;
+      }
+    }
+/*
+    li{
+      position: absolute;
+      @include SP {
+        top: 0; 
+        left: 0;
+      }
+      img{
+        transform: scale(1.00);
+				transition: opacity 1.4s ease 1.4s, transform 0.1s linear 1.4s;
+        opacity: 0;
+        backface-visibility: hidden;
+      }
+      &.active{
+        img{
+          opacity: 1;
+          transition: opacity 1.4s ease, transform 6s linear;
+          transform: scale(1.1);
+        }
+      }
+    }
+*/
+  }
+}
+
+@mixin bp {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+.slideWrap {
+  position: relative;
+  overflow: hidden;
+  ul.slideAni01 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      background-size: cover;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation-iteration-count: infinite;
+      animation-duration: 24s;
+      @for $value from 1 through 3 {
+        &:nth-child(#{$value}) {
+          @if $value % 2 == 0 {
+            //偶数
+            animation-name: slider-zoomin-p3;
+          }
+          @else {
+            //奇数
+            animation-name: slider-zoomin-p3;
+          }
+          @if $value != 1 {
+            //最初以外は透過
+            opacity: 0;
+          }
+          animation-delay: #{($value*8-11)}s; //-3からスタートして、8づつ加算する
+        }
+      }
+      img {
+        width: 130%;
+      }
+    }
+  }
+ 
+  ul.slideAni02,ul.slideAni03,ul.slideAni04 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      background-size: cover;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation-iteration-count: infinite;
+      animation-duration: 16s;
+      @for $value from 1 through 2 {
+        &:nth-child(#{$value}) {
+          @if $value % 2 == 0 {
+            //偶数
+            animation-name: slider-zoomin-p2;
+          }
+          @else {
+            //奇数
+            animation-name: slider-zoomin-p2;
+          }
+          @if $value != 1 {
+            //最初以外は透過
+            opacity: 0;
+          }
+          animation-delay: #{($value*8-11)}s; //-3からスタートして、8づつ加算する
+        }
+      }
+      img {
+        width: 130%;
+      }
+    }
+  }
+}
+// 5~8秒の間だけ透過解除
+@keyframes slider-zoomin-p3 {
+  0% {
+    opacity: 0;
+    transform: scale(1.0);
+  }
+  20.83% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  41% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes slider-zoomin-p2 {
+  0% {
+    opacity: 0;
+    transform: scale(1.0);
+  }
+  31.25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  68.75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,63 @@
+$widthSP: 768px; //スマホsizew
+$widthPC: 769px;
+
+$widthTAB-min: 600px;
+$widthPC-modal: 500px;
+
+@mixin SP {
+  @media (max-width: $widthSP) {
+    @content;
+  }
+}
+
+@mixin PC {
+  @media (min-width: $widthPC) {
+    @content;
+  }
+}
+@mixin PC_modal {
+  @media (min-width: $widthPC-modal) {
+    @content;
+  }
+}
+
+@mixin TAB {
+  @media screen and (min-width: $widthTAB-min) and (max-width: $widthSP) {
+    @content;
+  }
+}
+
+/* IEハック用mixin */
+@mixin hack($IE-ver: null) {
+  @if $IE-ver == 'lteIE8' { // IE8以下
+    @media \0screen\,screen\9 {
+      @content;
+    }
+  }
+  @else if $IE-ver == 'gteIE9' { // IE9以上
+    @media screen and (min-width:0\0) {
+      @content;
+    }
+  }
+  @else if $IE-ver == 'gteIE10' { // IE10以上
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      @content;
+    }
+  }
+  @else if $IE-ver == 'gteIE11' { // IE11以上
+    @at-root _:-ms-fullscreen,:root & {
+      @content;
+    }
+  }
+  @else if $IE-ver == 'notIE8' { // IE8じゃないとき(他のブラウザも含める)
+    @media all and (min-width: 0) {
+      @content;
+    }
+  }
+}
+
+//fadeIn CSS
+// @mixin fadeSET {
+//   opacity: 0;
+//   transition: all 500ms 0s ease;
+// }
