@@ -19,6 +19,9 @@
       }
     }
   }
+  @include SP{
+    overflow: hidden;
+  }
   .head-img{
     display: flex;
     align-items: center;
@@ -30,9 +33,35 @@
       background: url(../img/head_bg.png) no-repeat center center;
       background-size: cover;
     }
+    @include SP{
+      width: 100%;
+      height: spvw(278);
+      background: url(../img/head_bg.png) no-repeat center center;
+      background-size: cover;
+    }
     .head_txt01{
       @include PC{
         margin-bottom: 10px;
+      }
+      @include SP{
+        margin-bottom: spvw(10);
+      }
+      img{
+        @include SP{
+          max-width: initial;
+          width: auto;
+          height: spvw(90);
+        }
+      }
+    }
+    .head_txt02{
+      img{
+        @include SP{
+          max-width: initial;
+          width: auto;
+          height: spvw(20);
+          vertical-align: top;
+        }
       }
     }
   }
@@ -41,12 +70,26 @@
     @include PC{
       padding: 85px 0 100px;
     }
+    @include SP{
+      padding: spvw(50) 0 spvw(60);
+    }
+    img{
+      @include SP{
+        width: auto;
+        height: spvw(100);
+      }
+    }
   }
   .main{
     text-align: center;
   }
   .campaign_head{
-    padding: 95px 0;
+    @include PC{
+      padding: 95px 0;
+    }
+    @include SP{
+      padding: spvw(95) 0;
+    }
   }
   .campaign_head_wrap{
     text-align: center;
@@ -58,10 +101,27 @@
       border: 16px solid #f1cbc9;
       padding: 45px 0 16px;
     }
+    @include SP{
+      width: 100%;
+      margin: auto;
+      border: spvw(14) solid #f1cbc9;
+      padding: spvw(40) 0 spvw(20);
+    }
     .title{
       position: absolute;
-      left: -40px;
-      top: -55px;
+      @include PC{
+        left: -40px;
+        top: -55px;
+      }
+      @include SP{
+        left: -4vw;
+        top: -9vw;
+      }
+      img{
+        @include SP{
+          height: spvw(100);
+        }
+      }
     }
     .txt01{
       @include PC{
@@ -72,11 +132,23 @@
       margin-bottom: 10px;
     }
     .txt{
+      letter-spacing: 0.05em;
+      line-height: 1.7;
       @include PC{
         font-size: 18px;
         margin-bottom: 30px;
-        letter-spacing: 0.05em;
-        line-height: 1.7;
+      }
+      @include SP{
+        margin-bottom: spvw(20);
+        margin-bottom: spvw(30);
+        font-size: spvw(18);
+      }
+    }
+    a{
+      @include SP{
+        display: block;
+        width: spvw(300);
+        margin: auto;
       }
     }
   }
@@ -85,19 +157,41 @@
       padding-top: 135px;
       padding-bottom: 130px;
     }
-    @include SP {padding-bottom: 50px;}
+    @include SP {
+      padding-top: spvw(110);
+      padding-bottom: spvw(75);
+    }
     h2{
       position: absolute;
-      left: -60px;
-      top: -60px;
       z-index: 2;
+      @include PC {
+        left: -60px;
+        top: -60px;
+      }
+      @include SP {
+        left: -3vw;
+        top: -10vw;
+      }
+      img{
+        @include SP{
+          width: spvw(192);
+        }
+      }
     }
     .slideWrap{
-      width: 603px; 
-      height: 643px;
-      box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
       overflow: hidden;
-      margin-bottom: 43px;
+      @include PC {
+        width: 603px; 
+        height: 643px;
+        box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+        margin-bottom: 43px;
+      }
+      @include SP {
+        width: spvw(610); 
+        height: spvw(644); 
+        box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+        margin-bottom: 43px;
+      }
     }
     .slide{
       @include PC {
@@ -105,7 +199,11 @@
         height: 654px;
         margin-bottom: 30px;
       }
-      @include SP {width: 51.56%;}
+      @include SP {
+        width: spvw(626); 
+        height: spvw(655); 
+        margin-bottom: spvw(70);
+      }
     }
     .para{
       @include PC{
@@ -114,6 +212,15 @@
         height: 424px;
         margin-left: auto;
         margin-bottom: 106px;
+        position: relative;
+        box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+      }
+      @include SP{
+        overflow: hidden;
+        width: 100%;
+        height: spvw(392);
+        margin-left: auto;
+        margin-bottom: spvw(55);
         position: relative;
         box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
       }
@@ -128,12 +235,23 @@
     .leadWrap{
       position: absolute;
       @include PC{
-        left: 84px;
-        top: 973px;
+        right: 90px;
+        top: 300px;
         width: 268px;
       }
+      @include SP{
+        left: spvw(20);
+        top: spvw(930);
+        width: spvw(320);
+      }
       p{
-        margin-bottom: 25px;
+        @include PC{
+          margin-bottom: 25px;
+        }
+        @include SP{
+          margin-bottom: spvw(20);
+          line-height: 1;
+        }
       }
     }
     .itemWrap{
@@ -144,49 +262,76 @@
       @include PC{
         padding-left: 124px;
       }
+      @include SP{
+        padding: 0 spvw(14);
+      }
       .item{
         text-align: center;
+        @include SP{
+          width: 50%;
+        }
         &:nth-child(1){
-          margin-right: 70px;
+          @include PC{
+            margin-right: 70px;
+          }
+          @include SP{
+            margin-right: 0px;
+          }
+          img{
+            @include SP{
+              height: spvw(344);
+            }
+          }
+          .pic{
+            @include SP{
+            position: relative;
+            top: spvw(-20);
+            }
+          }
         }
         .pic{
-          margin-bottom: 20px;
+          @include PC{
+            margin-bottom: 20px;
+          }
+          @include SP{
+            margin-bottom: spvw(20);
+          }
+          
         }
         .info{
-          font-size: 15px;
-          margin-bottom: 10px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 4em;
-          line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          @include PC{
+            font-size: 15px;
+            margin-bottom: 10px;
+            height: 4em;
+            line-height: 1.5;
+          }
+          @include SP{
+            font-size: spvw(18);
+            margin-bottom: spvw(15);
+            height: 4em;
+            line-height: 1.5;
+          }
+        }
+        .button{
+          img{
+            @include SP{
+              width: auto;
+              height: spvw(40);
+            }
+          }
         }
       }
     }
     .imgWrap{
-      @include SP {margin-top: 25px;}
-      .rightPos01{
-        position: absolute;
-        right: 0;
-        @include PC {top: 380px;}
-        @include SP {top: 23%;}
-      }
-      .leftPos01{
-        @include PC {margin: 90px 0 0 70px;}
-        @include SP {
-          width: 35%;
-          margin: 6% 0 0 6%;
-        }
-      }
+      
     }
     .cartWrap{
       @include PC {width: 872px;}
       @include SP {
-        margin-top: 40px;
-      }
-      .itemImg{
-        margin-bottom: 4%;
-        @include SP {width: 90%;}
+        margin-top: spvw(40);
       }
     }
   }
@@ -195,20 +340,42 @@
       padding-top: 135px;
       padding-bottom: 130px;
     }
-    @include SP {padding-bottom: 50px;}
+    @include SP {
+      padding-top: spvw(110);
+      padding-bottom: spvw(90);
+    }
     h2{
       position: absolute;
-      right: 70px;
-      top: -60px;
       z-index: 2;
+      @include PC {
+        right: 70px;
+        top: -60px;
+      }
+      @include SP {
+        right: -3vw;
+        top: -8vw;
+      }
+      img{
+        @include SP{
+          width: spvw(192);
+        }
+      }
     }
     .slideWrap{
-      width: 556px; 
-      height: 682px;
-      box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
       overflow: hidden;
-      margin-bottom: 0;
-      margin-left: 124px;
+      @include PC {
+        width: 556px; 
+        height: 682px;
+        box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+        margin-bottom: 0;
+        margin-left: 124px;
+      }
+      @include SP {
+        width: 100%; 
+        height: spvw(737); 
+        box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+        //margin-bottom: 43px;
+      }
     }
     .slide{
       @include PC {
@@ -216,7 +383,11 @@
         height: 694px;
         margin-bottom: 30px;
       }
-      @include SP {width: 51.56%;}
+      @include SP {
+        width: 100%; 
+        //height: spvw(655); 
+        margin-bottom: spvw(70);
+      }
     }
     .para{
       @include PC{
@@ -229,12 +400,30 @@
         position: relative;
         box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
       }
+      @include SP{
+        overflow: hidden;
+        width: spvw(278);
+        height: spvw(290);
+        margin-top: spvw(-90);
+        margin-left: auto;
+        margin-right: spvw(28);
+        //margin-bottom: spvw(55);
+        position: relative;
+        box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+      }
       img{
         position: absolute;
-        left: -40px;
-        top: 0;
         width: auto;
         max-width: initial;
+        @include PC{
+          left: -40px;
+          top: 0;
+        }
+        @include SP{
+          width: 60vw;
+          left: spvw(-50);
+          top: 0;
+        }
       }
     }
     .leadWrap{
@@ -244,8 +433,19 @@
         top: 100px;
         width: 240px;
       }
+      @include SP{
+        right: spvw(10);
+        top: spvw(120);
+        width: spvw(274);
+      }
       p{
-        margin-bottom: 25px;
+        @include PC{
+          margin-bottom: 25px;
+        }
+        @include SP{
+          margin-bottom: spvw(20);
+          line-height: 1;
+        }
       }
     }
     .itemImg{
@@ -282,26 +482,12 @@
         }
       }
     }
-    .imgWrap{
-      @include SP {margin-top: 25px;}
-      .rightPos01{
-        position: absolute;
-        right: 0;
-        @include PC {top: 380px;}
-        @include SP {top: 23%;}
-      }
-      .leftPos01{
-        @include PC {margin: 90px 0 0 70px;}
-        @include SP {
-          width: 35%;
-          margin: 6% 0 0 6%;
-        }
-      }
-    }
     .cartWrap{
-      @include PC {width: 872px;}
+      @include PC {
+        width: 872px;
+      }
       @include SP {
-        margin-top: 40px;
+        margin-top: spvw(40);
       }
       .itemImg{
         margin-bottom: 4%;
@@ -314,25 +500,51 @@
       padding-top: 135px;
       padding-bottom: 130px;
     }
-    @include SP {padding-bottom: 50px;}
+    @include SP {
+      padding-top: spvw(110);
+      padding-bottom: spvw(75);
+    }
     h2{
       position: absolute;
-      left: 0px;
-      top: -60px;
       z-index: 2;
+      @include PC {
+        left: 0px;
+        top: -60px;
+      }
+      @include SP {
+        left: -3vw;
+        top: -10vw;
+      }
+      img{
+        @include SP{
+          width: spvw(192);
+        }
+      }
     }
     .slideWrap{
-      width: 100%; 
-      height: 518px;
-      box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
       overflow: hidden;
-      margin-bottom: 43px;
+      @include PC {
+        width: 100%; 
+        height: 518px;
+        box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+        margin-bottom: 43px;
+      }
+      @include SP {
+        width: 100%; 
+        height: spvw(420); 
+        box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+        //margin-bottom: 43px;
+      }
     }
     .slide{
       @include PC {
         width: 900px; 
       }
-      @include SP {width: 51.56%;}
+      @include SP {
+        width: 100%; 
+        //height: spvw(655); 
+        margin-bottom: spvw(70);
+      }
     }
     .para{
       @include PC{
@@ -343,30 +555,76 @@
         position: relative;
         box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
       }
+      @include SP{
+        overflow: hidden;
+        width: spvw(368);
+        height: spvw(465);
+        margin-top: spvw(40);
+        margin-right: auto;
+        //margin-bottom: spvw(55);
+        position: relative;
+        box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+      }
       img{
         position: absolute;
-        left: 0;
-        top: 0;
         width: auto;
         max-width: initial;
+        @include PC{
+          left: 0px;
+          top: 0;
+        }
+        @include SP{
+          width: 105%;
+          left: spvw(0);
+          top: 0;
+        }
       }
     }
     .leadWrap{
       position: absolute;
       @include PC{
         right: 87px;
-        top: 633px;
+        top: 453px;
         width: 240px;
       }
+      @include SP{
+        right: spvw(5);
+        top: spvw(550);
+        width: spvw(286);
+      }
       p{
-        margin-bottom: 25px;
+        @include PC{
+          margin-bottom: 25px;
+        }
+        @include SP{
+          margin-bottom: spvw(20);
+          line-height: 1;
+        }
       }
     }
     .itemInfo{
       flex-direction: column;
       position: absolute;
-      left: 40px;
-      bottom: 20px;
+      @include PC{
+        left: 40px;
+        bottom: 20px;
+      }
+      @include SP{
+        left: spvw(48);
+        bottom: spvw(20);
+        width: auto;
+      }
+      .button{
+        @include SP{
+          width: auto;
+        }
+        img{
+          @include SP{
+            width: auto;
+            height: spvw(44);
+          }
+        }
+      }
     }
     .itemSpec{
       @include PC{
@@ -380,7 +638,9 @@
       }
       li{
         &:nth-child(1){
-          margin-right: -220px;
+          @include PC{
+            margin-right: -380px;
+          }
         }
       }
     }
@@ -388,7 +648,6 @@
       display: flex;
       margin: auto;
       align-items: baseline;
-      margin: auto;
       @include PC{
         padding-left: 124px;
       }
@@ -411,31 +670,27 @@
         }
       }
     }
-    .imgWrap{
-      @include SP {margin-top: 25px;}
-      .rightPos01{
-        position: absolute;
-        right: 0;
-        @include PC {top: 380px;}
-        @include SP {top: 23%;}
-      }
-      .leftPos01{
-        @include PC {margin: 90px 0 0 70px;}
-        @include SP {
-          width: 35%;
-          margin: 6% 0 0 6%;
-        }
-      }
-    }
     .cartWrap{
       position: relative;
-      @include PC {width: 872px;}
+      @include PC {
+        width: 872px;
+        margin-top: -240px;
+      }
       @include SP {
-        margin-top: 40px;
+        margin-top: spvw(-66);
       }
       .itemImg{
         margin-bottom: 4%;
-        @include SP {width: 90%;}
+        @include SP {
+          width: spvw(320);
+          margin-left: auto;
+          margin-right: spvw(48);
+        }
+        img{
+          @include SP {
+            width: 100%;
+          }
+        }
       }
     }
   }
@@ -444,20 +699,41 @@
       padding-top: 135px;
       padding-bottom: 160px;
     }
-    @include SP {padding-bottom: 50px;}
+    @include SP {
+      padding-top: spvw(110);
+      padding-bottom: spvw(90);
+    }
     h2{
       position: absolute;
-      right: 70px;
-      top: -60px;
       z-index: 2;
+      @include PC {
+        right: 70px;
+        top: -60px;
+      }
+      @include SP {
+        right: 1vw;
+        top: -8vw;
+      }
+      img{
+        @include SP{
+          width: spvw(192);
+        }
+      }
     }
     .slideWrap{
-      width: 556px; 
-      height: 682px;
-      box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
-      overflow: hidden;
-      margin-bottom: 0;
-      margin-left: 124px;
+      @include PC {
+        width: 556px; 
+        height: 682px;
+        box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+        margin-bottom: 0;
+        margin-left: 124px;
+      }
+      @include SP {
+        width: 100%; 
+        height: spvw(737); 
+        box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+        //margin-bottom: 43px;
+      }
     }
     .slide{
       @include PC {
@@ -465,7 +741,11 @@
         height: 694px;
         margin-bottom: 30px;
       }
-      @include SP {width: 51.56%;}
+      @include SP {
+        width: 100%; 
+        //height: spvw(655); 
+        margin-bottom: spvw(70);
+      }
     }
     .para{
       @include PC{
@@ -478,12 +758,30 @@
         position: relative;
         box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
       }
+      @include SP{
+        overflow: hidden;
+        width: spvw(278);
+        height: spvw(290);
+        margin-top: spvw(-90);
+        margin-left: auto;
+        margin-right: spvw(28);
+        //margin-bottom: spvw(55);
+        position: relative;
+        box-shadow:10px 10px 20px -2px rgba(131,104,106,0.4);
+      }
       img{
         position: absolute;
-        left: 0;
-        top: 0;
         width: 320px;
         max-width: initial;
+        @include PC{
+          left: 0px;
+          top: 0;
+        }
+        @include SP{
+          width: 60vw;
+          left: spvw(-50);
+          top: 0;
+        }
       }
     }
     .leadWrap{
@@ -493,8 +791,19 @@
         top: 143px;
         width: 261px;
       }
+      @include SP{
+        right: spvw(10);
+        top: spvw(120);
+        width: spvw(274);
+      }
       p{
-        margin-bottom: 25px;
+        @include PC{
+          margin-bottom: 25px;
+        }
+        @include SP{
+          margin-bottom: spvw(20);
+          line-height: 1;
+        }
       }
     }
     .itemImg{
@@ -512,45 +821,83 @@
       @include PC{
         padding-left: 124px;
       }
+      @include SP{
+        padding: 0 spvw(14);
+      }
       .item{
         text-align: center;
+        @include SP{
+          width: 50%;
+        }
         &:nth-child(1){
-          margin-right: 70px;
+          @include PC{
+            margin-right: 70px;
+          }
+          @include SP{
+            margin-right: 0px;
+          }
+          .pic{
+            @include SP{
+            position: relative;
+            top: spvw(-20);
+            }
+          }
+        }
+        &:nth-child(2){
+          img{
+            @include SP{
+              height: spvw(350);
+            }
+          }
+          .pic{
+            @include SP{
+            position: relative;
+            top: spvw(-20);
+            }
+          }
         }
         .pic{
-          margin-bottom: 20px;
+          @include PC{
+            margin-bottom: 20px;
+          }
+          @include SP{
+            margin-bottom: spvw(20);
+          }
+          
         }
         .info{
-          font-size: 15px;
-          margin-bottom: 10px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 4em;
-          line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          @include PC{
+            font-size: 15px;
+            margin-bottom: 10px;
+            height: 4em;
+            line-height: 1.5;
+          }
+          @include SP{
+            font-size: spvw(18);
+            margin-bottom: spvw(15);
+            height: 4em;
+            line-height: 1.5;
+          }
         }
-      }
-    }
-    .imgWrap{
-      @include SP {margin-top: 25px;}
-      .rightPos01{
-        position: absolute;
-        right: 0;
-        @include PC {top: 380px;}
-        @include SP {top: 23%;}
-      }
-      .leftPos01{
-        @include PC {margin: 90px 0 0 70px;}
-        @include SP {
-          width: 35%;
-          margin: 6% 0 0 6%;
+        .button{
+          img{
+            @include SP{
+              width: auto;
+              height: spvw(40);
+            }
+          }
         }
       }
     }
     .cartWrap{
-      @include PC {width: 872px;}
+      @include PC {
+        width: 872px;
+      }
       @include SP {
-        margin-top: 40px;
+        margin-top: spvw(-90);
       }
       .itemImg{
         margin-bottom: 4%;
@@ -559,12 +906,17 @@
     }
   }
   .btn_all{
-    margin-top: 145px;
     text-align: center;
+    @include PC{
+      margin-top: 145px;
+    }
+    @include SP{
+      margin-top: spvw(50);
+    }
   }
   .campaign_foot{
     @include PC {padding: 80px 0 40px 0;}
-    @include SP {padding: 80px 0 30px 0;}
+    @include SP {padding: spvw(65) 0 spvw(30) 0;}
   }
   .campaign_block{
     background-color: #fcf6f5;
@@ -575,14 +927,34 @@
       margin: 0 auto 40px;
       padding: 80px 45px 45px;
     }
+    @include SP{
+      width: 100%;
+      margin: auto;
+      border: spvw(14) solid #f1cbc9;
+      padding: spvw(40) spvw(34) spvw(20);
+    }
     .title{
       position: absolute;
-      left: -40px;
-      top: -45px;
+      @include PC{
+        left: -40px;
+        top: -45px;
+      }
+      @include SP{
+        left: -4vw;
+        top: -8vw;
+      }
+      img{
+        @include SP{
+          height: spvw(100);
+        }
+      }
     }
     .txt01{
       @include PC{
         margin-bottom: 30px;
+      }
+      @include SP{
+        margin-bottom: spvw(40);
       }
     }
     .txt02{
@@ -593,9 +965,20 @@
         letter-spacing: 0.05em;
         line-height: 1.7;
       }
+      @include SP{
+        margin-bottom: spvw(20);
+        letter-spacing: 0.05em;
+        line-height: 1.7;
+        font-size: spvw(18);
+      }
     }
     .pic{
-      margin-bottom: 30px;
+      @include PC{
+        margin-bottom: 30px;
+      }
+      @include SP{
+        margin-bottom: spvw(20);
+      }
     }
     .txt{
       text-align: left;
@@ -604,6 +987,10 @@
         margin-bottom: 20px;
         letter-spacing: 0.05em;
         line-height: 1.7;
+      }
+      @include SP{
+        margin-bottom: spvw(30);
+        font-size: spvw(18);
       }
       a{
         color: #d6636c;
@@ -622,22 +1009,44 @@
       }
     }
     .btn{
-      margin: 35px auto 40px;
       display: block;
+      @include PC{
+        margin: 35px auto 40px;
+      }
+      @include SP{
+        margin: spvw(30) auto spvw(30);
+      }
     }
   }
   .campaign_block01{
-    padding-top: 85px;
+    @include PC{
+      padding-top: 85px;
+    }
+    @include SP{
+      padding-top: spvw(70);
+    }
   }
   .campaign_block02{
-    padding-top: 45px;
+    @include PC{
+      padding-top: 45px;
+    }
+    @include SP{
+      padding-top: spvw(20);
+    }
+    .pic{
+      img{
+        width: 110%;
+        max-width: 110%;
+        margin-left: -5%;
+      }
+    }
   }
   .footer{
     text-align: center;
     @include PC {padding: 90px 0 65px;}
     @include SP {
       text-align: center;
-      padding: 20px 0 10px;
+      padding: spvw(65) 0 spvw(50);
     }
     p{
       @include SP {
@@ -670,7 +1079,8 @@
       @include SP {
         width: 140px;
         font-size: 12px;
-        margin-top: 70px;
+        margin-top: spvw(0);
+        margin-bottom: spvw(80);
       }
       dt{
         @include PC {margin-bottom: 20px;}

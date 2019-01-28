@@ -2,56 +2,8 @@ $(function() {
   var $body = $('body');
 
   // ==================================================
-  // slide
-/*
-  $('.slide').each(function () {
-    var num = $(this).find('li').length;
-    var time = 7400;
-    if(num == 3 && $(this).hasClass('slideAni01')){
-      setInterval(function(){
-        var selectImage = $('.slideAni01 li.active').index();
-        selectImage++;
-        if (selectImage == num){
-          selectImage = 0;
-        }
-        $('.slideAni01 li').removeClass('active');
-        $('.slideAni01 li').eq(selectImage).addClass('active');
-      },time);
-    }else if (num == 2 && $(this).hasClass('slideAni02')) {
-      setInterval(function(){
-        var selectImage = $('.slideAni02 li.active').index();
-        selectImage++;
-        if (selectImage == num){
-          selectImage = 0;
-        }
-        $('.slideAni02 li').removeClass('active');
-        $('.slideAni02 li').eq(selectImage).addClass('active');
-      },time);
-    }else if (num == 2 && $(this).hasClass('slideAni03')) {
-      setInterval(function(){
-        var selectImage = $('.slideAni03 li.active').index();
-        selectImage++;
-        if (selectImage == num){
-          selectImage = 0;
-        }
-        $('.slideAni03 li').removeClass('active');
-        $('.slideAni03 li').eq(selectImage).addClass('active');
-      },time);
-    }else if (num == 2 && $(this).hasClass('slideAni04')) {
-      setInterval(function(){
-        var selectImage = $('.slideAni04 li.active').index();
-        selectImage++;
-        if (selectImage == num){
-          selectImage = 0;
-        }
-        $('.slideAni04 li').removeClass('active');
-        $('.slideAni04 li').eq(selectImage).addClass('active');
-      },time);
-    }
-  });
-*/
-  // ==================================================
   // scrollanimation  
+  // ==================================================
   $(window).on('scroll', function () {
     var scroll = $(window).scrollTop();
     $('.fade-in').each(function(){
@@ -96,18 +48,68 @@ $(function() {
    });
    
   $(window).on('load scroll', function() {
-      $('.para01 img').css({
-          top: parallaxFunc(-100, -600, 3000, 4300)
-      });
-      $('.para02 img').css({
-          top: parallaxFunc(0, -200, 5000, 6200)
-      });
-      $('.para03 img').css({
-          top: parallaxFunc(0, -100, 6500, 7700)
-      });
-      $('.para04 img').css({
-          top: parallaxFunc(0, -140, 8500, 9700)
-      });
+      if(window.matchMedia("(max-width:767px)").matches){
+          // 読み込みが完了したときに、767px以下の場合に行いたい処理
+          $('.para01 img').css({
+              top: parallaxFunc(0, -150, 1500, 2300)
+          });
+          $('.para02 img').css({
+              top: parallaxFunc(0, -150, 2500, 3200)
+          });
+          $('.para03 img').css({
+              top: parallaxFunc(0, -60, 3600, 4000)
+          });
+          $('.para04 img').css({
+              top: parallaxFunc(0, -140, 4500, 5100)
+          });
+      }else{
+          // 読み込みが完了したときに、767px以上の場合に行いたい処理
+          $('.para01 img').css({
+              top: parallaxFunc(0, -90, 3500, 4300)
+          });
+          $('.para02 img').css({
+              top: parallaxFunc(0, -200, 5400, 6200)
+          });
+          $('.para03 img').css({
+              top: parallaxFunc(0, -100, 6500, 7700)
+          });
+          $('.para04 img').css({
+              top: parallaxFunc(0, -140, 8500, 9700)
+          });
+      }
+      function matchFunc(){
+          if(window.matchMedia("(max-width:767px)").matches){
+            // windowサイズを変更して、767px以下になったら行うイベント
+            $('.para01 img').css({
+                top: parallaxFunc(0, -150, 1500, 2300)
+            });
+            $('.para02 img').css({
+                top: parallaxFunc(0, -200, 5400, 6200)
+            });
+            $('.para03 img').css({
+                top: parallaxFunc(0, -100, 6500, 7700)
+            });
+            $('.para04 img').css({
+                top: parallaxFunc(0, -140, 8500, 9700)
+            });
+          }
+          if(window.matchMedia("(min-width:768px)").matches){
+            // windowサイズを変更して、768px以上になったら行うイベント
+            $('.para01 img').css({
+                top: parallaxFunc(0, -90, 3500, 4300)
+            });
+            $('.para02 img').css({
+                top: parallaxFunc(0, -200, 5400, 6200)
+            });
+            $('.para03 img').css({
+                top: parallaxFunc(0, -100, 6500, 7700)
+            });
+            $('.para04 img').css({
+                top: parallaxFunc(0, -140, 8500, 9700)
+            });
+          }
+      }
+      window.matchMedia("(max-width:767px)").addListener(matchFunc);
   });
    
   /**
