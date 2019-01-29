@@ -14,10 +14,17 @@
   &.on{opacity: 1;}
 }
 .fade-inLoad{
-  transition: all 1500ms ease;
+  transition: all 1500ms ease 0.7s;
   opacity: 0;
   &.on{opacity: 1;}
 }
+
+.slide-in{
+  transition: all 1200ms ease;
+  left: 100%;
+  &.on{left:0;}
+}
+
 $transition: 200ms;
 .delay1{
   transition-delay: $transition !important;

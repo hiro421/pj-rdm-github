@@ -27,19 +27,23 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
     @include PC{
       width: 100%;
       height: 440px;
-      background: url(../img/head_bg.png) no-repeat center center;
-      background-size: cover;
+      //background: url(../img/head_bg.png) no-repeat center center;
+      //background-size: cover;
     }
     @include SP{
       width: 100%;
       height: spvw(278);
-      background: url(../img/head_bg.png) no-repeat center center;
-      background-size: cover;
+      //background: url(../img/head_bg.png) no-repeat center center;
+      //background-size: cover;
     }
     .head_txt01{
+      position: relative;
+      z-index: 2;
       @include PC{
         margin-bottom: 10px;
       }
@@ -55,12 +59,31 @@
       }
     }
     .head_txt02{
+      position: relative;
+      z-index: 2;
       img{
         @include SP{
           max-width: initial;
           width: auto;
           height: spvw(20);
           vertical-align: top;
+        }
+      }
+    }
+    .head_bg{
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      img{
+        width: 100%;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        @include PC{
+          top: -300px;
+        }
+        @include SP{
+          top: -170px;
         }
       }
     }
@@ -152,6 +175,9 @@
       }
     }
   }
+  .block{
+    position: relative;
+  }
   .sec1{
     @include PC {
       padding-top: 135px;
@@ -230,6 +256,9 @@
         top: 0;
         width: auto;
         max-width: initial;
+        @include SP{
+          width: 100%;
+        }
       }
     }
     .leadWrap{
@@ -241,7 +270,7 @@
       }
       @include SP{
         left: spvw(20);
-        top: spvw(930);
+        top: spvw(990);
         width: spvw(320);
       }
       p{
@@ -331,7 +360,7 @@
     .cartWrap{
       @include PC {width: 872px;}
       @include SP {
-        margin-top: spvw(40);
+        margin-top: spvw(100);
       }
     }
   }
@@ -792,9 +821,9 @@
         width: 261px;
       }
       @include SP{
-        right: spvw(10);
-        top: spvw(120);
-        width: spvw(274);
+        left: spvw(10);
+        top: spvw(170);
+        width: spvw(330);
       }
       p{
         @include PC{
@@ -933,6 +962,38 @@
       border: spvw(14) solid #f1cbc9;
       padding: spvw(40) spvw(34) spvw(20);
     }
+    .btnWrap{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include PC{
+        width: 544px;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      @include SP{
+        margin-bottom: spvw(20);
+      }
+      a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #d6636c;
+        border: 1px solid #d6636c;
+        @include PC{
+          width: 48%;
+          padding: 10px;
+          font-feature-settings : "palt";
+          letter-spacing: 1px;
+        }
+        @include SP{
+          width: 48%;
+          padding: spvw(10) spvw(5);
+          font-size: spvw(18);
+          font-feature-settings : "palt";
+        }
+      }
+    }
     .title{
       position: absolute;
       @include PC{
@@ -961,7 +1022,7 @@
       text-align: left;
       @include PC{
         font-size: 17px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         letter-spacing: 0.05em;
         line-height: 1.7;
       }
@@ -1035,9 +1096,11 @@
     }
     .pic{
       img{
-        width: 110%;
-        max-width: 110%;
-        margin-left: -5%;
+        @include SP{
+          width: 110%;
+          max-width: 110%;
+          margin-left: -5%;
+        }
       }
     }
   }
@@ -1107,5 +1170,12 @@
       }
       // display: block;
     }
+  }
+  .bg-pink{
+    width: 100%;
+    height: 100%;
+    background-color: #f1cbc9;
+    position: absolute;
+    top: 0;
   }
 }
