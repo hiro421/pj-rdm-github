@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/* Base
+---------------------------- */
+@media screen and (max-width: 768px) {
+  #main {
+    padding: 0;
+  }
+}
+#appContent {
+  font-family: "Montserrat", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "MS Pゴシック", "MS P Gothic", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  #appContent {
+    font-size: 1.2rem;
+  }
+}
+#appContent * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#appContent a {
+  color: #d42975;
+  text-decoration: none;
+}
+
+#appContent figure {
+  margin: 0;
+}
+
+#appContent a:hover {
+  text-decoration: underline;
+}
+
+
+/* appContent_head
+---------------------------- */
+#appContent .appContent_head {
+  padding: 50px 25px 35px;
+  background: #faefed;
+}
+@media screen and (max-width: 768px) {
+  #appContent .appContent_head {
+    padding: 25px 5% 18px;
+  }
+}
+
+#appContent .appContent_head_ttl {
+  font-size: 3.8rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  #appContent .appContent_head_ttl {
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+  }
+}
+
+#appContent .app_logo img {
+  display: block;
+  margin: 0 auto;
+  width: 74px;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  #appContent .app_logo img {
+    width: 43px;
+  }
+}
+
+
+/* appContent_body
+---------------------------- */
+#appContent .appContent_body {
+  width: 100%;
+  padding: 0 25px;
+}
+@media screen and (max-width: 768px) {
+  #appContent .appContent_body {
+    padding: 0 5%;
+  }
+}
+
+#appContent .appContent_body:nth-of-type(2n) {
+  background: #faefed;
+}
+
+#appContent .appContent_body_inner {
+  width: 100%;
+  padding: 35px 0 60px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  #appContent .appContent_body_inner {
+    padding: 25px 0 36px;
+    position: relative;
+  }
+}
+
+#appContent .heading-2 {
+  line-height: 1.6;
+  margin: 0 auto 20px;
+  padding: 0 0 0 12px;
+  text-align: center;
+}
+#appContent .heading-2 img {
+  display: block;
+  margin: 0 auto;
+  width: 515px;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  #appContent .heading-2 {
+    font-size: 1.3rem;
+    padding: 0 0 0 8px;
+    margin: 0 auto 10px;
+  }
+
+  #appContent .heading-2 img {
+    max-width: 257px;
+  }
+}
+
+/* app_point_list */
+#appContent .app_point_list {
+  display: flex;
+  width: 724px;
+}
+#appContent .app_point_list.list-2 {
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  #appContent .app_point_list,
+  #appContent .app_point_list.list-2 {
+    display: block;
+    width: 100%;
+  }
+}
+
+#appContent .app_point_list li {
+  display: inline-block;
+  position: relative;
+  min-width: 240px;
+  padding: 10px 0 140px;
+}
+
+#appContent .app_point_list.list-2 li {
+  min-width: inherit;
+  max-width: 362px;
+  padding: 10px 0 180px;
+}
+#appContent .app_point_list.list-2 li:nth-child(n+3) {
+  margin-top: 35px;
+}
+@media screen and (max-width: 768px) {
+  #appContent .app_point_list li,
+  #appContent .app_point_list.list-2 li {
+    min-width: inherit;
+    max-width: 100%;
+    padding: 10px 0 20px;
+  }
+  #appContent .app_point_list li:nth-child(n+2) {
+    margin-top: 20px;
+  }
+
+  /* sp_column */
+  #appContent .app_point_list .sp_column:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+  #appContent li.sp_column .app_point_txt {
+    max-width: 64%;
+    width: auto;
+    margin: 0 10px 0 0;
+    float: left;
+  }
+  #appContent li.sp_column .app_point_img {
+    float: right;
+  }
+}
+
+
+#appContent .app_point_txt {
+  position: relative;
+  margin: 0 0 28px;
+}
+#appContent .app_point_list li:not(:last-child) .app_point_txt {
+  padding: 0 16px 0 43px;
+}
+#appContent .app_point_list li:last-child .app_point_txt {
+  padding: 0 0 0 43px;
+}
+@media screen and (max-width: 768px) {
+  #appContent .app_point_txt {
+    margin: 0 0 28px;
+  }
+  #appContent .app_point_list li:not(:last-child) .app_point_txt,
+  #appContent .app_point_list li:last-child .app_point_txt {
+    padding: 0 0 0 33px;
+  }
+}
+
+#appContent .app_point_txt:before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 78px;
+  top: -10px;
+  left: 0;
+}
+@media screen and (max-width: 768px) {
+  #appContent .app_point_txt:before {
+    width: 25px;
+    height: 54px;
+    top: -10px;
+  }
+}
+#appContent .app_point_list .app_point_txt:before {
+  background: url(/al/app/img/rose_1.png) no-repeat left top / contain;
+}
+
+#appContent .app_point_list.list-2 .app_point_txt:before {
+  background: url(/al/app/img/rose_2.png) no-repeat left top / contain;
+}
+
+#appContent .app_point_img {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  #appContent .app_point_img {
+    position: static;
+  }
+  #appContent .img-1 {
+    width: 92px;
+  }
+  #appContent .img-2 {
+    width: 85px;
+  }
+}
+#appContent .app_point_img img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* app_download
+---------------------------- */
+#appContent .app_download {
+  padding: 40px 25px 55px;
+  text-align: center;
+  background: #faefed;
+}
+#appContent .app_download p {
+  margin-bottom: 1em;
+  font-size: 2rem;
+}
+#appContent .app_download_list {
+  width: 430px;
+  margin: 0 auto;
+}
+#appContent .app_download_list li:nth-child(1) {
+  float: left;
+}
+#appContent .app_download_list li:nth-child(2) {
+  float: right;
+}
+@media screen and (max-width: 768px) {
+  #appContent .app_download {
+    padding: 25px 5% 38px;
+  }
+  #appContent .app_download p {
+    font-size: 1.2rem;
+  }
+  #appContent .app_download_list {
+    width: 280px;
+  }
+  #appContent .app_download_list img {
+    width: auto;
+    height: 38px;
+  }
+}

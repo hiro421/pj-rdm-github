@@ -1,0 +1,269 @@
+    <div class="header-bn"><a href="#">税込8,000円以上で送料無料！</a></div>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__logo"><a href=""><img src="/app/img/common/logo_pc.png" alt=""></a></div>
+        <div class="header__right-area header--flex">
+          <div class="header__category-click pc"><a class="header--flex" href="#">カテゴリ<img class="icon--header-arrow" src="/app/img/common/icon_arrow.png" alt="CATEGORY"></a></div>
+          <div class="header__account pc"><span class="header__account--login header__account--none"><a href="/member/pjmypage/">LOG IN</a></span><span class="header__account--user"><a href="/member/pjmypage/">ログイン</a></span></div>
+          <div class="header__wishList"><a href="/pj/cliplist/"><img class="header__wishList--icon" src="/app/img/common/ico_wish.svg" alt=""></a></div>
+          <div class="header__cart"><a class="header__cart--icon" href="/shopping/bag/"><span class="header__cart--notice">2</span></a>
+            <p class="header__cart--flame">あと3,120円で送料無料</p>
+          </div>
+          <div class="header__account sp"><a href="/member/pjmypage/">マイページ</a><span> / <a class="login_link" href="/member/login/">ログイン</a></span></div>
+          <div class="header__search">
+            <form>
+              <input class="header__search--input" type="text" placeholder="キーワード・商品番号で探す">
+              <input class="header__search--icon" type="submit" value="検索">
+            </form>
+          </div>
+        </div>
+        <div class="header__sp-nav sp"></div>
+      </div>
+    </header>
+    <div class="category">
+      <div class="category__inner">
+        <ul class="category__main">
+          <li class="category__main--item category--active" date-category="category01"><img class="category--icon" src="/app/img/common/cat_icon01.png" alt="ブラジャー">ブラジャー</li>
+          <li class="category__main--item" date-category="category02"><img class="category--icon" src="/app/img/common/cat_icon02.png" alt="パンティ（ショーツ・サニタリー）">パンティ（ショーツ・サニタリー）</li>
+          <li class="category__main--item" date-category="category03"><img class="category--icon" src="/app/img/common/cat_icon03.png" alt="インナー">インナー</li>
+          <li class="category__main--item" date-category="category04"><img class="category--icon" src="/app/img/common/cat_icon04.png" alt="ルームウェア">ルームウェア</li>
+          <li class="category__main--item" date-category="category05"><img class="category--icon" src="/app/img/common/cat_icon05.png" alt="インテリア">インテリア</li>
+          <li class="category__main--item" date-category="category06"><img class="category--icon" src="/app/img/common/cat_icon06.png" alt="ファッション">ファッション</li>
+          <li class="category__main--item" date-category="category07"><img class="category--icon" src="/app/img/common/cat_icon07.png" alt="水着・スポーツウエア・その他">水着・スポーツウエア・その他</li>
+          <li class="category__main--item" date-category="category08"><img class="category--icon" src="/app/img/common/cat_icon08.png" alt="靴（シューズ）・ファッション雑貨">靴（シューズ）・ファッション雑貨</li>
+          <li class="category__main--item" date-category="category09"><img class="category--icon" src="/app/img/common/cat_icon09.png" alt="ビューティケアアイテム">ビューティケアアイテム</li>
+        </ul>
+        <div class="category__sub">
+          <div class="category01 category__wrap">
+            <dl class="category__sub--box">
+              <dt class="category__sub--tit"><a href="/pjitem/list/?_pcg=101&amp;outlet=include">ブラジャー</a></dt>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_pcg=101&amp;outlet=include">ブラジャー全て</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_al=pj_new&amp;_iid=1&amp;outlet=include">新作ブラ　New in</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10112&amp;outlet=include">ストラップレス・Tシャツブラ・粘着ブラ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10110&amp;outlet=include">ノンワイヤーブラ・ブラトップ・ブラレット</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10114&amp;outlet=include">サマーブラ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10106&amp;outlet=include">ブラ＆パンティ（ショーツセット）</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10101&amp;outlet=include">デイリーユースブラ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10104&amp;outlet=include">気やせブラ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10107&amp;outlet=include">セクシーランジェリー</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10102&amp;outlet=include">谷間ブラ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10103&amp;outlet=include">ボリュームアップブラ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10117&amp;outlet=include">抜け感ブラ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10113&amp;outlet=include">ナイトブラ・インナー</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10105&amp;outlet=include">グラマーサイズ（Eカップ以上）</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=20803&amp;outlet=include">マタニティ下着</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10111&amp;outlet=include">ブラ関連グッズ</a></dd>
+              <dd class="category__sub--item"><a href="/pj/special/ranking/bra.html">ブラ人気ランキング</a></dd>
+            </dl>
+            <dl class="category__sub--box">
+              <dt class="category__sub--tit">シリーズ</dt>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_al=miracle&amp;outlet=include&amp;sort=6&amp;_dm=2">ミラクルブラ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_sr=334&amp;outlet=include">ワークブラ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_sr=414&amp;outlet=include&amp;sort=2">ドリームブラ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_sr=445&amp;outlet=include&amp;sort=2">PJ DAYS</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_sr=425&amp;outlet=include&amp;sort=2">フェロモンブラ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_sr=436&amp;outlet=include&amp;sort=2">ヌーディ(R)ブラ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_sr=483&amp;outlet=include&amp;sort=2&amp;_dm=2">自由のブラ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_sr=477&amp;outlet=include&amp;sort=2&amp;_dm=2">LOVE＆PEACH</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/detail/?ITM=1014680&amp;outlet=include">胸きゅんブラ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_sr=192&amp;outlet=include&amp;sort=2">マキシマムメイカー</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_al=tanimamisenai&amp;sort=6&amp;_dm=2&amp;outlet=include">谷間見せないブラ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_sr=391&amp;outlet=include&amp;sort=2">はみ肉グイ寄せ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_sr=47&amp;outlet=include&amp;sort=2">デコルタン</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_al=nicebody&amp;sort=6&amp;_dm=2">ナイスバディ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_sr=429&amp;outlet=include&amp;sort=2">PJ model's</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_sr=434&amp;outlet=include&amp;sort=2">PJ COLORS</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_sr=27&amp;outlet=include&amp;sort=2">グランディーナ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_sr=465&amp;outlet=include&amp;sort=2">シアーメイク</a></dd>
+            </dl>
+            <dl class="category__sub--box">
+              <dt class="category__sub--tit">ブランド</dt>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_sr=419&amp;outlet=include">YUMMY MART</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_sr=377&amp;outlet=include">SALON by PEACH JOHN</a></dd>
+            </dl>
+          </div>
+          <div class="category02 category__wrap none">
+            <dl class="category__sub--box">
+              <dt class="category__sub--tit"><a href="/pjitem/list/?_pcg=102&amp;outlet=include">パンティ（ショーツ・サニタリー）</a></dt>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10201&amp;outlet=include">パンティ（ショーツ）</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10202&amp;outlet=include">ソング・Tバック・ガーター</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_al=160802cheeky&amp;outlet=include">チーキー</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10203&amp;outlet=include">ボーイレッグ・ガールズブリーフ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10204&amp;outlet=include">サニタリー</a></dd>
+              <dd class="category__sub--item"><a href="/pj/special/ranking/panty.html">パンティ人気ランキング</a></dd>
+            </dl>
+          </div>
+          <div class="category03 category__wrap none">
+            <dl class="category__sub--box">
+              <dt class="category__sub--tit"><a href="/pjitem/list/?_pcg=105&amp;outlet=include">インナー</a></dt>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10504&amp;outlet=include">パッド付きインナー</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10502&amp;outlet=include">デオドラント</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10501&amp;outlet=include">キャミソール・タンク</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10503&amp;outlet=include">あったかインナー</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10505&amp;outlet=include">透け防止アイテム</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10601&amp;outlet=include">補整インナー</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10301&amp;outlet=include">スリップ・ベビードール</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10303&amp;outlet=include">ランジェリー系ボトム</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10306&amp;outlet=include">セクシーランジェリー・コスプレ・ラブグッズ</a></dd>
+              <dd class="category__sub--item"><a href="/pj/special/ranking/inner.html">インナー人気ランキング</a></dd>
+            </dl>
+          </div>
+          <div class="category04 category__wrap none">
+            <dl class="category__sub--box">
+              <dt class="category__sub--tit"><a href="/pjitem/list/?_pcg=104&amp;outlet=include">ルームウエア</a></dt>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10401&amp;outlet=include">パジャマ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10403&amp;outlet=include">ワンピース・オールインワン・ネグリジェ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10404&amp;outlet=include">ローブ・バスローブ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10402&amp;outlet=include">ルームシューズ・スリッパ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10901&amp;outlet=include">メンズ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=10405&amp;outlet=include">ワンマイルウエア</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_al=170502gift&amp;outlet=include&amp;sort=6&amp;_dm=1">Gift</a></dd>
+              <dd class="category__sub--item"><a href="/pj/special/ranking/room.html">ルームウエア人気ランキング</a></dd>
+            </dl>
+          </div>
+          <div class="category05 category__wrap none">
+            <dl class="category__sub--box">
+              <dt class="category__sub--tit"><a href="/pjitem/list/?_pcg=401&amp;outlet=include">インテリア</a></dt>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=40101&amp;outlet=include">寝具・ファブリック</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=40201&amp;outlet=include">インテリアグッズ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=40301&amp;outlet=include">収納グッズ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=40401&amp;outlet=include">キッチングッズ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=40501&amp;outlet=include">バス用品・トイレタリー用品</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=40601&amp;outlet=include">掃除グッズ・洗濯用品</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=40701&amp;outlet=include">芳香剤・消臭剤</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=40801&amp;outlet=include">ステーショナリー・生活雑貨</a></dd>
+              <dd class="category__sub--item"><a href="/pj/special/ranking/interior.html">ルームウエア人気ランキング</a></dd>
+            </dl>
+          </div>
+          <div class="category06 category__wrap none">
+            <dl class="category__sub--box">
+              <dt class="category__sub--tit"><a href="/pjitem/list/?_pcg=201&amp;outlet=include">ファッション</a></dt>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=20104&amp;outlet=include">キャミソール・タンクトップ・チューブトップ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=20101&amp;outlet=include">Tシャツ・カットソー</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=20102&amp;outlet=include">シャツ・ブラウス</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=20103&amp;outlet=include">ニット・セーター</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=20105&amp;outlet=include">カーディガン・ボレロ・ベスト</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=20106&amp;outlet=include">パーカー・スウェット</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=20401&amp;outlet=include">ジャケット・コート・ブルゾン</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=20501&amp;outlet=include">ワンピース・チュニック・ドレス・オールインワン</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=20601&amp;outlet=include">パンツ・ガウチョパンツ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=20602&amp;outlet=include">ショートパンツ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=20603&amp;outlet=include">スカート</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=20605&amp;outlet=include">ストッキング・タイツ・靴下</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=60103&amp;outlet=include">ＵＶウエア</a></dd>
+              <dd class="category__sub--item"><a href="/pj/special/ranking/fashion.html">ファッション人気ランキング</a></dd>
+            </dl>
+          </div>
+          <div class="category07 category__wrap none">
+            <dl class="category__sub--box">
+              <dt class="category__sub--tit"><a href="/pjitem/list/?_pcg=207&amp;outlet=include">水着・スポーツウエア・その他</a></dt>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=20701&amp;outlet=include">ビキニ・スイムウエア</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=20702&amp;outlet=include">スポーツウエア</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=20802&amp;outlet=include">その他</a></dd>
+            </dl>
+          </div>
+          <div class="category08 category__wrap none">
+            <dl class="category__sub--box">
+              <dt class="category__sub--tit">靴（シューズ）・ファッション雑貨</dt>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=30401&amp;outlet=include">バッグ（鞄）</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=30402&amp;outlet=include">ポーチ・ケース</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=30501&amp;outlet=include">帽子・ストール・手袋</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=30601&amp;outlet=include">アクセサリー（小物・雑貨）</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=60102&amp;outlet=include">ＵＶグッズ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=30101&amp;outlet=include">パンプス・バレエシューズ・フラットシューズ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=30102&amp;outlet=include">サンダル</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=30104&amp;outlet=include">スニーカー・その他</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=30103&amp;outlet=include">ブーツ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=30201&amp;outlet=include">ルームシューズ・スリッパ</a></dd>
+            </dl>
+          </div>
+          <div class="category09 category__wrap none">
+            <dl class="category__sub--box">
+              <dt class="category__sub--tit">ビューティケアアイテム</dt>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=50112&amp;_iid=1&amp;outlet=include">バストケア</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=50113&amp;_iid=1&amp;outlet=include">ヒップケア</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=50114&amp;_iid=1&amp;outlet=include">デリケートゾーンケア</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=50104&amp;_iid=1&amp;outlet=include">リップケア</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_pcg=503&amp;_iid=1&amp;outlet=include">ボディケア</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=50201&amp;_iid=1&amp;outlet=include">メイクアップ</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=50201&amp;_iid=1&amp;outlet=include">ヘアケア</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=50303&amp;_iid=1&amp;outlet=include">ハンドケア</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=50101&amp;_iid=1&amp;outlet=include">スキンケア</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=50501&amp;_iid=1&amp;outlet=include">オーラルケア</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=50601&amp;_iid=1&amp;outlet=include">フレグランス（香水）</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=50701&amp;_iid=1&amp;outlet=include">コフレ・トライアルセット</a></dd>
+              <dd class="category__sub--item"><a href="/pjitem/list/?_cg=50801&amp;_iid=1&amp;outlet=include">美容グッズ</a></dd>
+              <dd class="category__sub--item"><a href="/pj/special/ranking/beauty.html">ビューティ人気ランキング</a></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script type="text/javascript">
+/**
+ * Poplink Area.
+ */
+if (CommonUtils.isMobile()) {
+    //sp
+    jQuery("<link>").attr({rel:"stylesheet",type:"text/css",href:"/app/css/common/poplink_sp.css"}).appendTo("head");
+    var poplink3 = {
+        uid: "a9f13ca24a2c8ed4eb90592e75fcb763q",
+        target: "#header #keyword",
+        displayTarget: "#header",
+        deviceType: "sphsr",           // 変更
+        skipStyleSheetLoadCheck: true, //181031追加
+        useRecommend: true,            // 必須
+        recommendRequestType: 'bulk',  // 必須
+        clientIDCookieName: '_rt.uid', // Rtoasterのmember_idのクッキー名
+        displayItemAny1: true,         // 価格を表示する (商品検索結果)
+        displayRecommendAny1: true     // 価格を表示する (レコメンド)
+    };
+    (function() {
+        var s = document.createElement("script");
+        s.charset = "utf-8";
+        s.src = "//poplink-f.probo.biz/pl3/poplink3.js";
+        document.getElementsByTagName("head")[0].appendChild(s);
+    })();
+} else {
+    //pc
+    jQuery("<link>").attr({rel:"stylesheet",type:"text/css",href:"/app/css/common/poplink_pc.css"}).appendTo("head");
+    var poplink3 = {
+        uid: "a9f13ca24a2c8ed4eb90592e75fcb763q",
+        target: "#header #keyword",
+        deviceType: 'pc011',
+        useRecommend: true,            // 必須
+        skipStyleSheetLoadCheck: true, //181031追加
+        recommendRequestType: 'bulk',  // 必須
+        clientIDCookieName: '_rt.uid', // Rtoasterのmember_idのクッキー名
+        displayItemAny1: true,         // 価格を表示する (商品検索結果)
+        displayRecommendAny1: true     // 価格を表示する (レコメンド)
+    };
+    (function() {
+        var s = document.createElement("script");
+        s.src = "//poplink-f.probo.biz/pl3/poplink3.js";
+        s.charset = "utf-8";
+        document.getElementsByTagName("head")[0].appendChild(s);
+    })();
+}
+
+/**
+ * Get System Common Data.
+ */
+buildHeaderLoginStatus = function() {
+    var loginStatus = pagePolicy.getCommonData(COMMON_CONSTS.COMMON_DATA_API.REQUEST.LOGIN_STATUS);
+    if (loginStatus) {
+        jQuery("#header .account .login_block").css("display", "none");
+        jQuery("#header .account .logout_block").css("display", "inline");
+    } else {
+        jQuery("#header .account .login_block").css("display", "inline");
+        jQuery("#header .account .logout_block").css("display", "none");
+    }
+}
+buildHeaderCartTotalCount = function() {
+    var cartTotalCount = pagePolicy.getCommonData(COMMON_CONSTS.COMMON_DATA_API.REQUEST.CART_TOTAL_COUNT);
+    jQuery("#header .cart .count").text(cartTotalCount);
+}
+pagePolicy.addParameter(COMMON_CONSTS.PAGE_POLICY.PARAMETER_NAMES.SUCCESS_FUNCTION, buildHeaderLoginStatus);
+pagePolicy.addParameter(COMMON_CONSTS.PAGE_POLICY.PARAMETER_NAMES.SUCCESS_FUNCTION, buildHeaderCartTotalCount);
+</script>

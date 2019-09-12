@@ -55,12 +55,14 @@ var COMMON_CONSTS = {
         WITHDRAW_PAGE        : "/member/withdrawalconfirm/",
         CATALOG_TERM_PAGE    : "/member/catalognoneed/",
         MYPAGE_PJ_PAGE       : "/member/pjmypage/",
-        BRA_ELECTION_PAGE    : "/item/braelectioniteminfo/"
+        BRA_ELECTION_PAGE    : "/item/braelectioniteminfo/",
+        LOGIN_PAGE           : "/member/login/"
     },
     FILES : {
         CATEGORY_INFOS_URL   : "/app/config/json/CategoryInfos.json",
         CMS_CONTENTS_URL     : "/app/config/cms/ContentList.csv"
     },
+    DYNAMIC_PATHS : ["/member","/pjitem","/shopping","/inquiry","/address","/info","/dwr","/item","/catalog","/check","/friend","/questionnaire","/review","/contents_d","/common/commondata","/stock/storestock","/product","/store-out"],
     HTTP_COMMON : {
         ENUM : {
             PROCESS_STATUS : {
@@ -77,7 +79,8 @@ var COMMON_CONSTS = {
         REQUEST : {
             PREVIOUS_ID : "previousid",
             TOKEN : "token",
-            ACTION_NAME : "actionNameTxt"
+            ACTION_NAME : "actionNameTxt",
+            CALINKTOKEN : "caLinkToken"
         },
         RESPONSE : {
             PROCESS_STATUS     : "status",
@@ -313,9 +316,11 @@ var COMMON_CONSTS = {
     },
     //Selected System Date
     SYS_DATE_SETTING   : {
-        "momo.preview-testsite.peachjohn.co.jp" : "2018/10/31 15:00:00",
-        "09ngs-momo.qaenv-ext.peachjohn.co.jp" : "2018/10/31 15:00:00"
-    }
+        "momo.preview-testsite.peachjohn.co.jp" : "2019/07/31 15:00:00",
+        "09ngs-momo.qaenv-ext.peachjohn.co.jp" : "2019/07/31 15:00:00"
+    },
+    //BlockList of LINE Connect
+    LINE_CONNECT_BLOCK : ["/app/lbi/common/header.lbi", "/app/lbi/common/sp-menu.lbi", "/app/lbi/common/footer.lbi", "/app/lbi/member/regist/rt_ranking1.lbi", "/app/lbi/member/regist/rt_userhistory.lbi", "/common/front/library/cust-complete-txt.lbi"]
 };
 
 /**

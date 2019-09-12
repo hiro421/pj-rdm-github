@@ -32,7 +32,7 @@ var CommonUtils = (function() {
         },
         fullToHalf : function(value) {
             if (CommonUtils.isNotNull(value)) {
-                value = value.replace(/[�`-�y��-���O-�X]/g, function(s) {
+                value = value.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(s) {
                     return String.fromCharCode(s.charCodeAt(0) - 0xFEE0);
                 });
             }
@@ -152,6 +152,13 @@ var CommonUtils = (function() {
                 callback("");
                 return;
             }
+            //Line経由の画面の場合、禁止リストを利用する
+            if(CommonUtils.isNotNull(pagePolicy.getFormData(COMMON_CONSTS.HTTP_COMMON.REQUEST.CALINKTOKEN)) && 
+            		pagePolicy.getFormData(COMMON_CONSTS.HTTP_COMMON.REQUEST.CALINKTOKEN) != "" && (COMMON_CONSTS.LINE_CONNECT_BLOCK.indexOf(filePath) >= 0)){
+            	callback("");
+                return;
+            }
+           
             jQuery.ajax({
                 method       :    "get",
                 async        :    true,
