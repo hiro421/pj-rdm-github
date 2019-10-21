@@ -88,10 +88,11 @@ ItemDetailPage.prototype = {
         RELATED_ITEMS_SLIDE : ".coordinateItems .slides",
         RECOMMEND_ITEMS_SLIDE : ".recommendItems .slides",
         FOOT_FIXED_NAVI : "#footFixedBtn",
-        REVIEW_VOICE_AREA : "#reviewVoiceArea",
+        REVIEW_VOICE_AREA : ".costomerReview",
         SP_RECOMMEND_ITEMS : "#rt_auto_detail6",
         
-        MAIN_INFO_PANEL : "#main"
+        MAIN_INFO_PANEL : "#main",
+        STAFF_VOICE_REVIEW_INFO : ".staffVoice .review-info"
     },
     //Item(ColorCode) and Video's URL
     ITEM_VIDEO_ITEMS : {
@@ -930,6 +931,78 @@ ItemDetailPage.prototype = {
                 ],
                 "index": 2
             }
+        },
+        "1022500": {
+            "102250000": {
+                "poster": "//peachjohn.scene7.com/is/image/PeachJohn/1022500?fit=constrain,1&wid=1024&hei=715",
+                "video": [
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022500",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022500.m3u8",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022500-AVS.m3u8",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/movie/1022500.mp4"
+                ],
+                "index": 2
+            }
+        },
+        "1022520": {
+            "102252000": {
+                "poster": "//peachjohn.scene7.com/is/image/PeachJohn/1022520?fit=constrain,1&wid=1024&hei=715",
+                "video": [
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022520",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022520.m3u8",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022520-AVS.m3u8",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/movie/1022520.mp4"
+                ],
+                "index": 2
+            }
+        },
+        "1022531": {
+            "102253100": {
+                "poster": "//peachjohn.scene7.com/is/image/PeachJohn/1022531?fit=constrain,1&wid=1024&hei=715",
+                "video": [
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022531",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022531.m3u8",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022531-AVS.m3u8",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/movie/1022531.mp4"
+                ],
+                "index": 2
+            }
+        },
+        "1022590": {
+            "102259000": {
+                "poster": "//peachjohn.scene7.com/is/image/PeachJohn/1022590?fit=constrain,1&wid=1024&hei=715",
+                "video": [
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022590",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022590.m3u8",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022590-AVS.m3u8",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/movie/1022590.mp4"
+                ],
+                "index": 2
+            }
+        },
+        "1022802": {
+            "102280200": {
+                "poster": "//peachjohn.scene7.com/is/image/PeachJohn/1022802?fit=constrain,1&wid=1024&hei=715",
+                "video": [
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022802",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022802.m3u8",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022802-AVS.m3u8",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/movie/1022802.mp4"
+                ],
+                "index": 2
+            }
+        },
+        "1022610": {
+            "102261000": {
+                "poster": "//peachjohn.scene7.com/is/image/PeachJohn/1022610?fit=constrain,1&wid=1024&hei=715",
+                "video": [
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022610",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022610.m3u8",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/1022610-AVS.m3u8",
+                    "//peachjohn.scene7.com/is/content/PeachJohn/movie/1022610.mp4"
+                ],
+                "index": 2
+            }
         }
     },
     ItemData : null,
@@ -1281,6 +1354,28 @@ ItemDetailPage.prototype = {
     },
     
     initialize : function(parameters) {
+        //Load JS
+        $("<script/>", {
+            type: "text/javascript",
+            src : "/app/js/lib/lazyload.min.js",
+            charset : "utf-8"
+        }).appendTo("head");
+        $("<script/>", {
+            type: "text/javascript",
+            src : "/app/js/lib/papaparse.min.js",
+            charset: "utf-8"
+        }).appendTo("head");
+        $("<script/>", {
+            type: "text/javascript",
+            src : "/app/js/static/FloorCMS.js",
+            charset: "utf-8"
+        }).appendTo("head");
+        //Load CSS
+        $("<link/>", {
+            rel : "stylesheet",
+            type: "text/css",
+            href: "/app/css/component/ContentsCommon.css"
+        }).appendTo("head");
         var instance = this;
         detailPageInstance = this;
         //Validation
@@ -1339,6 +1434,21 @@ ItemDetailPage.prototype = {
         })
         
         instance.completeCount++;
+        
+        var DETAIL_PARTS = $(".detail-parts");
+        DETAIL_PARTS.find("b").click(function(){
+          if ($(this).next().is(":hidden")) {
+              $(this).removeClass("none-submenu");
+              $(this).addClass("active-submenu");
+              $(this).next().slideDown(200);
+          } else {
+              $(this).removeClass("active-submenu");
+              $(this).addClass("none-submenu");
+              $(this).next().slideUp(200);
+          } 
+        });
+        //Remove attention comment in Staff Voice
+        instance.ITEM_COMPONENTS.STAFF_VOICE_REVIEW_INFO.remove();
     },
     buildFavStoreStock : function() {
         var instance = this;
@@ -1434,12 +1544,35 @@ ItemDetailPage.prototype = {
     },
     buildPageComponent : function() {
         var instance = this;
+        
         //All Element
         if (typeof instance.ITEM_COMPONENTS.PRODUCT_DETAIL != "undefined") {
-            var allElementBtn = instance.ITEM_COMPONENTS.PRODUCT_DETAIL.find("> div > .subText > .ingredientsText");
-            if (allElementBtn.length > 0) {
-                allElementBtn.click(function() {
-                    instance.buildAllElementPanel($(this));
+            var allElementBtn = $("#allElementContext");
+            if (allElementBtn.length > 0 ) {
+                var allElementUrl = allElementBtn.attr("dataurl");
+                jQuery.ajax({
+                    method       :    "get",
+                    async        :    true,
+                    dataType     :    "html",
+                    timeout      :    10000,
+                    url          :    allElementUrl,
+                    contentType  :    "text/html; charset=Shift_JIS",
+                    beforeSend   : function(xhr, settings){
+                        if (xhr.overrideMimeType) {
+                            xhr.overrideMimeType("text/html; charset=Shift_JIS");
+                        }
+                    },
+                    success: function(data){
+                        var elementTag = $(data).find("table tr > td > table tr > td");
+                        if (elementTag.length > 0) {
+                            allElementBtn.html(elementTag.html());
+                        } else {
+                            allElementBtn.html(COMMON_CONSTS.MESSAGES.ALL_ELEMENT_INFO_FAIL);
+                        }
+                    },
+                    error: function(xhr,status,error){
+                        allElementBtn.html(COMMON_CONSTS.MESSAGES.ALL_ELEMENT_INFO_FAIL);
+                    }
                 });
             }
         }
@@ -1568,47 +1701,7 @@ ItemDetailPage.prototype = {
             }
         }
         //Mobile Only Design
-        if (CommonUtils.isMobile()) {
-            //Product Detail
-            var productDetailWrap = instance.ITEM_COMPONENTS.PRODUCT_DETAIL.find("> div");
-            instance.ITEM_COMPONENTS.PRODUCT_DETAIL.find("b").click(function(){
-                if (productDetailWrap.is(":hidden")) {
-                    $(this).removeClass("none-submenu");
-                    $(this).addClass("active-submenu");
-                    productDetailWrap.slideDown(200);
-                } else {
-                    $(this).removeClass("active-submenu");
-                    $(this).addClass("none-submenu");
-                    productDetailWrap.slideUp(200);
-                }
-            });
-            //Customer Review 
-            var reviewWrap = instance.ITEM_COMPONENTS.CUSTOMER_REVIEW.find(".wrap");
-            //reviewWrap.hide();
-            instance.ITEM_COMPONENTS.CUSTOMER_REVIEW.find("b").addClass("active");
-            instance.ITEM_COMPONENTS.CUSTOMER_REVIEW.find("b").click(function(){
-                if (reviewWrap.is(":hidden")) {
-                    $(this).addClass("active");
-                    reviewWrap.slideDown(200);
-                } else {
-                    $(this).removeClass("active");
-                    reviewWrap.slideUp(200);
-                }
-            });
-            //Staff Voice
-            var staffVoiceWrap = instance.ITEM_COMPONENTS.STAFF_VOICE.find(".wrap");
-            staffVoiceWrap.hide();
-            instance.ITEM_COMPONENTS.STAFF_VOICE.find("b").click(function(){
-                if (staffVoiceWrap.is(":hidden")) {
-                    $(this).addClass("active");
-                    staffVoiceWrap.slideDown(200);
-                } else {
-                    $(this).removeClass("active");
-                    staffVoiceWrap.slideUp(200);
-                }
-            });
-            //
-        }
+        if (CommonUtils.isMobile()) {}
         //resize init
         $(window).on("load resize", initResize);
         function initResize() {
@@ -1650,6 +1743,7 @@ ItemDetailPage.prototype = {
         var exSalePrice = instance.ItemData.priceInfo.exSalePrice;
         var salePrice = instance.ItemData.priceInfo.salePrice;
         var mutiPrice = instance.ItemData.priceInfo.mutiPrice;
+        var isReducedTax = instance.ItemData.priceInfo.taxFlg;
         if (exSalePrice > salePrice) {
             var salePriceComponents = {};
             CommonUtils.createHtmlConponent(instance.AttentionItemSetting, salePriceComponents, null);
@@ -1664,6 +1758,9 @@ ItemDetailPage.prototype = {
             instance.ITEM_COMPONENTS.SALE_PRICE.append("\uff5e");
         }
         instance.ITEM_COMPONENTS.SALE_PRICE.append(instance.ItemData.taxDisplayExplainWord);
+        if(isReducedTax){
+            instance.ITEM_COMPONENTS.SALE_PRICE.append(instance.ItemData.reducedTaxText);
+        }
         //Size Guide
         instance.ITEM_COMPONENTS.SIZE_GUIDE.attr("href", COMMON_CONSTS.URLS.SIZE_GUIDE_PAGE);
         //Quantity Plus
@@ -1762,6 +1859,7 @@ ItemDetailPage.prototype = {
                     var exSalePrice = priceInfo.exSalePrice;
                     var salePrice = priceInfo.salePrice;
                     var mutiPrice = priceInfo.mutiPrice;
+                    var isReducedTax = priceInfo.taxFlg;
                     if (exSalePrice > salePrice) {
                         var salePriceComponents = {};
                         CommonUtils.createHtmlConponent(instance.AttentionItemSetting, salePriceComponents, null);
@@ -1776,6 +1874,9 @@ ItemDetailPage.prototype = {
                         instance.ITEM_COMPONENTS.SALE_PRICE.append("\uff5e");
                     }
                     instance.ITEM_COMPONENTS.SALE_PRICE.append(instance.ItemData.taxDisplayExplainWord);
+                    if(isReducedTax){
+                    	instance.ITEM_COMPONENTS.SALE_PRICE.append(instance.ItemData.reducedTaxText);
+                    }
                 }
                 $(colorItemComponents.ColorItem).addClass("active");
                 //Create Item Preview Image
@@ -2774,8 +2875,9 @@ ItemDetailPage.prototype = {
         //Build Page
         var addtionalInfoComponents = {};
         CommonUtils.createHtmlConponent(instance.AddtionalInfoSetting, addtionalInfoComponents, null);
-        instance.ITEM_COMPONENTS.MAIN_INFO_PANEL.prepend(addtionalInfoComponents.Panel);
-        
+        //instance.ITEM_COMPONENTS.MAIN_INFO_PANEL.prepend(addtionalInfoComponents.Panel);
+        var productDetail_sub = instance.ITEM_COMPONENTS.PRODUCT_DETAIL.find("> div");
+        productDetail_sub.append(addtionalInfoComponents.Panel);
         //var itemCode = csvInfo[instance.AddtionalCsvTitles.ITEM_CODE];
         var wire = csvInfo[instance.AddtionalCsvTitles.WIRE];
         if (CommonUtils.isNotNull(wire)) {
@@ -2894,10 +2996,14 @@ if (CommonUtils.isMobile()) {
     pagePolicy.putParameter("RtoasterRecommendItems", "/app/lbi/rtoaster/itemdetail/rt_auto_detail6.lbi");
     pagePolicy.putParameter("RtoasterRecommendInfo", "/app/lbi/rtoaster/itemdetail/rt_recommendInfo_sp.lbi");
     pagePolicy.putParameter("RtoasterCheckedItems", "/app/lbi/rtoaster/itemdetail/rt_userhistory5.lbi");
+    pagePolicy.putParameter("delivery-cost-item", "/app/lbi/itemdetail/delivery-cost.lbi");
+    pagePolicy.putParameter("about-return-item", "/app/lbi/itemdetail/about-return.lbi");
 } else {
     pagePolicy.putParameter("RtoasterTopBanner", "/app/lbi/rtoaster/itemdetail/rt_pc_rule_yokoichi.lbi");
     pagePolicy.putParameter("RtoasterAddToCart", "/app/lbi/rtoaster/itemdetail/rt_auto_detail5.lbi");
     pagePolicy.putParameter("RtoasterRecommendItems", "/app/lbi/rtoaster/itemdetail/rt_auto_detail1.lbi");
     pagePolicy.putParameter("RtoasterRecommendInfo", "/app/lbi/rtoaster/itemdetail/rt_recommendInfo_pc.lbi");
     pagePolicy.putParameter("RtoasterCheckedItems", "/app/lbi/rtoaster/itemdetail/rt_userhistory4.lbi");
+    pagePolicy.putParameter("delivery-cost-item", "/app/lbi/itemdetail/delivery-cost.lbi");
+    pagePolicy.putParameter("about-return-item", "/app/lbi/itemdetail/about-return.lbi");
 }

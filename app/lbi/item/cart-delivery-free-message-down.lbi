@@ -1,11 +1,11 @@
 <div id="message-nonfree-down" style="display:none;">
 <p class="text-A12">
-    <b>送料無料対象商品をお買い上げの場合を除き、1回のご注文につき送料(￥540)がかかります。</b>
+    <b>送料無料対象商品をお買い上げの場合を除き、1回のご注文につき送料(￥550)がかかります。</b>
 </p>
 </div>
 <div id="message-detail-down" style="display:none;">
 <p class="text-A12">
-    <b>あと<span id="balanceToDeliveryFree-down" class="highlight"></span>のお買い上げ（各種割引適用後）で<span class="highlight">送料(￥540)が無料</span>になります。</b>
+    <b>あと<span id="balanceToDeliveryFree-down" class="highlight"></span>のお買い上げ（各種割引適用後）で<span class="highlight">送料(￥550)が無料</span>になります。</b>
 </p>
 </div>
 <div id="message-free-down" style="display:none;">

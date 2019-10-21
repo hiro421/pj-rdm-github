@@ -1,7 +1,7 @@
     <div class="spMenu sp">
       <div class="gnaviInner--main gnaviInner">
         <div class="spMenu__head">
-          <div class="spMenu__head--account"><a href="/member/pjmypage/">マイページ / 桃山様</a></div>
+          <div class="spMenu__head--account"><a href="/member/pjmypage/">MY PAGE / 桃山様</a></div>
           <div class="spMenu__head--closeBtn sp-close">close</div>
         </div>
         <div class="commonNavWrap">
