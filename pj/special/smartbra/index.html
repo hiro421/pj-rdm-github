@@ -5,17 +5,17 @@
     <!--<script id="flamingo-switcher" type="text/javascript" src="/app/js/flamingo/flamingo-switcher.js" charset="utf-8"></script>-->
     <meta charset="shift_jis">
     <meta name="viewport" content="width=device-width,user-scalable=no">
-    <meta name="description" content="小顔メイクみたいに、ボディも「影」でやせ見えメイク！ピーチ・ジョンの新定番「スマートブラ」誕生">
-    <meta name="keywords" content="通販,PJ,ピーチ・ジョン,Peach john,PEACH JOHN,スタイルアップ,スマートブラ,着やせ,やせ見え">
+    <meta name="description" content="小顔メイクみたいに、ボディも「影」でやせ見えメイク！ピーチ・ジョンの新定番「スマートブラ」">
+    <meta name="keywords" content="通販,PJ,ピーチ・ジョン,Peach john,PEACH JOHN,スタイルアップ,スマートブラ,着やせ,やせ見え,着やせブラ,脇肉,新色">
     <!-- OGP-->
-    <meta property="og:title" content="SMART BRA">
+    <meta property="og:title" content="スマートブラ">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="小顔メイクみたいに、ボディも「影」でやせ見えメイク！ピーチ・ジョンの新定番「スマートブラ」誕生">
+    <meta property="og:description" content="小顔メイクみたいに、ボディも「影」でやせ見えメイク！ピーチ・ジョンの新定番「スマートブラ」">
     <meta property="og:url" content="https://www.peachjohn.co.jp/pj/special/smartbra/">
     <meta property="og:site_name" content="PEACH JOHN">
     <meta property="og:image" content="https://www.peachjohn.co.jp/pj/special/smartbra/img/ogimage.jpg">
     <!-- /OGP-->
-    <title>SMART BRA｜≪公式≫下着通販　PEACH JOHN（ピーチ・ジョン）WEBストア</title>
+    <title>スマートブラ｜≪公式≫下着通販　PEACH JOHN（ピーチ・ジョン）WEBストア</title>
     <meta name="format-detection" content="telephone=no">
     <!--common-->
     <link rel="shortcut icon" href="/common/front/img/al/favicon.ico" type="image/vnd.microsoft.icon"/>
@@ -31,16 +31,17 @@
     <script type="text/javascript" src="/app/js/lib/jquery.panzoom.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="/app/js/common/CommonParams.js" charset="utf-8"></script>
     <script type="text/javascript" src="/app/js/common/CommonUtils.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/app/js/component/StoreStock.js"></script>	
     <script type="text/javascript" src="/app/js/common/common.js" charset="utf-8"></script>
     <script type="text/javascript" src="/app/js/common/cliplist.js" charset="utf-8"></script>
-    <script type="text/javascript" src="/app/js/component/StoreStock.js"></script>
     <link rel="stylesheet" type="text/css" href="/app/css/common/custom.css">
     <link rel="stylesheet" type="text/css" href="/app/css/common/normalize.css">
     <link rel="stylesheet" type="text/css" href="/app/css/component/Purchase.css">
-    <!-- <link rel="stylesheet" type="text/css" href="/app/css/common/main.css"> -->
+    <script type="text/javascript" src="/app/js/component/Purchase.js"></script>
+    <link rel="stylesheet" type="text/css" href="/app/css/common/main.css">
     <link rel="stylesheet" type="text/css" href="/app/css/common/common.css">
     <link rel="stylesheet" type="text/css" href="/app/css/common/common2.css">
-    <link rel="stylesheet" type="text/css" href="/app/css/component/StoreStock.css">
+    <link rel="stylesheet" type="text/css" href="/app/css/component/StoreStock.css">	
     <script type="text/javascript" src="/app/js/component/Purchase.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function () {
@@ -63,6 +64,7 @@
     <!--common-->
 
     <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/style_add.css">
     <script type="text/javascript" src="./asset/js/app.js"></script>
 
     <!-- debug -->
@@ -70,7 +72,7 @@
     <!-- debug -->
 </head>
 <body id="pj">
-<header class="head">
+<!-- <header class="head">
     <h1><a href="/"><img src="asset/image-assets/pj.png" alt="PEACH JOHN"></a></h1>
     <nav class="main-menu">
         <ul>
@@ -84,7 +86,20 @@
         </ul>
     </nav>
     <span class="menu-toggle" id="ToggleMenu"><span>-</span></span>
-</header>
+</header> -->
+
+<!-- #header -->
+<div id="CommonHeader"></div>
+<!-- #header -->
+<script type="text/javascript">
+    //Clear Header
+    jQuery("#CommonHeader").empty();
+    /** header.lbi */
+    CommonUtils.loadContents("/app/lbi/common/header.lbi", function (contents) { jQuery("#CommonHeader").append(contents); });
+    /** sp-menu.lbi */
+    CommonUtils.loadContents("/app/lbi/common/sp-menu.lbi", function (contents) { jQuery("#CommonHeader").append(contents); });
+</script>
+
 <section class="wrapper" id="top">
     <div class="container main-visual" data-aos="fade-in" data-aos-delay="500">
         <p>
@@ -101,11 +116,24 @@
         </h1>
     </div>
 </section>
-<!--<p class="coupon" data-aos="fade-up"><a href="/pj/store/store.html" target="_blank"><img
+
+<!--<p class="coupon" data-aos="fade-up"><a href="/al/info/coupon/190827/"><img
         src="asset/image-assets/b1_coupon.png" alt="クーポン"></a>
 </p>-->
 <section class="wrapper lead" data-aos="fade-in" id="id02">
     <div class="container">
+          <p class="lead__close-txt lead__close-txt2" data-aos="fade-up">
+            <picture>
+                <source media="(min-width:768px)" srcset="asset/image-assets/b1_txt5.png">
+                <img src="asset/image-assets/sp/b1_txt5.png" alt="シリーズ累計10万枚突破！ スマートブラに秋らしい新色が2色登場">
+            </picture>
+        </p>
+        <a href="/pjitem/detail/?COLOR=07&ITM=1024141&outlet=include">
+        <picture class="lead__item-image" data-aos="fade-up">
+            <source media="(min-width:768px)" srcset="asset/image-assets/b1_image_item.jpg">
+            <img src="asset/image-assets/sp/b1_image_item.jpg" alt="SMART BRA">
+        </picture>
+        </a>
         <div class="lead-graph" id="LeadGraph" data-aos="fade-up">
             <h2>
                 <picture>
@@ -149,14 +177,16 @@
         </div>
         <div class="lead__images" data-aos="fade-up">
             <div class="item">
+                <!--<img src="asset/image-assets/b1_img01_4.jpg" alt="スマートブラ">-->
                 <img src="asset/image-assets/b1_img01_1.jpg" alt="スマートブラ">
-                <img src="asset/image-assets/b1_img01_2.jpg" alt="スマートブラ">
-                <img src="asset/image-assets/b1_img01_3.jpg" alt="スマートブラ">
+                <!--<img src="asset/image-assets/b1_img01_2.jpg" alt="スマートブラ">
+                <img src="asset/image-assets/b1_img01_3.jpg" alt="スマートブラ">-->
             </div>
             <div class="item">
+               <!-- <img src="asset/image-assets/b1_img02_4.jpg" alt="スマートブラ">-->
                 <img src="asset/image-assets/b1_img02_1.jpg" alt="スマートブラ">
-                <img src="asset/image-assets/b1_img02_2.jpg" alt="スマートブラ">
-                <img src="asset/image-assets/b1_img02_3.jpg" alt="スマートブラ">
+                <!--<img src="asset/image-assets/b1_img02_2.jpg" alt="スマートブラ">
+                <img src="asset/image-assets/b1_img02_3.jpg" alt="スマートブラ">-->
             </div>
         </div>
         <p class="lead__close-txt" data-aos="fade-up">
@@ -165,27 +195,20 @@
                 <img src="asset/image-assets/sp/b1_txt4.png" alt="みんなの本音に応えた「見た目体重」をオフするブラ。今の自分をもっと好きになろう。">
             </picture>
         </p>
-        <a href="/pjitem/detail/?COLOR=02&ITM=1024141&outlet=include">
-        <picture class="lead__item-image" data-aos="fade-up">
-            <source media="(min-width:768px)" srcset="asset/image-assets/b1_image_item.jpg">
-            <img src="asset/image-assets/sp/b1_image_item.jpg" alt="SMART BRA">
-        </picture>
-        </a>
         <div class="lead__cart" data-aos="fade-up">
-            <a class="item-image" href="/pjitem/detail/?COLOR=02&ITM=1024141&outlet=include">
-                <img src="asset/image-assets/bra02.png" alt="スマートブラ">
-            </a>
+                <img src="asset/image-assets/bra_new.png" alt="スマートブラ" class="pc item-image">
+                <img src="asset/image-assets/sp/bra_new.png" alt="スマートブラ" class="sp item-image">
             <p class="lead__cart__catch">「見た目体重」は<br class="sp"/>ブラで減らせる！</p>
             <div class="lead__cart__under">
                 <div class="colors">
                     <p>スマートブラ<br class="pc">(B&#xFF5E;Fカップ) ￥3,280+税</p>
-                    <p>全6色<img src="asset/image-assets/colors.png" alt="スマートブラ カラー"></p>
+                    <p class="sp">全8色<img src="asset/image-assets/colors.png" alt="スマートブラ カラー"></p>
                 </div>
-                <div class="buy">
-                    <a class="buy__cart CallPurchaseItem" itemcode="1024141" dispcolorcode="102414102">カートに入れる</a>
+                <div class="buy buy_add">
+                    <a class="buy__cart CallPurchaseItem" itemcode="1024141" dispcolorcode="102414107">カートに入れる</a>
                     <a class="CallStorestockItem buy__sub popupStock" itemcode="1024141"
-                       dispcolorcode="102414102">店舗在庫</a>
-                    <a href="/pjitem/detail/?COLOR=02&ITM=1024141&outlet=include" class="buy__sub">商品詳細</a>
+                       dispcolorcode="102414107">店舗在庫</a>
+                    <a href="/pjitem/detail/?COLOR=07&ITM=1024141&outlet=include" class="buy__sub">商品詳細</a>
                 </div>
             </div>
         </div>
@@ -225,7 +248,7 @@
                         <img src="asset/image-assets/sp/b2_h3_1.png" alt="1.乳間狭く">
                     </picture>
                 </h4>
-                <p>乳間(※バストトップの間隔)をせまくすることで、バストが中心に集まり、「スマートシャドウ」が出現して、シェーディング効果を発揮。</p>
+                <p>乳間(※バストトップの間隔)を狭くすることで、バストが中心に集まり、「スマートシャドウ」が出現して、シェーディング効果を発揮。</p>
             </li>
             <li class="item" data-aos="fade-up">
                 <h4 class="title">
@@ -234,7 +257,7 @@
                         <img src="asset/image-assets/sp/b2_h3_2.png" alt="2.トップ位置高く">
                     </picture>
                 </h4>
-                <p>高さのあるバストは、 重心 が上がってサイドに影がつきやすい。さらにハリ感があるように見えてスタイルアップ効果も抜群。</p>
+                <p>高さのあるバストは、重心が上がってサイドに影がつきやすい。さらにハリ感があるように見えてスタイルアップ効果も抜群。</p>
             </li>
             <li class="item" data-aos="fade-up">
                 <h4 class="title">
@@ -261,8 +284,7 @@
             <div class="item"><img src="asset/image-assets/b2_image3.png" alt="通常のブラ"><span class="pc">通常のブラ</span></div>
             <div class="item"><img src="asset/image-assets/b2_image4.png" alt="スマートブラ"><span class="pc">スマートブラ</span></div>
         </div>
-        <p class="desc">小顔メイクから着想を得た「
-            スマートシャドウ」効果で実証。バストを中心に高く寄せるだけで、サイドの影が広がり細く見えるという目の錯覚が。ゆったり服でも、洋服の中のボディが細いと連想させてくれます。</p>
+        <p class="desc">小顔メイクから着想を得た「スマートシャドウ」効果で実証。バストを中心に高く寄せるだけで、サイドの影が広がり細く見えるという目の錯覚が。ゆったり服でも、洋服の中のボディが細いと連想させてくれます。</p>
     </div>
     <div class="shadow-line__wear" data-aos="fade-up">
         <h3 class="box-title pcmt60 spmt45"><span>着こなし比較</span></h3>
@@ -276,6 +298,85 @@
         </figure>
     </div>
 </section>
+
+<!--8/27追加-->
+<div class="wrapper items">
+    <div class="bra" data-aos="fade-up">
+        <div class="color-select" id="Bra" data-aos="fade-up">
+            <ul class="images">
+                <li data-num="1"><img src="asset/image-assets/bra01.png" alt="ブラック"></li>
+                <li data-num="2"><img src="asset/image-assets/bra02.png" alt="チェリーウッド"></li>
+                <li data-num="3"><img src="asset/image-assets/bra03.png" alt="モーヴピンク"></li>
+                <li data-num="4"><img src="asset/image-assets/bra04.png" alt="セラドングリーン"></li>
+                <li data-num="5"><img src="asset/image-assets/bra05.png" alt="レーズン"></li>
+                <li data-num="6"><img src="asset/image-assets/bra06.png" alt="アイボリー"></li>
+                <li data-num="7" class="active"><img src="asset/image-assets/bra07.png" alt="レッド"></li>
+                <li data-num="8"><img src="asset/image-assets/bra08.png" alt="アッシュミント"></li>
+                <li data-num="1" class="link"><a href="/pjitem/detail/?COLOR=01&ITM=1024141&outlet=include">ブラック</a></li>
+                <li data-num="2" class="link"><a href="/pjitem/detail/?COLOR=07&ITM=1024141&outlet=include">チェリーウッド</a></li>
+                <li data-num="3" class="link"><a href="/pjitem/detail/?COLOR=03&ITM=1024141&outlet=include">モーヴピンク</a></li>
+                <li data-num="4" class="link"><a href="/pjitem/detail/?COLOR=04&ITM=1024141&outlet=include">セラドングリーン</a></li>
+                <li data-num="5" class="link"><a href="/pjitem/detail/?COLOR=05&ITM=1024141&outlet=include">レーズン</a></li>
+                <li data-num="6" class="link"><a href="/pjitem/detail/?COLOR=06&ITM=1024141&outlet=include">アイボリー</a></li>
+                <li data-num="7" class="link active"><a href="/pjitem/detail/?COLOR=07&ITM=1024141&outlet=include">レッド</a></li>
+                <li data-num="8" class="link"><a href="/pjitem/detail/?COLOR=08&ITM=1024141&outlet=include">アッシュミント</a></li>
+            </ul>
+            <ul class="thums">
+                <li data-num="1"><img src="asset/image-assets/color1.png" alt="ブラック"></li>
+                <li data-num="2"><img src="asset/image-assets/color2.png" alt="チェリーウッド"></li>
+                <li data-num="3"><img src="asset/image-assets/color3.png" alt="モーヴピンク"></li>
+                <li data-num="4"><img src="asset/image-assets/color4.png" alt="セラドングリーン"></li>
+                <li data-num="5"><img src="asset/image-assets/color5.png" alt="レーズン"></li>
+                <li data-num="6"><img src="asset/image-assets/color6.png" alt="アイボリー"></li>
+                <li data-num="7" class="active"><img src="asset/image-assets/color7.png" alt="レッド"></li>
+                <li data-num="8"><img src="asset/image-assets/color8.png" alt="アッシュミント"></li>
+            </ul>
+        </div>
+        <div class="content">
+            <p><a href="/pjitem/detail/?COLOR=07&ITM=1024141&outlet=include">スマートブラ<br class="pc">(B&#xFF5E;Fカップ) ￥3,280+税</a></p>
+            <div class="buy">
+                <a class="buy__cart CallPurchaseItem" itemcode="1024141" dispcolorcode="102414107">カートに入れる</a>
+                <a class="CallStorestockItem buy__sub popupStock" itemcode="1024141"
+                   dispcolorcode="102414107">店舗在庫</a>
+                <a href="/pjitem/detail/?COLOR=07&ITM=1024141&outlet=include" class="buy__sub">商品詳細</a>
+            </div>
+        </div>
+    </div>
+    <div class="shorts shorts_add" data-aos="fade-up">
+        <div class="item">
+            <a href="/pjitem/detail/?COLOR=07&ITM=1024142&outlet=include" class="link">
+                <img src="asset/image-assets/panty.png" alt="パンティ" class="pc"><img src="asset/image-assets/sp/panty.png" alt="パンティ" class="sp">
+            </a>
+            <p><a href="/pjitem/detail/?COLOR=07&ITM=1024142&outlet=include">スマートパンティ<br>
+                (S&#xFF5E;Lサイズ)<br class="pc">
+                ￥1,480+税</a></p>
+            <div class="colors"><img src="asset/image-assets/colors.png" alt="カラー"></div>
+            <div class="buy narrow">
+                <a class="buy__cart CallPurchaseItem" itemcode="1024142" dispcolorcode="102414207">カートに入れる</a>
+                <a class="CallStorestockItem buy__sub popupStock" itemcode="1024142"
+                   dispcolorcode="102414207">店舗在庫</a>
+                <a href="/pjitem/detail/?COLOR=07&ITM=1024142&outlet=include" class="buy__sub">商品詳細</a>
+            </div>
+        </div>
+        <div class="item">
+            <a href="/pjitem/detail/?COLOR=06&ITM=1024143&outlet=include" class="link">
+                <img src="asset/image-assets/sanitary.png" alt="サニタリー" class="pc"><img src="asset/image-assets/sp/sanitary.png" alt="サニタリー" class="sp">
+            </a>
+            <p><a href="/pjitem/detail/?COLOR=06&ITM=1024143&outlet=include">スマートサニタリー<br>
+                (S&#xFF5E;Lサイズ)<br class="pc">
+                ￥1,680+税</a></p>
+            <div class="colors"><img src="asset/image-assets/colors2.png" alt="カラー"></div>
+            <div class="buy narrow">
+                <a class="buy__cart CallPurchaseItem" itemcode="1024143" dispcolorcode="102414306">カートに入れる</a>
+                <a class="CallStorestockItem buy__sub popupStock" itemcode="1024143"
+                   dispcolorcode="102414306">店舗在庫</a>
+                <a href="/pjitem/detail/?COLOR=06&ITM=1024143&outlet=include" class="buy__sub">商品詳細</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!--8/27追加-->
+
 <section class="wrapper examples" data-aos="fade-in" id="id04">
     <h2 class="shadow-line__title">
         <picture>
@@ -283,13 +384,14 @@
             <img src="asset/image-assets/sp/b3_main.png" alt="どんな世代＆体型でも「見た目体重」はブラで減らせる！">
         </picture>
     </h2>
+  <p class="realmodel">“「見た目体重」が減らせるブラって、私が着けたらどうなるの？”<br>ピーチ・ジョンでは色々な年齢や体型の方に実感してほしくて、<br>たくさんの方に自分らしくスマートブラを着用してもらいました。<br>皆違って美しい、あなただけのやせ見え体験をしてみましょう。</p>
     <div class="examples__graph" data-aos="fade-up">
         <h3 class="examples__graph__title"><span>ダイエットしないでスタイルアップが女性の本音！</span></h3>
         <div class="item" data-aos="fade-in">
             <h4 class="title"><span>今の体型に<br class="pc">満足している</span></h4>
             <div class="content">
                 <figure><img src="asset/image-assets/b3_graph01.png" alt="グラフ"></figure>
-                <p>今の自分の体型に満足していな い人が半数を超える結果に。<br>
+                <p>今の自分の体型に満足していない人が半数を超える結果に。<br>
                     どちらとも言えないが26％。Yesと答えた人はわずか14％！</p>
             </div>
         </div>
@@ -304,7 +406,7 @@
             <h4 class="title"><span>現在ダイエットを<br class="pc">している</span></h4>
             <div class="content">
                 <figure><img src="asset/image-assets/b3_graph03.png" alt="グラフ"></figure>
-                <p>とはいえ現在ダイエットをしているかと言うと7割がNo。出来ればダイエットせずにキレイに見せたいのが女性の本音。</p>
+                <p>とはいえ現在ダイエットをしているかというと7割がNo。できればダイエットせずにキレイに見せたいのが女性の本音。</p>
             </div>
         </div>
         <p class="sup">※調査方法:インターネットによるアンケート調査。<br class="sp">調査期間:2019年6月10日~ 6月17日。調査対象:女性323名。</p>
@@ -452,73 +554,88 @@
     </div>
 </section>
 <div class="wrapper items" id="id05">
+    <a href="/pjitem/detail/?COLOR=07&ITM=1024141&outlet=include">
+        <picture class="lead__item-image" data-aos="fade-up">
+            <source media="(min-width:768px)" srcset="asset/image-assets/b5_image_item.jpg">
+            <img src="asset/image-assets/sp/b5_image_item.jpg" alt="SMART BRA">
+        </picture>
+        </a>
     <div class="bra" data-aos="fade-up">
         <div class="color-select" id="Bra" data-aos="fade-up">
-            <ul class="images">
-                <li data-num="1"><img src="asset/image-assets/bra01.png" alt="ヌードベージュ"></li>
-                <li data-num="2" class="active"><img src="asset/image-assets/bra02.png" alt="ライラック"></li>
-                <li data-num="3"><img src="asset/image-assets/bra03.png" alt="リーフグリーン"></li>
-                <li data-num="4"><img src="asset/image-assets/bra04.png" alt="ネイビー"></li>
-                <li data-num="5"><img src="asset/image-assets/bra05.png" alt="ブラック"></li>
-                <li data-num="6"><img src="asset/image-assets/bra06.png" alt="ブラック"></li>
-                <li data-num="1" class="link active"><a href="/pjitem/detail/?COLOR=01&ITM=1024141&outlet=include">ヌードベージュ</a></li>
-                <li data-num="2" class="link"><a href="/pjitem/detail/?COLOR=02&ITM=1024141&outlet=include">ライラック</a></li>
-                <li data-num="3" class="link"><a href="/pjitem/detail/?COLOR=03&ITM=1024141&outlet=include">リーフグリーン</a></li>
-                <li data-num="4" class="link"><a href="/pjitem/detail/?COLOR=04&ITM=1024141&outlet=include">ネイビー</a></li>
-                <li data-num="5" class="link"><a href="/pjitem/detail/?COLOR=05&ITM=1024141&outlet=include">ブラック</a></li>
-                <li data-num="6" class="link"><a href="/pjitem/detail/?COLOR=06&ITM=1024141&outlet=include">ブラック</a></li>
+             <ul class="images">
+                <li data-num="1"><img src="asset/image-assets/bra01.png" alt="ブラック"></li>
+                <li data-num="2"><img src="asset/image-assets/bra02.png" alt="チェリーウッド"></li>
+                <li data-num="3"><img src="asset/image-assets/bra03.png" alt="モーヴピンク"></li>
+                <li data-num="4"><img src="asset/image-assets/bra04.png" alt="セラドングリーン"></li>
+                <li data-num="5"><img src="asset/image-assets/bra05.png" alt="レーズン"></li>
+                <li data-num="6"><img src="asset/image-assets/bra06.png" alt="アイボリー"></li>
+                <li data-num="7" class="active"><img src="asset/image-assets/bra07.png" alt="レッド"></li>
+                <li data-num="8"><img src="asset/image-assets/bra08.png" alt="アッシュミント"></li>
+                <li data-num="1" class="link"><a href="/pjitem/detail/?COLOR=01&ITM=1024141&outlet=include">ブラック</a></li>
+                <li data-num="2" class="link"><a href="/pjitem/detail/?COLOR=07&ITM=1024141&outlet=include">チェリーウッド</a></li>
+                <li data-num="3" class="link"><a href="/pjitem/detail/?COLOR=03&ITM=1024141&outlet=include">モーヴピンク</a></li>
+                <li data-num="4" class="link"><a href="/pjitem/detail/?COLOR=04&ITM=1024141&outlet=include">セラドングリーン</a></li>
+                <li data-num="5" class="link"><a href="/pjitem/detail/?COLOR=05&ITM=1024141&outlet=include">レーズン</a></li>
+                <li data-num="6" class="link"><a href="/pjitem/detail/?COLOR=06&ITM=1024141&outlet=include">アイボリー</a></li>
+                <li data-num="7" class="link active"><a href="/pjitem/detail/?COLOR=07&ITM=1024141&outlet=include">レッド</a></li>
+                <li data-num="8" class="link"><a href="/pjitem/detail/?COLOR=08&ITM=1024141&outlet=include">アッシュミント</a></li>
             </ul>
             <ul class="thums">
-                <li data-num="1"><img src="asset/image-assets/color1.png" alt="ヌードベージュ"></li>
-                <li data-num="2" class="active"><img src="asset/image-assets/color2.png" alt="ライラック"></li>
-                <li data-num="3"><img src="asset/image-assets/color3.png" alt="リーフグリーン"></li>
-                <li data-num="4"><img src="asset/image-assets/color4.png" alt="ネイビー"></li>
-                <li data-num="5"><img src="asset/image-assets/color5.png" alt="ブラック"></li>
-                <li data-num="6"><img src="asset/image-assets/color6.png" alt="ブラック"></li>
+                <li data-num="1"><img src="asset/image-assets/color1.png" alt="ブラック"></li>
+                <li data-num="2"><img src="asset/image-assets/color2.png" alt="チェリーウッド"></li>
+                <li data-num="3"><img src="asset/image-assets/color3.png" alt="モーヴピンク"></li>
+                <li data-num="4"><img src="asset/image-assets/color4.png" alt="セラドングリーン"></li>
+                <li data-num="5"><img src="asset/image-assets/color5.png" alt="レーズン"></li>
+                <li data-num="6"><img src="asset/image-assets/color6.png" alt="アイボリー"></li>
+                <li data-num="7" class="active"><img src="asset/image-assets/color7.png" alt="レッド"></li>
+                <li data-num="8"><img src="asset/image-assets/color8.png" alt="アッシュミント"></li>
             </ul>
         </div>
         <div class="content">
-            <p><a href="https://www.peachjohn.co.jp/pjitem/detail/?COLOR=02&ITM=1023430&outlet=include">スマートブラ<br class="pc">(B&#xFF5E;Fカップ) ￥3,280+税</a></p>
+            <p><a href="/pjitem/detail/?COLOR=07&ITM=1024141&outlet=include">スマートブラ<br class="pc">(B&#xFF5E;Fカップ) ￥3,280+税</a></p>
             <div class="buy">
-                <a class="buy__cart CallPurchaseItem" itemcode="1024141" dispcolorcode="102414102">カートに入れる</a>
+                <a class="buy__cart CallPurchaseItem" itemcode="1024141" dispcolorcode="102414107">カートに入れる</a>
                 <a class="CallStorestockItem buy__sub popupStock" itemcode="1024141"
-                   dispcolorcode="102414102">店舗在庫</a>
-                <a href="/pjitem/detail/?COLOR=02&ITM=1024141&outlet=include" class="buy__sub">商品詳細</a>
+                   dispcolorcode="102414107">店舗在庫</a>
+                <a href="/pjitem/detail/?COLOR=07&ITM=1024141&outlet=include" class="buy__sub">商品詳細</a>
             </div>
         </div>
     </div>
     <div class="shorts" data-aos="fade-up">
         <div class="item">
-            <a href="" class="link">
-                <img src="asset/image-assets/panty.png" alt="パンティ">
+            <a href="/pjitem/detail/?COLOR=07&ITM=1024142&outlet=include" class="link">
+                <img src="asset/image-assets/panty.png" alt="パンティ" class="pc"><img src="asset/image-assets/sp/panty.png" alt="パンティ" class="sp">
             </a>
-            <p>スマートパンティ<br>
+            <p><a href="/pjitem/detail/?COLOR=07&ITM=1024142&outlet=include">スマートパンティ<br>
                 (S&#xFF5E;Lサイズ)<br class="pc">
-                ￥1,480+税</p>
+                ￥1,480+税</a></p>
             <div class="colors"><img src="asset/image-assets/colors.png" alt="カラー"></div>
             <div class="buy narrow">
-                <a class="buy__cart CallPurchaseItem" itemcode="1024142" dispcolorcode="102414202">カートに入れる</a>
+                <a class="buy__cart CallPurchaseItem" itemcode="1024142" dispcolorcode="102414207">カートに入れる</a>
                 <a class="CallStorestockItem buy__sub popupStock" itemcode="1024142"
-                   dispcolorcode="102414202">店舗在庫</a>
-                <a href="/pjitem/detail/?COLOR=02&ITM=1024142&outlet=include" class="buy__sub">商品詳細</a>
+                   dispcolorcode="102414207">店舗在庫</a>
+                <a href="/pjitem/detail/?COLOR=07&ITM=1024142&outlet=include" class="buy__sub">商品詳細</a>
             </div>
         </div>
         <div class="item">
-            <a href="" class="link">
-                <img src="asset/image-assets/sanitary.png" alt="サニタリー">
+            <a href="/pjitem/detail/?COLOR=06&ITM=1024143&outlet=include" class="link">
+                <img src="asset/image-assets/sanitary.png" alt="サニタリー" class="pc"><img src="asset/image-assets/sp/sanitary.png" alt="サニタリー" class="sp">
             </a>
-            <p>スマートサニタリー<br>
+            <p><a href="/pjitem/detail/?COLOR=06&ITM=1024143&outlet=include">スマートサニタリー<br>
                 (S&#xFF5E;Lサイズ)<br class="pc">
-                ￥1,680+税</p>
+                ￥1,680+税</a></p>
             <div class="colors"><img src="asset/image-assets/colors2.png" alt="カラー"></div>
             <div class="buy narrow">
-                <a class="buy__cart CallPurchaseItem" itemcode="1024143" dispcolorcode="102414302">カートに入れる</a>
+                <a class="buy__cart CallPurchaseItem" itemcode="1024143" dispcolorcode="102414306">カートに入れる</a>
                 <a class="CallStorestockItem buy__sub popupStock" itemcode="1024143"
                    dispcolorcode="102414302">店舗在庫</a>
-                <a href="/pjitem/detail/?COLOR=02&ITM=1024143&outlet=include" class="buy__sub">商品詳細</a>
+                <a href="/pjitem/detail/?COLOR=06&ITM=1024143&outlet=include" class="buy__sub">商品詳細</a>
             </div>
         </div>
     </div>
+ <!--   <p class="coupon coupon02" data-aos="fade-up"><a href="/al/info/coupon/190827/"><img
+        src="asset/image-assets/b1_coupon.png" alt="クーポン"></a>
+    </p>-->
     <div class="movie">
         <h3 class="movie__title" data-aos="fade-up"><span><img src="asset/image-assets/b4_h2_1.png" alt="Movie"></span></h3>
         <ul class="movies" id="id06">
@@ -534,9 +651,15 @@
                     <img src="asset/image-assets/sp/b4_movie02.jpg" alt="スマートブラ">
                 </picture>
             </a></li>
+            <li data-aos="fade-up"><a href="https://www.youtube.com/watch?v=EQ6lnHVO0_k" class="popup-iframe">
+                <picture>
+                    <source media="(min-width:768px)" srcset="asset/image-assets/b4_movie03.jpg">
+                    <img src="asset/image-assets/sp/b4_movie03.jpg" alt="スマートブラ">
+                </picture>
+            </a></li>
         </ul>
     </div>
-    <div class="campaign" id="id07" data-aos="fade-up">
+    <!--<div class="campaign" id="id07" data-aos="fade-up">
         <h3 class="campaign__title"><span><img src="asset/image-assets/b4_h2_2.png" alt="Campaign"></span></h3>
         <div class="campaign__cont">
             <div class="item1">
@@ -553,14 +676,14 @@
                     </picture>
                 </figure>
                 <p class="text">「ブラで見た目やせ」を体験してみたい方を100名大募集！<br>
-                    モニターに選ばれた方には「スマートブラ」現品を<br>プレゼント。
+                    モニターに選ばれた方には「スマートブラ」現品をプレゼント。
                 </p>
-                <p class="link"><a href="/pj/special/pj19at/monitor/">
+                <p class="link">
                     <picture>
                         <source media="(min-width:768px)" srcset="asset/image-assets/btn_cam.png">
                         <img src="asset/image-assets/sp/btn_cam.png" alt="詳しくはこちら">
                     </picture>
-                </a></p>
+                </p>
             </div>
             <div class="item2" id="fitting">
                 <h4 class="title">
@@ -586,13 +709,17 @@
                 </a></p>
             </div>
         </div>
-    </div>
+    </div>-->
 </div>
+<p class="btn_new" data-aos="fade-up"><a href="/pjitem/list/?_al=pj_new&count=60&sort=6"><img
+        src="asset/image-assets/btn_new.png" alt="新作一覧はこちら" class="pc"><img
+        src="asset/image-assets/sp/btn_new.png" alt="新作一覧はこちら" class="sp"></a>
+</p>
 <footer class="foot" data-aos="fade-in">
     <div class="foot-inner">
         <div class="foot-content">
             <img src="asset/image-assets/foot_logo.png" alt="SMART BRA 「見た目重視」はブラで減らせる！">
-            <a href="/pjitem/detail/?COLOR=02&ITM=1024141&outlet=include"><img src="asset/image-assets/btn_check.png" alt="CHECK"></a>
+            <a href="/pjitem/detail/?COLOR=07&ITM=1024141&outlet=include"><img src="asset/image-assets/btn_check.png" alt="CHECK"></a>
         </div>
     </div>
     <div class="sns">
@@ -605,31 +732,34 @@
     <p class="copy"><img src="asset/image-assets/copyright.png" alt="Copyright?PEACH JOHN CO.,LTD."></p>
 </footer>
 <div class="fixedCartBtn" id="fixedCartBtn">
-    <a class="cart CallPurchaseItem" itemcode="1024141" dispcolorcode="102414103">
+    <a class="cart CallPurchaseItem" itemcode="1024141" dispcolorcode="102414107">
         <img src="asset/image-assets/followbtn_cart.png" alt="カートに入れる">
     </a>
 </div>
-<script type="text/javascript">
-    var pageData = {
-        "navigation": {
-            "customerID":"",
-            "device":"pc",
-            "page_type":"other"
-        }};
-</script>
+ 
+ <!-- js --> 
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
+<script src="./asset/js/common.js"></script> 
+<script src="./asset/js/scrollreveal.min.js"></script> 
+<script src="./asset/js/slick/slick.js"></script> 
+<script>
+  window.sr = ScrollReveal({ reset: false ,mobile: true, viewFactor:0.2});
+  sr.reveal( '.fadeSlide', { origin: 'bottom' , distance: '0', duration: 2000 , scale: 1, delay :500 ,opacity: 0,});
+</script>  -->
+<!-- / js -->
 
-<script type="text/javascript">
-    (function () {
-        var tagjs = document.createElement("script");
-        var s = document.getElementsByTagName("script")[0];
-        tagjs.async = true;
-        tagjs.src = "//s.yjtag.jp/tag.js#site=wafn7h2";
-        s.parentNode.insertBefore(tagjs, s);
-    }());
+<!--メインスライド-->
+<script>
+	$(function () {
+		var a = $(".changeImage01").find("li").length;
+		setInterval(function () {
+			var b = $(".changeImage01 li.active").index();
+			++ b == a && (b = 0),
+			$(".changeImage01 li").removeClass("active"),
+			$(".changeImage01 li").eq(b).addClass("active")
+		}, 3000) });
 </script>
-<noscript>
-    <iframe src="//b.yjtag.jp/iframe?c=wafn7h2" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-</noscript>
+<!--メインスライド-->
 
 <!-- SiteCatalyst code version: H.15.1.
 Copyright 1997-2008 Omniture, Inc. More info available at
