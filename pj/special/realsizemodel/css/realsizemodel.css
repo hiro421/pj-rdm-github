@@ -1,0 +1,652 @@
+/* -------------------------
+
+main.cssÇ…ãLèq
+
+PCÇÃÇ›ï\é¶...... class="pc"
+SPÇÃÇ›ï\é¶...... class="sp"
+
+----------------------------*/
+
+#main {
+	overflow: hidden;
+}
+.head {
+    text-align: center;
+	height: 105px;
+	width: 100%;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+}
+.head h1 {
+	font-size: 0;
+}
+#kyoshoArea {
+	font-family: "ü‡ÉSÉVÉbÉNëÃ", YuGothic, "ü‡ÉSÉVÉbÉN Medium", "Yu Gothic Medium", "ü‡ÉSÉVÉbÉN", "Yu Gothic", "Hiragino Kaku Gothic ProN", "ÉqÉâÉMÉmäpÉS ProN W3", "Hiragino Sans", "ÉÅÉCÉäÉI", Meiryo sans-serif;
+    letter-spacing: 0.075em;
+    -webkit-font-feature-settings: 'palt';
+    font-feature-settings: 'palt';
+	color: #302c30;
+}
+#kyoshoArea dl dd{
+	margin-inline-start: 0;
+	margin:0;
+}
+#kyoshoArea img{
+	margin:0 auto;
+}
+
+#kyoshoArea .header {
+	margin: 0 auto;
+	background-color: #f2668e;
+	padding-bottom: 30px;
+}
+
+#kyoshoArea .header h1 img {
+	width: 100%;
+}
+
+#kyoshoArea .lead {
+	text-align: center;
+	color: #ffffff;
+	margin: 30px 0 50px;
+}
+#kyoshoArea .intro {
+	background: #ffffff;
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+#kyoshoArea .intro .intro_text {
+	text-align: center;
+}
+#kyoshoArea .intro img {
+	padding: 20px 0;
+}
+#kyoshoArea .intro_btn img {
+	padding: 40px 0 20px;
+}
+
+
+/*move
+-------------------------*/
+#kyoshoArea .movie {
+	margin: 50px 0;
+}
+#kyoshoArea .movie img {
+	padding: 30px 0;
+}
+
+/*Profile
+-------------------------*/
+#kyoshoArea ul  {
+	display: flex;
+    justify-content: center;
+	-webkit-justify-content: center;
+}
+#kyoshoArea ul li  {
+	margin: 0 30px;
+}
+
+/*model
+-------------------------*/
+.models-wrap {
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: height .5s ease-in-out;
+    transition: height .5s ease-in-out;
+}
+.models-wrap, .models-wrap+.sup {
+    margin-left: auto;
+    margin-right: auto;
+}
+.models {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.models .item {
+    position: relative;
+}
+.menu-toggle, .mfp-gallery .mfp-image-holder .mfp-figure, .models .item {
+    cursor: pointer;
+}
+.models .item img.active {
+    opacity: 1;
+}
+.models .item img {
+    display: block;
+	position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.menu-toggle::after, .menu-toggle::before, .models .item::after {
+    content: "";
+}
+.models-wrap_1 {
+    overflow:  hidden;
+    position: relative;
+    -webkit-transition: height .5s ease-in-out;
+    transition: height .5s ease-in-out;
+}
+.models-wrap_1, .models-wrap_1+.sup {
+    margin: 0 auto;
+}
+.models-wrap_1 .models {
+	display: contents;
+}
+
+
+
+
+/*profile
+-------------------------*/
+.profile .bc_profile {
+	display: flex;
+    justify-content: center;
+	position: relative;
+}
+.profile ul {
+	margin: 50px 0;
+	padding-bottom: 50px;
+	border-bottom: double 1px #ededed;
+}
+.profile .cap-title {
+	margin: 60px 0 30px;
+}
+#kyoshoArea .profile .bc_profile img {
+	width: 383px;
+    margin: 0;
+    padding-right: 2px;
+}
+.bc_profile .iconArea {
+	position: absolute;
+}
+#kyoshoArea .profile .bc_profile .iconArea .icon-insta01 img {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+    bottom: -270px;
+    right: 310px;
+}
+#kyoshoArea .profile .bc_profile .iconArea .icon-insta02 img {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+    bottom: -270px;
+    left: 40px;
+}
+#kyoshoArea .profile .bc_profile .iconArea .icon-insta03 img {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+    bottom: -270px;
+	right: 120px;
+}
+
+/*ranking
+-------------------------*/
+.ranking .hitbra-img {
+	width: 100%;
+}
+.ranking h2 {
+	margin: 80px 0 50px;
+}
+#kyoshoArea section {
+	margin: 80px 0;
+}
+.number .numbermodel {
+	display: flex;
+    justify-content: center;
+	margin: 50px 0;
+}
+#kyoshoArea .number .numbermodel img {
+	margin: 0 0;
+}
+#kyoshoArea .btnArea ul li {
+	margin: 0 9px;
+}
+
+/*allbtn
+-------------------------*/
+.allbtnArea {
+	text-align: center;
+}
+
+
+
+/*footer
+-------------------------*/
+.main-foot .copyright,
+.main-foot__logo,
+.main-foot__title {
+    text-align: center;
+}
+.main-foot {
+			margin-top: 80px;
+			padding-bottom: 60px;
+	}
+	.main-foot .copyright {
+			margin-top: 44px;
+	}
+	.main-foot__logo {
+			margin-top: 94px;
+	}
+.main-foot__sns {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.main-foot__sns li {
+    height: 54px;
+		margin: 0 20px;
+}
+.main-foot__sns li a {
+    display: block;
+    height: 100%;
+    position: relative
+}
+.main-foot__sns li a img {
+    display: block;
+    height: 100%;
+    width: auto !important
+}
+body#top .main-foot__sns {
+		width: 249px;
+    margin-top: 0 !important
+}
+
+
+/*clearFix
+---------------------------*/
+#kyoshoArea .btnArea:after,
+#kyoshoArea .btnArea ul:after {
+	display: block;
+	clear: both;
+	content: " ";
+}
+
+@media screen and (min-width: 768px) {
+.models-wrap {
+    width: 766px;
+    height: 383px;
+}
+.models-wrap_1 {
+    width: 766px;
+    height: 382px;
+
+}
+.models {
+    width: 766px;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.models .item {
+    width: 380px;
+    height: 382px;
+}
+.models-wrap_1 .models .item {
+    width: 380px;
+    height: 382px;
+	margin: 0 auto;
+}
+.models .item img {
+    width: 380px;
+}
+}
+
+@media screen and (max-width: 768px) {
+	#wrapper {
+		margin-top: 0 !important;
+	}
+	body {
+			font-size: 3.4375vw;
+			line-height: 1.54
+	}
+	img {
+			max-width: 100%
+	}
+	.pc {
+			display: none !important
+	}
+	.head {
+			height: 13.4375vw;
+	}
+	.head h1 {
+			width: 38.4375vw;
+	}
+	.main-foot {
+			margin-top: 15.625vw;
+			padding-bottom: 10.9375vw
+	}
+	.main-foot .copyright img {
+			width: 45.3125vw !important;
+			margin-top: 5.46875vw
+	}
+	.main-foot__title img {
+			width: 11.40625vw !important
+	}
+	.main-foot__logo {
+			margin-top: 13.28125vw
+	}
+	.main-foot__logo img {
+			width: 38.4375vw !important;
+		margin-top: 0;
+	}
+	.main-foot__sns {
+			margin-top: 3.90625vw
+	}
+	.main-foot__sns li:first-child {
+			margin-left: 1.5625vw
+	}
+	.main-foot__sns li {
+			height: 9.0625vw;
+			margin: 0 3.75vw
+	}
+	.block.block1 .block__title,
+	.block.block2 .block__title {
+			margin-bottom: 6.5625vw
+	}
+	.main-foot__sns li a img {
+			height: 9.0625vw !important
+	}
+	body#top .main-foot {
+			padding-top: 9.375vw
+	}
+	
+	
+	
+#main {
+	padding: 0;
+}
+#kyoshoArea {
+	width:100%;
+	font-size: 1.3rem;
+}
+#kyoshoArea .header {
+	width: 100%;
+	margin: 0;
+}
+#kyoshoArea .lead {
+	width: 260px;
+	margin: 25px auto 30px;
+}
+#kyoshoArea .campaign {
+	margin-bottom: 40px;
+}
+/*block1
+-------------------------*/
+#kyoshoArea .block1 {
+	width: 100%;
+}
+/*  ---- btnArea  ---- */
+#kyoshoArea  .btnArea {
+    padding: 0 4.6875% 0.5% 4.6875%;
+    z-index: 10;
+    position: relative;
+    margin: 1vw 0 0 0;
+}
+#kyoshoArea .btnArea ul {
+    overflow: hidden;
+}
+#kyoshoArea .btnArea p {
+    padding: 10px 0;
+    text-align: center;
+    float: inherit;
+    width: 100%;
+    font-size: 1rem;
+}
+#kyoshoArea .btnArea ul li {
+    width: 48%;
+    margin: 0 0 10px 0;
+    float: left;
+}
+#kyoshoArea .btnArea ul li:first-of-type {
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+#kyoshoArea .btnArea ul li:last-child {
+    width: 48%;
+    float: right;
+}
+/*braArea
+-------------------------*/
+#kyoshoArea .braArea {
+	width: 100%;
+	margin: 70px auto 0;
+}
+#kyoshoArea .painterArea {
+	font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','ü‡ñæí©ëÃ','ÉqÉâÉMÉmñæí© ProN','Hiragino Mincho ProN',sans-serif;
+}
+#kyoshoArea .painterArea ul {
+	display: block;
+	align-items: normal;
+}
+#kyoshoArea .painterArea .txtArea {
+	margin-left: 0;
+}
+#kyoshoArea .painterArea .txtArea img {
+	width: 300px;
+}
+#kyoshoArea .painterArea .txtArea dt {
+	margin-bottom: 16px;
+}
+/*É~ÉÖÉVÉÉ*/
+#kyoshoArea .block2 {
+	background: url(file:///Macintosh%20HD/Users/m-hasegawa/Desktop/pj/special/realsize/img/bg01_sp.jpg) no-repeat 0 0/contain;
+}
+#kyoshoArea .block2 .bra_img {
+	position:relative;
+}
+#kyoshoArea .block2 .bra_img .brapic1 {
+	margin-left: 3%;
+	padding-top: 12px;
+}
+#kyoshoArea .block2 .bra_img .flower1_1 {
+	position:absolute;
+	width: 30%;
+	top: -4%;
+	right: 0;
+}
+#kyoshoArea .block2 .bra_img .flower1_2 {
+	position:absolute;
+	width: 24%;
+	top: -12%;
+	left: 0;
+}
+#kyoshoArea .block2 .brapic2 img {
+	width: 90%;
+	margin: 20px 5% 50px;
+}
+#kyoshoArea .block2 .painterArea {
+	position:relative;
+}
+#kyoshoArea .block2 .painterArea ul {
+	width: 100%;
+	margin:0 auto;
+}
+#kyoshoArea .block2 .painterArea .imgArea {
+	padding: 0 5%;
+}
+#kyoshoArea .block2 .painterArea .txtArea {
+	width:100%;
+	padding: 0 3%;
+}
+#kyoshoArea .block2 .bra_img2 {
+	position:relative;
+}
+#kyoshoArea .block2 .bra_img2 .flower2_1 {
+	width: 8%;
+	position:absolute;
+	top: -8%;
+	left: 0;
+}
+#kyoshoArea .block2 .bra_img2 .flower2_2 {
+	width: 20%;
+	position:absolute;
+	top: -24%;
+	right: 0;
+}	
+/*ÉuÉäÉÖÅ[ÉQÉã*/
+#kyoshoArea .block3 .bra_img {
+	position:relative;
+}
+#kyoshoArea .block3 .bra_img .flower3_1 {
+	position:absolute;
+	width: 38%;
+	top: -4%;
+	left: 0;
+}
+#kyoshoArea .block3 .bra_img .flower3_2 {
+	position:absolute;
+	width: 24%;
+	top: -4%;
+	right: 0;
+}
+#kyoshoArea .block3 .bra_img .brapic1 {
+	margin-left: 0;
+	padding-top: 16px;
+}
+#kyoshoArea .block3  .brapic2 img {
+	width:90%;
+	margin: 20px 5% 50px;
+}
+#kyoshoArea .block3 .painterArea {
+	position:relative;
+}
+#kyoshoArea .block3 .painterArea ul {
+	width: 100%;
+	margin:0 auto;
+}
+#kyoshoArea .block3  .painterArea .txtArea {
+	width:100%;
+	padding: 0 3%;
+}
+#kyoshoArea .block3  .painterArea .imgArea {
+	padding: 0 20%;
+}
+#kyoshoArea .block3 .bra_img2 {
+	position:relative;
+}
+#kyoshoArea .block3 .bra_img2 .flower4 {
+	width: 100%;
+    height: 170%;
+	background: url(file:///Macintosh%20HD/Users/m-hasegawa/Desktop/pj/special/realsize/img/flower04_sp.png) no-repeat 0 0/contain;
+	position : absolute;
+	top: -20%;
+	left:0; 
+	z-index: -1;
+}
+/*ÉÇÉl*/
+#kyoshoArea .block4 {
+	background: url(file:///Macintosh%20HD/Users/m-hasegawa/Desktop/pj/special/realsize/img/bg02_sp.jpg) no-repeat 0 0/contain;
+}
+#kyoshoArea .block4 .bra_img {
+	position:relative;
+}
+#kyoshoArea .block4 .bra_img .brapic1 {
+	text-align:center;
+	padding-top: 16px;
+}
+#kyoshoArea .block4 .bra_img .flower5_1 {
+	position:absolute;
+	width: 20%;
+	top: -10%;
+	left: 0;
+}
+#kyoshoArea .block4 .bra_img .flower5_2 {
+	position:absolute;
+	width: 20%;
+	top: -10%;
+	right: 0;
+}
+#kyoshoArea .block4 .brapic2 {
+	margin: 36px 0 0 0;
+	position: relative;
+}
+#kyoshoArea .block4 .bra_img2 {
+	position: relative;
+	margin: -18% 0 16px;
+}
+#kyoshoArea .block4 .bra_img2 .flower6 {
+	margin-left: 0;
+}
+#kyoshoArea .block4 .bra_img2 .brapic3 img {
+	position:absolute;
+	width:90%;
+	top: 0;
+	left: 0;
+	margin: 26% 5% 0;
+}
+#kyoshoArea .block4 .painterArea ul {
+	width: 100%;
+	margin-top: -28%;
+	padding: 0 3%;
+}
+#kyoshoArea .block4 .painterArea .imgArea {
+	padding: 0 14%;
+}	
+#kyoshoArea .block4 .painterArea .txtArea {
+	width:100%;
+}	
+/*block5
+-------------------------*/
+#kyoshoArea .block5 {
+	width: 100%;
+	margin: 60px auto 70px;
+}
+#kyoshoArea .block5 .imgArea {
+	margin: 30px 0 10px;
+}
+#kyoshoArea .block5 .btnArea p {
+    width: 100%;
+}
+/*ÉLÉÉÉìÉyÅ[Éì
+-------------------------*/
+#kyoshoArea .block6 {
+	padding: 10px 0 30px;
+}
+#kyoshoArea .block6 .campaign2 {
+	width: 100%;
+}
+#kyoshoArea .block6 .campaign2 p {
+	margin: 20px 5%;
+}
+#kyoshoArea .block6 .campaign2 .celvole {
+	width: 90%;
+	font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','ü‡ñæí©ëÃ','ÉqÉâÉMÉmñæí© ProN','Hiragino Mincho ProN',sans-serif;
+	padding: 5%;
+}
+#kyoshoArea .block6 .campaign2 .celvole dt {
+	padding-bottom: 3%;
+	margin-bottom: 10px;
+}
+#kyoshoArea .block6 .campaign2 .cam_btn {
+	margin: 20px 5% 25px;
+}
+#kyoshoArea .block6 .campaign2 .attention {
+	width: 96%;
+	margin: 0 auto;
+	padding: 5%;
+}
+
+
+
+	
+	
+}
