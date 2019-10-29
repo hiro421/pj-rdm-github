@@ -1,0 +1,116 @@
+$pc_width: 1200px;
+$tab_max: 1199px;
+$pc_min: 768px;
+$sp_max: 767px;
+
+// ==============================
+//
+// 640px幅のスマートフォン用デザインのpxをvw値に変換
+//
+// ==============================
+
+@function spvw($value) {
+  @return ($value / 6.4) + vw;
+}
+
+@function pcvw($value) {
+  @return ($value / 12.0) + vw;
+}
+
+@mixin min($break-point:$pc_min) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin max($break-point:$sp_max) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin min-max($break-point-min:$pc_min, $break-point-max:$pc_width) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+@mixin max-min($break-point-max:$tab_max,$break-point-min:$pc_min) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+@mixin text-crop($line-height: 1.3, $top-adjustment: 0px, $bottom-adjustment: 0px) {
+  $top-crop: 9;
+  $bottom-crop: 8;
+  $crop-font-size: 36;
+  $crop-line-height: 1.2;
+
+  $dynamic-top-crop: max(($top-crop + ($line-height - $crop-line-height) * ($crop-font-size / 2)), 0) / $crop-font-size;
+  $dynamic-bottom-crop: max(($bottom-crop + ($line-height - $crop-line-height) * ($crop-font-size / 2)), 0) / $crop-font-size;
+
+  line-height: $line-height;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+  }
+
+  &::before {
+    margin-bottom: calc(-#{$dynamic-top-crop}em + #{$top-adjustment});
+  }
+
+  &::after {
+    margin-top: calc(-#{$dynamic-bottom-crop}em + #{$bottom-adjustment});
+  }
+}
+
+@mixin text-hide {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+@mixin spwh($w,$h){
+  @include max{
+    width: spvw($w);
+    height: spvw($h);
+  }
+}
+
+@mixin pcwh($w,$h){
+  @include min{
+    width: #{$w}px;
+    height: #{$h}px;
+  }
+}
+
+@mixin responsive($property,$pcsize,$spsize){
+  @include min{
+    #{$property}: $pcsize + px;
+  }
+  @include max{
+    #{$property}: spvw($spsize);
+  }
+}
+
+@mixin font-size($pcsize,$spsize){
+  @include min{
+    font-size: ( $pcsize / 10 ) + rem;
+  }
+  @include max{
+    font-size: spvw($spsize);
+  }
+}
+
+@mixin clearfix(){
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}

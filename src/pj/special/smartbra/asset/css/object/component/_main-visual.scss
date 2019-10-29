@@ -1,0 +1,92 @@
+.main-visual{
+  position: relative;
+  @include min{
+    height: 577px;
+    margin: 0 auto;
+  }
+  @include max{
+
+  }
+  &::before,&::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-size: contain;
+    @include min{
+      width: 100%;
+      height: 577px;
+    }
+    @include max{
+      width: 100%;
+      height: spvw(583);
+    }
+  }
+  &::before{
+    display: block;
+    @include min{
+      background: {
+        image:url("../image-assets/main2.jpg");
+      }
+    }
+    @include max{
+      background: {
+        image:url("../image-assets/sp/main2.jpg");
+      }
+    }
+  }
+  &::after{
+    animation: main-fade 7s infinite;
+    @include min{
+      background: {
+        image:url("../image-assets/main1.jpg");
+      }
+    }
+    @include max{
+      background: {
+        image:url("../image-assets/sp/main1.jpg");
+      }
+    }
+  }
+  h1{
+    @include min{
+      position: absolute;
+      top: 210px;
+      left: 40px;
+    }
+    @include max{
+      position: relative;
+      width: 100%;
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+  p{
+    @include min{
+      position: absolute;
+      right: 33px;
+      top: 35px;
+    }
+    @include max{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+@keyframes main-fade {
+  0%,30%,100%{
+    opacity: 100;
+  }
+  50%,80%{
+    opacity: 0;
+  }
+}

@@ -1,0 +1,16 @@
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include min{
+    height: 105px;
+    width: 100%;
+  }
+  @include max{
+    height: spvw(86);
+    h1{
+      position: relative;
+      width: spvw(246);
+    }
+  }
+}

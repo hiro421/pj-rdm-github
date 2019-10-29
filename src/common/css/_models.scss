@@ -1,0 +1,81 @@
+.models{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #fff;
+  @include min{
+    width: 766px;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include max{
+    width: spvw(572);
+  }
+  .item{
+    &::after{
+      content:"";
+      position: absolute;
+      @include responsive(width,36,30);
+      @include responsive(height,49,41);
+      @include responsive(bottom,13,13);
+      @include responsive(right,13,13);
+      background: {
+        image: url("../image-assets/tap.png");
+        size: contain;
+        repeat: no-repeat;
+      }
+    }
+    cursor: pointer;
+    @include responsive(width,380,284);
+    @include responsive(height,476,357);
+    position: relative;
+    img{
+      display: block;
+      @include responsive(width,380,284);
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      &.active{
+        opacity: 1;
+      }
+    }
+    &:nth-child( n + 3){
+      @include responsive(margin-top,2,2);
+    }
+  }
+
+  &-wrap{
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    transition: height .5s ease-in-out;
+    @include min{
+      width: 766px;
+    }
+    @include max{
+      width: spvw(572);
+      //height: spvw(426);
+    }
+    &.open{
+      @include responsive(height,1499,1144);
+    }
+
+    & + .sup{
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      @include responsive(width,766,572);
+      @include responsive(margin-top,10,5);
+      text-align: right;
+    }
+  }
+}
+
+.tap-title{
+  text-align: center;
+  @include responsive(margin-bottom,15,15);
+}

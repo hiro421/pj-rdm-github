@@ -1,0 +1,47 @@
+.movie{
+  margin-left: auto;
+  margin-right: auto;
+  @include min{
+    clear: both;
+    width: 864px;
+    padding-top: 110px;
+  }
+  @include max{
+    margin-top: spvw(105);
+    width: spvw(600);
+  }
+  &__title{
+    text-align: center;
+    span{
+      display: inline-block;
+      position: relative;
+      @include max{
+        width: spvw(160);
+      }
+    }
+  }
+
+  .movies{
+    @include min{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 45px;
+    }
+    @include max{
+      margin-top: spvw(48);
+    }
+    li + li{
+      @include max{
+        margin-top: spvw(35);
+      }
+    }
+    &.new{
+      @include min{
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

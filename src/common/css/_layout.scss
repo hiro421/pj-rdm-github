@@ -1,0 +1,19 @@
+.wrapper{
+  width: 100%;
+  position: relative;
+  @include min{
+      min-width: 1200px;
+  }
+}
+.container{
+  @include min{
+    width: 984px;
+    margin: 0 auto;
+  }
+  @include max{
+    width: 100%;
+  }
+  .add-tyo-cart &{
+    width: auto;
+  }
+}

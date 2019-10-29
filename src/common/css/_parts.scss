@@ -1,0 +1,205 @@
+.menu-toggle {
+  cursor: pointer;
+  position: fixed;
+  z-index: 1001;
+  @include responsive(width, 32, 32);
+  @include responsive(height, 32, 32);
+  @include min {
+    top: 26px;
+    left: 26px;
+  }
+  @include max {
+    top: spvw(27);
+    left: spvw(25);
+  }
+
+  &::before, &::after, span {
+    background: #000;
+    display: block;
+    @include text-hide;
+    @include responsive(width, 32, 32);
+    @include responsive(height, 4, 4);
+
+    position: absolute;
+    transition: transform .3s, opacity .3s, top .3s, bottom .3s;
+  }
+
+  &::before, &::after {
+    content: "";
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  span {
+    @include responsive(top, 14, 14);
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}
+
+body.menu-show {
+  .menu-toggle {
+
+    span {
+      opacity: 0;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+      @include responsive(top, 14, 14);
+    }
+
+    &::after {
+      transform: rotate(45deg);
+      @include responsive(bottom, 14, 14);
+    }
+  }
+
+  .l-nav {
+    top: 0;
+  }
+
+  .main-menu {
+    transition: transform .5s ease-in-out,opacity 0s 0s;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.main-menu {
+  position: fixed;
+  z-index: 1001;
+  background: #fff;
+  left: 0;
+  top: 0;
+  @include responsive(width, 470, 528);
+  @include responsive(height, 718, 810);
+  @include responsive(padding-top, 120, 100);
+  @include responsive(padding-left, 30, 35);
+  transition: transform .5s ease-in-out,opacity 0s .5s;
+  opacity: 0;
+  @include min {
+    transform: translateX(-470px);
+  }
+  @include max {
+    $l: spvw(-528);
+    transform: translateX(#{$l});
+  }
+
+  ul {
+    li {
+      @include responsive(height, 40, 80);
+
+      a {
+        display: flex;
+        align-items: center;
+        border-left: 2px solid #fff;
+        @include responsive(padding-left, 22, 22);
+        @include font-size(24, 26);
+        line-height: 1.0;
+        letter-spacing: 0.1em;
+
+        &:hover {
+          color: #ec3e79;
+          border-left-color: #ec3e79;
+        }
+      }
+
+      & + li {
+        @include min {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+
+.box-title {
+  text-align: center;
+
+  span {
+    font-family: $bold-font;
+    @include font-size(20, 20);
+    @include responsive(height, 40, 40);
+    @include responsive(border-radius, 20, 20);
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    position: relative;
+    padding: 0 2em;
+    line-height: 1.0;
+  }
+}
+
+.sup {
+  @include font-size(12, 14);
+}
+
+.shadow-line__shadow {
+  .sup {
+    @include max {
+      text-align: right;
+      margin-top: spvw(24);
+    }
+    @include min {
+      margin-top: 22px;
+    }
+    @include responsive(margin-bottom, 10, 5);
+    color: #333;
+  }
+}
+
+.shadow-line__wear {
+  .sup {
+    text-align: right;
+    @include max {
+      margin: spvw(10) auto 0;
+      width: spvw(516);
+    }
+    @include min {
+      margin: 12px auto 0;
+      width: 506px;
+    }
+    @include responsive(margin-bottom, 10, 5);
+    color: #333;
+  }
+}
+
+.examples__age {
+  .sup {
+    text-align: right;
+    @include max {
+      margin: spvw(10) auto 0;
+      width: spvw(421);
+    }
+    @include min {
+      margin: 18px auto 0;
+      width: 670px;
+    }
+    @include responsive(margin-bottom, 10, 5);
+    color: #333;
+  }
+}
+
+.fixedCartBtn{
+  position: fixed;
+  right: 2.5%;
+  @include responsive(width,120,120);
+  @include responsive(height,120,120);
+  img{
+    width: 100%;
+
+  }
+}
+
+.add-tyo-cart {
+  font-family: "Montserrat", "メイリオ", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo", "MS Pゴシック", "MS P Gothic", sans-serif;
+}
