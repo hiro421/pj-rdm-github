@@ -1,0 +1,21 @@
+.coupon{
+  @include min{
+    width: 100%;
+    padding-top: 61px;
+  }
+  a{
+    @include min{
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      width: 594px;
+    }
+    @include max{
+      position: relative;
+      display: block;
+      margin: 5% auto;
+      width: spvw(594);
+    }
+  }
+
+}

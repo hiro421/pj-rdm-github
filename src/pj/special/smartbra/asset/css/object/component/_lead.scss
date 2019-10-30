@@ -1,0 +1,513 @@
+.lead{
+    @include min{
+      padding-top: 60px;
+      background: {
+        //image: url("../image-assets/b1_bg.jpg");
+        position: top center;
+        size: 100% auto;
+      }
+    }
+  @include max{
+    margin-top: spvw(59);
+    background: {
+      //image: url("../image-assets/sp/b1_bg.jpg");
+      position: top center;
+      size: 100% auto;
+    }
+  }
+
+  &__desc{
+    @include clearfix;
+    @include min{
+      margin: 55px auto 0;
+      width: 984px;
+      height: 582px;
+      padding-top: 44px;
+      padding-right: 45px;
+      padding-left: 45px;
+    }
+    @include max{
+      width: spvw(640);
+      //height: spvw(838);
+      margin: spvw(55) auto 0;
+      padding-top: spvw(34);
+      padding-right: spvw(23);
+      padding-left: spvw(23);
+      position: relative;
+    }
+    &__inner{
+      @include min{
+        background: #fff;
+        width: 544px;
+        height: 490px;
+      }
+      @include max{
+       padding-top: spvw(485);
+      }
+    }
+    h3{
+      @include min{
+        padding-top: 70px;
+        padding-left: 15px;
+        text-align: center;
+      }
+      @include max{
+        width: spvw(270);
+        padding-top: spvw(156);
+        img{
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+    p{
+      @include font-size(18,19);
+      text-align: center;
+      font-family: $bold-font;
+      -moz-osx-font-smoothing: inherit;
+      @include min{
+
+        line-height: 1.888;
+        margin-top: 72px;
+      }
+      @include max{
+        clear: both;
+        width: 100%;
+        line-height: 2.0;
+        padding-top: spvw(18);
+      }
+    }
+    figure{
+      float: right;
+      display: block;
+      @include responsive(width,266,257);
+      @include responsive(height,494,494);
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+    @include min{
+      background: {
+        image: url("../image-assets/desc_bg1.png");
+      }
+    }
+    @include max{
+      background: {
+        image: url("../image-assets/sp/desc_bg1.png");
+        repeat: no-repeat;
+        size: spvw(640) spvw(485);
+      }
+    }
+    &::before,&::after{
+      content:"";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    &::before{
+      @include min{
+        background: {
+          image: url("../image-assets/desc_bg2.png");
+        }
+      }
+      @include max{
+        background: {
+          image: url("../image-assets/sp/desc_bg2.png");
+          repeat: no-repeat;
+          size: spvw(640) spvw(485);
+        }
+      }
+      animation: main-fade 7s infinite;
+    }
+
+  }
+
+  &__images{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    @include min{
+      margin-top: 80px;
+      width: 840px;
+    }
+    @include max{
+      width: spvw(600);
+      margin-top: spvw(50);
+    }
+    .item{
+      background: rgba(255,255,255,.63);
+      position: relative;
+      @include min{
+        width: 382px;
+        height: 548px;
+      }
+      @include max{
+        width: spvw(290);
+        height: spvw(418);
+      }
+      img{
+        display: block;
+        position: absolute;
+        @include min{
+          top: 10px;
+          left: 8px;
+        }
+        @include max{
+          width: spvw(272);
+          height: spvw(400);
+          top: spvw(9);
+          left: spvw(9);
+        }
+        &:nth-child(2){
+          opacity: 0;
+          animation: fade2 10s infinite;
+        }
+        &:nth-child(3){
+          opacity: 0;
+          animation: fade3 10s infinite;
+        }
+      }
+    }
+  }
+
+  &__close-txt{
+    text-align: center;
+    @include responsive(margin-top,65,57);
+    img{
+      @include max{
+        display: block;
+        width: 100%;
+      };
+    }
+  }
+
+  &__item-image{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    @include responsive(margin-top,57,63);
+    img{
+      display: block;
+    }
+    @include min{
+      width: 986px;
+    }
+    @include max{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  &__cart{
+    @include clearfix;
+    background: #fff;
+    @include min{
+      width: 864px;
+      margin-top: 25px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 45px 58px 40px 45px;
+    }
+    @include max{
+      width: 100%;
+      margin-top: spvw(25);
+      padding-top: spvw(39);
+      padding-bottom: spvw(50);
+    }
+    .item-image{
+      float: left;
+      position: relative;
+      img{
+        width: 100%;
+        display: block;
+      }
+      @include min{
+        width: 184px;
+      }
+      @include max{
+        width: spvw(184);
+        margin-left: spvw(95);
+      }
+    }
+    &__catch{
+      float: right;
+      text-align: center;
+      @include font-size(24,24);
+      @include min{
+        width: 572px;
+        letter-spacing: 0.025em;
+      }
+      @include max{
+        line-height: 1.583333333;
+        margin-right: spvw(100);
+        margin-top: spvw(60);
+        text-indent: -1em;
+      }
+    }
+    &__under{
+      @include font-size(14,18);
+      @include min{
+        display: flex;
+        justify-content: space-between;
+        float: right;
+        width: 566px;
+        margin-top: 22px;
+      }
+      @include max{
+        width: 100%;
+        clear: both;
+      }
+      .colors{
+        @include min{
+          text-align: right;
+          padding-top: 12px;
+          width: 232px;
+        }
+        @include max{
+          text-align: center;
+          padding-top: spvw(22);
+          letter-spacing: 0.03em;
+        }
+        img{
+          display: inline-block;
+          @include min{
+            width: 184px;
+            margin-left: 10px;
+          }
+          @include max{
+            width: spvw(220);
+            margin-left: spvw(5);
+          }
+        }
+        p:first-child{
+          @include min{
+            line-height: 1.571428571;
+          }
+        }
+        p:last-child{
+          display: inline-flex;
+          align-items: center;
+          @include min{
+            margin-top: 10px;
+          }
+          @include max{
+            margin-top: spvw(15);
+            font-size: spvw(16.5);
+          }
+        }
+      }
+      .buy{
+        @include max{
+          margin: spvw(24) auto 0;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fade2 {
+  0%,18%,84.6%{opacity: 0;}
+  33.3%,66.6%{opacity: 1;}
+}
+@keyframes fade3 {
+  0%,51.3%,100%{opacity: 0;}
+  66.6%,84.6%{opacity: 1;}
+}
+
+@keyframes blink {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+}
+
+.lead-graph{
+  position: relative;
+  h2{
+    position: relative;
+  }
+  &::before{
+    animation: blink 2s steps(1) 0s infinite;
+    content:"";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    @include min{
+      width: 984px;
+      height: 622px;
+      background: {
+        image: url("../image-assets/lead_bg2.jpg");
+        position: top center;
+        repeat: no-repeat;
+      }
+    }
+    @include max{
+      width: 100%;
+      //height: spvw(640);
+      background: {
+        image: url("../image-assets/sp/b1_lead_bg2.jpg");
+        position: top center;
+        size: 100% spvw(456);
+        repeat: no-repeat;
+      }
+    }
+  }
+  @include min{
+    width: 984px;
+    height: 622px;
+    background: {
+      image: url("../image-assets/lead_bg1.jpg");
+      position: top center;
+    }
+    padding-left: 455px;
+    padding-top: 70px;
+  }
+  @include max{
+    width: 100%;
+    height: spvw(455);
+    background: {
+      image: url("../image-assets/sp/b1_lead_bg1.jpg");
+      position: top center;
+      size: 100% spvw(456);
+      repeat: no-repeat;
+    }
+  }
+  .pure-css-pie {
+    @include min{
+      margin: 35px auto 45px 100px;
+    }
+    @include max{
+      margin: 0 spvw(70) 0 auto;
+    }
+  }
+  .draw-pie{
+    background: #c9caca !important;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity .3s .8s;
+      top: 0;
+      left: 0;
+      background: {
+        image: url("../image-assets/b1_graphtxt.png");
+        position: center;
+        size: 100% auto;
+      }
+      @include max{
+          background-image:url("../image-assets/sp/b1_graphtxt.png");
+      }
+    }
+    i {
+      background: #ffc7da !important;
+    }
+    &.active{
+      &::after{
+        opacity: 1;
+      }
+    }
+  }
+  &__sup{
+    color: #333;
+    @include font-size(12,14);
+    @include max{
+      line-height: 1.642857143;
+      padding: spvw(22) 0 0 spvw(20);
+      text-align: right;
+    }
+    @include min{
+      text-align: right;
+      padding-top: 10px;
+      letter-spacing: 0.02em;
+    }
+  }
+  &__text{
+    @include max{
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
+.simple-design{
+
+  @include min{
+    width: 988px;
+    height: 480px;
+    background: {
+      image: url("../image-assets/simple-design.png");
+      repeat: no-repeat;
+    };
+    line-height: 1.571428571;
+  }
+  @include max{
+    padding: spvw(400) spvw(25) 0;
+    font-size: spvw(18);
+    background: {
+      image: url("../image-assets/sp/simple-design.png");
+      repeat: no-repeat;
+      size: spvw(640) spvw(370);
+    };
+  }
+  &__title{
+    @include font-size(22,24);
+    @include min{
+      margin-bottom: 10px;
+    }
+    @include max{
+      line-height: 1.458333333;
+      float: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width:spvw(250);
+      height: spvw(140);
+    }
+  }
+  &__cart{
+    @include min{
+      width: 368px;
+      height: 100%;
+      background: #fcf7f6;
+      padding:40px 30px 0;
+      margin-left: 60px;
+    }
+    text-align: center;
+    .colors{
+      display: inline-flex;
+      align-items: center;
+      @include responsive(margin-top,18,18);
+      @include max{
+          img{
+            height: spvw(20);
+            display: inline-block;
+            margin-left: spvw(5);
+          }
+      }
+    }
+    .link{
+      @include max{
+        position: relative;
+        display: block;
+        width:spvw(340);
+        float: left;
+      }
+    }
+    .clear{
+      clear: both;
+    }
+  }
+}

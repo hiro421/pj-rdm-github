@@ -1,0 +1,216 @@
+.campaign {
+  @include responsive(margin-top, 55, 50);
+  margin-left: auto;
+  margin-right: auto;
+  @include min {
+    width: 773px;
+  }
+  @include max {
+    width: spvw(600);
+  }
+
+  &__title {
+    text-align: center;
+    @include responsive(margin-top, 30, 30);
+
+    span {
+      display: inline-block;
+      position: relative;
+      @include max {
+        width: spvw(262);
+      }
+    }
+  }
+
+  &__lead {
+    text-align: center;
+    line-height: 1.722222222;
+    @include font-size(18, 18);
+    @include responsive(margin-top, 25, 25);
+
+  }
+
+  &__cont {
+    border: 1px solid #000;
+    @include min {
+      margin-top: 30px;
+      @include clearfix;
+    }
+    @include max {
+      margin-top: spvw(30);
+    }
+
+    .item1 {
+      @include min {
+        padding: 65px 70px 75px 65px;
+        @include clearfix;
+      }
+      @include max {
+        padding: spvw(60) spvw(30) spvw(60);
+      }
+
+      .title {
+        @include min {
+          float: left;
+          width: 435px;
+          padding-top: 10px;
+        }
+        text-align: center;
+      }
+
+      figure {
+        @include min {
+          float: right;
+        }
+      }
+
+      .text {
+        @include min {
+          float: left;
+          width: 445px;
+        }
+        @include max {
+          padding: 0 spvw(40);
+        }
+        @include font-size(18, 18);
+        @include responsive(margin-top, 30, -5);
+        line-height: 1.555555556;
+      }
+
+      .link {
+        clear: both;
+        width: 100%;
+        text-align: center;
+        @include min {
+          padding-top: 20px;
+        }
+        @include max {
+          margin-top: spvw(35);
+        }
+      }
+    }
+
+    .item2 {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        background: #000;
+        height: 1px;
+        @include min {
+          width: 775px;
+        }
+        @include max {
+          width: spvw(540);
+        }
+        position: absolute;
+        top: 0;
+        left: 45px;
+        @include max {
+          left: spvw(30);
+        }
+      }
+
+      @include min {
+        padding: 75px 45px 65px 45px;
+        @include clearfix;
+      }
+      @include max {
+        padding: spvw(55) spvw(30) spvw(47);
+      }
+
+      .title {
+        @include min {
+          float: right;
+          width: 390px;
+          padding-top: 10px;
+        }
+        text-align: center;
+      }
+
+      figure {
+        @include min {
+          float: left;
+        }
+        @include max {
+          margin-top: spvw(38);
+        }
+      }
+
+      .text {
+        @include min {
+          float: right;
+          width: 390px;
+        }
+        @include max {
+          padding: 0 spvw(40);
+        }
+        @include font-size(18, 18);
+        @include responsive(margin-top, 30, 25);
+        line-height: 1.555555556;
+      }
+
+      .link {
+        clear: both;
+        width: 100%;
+        text-align: center;
+        @include min {
+          padding-top: 60px;
+        }
+        @include max {
+          margin-top: spvw(35);
+        }
+      }
+    }
+  }
+
+  &-extend {
+    display: none;
+    @include responsive(padding-top,20,20);
+    figure{
+      text-align: center;
+    }
+    
+    &__detail{
+      background: #fef2f7;
+      @include font-size(15,17);
+      @include min{
+          line-height: 1.866666667;
+          padding:30px 30px 50px
+      }
+      @include max{
+        line-height: 1.647058824;
+        padding: spvw(35) spvw(30) spvw(50);
+      }
+      p + *, ul+ *{
+        margin-top: 1em;
+      }
+    }
+  }
+  &__button{
+    text-align: center;
+    @include responsive(margin-top,25,30);
+    span{
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      @include max{
+        width: spvw(294);
+      }
+      img{
+        display: block;
+      }
+    }
+  }
+}
+.full-image{
+  width: 100%;
+  position: relative;
+  display: block;
+  @include responsive(margin-top,50,30);
+  img{
+    width: 100%;
+    display: block;
+  }
+}

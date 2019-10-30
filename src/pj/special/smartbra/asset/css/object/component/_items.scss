@@ -1,0 +1,208 @@
+.items{
+  @include responsive(padding-top,65,48);
+  background: #fff;
+  position: relative;
+  .bra{
+    margin-left: auto;
+    margin-right: auto;
+    @include min{
+      width: 710px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @include max{
+      width: spvw(584);
+    }
+    .content{
+      text-align: center;
+      p{
+        @include font-size(16,18);
+        @include responsive(margin-bottom,20,20);
+        line-height: 1.4375;
+        @include max{
+          margin-top: spvw(20);
+        }
+      }
+    }
+  }
+  .shorts{
+    margin-left: auto;
+    margin-right: auto;
+    @include min{
+      width: 745px;
+      margin-top: 75px;
+    }
+    @include max{
+      width: spvw(584);
+      margin-top: spvw(50);
+    }
+    .item{
+      & + .item{
+        @include min{
+          margin-top: 60px;
+        }
+        @include max{
+          margin-top: spvw(50);
+        }
+      }
+      @include clearfix;
+      .link{
+        position: relative;
+        @include min{
+          float: left;
+          width: 155px;
+          img{
+            width: 100%;
+            display: block;
+          }
+        }
+        @include max{
+          position: relative;
+          width: 45%;
+          float: left;
+          img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+      @include min{
+        width: 100%;
+      }
+      .buy{
+        margin-left: auto;
+        margin-right: auto;
+        @include min{
+          float: right;
+        }
+        @include max{
+            clear: both;
+          padding-top: spvw(25);
+        }
+      }
+    }
+    .center{
+      @include min{
+          float: left;
+        padding-right: 20px;
+        padding-left:20px;
+        line-height: 1.4375;
+      }
+      @include max{
+          float: right;
+      }
+    }
+    p{
+      @include font-size(16,18);
+      line-height: 1.4375;
+      @include min{
+        text-align: right;
+        width: 240px;
+      }
+      @include max{
+        text-align: center;
+        margin-top: spvw(20);
+      }
+    }
+    .colors{
+      @include min{
+        padding:10px 0;
+        text-align: right;
+      }
+      @include max{
+        clear:both;
+        text-align: center;
+        padding: spvw(10) 0;
+        img{
+          height: spvw(30);
+        }
+      }
+    }
+  }
+}
+.color-select{
+  @include min{
+    width: 340px;
+    position: relative;
+  }
+  .images{
+    position: relative;
+    @include min{
+      width: 340px;
+      height: 278px;
+    }
+    @include max{
+      width: spvw(424);
+      height: spvw(316);
+      margin: auto;
+    }
+    li{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity .3s;
+      &.active{
+        opacity: 1;
+      }
+      img{
+        width: 100%;
+        display: block;
+      }
+      &.link{
+        opacity: 0;
+        display: none;
+        a{
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+        &.active{
+          display: block;
+        }
+      }
+    }
+  }
+  .thums{
+    display: flex;
+    justify-content: center;
+    @include min{
+      margin-top: 20px;
+    }
+    @include max{
+      margin-top: spvw(30);
+    }
+    li{
+      cursor: pointer;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      &.active{
+        border: 1px solid #ccc;
+      }
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include min{
+        width: 44px;
+        height: 44px;
+        padding: 5px;
+      }
+      @include max{
+        width: spvw(50);
+        height: spvw(50);
+        padding: spvw(6);
+        margin-left: spvw(3);
+        margin-right: spvw(3);
+      }
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
