@@ -1,0 +1,12 @@
+.main-menu{
+  ul{
+    li{
+      a{
+        &:hover{
+          color:#ec3e79;
+          border-left-color: #ec3e79;
+        }
+      }
+    }
+  }
+}

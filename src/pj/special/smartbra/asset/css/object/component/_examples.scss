@@ -1,0 +1,289 @@
+.examples{
+  background: #ffe8f0;
+  @include responsive(padding-bottom,80,65);
+  &__graph{
+    &__title{
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      left: 0;
+      @include responsive(top,-29,-25);
+      span{
+        color: #fff;
+        background: #d24f84;
+        @include font-size(22,20);
+        @include responsive(height,58,50);
+        @include responsive(width,594,528);
+        @include responsive(border-radius,29,25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: $bold-font;
+        font-weight: bold;
+        line-height: 1.0;
+      }
+    }
+    background: #fff;
+    @include responsive(width,984,600);
+    @include responsive(margin-top,110,73);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    @include min{
+      display: flex;
+      justify-content: space-between;
+      padding: 85px 65px 65px;
+    }
+    @include max{
+      padding: spvw(60) spvw(25) spvw(35);
+    }
+    .item{
+      & + .item{
+        @include max{
+          margin-top: spvw(40);
+        }
+      }
+      @include min{
+        width: 235px;
+        position: relative;
+      }
+      &:nth-child(2){
+        @include min{
+          width: 268px;
+        }
+      }
+      .title{
+        text-align: center;
+        position: relative;
+        width: 100%;
+        @include font-size(20,20);
+        font-family: $bold-font;
+        font-weight: bold;
+        line-height: 1.35;
+        text-decoration: underline;
+        text-underline-position: under;
+        text-decoration-color: #676767;
+        @include min{
+          height: 50px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
+      .content{
+        p{
+          @include font-size(16,18);
+          line-height: 1.625;
+          @include max{
+            width: spvw(260);
+          }
+        }
+        figure{
+          display: block;
+          text-align: center;
+          @include min{
+            margin-top: 18px;
+            height: 234px;
+          }
+          @include max{
+            width: spvw(250);
+          }
+          img{
+            @include max{
+              width: spvw(202);
+            }
+            &.bar{
+              @include max{
+                width: spvw(250);
+              }
+            }
+          }
+        }
+        @include max{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: spvw(28);
+        }
+      }
+    }
+
+    .sup{
+      position: absolute;
+      @include responsive(bottom,-20,-50);
+      right: 0;
+      width: 100%;
+      text-align: right;
+      color: #333;
+      @include max{
+        line-height: 1.5;
+      }
+    }
+  }
+
+  &__age{
+    .compare{
+      margin-left: auto;
+      margin-right: auto;
+      @include min{
+        display: flex;
+        justify-content: space-between;
+        width: 864px;
+        margin-top: 30px;
+      }
+      @include max{
+        width: spvw(422);
+        margin-top: spvw(30);
+      }
+      .compare-item{
+        img{
+          display: block;
+          @include max{
+            width: 100%;
+          }
+        }
+        figure{
+          @include min{
+            margin-top: 23px;
+          }
+          @include max{
+            margin-top: spvw(20);
+          }
+        }
+        & + .compare-item{
+          @include max{
+            margin-top: spvw(60);
+          }
+        }
+      }
+    }
+    & > .sup{
+      @include min{
+        width: 864px !important;
+      }
+      @include max{
+        width: spvw(422) !important;
+      }
+    }
+  }
+
+  &__model{
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    @include min{
+      width: 864px;
+      padding: 42px 0 39px;
+    }
+    @include max{
+      width: spvw(600);
+      padding: spvw(33) 0 spvw(50);
+    }
+    &__head{
+      @include clearfix;
+      @include min{
+        padding: 0 40px 35px 45px;
+      }
+      @include max{
+        padding: 0 spvw(28) spvw(30);
+      }
+      .title{
+        float: left;
+        @include min{
+          width: 310px;
+          text-align: center;
+          padding-top: 25px;
+        }
+        @include max{
+          width: spvw(218);
+          height: spvw(190);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img{
+            width: 100%;
+          }
+        }
+      }
+      .text{
+        float: left;
+        @include font-size(17,18);
+        @include responsive(margin-top,30,30);
+        line-height: 1.65;
+        span{
+          font-weight: bold;
+        }
+        @include min{
+          width: 310px;
+        }
+      }
+      .gif{
+        float: right;
+        @include max{
+          width: spvw(310);
+          img{
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+
+      &.l{
+        .gif{
+          float: left;
+        }
+        .title{
+          float: right;
+          img{
+            @include max{
+              width: spvw(134);
+            }
+          }
+        }
+        .text{
+          @include min{
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+.models-opener{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  @include min{
+    width: calc( 100% - 4px );
+    left: 2px;
+  }
+  @include responsive(height,65,70);
+  background: {
+    color:#d24f84;
+    size: contain;
+    repeat: no-repeat;
+    position: center;
+    image: url("../image-assets/more.png");
+  }
+  @include max{
+    background-image: url("../image-assets/sp/more.png");
+  }
+
+  .open &{
+    background-image: url("../image-assets/less.png");
+    @include max{
+      background-image: url("../image-assets/sp/less.png");
+    }
+  }
+}

@@ -1,0 +1,96 @@
+@mixin pure-css-pie{
+  position: relative;
+  display: inline-block;
+
+  div, i, s {
+    position: absolute;
+    display: block;
+    height: 100%;
+  }
+
+  div {
+    width: 50%;
+    top: 0;
+    overflow: hidden;
+  }
+  .pcp-part1 {
+    left: 50%;
+    i {
+      left: -100%;
+    }
+  }
+  .pcp-part2 {
+    left: 50%;
+    transform: rotate(180deg);
+    transform-origin: 0 50%;
+    div {
+      width: 100%;
+      left: -100%;
+      transform-origin: 100% 50%;
+    }
+    s {
+      left: 0;
+      width: 100%;
+      transform: rotate(180deg);
+      transform-origin: 100% 50%;
+    }
+    i {
+      left: 0;
+    }
+  }
+
+  // Half pie
+  i {
+    width: 100%;
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    transform-origin: 100% 50%;
+    background: black;
+    box-sizing: border-box;
+  }
+}
+
+.pure-css-pie {
+  @include pure-css-pie;
+  background: #fffcdb;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}
+
+.draw-pie {
+  width: 242px;
+  height: 242px;
+  @include max{
+    width: spvw(210);
+    height: spvw(210);
+  }
+}
+.draw-pie i {
+  background: #d3e6ee;
+}
+/* arc rendering */
+.pure-css-pie.arc-pie i {
+  border: 16px solid #70a080;
+  border-right: none;
+  background: transparent;
+}
+.pure-css-pie .pcp-rot {
+  transition: 800ms transform;
+}
+.pure-css-pie.angle0   .pcp-rot.full { transform: rotate(0deg); }
+.pure-css-pie.angle90  .pcp-rot.full { transform: rotate(90deg); }
+.pure-css-pie.angle180 .pcp-rot.full { transform: rotate(180deg); }
+.pure-css-pie.angle240 .pcp-rot.full { transform: rotate(240deg); }
+.pure-css-pie.angle270 .pcp-rot.full { transform: rotate(270deg); }
+.pure-css-pie.angle315 .pcp-rot.full { transform: rotate(315deg); }
+.pure-css-pie.angle330 .pcp-rot.full { transform: rotate(330deg); }
+.pure-css-pie.angle360 .pcp-rot.full { transform: rotate(360deg); }
+
+.pure-css-pie.angle0   .pcp-rot.half { transform: rotate(0deg); }
+.pure-css-pie.angle90  .pcp-rot.half { transform: rotate(45deg); }
+.pure-css-pie.angle180 .pcp-rot.half { transform: rotate(90deg); }
+.pure-css-pie.angle240 .pcp-rot.half { transform: rotate(120deg); }
+.pure-css-pie.angle270 .pcp-rot.half { transform: rotate(135deg); }
+.pure-css-pie.angle315 .pcp-rot.half { transform: rotate(157.5deg); }
+.pure-css-pie.angle330 .pcp-rot.half { transform: rotate(165deg); }
+.pure-css-pie.angle360 .pcp-rot.half { transform: rotate(180deg); }
