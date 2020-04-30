@@ -33,7 +33,7 @@
     "imagemin-jpeg-recompress": "^6.0.0",
     "imagemin-pngquant": "^6.0.1",
     "ismobilejs": "^0.5.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "magnific-popup": "^1.1.0",
     "postcss-cssnext": "^3.1.0",
     "scrollmagic": "^2.0.7",
