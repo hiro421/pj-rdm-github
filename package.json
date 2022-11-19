@@ -40,7 +40,7 @@
     "terser": "^3.14.1",
     "viewport-units-buggyfill": "^0.6.2",
     "webpack": "^4.28.3",
-    "webpack-cli": "^3.2.0",
+    "webpack-cli": "^3.3.12",
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
