@@ -14,7 +14,7 @@
     "@babel/preset-env": "^7.2.3",
     "aos": "^2.3.4",
     "babel-loader": "^8.0.5",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.0",
     "gulp-changed": "^3.2.0",
     "gulp-convert-encoding": "^2.0.1",
